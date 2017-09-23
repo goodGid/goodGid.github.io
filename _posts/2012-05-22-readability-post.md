@@ -6,7 +6,7 @@ excerpt: "A ton of text to test readability."
 tags: [sample post, readability, test]
 comments: true
 ---
-
+2012-05-22-readability-post
 Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin.
 
 ## Cupidatat 90's lo-fi authentic try-hard
