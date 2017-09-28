@@ -25,10 +25,12 @@ layout: compress
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
 
-                    {% if page.project %}
+                    {% if page.cate == "project" %}
                     <a class="btn zoombtn" href="{{site.url}}/projects/">
-                    {% else %}
+                    {% else if page.cate == "post"%}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    {% else if page.cate == "algorithm"%}
+                    <a class="btn zoombtn" href="{{site.url}}/algorithm/">
                     {% endif %}
                         <i class="fa fa-chevron-left"></i>
                     </a>
