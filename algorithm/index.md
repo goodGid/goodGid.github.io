@@ -1,6 +1,6 @@
 ---
 layout: algorithm
-title: All Algorithm
+title: Algorithm
 excerpt: "A List of Algorithm"
 comments: false
 ---
