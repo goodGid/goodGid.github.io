@@ -16,6 +16,18 @@ Syntax highlighting is a feature that displays source code, in different colors 
 
 To modify styling and highlight colors edit `/assets/css/syntax.css`.
 
+{% highlight c++ %}
+#include<iostream>
+
+int main(){
+    return 0;
+}
+
+
+{% endhighlight %}
+
+
+
 {% highlight css %}
 #container {
     float: left;
