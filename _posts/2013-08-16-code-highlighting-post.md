@@ -16,50 +16,6 @@ Syntax highlighting is a feature that displays source code, in different colors 
 
 To modify styling and highlight colors edit `/assets/css/syntax.css`.
 
-{% highlight c++ %}
-include<iostream>
-
-#include <iostream>
-#include <algorithm>
-#include <cstring>
-using namespace std;
-
-int map[25][25];
-int n,ans;
-
-void s(int idx, int (*m)[25]){
-    int tm[25][25];
-    memset(tm, -1, sizeof(tm));
-    
-    if( idx == n+1 ){
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-                ans = ans < m[i][j] ? m[i][j] : ans;
-            }
-        }
-        return ;
-    }
-    
-    
-}
-
-int main(){
-    memset(map, -1, sizeof(map));
-    cin >> n;
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            scanf("%d",&map[i][j]);
-        }
-    }
-    s(0,map);
-    return 0;
-}
-
-
-{% endhighlight %}
-
-
-
 {% highlight css %}
 #container {
     float: left;
