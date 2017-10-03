@@ -1,7 +1,9 @@
 # Site
 title:              Kiyong Shin
 bio:                ' Hello World '
-description:        " Wellcome \n Gidhut Page :) "
+description:        Wellcome
+
+                    Gidhut Page :)
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
