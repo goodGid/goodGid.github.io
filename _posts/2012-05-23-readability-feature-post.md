@@ -8,12 +8,6 @@ tags: [sample post, readability, test, image, feature]
 feature: http://i.imgur.com/Ds6S7lJ.png
 ---
 
-## Cupidatat 90's lo-fi authentic try-hard
-
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. 
-
-* Sartorial hoodie
-* Labore viral forage
 
 ## Forage occaecat cardigan qui
 
