@@ -44,7 +44,7 @@ That's all.
 	https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png
 	https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png
 {% endcapture %}
-
+{% include gallery images=images caption="Moon Theme on Small Screen Size" cols=2 %}      
       
 See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.      
 
