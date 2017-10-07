@@ -158,7 +158,7 @@ int main()
 
 {% highlight cpp %}
 
-2 4 
+2 4
 Program ended with exit code: 0
 
 {% endhighlight %}
