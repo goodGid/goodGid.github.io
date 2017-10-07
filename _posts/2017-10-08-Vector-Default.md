@@ -16,7 +16,7 @@ tag:
 
 ## Function
 
-**v.insert() vs v.push_back()**
+> v.insert() vs v.push_back()
 
 You can use `insert` to perform the same job as `push_back` with `v.insert(v.end(), value)`
 
