@@ -94,10 +94,24 @@ You can also use `<kbd>` tag for keyboard buttons.
 
 Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
 
+
+### Feature Image
+
+You can set feature image per post. Just add `feature: some link` to your post's front matter.
+
+```
+feature: /assets/img/some-image.png
+or
+feaure: http://example.com/some-image.png
+```    
+ This also will be used for twitter card:
+
+
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
+
 
 ## Preview
 
@@ -107,5 +121,22 @@ Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midto
 	https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
+
+---
+
+
+![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+<center><b>Moon</b> is a minimal, one column jekyll theme.</center>
+
+---
+
+## MathJax
+
+[MathJax](http://www.mathjax.org/) 
+
+
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+\\[ \frac{1}{n^{2}} \\]
+
 
 ---
