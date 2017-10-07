@@ -22,16 +22,17 @@ comments: true
 ### Body text
 
 **This is strong**
+
+
+
 *This is emphasized*
 
-![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+
 
 ### Blockquotes
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
-## List Types
 
 ### Ordered Lists
 
@@ -86,13 +87,7 @@ Make any link standout more when applying the `.btn` class.
 
 ## KBD
 
-You can also use `<kbd>` tag for keyboard buttons.
-
-{% highlight html %}
-<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
-{% endhighlight %}
-
-Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
+Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car.
 
 
 ### Feature Image
@@ -130,12 +125,8 @@ feaure: http://example.com/some-image.png
 
 [MathJax](http://www.mathjax.org/) 
 
-
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
 \\[ \frac{1}{n^{2}} \\]
-
-
-
 
 
 it is intended only for human readers.[^1]
