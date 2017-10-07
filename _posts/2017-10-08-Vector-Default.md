@@ -30,7 +30,6 @@ ex 1)
 
 
 ex 2)
-
     v.insert(v.begin(), val );
     v2.push_back(val);
 
