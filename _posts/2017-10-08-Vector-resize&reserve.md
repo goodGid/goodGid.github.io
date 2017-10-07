@@ -22,8 +22,8 @@ tag:
  
  ---
 
- ## Function
- 
+## Function
+
  resize(n) : 할당된 n값만큼 메모리를 무조건 차지한다.
 
  reserve(n) : 어느정도 메모리를 할당함으로써 재할당 횟수를 최소화 시킨다.
