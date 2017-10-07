@@ -4,12 +4,6 @@ title:  "Moon Jekyll Theme 2 "
 date:   2016-04-06
 excerpt: "Minimal, one column Jekyll theme for your blog."
 cate : "project"
-tag:
-- jekyll 
-- moon
-- blog
-- about
-- theme
 ---
 
 ![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
