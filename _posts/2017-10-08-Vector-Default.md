@@ -38,8 +38,7 @@ ex 2)
 
     v --> { 2 3 1 }
     v2 --> { 1 3 2 }
-    순서로 Insert 된다. 
-
+    순서로 삽입된다.
 
 {% endhighlight %}
 
@@ -124,17 +123,19 @@ int main()
 
        if( v.size() == 0 )
            exit(-1);
-       // 벡터에서 최소값 제거
-       erase( v, getMin(v) );
+// 벡터에서 최소값 제거
+erase( v, getMin(v) );
 
-       // 벡터에서 남은 최대값 제거
-       erase( v, getMax(v) );
+// 벡터에서 남은 최대값 제거
+erase( v, getMax(v) );
 
-       // 새로운 벡터 생성
-       vector<int> v2;
-       v2.insert(v2.begin(), getMax(v) ); // v벡터에서 최대값을 v2에 저장
-       v2.insert(v2.begin(), getMin(v) ); // v벡터에서 최소값을 v2에 저장
-       print(v2);
+// 새로운 벡터 생성
+vector<int> v2;
+v2.insert(v2.begin(), getMax(v) ); // v벡터에서 최대값을 v2에 저장
+
+    v2.insert(v2.begin(), getMin(v) ); // v벡터에서 최소값을 v2에 저장
+
+    print(v2);
     
     return 0;
 }
