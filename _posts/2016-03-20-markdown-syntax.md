@@ -99,7 +99,7 @@ feature: /assets/img/some-image.png
 or
 feaure: http://example.com/some-image.png
 ```    
- This also will be used for twitter card:
+
 
 
 ## Notices
@@ -132,6 +132,10 @@ Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block
 it is intended only for human readers.[^1]
 
 [^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+
+
+
+
 
 Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
 
