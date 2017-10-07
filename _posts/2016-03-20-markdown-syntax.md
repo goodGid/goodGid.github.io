@@ -122,13 +122,9 @@ feaure: http://example.com/some-image.png
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
 
----
-
 
 ![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
 <center><b>Moon</b> is a minimal, one column jekyll theme.</center>
-
----
 
 ## MathJax
 
@@ -139,4 +135,55 @@ Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block
 \\[ \frac{1}{n^{2}} \\]
 
 
----
+
+
+
+it is intended only for human readers.[^1]
+
+[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+
+Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
+
+{% gist mmistakes/6589546 %}
+
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/SU3kYxJmWuQ" frameborder="0"> </iframe>
+
+
+#### One Up
+
+<figure>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title=" Click Title "> Ttile txt</a>.</figcaption>
+</figure>
+
+
+
+#### Two Up
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.JPG"><img src="http://placehold.it/600x300.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpeg"><img src="http://placehold.it/600x300.jpg"></a>
+	<figcaption>Two images.</figcaption>
+</figure>
+
+
+#### Three Up
+
+<figure class="third">
+	<img src="http://placehold.it/600x300.jpg">
+	<img src="http://placehold.it/600x300.jpg">
+	<img src="http://placehold.it/600x300.jpg">
+	<figcaption>Three images.</figcaption>
+</figure>
+
+
+### Alternative way
+
+{% capture images %}
+	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
+	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
+	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
+{% endcapture %}
+{% include gallery images=images caption="Test images" cols=3 %}
