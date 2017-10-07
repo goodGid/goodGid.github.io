@@ -55,7 +55,7 @@ ex 2)
 using namespace std;
 
 // #include <functional> 선언
-//  cause : to use 'greater<int>()'
+//  Reason : to use 'greater<int>()'
 sort(v.begin(),v.end(),greater<int>() );
 
 // 벡터에서 최대값을 구하는 함수
