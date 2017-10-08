@@ -6,7 +6,6 @@ excerpt: "Trigger 개념"
 cate : "post"
 tag:
 - DB
-- 정처기
 ---
 
 ## Concept
