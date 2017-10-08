@@ -27,11 +27,12 @@ When 조건식
 
 |  | Old | New |
 |:-------:|:-------:|:-------:|
-| Insert   | Null   | 입력된 값   |
+| Insert   | Null   | 입력 값   |
 |----
 | Update   | 변경 前 값   | 변경 後 값   |
 |----
 | Delete   | 삭제 前 값   | Null   |
 |=====
+| Foot1   | Foot2   | Foot3
 
 
