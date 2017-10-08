@@ -9,7 +9,9 @@ tag:
 - 정처기
 ---
 
-## Review
+## Concept
+
+Trigger는 이벤트가 발생 시 자동적으로 수행되는 사용자 정의 프로시저이다.
 
  ```
 Create Trigger 트리거명 [After | Before] [Insert | Update | Delete ] on 테이블명
@@ -31,5 +33,7 @@ When 조건식
 |----
 | Delete   | 삭제 전 값   | Null   |
 |----
+|
+|====
 
 
