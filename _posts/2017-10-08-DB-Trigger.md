@@ -37,14 +37,14 @@ When 조건식
 ---
 ## Example
 
-*test*
-**test**
 You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
 
+
 Q. <학생> 테이블에 새로운 레코드가 삽인될 때, 삽입되는 레코드에 학년 정보가 누락됐으면 학년 필드에
 
-"신입생"을 치환하는 트리거를 '학년정보_tri'라는 이름으로 정의하시오
+"신입생"을 치환하는 트리거를 '학년정보_tri'라는 이름으로 정의하시오 `{: .notice2}`
+{: .notice2}
 
 
 ```    
