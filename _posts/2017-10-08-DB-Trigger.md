@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DataBse :: Trigger"
+title:  "DataBase :: Trigger"
 date:   2017-10-08
 excerpt: "Trigger 개념"
 cate : "post"
