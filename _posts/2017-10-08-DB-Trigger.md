@@ -33,6 +33,22 @@ When 조건식
 |----
 | Delete   | 삭제 前 값   | Null   |
 |=====
-| Foot1   | Foot2   | Foot3
 
+## Example
+
+
+Q. <학생> 테이블에 새로운 레코드가 삽인될 때, 삽입되는 레코드에 학년 정보가 누락됐으면 학년 필드에
+
+"신입생"을 치환하는 트리거를 '학년정보_tri'라는 이름으로 정의하시오
+
+
+```    
+Create Trigger 학년정보_tri Before Insert On 학생
+Referencing New Table AS new_table
+For Each Row
+When new_table.학년 = ''
+Begin
+    Set new_table.학년 = '신입생';
+End;
+```    
 
