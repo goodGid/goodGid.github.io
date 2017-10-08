@@ -23,8 +23,6 @@ comments: true
 
 **This is strong**
 
-
-
 *This is emphasized*
 
 
