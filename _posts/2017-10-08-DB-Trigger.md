@@ -30,6 +30,6 @@ When 조건식
 | Update   | 변경 전 값   | 변경 후 값   |
 |----
 | Delete   | 삭제 전 값   | Null   |
-|=====
-{: rules="groups"}
+|----
+
 
