@@ -34,6 +34,7 @@ When 조건식
 | Delete   | 삭제 前 값   | Null   |
 |=====
 
+---
 ## Example
 
 *test*
