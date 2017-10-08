@@ -1,18 +1,25 @@
 ---
 layout: post
 title:  "DataBse :: Trigger"
-date:   2017-10-07
+date:   2017-10-08
 excerpt: "Trigger 개념"
 cate : "post"
 tag:
-- Key Point
+- DB
+- 정처기
 ---
 
 ## Review
 
- 
- 새 메모리에 `복사`하고 원래의 메모리에 저장된 모든 객체를 `소멸`시키고 원래 메모리를 `해제`한다.
- 
+ ```
+Create Trigger 트리거명 [After | Before] [Insert | Update | Delete ] on 테이블명
+Referencing [New | Old ] Table as 테이블명
+For Each Row
+When 조건식
+트리거 Body
+```    
+
+
  ---
 
 
