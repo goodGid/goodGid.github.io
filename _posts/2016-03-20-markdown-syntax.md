@@ -104,7 +104,7 @@ feaure: http://example.com/some-image.png
 
 ## Notices
 
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
 
 
