@@ -36,6 +36,10 @@ When 조건식
 
 ## Example
 
+*test*
+**test**
+You can also add notices by appending `{: .notice}` to a paragraph.
+{: .notice}
 
 Q. <학생> 테이블에 새로운 레코드가 삽인될 때, 삽입되는 레코드에 학년 정보가 누락됐으면 학년 필드에
 
