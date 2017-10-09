@@ -19,6 +19,13 @@ tag:
 
 ---
 
+{% capture images %}
+    /assets/img/posts/anomaly_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+---
+
 **삽입 이상 (Insertion Anomaly)**
 
 * 테이블에 데이터를 삽입할 때 의도와는 상관없이 원하지 않은 값들로 인해 삽입할 수 없게 되는 현상
