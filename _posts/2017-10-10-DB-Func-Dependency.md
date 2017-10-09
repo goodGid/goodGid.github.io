@@ -18,17 +18,25 @@ tag:
 
 `X -> Y`로 표기한다.
 
-* 이상의 종류
-    1. 삽입 이상 (Insertion Anomaly)
-    2. 삭제 이상 (Deletion Anomaly)
-    3. 갱신 이상 (Update Anomaly)
-
----
 
 {% capture images %}
-    /assets/img/posts/anomaly_1.png
+    /assets/img/posts/funcDepen_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+* <학생> 테이블에서 이름, 학년, 학과는 각각 학번 속성에 `함수적 종속`이다.
+
+
+
+
+|:-------:|
+|  학번 -> 이름  |
+|  학번 -> 학년  |
+|  학번 -> 학과  |
+|=====
+
+
+
 
 ---
 
