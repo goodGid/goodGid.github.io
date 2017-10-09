@@ -47,6 +47,8 @@ tag:
 
 ---
 
+## 함수적 종속 다이어그램
+
 
 {% capture images %}
     /assets/img/posts/funcDepen_2.png
