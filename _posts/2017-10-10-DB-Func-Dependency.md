@@ -43,7 +43,7 @@ tag:
 ---
 
 
-* <br/> `X -> Y`의 관계를 갖는 속성 `X`와 `Y`에서 <br/> `X`를 `결정자(Determinant)`라 하고, `Y`를 `종속자(Dependent)`라고 한다. <br/>
+* `X -> Y`의 관계를 갖는 속성 `X`와 `Y`에서 <br/> `X`를 `결정자(Determinant)`라 하고, `Y`를 `종속자(Dependent)`라고 한다. <br/>
 
 ---
 
