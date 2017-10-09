@@ -49,6 +49,13 @@ tag:
 
 * `X -> Y`의 관계를 갖는 속성 `X`와 `Y`에서 <br/> `X`를 `결정자(Determinant)`라 하고, `Y`를 `종속자(Dependent)`라고 한다.
 
+---
+
+
+{% capture images %}
+    /assets/img/posts/funcDepen_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
 
 ---
@@ -63,12 +70,10 @@ tag:
 ---
 
 
-
 {% capture images %}
     /assets/img/posts/funcDepen_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
-
 
 
 * <수강> 테이블의 속성 중 `성적`은 (학번, 과목번호)에 `완전 함수적 종속`이라 한다.
