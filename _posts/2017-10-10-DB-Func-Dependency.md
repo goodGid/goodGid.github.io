@@ -18,6 +18,8 @@ tag:
 
 `X -> Y`로 표기한다.
 
+* <학생> 테이블에서 이름, 학년, 학과는 각각 학번 속성에 `함수적 종속`이다.
+
 
 {% capture images %}
     /assets/img/posts/funcDepen_1.png
