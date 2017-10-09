@@ -17,12 +17,17 @@ tag:
     2. 삭제 이상 (Deletion Anomaly)
     3. 갱신 이상 (Update Anomaly)
 
-==> gg
+---
 
---> gg
-
-\==> gg
-
-\--> gg
+**삽입 이상 (Insertion Anomaly)**
 
 
+
+---
+
+**삭제 이상 (Deletion Anomaly)**
+
+---
+
+
+**갱신 이상 (Update Anomaly)**
