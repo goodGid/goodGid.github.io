@@ -181,6 +181,9 @@ Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for mo
 {% endcapture %}
 {% include gallery images=images caption="Test images" cols=3 %}
 
+=> gg
+
+-> gg
 
 ==> gg
 
