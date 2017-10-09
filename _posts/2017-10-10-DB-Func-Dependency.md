@@ -24,7 +24,7 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-* <학생> 테이블에서 이름, 학년, 학과는 각각 학번 속성에 `함수적 종속` 이다.
+* <학생> 테이블에서 이름, 학년, 학과는 각각 학번 속성에 `함수적 종속`이다.
 
 ---
 
