@@ -38,11 +38,3 @@ tag:
 
 
 ---
-
-{% capture images %}
-    /assets/img/posts/funcDepen_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
-
-
