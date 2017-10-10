@@ -24,6 +24,9 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+--> <주문목록> 테이블에서는 하나의 제품에 여러 개의 주문 관련 정보 (주문번호, 고객번호, 주소, 주문수량)가 발생하고 있다. 
+
+따라서 <주문목록> 테이블은 제 1정규형이 아니다.
 
 <center> ↓ </center>
 
