@@ -31,15 +31,23 @@ tag:
 
 ## Example
 
- Q. <고객> 테이블에서 주소가 ‘안산시’인 고객들의 성명, 전화번호를 ‘안산고객’아리는 뷰로 정의 하라
+ Q. 다음의 정규화 과정은 어떤 단계의 정규화 과정인가? 그리고 정규화 과정에서 필요한 작업을 간략히 서술하시오.
 {: .notice}
 
 
+{% capture images %}
+    /assets/img/posts/normalization_5.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
 ```    
-CREATE VIEW 안산고객(성명, 전화번호)
-AS SELECT 성명, 전화번호
-FROM 고객
-WHERE 주소=’안산시’
+<주문목록> 테이블에는 다음과 같은 함수적 종속이 존재한다.
+
+주문번호 --> 고객아이디, 주소
+고객아이디 --> 주소
+
+고객아이디와 주소가 기본키인 주문번호에 대해 완전 함수적 종속이므로 제 2정규형이다.
+
 ```    
 
 
