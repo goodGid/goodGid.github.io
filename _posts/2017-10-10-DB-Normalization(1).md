@@ -89,6 +89,11 @@ tag:
 정규화 결과
 
 <제품납품> 테이블에서 기본키의 일부인 납품번호에 함수적 종속되는 부분 함수적 종속을 제거하기 위해
-속성드을 분리하여 제 2정규형을 만들면 된다.
+속성들을 분리하여 제 2정규형을 만들면 된다.
 
 ```    
+
+{% capture images %}
+    /assets/img/posts/normalization_6.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
