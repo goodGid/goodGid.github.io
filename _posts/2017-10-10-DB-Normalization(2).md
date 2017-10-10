@@ -36,7 +36,7 @@ tag:
 
 
 {% capture images %}
-    /assets/img/posts/normalization_5.png
+    /assets/img/posts/normalization_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
