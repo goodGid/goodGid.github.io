@@ -20,7 +20,7 @@ tag:
 * 모든 속성의 도메인이 `원자 값(Atomic Value)`만으로 되어 있는 정규형
 
 {% capture images %}
-    /assets/img/posts/normal_1.png
+    /assets/img/posts/normalization_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
