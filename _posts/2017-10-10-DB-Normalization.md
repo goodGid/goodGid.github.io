@@ -28,7 +28,10 @@ tag:
 
 따라서 <주문목록> 테이블은 제 1정규형이 아니다.
 
-<center> ↓ </center>
+{% capture images %}
+    /assets/img/posts/normal_0.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
 {% capture images %}
     /assets/img/posts/normal_2.png
