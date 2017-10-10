@@ -36,3 +36,11 @@ tag:
 
 * 일반적으로 제 3정규형에 후보키가 여러 개 존재하고, 이러한 후보키들이 서로 중첩되어 나타나는 경우에 적용 가능하다.
 
+
+{% capture images %}
+    /assets/img/posts/normalization_4.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+* <수강_교수> 테이블은 함수적 종속 <br/> [ (학번, 과목명) --> 담당교수, (학번, 담당교수) --> 과목명, (담당교수 --> 과목명)]을 만족하고 있다. <br/> <수강_교수> 테이블의 후보키는 (학번, 과목명)과 (학번, 담당교수)이다.
