@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "DataBase :: Normalization"
+title:  "DataBase :: Normalization (2)"
 date:   2017-10-10
-excerpt: "Normalization개념"
+excerpt: "Normalization개념 (2)"
 cate : "post"
 tag:
 - DB
