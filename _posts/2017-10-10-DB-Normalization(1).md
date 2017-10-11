@@ -43,7 +43,7 @@ tag:
 
 **제 2정규형**
 
-* 테이블 R이 제 1정규형이고, `기본키`가 아닌 `모든 속성`이 기본키에 대하여 `완전 함수적 종속`을 만족하는 정규형
+* 테이블 R이 제 1정규형이고, `기본키`가 아닌 `모든 속성`이 기본키에 대하여 [`완전 함수적 종속`](https://goodgid.github.io/DB-Func-Dependency/)을 만족하는 정규형
 
 {% capture images %}
     /assets/img/posts/normalization_2.png
