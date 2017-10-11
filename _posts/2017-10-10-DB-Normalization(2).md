@@ -2,7 +2,7 @@
 layout: post
 title:  "DataBase :: Normalization (2)"
 date:   2017-10-10
-excerpt: "Normalization개념 (2)"
+excerpt: "Normalization 개념 (2)"
 cate : "post"
 tag:
 - DB
