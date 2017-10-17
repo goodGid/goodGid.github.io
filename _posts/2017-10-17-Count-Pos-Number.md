@@ -29,29 +29,34 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 #include <cmath>
 using namespace std;
 
-int main(){
-    
-    while (1) {
-        int value;
-        cin >> value;
-        
+int CntPosNumber(int value){
         int pos_number;
         // 방법 1. 로그함수를이용한자리수계산
         pos_number = (int)log10((double)value)+1;
         cout << pos_number << endl;
         
-         // 방법 2. 직접계산
+        // 방법 2. 직접계산
         pos_number = 0;
-         while (value != 0)
-         {
-         value /= 10;
-         pos_number++;
-         }
+        while (value != 0)
+        {
+            value /= 10;
+            pos_number++;
+        }
         
         cout << pos_number << endl;
-    }
+    
+    return pos_number;
+}
+
+
+int main(){
+    int value;
+    cin >> value;
+    CntPosNumber(value);
+    
     return 1;
 }
+
 
 {% endhighlight %}
 
