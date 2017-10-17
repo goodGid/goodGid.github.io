@@ -22,7 +22,7 @@ Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
 
 ## The Key Point
 
-    `BinarySearch`라는 Method가 있다.
+    [BinarySearch]라는 Method가 있다.
     
 
 ---
