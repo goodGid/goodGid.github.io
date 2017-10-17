@@ -21,7 +21,8 @@ Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
 ---
 
 ## The Key Point
-    - 'binary_search'라는 Method가 있다.
+
+* 'binary_search'라는 Method가 있다.
     
 
 ---
