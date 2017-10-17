@@ -8,7 +8,7 @@ tag:
 - Key Point
 ---
 
-## Review
+## The Key Point
 
 * 제곱근을 이용한 소수 구하기 !
 

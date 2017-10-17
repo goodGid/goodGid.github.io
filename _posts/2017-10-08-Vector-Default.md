@@ -8,12 +8,6 @@ tag:
 - Key Point
 ---
 
-## Review
-
-
- 
- ---
-
 ## Function
 
 > **v.insert() vs v.push_back()**

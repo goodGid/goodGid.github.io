@@ -22,6 +22,11 @@ Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
 
 ---
 
+## The Key Point
+    - 'binary_search'라는 Method가 있다.
+    
+
+---
 
 ## Code
 {% highlight cpp %}
@@ -59,11 +64,6 @@ int main(){
 
 ---
 
-## The Key Point
-    - 'binary_search'라는 Method가 있다.
-    
-
----
 
 ## Feed Back 
 

@@ -8,9 +8,9 @@ tag:
 - Key Point
 ---
 
-## Review
+## The Key Point
 
-* 두 점 사이의 거리
+* 두 점 사이의 거리 구하기
 
 ---
 
