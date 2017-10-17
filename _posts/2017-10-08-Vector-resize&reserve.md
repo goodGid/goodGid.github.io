@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vector :: resize vs reserve"
+title:  "Vector :: Resize vs Reserve"
 date:   2017-10-07
 excerpt: "Vector 사용법"
 cate : "algorithm"
