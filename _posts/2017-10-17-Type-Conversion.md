@@ -21,7 +21,8 @@ Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 
 
 ## The Key Point
-    [문자열 - 숫자] 형 변환
+
+* [문자열 - 숫자] 형 변환
 
 ---
 
