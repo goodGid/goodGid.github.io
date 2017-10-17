@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "PrimeNumber"
+title:  "BinarySearch"
 date:   2017-10-17
-excerpt: "PrimeNumber"
+excerpt: "BOJ_1920"
 cate : "algorithm"
 tag:
 - BOJ
