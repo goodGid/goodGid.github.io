@@ -21,7 +21,8 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 
 
 ## The Key Point
-    - 자릿수 구하기 
+
+* 자릿수 구하기 
 
 {% highlight cpp %}
 
