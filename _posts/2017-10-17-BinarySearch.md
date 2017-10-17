@@ -6,7 +6,6 @@ excerpt: "BOJ_1920"
 cate : "algorithm"
 tag:
 - Key Point
-- 이분 탐색
 ---
 
 
