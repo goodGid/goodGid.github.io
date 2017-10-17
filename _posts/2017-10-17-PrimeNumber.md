@@ -20,16 +20,6 @@ x를 2부터 x의 제곱근까지의 숫자로 나누어 떨어지는지 검사�
 나누어 떨어지면 소수가 아니다. 
 ```
 
- 
- ---
-
-## Function
-
-> **v.insert() vs v.push_back()**
-
-You can use `insert` to perform the same job as `push_back` with `v.insert(v.end(), value)`
-
-
 
 ---
 
