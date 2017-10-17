@@ -5,7 +5,6 @@ date:   2017-10-17
 excerpt: "BOJ_1920"
 cate : "algorithm"
 tag:
-- BOJ
 - Key Point
 - 이분 탐색
 ---
