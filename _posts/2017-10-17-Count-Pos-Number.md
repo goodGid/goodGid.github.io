@@ -14,9 +14,8 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 {% capture images %}
     /assets/img/algorithm/2331_1.png
     /assets/img/algorithm/2331_2.png
-    /assets/img/algorithm/2331_3.png
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=3 %}
+{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
 ---
 
