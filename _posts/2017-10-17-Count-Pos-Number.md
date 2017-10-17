@@ -9,15 +9,14 @@ tag:
 ---
 
 ## Problem
-Problem URL : **[2048](https://www.acmicpc.net/problem/12100)**
+Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 
 {% capture images %}
-    /assets/img/algorithm/12100_1.png
-    /assets/img/algorithm/12100_2.png
-    /assets/img/algorithm/12100_3.png
-    /assets/img/algorithm/12100_4.png
+    /assets/img/algorithm/2331_1.png
+    /assets/img/algorithm/2331_2.png
+    /assets/img/algorithm/2331_3.png
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=4 %}
+{% include gallery images=images caption="Screenshots of Problem Explain" cols=3 %}
 
 ---
 
@@ -25,18 +24,44 @@ Problem URL : **[2048](https://www.acmicpc.net/problem/12100)**
 ## The Key Point
     - 자릿수 구하기 
 
+{% highlight cpp %}
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    
+    while (1) {
+        int value;
+        cin >> value;
+        
+        int pos_number;
+        // 방법 1. 로그함수를이용한자리수계산
+        pos_number = (int)log10((double)value)+1;
+        cout << pos_number << endl;
+        
+         // 방법 2. 직접계산
+        pos_number = 0;
+         while (value != 0)
+         {
+         value /= 10;
+         pos_number++;
+         }
+        
+        cout << pos_number << endl;
+    }
+    return 1;
+}
+
+{% endhighlight %}
+
 ---
 
 
 ## Code
 {% highlight cpp %}
 
-/*
- 2331 반복수열
- 
- - 자릿수 계산
-
- */
 #include <iostream>
 #include <cstring>
 #include <cmath>
