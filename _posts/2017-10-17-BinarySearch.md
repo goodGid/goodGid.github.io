@@ -8,6 +8,7 @@ tag:
 - Key Point
 ---
 
+Test
 
 ## Problem
 Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
