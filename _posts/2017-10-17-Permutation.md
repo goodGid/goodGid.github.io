@@ -21,6 +21,8 @@ Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
 ---
 
 ## The Key Point
+
+```
 - 순열을 사전순으로 나열 했을 때, 사전순으로 Next or Prev 순열을 찾는 방법
     1) STL 함수 사용
     2) 직접 구현
@@ -29,7 +31,7 @@ Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
                         가장 큰 j가 아닌 큰 j중 최소를 찾는게 맞는거 같다 !
  
 - 같은 Logic Problem : 10973 이전 순열 / 10974 모든 순열
-    
+```  
 
 ---
 
