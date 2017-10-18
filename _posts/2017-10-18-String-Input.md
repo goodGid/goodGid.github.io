@@ -10,7 +10,7 @@ tag:
 
 ## Review
 
-* <cin>
+* cin
 
 {% highlight cpp %}
 
