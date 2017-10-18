@@ -39,6 +39,7 @@ long long ChangeJinBub(int base, int decimal){
  범위가 넘어가서 터진다.
  그래서 long long으로 선언 !
  */
+ 
 int main(){
     long long ans;
     int b,d;
