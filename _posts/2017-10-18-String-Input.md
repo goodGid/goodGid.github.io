@@ -10,7 +10,7 @@ tag:
 
 ## Review
 
-* cin
+* cin : `문자`와 `문자열` 모두 입력 받을 수 있다.
 
 {% highlight cpp %}
 
@@ -42,10 +42,132 @@ solve)
      
      6번에서 loving you 엔터
      7번에서 출력 결과 =>loving
+
+- cin은 엔터가 나오면 입력 종료로 간주.
 ```     
  
- 1. cin은 엔터가 나오면 입력 종료로 간주.
+ ---
+
+
+ * get : `문자`만 입력받을 수 있다.
+
+ {% highlight cpp %}
+
+     #include <iostream>
+     void main() {
+         char a, b, c;
+         a = cin.get();         //cin.get(a) 가능
+         b = cin.get();
+         c = cin.get();                               //1
+         cout<< a << " " << b << " " << c << endl;    //2
+     }
+
+{% endhighlight %}
+
+```
+solve)
+         1번까지 x입력 후 엔터, y입력 후 엔터
  
-    1. cin은 엔터가 나오면 입력 종료로 간주.
+     [2번 출력 결과]
+     x
+     y
+ 
+     // 즉 엔터도 입력받을 문자로 간주한 것으로 봄(공백 또한 문자로 간주)
+     x + Enter(개행) + y
+ 
+ - getline와 get함수가 다른 점
+   --> get함수는 개행문자를 읽어서 버리지 않고 입력 큐에 그대로 남겨둠
+         cin.get(str1, hi);
+         cin.get(str2, hello);
+        라는 두 문장이 있다면 입력 큐에 개행문자가 그대로 있어서 
+        두번째 호출은 개행문자를 첫 문자로 만나게 된다.
+ 
+     굳이 get()을 써야 한다면,
+     cin.get(str1, hi);
+     cin.get();
+     cin.get(str2, hello);
+     이렇게 두 문장사이에 get()을 하나 더 삽입하면 된다.
+
+```     
+
+
+---
+ 
+ * getline : `문자열`만 입력받을 수 있다.
+
+ {% highlight cpp %}
+
+    #include<iostream>
+     void main(){
+         char a[10];
+         cin.getline(a,10);             //1
+         cout << a << endl;             //2
+         cin.getline(a, 10, 'u');       //3
+         cout << a << endl;             //4
+
+	 string s;
+         getline(cin, s);		//5
+         cout << s << endl;
+     }
+
+
+{% endhighlight %}
+
+```
+solve)
+
+     1번 so cute! 입력 후 엔터
+     2번 결과 => so cute!
+     cf)cin의 경우 공백이 나오면 입력이 끝났다고 간주, but getline은 공백(ascii 32)도 문자로 받아들임
+ 
+     3번 so cute! 입력 후 엔터
+     4번 결과 => so c
  
  
+   getline(변수의 주소, 최대입력가능 문자수, 종결문자);
+ 
+ - getline()하면은 Enter키가 전달하는 개행문자를 
+   입력의 끝으로 인식하여 한줄 전체를 읽는다.
+ 
+ - 종결문자 생략시 엔터로 간주된다. 그리고 종결문자를 NULL문자로 바꾼다.
+   따라서 종결문자전까지 출력하게 된다.
+   최대입력가능 문자수보다 많은 문자를 입력한 경우 n-1개만큼만 받아들이고 
+   n번째 문자는 null문자로 취급한다.
+ 
+ - cin.getline(a,20); //이때 입력한 문자의 개수는 19개이하이여야 한다.(마지막 1문자는 null문자 삽입)
+ 
+ - 1번 방법은 char형 입력 받기
+ - 5번 방법은 string형 입력 받기
+```     
+
+---
+
+ * scanf 
+
+ {% highlight cpp %}
+
+    #include<iostream>
+     void main(){
+         char c[10];
+	 scanf(“%s”,c);		// 1
+	 cout << c[1] << endl;	// 2
+	 return 0;
+     }
+
+
+{% endhighlight %}
+
+```
+solve)
+     1번 abc 입력 후 엔터
+     2번 b 출력
+
+     1번 a
+     1번 공백 출력
+```     
+ 
+
+
+
+ 
+
