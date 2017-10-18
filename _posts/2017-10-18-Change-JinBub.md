@@ -2,10 +2,53 @@
 layout: post
 title:  "10진수를 임의의 진수로 변환"
 date:   2017-10-18
-excerpt: "진법 변환"
+excerpt: "진수 변환"
 cate : "algorithm"
 tag:
 - Key Point
+---
+
+## Review
+
+> 많이 사용되는 진수 변환
+
+1. 10진수 -> 2진수 변환
+
+{% highlight cpp %}
+ int tenConvertTwo(int num)
+  {
+    int result = 0;
+    for(int i=1; num>0; i*=10)
+    {
+        int binary = num % 2;
+        result += binary*i;
+        num /= 2;
+    }
+    return result;
+  }
+
+{% endhighlight %}
+
+
+2. 2진수 -> 10진수 변환
+
+{% highlight cpp %}
+
+ int twoConvertTen(int num)
+  {
+    int result = 0, mul = 1;
+    while(num>0)
+    {
+        if(num%2)
+            result += mul;
+        mul *= 2;
+        num /= 10;
+    }
+    return result;
+  }
+
+{% endhighlight %}
+
 ---
 
 ## Code
@@ -39,7 +82,7 @@ long long ChangeJinBub(int base, int decimal){
  범위가 넘어가서 터진다.
  그래서 long long으로 선언 !
  */
- 
+
 int main(){
     long long ans;
     int b,d;
@@ -47,7 +90,5 @@ int main(){
     ans = ChangeJinBub(b,d);
     cout << ans << endl;
 }
-
-
 
 {% endhighlight %}
