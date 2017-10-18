@@ -12,7 +12,7 @@ tag:
 
 > 많이 사용되는 진수 변환
 
-1. 10진수 -> 2진수 변환
+* 10진수 -> 2진수 변환
 
 {% highlight cpp %}
  int tenConvertTwo(int num)
@@ -30,7 +30,7 @@ tag:
 {% endhighlight %}
 
 
-2. 2진수 -> 10진수 변환
+* 2진수 -> 10진수 변환
 
 {% highlight cpp %}
 
