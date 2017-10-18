@@ -149,7 +149,7 @@ solve)
     #include<iostream>
      void main(){
          char c[10];
-	 scanf(“%s”,c);		// 1
+	 scanf("%s",c);		// 1
 	 cout << c[1] << endl;	// 2
 	 return 0;
      }
@@ -163,7 +163,7 @@ solve)
      2번 b 출력
 
      1번 a
-     1번 공백 출력
+     2번 공백 출력
 ```     
  
 
