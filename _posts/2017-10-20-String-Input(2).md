@@ -40,6 +40,7 @@ int main(){
 {% endhighlight %}
 
 ```
+[ solve 1 ]
     input : 
     1
     output : 
@@ -53,6 +54,7 @@ int main(){
 ```
 
 ```
+[ solve 2 ]
     input :
     1 3
     output : 
@@ -65,6 +67,7 @@ int main(){
 ```
 
 ```
+[ solve 3 ]
     input : 
     12aa
     output : 
@@ -100,6 +103,7 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
     /assets/img/algorithm/string_input_2.png
     /assets/img/algorithm/string_input_3.png
     /assets/img/algorithm/string_input_4.png
+    
 {% endcapture %}
 {% include gallery images=images caption="" cols=4 %}
 
@@ -127,7 +131,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 1 ]
-
     input : 
     1
     aa
@@ -142,7 +145,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 2 ]
-
     input : 
     1abcde
     
@@ -158,7 +160,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 3 ]
-
     input : 
     1abc + enter
     
@@ -176,7 +177,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 4 ]
-
     input : 
     1a
     bcd
@@ -192,7 +192,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 5 ]
-
     input : 
     1ab
     ccc
@@ -208,7 +207,6 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ```
 [ solve 6 ]
-
     input : 
     1 abcde
 
