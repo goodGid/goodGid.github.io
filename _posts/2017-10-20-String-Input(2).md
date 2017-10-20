@@ -101,10 +101,10 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
     
 
 {% capture images %}
-    /assets/img/algorithm/stirng_input_1.png
-    /assets/img/algorithm/stirng_input_2.png
-    /assets/img/algorithm/stirng_input_3.png
-    /assets/img/algorithm/stirng_input_4.png
+    /assets/img/algorithm/string_input_1.png
+    /assets/img/algorithm/string_input_2.png
+    /assets/img/algorithm/string_input_3.png
+    /assets/img/algorithm/string_input_4.png
 {% endcapture %}
 {% include gallery images=images caption="" cols=4 %}
 
