@@ -85,18 +85,6 @@ int main(){
 
  * cin.ignore()
 
-```
-ignore(n, delim)
-
-n자리 까지 입력을 무시한다.
-or
-delim 조건이 나올 때 까지 그동안 입력을 무시한다.
-
-즉
-n자리 이 후에 값만 입력 버퍼에 들어가거나
-delim 조건 이 후 값만 입력 버퍼에 들어간다.
-```
-    
 
 {% capture images %}
     /assets/img/algorithm/string_input_1.png
@@ -108,7 +96,17 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 {% include gallery images=images caption="" cols=4 %}
 
 
+```
+ignore(n, delim)
 
+n자리 까지 입력을 무시한다.
+or
+delim 조건이 나올 때 까지 그동안 입력을 무시한다.
+
+즉
+n자리 이 후에 값만 입력 버퍼에 들어가거나
+delim 조건 이 후 값만 입력 버퍼에 들어간다.
+```
 
  {% highlight cpp %}
 
