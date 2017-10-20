@@ -103,9 +103,12 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
     /assets/img/algorithm/string_input_2.png
     /assets/img/algorithm/string_input_3.png
     /assets/img/algorithm/string_input_4.png
-    
+
 {% endcapture %}
 {% include gallery images=images caption="" cols=4 %}
+
+
+
 
  {% highlight cpp %}
 
