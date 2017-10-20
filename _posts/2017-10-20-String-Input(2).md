@@ -80,7 +80,7 @@ solve)
  ---
 
 
- * cin.getignore()
+ * cin.ignore()
 
 ```
 ignore(n, delim)
