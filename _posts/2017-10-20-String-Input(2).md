@@ -11,6 +11,7 @@ tag:
 ## Review
 
 * cin vs getline
+
 ```
 cin은 '\n'전 까지 입력 버퍼에 들어간다.
 
@@ -52,8 +53,6 @@ solve)
         n에는 1
         input에는 '\n'가 들어간다.
 
-
-
     2)
     input :
     1 3
@@ -64,8 +63,6 @@ solve)
 
     --> n에는 1이 들어가고 
         [ 3]이 input에 들어간다.
-
-
 
     3)
     input : 
