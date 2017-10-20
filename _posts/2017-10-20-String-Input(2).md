@@ -18,6 +18,9 @@ cin은 '\n'전 까지 입력 버퍼에 들어간다.
 getline은 '\n'까지 입력 버퍼에 들어간다.
 ```
 
+--- 
+
+
 {% highlight cpp %}
 
 #include <iostream>
@@ -108,7 +111,7 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 {% include gallery images=images caption=" " cols=4 %}
 
 
-
+---
 
  {% highlight cpp %}
 
