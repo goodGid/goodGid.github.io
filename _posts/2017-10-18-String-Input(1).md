@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "String Input"
+title:  "String Input (1)"
 date:   2017-10-18
-excerpt: "String Input"
+excerpt: "String Input (1)"
 cate : "algorithm"
 tag:
 - Key Point
