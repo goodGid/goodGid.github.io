@@ -85,25 +85,6 @@ int main(){
 
  * cin.ignore()
 
-
-{% capture images %}
-    /assets/img/algorithm/string_1.png
-    /assets/img/algorithm/string_2.png 
-    /assets/img/algorithm/string_3.png
-    /assets/img/algorithm/string_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
-
-
-
-{% capture images %}
-    /assets/img/algorithm/2512_1.png
-    /assets/img/algorithm/string_4.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
-
-
-
 ```
 ignore(n, delim)
 
@@ -115,6 +96,19 @@ delim 조건이 나올 때 까지 그동안 입력을 무시한다.
 n자리 이 후에 값만 입력 버퍼에 들어가거나
 delim 조건 이 후 값만 입력 버퍼에 들어간다.
 ```
+
+
+
+{% capture images %}
+    /assets/img/posts/string_1.png
+    /assets/img/posts/string_2.png 
+    /assets/img/posts/string_3.png
+    /assets/img/posts/string_4.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=4 %}
+
+
+
 
  {% highlight cpp %}
 
