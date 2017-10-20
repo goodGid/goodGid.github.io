@@ -87,10 +87,10 @@ int main(){
 
 
 {% capture images %}
-    /assets/img/algorithm/string_input_1.png
-    /assets/img/algorithm/string_input_2.png
-    /assets/img/algorithm/string_input_3.png
-    /assets/img/algorithm/string_input_4.png
+    /assets/img/algorithm/string_1.png
+    /assets/img/algorithm/string_2.png
+    /assets/img/algorithm/string_3.png
+    /assets/img/algorithm/string_4.png
 
 {% endcapture %}
 {% include gallery images=images caption="" cols=4 %}
