@@ -52,7 +52,9 @@ solve)
     --> 1하고 Enter를 치면 
         n에는 1
         input에는 '\n'가 들어간다.
-
+```
+```
+solve)
     2)
     input :
     1 3
@@ -63,7 +65,10 @@ solve)
 
     --> n에는 1이 들어가고 
         [ 3]이 input에 들어간다.
+```
 
+```
+solve)
     3)
     input : 
     12aa
@@ -138,7 +143,10 @@ solve)
     Program ended with exit code: 0
 
     --> cin.ignore()에 의해서 입력된 '\n'가 버퍼에서 제거된다.
+```
 
+```
+solve)
     2)
     input : 
     1abcde
@@ -151,7 +159,10 @@ solve)
     --> cin.ignore(3,'\n')에 의해서 
         1이후에 입력된 3자리는 무시하고 
         그 뒤부터 입력 버퍼에 들어간다.
-     
+```
+
+```
+solve)
     3)
     input : 
     1abc + enter
@@ -166,7 +177,10 @@ solve)
         그 다음부터 input은 입력 버퍼에 들어가게 된다.
         그런데 이 때 바로 '\n'를 쳤기 때문에
         input에는 '\n'가 들어가게 된다.
+```
 
+```
+solve)
     4)
     input : 
     1a
@@ -179,7 +193,10 @@ solve)
     --> 1이후에 a 1개만 나온 상태에서 '\n'가 들어갔기 때문에
         ignore()에 의해 입력 버퍼에는 아무것도 없는 상태이다.
         이상태에서 bcd를 입력하면 input에는 bcd가 들어가게 된다.
+```
 
+```
+solve)
     5)
     input : 
     1ab
@@ -192,7 +209,10 @@ solve)
     --> 1이후에 ab 2개만 나온 상태에서 '\n'가 들어갔기 때문에
         ignore()에 의해 입력 버퍼에는 아무것도 없는 상태이다.
         이상태에서 ccc를 입력하면 input에는 ccc가 들어가게 된다.
+```
 
+```
+solve)
     6)
     input : 
     1 abcde
@@ -205,7 +225,5 @@ solve)
     --> 1이후에 [ abcde] 가 입력으로 들어왔다.
         ignore(3,'\n')에 의해 [ ab]는 입력 버퍼에서 무시되고,
         input에는 그 이후 값인 cde가 들어가게 된다.
-
-
 ```     
 
