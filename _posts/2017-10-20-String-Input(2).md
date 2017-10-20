@@ -40,8 +40,6 @@ int main(){
 {% endhighlight %}
 
 ```
-solve)
-    1)
     input : 
     1
     output : 
@@ -53,9 +51,8 @@ solve)
         n에는 1
         input에는 '\n'가 들어간다.
 ```
+
 ```
-solve)
-    2)
     input :
     1 3
     output : 
@@ -68,8 +65,6 @@ solve)
 ```
 
 ```
-solve)
-    3)
     input : 
     12aa
     output : 
