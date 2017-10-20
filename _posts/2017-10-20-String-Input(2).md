@@ -11,6 +11,11 @@ tag:
 ## Review
 
 * cin vs getline
+```
+cin은 '\n'전 까지 입력 버퍼에 들어간다.
+
+getline은 '\n'까지 입력 버퍼에 들어간다.
+```
 
 {% highlight cpp %}
 
