@@ -131,8 +131,8 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 {% endhighlight %}
 
 ```
-solve)
-    1)
+[ solve 1 ]
+
     input : 
     1
     aa
@@ -146,8 +146,8 @@ solve)
 ```
 
 ```
-solve)
-    2)
+[ solve 2 ]
+
     input : 
     1abcde
     
@@ -162,8 +162,8 @@ solve)
 ```
 
 ```
-solve)
-    3)
+[ solve 3 ]
+
     input : 
     1abc + enter
     
@@ -180,8 +180,8 @@ solve)
 ```
 
 ```
-solve)
-    4)
+[ solve 4 ]
+
     input : 
     1a
     bcd
@@ -196,8 +196,8 @@ solve)
 ```
 
 ```
-solve)
-    5)
+[ solve 5 ]
+
     input : 
     1ab
     ccc
@@ -212,8 +212,8 @@ solve)
 ```
 
 ```
-solve)
-    6)
+[ solve 6 ]
+
     input : 
     1 abcde
 
