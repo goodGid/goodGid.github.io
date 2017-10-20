@@ -88,12 +88,20 @@ int main(){
 
 {% capture images %}
     /assets/img/algorithm/string_1.png
-    /assets/img/algorithm/string_2.png
+    /assets/img/algorithm/string_2.png 
     /assets/img/algorithm/string_3.png
     /assets/img/algorithm/string_4.png
-
 {% endcapture %}
-{% include gallery images=images caption="" cols=4 %}
+{% include gallery images=images caption=" " cols=4 %}
+
+
+
+{% capture images %}
+    /assets/img/algorithm/2512_1.png
+    /assets/img/algorithm/2512_2.png
+{% endcapture %}
+{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
+
 
 
 ```
