@@ -30,6 +30,7 @@ tag:
  
 {% endhighlight %}
 
+---
 
 * 문자열에서 1개씩 컨트롤
 
@@ -45,8 +46,9 @@ tag:
 
 {% endhighlight %}
 
+---
 
-*  띄어 쓰기 단위로 문자열 자르기
+*  띄어 쓰기 단위로 문자열 자르기 (1)
 
 {% highlight cpp %}
 
@@ -77,3 +79,42 @@ int main(){
 }
 
 {% endhighlight %}
+
+
+---
+
+*  띄어 쓰기 단위로 문자열 자르기 (2)
+
+{% highlight cpp %}
+
+int main(){
+    string s;
+    getline(cin,s);
+
+    int size = (int)s.size();
+    for(int i=0; i<size; i++){
+        if( s[i] == ' '){
+            cout << " Space " << endl;
+        }
+        else {
+            cout << s[i];
+        }
+    }
+    cout << endl;
+    return 0;
+}
+
+{% endhighlight %}
+
+```
+input :
+qwe asd zxc
+
+output :
+qwe Space 
+asd Space 
+zxc
+Program ended with exit code: 0
+
+```
+
