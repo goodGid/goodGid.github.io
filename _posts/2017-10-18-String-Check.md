@@ -115,6 +115,5 @@ qwe Space
 asd Space 
 zxc
 Program ended with exit code: 0
-
 ```
 
