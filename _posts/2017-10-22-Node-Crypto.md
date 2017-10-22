@@ -23,14 +23,14 @@ let hashAlgorithm = crypto.createHash('sha512');
 let hashing = hashAlgorithm.update(string);
 //선택된 알고리즘으로 해싱
 console.log(" === hasing === ")
-console.log(hashing + "\n");
+console.log(hashing);
 let hashedString = hashing.digest('base64');
 //표시할 인코딩 설정. 
 
 console.log(" === Hashed String === ")
-console.log(hashedString + "\n");
+console.log(hashedString);
 
-//2. salting, key stratching 을 적용한 해싱
+//2. salting, key stratching을 적용한 해싱
 crypto.randomBytes(32, function(err, buffer){
 	//32bit 길이의 random byte 생성
 	if(err){
@@ -42,10 +42,9 @@ crypto.randomBytes(32, function(err, buffer){
 			} else{
 				console.log(" === hashed value === ")
 				console.log(hashed);
-				console.log();
 				
 				console.log(" === hashed.toString('base64') === ");
-				console.log(hashed.toString('base64') + "\n");
+				console.log(hashed.toString('base64'));
 			}
 		});
 	}
@@ -56,6 +55,11 @@ crypto.randomBytes(32, function(err, buffer){
 
 ---
 
+## Review
+
+* 암호화에는 2가지 방법이 있다.
+    1. 단순 해싱으로 비밀번호 해싱
+    2. salting, key stratching을 적용한 해싱
 
 ## Output
 
