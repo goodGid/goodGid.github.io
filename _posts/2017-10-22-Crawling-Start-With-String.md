@@ -116,3 +116,6 @@ public class Main {
     /assets/img/posts/crawling_string_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+
+* 정상 URL 수 만큼 파일이 생성된다.
