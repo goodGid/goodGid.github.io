@@ -31,7 +31,6 @@ readFile();
 
 ---
 
-## Code
 {% highlight JavaScript %}
 
 const fs = require('fs');
