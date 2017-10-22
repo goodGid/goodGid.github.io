@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Crawling"
+title:  "Crawling Start with "http://" "
 date:   2017-10-22
-excerpt: "Crawling (1) "
-cate : "Crawling"
+excerpt: " 'http://'로 시작하는 URL을 Crawling 해보자 "
+cate : "post"
 tag:
 - Crawling
 ---
@@ -108,3 +108,11 @@ public class Main {
 
 * [Sector 2]에서는 [Sector 1]에서 구한 값을 이용하여 "http://"로 시작하는 URL중에서 <br> 정상적으로 해당 URL 접근이 가능한  각각의 URL들만을 하나의 파일로 생성한다.
 
+---
+
+## Output
+
+{% capture images %}
+    /assets/img/posts/crawling_string_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
