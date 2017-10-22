@@ -52,7 +52,6 @@ crypto.randomBytes(32, function(err, buffer){
 });
 
 
-
 {% endhighlight %}
 
 ---
