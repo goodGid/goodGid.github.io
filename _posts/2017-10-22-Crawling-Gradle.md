@@ -44,7 +44,7 @@ import java.util.ArrayList;
 
 * 그래서 [Gradle](https://en.wikipedia.org/wiki/Gradle)과 같은 `공식 빌드 시스템`을 사용하여 이러한 문제점을 해결 할 수가 있다.
 
-* 위 예는 [ jsoup.jar ]라는 파일이 필요하다. <br> 하지만 build.gradle에 [1]같이 추가하게 되면 local에 `jsoup.jar`을 Store할 필요가 없어진다.
+* 위 예는 [ jsoup.jar ]라는 파일이 필요하다. <br> 하지만 build.gradle에 [1] 같이 추가하게 되면 local에 `jsoup.jar`을 Store할 필요가 없어진다.
 
 ```
 dependencies {
