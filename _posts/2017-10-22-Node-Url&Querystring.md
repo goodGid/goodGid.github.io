@@ -10,7 +10,7 @@ tag:
 
 
 ## Code
-{% highlight node %}
+{% highlight JavaScript %}
 
 const url = require('url');
 const querystring = require('querystring');
