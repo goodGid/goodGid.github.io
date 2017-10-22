@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Crawling Usage Gradle "
+title:  "Crawling :: Usage Gradle "
 date:   2017-10-22
 excerpt: " Gradle 사용법 "
 cate : "post"
