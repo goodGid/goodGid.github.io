@@ -29,8 +29,6 @@ readFile();
 
 {% endhighlight %}
 
----
-
 {% highlight JavaScript %}
 
 const fs = require('fs');
