@@ -32,6 +32,56 @@ Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
 ## Code
 {% highlight cpp %}
 
+#include <iostream>
+#include <algorithm>
+#define MAX_SIZE 200000
+int pos[MAX_SIZE];
+
+int main()
+{
+    int n, c;
+    scanf("%d %d", &n, &c);
+    
+    for(int i = 0; i < n; i++)
+        scanf("%d", pos + i);
+    
+    std::sort(pos, pos + n);
+    
+    int left = 1; // 가능한 최소 거리
+    int right = pos[n - 1] - pos[0]; // 가능한 최대 거리
+    int ret;
+    
+    while(left <= right)
+    {
+        int mid = (left + right) / 2;
+        int cnt = 1;
+        int start = pos[0];
+        
+        for(int i = 1; i < n; i++)
+        {
+            int tmp = pos[i] - start;
+            if(tmp >= mid)
+            {
+                cnt++;
+                start = pos[i];
+            }
+        }
+        
+        if(cnt >= c) // 실제 설치해야하는 공유기 수 보다 더 많이 설치
+                     // -> 간격을 늘려야한다.
+        {
+            ret = mid;
+            left = mid + 1; // 오른쪽 구역에서 최적의 해 찾기
+        }
+        else right = mid - 1; // 왼쪽 구역에서 최적의 해 찾기
+        
+    }
+    printf("%d\n", ret);
+    
+    return 0;
+}
+
+
 {% endhighlight %}
 
 ---
