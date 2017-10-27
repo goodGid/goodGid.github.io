@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Parametric Search "
-date:   2017-10-02
+date:   2017-10-27
 excerpt: "BOJ_2110"
 cate : "algorithm"
 tag:
