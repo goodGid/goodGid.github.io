@@ -41,16 +41,8 @@ sudo vi /etc/ssh/sshd_config
 
 | Option  |  Before   |  After  | 
 |:-------:|:-------:|:-------:|
-| PermitRootLogin   | Prohibit | yes | 
-| PasswordAuthentication   | no | yes  | 
-|=====
-
----
-
-| Option  |  Before   |  After  | 
-|:-------:|:-------:|:-------:|
-| PermitRootLogin   | Prohibit | yes | 
-| Password | no | yes  | 
+|    PermitRootLogin |  Prohibit          |  yes               | 
+| PasswordAuthentication | no                        | yes                       | 
 |=====
 
 ---
@@ -96,4 +88,12 @@ sudo service ssh restart
 
 
 ### 6.
+
+
+{% capture images %}
+	/assets/img/posts/ec2_login_3.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
 
