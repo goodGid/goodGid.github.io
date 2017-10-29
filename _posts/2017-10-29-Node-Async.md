@@ -51,7 +51,7 @@ http.createServer(function(req, res) {
 
 ## Solve 
 
-* Async를 사용하여 흐름제어를 하기. <br> (=Callback Hell 해결하기)
+* `Async`를 사용하여 흐름제어를 하기. <br> (=Callback Hell 해결하기)
 
 {% capture images %}
 	/assets/img/posts/async_1.png
