@@ -31,7 +31,7 @@ tag:
 
 ### Step 2
 
-#### Edit Config File
+#### Access Config File
 
 {% highlight JavaScript %}
 
@@ -41,7 +41,7 @@ sudo vi /etc/ssh/sshd_config
 
 ### Step 3
 
-#### Access Config File
+#### Edit Config File
 
 {% capture images %}
 	/assets/img/posts/ec2_login_2.png
@@ -51,7 +51,7 @@ sudo vi /etc/ssh/sshd_config
 
 ### Step 4
 
-#### Edit Config File
+#### Change Password
 
 1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
 
@@ -76,11 +76,7 @@ passwd
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-보이는 것과 같이 현재 Login ID는 ubuntu이고
-
-"Changing password for ubuntu."라는 멘트가 뜬다.
-
-그리고 PW를 바꾸면 된다.
+* 보이는 것과 같이 현재 Login ID는 ubuntu이고 <br> "Changing password for ubuntu."라는 멘트가 뜬다. <br> 그리고 PW를 바꾸면 된다.
 
 
 
@@ -104,9 +100,9 @@ sudo service ssh restart
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-Step 4에서 바꾼 PW로 Login을 하면 된다.
+* Step 4에서 바꾼 PW로 Login을 하면 된다.
 
-입력시 주의할 점은 ___@에서 @ 앞부분은 user_ID를 입력하면 된다.
+* 입력시 주의할 점은 ___@에서 @ 앞부분은 user_ID를 입력하면 된다.
 
 
 
