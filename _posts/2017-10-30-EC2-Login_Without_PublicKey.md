@@ -45,9 +45,10 @@ sudo vi /etc/ssh/sshd_config
 |=====
 
 
-| 대표 문자  |  * or %   |  ? or _  | 
+| Option  |  Before   |  After  | 
 |:-------:|:-------:|:-------:|
-| 의미   | ALL 문자 | 문자 1개  | 
+| PermitRootLogin   | Prohibit | yes | 
+| PermitRootLogin   | Prohibit | yes | 
 |=====
 
 
@@ -68,7 +69,7 @@ passwd user_ID
 
 {% highlight JavaScript %}
 
-passwd user_ID
+passwd
 
 {% endhighlight %}
 
@@ -93,4 +94,7 @@ passwd user_ID
 sudo service ssh restart
 
 {% endhighlight %}
+
+
+### 6.
 
