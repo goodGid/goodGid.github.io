@@ -50,7 +50,7 @@ sudo vi /etc/ssh/sshd_config
 | Option  |  Before   |  After  | 
 |:-------:|:-------:|:-------:|
 | PermitRootLogin   | Prohibit | yes | 
-| 의미     | 같다 | 같지 않다  |
+| PasswordAuthentication | no | yes  | 
 |=====
 
 ---
