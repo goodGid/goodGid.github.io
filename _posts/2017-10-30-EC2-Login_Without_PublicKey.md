@@ -37,21 +37,15 @@ sudo vi /etc/ssh/sshd_config
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-
-| Option |  Before   |  After  |
-|:-------:|:-------:|:-------:|
-| PermitRootLogin   | Prohibit | yes |
-| PasswordAuthentication   | no | yes  |
-|=====
-
+---
 
 | Option  |  Before   |  After  | 
 |:-------:|:-------:|:-------:|
 | PermitRootLogin   | Prohibit | yes | 
-| PermitRootLogin   | Prohibit | yes | 
+| PasswordAuthentication   | no | yes  | 
 |=====
 
-
+---
 
 ### 4.
 
