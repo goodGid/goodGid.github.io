@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " EC2 Login without Public Key "
-date:   2017-10-29
-excerpt: " Login Using Password "
+date:   2017-10-30
+excerpt: " Login Using Password Option"
 cate : "post"
 tag:
 - EC2
@@ -16,9 +16,11 @@ tag:
 
 ## How to Login Using Password
 
+* Environment : Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1022-aws x86_64)
+
 1. 우선 Public Key를 이용하여 EC2 Server에 접속한다. 
 
-2. sudo vi /etc/ssh/sshd_config
+2. 
 
 {% highlight JavaScript %}
 
@@ -30,13 +32,12 @@ sudo vi /etc/ssh/sshd_config
 
 {% capture images %}
 	/assets/img/posts/ec2_login_1.png
-	/assets/img/posts/ec2_login_2.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+{% include gallery images=images caption=" " cols=1 %}
 
 
 | Option |  Before   |  After  |
-|:-------:|:-------:|:-------:| :-------:|
+|:-------:|:-------:|:-------:|
 | PermitRootLogin   | Prohibit | yes |
 | PasswordAuthentication   | no | yes  |
 |=====
