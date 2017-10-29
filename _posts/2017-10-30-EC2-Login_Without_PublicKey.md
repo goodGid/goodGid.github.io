@@ -20,6 +20,12 @@ tag:
 
 ### Step 1
 
+
+{% capture images %}
+	/assets/img/posts/ec2_login_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
 우선 Public Key를 이용하여 EC2 Server에 접속한다. 
 
 ### Step 2
