@@ -33,18 +33,11 @@ sudo vi /etc/ssh/sshd_config
 ### Step 3
 
 {% capture images %}
-	/assets/img/posts/ec2_login_1.png
+	/assets/img/posts/ec2_login_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
----
 
-|         Option         |  Before  | After |
-|:----------------------:|:--------:|:-----:|
-|     PermitRootLogin    | Prohibit |  Yes  |
-| Password<br>Authentication |    No    |  Yes  |
-
----
 ### Step 4
 
 1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
@@ -66,7 +59,7 @@ passwd
 {% endhighlight %}
 
 {% capture images %}
-	/assets/img/posts/ec2_login_2.png
+	/assets/img/posts/ec2_login_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -90,7 +83,7 @@ sudo service ssh restart
 
 
 {% capture images %}
-	/assets/img/posts/ec2_login_3.png
+	/assets/img/posts/ec2_login_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
