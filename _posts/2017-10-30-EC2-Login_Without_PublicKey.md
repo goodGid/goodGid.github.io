@@ -49,7 +49,7 @@ sudo vi /etc/ssh/sshd_config
 
 | Option  |  Before   |  After  | 
 |:-------:|:-------:|:-------:|
-| 의미     | 같다 | 같지 않다  |
+| PermitRootLogin   | Prohibit | yes | 
 | 의미     | 같다 | 같지 않다  |
 |=====
 
