@@ -18,11 +18,11 @@ tag:
 
 * Environment : Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1022-aws x86_64)
 
-### 1.
+### Step 1
 
 우선 Public Key를 이용하여 EC2 Server에 접속한다. 
 
-### 2.
+### Step 2
 
 {% highlight JavaScript %}
 
@@ -30,7 +30,7 @@ sudo vi /etc/ssh/sshd_config
 
 {% endhighlight %}
 
-### 3.
+### Step 3
 
 {% capture images %}
 	/assets/img/posts/ec2_login_1.png
@@ -45,7 +45,7 @@ sudo vi /etc/ssh/sshd_config
 | PasswordAuthentication |    No    |  Yes  |
 
 ---
-### 4.
+### Step 4
 
 1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
 
@@ -78,7 +78,7 @@ passwd
 
 
 
-### 5.
+### Step 5
 {% highlight JavaScript %}
 
 sudo service ssh restart
@@ -86,13 +86,15 @@ sudo service ssh restart
 {% endhighlight %}
 
 
-### 6.
+### Step 6
 
 
 {% capture images %}
 	/assets/img/posts/ec2_login_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+Step 4에서 바꾼 PW로 Login을 하면 된다.
 
 
 
