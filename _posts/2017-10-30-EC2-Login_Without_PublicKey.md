@@ -45,9 +45,9 @@ sudo vi /etc/ssh/sshd_config
 |=====
 
 
-| 대표 문자  |  * or %   |  ? or _    | #  |
-|:-------:|:-------:|:-------:| :-------:|
-| 의미   | ALL 문자 | 문자 1개  | 숫자 1개 |
+| 대표 문자  |  * or %   |  ? or _  | 
+|:-------:|:-------:|:-------:|
+| 의미   | ALL 문자 | 문자 1개  | 
 |=====
 
 
@@ -79,7 +79,7 @@ passwd user_ID
 
 보이는 것과 같이 현재 Login ID는 ubuntu이고
 
-"Changing password for ubuntu."과 같이 for 뒤에 현재 ID가 뜬다.
+"Changing password for ubuntu."라는 멘트가 뜬다.
 
 그리고 PW를 바꾸면 된다.
 
