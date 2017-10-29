@@ -44,6 +44,38 @@ sudo vi /etc/ssh/sshd_config
 
 4.
 
+1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
+
+{% highlight JavaScript %}
+
+passwd 바꿀ID
+
+{% endhighlight %}
+
+2) 현재 Login ID의 PW를 바꾸는 경우
+
+{% highlight JavaScript %}
+
+passwd 바꿀ID
+
+{% endhighlight %}
+
+{% capture images %}
+	/assets/img/posts/ec2_login_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+보이는 것과 같이 현재 Login ID는 ubuntu이고
+
+"Changing password for ubuntu."과 같이 for 뒤에 현재 ID가 뜬다.
+
+그리고 PW를 바꾸면 된다.
+
+
+
+
+
+5.
 {% highlight JavaScript %}
 
 sudo service ssh restart
