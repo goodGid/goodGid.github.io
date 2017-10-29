@@ -96,5 +96,7 @@ sudo service ssh restart
 
 Step 4에서 바꾼 PW로 Login을 하면 된다.
 
+입력시 주의할 점은 ___@에서 @ 앞부분은 user_ID를 입력하면 된다.
+
 
 
