@@ -72,7 +72,7 @@ passwd
 {% endhighlight %}
 
 {% capture images %}
-	/assets/img/posts/ec2_login_3.png
+/assets/img/posts/ec2_login_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
