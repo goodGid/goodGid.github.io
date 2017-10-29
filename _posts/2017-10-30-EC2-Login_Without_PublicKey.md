@@ -39,11 +39,10 @@ sudo vi /etc/ssh/sshd_config
 
 ---
 
-| Option  |  Before   |  After  | 
-|:-------:|:-------:|:-------:|
-|    PermitRootLogin |  Prohibit          |  yes               | 
-| PasswordAuthentication | no                        | yes                       | 
-|=====
+|         Option         |  Before  | After |
+|:----------------------:|:--------:|:-----:|
+|     PermitRootLogin    | Prohibit |  Yes  |
+| PasswordAuthentication |    No    |  Yes  |
 
 ---
 ### 4.
