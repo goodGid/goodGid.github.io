@@ -42,7 +42,7 @@ sudo vi /etc/ssh/sshd_config
 |         Option         |  Before  | After |
 |:----------------------:|:--------:|:-----:|
 |     PermitRootLogin    | Prohibit |  Yes  |
-| PasswordAuthentication |    No    |  Yes  |
+| Password<br>Authentication |    No    |  Yes  |
 
 ---
 ### Step 4
