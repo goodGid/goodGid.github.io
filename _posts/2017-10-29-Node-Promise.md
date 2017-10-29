@@ -123,4 +123,4 @@ http.createServer(function(req, res) {
 
 ## File
 
-[Promise.js](https://github.com/goodGid/Node.js/blob/master/promise.js)
+[Promise.js](https://github.com/goodGid/Node.js/blob/master/Source/promise.js)

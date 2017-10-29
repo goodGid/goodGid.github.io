@@ -61,9 +61,19 @@ crypto.randomBytes(32, function(err, buffer){
     1. 단순 해싱으로 비밀번호 해싱
     2. salting, key stratching을 적용한 해싱
 
+---
+
+
 ## Output
 
 {% capture images %}
     /assets/img/posts/crypto_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+## File
+
+[Crypto.js](https://github.com/goodGid/Node.js/blob/master/Source/crypto.js)

@@ -39,3 +39,7 @@ console.log(queryParsed);
     /assets/img/posts/url&querystring_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+## File
+
+[Url&Qeurystring.js](https://github.com/goodGid/Node.js/blob/master/Source/url_and_querystring.js)
