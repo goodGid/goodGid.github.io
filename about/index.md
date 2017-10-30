@@ -28,9 +28,9 @@ comments: false
 
 * 07. 28 ~ 07. 30	Unithon	iOS	
 
-* 06. 24 ~ 07. 08	App Jam	Pickture iOS 우수상 수상	
+* 06 . 24 ~ 07. 08	App Jam	Pickture iOS 우수상 수상	
 
-* 06. 11 ~ 06. 22	Hawaii	Travling	
+* [06. 11 ~ 06. 22]	Hawaii	Travling	
 
 * 05. 21 ~ 05. 24	World Friends ICT 	"사전 교육 ( 기본 소양 + 프로젝트 관리 )"	
 
@@ -46,7 +46,7 @@ comments: false
 
 ### 2016
 
->> ● 12. 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
+#### ● 12. 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
 
 > ● 12. 24 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
 
