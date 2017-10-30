@@ -7,7 +7,7 @@ comments: false
     
 ## Kiyong Shin
 
-* Nick Name : Gid
+* Nick Name : Gid <br> = Ki + In English, 'yong' is dragon
 
 * Age : 92. 08. 16
 
@@ -46,11 +46,11 @@ comments: false
 
 ### 2016
 
-* 1201 ~  17. 06. 01 Lab 	C# - WPF Develop	
+∙ 12. 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
 
-* 1224 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
+∙ 12. 24 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
 
-* 1216 ~ 17. 0228 Clinic Develop Android + Web ( Jquery + Node.js ) 		
+∙ 12. 16 ~ 17. 0228 Clinic Develop Android + Web ( Jquery + Node.js ) 		
 
 ---
 
