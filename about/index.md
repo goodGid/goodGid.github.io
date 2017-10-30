@@ -9,7 +9,7 @@ comments: false
 
 * Nick Name : Gid
 
-* Age : 92. 08. 16 = 26살
+* Age : 92. 08. 16
 
 * Univ : Catholic Univ
 
@@ -46,11 +46,11 @@ comments: false
 
 ### 2016
 
-* 12 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
+    * 12. 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
 
-* 12. 24 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
+* 12.24 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
 
-* 12. 16 ~ 17. 02. 28 Clinic Develop Android + Web ( Jquery + Node.js ) 		
+* 12.16 ~ 17. 02. 28 Clinic Develop Android + Web ( Jquery + Node.js ) 		
 
 ---
 
