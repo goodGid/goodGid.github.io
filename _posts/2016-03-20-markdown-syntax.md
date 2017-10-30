@@ -139,7 +139,7 @@ Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for mo
 
 {% gist mmistakes/6589546 %}
 
-
+[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/SU3kYxJmWuQ" frameborder="0"> </iframe>
 

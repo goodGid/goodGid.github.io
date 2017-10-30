@@ -1,37 +1,64 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About 
+date: 2017-11-01
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+## Kiyong Shin
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+* Nick Name : Gid
 
-## Preview
+* Age : 92. 08. 16 = 26살
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+* Univ : Catholic Univ
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+* Major : Computer Science Information Engineering 
 
-## Getting Started
+* Phone Number : 010 - 6286 - 8971
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+
+--- 
+
+## Trace
+
+### 2017
+
+* 08. 01 ~ 08. 30	World Friends ICT 	"www.youngheartsboardingschool.com 카트만두 / 포카라 여행"	Node.js - EJS
+
+* 07. 28 ~ 07. 30	Unithon	iOS	
+
+* 06. 24 ~ 07. 08	App Jam	Pickture iOS 우수상 수상	
+
+* 06. 11 ~ 06. 22	Hawaii	Travling	
+
+* 05. 21 ~ 05. 24	World Friends ICT 	"사전 교육 ( 기본 소양 + 프로젝트 관리 )"	
+
+* 03. 01 ~ 06. 01	Web Study	Angular 2 + Git + Java Script	
+
+* 03. 01 ~ 06. 01	S.O.P.T 운영팀		
+
+* 03. 01 ~ 06. 01	S.O.S   논리회로 / 자료구조	
+
+* 04. 27 ~ 04. 28	Key PlatForm
+
+* 02. 04 연탄봉사 	까리타스봉사단	 연탄 2000장 운반
+
+### 2016
+
+* 12 01 ~  17. 06. 01 Lab 	C# - WPF Develop	
+
+* 12. 24 ~ 17. 01. 07 SOPT App Jam	iOS Develop 우수상 수상	
+
+* 12. 16 ~ 17. 02. 28 Clinic Develop Android + Web ( Jquery + Node.js ) 		
+
+---
+
+## Projects
+
+
+
+---
+
+
+## Certicate
