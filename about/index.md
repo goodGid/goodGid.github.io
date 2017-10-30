@@ -24,17 +24,17 @@ comments: false
 
 ### 2017
 
-* 08. 01 ~ 08. 30	World Friends ICT 	"www.youngheartsboardingschool.com 카트만두 / 포카라 여행"	Node.js - EJS
+* 　08. 01 ~ 08. 30	World Friends ICT 	"www.youngheartsboardingschool.com 카트만두 / 포카라 여행"	Node.js - EJS
 
-* 07. 28 ~ 07. 30	Unithon	iOS	
+* 　07. 28 ~ 07. 30	Unithon	iOS	
 
-* 06 . 24 ~ 07. 08	App Jam	Pickture iOS 우수상 수상	
+* 　06. 24 ~ 07. 08	App Jam	Pickture iOS 우수상 수상	
 
-* [06. 11 ~ 06. 22]	Hawaii	Travling	
+* 　06. 11 ~ 06. 22	Hawaii	Travling	
 
-* 05. 21 ~ 05. 24	World Friends ICT 	"사전 교육 ( 기본 소양 + 프로젝트 관리 )"	
+* 　05. 21 ~ 05. 24	World Friends ICT 	"사전 교육 ( 기본 소양 + 프로젝트 관리 )"	
 
-* 03. 01 ~ 06. 01	Web Study	Angular 2 + Git + Java Script	
+* 　0 03. 01 ~ 06. 01	Web Study	Angular 2 + Git + Java Script	
 
 * 03. 01 ~ 06. 01	S.O.P.T 운영팀		
 
