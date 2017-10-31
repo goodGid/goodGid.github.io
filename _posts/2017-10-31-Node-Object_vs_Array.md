@@ -2,7 +2,7 @@
 layout: post
 title:  " Node :: Object vs Array "
 date:   2017-10-31
-excerpt: " Objectvs Array in Javascript "
+excerpt: " Object vs Array in Javascript "
 cate : "post"
 tag:
 - Node.js
@@ -63,5 +63,3 @@ res.status(200).send({
 ## Review
 
 * `.push`를 사용하려면 `[]`로 선언해라. 
-
-* 
