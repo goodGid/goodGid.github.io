@@ -69,12 +69,12 @@ Disallow: /private/
 
 * 다양하게 조합하여 사용할 수 있다.
 
-User-agent: googlebot        # googlebot 로봇만 적용 <br>
-Disallow: /private/          # 이 디렉토리를 접근 차단한다. <br>
+User-agent: googlebot　　　　　　　　# googlebot 로봇만 적용 <br>
+Disallow: /private/　　　　　　　　# 이 디렉토리를 접근 차단한다. <br>
 <br>
-User-agent: googlebot-news   # googlebot-news 로봇만 적용 <br>
-Disallow: /                  # 모든 디렉토리를 접근 차단한다. <br>
+User-agent: googlebot-news　　　# googlebot-news 로봇만 적용 <br>
+Disallow: /　　　　　　　　　　　　　　　　　　# 모든 디렉토리를 접근 차단한다. <br>
 <br>
-User-agent: *                # 모든 로봇 적용 <br>
-Disallow: /something/        # 이 디렉토리를 접근 차단한다.
+User-agent: *　　　　　　　　　　　　　　　　# 모든 로봇 적용 <br>
+Disallow: /something/　　　　　　　　# 이 디렉토리를 접근 차단한다.
 {: .notice}
