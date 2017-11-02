@@ -16,13 +16,6 @@ tag:
 
 * robots.txt 파일은 항상 사이트의 루트 디렉토리에 위치해야 한다.
 
-
-
-{% capture images %}
-	/assets/img/posts/ec2_error_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
 ## Example
 
 * 만약 모든 로봇에게 문서 접근을 허락하려면, `robots.txt`에 다음과 같이 입력하면 된다.
