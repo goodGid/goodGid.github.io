@@ -25,7 +25,7 @@ tag:
 
 ## Example
 
-* 만약 모든 로봇에게 문서 접근을 허락하려면, robots.txt에 다음과 같이 입력하면 된다.
+만약 모든 로봇에게 문서 접근을 허락하려면, robots.txt에 다음과 같이 입력하면 된다.
 
 User-agent: * <br>
 Allow: /
