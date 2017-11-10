@@ -21,7 +21,7 @@ comments: false
 
 ### 2017
 
-* 　08. 01 ~ 08. 30	World Friends ICT 봉사단 <br>　　　"www.youngheartsboardingschool.com" 홈페이지 구축 <br> 　　　Node.js - EJS
+* 　08. 01 ~ 08. 30	World Friends ICT 봉사단 <br>　"www.youngheartsboardingschool.com" 홈페이지 구축 - Node.js - EJS
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
@@ -52,7 +52,7 @@ comments: false
 
 ### 2014 
 
-* 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 <br>　　　Web Monitoring System 개발 (Java Swing 사용)
+* 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 <br>　Web Monitoring System 개발 - Java Swing 사용
 
 ---
 
