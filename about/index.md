@@ -21,7 +21,7 @@ comments: false
 
 ### 2017
 
-* 　08. 01 ~ 08. 30	World Friends ICT <br> "www.youngheartsboardingschool.com 카트만두 / 포카라 여행"	Node.js - EJS
+* 　08. 01 ~ 08. 30	World Friends ICT 봉사단 <br>　　　"www.youngheartsboardingschool.com" 홈페이지 구축 <br> 　　　Node.js - EJS
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
@@ -52,15 +52,15 @@ comments: false
 
 ### 2014 
 
-* 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 <br> Web Monitoring System 개발 (Java Swing 사용)
+* 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 <br>　　　Web Monitoring System 개발 (Java Swing 사용)
 
 ---
-
-## Projects
-
-
-
----
-
 
 ## Certicate
+
+1. OCJP (Oracle Certified Java Programmer)
+2. 웹 디자인 자격증
+3. IoT 사물인터넷 자격증
+4. 한자 2급
+5. KBS 한국어 자격증
+
