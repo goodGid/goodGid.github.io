@@ -30,14 +30,14 @@ tag:
 * 간단히 말하면 IPv4와 IPv6를 위한 개념이다.
 
 {% capture images %}
-	/assets/img/posts/ec2_inbound_source_1.png
+	/assets/img/posts/ec2_inbound_source_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 [출처](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)
 
 {% capture images %}
-	/assets/img/posts/ec2_inbound_source_1.png
+	/assets/img/posts/ec2_inbound_source_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
