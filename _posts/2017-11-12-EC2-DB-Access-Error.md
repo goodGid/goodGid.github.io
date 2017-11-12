@@ -25,7 +25,7 @@ tag:
 
 #### Step 1. 
 
-Security Groups Click
+Click to `Security Groups`
 
 #### Step 2. 
 
