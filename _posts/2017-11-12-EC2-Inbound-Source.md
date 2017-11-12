@@ -41,3 +41,5 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+
+* 결국은 `any`를 나타내기위한 차이일 뿐이다. 
