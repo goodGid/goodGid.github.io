@@ -23,15 +23,19 @@ tag:
 
 * AWS 사이트에서 다음과 같이 설정을 해주니 해결이 되었다.
 
-1. Security Groups Click
+#### Step 1. 
 
-2. 
+Security Groups Click
+
+#### Step 2. 
+
 {% capture images %}
 	/assets/img/posts/ec2_rds_error_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-3. 
+#### Step 3. 
+
 {% capture images %}
 	/assets/img/posts/ec2_rds_error_3.png
 {% endcapture %}
