@@ -34,7 +34,10 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-[출처](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)
+[Comment 출처](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)
+
+---
+
 
 {% capture images %}
 	/assets/img/posts/ec2_inbound_source_3.png
