@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  " EC2 Error : Router.use() "
+title:  " Node.js Error : Router.use() "
 date:   2017-10-31
 excerpt: " TypeError: Router.use() requires middleware function but got a Object "
 cate : "post"
 tag:
-- EC2
+- node.js
 ---
 
 ## Problem
