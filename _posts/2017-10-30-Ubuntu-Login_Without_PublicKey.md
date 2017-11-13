@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " EC2 Login without Public Key "
+title:  " Ubuntu Login without Public Key "
 date:   2017-10-30
 excerpt: " Login Using Password Option"
 cate : "post"
