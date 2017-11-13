@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Node.js Error : Router.use() "
+title:  " Node :: Error about Router.use() "
 date:   2017-10-31
 excerpt: " TypeError: Router.use() requires middleware function but got a Object "
 cate : "post"
