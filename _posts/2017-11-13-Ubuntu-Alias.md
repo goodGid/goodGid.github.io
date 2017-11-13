@@ -8,41 +8,37 @@ tag:
 - Ubuntu
 ---
 
-## Concept
+## Problem
 
-* Security에서 Rule을 변경하는데 의문점이 들었다.
-
-{% capture images %}
-	/assets/img/posts/ec2_inbound_source_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
-
-```
-0.0.0.0/0 과
-::/0 은
-무슨 차이일까 ?
-무슨 뜻일까 ?
-```
+* Ubuntu에 접속하여 Node를 실행시키기 위해 경로를 이동하는게 귀찮았다.
 
 ## Solve
 
-* 간단히 말하면 IPv4와 IPv6를 위한 개념이다.
+#### Step 1. 
+
+* `alias`를 설정해주는 파일에 접근한다.
 
 {% capture images %}
-	/assets/img/posts/ec2_inbound_source_2.png
+	/assets/img/posts/ubuntu_alias_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-[Comment 출처](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)
-
----
-
+#### Step 2.
+ 
+* 원하는 별칭을 작성 후 `:wq`로 파일을 빠져나온다.
 
 {% capture images %}
-	/assets/img/posts/ec2_inbound_source_3.png
+	/assets/img/posts/ubuntu_alias_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+#### Step 3.
+
+* 변경된 alias를 적용시킨 후 alias List를 출력하여 확인한다.
+
+{% capture images %}
+	/assets/img/posts/ubuntu_alias_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 
-* 결국은 `any`를 나타내기위한 차이일 뿐이다. 
