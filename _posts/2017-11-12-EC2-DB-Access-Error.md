@@ -22,7 +22,7 @@ tag:
 * RDS에 접속 시 3306 포트를 안열어준 상태였다.
 
 * AWS 사이트에서 다음과 같이 설정을 해주니 해결이 되었다.
-
+ 
 #### Step 1. 
 
 Click to `Security Groups`
