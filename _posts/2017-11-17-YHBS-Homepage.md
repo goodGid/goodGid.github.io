@@ -5,7 +5,7 @@ date:   2017-11-17
 excerpt: " www.youngheartsboardingschool.com "
 cate : "post"
 tag:
-- Node.js
+
 ---
 ## Home Page
 
@@ -30,6 +30,10 @@ See [<b>[Home Page](www.youngheartsboardingschool.com)<b>]
 
 6. Using Node Module - Multer
 
+## Host
+
 ## Review
 
-* 너무나 좋은 기회였다.
+* 열악한 개발 환경이였지만 덕분에 더 기억에 남는 프로젝트 경험이 되었다.
+
+* 처음으로 상용화되는 Home Page를 만들었다는게, 게다가 해외 재능 기부식으로 만든 Home Page라는게 너무나 뿌듯하다.
