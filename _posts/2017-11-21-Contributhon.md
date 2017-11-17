@@ -17,14 +17,17 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-
+{% capture images %}
+	/assets/img/posts/contributhon_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
 ---
 
 ## Period
 
 {% capture images %}
-	/assets/img/posts/contributhon_2.png
+	/assets/img/posts/contributhon_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -35,7 +38,7 @@ tag:
 ## My Team
 
 {% capture images %}
-	/assets/img/posts/contributhon_3.png
+	/assets/img/posts/contributhon_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -46,24 +49,24 @@ tag:
 ## Opening
 
 {% capture images %}
-	/assets/img/posts/contributhon_4.png
-    /assets/img/posts/contributhon_5.png
+	/assets/img/posts/contributhon_5.png
+    /assets/img/posts/contributhon_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
-* 자세히 보면 내가 보인다 ^^
+* 자세히 보면 내가 보인다  : )
 
 ---
 
 ## Host
 
 {% capture images %}
-	/assets/img/posts/contributhon_6.png
+	/assets/img/posts/contributhon_7.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 {% capture images %}
-	/assets/img/posts/contributhon_7.png
+	/assets/img/posts/contributhon_8.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 ---
