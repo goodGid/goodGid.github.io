@@ -21,11 +21,11 @@ comments: false
 
 ### 2017
 
-* 　11. 21 [Contributhon Awards](www.naver.com)
+* 　11. 21 [Contributhon Awards](https://goodgid.github.io/Contributhon/)
 
 * 　11. 11 Git Seminar 진행
 
-* 　08. 01 ~ 08. 30	World Friends ICT 봉사단 <br>　"www.youngheartsboardingschool.com" 홈페이지 구축 - Node.js - EJS
+* 　08. 01 ~ 08. 30	[World Friends ICT 봉사단 <br>　"www.youngheartsboardingschool.com" 홈페이지 구축](https://goodgid.github.io/YHBS-Homepage/)
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
