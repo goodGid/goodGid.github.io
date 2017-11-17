@@ -25,7 +25,11 @@ comments: false
 
 * 　11. 11 Git Seminar 진행
 
-* 　08. 01 ~ 08. 30	[World Friends ICT 봉사단]() <br>　["www.youngheartsboardingschool.com" 홈페이지 구축](https://goodgid.github.io/YHBS-Homepage/)
+* 　10. 26 devlab Tizen을 활용하여 IoT 만들기
+
+* 　10. 25 devlab source tree로 배우는 Git + Github
+
+* 　08. 01 ~ 08. 30	[World Friends ICT 봉사단](https://goodgid.github.io/ICT-Volunteer/) <br>　["www.youngheartsboardingschool.com" 홈페이지 구축](https://goodgid.github.io/YHBS-Homepage/)
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
@@ -69,8 +73,22 @@ comments: false
 
 ## Travled
 
-* 　08. 01 ~ 08. 30	Nepal
+* 　2017. 08. 01 ~ 08. 30	Nepal
 
-* 　06. 11 ~ 06. 22	Hawaii
+* 　2017. 06. 11 ~ 06. 22	Hawaii
+
+* 　2016. 06. 11 ~ 06. 22	Eruope ( Spain, France, Switzerland, Italia)
+
+* 　2017. 06. 11 ~ 06. 22	Rusia
+
+* 　2014. 07. 06 ~ 07. 10 Thailand 
+
+* 　2014. 07. 03 ~ 07. 06 Pataya
+
+* 　2014. 06. 30 ~ 07. 03 Hong Kong & Makao
+
+* 　I was in chile : )　　China
+
+* 　I was in child : )　　North of Korea
 
 
