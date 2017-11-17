@@ -10,7 +10,7 @@ tag:
 
 ## What is Contributhon ?
 
-<center>[2017 Contributhon](https://contributhon.kr/)</center>
+<b>[2017 Contributhon](https://contributhon.kr/)<b>
 
 {% capture images %}
 	/assets/img/posts/contributhon_1.png
@@ -28,7 +28,7 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-* 2달이라는 Hackathon치고는 긴 기간이였다.
+* 2달이라는 `Hackathon`치고는 긴 기간이였다.
 
 ---
 
