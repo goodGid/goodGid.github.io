@@ -25,7 +25,7 @@ comments: false
 
 * 　11. 11 Git Seminar 진행
 
-* 　08. 01 ~ 08. 30	[World Friends ICT 봉사단 <br>　"www.youngheartsboardingschool.com" 홈페이지 구축](https://goodgid.github.io/YHBS-Homepage/)
+* 　08. 01 ~ 08. 30	World Friends ICT 봉사단 <br>　["www.youngheartsboardingschool.com" 홈페이지 구축](https://goodgid.github.io/YHBS-Homepage/)
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
