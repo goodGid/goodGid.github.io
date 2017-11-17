@@ -87,7 +87,7 @@ comments: false
 
 * 　2014. 06. 30 ~ 07. 03 Hong Kong & Makao
 
-* 　I was in chile : )　　China
+* 　I was in child : )　　China
 
 * 　I was in child : )　　North of Korea
 
