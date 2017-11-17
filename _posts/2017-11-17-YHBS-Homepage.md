@@ -9,7 +9,7 @@ tag:
 ---
 ## Home Page
 
-See [[Home Page](www.youngheartsboardingschool.com)]
+See [<b>[Home Page](www.youngheartsboardingschool.com)<b>]
 
 
 * Node의 기본 View Engine인 `EJS`로 개발을 하였다.
@@ -22,7 +22,7 @@ See [[Home Page](www.youngheartsboardingschool.com)]
     - Port번호 없이 URL만 입력시 자동적으로 3000포트로 Redirect를 시킴.
 
 3. Buy a Domain 
-    - [GoDaddy](https://kr.godaddy.com/offers/domains?isc=gofhlkr01&countryview=1&currencytype=krw&mkwid=ssrgUfHzc_pcrid_223839091399_pkw_%C3%AA%C2%B3%C2%A0%C3%AB%C2%8C%C2%80%C3%AB%C2%94%C2%94_pmt_e_pdv_c_&gclid=CjwKCAiArrrQBRBbEiwAH_6sNNKHitS-JrHxRN3OOpS-rJy_B8JLy5TRwuJD3l9bDQMfRD7CPIB2ShoCnJ0QAvD_BwE)라는 사이트에서 Domain 구입
+    - [GoDaddy](https://godaddy.com/offers/domains?isc=gofhlkr01&countryview=1&currencytype=krw&mkwid=ssrgUfHzc_pcrid_223839091399_pkw_%C3%AA%C2%B3%C2%A0%C3%AB%C2%8C%C2%80%C3%AB%C2%94%C2%94_pmt_e_pdv_c_&gclid=CjwKCAiArrrQBRBbEiwAH_6sNNKHitS-JrHxRN3OOpS-rJy_B8JLy5TRwuJD3l9bDQMfRD7CPIB2ShoCnJ0QAvD_BwE)Domain Site에서 Domain 구입
 
 4. Board Paging
 
