@@ -10,12 +10,14 @@ tag:
 
 ## What is Contributhon ?
 
+<center>[2017 Contributhon](https://contributhon.kr/)</center>
+
 {% capture images %}
 	/assets/img/posts/contributhon_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-[2017 Contributhon](https://contributhon.kr/)
+
 
 ---
 
@@ -26,6 +28,7 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+* 2달이라는 Hackathon치고는 긴 기간이였다.
 
 ---
 
@@ -52,15 +55,17 @@ tag:
 
 ---
 
-## Awards Ceremony
+## Host
 
 {% capture images %}
 	/assets/img/posts/contributhon_6.png
-    /assets/img/posts/contributhon_7.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+{% include gallery images=images caption=" " cols=1 %}
 
-
+{% capture images %}
+	/assets/img/posts/contributhon_7.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 ---
 
 
