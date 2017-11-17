@@ -31,7 +31,7 @@ tag:
 ## Host
 
 {% capture images %}
-	/assets/img/posts/ict_volunteer_2.png
+	/assets/img/posts/ict_volunteer_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
