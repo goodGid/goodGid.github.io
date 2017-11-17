@@ -77,9 +77,9 @@ comments: false
 
 * 　2017. 06. 11 ~ 06. 22	Hawaii
 
-* 　2016. 06. 11 ~ 06. 22	Eruope ( Spain, France, Switzerland, Italia)
+* 　2016. 06. 27 ~ 07. 30	Eruope ( Spain, France, Switzerland, Italia)
 
-* 　2017. 06. 11 ~ 06. 22	Rusia
+* 　2017. 06. 25 ~ 06. 26	Rusia
 
 * 　2014. 07. 06 ~ 07. 10 Thailand 
 
