@@ -66,13 +66,10 @@ tag:
 
 {% capture images %}
 	/assets/img/posts/contributhon_7.png
+    /assets/img/posts/contributhon_8.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+{% include gallery images=images caption=" " cols=2 %}
 
-{% capture images %}
-	/assets/img/posts/contributhon_8.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
 ---
 
 
