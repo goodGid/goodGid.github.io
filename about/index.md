@@ -62,11 +62,12 @@ comments: false
 
 ## Certicate
 
-1. OCJP (Oracle Certified Java Programmer)
-2. 웹 디자인 자격증
-3. IoT 사물인터넷 자격증
-4. 한자 2급
-5. KBS 한국어 자격증
+1. OCJP (Oracle Certified Java Programmer) (14. 01. 24)
+2. 웹 디자인 자격증 (14. 04. 18)
+3. IoT 사물인터넷 자격증 (13. 10. 11)
+4. 한자 2급 (15. 07 .14)
+5. KBS 한국어 자격증 (15. 09 .12)
+6. 정보처리산업기사 (14. 05. 24)
 
 
 ---
