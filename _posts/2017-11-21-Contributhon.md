@@ -87,10 +87,9 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
-* 운이 좋게도 수상을 하였다. 너무나 좋았다.
+운이 좋게도 수상을 하였다. 너무나 좋았다.
 
 그리고 
-.
 
 .
 
@@ -110,7 +109,26 @@ tag:
 
 .
 
-심지어 경품권 추첨에도 당첨이 되었다 : )
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+
+경품권 추첨에도 당첨이 되었다 : )
 
 {% capture images %}
 	/assets/img/posts/contributhon_14.png
