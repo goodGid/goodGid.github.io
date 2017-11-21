@@ -60,8 +60,64 @@ tag:
 
 * 자세히 보면 내가 보인다  : )
 
----
+--- 
 
+## Awards 
+
+* 우선은 맛있는(+Expensive) 밥을 먹고 ㅎㅎ
+
+{% capture images %}
+	/assets/img/posts/contributhon_9.png
+    /assets/img/posts/contributhon_10.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+* 시상식 발표 세미나실 앞에 있는 우리 팀의 사진들 !
+
+{% capture images %}
+	/assets/img/posts/contributhon_11.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+* 그리고 대망의 시상식 !!!
+
+{% capture images %}
+	/assets/img/posts/contributhon_12.png
+    /assets/img/posts/contributhon_13.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+* 운이 좋게도 수상을 하였다. 너무나 좋았다.
+
+그리고 
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+심지어 경품권 추첨에도 당첨이 되었다 : )
+
+{% capture images %}
+	/assets/img/posts/contributhon_14.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+---
 ## Host
 
 {% capture images %}
@@ -79,3 +135,4 @@ tag:
 
 1. `Arduino`에 대한 전반적인 지식을 배웠다.
 2. GitHub에 있는 `Pull Request`와 `Issue`라는 중요한 개념을 알게 되었다.
+3. 무엇보다 상을 받아서 너무나 행복하다 : )
