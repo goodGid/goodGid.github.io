@@ -28,7 +28,7 @@ Upload의 Method
 
 ## Example 
 
-1. upload.single
+#### upload.single
 
 upload의 single이란 method를 사용하기 때문에
 
@@ -87,17 +87,15 @@ router.post('/single', upload.single('image'), function(req, res){
 --- 
 
 
-2. upload.array
+#### upload.array
 
 upload.array('Key Value', Count) 형태로
 
-Upload시 사용될 Key값과 몇 개의 Image를 Upload를 할 지 명시해준다.
+Upload시 사용 될 Key값과 Image의 Count를 명시해준다.
 
 그리고 주의할 점은
 
-single은 req.file 
-
-array는 req.files
+single은 req.file  / array는 req.files 처럼 사용해야 한다.
 
 그래서 req.files[0].location / req.files[1].location 이런식으로 참조를 하면 된다.
 
