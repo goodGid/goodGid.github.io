@@ -29,19 +29,18 @@ tag:
 {% include gallery images=images caption=" " cols=1 %}
 
 
-
 >> `application/x-www-form-urlencoded`이란 ?
 
 1. Post로 데이터를 보낼 때 표준 MIME type이다.
 2. Key - Value 형태로 인코딩 된다.
 3. `application/x-www-form-urlencoded`을 사용한다면 Body를 인코딩해야 한다.
 4. Request 처리하는 서버에서는 Request body를 읽어 Map 형태로 변환
-	--> 그래서 
 
+---
 
 ## Solve
 
-* Click되어 있는 Content Type값을 Unclick하면 된다. !
+* Click되어 있는 Content Type값을 Unclick하면 된다 !
 
 {% capture images %}
 	/assets/img/posts/multer_3.png
