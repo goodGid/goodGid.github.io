@@ -21,7 +21,7 @@ tag:
 
 ## Cause
 
-* 전송할 때 Header에서 형식이 `Content Type`을 `application/x-www-form-urlencoded`으로 보내게 되기 때문이다.
+* 전송할 때 Header에서 형식이 [`Content Type`](https://goodgid.github.io/ContentType/)을 `application/x-www-form-urlencoded`으로 보내게 되기 때문이다.
 
 {% capture images %}
 	/assets/img/posts/multer_2.png
