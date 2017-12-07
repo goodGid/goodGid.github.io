@@ -41,7 +41,7 @@ comments: false
 
 * 　03. 01 ~ 06. 01	S.O.S   논리회로 / 자료구조	
 
-* 　04. 27 ~ 04. 28	[Key PlatForm](http://www.keyplatform.or.kr/)
+* 　04. 27 ~ 04. 28	[Key PlatForm](https://goodgid.github.io/KeyPlatform/)
 
 * 　02. 04 연탄봉사 	까리타스봉사단	 연탄 2000장 운반
 
