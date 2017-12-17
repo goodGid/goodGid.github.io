@@ -21,6 +21,8 @@ comments: false
 
 ### 2017
 
+* 　12. 14 ~ 12. 15 [해커톤 멘토링]
+
 * 　11. 21 [Contributhon Awards](https://goodgid.github.io/Contributhon/)
 
 * 　11. 11 Git Seminar 진행
@@ -62,8 +64,13 @@ comments: false
 
 ## Prize
 
-* 　11. 21 [Contributhon](https://goodgid.github.io/Contributhon/) - 장려상
+* 　17. 12. 05 [World Friends ICT 봉사단](https://goodgid.github.io/ICT-Volunteer/) - 우수 프로젝트상
 
+* 　17. 11. 21 [Contributhon](https://goodgid.github.io/Contributhon/) - 장려상
+
+* 　17. 07. 08 App Jam iOS Develop 우수상 수상
+
+* 　17. 01. 07 App Jam iOS Develop 우수상 수상
 
 
 
