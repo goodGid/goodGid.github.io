@@ -88,4 +88,4 @@ two(); // Hello를 출력
 
 ## Resources 
 
-* Node.js와 몽고DB로 웹 개발 시작하기 p71
+* Node.js와 몽고DB로 웹 개발 시작하기 (p71)
