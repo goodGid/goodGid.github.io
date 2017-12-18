@@ -2,8 +2,8 @@
 layout: post
 title:  " Node :: Event Driven "
 date:   2017-12-18
-excerpt: " JWT "
-cate : "Event Drivens"
+excerpt: " Event Drivens "
+cate : "post"
 tag:
 - Node.js
 ---

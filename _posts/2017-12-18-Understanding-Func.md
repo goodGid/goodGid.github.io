@@ -2,8 +2,8 @@
 layout: post
 title:  " Node :: Understanding Functions "
 date:   2017-12-18
-excerpt: " JWT "
-cate : "Understanding Functions"
+excerpt: " Understanding Functions "
+cate : "post"
 tag:
 - Node.js
 ---
