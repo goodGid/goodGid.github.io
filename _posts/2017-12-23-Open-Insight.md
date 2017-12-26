@@ -15,14 +15,14 @@ tag:
 
 
 {% capture images %}
-	/assets/img/posts/open_insight_1.png
+	/assets/img/conference/open_insight_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 
 
 {% capture images %}
-	/assets/img/posts/open_insight_2.png
+	/assets/img/conference/open_insight_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -31,10 +31,10 @@ tag:
 ## Scene Photo
 
 {% capture images %}
-	/assets/img/posts/open_insight_3.png
-	/assets/img/posts/open_insight_4.png
-	/assets/img/posts/open_insight_5.png
-	/assets/img/posts/open_insight_6.png
+	/assets/img/conference/open_insight_3.png
+	/assets/img/conference/open_insight_4.png
+	/assets/img/conference/open_insight_5.png
+	/assets/img/conference/open_insight_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=4 %}
 
@@ -59,7 +59,7 @@ tag:
 ## Host
 
 {% capture images %}
-	/assets/img/posts/open_insight_7.png
+	/assets/img/conference/open_insight_7.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 ---
