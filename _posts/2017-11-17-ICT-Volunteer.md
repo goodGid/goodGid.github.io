@@ -4,11 +4,11 @@ title:  " ICT Volunteer "
 date:   2017-11-17
 excerpt: " ICT Volunteer  "
 cate : "post"
-tag:
+tag: Volunteer
 
 ---
 
-## [World Friends ICT Volunteer](https://kiv.nia.or.kr/front/main/main.do)란 ?
+## [World Friends ICT Volunteer](https://kiv.nia.or.kr/front/main/main.do)
 
 {% capture images %}
 	/assets/img/posts/ict_volunteer_1.png

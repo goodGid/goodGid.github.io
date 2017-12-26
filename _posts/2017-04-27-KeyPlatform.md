@@ -15,7 +15,7 @@ tag:
 
 
 {% capture images %}
-	/assets/img/posts/keyplatform_1.png
+	/assets/img/conference/keyplatform_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -23,7 +23,7 @@ tag:
 * 가장 놀랬던건 바로 참가비 ...  <br> 물론 나는 Free로 갔다왔다 ^^;;
 
 {% capture images %}
-	/assets/img/posts/keyplatform_2.png
+	/assets/img/conference/keyplatform_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -32,7 +32,7 @@ tag:
 ## Host
 
 {% capture images %}
-	/assets/img/posts/keyplatform_3.png
+	/assets/img/conference/keyplatform_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

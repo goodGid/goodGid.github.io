@@ -15,14 +15,14 @@ tag:
 
 
 {% capture images %}
-	/assets/img/posts/contributhon_1.png
+	/assets/img/conference/contributhon_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 
 
 {% capture images %}
-	/assets/img/posts/contributhon_2.png
+	/assets/img/conference/contributhon_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -31,7 +31,7 @@ tag:
 ## Period
 
 {% capture images %}
-	/assets/img/posts/contributhon_3.png
+	/assets/img/conference/contributhon_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -42,7 +42,7 @@ tag:
 ## My Team
 
 {% capture images %}
-	/assets/img/posts/contributhon_4.png
+	/assets/img/conference/contributhon_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -53,8 +53,8 @@ tag:
 ## Opening
 
 {% capture images %}
-	/assets/img/posts/contributhon_5.png
-    /assets/img/posts/contributhon_6.png
+	/assets/img/conference/contributhon_5.png
+    /assets/img/conference/contributhon_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
@@ -67,23 +67,23 @@ tag:
 * 우선은 맛있는(+Expensive) 밥을 먹고 ㅎㅎ
 
 {% capture images %}
-	/assets/img/posts/contributhon_9.png
-    /assets/img/posts/contributhon_10.png
+	/assets/img/conference/contributhon_9.png
+    /assets/img/conference/contributhon_10.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
 * 시상식 발표 세미나실 앞에 있는 우리 팀의 사진들 !
 
 {% capture images %}
-	/assets/img/posts/contributhon_11.png
+	/assets/img/conference/contributhon_11.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
 * 그리고 대망의 시상식 !!!
 
 {% capture images %}
-	/assets/img/posts/contributhon_12.png
-    /assets/img/posts/contributhon_13.png
+	/assets/img/conference/contributhon_12.png
+    /assets/img/conference/contributhon_13.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
@@ -131,7 +131,7 @@ tag:
 경품권 추첨에도 당첨이 되었다 : )
 
 {% capture images %}
-	/assets/img/posts/contributhon_14.png
+	/assets/img/conference/contributhon_14.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -139,8 +139,8 @@ tag:
 ## Host
 
 {% capture images %}
-	/assets/img/posts/contributhon_7.png
-    /assets/img/posts/contributhon_8.png
+	/assets/img/conference/contributhon_7.png
+    /assets/img/conference/contributhon_8.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
