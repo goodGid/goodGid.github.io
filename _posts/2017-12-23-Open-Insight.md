@@ -33,11 +33,14 @@ tag:
 {% capture images %}
 	/assets/img/conference/open_insight_3.png
 	/assets/img/conference/open_insight_4.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+{% capture images %}
 	/assets/img/conference/open_insight_5.png
 	/assets/img/conference/open_insight_6.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
-
+{% include gallery images=images caption=" " cols=2 %}
 
 ---
 ## Developer in a Startup
