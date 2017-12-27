@@ -113,6 +113,6 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-* 마지막은 단체사진이지 b
+* 마지막은 단체사진이지 
 
 
