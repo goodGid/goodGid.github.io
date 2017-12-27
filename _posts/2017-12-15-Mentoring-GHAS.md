@@ -16,6 +16,15 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
+
+{% capture images %}
+	/assets/img/conference/ghas_16.png
+	/assets/img/conference/ghas_17.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+
+
 * [경기 자동차 과학 고등학교](http://www.ghas.hs.kr/) 아이들 1박2일 해커톤 멘토링을 갔다 왔다.
 
 {% capture images %}
