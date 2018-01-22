@@ -19,6 +19,12 @@ comments: false
 
 ## Trace
 
+### 2018
+
+* 　01. 17 SK T아카데미 Docker Seminar
+
+* 　01. 01 ~ 01. 13	App Jam Server Part
+
 ### 2017
 
 * 　12. 14 ~ 12. 15 [해커톤 멘토링]
