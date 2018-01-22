@@ -29,26 +29,39 @@ x를 2부터 x의 제곱근까지의 숫자로 나누어 떨어지는지 검사�
 #include<cmath>
 using namespace std;
 
-int main(){
-    int a,j;
-    
-    cin >> a;
-    j = 2;
-    
+bool eratos(int num){
+    if( num < 2) return false;
+    int j=2;
     while (1) {
-        if ( j <= sqrt(a)){
-            if ( a % j == 0){
-                cout << "Not Prime Number " << endl;
-                break;
+        if ( j <= sqrt(num)){
+            if ( num % j == 0){
+                // Not Prime Number
+                return false;
             }
             else
                 j++;
         }
         else{
-            cout << "Prime Number " << endl;
-            break;
+            // Prime Number
+            return true;
         }
     }
+}
+
+int main(){
+    int n;
+    cin >> n;
+    
+    int num,cnt=0;
+    
+    for (int i=1; i<=n; i++) {
+        scanf("%d",&num);
+        if( eratos(num) )
+            cnt ++;
+    }
+    cout << cnt <<endl;
+
+    return 0;    
 }
 
 
