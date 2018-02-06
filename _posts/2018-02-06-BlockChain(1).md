@@ -205,19 +205,3 @@ dApp 을 기획하고 설계함에 있어서
 많은 실패와 경험의 축적이 필요하리라 생각합니다. <br>
 
 
-
-## How to install Ethereum Wallet ?
-
->>> Click [This URL](https://github.com/ethereum/mist/releases)
-
-## AWS Lambda Seminar
-
-{% capture images %}
-  /assets/img/posts/ethereum_wallet_1.png
-  /assets/img/posts/ethereum_wallet_2.png
-  /assets/img/posts/ethereum_wallet_3.png
-  /assets/img/posts/ethereum_wallet_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
-
-
