@@ -10,7 +10,7 @@ tag:
 
 ## How to install Ethereum Wallet ?
 
->>> Click [This URL](https://github.com/ethereum/mist/releases)
+Click [URL](https://github.com/ethereum/mist/releases)
 
 ## AWS Lambda Seminar
 
