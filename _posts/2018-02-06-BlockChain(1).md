@@ -44,23 +44,58 @@ tag:
 그 중 가장 보편적으로 쓰이는 것이 `솔리디티(solidity)` 입니다.
 
 
+이더리움 컨트랙트 코드는
+
+`EVM` 이라는 가상머신을 통해 수행되고
+
+그 결과에 의해서 어카운트의 상태가 변화하게 됩니다.
+
+<br>
+ 
+
+트랜잭션들은 일정한 주기마다
+
+블록이라는 그룹으로 묶여서
+
+다른 노드들로 전파가 됩니다.
+
+ <br>
 
 
+각 블록에는 이 안에 포함된 트랜잭션들의 해시값과
+
+이전 블록의 해시값을 포함하게 됨으로써
+
+상호간에 불일치가 있거나,
+
+과거기록에 대한 변조가 있을시 쉽게 발견될 수 있도록 합니다.
+
+ <br>
 
 
+네트워크에 참가하는 모든 노드들(정확히는 Full Node입니다)은
 
-## How to install Ethereum Wallet ?
+이들 블록을 각자 처리하고 그 결과가 동일함을
 
->>> Click [This URL](https://github.com/ethereum/mist/releases)
+서로 합의해(Consensus) 갑니다.
 
-## AWS Lambda Seminar
+ <br>
 
-{% capture images %}
-  /assets/img/posts/ethereum_wallet_1.png
-  /assets/img/posts/ethereum_wallet_2.png
-  /assets/img/posts/ethereum_wallet_3.png
-  /assets/img/posts/ethereum_wallet_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+이 `합의과정`이 `블록체인 기술`의 `가장 중요한 메카니즘`입니다.
 
+이 합의 방식에는 여러 가지 솔루션들이 있는데,
+
+이더리움이 현재 사용하고 있는 방식은 `Proof of Work` 의 일종입니다.
+
+하지만 보안성을 더 높이고, 처리속도와 용량을
+
+대폭적으로 향상시키기 위해 `Proof of Stake` 의 한 형태인
+
+`캐스퍼 방식`으로 전환하고자 계획 중입니다.
+
+ <br>
+
+이렇게 각 노드들의 합의에 의해 dApp 의 백엔드인
+
+블록체인의 `정합성`이 유지됩니다.
 
