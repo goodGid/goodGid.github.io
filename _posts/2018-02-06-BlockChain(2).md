@@ -219,4 +219,4 @@ dApp 을 기획하고 설계함에 있어서
 
 많은 실패와 경험의 축적이 필요하리라 생각합니다. 
 
-
+[다음 편](https://goodgid.github.io/BlockChain(3)/)
