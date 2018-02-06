@@ -384,5 +384,5 @@ dApp의 기본적인 구성과 작동 메카니즘을
 이더리움에 대한 심층적인 이해에 많은 도움이 될 것입니다.
 <br><br>
 
-
+[다음 편](https://goodgid.github.io/BlockChain(2)/)
 
