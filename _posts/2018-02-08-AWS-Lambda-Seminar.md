@@ -19,6 +19,9 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=3 %}
 
+---
+
+
 * Lambda에서 S3 트리거 설정 
 
 {% capture images %}
@@ -26,13 +29,16 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-
+---
 
 * 세미나를 들을 오늘의 강의실 
 {% capture images %}
   /assets/img/conference/aws_lambda_seminar_7.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+
+---
 
 
 
@@ -43,7 +49,7 @@ tag:
 {% include gallery images=images caption=" " cols=1 %}
 
 
-
+---
 
 
 * 수고해주신 ASUG와 단체 사진 
