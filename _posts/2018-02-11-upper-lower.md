@@ -26,6 +26,7 @@ Problem URL : **[숫자 카드 2](https://www.acmicpc.net/problem/10816)**
 * `lower_bound()`는 해당 컨테이너에서 목표보다 작지 않은 최소 원소를 반환해준다.
 
 * 반환값은 `iterator` Type이다.
+
 ```
 예를 들어, {1, 2, 3, 3, 3, 4, 5}에서 3을 각각 
 lower_bound, upper_bound로 검색했을 때
