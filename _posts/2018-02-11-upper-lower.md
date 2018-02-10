@@ -78,6 +78,7 @@ int main(void) {
 
 
 * Sector 1 부분이 핵심이다.
+
 ```
 Input
 10
