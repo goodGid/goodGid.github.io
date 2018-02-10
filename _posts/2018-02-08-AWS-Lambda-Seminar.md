@@ -66,9 +66,7 @@ tag:
 * `Lambda` 서비스를 사용하는 법을 익혔다.
 
 * Lambda 함수에 S3를 트리거로 연결시켜 Image Resize를 실습해 봤다.
-
       1. Origin S3 버킷에 이미지를 올리면
-
       2. Resized된 이미지를 관리하는 S3 버킷에 Resized된 이미지를 자동으로 업로드한다.
 
 
