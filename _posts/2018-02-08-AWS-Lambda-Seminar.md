@@ -67,8 +67,8 @@ tag:
 
 * Lambda 함수에 S3를 트리거로 연결시켜 Image Resize를 실습해 봤다.
 
-1. Origin S3 버킷에 이미지를 올리면
-2. Resized된 이미지를 관리하는 S3 버킷에 Resized된 이미지를 자동으로 업로드한다.
+  1. Origin S3 버킷에 이미지를 올리면
+  2. Resized된 이미지를 관리하는 S3 버킷에 Resized된 이미지를 자동으로 업로드한다.
 
 
 * `Gateway API` 서비스를 사용하여 내가 만든 Lambda함수를 배포하였다.
