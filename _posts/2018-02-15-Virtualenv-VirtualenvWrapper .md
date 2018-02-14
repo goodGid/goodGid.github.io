@@ -143,25 +143,21 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 
 * `Python3` 설치 경로 찾기
 
-    {% capture images %}
-    /assets/img/posts/virtualenv-virtualenvWrapper_2.png
-    {% endcapture %}
-    {% include gallery images=images caption=" " cols=1 %}
+{% capture images %}
+/assets/img/posts/virtualenv-virtualenvWrapper_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
 
-    {% highlight bash %}
-
-    which python3
-
-    {% endhighlight %}
+{% highlight bash %}
+which python3
+{% endhighlight %}
 
 * 환경 변수 VIRTUALENVWRAPPER_PYTHON 값 지정
 
-    {% highlight bash %}
-
-    $ echo export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3 >> ~/.bash_profile
-
-    {% endhighlight %}
+{% highlight bash %}
+$ echo export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3 >> ~/.bash_profile
+{% endhighlight %}
 
 ---
 
