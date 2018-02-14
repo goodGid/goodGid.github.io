@@ -185,7 +185,7 @@ $ echo source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwr
 
 ---
 
-### 5. 바뀐 .bash_profile 적용
+### 5. 최신 .bash_profile 적용
 
 {% highlight bash %}
 $ source ~/.bash_profile
@@ -241,7 +241,7 @@ $ workon 가상환경이름
 # (test_env) $
 {% endhighlight %}
 
-* 가상 환경 진입시 쉘의 앞단에 ([test_env]) 이라는 문구가 추가되는 것을 볼 수 있다.
+* 가상 환경 진입시 쉘의 앞단에 (test_env) 이라는 문구가 추가되는 것을 볼 수 있다.
 
 * 이제 우리가 작업하는 모든 파이썬 관련 환경은 이 곳을 기준으로 한다.
 
