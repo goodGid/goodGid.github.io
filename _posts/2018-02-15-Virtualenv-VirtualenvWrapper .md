@@ -10,7 +10,7 @@ tag:
 
 ## What is Virtualenv?
 
-* Virtualenv is a tool to create isolated Python environments.
+* `Virtualenv` is a tool to create isolated Python environments.
 
 * A Virtual Environment, put simply, is an isolated working copy of Python which
 allows you to work on a specific project without worry of affecting other projects
@@ -55,7 +55,7 @@ system.
 
 ## What is VirtualenvWrapper ?
 
-VirtualenvWrapper를 사용하지 않고 
+`VirtualenvWrapper`를 사용하지 않고 
 
 VirtualEnv를 사용하기 위해서는 source를 이용해 가상환경에 진입해야한다. 
 
@@ -70,6 +70,7 @@ VirtualEnv를 사용하기 위해서는 source를 이용해 가상환경에 진�
 터미널이 현재 위치한 경로와 관계없이 가상환경을 활성화할 수 있다는 장점이 있다. 
 
 ---
+
 ## 1. Install pip3 (python3 기준)
 
 * Mac OS에는 기본적으로 전역에 Python2가 설치되어 있다.
@@ -121,7 +122,7 @@ pip3 install virtualenv virtualenvwrapper
 
 ---
 
-1. 각각의 가상 환경을 관리할 폴더를 만든다.
+### 1. 각각의 가상 환경을 관리할 폴더를 만든다.
 
 {% highlight bash %}
 $ mkdir ~/dev/.virtualenvs
@@ -130,7 +131,7 @@ $ mkdir ~/dev/.virtualenvs
 --- 
 
 
-2. WORK_HOME 변수에 값을 지정해준다.
+### 2. WORK_HOME 변수에 값을 지정해준다.
 
 {% highlight bash %}
 $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
@@ -138,8 +139,7 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 
 ---
 
-
-3. Virtualenvwrapper가 사용할 Python 지정
+### 3. Virtualenvwrapper가 사용할 Python 지정
 
 * `Python3` 설치 경로 찾기
 
@@ -161,7 +161,7 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 
 ---
 
-4. Virtualenvwrapper 명령어 등록
+### 4. Virtualenvwrapper 명령어 등록
 
 * virtualenvwrapper.sh 파일에 virtualenvwrapper에 관련된 모든 설정이 있다.
 
@@ -185,7 +185,7 @@ $ echo source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwr
 
 ---
 
-5. 바뀐 .bash_profile 적용
+### 5. 바뀐 .bash_profile 적용
 
 {% highlight bash %}
 $ source ~/.bash_profile
