@@ -76,9 +76,9 @@ VirtualEnv를 사용하기 위해서는 source를 이용해 가상환경에 진�
 * Mac OS에는 기본적으로 전역에 Python2가 설치되어 있다.
 
 ```
-sudo easy_install pip
+$ sudo easy_install pip
 or
-brew install python3
+$ brew install python3
 ```
 
 * 만약 sudo로 시스템 전역에 설치하기가 싫다면 <br> HomeBrew를 이용해 Python을 유저영역에 설치하도록 하자.
@@ -87,7 +87,7 @@ brew install python3
 
 ```
 # python3일 경우
-pip3 -V         
+$ pip3 -V         
 ```
 
 
@@ -97,7 +97,7 @@ pip3 -V
 
 
 ```
-pip3 install virtualenv virtualenvwrapper
+$ pip3 install virtualenv virtualenvwrapper
 ```
 
 
