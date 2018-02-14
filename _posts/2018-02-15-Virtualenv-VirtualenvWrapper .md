@@ -194,9 +194,9 @@ $ source ~/.bash_profile
 
 ---
 
-6. 가상 환경 구축 해보기 !
+### 6. 가상 환경 구축 해보기 !
 
-### 가상 환경 만들기
+#### 가상 환경 만들기
 
 {% highlight bash %}
 $ mkvirtualenv 가상환경이름
@@ -208,7 +208,7 @@ $ mkvirtualenv 가상환경이름
 
 ---
 
-### 가상 환경 지우기
+#### 가상 환경 지우기
 
 {% highlight bash %}
 $ rmvirtualenv 가상환경이름
@@ -222,7 +222,7 @@ $ rmvirtualenv 가상환경이름
 
 ---
 
-### 가상 환경 리스트 조회
+#### 가상 환경 리스트 조회
 
 {% highlight bash %}
 $ workon 
@@ -230,7 +230,7 @@ $ workon
 
 ---
 
-### 가상 환경 진입
+#### 가상 환경 진입
 
 {% highlight bash %}
 $ workon 가상환경이름
