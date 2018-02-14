@@ -150,7 +150,7 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 
 
 {% highlight bash %}
-which python3
+$ which python3
 {% endhighlight %}
 
 * 환경 변수 VIRTUALENVWRAPPER_PYTHON 값 지정
