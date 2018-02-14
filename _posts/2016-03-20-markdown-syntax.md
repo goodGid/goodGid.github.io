@@ -69,6 +69,11 @@ comments: true
 }
 {% endhighlight %}
 
+{% highlight bash %}
+whoami
+{% endhighlight %}{: style='margin-left:30px;'}
+
+
 ## Buttons
 
 Make any link standout more when applying the `.btn` class.
