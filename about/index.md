@@ -21,9 +21,13 @@ comments: false
 
 ### 2018
 
+* 　02. 22 ~ 02. 28	[[핀테크X블록체인] 이더리움 기반 스마트 컨트랙트 개발 교육 ](https://goodgid.github.io/Edu-SmartContract/)
+
 * 　02. 5 ~ Study Block Chain
 
 * 　02. 12 ~ Study Machin Learning
+
+* 　02. 08 [AWS Lambda Seminar](https://goodgid.github.io/AWS-Lambda-Seminar/)
 
 * 　01. 30 ~ 02. 19 Study Python3
 
