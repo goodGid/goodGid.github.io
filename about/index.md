@@ -21,6 +21,12 @@ comments: false
 
 ### 2018
 
+* 　02. 5 ~ Study Block Chain
+
+* 　02. 12 ~ Study Machin Learning
+
+* 　01. 30 ~ 02. 19 Study Python3
+
 * 　01. 17 SK T아카데미 Docker Seminar
 
 * 　01. 01 ~ 01. 13	App Jam Server Part
