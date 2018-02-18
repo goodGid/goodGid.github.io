@@ -13,6 +13,10 @@ comments: false
 
 * Major : Computer Science Information Engineering 
 
+* Mail : gy8971@gmail.com
+
+* Github : goodgid
+
 * Phone Number : 010 - 6286 - 8971
 
 --- 
