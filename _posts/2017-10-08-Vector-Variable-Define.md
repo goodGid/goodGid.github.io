@@ -123,6 +123,8 @@ vector<vector<int> > v(5, vector<int>(3,-1))
 
 *위 내용은 [해당 Blog](http://canna90.tistory.com/41)에서 발췌하였다.*
 
+_위 내용은 [해당 Blog](http://canna90.tistory.com/41)에서 발췌하였다._
+
 ---
 
 ## Code
