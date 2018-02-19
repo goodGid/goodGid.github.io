@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Vector :: 변수 선언"
+title:  "Vector :: Vector 선언"
 date:   2017-10-07
-excerpt: "Vector 변수 선언"
+excerpt: "Vector 선언"
 cate : "algorithm"
 tag:
 - Key Point
