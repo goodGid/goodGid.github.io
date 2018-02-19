@@ -8,7 +8,10 @@ tag:
 - Markdown Syntax
 comments: true
 ---
-[정리되어 있는 Blog](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+[1. 정리되어 있는 Blog](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+
+[2. 정리되어 있는 Blog](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 
 
 # Heading 1
