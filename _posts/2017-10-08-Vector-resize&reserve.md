@@ -69,7 +69,7 @@ int main(){
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
-    v.resize(5);
+    v.resize(5,-1); // resize하면서 초기화도 가능하다.
     print();
     
     // resize
@@ -79,7 +79,7 @@ int main(){
     v.push_back(3);
     v.push_back(4);
     v.push_back(5);
-    v.resize(3);
+    v.resize(3,-1); // 값이 있을 시에는 기존의 값이 유지된다. ( -1로 초기화 No )
     print();
     
     // reserve
@@ -110,7 +110,7 @@ int main(){
 
 {% highlight cpp %}
 
-1 2 3 0 0 
+1 2 3 -1 -1 
 1 2 3 
 1 2 3 
 1 2 3 4 5 
