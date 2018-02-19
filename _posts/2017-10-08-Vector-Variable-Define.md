@@ -121,7 +121,7 @@ vector<vector<int> > v(5, vector<int>(3,-1))
 
 즉 arr[5][3]크기의 배열을 모두 -1을 초기화 해준것과 같다.
 
-**_ 위 내용은 [해당 Blog](http://canna90.tistory.com/41)에서 발췌하였다._**
+*위 내용은 [해당 Blog](http://canna90.tistory.com/41)에서 발췌하였다.*
 
 ---
 
