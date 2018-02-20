@@ -29,7 +29,7 @@ comments: false
 
 * 　02. 5 ~ Study Block Chain
 
-* 　02. 12 ~ Study Machin Learning
+* 　02. 12 ~ Study machine Learning
 
 * 　02. 08 [AWS Lambda Seminar](https://goodgid.github.io/AWS-Lambda-Seminar/)
 
