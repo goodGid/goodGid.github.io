@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " AWS Lambda Seminar "
+title:  " Conference :: AWS Lambda Seminar "
 date:   2018-01-17
 excerpt: " AWS로 무료 이미지 리사이즈 서버 만들기 with AWS Lambda "
 cate : "post"
