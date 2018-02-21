@@ -27,7 +27,9 @@ comments: false
 
 * 　02. 22 ~ 02. 28	[[핀테크X블록체인] 이더리움 기반 스마트 컨트랙트 개발 교육 ](https://goodgid.github.io/Edu-SmartContract/)
 
-* 　02. 5 ~ Study Block Chain
+* 　02. 23 Block Chain Conference [Chain Partners](https://goodgid.github.io/BlockChain-ChainPartners/)
+
+* 　02. 05 ~ Study Block Chain
 
 * 　02. 12 ~ Study machine Learning
 
