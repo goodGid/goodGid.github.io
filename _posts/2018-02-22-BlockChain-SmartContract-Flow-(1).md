@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " BlockChain :: SmartContract Flow (1)"
+title:  " BlockChain :: SmartContract Flow (1) "
 date:   2018-02-22
 excerpt: "  SmartContract Flow (1) "
 cate : "post"
