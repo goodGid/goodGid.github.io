@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  " Education :: Smart Contract (1) "
+title:  " Education :: Smart Contract "
 date:   2018-02-14
-excerpt: " Smart Contract (1) "
+excerpt: " Smart Contract "
 cate : "post"
 tag:
 - Education
