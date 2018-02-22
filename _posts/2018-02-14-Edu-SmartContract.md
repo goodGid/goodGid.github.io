@@ -1,20 +1,20 @@
 ---
 layout: post
-title:  " Education :: Smart Contract "
+title:  " Education :: Smart Contract (1) "
 date:   2018-02-14
-excerpt: " Smart Contract "
+excerpt: " Smart Contract (1) "
 cate : "post"
 tag:
 - Education
 ---
 
-## Education Smart Contract
+## [1] Education Smart Contract
 
 {% capture images %}
-	/assets/img/conference/edu_smartcontract_1.png
-	/assets/img/conference/edu_smartcontract_2.png
-	/assets/img/conference/edu_smartcontract_3.png
-	/assets/img/conference/edu_smartcontract_4.png
+	/assets/img/conference/edu_smartcontract_1_1.png
+	/assets/img/conference/edu_smartcontract_1_2.png
+	/assets/img/conference/edu_smartcontract_1_3.png
+	/assets/img/conference/edu_smartcontract_1_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=4 %}
 
@@ -34,7 +34,7 @@ tag:
 ## 지원 결과
 
 {% capture images %}
-	/assets/img/conference/edu_smartcontract_6.png
+	/assets/img/conference/edu_smartcontract_1_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -49,6 +49,6 @@ tag:
 ## Host
 
 {% capture images %}
-	/assets/img/conference/edu_smartcontract_5.png
+	/assets/img/conference/edu_smartcontract_1_5.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
