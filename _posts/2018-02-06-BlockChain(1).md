@@ -8,7 +8,7 @@ tag:
 - BlockChain
 ---
 {% capture images %}
-  /assets/img/posts/ethereum.png
+  /assets/img/block_chain/ethereum.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -204,7 +204,7 @@ tag:
 <br>
 
 {% capture images %}
-  /assets/img/posts/blockchain(1)_1.png
+  /assets/img/block_chain/blockchain(1)_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -212,7 +212,7 @@ tag:
 <br>
 
 {% capture images %}
-  /assets/img/posts/blockchain(1)_2.png
+  /assets/img/block_chain/blockchain(1)_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 <br>
@@ -220,7 +220,7 @@ tag:
 이들 툴에 비교하자면 이더리움은 스마트 폰과 같습니다.
 
 {% capture images %}
-  /assets/img/posts/blockchain(1)_3.png
+  /assets/img/block_chain/blockchain(1)_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 <br><br>

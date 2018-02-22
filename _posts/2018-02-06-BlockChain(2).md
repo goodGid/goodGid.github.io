@@ -8,7 +8,7 @@ tag:
 - BlockChain
 ---
 {% capture images %}
-  /assets/img/posts/ethereum.png
+  /assets/img/block_chain/ethereum.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

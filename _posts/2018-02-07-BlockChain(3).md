@@ -8,7 +8,7 @@ tag:
 - BlockChain
 ---
 {% capture images %}
-  /assets/img/posts/ethereum.png
+  /assets/img/block_chain/ethereum.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -262,7 +262,7 @@ set의 (  ) 안에는 사용자로부터 입력받을 x 값이
 {% endhighlight %}
 
 {% capture images %}
-  /assets/img/posts/blockchain(3)_1.png
+  /assets/img/block_chain/blockchain(3)_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -463,7 +463,7 @@ https://ethereum.github.io/browser-solidity/
 
 
 {% capture images %}
-  /assets/img/posts/blockchain(3)_2.png
+  /assets/img/block_chain/blockchain(3)_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -556,7 +556,7 @@ PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x43 DUP1 PUSH1 0x10 PUSH1 0x0 CODECOPY PUSH1
 
 
 {% capture images %}
-  /assets/img/posts/blockchain(3)_3.png
+  /assets/img/block_chain/blockchain(3)_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -589,7 +589,7 @@ SimpleStorage at 의 뒷 부분을 잘 살펴보시면 거기에 나와있는 �
 
  
 {% capture images %}
-  /assets/img/posts/blockchain(3)_4.png
+  /assets/img/block_chain/blockchain(3)_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
