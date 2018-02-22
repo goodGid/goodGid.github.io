@@ -24,7 +24,7 @@ Transaction을 실행하기 위한
 
 <br>
 
-EVM Bytecode를 실행할 때
+\- EVM Bytecode를 실행할 때
 
 `Gas`가 사용된다.
 
