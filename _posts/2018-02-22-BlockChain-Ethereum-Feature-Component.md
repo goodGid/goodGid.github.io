@@ -115,7 +115,6 @@ DDoS 공격이 불가능
 
 ---
 
-Test
 
 ## Bitcoin vs Ethereum
 
