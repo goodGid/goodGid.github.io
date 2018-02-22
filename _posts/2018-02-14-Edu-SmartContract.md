@@ -38,6 +38,7 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+* 총 250여명이 지원을 하였다 한다.
 
 * 주변에 떨어진 친구들이 있었다.
 
