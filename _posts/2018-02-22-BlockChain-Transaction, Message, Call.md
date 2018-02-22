@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " BlockChain :: Transaction, Message, Call"
+title:  " BlockChain :: Transaction, Message, Call "
 date:   2018-02-22
 excerpt: "  Transaction, Message, Call "
 cate : "post"
