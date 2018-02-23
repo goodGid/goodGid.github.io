@@ -37,20 +37,30 @@ tag:
 
      C.   ~/.profile 파일에 환경변수 추가
 
-          a. export PATH=$PATH:/usr/local/go/bin 추가
+        * export PATH=$PATH:/usr/local/go/bin 추가
 
-          b. export GOROOT=/usr/local/go 추가
-          
+        * export GOROOT=/usr/local/go 추가
+
      D.   작업디렉터리 생성
+
                a.   mkdir ethereum
+
                b.   cd ethereum
+               
                c.   mkdir bin
+               
                d.   mkdir db
+               
                e.   mkdir logs
+               
                f.   mkdir src
+               
                g.   cd db
+               
                h.   mkdir pnet
+
      E.   ~/.profile 파일에 환경변수 추가
+               
                a.   export ETH_HOME=$HOME/ethereum
                
 5.   Git을 통한 go-Ethereum 소스 클론 및 빌드
