@@ -73,6 +73,19 @@ _내용이 들어갈 곳_
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
 
+
+|  \-- | \--- | \-\-- |
+
+결과값
+
+
+{% capture images %}
+/assets/img/posts/mad_syntax_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %} 
+
+
+
 ## Code Snippets
 
 {% highlight css %}
