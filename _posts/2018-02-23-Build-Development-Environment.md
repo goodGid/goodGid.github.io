@@ -38,7 +38,7 @@ tag:
 | geth  <br> <br>| data dir의 root  <br> <br> | geth ipc  <br> <br>| Console or IPC API 통신을 위한 파일 <br> <br>  |
 | chaindata  <br> <br> | Block, State, Storage의 Trie DB  <br> <br> | *.ldb  <br> <br> | 지속 분할/Merge 되는 DB 들 <br> <br>  |
 | nodes  <br> <br> | 접속한 Node들의 관리 DB  <br> <br> | *.ldb   <br> <br> | Node 관리를 위한 DB <br> <br>  |
-| keystore  <br> <br> | Account들의 암호화된 Key 정보  <br> <br> | UTC-\<time>\-\-\<address>  <br> <br> | Account별 Key 정보 파일 생성 <br> <br>  |
+| keystore  <br> <br> | Account들의 암호화된 Key 정보  <br> <br> | UTC-\<time>\--\<address>  <br> <br> | Account별 Key 정보 파일 생성 <br> <br>  |
 |=====|=====|=====|
 
 ---
@@ -52,18 +52,17 @@ tag:
 |   | account | list, new, update |
 |   | console | node 시작 및 console 진입 |
 |   | attach <br> <br> | ipc or rpc로 console attach <br> <br> |
-| Ethereum | ---datadir \<string> |  |
-|   | ---networkid \<num> | |
-|   | ---testnet | |
-|   | ---identity \<string> <br> <br> | <br> <br> |
+| Ethereum | \--datadir \<string> |  |
+|   | \--networkid \<num> | |
+|   | \--testnet | |
+|   | \--identity \<string> <br> <br> | <br> <br> |
 | Account | ---unlock \<filename> | |
 |   | ---password \<filename> <br> <br> | <br> <br> |
 | API & Console | --rpc | | 
-|   | ---rpcaddr \<ipaddr> | 기본 "localhost" |
-|   | ---rpcport \<port> | 기본 "8545" |
-|   | ---rpcapi \<apis> | 기본 "eth, net, web3" <br>(admin, debug, eth, miner, net, personal, shh, txpool, web3) |
-|   | ---rpccorsdomain | CORS |
-|  \-- | \--- | \-\-- |
+|   | \--rpcaddr \<ipaddr> | 기본 "localhost" |
+|   | \--rpcport \<port> | 기본 "8545" |
+|   | \--rpcapi \<apis> | 기본 "eth, net, web3" <br>(admin, debug, eth, miner, net, personal, shh, txpool, web3) |
+|   | \--rpccorsdomain | CORS |
 |=====|=====|=====|
 
 
