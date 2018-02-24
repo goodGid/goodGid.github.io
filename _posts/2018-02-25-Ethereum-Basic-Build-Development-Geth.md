@@ -181,3 +181,52 @@ RPC를 통해서 사설 네트워크에 접속하는 것을 막기 위해
 
 이더리움 채굴을 활성화한다.
 
+---
+
+## Geth 클라이언트 계좌 만들기
+
+* 자세한 설치 방법은 [환경 설정 가이드](https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f)을 참고
+
+
+사설 네트워크를 구축하기에 앞서 Geth 클라이언트용 개인 계좌를 개설해야 한다.
+
+Geth 클라이언트의 계좌를 생성하는 2가지 방법
+
+1. 기본적으로 이더리움 사설 네트워크를 구축한 후 콘솔에 접속하여 개설하는 방법
+
+2. Geth 클라이언트를 실행하기 전에 미리 계좌를 생성하는 방법
+
+2번째 방법으로 진행을 해보자.
+
+<br>
+
+`--datadir` 옵션은 
+
+블록 데이터와 계좌 정보가 
+
+저장될 폴더를 지정하는 옵션이다.
+
+```
+geth --datadir {저장시킬 위치} account new
+```
+
+
+<br>
+
+accout list 옵션을 사용하면
+
+우리가 개설한 계좌의 정보를 조회할 수 있다.
+
+```
+./geth --datadir=$ETH_HOME/db/pnet account list
+
+./geth --datadir $ETH_HOME/db/pnet account list
+```
+
+
+{% capture images %}
+/assets/img/ethereum/eth_basic_build_dev_get_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %} 
+
+
