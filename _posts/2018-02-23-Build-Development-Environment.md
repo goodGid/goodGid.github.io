@@ -43,3 +43,29 @@ tag:
 
 ---
 
+
+### Geth 옵션
+
+|   Category       | Option Name  | description |
+|:-------:|:-------:|:-------:|
+| Command | init | 새로운 Genesis Block을 기반으로 DB 생성 |
+|   | account | list, new, update |
+|   | console | node 시작 및 console 진입 |
+|   | attach | ipc or rpc로 console attach |
+| Ethereum | --datadir \<string> |  |
+| Ethereum | --datadir <string> |  |
+|   | --networkid <num> | |
+|   | --testnet | |
+|   | --identity <string> | |
+| Account | --unlock <filename> | |
+|   | --password <filename> | |
+| API & Console | --rpc | | 
+|   | --rpcaddr <ipaddr> | 기본 "localhost" |
+|   | --rpcport <port> | 기본 "8545" |
+|   | --rpcapi <apis> | 기본 "eth, net, web3" <br>(admin, debug, eth, miner, net, personal, shh, txpool, web3) |
+|   | --rpccorsdomain | CORS |
+|=====|=====|=====|
+
+
+
+
