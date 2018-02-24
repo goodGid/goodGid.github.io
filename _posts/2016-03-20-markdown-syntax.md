@@ -80,7 +80,7 @@ _내용이 들어갈 곳_
 
 
 {% capture images %}
-/assets/img/posts/mad_syntax_1.png
+/assets/img/posts/md_syntax_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %} 
 
