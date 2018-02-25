@@ -8,7 +8,6 @@ tag:
 - Ethereum
 ---
 
-
 ## Mist 브라우저
 
 이더리움에서 이더를 사용하거나
@@ -24,10 +23,17 @@ GUI 기반 이더리움 지갑 프로그램이
 Mist 브라우저이다.
 
 
+---
+
+
+
 ### Mist 브라우저 설치하기
 
 [https://github.com/ethereum/mist/releases](https://github.com/ethereum/mist/releases)
 
+
+
+---
 
 
 ### Mist 브라우저 실행하기
