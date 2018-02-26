@@ -47,6 +47,35 @@ tag:
 
 ---
 
+## 교육 시설
+
+{% capture images %}
+	/assets/img/conference/edu_smartcontract_1_7.png
+	/assets/img/conference/edu_smartcontract_1_8.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+
+* 우리집에서 너무나 멀었던 경찰병원에 있는 KISA
+
+* 결국 판교에서 자취를 하는 친구집에서 교육 기간동안 하숙을 하였다.
+
+---
+
+## Review
+
+* 진짜 너무너무너무너무너무너무너무너무너무너무너무너무 좋았다.
+
+* 블록체인이라는 너무나 어렵고 아직 생소한 개념을 누군가와 이야기하고 토론할 수 있었다는게 너무나 좋았다.
+
+* 교육을 들으면서도 개념에 대한 이해가 너무 어려워서 힘들었지만...
+
+* 미래 전망을 굉장히 높게 산다.
+
+* 꾸준히 공부해야지 `Block Chain` :+1:
+
+---
+
 ## Host
 
 {% capture images %}
