@@ -206,6 +206,9 @@ Geth 클라이언트의 계좌를 생성하는 2가지 방법
 
 저장될 폴더를 지정하는 옵션이다.
 
+[--datadir](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) "/home/karalabe/.ethereum"  Data directory for the databases and keystore
+
+
 ```
 geth --datadir {저장시킬 위치} account new
 ```
