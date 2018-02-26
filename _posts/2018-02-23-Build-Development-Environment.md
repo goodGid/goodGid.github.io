@@ -46,6 +46,10 @@ tag:
 
 ### Geth 옵션
 
+[API Document](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
+
+<br>
+
 |   Category       | Option Name  | description |
 |:-------:|:-------:|:-------:|
 | Command | init | 새로운 Genesis Block을 기반으로 DB 생성 |
