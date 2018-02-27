@@ -184,3 +184,19 @@ Create를 해준다.
 ADD TOKEN을 해주게 되면 
 
 새로운 TOKEN이 추가된 것을 볼 수 있다.
+
+<br>
+
+다시 Remix로 돌아와
+
+Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후 
+
+지갑으로 돌아가 TOKEN의 수를 확인해보면 
+
+줄어든 것을 확인할 수 있다.
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_12.png
+	/assets/img/block_chain/edu_training_13.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
