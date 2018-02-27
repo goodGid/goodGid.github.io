@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer (1) - 배열 (중요) "
+title:  " Ethereum Basic :: Solidity Grammer (2) - 배열 (중요) "
 date:   2018-02-26
 excerpt: " Solidity Grammer  "
 cate : "post"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 맵핑(Mapping)  "
+title:  " Ethereum Basic :: Solidity Grammer - 맵핑(Mapping) (중요)  "
 date:   2018-02-26
 excerpt: " Solidity Grammer  "
 cate : "post"
@@ -25,7 +25,7 @@ tag:
 지역 변수로 사용 시 참조하게 된다.
 
 ```
-         키 자료형                  맵핑 이름
+         키 자료형                맵핑 이름
 mapping (key type => data type) name
                       데이터 자료형
 ```

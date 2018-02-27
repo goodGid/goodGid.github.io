@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer (2) - 배열 (중요) "
+title:  " Ethereum Basic :: Solidity Grammer (1) - 배열 (중요) "
 date:   2018-02-26
 excerpt: " Solidity Grammer  "
 cate : "post"
@@ -56,6 +56,8 @@ bytes momory name = new bytes(length);
 10     }
 11 }
 
+{% endhighlight %}
+
 5행에서 2바이트의 크기의 byte2형으로
 
 staticByteArray라는 변수를 선언하였다.
@@ -83,4 +85,4 @@ staticByteArray라는 변수를 선언하였다.
 많은 gas가 소모된다.
 
 
-{% endhighlight %}
+
