@@ -22,7 +22,7 @@ tag:
 
 이름하여,
 
-“Cracker.Live X Chain Partners 블록체인 세미나”
+“[Cracker.Live](https://www.facebook.com/cracker.live/?fref=mentions) X [Chain Partners](https://www.facebook.com/decenter.kr/?fref=mentions) 블록체인 세미나”
 
 <br>
 
@@ -69,10 +69,11 @@ tag:
 ## Conference Photo
 
 {% capture images %}
-  /assets/img/conference/chain_partners_2.png
-  /assets/img/conference/chain_partners_3.png
+  /assets/img/conference/chain_partners_5.png
+  /assets/img/conference/chain_partners_6.png
+  /assets/img/conference/chain_partners_7.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+{% include gallery images=images caption=" " cols=3 %}
 
 
 
