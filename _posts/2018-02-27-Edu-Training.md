@@ -15,7 +15,7 @@ tag:
 
 
 {% capture images %}
-	/assets/img/conference/edu_training_1.png
+	/assets/img/block_chain/edu_training_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -29,7 +29,7 @@ P/W를 입력하고 나면
 이 블로그에서는 안보이게 수정한 사진을 업로드하였다.
 
 {% capture images %}
-	/assets/img/conference/edu_training_2.png
+	/assets/img/block_chain/edu_training_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -38,7 +38,7 @@ Test상이기 때문에 ether가 필요하다.
 [https://faucet.metamask.io](https://faucet.metamask.io)에서 필요한 만큼 이더를 받자.
 
 {% capture images %}
-	/assets/img/conference/edu_training_3.png
+	/assets/img/block_chain/edu_training_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -46,7 +46,7 @@ Test상이기 때문에 ether가 필요하다.
 <kbd>request 1 ether from faucet</kbd>버튼을 누르면 
 
 {% capture images %}
-	/assets/img/conference/edu_training_3.png
+	/assets/img/block_chain/edu_training_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
