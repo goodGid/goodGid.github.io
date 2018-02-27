@@ -200,3 +200,42 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 	/assets/img/block_chain/edu_training_13.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
+
+
+---
+
+
+[https://ethereum.org/crowdsale](https://ethereum.org/crowdsale)에 접속하자.
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_14.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+코드를 복사하자.
+
+주의점: 각 주소는 "주소"와 같이 큰 따옴표로 감싸야 한다.
+
+---
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_15.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+생성자에 값을 넣어보자.
+
+[ "0x2e48deebedfdf5df84d9970d3f72d48f72929cb5", 5000, 4320, 1, "0x80695B7EB1CB1326E32D4EF819B9B1b1884d8592" ]
+
+각 매개변수가 뜻하는건 다음과 같다.
+
+1. 가장 처음에는 돈 받을 주소 <br> Remix의 우측 상단에 내 지갑 주소가 있다.
+
+2. 5000은 트윈토큰 목표치,
+
+3. 4320은 4320분 즉 3일,
+
+4. 1은 트윈토큰 한개당 가격
+
+5. 마지막 주소는 트위토큰이 정의된 컨트랙트 주소 <br> 토큰의 주소
