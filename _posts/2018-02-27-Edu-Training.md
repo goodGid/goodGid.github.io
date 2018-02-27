@@ -245,6 +245,11 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 ---
 
+<br>
+
+지금부터는 다시 TokenERC20 파일로 돌아와서 진행한다.
+
+
 {% capture images %}
 	/assets/img/block_chain/edu_training_16.png
 	/assets/img/block_chain/edu_training_17.png
