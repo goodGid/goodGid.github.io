@@ -113,7 +113,7 @@ Environment를 Injected Web3로 변경해준다.
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
-저 Tx의 Hash값을 복사한다.
+저 Tx(Transaction)의 Hash값을 복사한다.
 
 <br>
 
@@ -126,6 +126,10 @@ Token탭을 누른다.
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+<br>
+
+ADD TOKEN버튼을 누른 후 
+
 Tx의 Hash값을 추가해준다.
 
 {% capture images %}
@@ -134,4 +138,49 @@ Tx의 Hash값을 추가해준다.
 {% include gallery images=images caption=" " cols=1 %}
 
 
+<br>
 
+다시 [https://ethereum.org/token](https://ethereum.org/token) 접속하여
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_9.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+밑에 있는 코드를 복사한다.
+
+(코드가 너무 길어 복붙을 못하였다.)
+
+<br>
+
+9번째 줄을 보면
+
+uint8 public decimals = 18;
+
+4로 수정하자.
+
+이 코드는 소숫점 몇자리 까지 보낼지 정해준다.
+
+위에서 했던 스텝과 마찬가지로 
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_10.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+[ 100000,"tokenName_goodgid", "tokenSymbol_goodgid" ] 라는 값으로 셋팅을 해주고
+
+Create를 해준다.
+
+여기서 String은 " "로 묶어줘야한다.
+
+<br>
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_11.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+ADD TOKEN을 해주게 되면 
+
+새로운 TOKEN이 추가된 것을 볼 수 있다.
