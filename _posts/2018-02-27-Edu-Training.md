@@ -218,6 +218,8 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 ---
 
+<br>
+
 {% capture images %}
 	/assets/img/block_chain/edu_training_15.png
 {% endcapture %}
@@ -226,11 +228,11 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 생성자에 값을 넣어보자.
 
-[ "0x2e48deebedfdf5df84d9970d3f72d48f72929cb5", 5000, 4320, 1, "0x80695B7EB1CB1326E32D4EF819B9B1b1884d8592" ]
+[ "0x2e48deebedfdf5df84d9970d3f72d48f72929cb5", <br> 5000, 4320, 1, <br> "0x80695B7EB1CB1326E32D4EF819B9B1b1884d8592" ]
 
 각 매개변수가 뜻하는건 다음과 같다.
 
-1. 가장 처음에는 돈 받을 주소 <br> Remix의 우측 상단에 내 지갑 주소가 있다.
+1. 돈 받을 주소 <br> Remix의 우측 상단에 내 지갑 주소가 있다.
 
 2. 5000은 트윈토큰 목표치,
 
@@ -238,4 +240,28 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 4. 1은 트윈토큰 한개당 가격
 
-5. 마지막 주소는 트위토큰이 정의된 컨트랙트 주소 <br> 토큰의 주소
+5. 트윈토큰이 정의된 컨트랙트 주소 <br> 토큰의 주소
+
+
+---
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_16.png
+	/assets/img/block_chain/edu_training_17.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+40자리의 16진수는 모두다 나의 지갑 주소이다.
+
+그 후
+
+[https://ropsten.etherscan.io/](https://ropsten.etherscan.io/)에서 
+
+나의 지갑 주소를 검색한다.
+
+전에는 없던 Misc라는 탭이 생기고 Token이 보이게 된다.
+
+{% capture images %}
+	/assets/img/block_chain/edu_training_18.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
