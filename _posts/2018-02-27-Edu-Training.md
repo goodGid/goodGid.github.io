@@ -251,7 +251,11 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
-40자리의 16진수는 모두다 나의 지갑 주소이다.
+[ "0x2e48deebedfdf5df84d9970d3f72d48f72929cb5",1 ]라는 값을 입력 후
+
+transfer버튼을 누른다.
+
+( 여기서 사용되는 40자리의 16진수는 모두다 나의 지갑 주소이다. )
 
 그 후
 
