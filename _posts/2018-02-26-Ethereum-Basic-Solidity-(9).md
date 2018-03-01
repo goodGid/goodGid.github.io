@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 이벤트 & 전처리문과 파일 참조(import)  "
+title:  " Ethereum Basic :: Solidity Grammer - 이벤트 & 전처리문(pragma)과 파일 참조(import)  "
 date:   2018-02-26
 excerpt: " Solidity Grammer  "
 cate : "post"
