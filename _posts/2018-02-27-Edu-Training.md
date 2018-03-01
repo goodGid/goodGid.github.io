@@ -274,3 +274,7 @@ transfer버튼을 누른다.
 	/assets/img/block_chain/edu_training_18.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+---
+
+* 추가적으로 질문이 있을 경우 \[ kds@glosfer.com ] 로 메일을 보내자 ! 
