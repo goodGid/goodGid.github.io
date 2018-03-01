@@ -87,7 +87,9 @@ $ brew install python3
 
 ```
 # python3일 경우
-$ pip3 -V         
+$ pip3 --version
+or    
+$ pip3 --V (Capital V)
 ```
 
 
