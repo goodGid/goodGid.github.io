@@ -25,6 +25,10 @@ comments: false
 
 ### 2018
 
+* 　02. 01 ~ 농구 소모임 '라온' 회장
+
+* 　16. 09. 03 ~ 18. 03. 01 도서관 자치 위원회 활동
+
 * 　02. 22 ~ 02. 28	[[핀테크X블록체인] 이더리움 기반 스마트 컨트랙트 개발 교육 ](https://goodgid.github.io/Edu-SmartContract/)
 
 * 　02. 23 Block Chain Conference [Chain Partners](https://goodgid.github.io/BlockChain-ChainPartners/)
