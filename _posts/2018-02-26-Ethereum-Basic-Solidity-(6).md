@@ -75,23 +75,3 @@ contract Example4 {
 
 
 
-
-
-
-
-{% highlight JavaScript %}
-
-
-{% endhighlight %}
-
-
-
-
-
-{% highlight JavaScript %}
-
-
-{% endhighlight %}
-
-
-
