@@ -1,0 +1,29 @@
+---
+layout: post
+title:  " Connecting Mist to a local test network "
+date:   2018-03-02
+excerpt: "  Connecting Mist to a local test network "
+cate : "post"
+tag:
+- BlockChain
+---
+
+## Problem
+
+Mist로 접속을 할 때 Private로 접속이 안되어서 난감했다.
+
+해결책을 찾았다.
+
+[Connecting Mist to a local test network from the command line](https://github.com/ethereum/mist/wiki#connecting-mist-to-a-local-test-network-from-the-command-line)
+
+<br>
+
+{% capture images %}
+/assets/img/block_chain/conn_mist_local_net_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %} 
+
+
+## Related Question
+
+* [Connect Mist with testrpc on a Mac](https://ethereum.stackexchange.com/questions/11757/connect-mist-with-testrpc-on-a-mac)
