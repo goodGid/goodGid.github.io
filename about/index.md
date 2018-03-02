@@ -86,6 +86,8 @@ comments: false
 
 * 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 <br>　Web Monitoring System 개발 - Java Swing
 
+* 　학술 연구 장학생
+
 ---
 
 ## Prize
