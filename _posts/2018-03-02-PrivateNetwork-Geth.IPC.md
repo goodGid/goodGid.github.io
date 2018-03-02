@@ -33,8 +33,4 @@ Clean하게 해결되었다기 보다는 이것 저것하다 해결이 되어서
 
 <br>
 
-
-* [connect ethereum wallet(or mist) to to ethereum local private network](https://ethereum.stackexchange.com/questions/21336/connect-ethereum-walletor-mist-to-to-ethereum-local-private-network) <br> ( 가장 결정적인 힌트를 주었던 글 )
-
-
 * [When is the geth.ipc file produced?](https://ethereum.stackexchange.com/questions/1492/when-is-the-geth-ipc-file-produced)
