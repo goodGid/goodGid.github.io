@@ -16,6 +16,8 @@ tag:
 
 너무 light하게 설명이 되어있었다.
 
+<br>
+
 HTML 파일에 코드를 보면 (Line 13)
 
 단지 `ABI`로 Contract를 만든다.
@@ -24,9 +26,11 @@ HTML 파일에 코드를 보면 (Line 13)
 
 그 부분이 생략되어 있었다.
 
-[zastrin](https://kr.zastrin.com/courses/4/lessons/1-1)이라는 사이트에서 참고하여 
+[zastrin](https://kr.zastrin.com/courses/4/lessons/1-1)이라는 사이트를 참고하여 
 
 문제점을 해결하였다.
+
+<br>
 
 글을 포스팅하는 오늘(18. 03. 04) 기준으로
 
