@@ -1,6 +1,6 @@
 ---
-layout: test5
-title: Test6
+layout: test
+title: Test
 excerpt: "A List of Test"
 comments: false 
 ---
