@@ -22,7 +22,9 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    <div> {% site.posts.length%} </div>
+                    <div> input test </div>
+                    {% for post in site.posts.test5 %} 
                         {% if post.cate == "algorithm" %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
