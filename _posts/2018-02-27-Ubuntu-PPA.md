@@ -10,10 +10,6 @@ tag:
 
 ## What is PPA(Personal Package Archive)?
 
-[사전적 정의](https://ko.wikipedia.org/wiki/Nohup)를 알아보자.
-
-<br>
-
 일반적으로 Ubuntu 소프트웨어 센터에서 다운로드 받을수 있는 각종 패키지의 버전들은 최신의 것들이 아니다. 
 
 우분투는 6개월 주기로 새로운 버전이 출시된다.
