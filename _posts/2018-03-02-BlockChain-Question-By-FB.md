@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  " Join Private Network using [geth.ipc] "
+title:  " When is the geth.ipc file produced? "
 date:   2018-03-02
-excerpt: " Join Private Network using [geth.ipc] "
+excerpt: " When is the geth.ipc file produced? "
 cate : "post"
 tag:
 - BlockChain
 ---
 
 ## Problem
+
 ```
 제가 geth로 사설 네트워크를 실행시켰습니다.
 그리고 그 네트워크안에서 ether를 축적한 후 
@@ -30,7 +31,3 @@ FaceBook에 [글](https://www.facebook.com/groups/114962092511047/permalink/1540
 그러니까 해결이 되었다.
 
 Clean하게 해결되었다기 보다는 이것 저것하다 해결이 되어서 조금 찜찜한 면이 있다.
-
-<br>
-
-* [When is the geth.ipc file produced?](https://ethereum.stackexchange.com/questions/1492/when-is-the-geth-ipc-file-produced)
