@@ -53,6 +53,7 @@ hello
 ```
 
 * 다른 파일에 출력
+
 ```
 nohup shell.sh > 1.txt
 cat 1.txt
@@ -60,6 +61,7 @@ hello
 ```
 
 * 출력 안하기
+
 ```
 nohup shell.sh > /dev/null
 cat nohup.out
@@ -68,7 +70,7 @@ cat: nohup.out: No such file or directory
 
 ---
 
-nohup 종료방법
+* nohup 종료방법
 
 1. “ps -ef | grep 쉘스크립트파일명” 명령으로 데몬형식으로 실행
 
