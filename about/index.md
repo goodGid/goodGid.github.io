@@ -53,6 +53,8 @@ comments: false
 
 * 　11. 21 [Contributhon Awards](https://goodgid.github.io/Contributhon/)
 
+* 　11. 19 [GDG DevFest 2017 Seoul](https://devfest17-seoul.firebaseapp.com/)
+
 * 　11. 17 [산업기술 R&D](https://goodgid.github.io/RnD/)
 
 * 　11. 11 Git Seminar 진행
