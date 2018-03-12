@@ -47,11 +47,17 @@ comments: false
 
 ### 2017
 
+* 　12. 23 [Open Insight](https://goodgid.github.io/Open-Insight/)
+
 * 　12. 14 ~ 12. 15 [해커톤 멘토링]
 
 * 　11. 21 [Contributhon Awards](https://goodgid.github.io/Contributhon/)
 
+* 　11. 17 [산업기술 R&D](https://goodgid.github.io/RnD/)
+
 * 　11. 11 Git Seminar 진행
+
+* 　11. 09 [Play Node](https://goodgid.github.io/PlayNode/)
 
 * 　10. 26 devlab Tizen을 활용하여 IoT 만들기
 
