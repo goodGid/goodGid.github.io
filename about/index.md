@@ -104,6 +104,8 @@ comments: false
 
 * 　17. 11. 21 [Contributhon](https://goodgid.github.io/Contributhon/) - 장려상
 
+* 　17. 11. 21 ACM-ICPC 교내 우수상
+
 * 　17. 07. 08 App Jam iOS Develop 우수상 수상
 
 * 　17. 01. 07 App Jam iOS Develop 우수상 수상
