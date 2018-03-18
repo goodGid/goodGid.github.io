@@ -69,7 +69,7 @@ comments: false
 
 * 　07. 28 ~ 07. 30	Unithon	iOS	
 
-* 　06. 24 ~ 07. 08	App Jam iOS Develop 우수상 수상 ( Supported by Naver M2 )
+* 　06. 24 ~ 07. 08	App Jam iOS Develop 우수상 수상 ( Supported by Naver D2 )
 
 * 　03. 01 ~ 06. 01	Web Study	<br>　Angular 2 + Git + Java Script	
 
@@ -85,7 +85,7 @@ comments: false
 
 * 　12. 01 ~  17. 06. 01 A.I Lab 	C# - WPF Develop	
 
-* 　12. 24 ~ 17. 01. 07 App Jam iOS Develop 우수상 수상 ( Supported by Naver M2 )
+* 　12. 24 ~ 17. 01. 07 App Jam iOS Develop 우수상 수상 ( Supported by Naver D2 )
 
 * 　12. 16 ~ 17. 02. 28 Clinic Develop Android + Web ( Jquery + Node.js )
 
