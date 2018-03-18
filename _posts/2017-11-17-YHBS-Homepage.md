@@ -9,7 +9,7 @@ tag: Volunteer
 ---
 ## Home Page
 
-See [<b>[Home Page](www.youngheartsboardingschool.com)<b>]
+See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>]
 
 
 * Node의 기본 View Engine인 `EJS`로 개발을 하였다.
