@@ -104,11 +104,11 @@ comments: false
 
 * 　17. 11. 21 [Contributhon](https://goodgid.github.io/Contributhon/) - 장려상
 
-* 　17. 11. 21 ACM-ICPC 교내 우수상
-
 * 　17. 07. 08 App Jam iOS Develop 우수상 수상
 
 * 　17. 01. 07 App Jam iOS Develop 우수상 수상
+
+* 　16. 10. 01 ACM-ICPC 교내 우수상
 
 
 
@@ -118,10 +118,10 @@ comments: false
 
 1. OCJP (Oracle Certified Java Programmer) (14. 01. 24)
 2. 웹 디자인 자격증 (14. 04. 18)
-3. IoT 사물인터넷 자격증 (13. 10. 11)
-4. 한자 2급 (15. 07 .14)
+3. IoT 지식능력검정 자격증 (16. 06. 10)
+4. 한자 2급 (15. 04 .30)
 5. KBS 한국어 자격증 (15. 09 .12)
-6. 정보처리산업기사 (14. 05. 24)
+6. 정보처리산업기사 (15. 06. 05)
 
 
 ---
