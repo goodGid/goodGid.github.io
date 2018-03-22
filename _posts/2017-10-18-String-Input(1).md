@@ -183,7 +183,37 @@ solve)
 ```     
  
 
+---
 
+* scanf 이용하여 한 글자씩 입력받기
 
  
+ {% highlight cpp %}
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    char a,b,c;
+    scanf("%1c%1c%1c",&a,&b,&c);
+    
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+    return 0;
+}
+
+{% endhighlight %}
+
+```
+solve)
+    input : abcde
+    output :
+    a
+    b
+    c
+
+- %1c 를 사용하면 한 글자씩 입력을 받는다.
+```
+
 
