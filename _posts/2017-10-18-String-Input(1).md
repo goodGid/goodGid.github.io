@@ -25,7 +25,7 @@ int main(){
          cout << a << " " << b << endl; //5
          
          cin >> str;                    //6
-         cout << str << endl;;          //7
+         cout << str << endl;           //7
      }
 
 
@@ -44,6 +44,7 @@ solve)
      7번에서 출력 결과 =>loving
 
 - cin은 엔터가 나오면 입력 종료로 간주.
+- cin은 'asd zxc'로 입력하면 띄어쓰기 전까지 입력
 ```     
  
  ---
@@ -124,7 +125,7 @@ solve)
      4번 결과 => so c
  
  
-   getline(변수의 주소, 최대입력가능 문자수, 종결문자);
+   cin.getline(변수의 주소, 최대입력가능 문자수, 종결문자);
  
  - getline()하면은 Enter키가 전달하는 개행문자를 
    입력의 끝으로 인식하여 한줄 전체를 읽는다.
@@ -151,7 +152,9 @@ solve)
  {% highlight cpp %}
 
     #include<iostream>
-     void main(){
+    using namespace std;
+
+    int main(){
          char c[10];
 	 scanf("%s",c);		// 1
 	 cout << c[1] << endl;	// 2
@@ -168,6 +171,14 @@ solve)
 
      1번 a
      2번 공백 출력
+
+     1번 abc def
+     2번 b
+     3번 abc
+
+
+
+    - scanf는 공백전까지 입력받는다.
 ```     
  
 
