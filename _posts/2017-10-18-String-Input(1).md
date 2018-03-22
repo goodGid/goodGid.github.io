@@ -156,8 +156,9 @@ solve)
 
     int main(){
          char c[10];
-	 scanf("%s",c);		// 1
-	 cout << c[1] << endl;	// 2
+	 scanf("%s",c);	        	// 1
+	 cout << c[1] << endl;  	// 2
+     cout << c << endl;         // 3
 	 return 0;
      }
 
