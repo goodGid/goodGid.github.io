@@ -217,3 +217,57 @@ solve)
 ```
 
 
+
+---
+
+* cin.get()과 scanf("%1c")의 공통점
+
+
+{% highlight cpp %}
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char c[100];
+    
+    int i=0;
+    while (1) {
+        c[i] = cin.get();
+        scanf("%1c",c+i);
+        if( c[i] == '\n'){
+            cout << " Enter1 " << endl;
+            break;
+        }
+        if( c[i] == '\0'){
+            cout << " Enter2 " << endl;
+            break;
+        }
+        i++;
+    }
+    cout << c << endl;
+    return 0;
+}
+
+
+
+abc de
+ Enter1 
+abc de
+
+
+{% endhighlight %}
+
+* 코딩테스트를 치루다 보면 n값을 주어지지 않고 임의의 Input이 들어 올 때가 있다.
+
+* 이러한 문제의 입력을 준비하고자 공부하였다.
+
+* Enter2이 아닌 Enter1이 출력 된다. 
+
+* `Enter`를 입력했을 시 그 값은 `\n`이다.
+
+
+
+
+
