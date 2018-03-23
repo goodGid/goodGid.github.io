@@ -237,11 +237,11 @@ int main() {
         c[i] = cin.get();
         scanf("%1c",c+i);
         if( c[i] == '\n'){
-            cout << " Enter1 " << endl;
+            cout << "Enter1" << endl;
             break;
         }
         if( c[i] == '\0'){
-            cout << " Enter2 " << endl;
+            cout << "Enter2" << endl;
             break;
         }
         i++;
@@ -250,14 +250,16 @@ int main() {
     return 0;
 }
 
-
-
-abc de
- Enter1 
-abc de
-
-
 {% endhighlight %}
+
+
+```
+solve)
+    input : abc de
+    output :
+    Enter1 
+    abc de
+```
 
 * 코딩테스트를 치루다 보면 n값을 주어지지 않고 임의의 Input이 들어 올 때가 있다.
 
