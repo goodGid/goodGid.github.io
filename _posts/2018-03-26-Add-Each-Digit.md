@@ -11,7 +11,7 @@ tag:
 
 ## Related Problem
 
-Problem URL : Problem URL : **[분해합](https://www.acmicpc.net/problem/2231)**
+Problem URL : **[분해합](https://www.acmicpc.net/problem/2231)**
 
 ---
 
