@@ -8,7 +8,6 @@ tag:
 - Key Point
 ---
 
-
 ## String Split
 
 {% highlight cpp %}
