@@ -116,6 +116,7 @@ comments: false
 
 ## Certicate
 
+1. OPIc IM1 (17. 12. 04) - 1A7636534792
 1. OCJP (Oracle Certified Java Programmer) (14. 01. 24)
 2. 웹 디자인 자격증 (14. 04. 18)
 3. IoT 지식능력검정 자격증 (16. 06. 10)
