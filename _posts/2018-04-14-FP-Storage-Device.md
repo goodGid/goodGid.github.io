@@ -78,9 +78,7 @@ r = 1/2 * 16.67 = 8.33ms
 
 * 블록의 기록 
 
-헤드가 판독하는 대신 기록하는 것을 제외하고
-
-블록의 판독 과정과 동일
+헤드가 판독하는 대신 기록하는 것을 제외하고 블록의 판독 과정과 동일
 
 * 블록의 갱신
     * 디스크에서 직접 갱신은 불가능
@@ -88,6 +86,7 @@ r = 1/2 * 16.67 = 8.33ms
         2. 메인 메모리 내의 블록 사본을 갱신
         3. 갱신된 블록 사본을 디스크에 기록
 
+<br> 
 
 * 블록 갱신 지연 시간 : 블록 판독 시간 + 사본 갱신 시간 + 기록 시간 <br> 메인 메모리 내에서의 블록 갱신 시간은 보통 무시 <br> Cause : 메인 메모리는 Fast
 
@@ -135,5 +134,37 @@ r = 1/2 * 16.67 = 8.33ms
 
 ## 블로킹 방법
 
+1.고정 길이 블로킹 : 가장 큰 레코드를 기준 <br> 관리하기 쉽다.
+
+- fixed length records
+
+- fixed length block
+
+<br>
+
+2.신장된 가변 길이 블로킹 // 신장 : 한 레코드가 인접한 몇 개 블록에 걸쳐 저장
+
+- varable length records
+
+- fixed length block with spanning
+
+- 구현, 판독, 갱신이 어려움 
+
+<br>
+
+3.비 신장된 가변 길이 블로킹 
+
+- varable length records
+
+- fixed length block with no spanning
+
+- 저장공간 낭비가 심함
 
 
+{% capture images %}
+    /assets/img/posts/fp_sd_1.png
+{% endcapture %}
+{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+
+
+---
