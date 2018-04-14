@@ -265,7 +265,7 @@ Q. 적재 밀도가 낮을 때(자유공간 많음) 장단점은 ?
 
 
 {% capture images %}
-    /assets/img/posts/fp_sd_2_6.png
+    /assets/img/file_processing/fp_sd_2_6.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
