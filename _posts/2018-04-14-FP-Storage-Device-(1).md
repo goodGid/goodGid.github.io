@@ -2,7 +2,7 @@
 layout: post
 title:  " 파일 저장 장치 [ Part 1 ] "
 date:   2018-04-14
-excerpt: " 파일 저장 장치 "
+excerpt: " 파일 저장 장치 [1] "
 cate : "posts"
 tag:
 - File Processing
@@ -164,7 +164,7 @@ r = 1/2 * 16.67 = 8.33ms
 
 
 {% capture images %}
-    /assets/img/posts/fp_sd_1.png
+    /assets/img/posts/fp_sd_1_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -178,7 +178,7 @@ r = 1/2 * 16.67 = 8.33ms
 * 블록 헤더 : 블로킹된 레코드를 처리하기 위해서는 블록 내에서의 레코드 시작점과 끝점을 식별 해야한다.
 
 {% capture images %}
-    /assets/img/posts/fp_sd_2.png
+    /assets/img/posts/fp_sd_1_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -196,7 +196,7 @@ r = 1/2 * 16.67 = 8.33ms
 
 
 {% capture images %}
-    /assets/img/posts/fp_sd_3.png
+    /assets/img/posts/fp_sd_1_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
@@ -238,6 +238,6 @@ Q. 적재 밀도가 낮을 때(자유공간 많음) 장단점은 ?
 * 논리적으로 연관된 레코드들이 물리적으로 가까이 있다면 <br> 최소지연 시간으로 해당 레코드들 접근 가능
 
 {% capture images %}
-    /assets/img/posts/fp_sd_4.png
+    /assets/img/posts/fp_sd_1_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
