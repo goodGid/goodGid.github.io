@@ -115,7 +115,7 @@ r = 1/2 * 16.67 = 8.33ms
 
 `하나`의 `물리적 레코드(블록)`에 저장시키는 것
 
-* 블로킹 인수 = B / R       ## R : 레코드 크기 , B : 블록 크기
+* 블로킹 인수 = [ B / R ] <br> ## R : 레코드 크기 , B : 블록 크기
 
 * 장점
 
@@ -142,7 +142,7 @@ r = 1/2 * 16.67 = 8.33ms
 
 <br>
 
-2.신장된 가변 길이 블로킹 // 신장 : 한 레코드가 인접한 몇 개 블록에 걸쳐 저장
+2.신장된 가변 길이 블로킹 <br> 신장 : 한 레코드가 인접한 몇 개 블록에 걸쳐 저장
 
 - varable length records
 
@@ -164,7 +164,41 @@ r = 1/2 * 16.67 = 8.33ms
 {% capture images %}
     /assets/img/posts/fp_sd_1.png
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+{% include gallery images=images caption=" " cols=1 %}
 
 
 ---
+
+
+
+## 6-(2) 레코드와 블록
+
+* 블록 헤더 : 블로킹된 레코드를 처리하기 위해서는 블록 내에서의 레코드 시작점과 끝점을 식별 해야한다.
+
+{% capture images %}
+    /assets/img/posts/fp_sd_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+
+* 고정 길이 블록킹 
+    * 길이만 알면 레코드 구분 가능
+
+<br>
+
+* 가변 길이 블록킹
+    * 분리 표시 (레코드 끝 마크))
+    * 각 레코드 앞에 길이 지시자
+    * 위치 테이블
+
+
+{% capture images %}
+    /assets/img/posts/fp_sd_3.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+## 6-(3) 블로킹의 고려 사항
