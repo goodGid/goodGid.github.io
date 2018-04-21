@@ -113,7 +113,7 @@ tag:
 
 ---
 
-# 선택 트리 (Selection Tree) 
+# 선택 트리 (Selection Tree) (1)
 
 * m개의 런을 하나의 큰 런으로 정렬
     - m개의 런 중 가장 작은 키 값의 레코드를 계속 선택, 출력
@@ -124,3 +124,85 @@ tag:
     2. 패자 트리 (loser tree)
 
 
+---
+
+# 선택 트리 (2)
+
+* 승자 트리
+    - 완전 이진 트리
+    - 각 단말 노드는 각 런의 최소 키 값 원소를 나타냄
+    - 내부 노드는 그의 `두 자식 중`에서 `작은 키` 값을 가진 원소를 나타냄
+    - 런이 8개인 경우 승자 트리 예
+
+
+
+
+
+* 승자 트리 구축 과정
+    - 가장 `작은 키` 값을 가진 원소가 승자로 올라가는 토너먼트 경기로 표현
+    - 트리의 각 내부 노드 : <br> 두 자식 노드 원소의 토너먼트 승자
+    - 루트 노드 : <br> 전체 토너먼트 승자, 트리에서 가장 작은 키 값 가진 원소
+
+
+{% capture images %}
+    /assets/img/file_processing/sort_merge_2_8.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+# 선택 트리 (3)
+
+* 합병의 진행
+    - 루트가 결정되는 대로 순서순차에 출력 (7)
+    - 다음 원소 <br> 즉 런 4의 키 값이 13인 원소가 승자트리 노드[11]로 들어감
+    - 승자 트리를 다시 재구성 : <br> 노드 11에서부터 루트까지의 경로를 따라가면서 형제 노드 간 토너먼트 진행
+
+{% capture images %}
+    /assets/img/file_processing/sort_merge_2_9.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+---
+
+# 선택 트리 (4)
+
+{% capture images %}
+    /assets/img/file_processing/sort_merge_2_10.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+# 선택 트리 (5)
+
+* 패자 트리 (Loser tree)
+    - 루트 위에 0번 노드가 추가된 `완전 이진 트리`
+
+* 패자 트리 구축 과정
+    - 단말 노드 : 각 런의 최소 키값 원소
+    - 내부 노드
+        - 두 자식 노드들이 부모노드에서 토너먼트 경기를 수행
+        - `패자`는 `부모 노드`에 남음
+        - `승자`는 `그 위` 부모 노드로 올라가서 다시 토너먼트 경기를 진행
+
+    - 루트 노드
+        - 패자는 1번 루트 노드에 남음
+        - 승자는 전체 토너먼트의 승자로서 `0번` 노드로 올라가 출력
+
+
+{% capture images %}
+    /assets/img/file_processing/sort_merge_2_11.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+# 선택 트리 (6)
+
+* 합병의 진행
+    - 출력된 원소가 속한 런 4의 다음 원소, <br> 즉 키값이 13인 원소를 패자트리 노드 11에 삽입
+    - 패자 트리를 다시 재구성 : <br> 토너먼트는 노드 11에서부터 루트 노드 1까지의 경로를 따라 경기를 진행
