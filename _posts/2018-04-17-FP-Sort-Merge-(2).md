@@ -111,4 +111,16 @@ tag:
 {% include gallery images=images caption=" " cols=1 %}
 
 
+---
+
+# 선택 트리 (Selection Tree) 
+
+* m개의 런을 하나의 큰 런으로 정렬
+    - m개의 런 중 가장 작은 키 값의 레코드를 계속 선택, 출력
+    - `선택 트리`를 사용하여 `비교 횟수`를 줄일 수 있음
+
+* 선택 트리의 종류
+    1. 승자 트리 (winner tree)
+    2. 패자 트리 (loser tree)
+
 
