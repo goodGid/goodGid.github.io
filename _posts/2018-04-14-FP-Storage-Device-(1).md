@@ -21,6 +21,7 @@ tag:
     - 저장 매체 vs 접근 장치
 
 
+
 ---
 
 # 파일 저장 장치의 특성 (2)
@@ -78,4 +79,65 @@ tag:
     - 고용량, 비소멸성, 저비용
 
 
+---
+
+
+# 저장 장치의 계층 (4)
+
+{% capture images %}
+    /assets/img/file_processing/fp_sd_1_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+
+---
+
+# 자기 디스크
+
+{% capture images %}
+    /assets/img/file_processing/fp_sd_1_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+---
+
+# (1) 데이터 저장
+
+* 디스크의 구성
+    - `트랙` : 자기화 되지 않은 갭(gap)으로 분리된 섹터(Secotr)들로 구성
+    - `섹터` : 기록과 판독 작업의 최소 단위
+    - `실린더` : 지름이 같은 트랙의 전체
+
+* 블록(Block)
+    - 디스크와 메인 메모리 사이의 전송되는 데이터의 논리적 단위
+    - 블록은 하나 이상의 섹터에 저장
+    - 한 원반에 있는 각 트랙은 직경이 다르지만 섹터 수는 같음 <br> ==> 트랙마다 기록 밀도가 다름
+    
+{% capture images %}
+    /assets/img/file_processing/fp_sd_1_3.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+{% capture images %}
+    /assets/img/file_processing/fp_sd_1_4.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+0번째 실린더
+
+4번째 면에
+
+13번째 레코드
+
+---  
+
+# 회전 지연 시간
+
+{% capture images %}
+    /assets/img/file_processing/fp_sd_1_5.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
