@@ -13,10 +13,10 @@ tag:
 
 
 {% capture images %}
-    /assets/img/Coding_Test/sc_1.png
-    /assets/img/Coding_Test/sc_2.png
-    /assets/img/Coding_Test/sc_3.png
-    /assets/img/Coding_Test/sc_4.png
+    /assets/img/coding_test/sc_1.png
+    /assets/img/coding_test/sc_2.png
+    /assets/img/coding_test/sc_3.png
+    /assets/img/coding_test/sc_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=4 %}
 
@@ -45,10 +45,19 @@ tag:
 ## 1번
 
 
+
+
+
 {% capture images %}
-    /assets/img/Coding_Test/sc_1_1.png
-    /assets/img/Coding_Test/sc_1_2.png
-    /assets/img/Coding_Test/sc_1_3.png
+    /assets/img/file_processing/sort_merge_2_11.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
+{% capture images %}
+    /assets/img/coding_test/sc_1_1.png
+    /assets/img/coding_test/sc_1_2.png
+    /assets/img/coding_test/sc_1_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=3 %}
 
@@ -80,10 +89,10 @@ int solution(vector<int> d, int budget) {
 
 
 {% capture images %}
-    /assets/img/Coding_Test/sc_2_1.png
-    /assets/img/Coding_Test/sc_2_2.png
-    /assets/img/Coding_Test/sc_2_3.png
-    /assets/img/Coding_Test/sc_2_4.png
+    /assets/img/coding_test/sc_2_1.png
+    /assets/img/coding_test/sc_2_2.png
+    /assets/img/coding_test/sc_2_3.png
+    /assets/img/coding_test/sc_2_4.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=4 %}
 
@@ -121,9 +130,9 @@ vector<int> solution(int n, vector<string> words) {
 
 
 {% capture images %}
-    /assets/img/Coding_Test/sc_3_1.png
-    /assets/img/Coding_Test/sc_3_2.png
-    /assets/img/Coding_Test/sc_3_3.png
+    /assets/img/coding_test/sc_3_1.png
+    /assets/img/coding_test/sc_3_2.png
+    /assets/img/coding_test/sc_3_3.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=3 %}
 
