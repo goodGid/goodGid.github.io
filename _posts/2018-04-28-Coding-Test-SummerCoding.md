@@ -88,10 +88,15 @@ int solution(vector<int> d, int budget) {
 {% capture images %}
     /assets/img/coding_test/sc_2_1.png
     /assets/img/coding_test/sc_2_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+
+{% capture images %}
     /assets/img/coding_test/sc_2_3.png
     /assets/img/coding_test/sc_2_4.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+{% include gallery images=images caption=" " cols=2 %}
 
 
 {% highlight cpp %}
