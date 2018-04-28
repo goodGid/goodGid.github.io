@@ -44,16 +44,6 @@ tag:
 
 ## 1번
 
-
-
-
-
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_11.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
-
 {% capture images %}
     /assets/img/coding_test/sc_1_1.png
     /assets/img/coding_test/sc_1_2.png
