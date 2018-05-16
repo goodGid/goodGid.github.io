@@ -22,10 +22,15 @@ tag:
 {% capture images %}
 	/assets/img/posts/han_day_play_1.png
 	/assets/img/posts/han_day_play_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+
+{% capture images %}
 	/assets/img/posts/han_day_play_3.png
 	/assets/img/posts/han_day_play_4.png
 {% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+{% include gallery images=images caption=" " cols=2 %}
 
 {% capture images %}
 	/assets/img/posts/han_day_play_5.png
@@ -33,6 +38,7 @@ tag:
 	/assets/img/posts/han_day_play_7.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=3 %}
+
 
 우리 프로젝트의 결과물에 대해 그려보았다.
 
