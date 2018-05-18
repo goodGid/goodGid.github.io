@@ -17,6 +17,26 @@ tag:
 {% endcapture %}
 {% include gallery images=images caption=" " cols=2 %}
 
+# IBM Lecture
+
+
+{% capture images %}
+	/assets/img/posts/han_day_ibm_1.png
+	/assets/img/posts/han_day_ibm_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=2 %}
+
+
+{% capture images %}
+	/assets/img/posts/han_day_ibm_3.png
+	/assets/img/posts/han_day_ibm_4.png
+	/assets/img/posts/han_day_ibm_5.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=3 %}
+
+
+---
+
 # Play 
 
 {% capture images %}
