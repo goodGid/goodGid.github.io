@@ -24,6 +24,9 @@ void Merge(vector <int>& v, int s, int e, int m);
 void Merge_Sort(vector<int>& v, int s, int e);
 void Quick_Sort(vector<int> &v, int s, int e);
 void Print(vector<int>v);
+
+// Time Complex : O(n2)
+// Space Complex : O(n)
 void Selection_Sort(vector<int> v)
 {
 	for (int i = 0; i < v.size()-1; i++)
@@ -40,6 +43,8 @@ void Selection_Sort(vector<int> v)
 	//Print(v);
 }
 
+// Time Complex : O(n2)
+// Space Complex : O(n)
 void Insertion_Sort(vector<int> v)
 {
 	for (int i = 1; i < v.size(); i++)
@@ -52,11 +57,32 @@ void Insertion_Sort(vector<int> v)
 			swap(v[j], v[j + 1]);
 			j--;						//비교 인덱스를 -1하여 비교를 반복
 		}
-		v[j + 1] = key;				//삽입 변수가 더 클 경우, 비교 인덱스+1에 삽입 변수 저장
+		//v[j + 1] = key;				//삽입 변수가 더 클 경우, 비교 인덱스+1에 삽입 변수 저장
+										//while안에서 swap()을 해주기 때문에 없어도 될 듯  
 		Print(v);
 	}
 }
 
+// Time Complex : O(n2)
+// Space Complex : O(n)
+void Insertion_Sort2(int a[], int size){
+    int tmp;
+
+    for (int i = 1; i < size; i++) {
+        tmp = a[i];
+        int j = i;
+
+        while (j > 0 && a[j - 1] > tmp) {
+            a[j] = a[j - 1];
+            j--;
+        }
+        a[j] = tmp;		// while안에서 swap이 아니라 그냥 덮어쓰기이기 때문에 생략하면 안된다.
+    }
+}
+
+// Time Complex : O(n2)
+// Space Complex : O(n)
+// 뒤에서 부터 Fix
 void Bubble_Sort(vector<int> v)
 {
 	for (int i = 0; i < v.size()-1; i++)
@@ -68,6 +94,26 @@ void Bubble_Sort(vector<int> v)
 		}
 			Print(v);
 	}
+}
+
+// Time Complex : O(n2)
+// Space Complex : O(n)
+// 앞에서 부터 Fix
+void Bubble_Sort2(int a[], int size) {
+    int tmp;
+    
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = i + 1; j < size; j++) {
+            if (a[i] > a[j]) {
+                tmp = a[i];
+                a[i] = a[j];
+                a[j] = tmp;
+            
+            for(int i=0; i<size; i++) cout << a[i] << " " ; cout << endl;
+            }
+        }
+    }
+    
 }
 
 void Merge(vector <int>& v, int s, int e, int m) //합병
@@ -148,16 +194,16 @@ void Print(vector<int>v)
 
 int main()
 {
-	vector <int> v;
-	//v = { 3,7,4,5,2,1,9,8,6 };
-	v = { 23, 79, 98, 56, 16, 25, 58, 55 };
-	//Selection_Sort(v);
-	//Insertion_Sort(v);
-	//Bubble_Sort(v);
-	//Merge_Sort(v,0, v.size()-1);
-	Quick_Sort(v, 0, v.size() - 1);
-	return 0;
+    vector <int> v;
+    //v = { 3,7,4,5,2,1,9,8,6 };
+    v = { 23, 79, 98, 56, 16, 25, 58, 55 };
+//    v = { 8,5,6,2,4};
+//    Selection_Sort(v);
+//    Insertion_Sort(v);
+    Bubble_Sort(v);
+    int a[] = { 8,5,6,2,4 };
+//    Bubble_Sort2(a,5);
+//    Merge_Sort(v,0, v.size()-1);
+//    Quick_Sort(v, 0, v.size() - 1);
+    return 0;
 }
- 
-{% endhighlight %}
-
