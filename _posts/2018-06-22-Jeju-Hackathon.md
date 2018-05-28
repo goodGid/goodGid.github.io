@@ -8,7 +8,7 @@ tag:
 - Hackathon
 ---
 
-*  `어모어뷰티X핵캠`을 갔다. 
+# 어모어뷰티 X 핵캠
 
 {% capture images %}
 	/assets/img/posts/jeju_hackathon_1.png
