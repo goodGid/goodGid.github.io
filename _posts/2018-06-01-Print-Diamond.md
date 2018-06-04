@@ -41,6 +41,31 @@ void printDiamond(int n){
 {% endhighlight %}
 
 
+---
+
+
+Problem URL : **[홈 방범 서비스](https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V61LqAf8DFAWu)**
+
+{% highlight cpp %}
+
+
+void check_Diamond(int x,int y, int K) {
+    Cnt = 0;
+    for (int i = x - K + 1; i <= x + K - 1; i++)
+        for (int j = y - K + 1; j <= y + K - 1; j++)
+            if (i >= 0 && j >= 0 && i < N && j < N &&
+                i >= x - K + 1 + Abs(j - y) &&
+                i <= x + K - 1 - Abs(j - y) &&
+                (map[i][j] == 1))
+                Cnt++;
+}
+
+
+{% endhighlight %}
+
+
+---
+
 ## Review
 
 * 다이아몬드형식 출력하기
