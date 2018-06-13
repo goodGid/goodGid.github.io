@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " M-원 탐색 트리 "
+title:  " m-원 탐색 트리 "
 date:   2018-06-13
 excerpt: " M-원 탐색 트리 "
 cate : "posts"
@@ -8,7 +8,7 @@ tag:
 - File Processing
 ---
 
-# M-원 탐색 트리
+# m-원 탐색 트리
 
 * 이원 탐색 트리보다 분기율을 높이면 : m개 서브트리
 
