@@ -47,7 +47,7 @@ tag:
 
 
 {% capture images %}
-    /assets/img/server_concept/os_reference_models_protocols_1.png
+    /assets/img/networks_basic/os_reference_models_protocols_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
