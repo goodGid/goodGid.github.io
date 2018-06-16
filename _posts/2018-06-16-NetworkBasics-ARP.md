@@ -16,7 +16,7 @@ tag:
 
 * 두 주소는 서로 협조하면서 사용
 
-* 이 두 주소를 협조하면서 이용할 수 있도록 물리와 논리의 다리 역할을 하고 있는 것이 `ARP(Address Resolution Protocol)`
+* 이 두 주소를 협조하면서 이용할 수 있도록 <br> 물리와 논리의 다리 역할을 하고 있는 것이 `ARP(Address Resolution Protocol)`
 
 * 실질적으로 <b>IP 주소와 MAC 주소를 대응</b>시키는 일을 한다.
 
