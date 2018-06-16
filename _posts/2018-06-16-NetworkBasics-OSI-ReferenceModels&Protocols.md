@@ -2,7 +2,7 @@
 layout: post
 title:  " [네트워크 기초 지식] OSI 참조 모델과 프로토콜 "
 date:   2018-06-16
-excerpt: " OSI 참조 모델과 프로토콜 "
+excerpt: " OS Reference Models Protocols "
 cate : "posts"
 tag:
 - Server
