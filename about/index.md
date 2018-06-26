@@ -25,6 +25,8 @@ comments: false
 
 ### 2018
 
+* 　06. 22 ~ 06. 24 [A MORE BUEATY X 핵캠](https://goodgid.github.io/Jeju-Hackathon/)
+
 * 　05. 12 ~ 05. 13 한이음데이 참가 
 
 * 　02. 01 ~ 농구 소모임 '라온' 회장
@@ -130,6 +132,8 @@ comments: false
 ---
 
 ## Travled
+
+* 　2018. 06. 24 ~ 06. 26	Jeju
 
 * 　2017. 08. 01 ~ 08. 30	Nepal
 
