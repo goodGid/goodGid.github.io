@@ -59,7 +59,6 @@ example/*.cpp
 FROM ubuntu
 
 FROM ubuntu:16.04
-
 ```
 
 ---
@@ -222,7 +221,6 @@ docker run -e HELLO=4321 example
 ```
 ADD hello-dir /hello-dir
 ADD hello.zip /
-
 ```
 
 * ADD <복사할 파일 경로> <이미지에서 파일이 위치할 경로> 형식
@@ -319,12 +317,3 @@ RUN touch hello.txt
 ```
 
 * 상대 경로를 사용하여 /에서 var로 이동 후 <br> www로 이동했기 때문에 /var/www/hello.txt에 파일이 생성
-
-
-
-
-{% capture images %}
-    /assets/img/networks_basic/various_ip_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
