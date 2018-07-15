@@ -25,7 +25,11 @@ comments: false
 
 ### 2018
 
+* 　06. 30 ~ 07. 14	App Jam Server Develop 대상 수상 ( Supported by Naver D2 )
+
 * 　06. 22 ~ 06. 24 [A MORE BUEATY X 핵캠](https://goodgid.github.io/Jeju-Hackathon/)
+
+* 　06. 01 ~ 알고리즘 연구실 
 
 * 　05. 12 ~ 05. 13 한이음데이 참가 
 
@@ -103,6 +107,8 @@ comments: false
 ---
 
 ## Prize
+
+* 　17. 07. 14 App Jam Server Develop 대상 수상
 
 * 　17. 12. 05 [World Friends ICT 봉사단](https://goodgid.github.io/ICT-Volunteer/) - 우수 프로젝트상
 
