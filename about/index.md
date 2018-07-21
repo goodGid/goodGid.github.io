@@ -25,6 +25,8 @@ comments: false
 
 ### 2018
 
+* 　07. 20 ~ 07. 21	[Amathon](https://goodgid.github.io/2018_Amathon/) 참가
+
 * 　06. 30 ~ 07. 14	App Jam Server Develop 대상 수상 ( Supported by Naver D2 )
 
 * 　06. 22 ~ 06. 24 [A MORE BUEATY X 핵캠](https://goodgid.github.io/Jeju-Hackathon/)
