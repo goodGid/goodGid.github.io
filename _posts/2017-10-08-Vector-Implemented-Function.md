@@ -1,41 +1,11 @@
 ---
 layout: post
-title:  "Vector :: Default Function"
+title:  "Vector :: Implemented Function"
 date:   2017-10-07
-excerpt: "Vector 사용법"
+excerpt: "Vector :: Implemented Function"
 cate : "algorithm"
 tag:
 - Key Point
----
-
-## Function
-
-> **v.insert() vs v.push_back()**
-
-You can use `insert` to perform the same job as `push_back` with `v.insert(v.end(), value)`
-
-{% highlight cpp %}
-
-ex 1)
-    vector<int> v = {1, 3, 4};
-    v.insert(next(begin(v)), 2);
-    v.push_back(5);
-    v --> now contains {1, 2, 3, 4, 5}
-
-
-ex 2)
-    v.insert(v.begin(), val );
-    v2.push_back(val);
-
-    N : 3 
-    input : 1 3 2
-
-    v --> { 2 3 1 }
-    v2 --> { 1 3 2 }
-
-{% endhighlight %}
-
-
 ---
 
 ## Code
