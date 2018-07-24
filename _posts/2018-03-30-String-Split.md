@@ -8,7 +8,7 @@ tag:
 - Key Point
 ---
 
-## String Split
+## [1] String Split : 모든 strTok 가능
 
 {% highlight cpp %}
 
@@ -43,8 +43,8 @@ string* strSplit(string strOrigin, string strTok){
 int main(){
     string s = "I,2017101,김재현,컴퓨터공학과,3,1234123412345";
     
-    string* query = strSplit(s, ','); // [1] Error
-    string* query = strSplit(s, ","); // [2] Good
+    string* query = strSplit(s, ','); // [1] Error : ' ' (x)
+    string* query = strSplit(s, ","); // [2] Good : " " (o)
     
     cout << query[0] << endl;
     cout << query[1] << endl;
@@ -79,10 +79,60 @@ Program ended with exit code: 0
 
 ---
 
-## Review
+## [1] Review
 
 * [1]은 Error가 발생한다.
 
 * [ "," ]처럼 `쌍따옴표`로 묶어줘야한다.
 
 * 함수 실행시 약간의 시간이 걸린다.
+
+
+---
+
+
+
+## [2] String Split : Space 전용
+
+{% highlight cpp %}
+
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+
+int main(){
+    string sentence = "string to split";
+    istringstream iss(sentence);
+    vector<string> v;
+
+    // [1]
+    for(string s; iss >> s; ){
+        cout << s << endl;
+        v.push_back(s);
+    }
+    
+    // [2]
+    vector<string> result{
+        istream_iterator<string>(iss), {}
+    };
+    
+    // 단어를 출력하려면
+    copy(istream_iterator<string>(iss),
+         istream_iterator<string>(),
+         ostream_iterator<string>(cout, "\n"));
+
+    // 단어를 container에 저장하려면
+    vector<string> words;
+    copy(istream_iterator<string>(iss),
+         istream_iterator<string>(),
+         back_inserter(words));
+    
+}
+{% endhighlight %}
+
+---
+
+## [2] Review
+
+* " " 전용
