@@ -101,13 +101,20 @@ Program ended with exit code: 0
 int main(){
     string sentence = "string to split";
     istringstream iss(sentence);
-    vector<string> v;
+    
 
-    // [1]
+    // [1] - 1 : string
+    vector<string> v;
     for(string s; iss >> s; ){
-        cout << s << endl;
         v.push_back(s);
     }
+
+    // [1] - 2 : int
+    vector<int> v;
+    for(int s; iss >> s; ){
+        v.push_back(s);
+    }
+
     
     // [2]
     vector<string> result{
