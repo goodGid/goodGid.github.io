@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "ASCII to Int "
+title:  "ASCII Value "
 date:   2018-07-24
-excerpt: "ASCII to Int"
+excerpt: "ASCII Value "
 cate : "algorithm"
 tag:
 - Key Point
@@ -13,7 +13,7 @@ Problem URL : **[시저 암호](https://programmers.co.kr/learn/courses/30/lesso
 
 
 {% capture images %}
-    /assets/img/algorithm/ascii_to_int_1.png
+    /assets/img/algorithm/ascii_value_1.png
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
 
