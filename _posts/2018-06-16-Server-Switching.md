@@ -58,7 +58,7 @@ else
 
 
 {% capture images %}
-    /assets/img/networks_basic/switching_1.png
+    /assets/img/server/switching_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

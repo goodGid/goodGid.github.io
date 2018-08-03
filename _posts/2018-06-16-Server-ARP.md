@@ -72,7 +72,7 @@ Why?
 <br>
 
 {% capture images %}
-    /assets/img/networks_basic/arp_1.png
+    /assets/img/server/arp_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

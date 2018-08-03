@@ -10,7 +10,7 @@ tag:
 
 
 {% capture images %}
-    /assets/img/networks_basic/switch_function_1.png
+    /assets/img/server/switch_function_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

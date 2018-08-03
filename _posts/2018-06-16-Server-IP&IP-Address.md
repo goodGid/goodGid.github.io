@@ -55,7 +55,7 @@ tag:
 
 
 {% capture images %}
-    /assets/img/networks_basic/ip&ip_address_1.png
+    /assets/img/server/ip&ip_address_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 

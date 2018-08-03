@@ -43,7 +43,7 @@ tag:
 <br>
 
 {% capture images %}
-    /assets/img/networks_basic/routing_1.png
+    /assets/img/server/routing_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
