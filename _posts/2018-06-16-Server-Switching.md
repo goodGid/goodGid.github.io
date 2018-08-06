@@ -62,3 +62,12 @@ else
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+
+<br>
+
+{% capture images %}
+    /assets/img/server/switch_function_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
+
