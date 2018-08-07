@@ -110,7 +110,7 @@ comments: false
 
 ## Prize
 
-* 　17. 07. 14 App Jam Server Develop 대상 수상
+* 　18. 07. 14 App Jam Server Develop 대상 수상
 
 * 　17. 12. 05 [World Friends ICT 봉사단](https://goodgid.github.io/ICT-Volunteer/) - 우수 프로젝트상
 
