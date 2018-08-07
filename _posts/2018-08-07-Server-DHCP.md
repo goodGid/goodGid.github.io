@@ -20,7 +20,7 @@ tag:
 <br>
 
 * `동적 할당`은 서버가 클라이언트에 대해 IP주소, 서브넷 마스크, 기본 게이트웨이 등과 같은 <br> 네트워크와 관련된 설정 정보를 배포하여 자동으로 설정하는 방법
-    - `동적 할당`으로 IP주소를 배포할 때 사용하는 프로토콜이 `DHCP(Dynamic Host Configuration Protocol)`이다.
+    - `DHCP(Dynamic Host Configuration Protocol)`는 `동적 할당`으로 IP주소를 배포할 때 사용하는 프로토콜이다.
     - `DHCP`를 사용하면 번잡한 IP 주소 관리를 편하게 사용 + 부족한 IP 주소를 활용
 
 
