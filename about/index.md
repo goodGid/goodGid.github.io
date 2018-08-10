@@ -31,6 +31,8 @@ comments: false
 
 * 　06. 22 ~ 06. 24 [A MORE BUEATY X 핵캠](https://goodgid.github.io/Jeju-Hackathon/)
 
+* 　03. 01 ~ 06. 21 블록체인 프로젝트 진행
+
 * 　06. 01 ~ 알고리즘 연구실 
 
 * 　05. 12 ~ 05. 13 한이음데이 참가 
