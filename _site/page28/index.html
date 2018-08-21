@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page28/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Solidity-(11)/"> Ethereum Basic :: Solidity Grammer - 블록과 거래 속성들  </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#블록-속성들" id="markdown-toc-블록-속성들">블록 속성들</a>    <ul>
+      <li><a href="#1-blockblockhashuint-blocknumber-returns-byte32" id="markdown-toc-1-blockblockhashuint-blocknumber-returns-byte32">1. block.blockhash(uint blockNumber) returns (byte32)</a></li>
+      <li><a href="#2-blockcoinbaseaddress" id="markdown-toc-2-blockcoinbaseaddress">2. block.coinbase(address)</a></li>
+      <li><a href="#3-blockdifficultyuint" id="markdown-toc-3-blockdifficultyuint">3. block.difficulty(uint)</a></li>
+      <li><a href="#4-blockgaslimituint" id="markdown-toc-4-blockgaslimituint">4. block.gaslimit(uint)</a></li>
+      <li><a href="#5-blocknumberuint" id="markdown-toc-5-blocknumberuint">5. block.number(uint)</a></li>
+      <li><a href="#6-blocktimestampuint" id="markdown-toc-6-blocktimestampuint">6. block.timestamp(uint)</a></li>
+    </ul>
+  </li>
+  <li><a href="#거래-속성들" id="markdown-toc-거래-속성들">거래 속성들</a>    <ul>
+      <li><a href="#1-msgdatabytes" id="markdown-toc-1-msgdatabytes">1. msg.data(bytes)</a></li>
+      <li><a href="#2-msggasuint" id="markdown-toc-2-msggasuint">2. msg.gas(uint)</a></li>
+      <li><a href="#3-msgsenderaddress" id="markdown-toc-3-msgsenderaddress">3. msg.sender(address)</a></li>
+      <li><a href="#4-msgsigbytes4" id="markdown-toc-4-msgsigbytes4">4. msg.sig(bytes4)</a></li>
+      <li><a href="#5-msgvalueuint" id="markdown-toc-5-msgvalueuint">5. msg.value(uint)</a></li>
+      <li><a href="#6-nowuint" id="markdown-toc-6-nowuint">6. now(uint)</a></li>
+      <li><a href="#7-txgaspriceuint" id="markdown-toc-7-txgaspriceuint">7. tx.gasprice(uint)</a></li>
+      <li><a href="#8-txoriginaddress" id="markdown-toc-8-txoriginaddress">8. tx.origin(address)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="블록-속성들">블록 속성들</h2>
+
+<p>블록과 거래(transaction)의 속성을 가져올 수 있는 변수 및 함수이다.</p>
+
+<h4 id="1-blockblockhashuint-blocknumber-returns-byte32">1. block.blockhash(uint blockNumber) returns (byte32)</h4>
+
+<p>입력한 blockNumber번째의 <code class="highlighter-rouge">블록</code>의 <code class="highlighter-rouge">해시 값</code>을 반환한다.</p>
+
+<p>다만 현재 블록을 포함한</p>
+
+<p>최근 256개의 블록에서만 동작한다.</p>
+
+<h4 id="2-blockcoinbaseaddress">2. block.coinbase(address)</h4>
+
+<p>현재 블록의 채굴자 주소를 반환한다.</p>
+
+<h4 id="3-blockdifficultyuint">3. block.difficulty(uint)</h4>
+
+<p>현재 블록의 채굴 난이도를 반환한다.</p>
+
+<h4 id="4-blockgaslimituint">4. block.gaslimit(uint)</h4>
+
+<p>현재 블록의 gas limit값을 반환한다.</p>
+
+<h4 id="5-blocknumberuint">5. block.number(uint)</h4>
+
+<p>현배 블록이 몇 번째 블록인지에 대한 순번을 반환한다.</p>
+
+<h4 id="6-blocktimestampuint">6. block.timestamp(uint)</h4>
+
+<p>현재 블록의 타임스탬프(채굴된 시기)를 반환한다.</p>
+
+<hr />
+
+<h2 id="거래-속성들">거래 속성들</h2>
+
+<h4 id="1-msgdatabytes">1. msg.data(bytes)</h4>
+
+<p>메시지에 있는 데이터 전체를 반환한다.</p>
+
+<h4 id="2-msggasuint">2. msg.gas(uint)</h4>
+
+<p>메시지의 남은 gas를 반환한다.</p>
+
+<h4 id="3-msgsenderaddress">3. msg.sender(address)</h4>
+
+<p>메시지를 보낸 송신자의 주소를 반환한다.</p>
+
+<p>즉 현재 스마트 컨트랙트를 실행시킨 사용자의 주소를 반환한다.</p>
+
+<h4 id="4-msgsigbytes4">4. msg.sig(bytes4)</h4>
+
+<p>메시지에 있는 처음 4byte의 데이터를 반환한다.</p>
+
+<p>이 <code class="highlighter-rouge">4byte</code>는 <code class="highlighter-rouge">함수의 식별자</code>이다.</p>
+
+<h4 id="5-msgvalueuint">5. msg.value(uint)</h4>
+
+<p>메시지의 송금액을 wei 단위로 반환한다.</p>
+
+<p>이 변수는</p>
+
+<p>현재 스마트 컨트랙트 스스로의 잔고에 송금되는 이더의 양에 따라</p>
+
+<p>함수의 행동을 다르게 하기 위해 쓰이거나,</p>
+
+<p>은행 시스템(예금과 출금)을 가진 스마트 컨트랙에서 쓰인다.</p>
+
+<h4 id="6-nowuint">6. now(uint)</h4>
+
+<p>block.timestamp()와 같다.</p>
+
+<h4 id="7-txgaspriceuint">7. tx.gasprice(uint)</h4>
+
+<p>거래의 gas 가격을 반환한다.</p>
+
+<h4 id="8-txoriginaddress">8. tx.origin(address)</h4>
+
+<p>거래를 보낸 송신자의 주소를 반환한다.</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Solidity-(11)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Solidity-(10)/"> Ethereum Basic :: Solidity Grammer - 가시성  </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Solidity-(10)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Solidity-(1)/"> Ethereum Basic :: Solidity Grammer - 기본 자료형  </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#기본-자료형" id="markdown-toc-기본-자료형">기본 자료형</a>    <ul>
+      <li><a href="#정수형-int-uint" id="markdown-toc-정수형-int-uint">정수형 (int, uint)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="기본-자료형">기본 자료형</h1>
+
+<p>솔리디티 언어는</p>
+
+<p>스마트 컨트랙트에 최적화된 자료형을 지원한다.</p>
+
+<p>변수를 선언하는 방법은 다음과 같다</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>자료형  변수명  데이터
+type  name = data;
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>변수 선언시 데이터는 <code class="highlighter-rouge">생략</code>할 수 있지만,</p>
+
+<p>자료형과 변수명은 <code class="highlighter-rouge">필수</code>적이다.</p>
+
+<p>그리고 <code class="highlighter-rouge">constant</code> 키워드를 붙여서</p>
+
+<p><code class="highlighter-rouge">상수</code>로 선언할 수 있다.</p>
+
+<p>이 때는 데이터를 생략할 수 없고</p>
+
+<p>반드시 넣어 줘야한다.</p>
+
+<hr />
+
+<h2 id="정수형-int-uint">정수형 (int, uint)</h2>
+
+<p>현재까지 스마트 컨트랙트는</p>
+
+<p>실수형 데이터는 지원하지만 자료형은 지원하지 않는다.</p>
+
+<p><br /></p>
+
+<p>부호 있는 정수 int = int256</p>
+
+<p>–&gt; 메모리 영역 내에서 256비트(=32바이트)</p>
+
+<p>부호 없는 정수 uint = uint256</p>
+
+<p>–&gt; 메모리 영역 내에서 256비트(=32바이트)</p>
+
+<p><br /></p>
+
+<p>솔리디티 언어가 지원하는 정수형의 크기는</p>
+
+<p>8비트, 16비트, 24비트, 32비트, 256비트까지 다양하다.</p>
+
+<p>사실 128비트 이상의 자료형을 사용하면</p>
+
+<p>컨트랙트를 작성하는데 필요한 모든 정수를 소화할 수 있다.</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Solidity-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Mist/"> Ethereum Basic :: Mist </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-25
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#mist-브라우저" id="markdown-toc-mist-브라우저">Mist 브라우저</a></li>
+</ul>
+
+<h2 id="mist-브라우저">Mist 브라우저</h2>
+
+<p>이더리움에서 이더를 사용하거나</p>
+
+<p>스마트 컨트랙트를 실행하기 위해서는</p>
+
+<p>반드시 <code class="highlighter-rouge">지갑(Wallet)</code>이 있어야 한다.</p>
+
+<p><br /></p>
+
+<p>GUI 기반 이더리움 지갑 프로그램이</p>
+
+<p>Mist 브라우저이다.</p>
+
+<hr />
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Mist/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Genesis/"> Ethereum Basic :: Genesis </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-25
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#사설-네트워크의-genesis-블록-파일-정의" id="markdown-toc-사설-네트워크의-genesis-블록-파일-정의">사설 네트워크의 Genesis 블록 파일 정의</a>    <ul>
+      <li><a href="#1-config" id="markdown-toc-1-config">1. config</a></li>
+      <li><a href="#2-nonce" id="markdown-toc-2-nonce">2. nonce</a></li>
+      <li><a href="#3-timestamp" id="markdown-toc-3-timestamp">3. timestamp</a></li>
+      <li><a href="#4-parenthash" id="markdown-toc-4-parenthash">4. parentHash</a></li>
+      <li><a href="#5-extradata" id="markdown-toc-5-extradata">5. extraData</a></li>
+      <li><a href="#6-gaslimit" id="markdown-toc-6-gaslimit">6. gasLimit</a></li>
+      <li><a href="#7-difficulty" id="markdown-toc-7-difficulty">7. difficulty</a></li>
+      <li><a href="#8-mixhash" id="markdown-toc-8-mixhash">8. mixhash</a></li>
+      <li><a href="#9-coinbase" id="markdown-toc-9-coinbase">9. coinbase</a></li>
+      <li><a href="#10-alloc" id="markdown-toc-10-alloc">10. alloc</a></li>
+    </ul>
+  </li>
+  <li><a href="#genesis-블록-생성하기" id="markdown-toc-genesis-블록-생성하기">Genesis 블록 생성하기</a></li>
+</ul>
+
+<h2 id="사설-네트워크의-genesis-블록-파일-정의">사설 네트워크의 Genesis 블록 파일 정의</h2>
+
+<p>Genesis 블록은</p>
+
+<p>이더리움의 기반인 블록체인의 가장 첫 번째 블록이며</p>
+
+<p>이전 블록에 대한 정보를 갖고 있지 않는 유일한 블록이다.</p>
+
+<p>Genesis블록을 정의함으로써</p>
+
+<p>원하는 목적에 부합하는</p>
+
+<p>이더리움 사설 네트워크를 구출할 수 있다.</p>
+
+<p><br /></p>
+
+<p>해당 이더리움 네트워크에 접속하는</p>
+
+<p>모든 클라이언트 노드들은</p>
+
+<p>동일한 Genesis 블록을 소유하고 있어야</p>
+
+<p>블록체인의 합의 과정에 참여할 수 있다.</p>
+
+<p><br /></p>
+
+<p><a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">환경 설정 가이드</a>에서 [ Private Network 구성 - B.Genesis Block 정의 ]를 보자.</p>
+
+<h4 id="1-config">1. config</h4>
+
+<p>Geth 1.6 버전부터</p>
+
+<p>기존 이더리움 버전에서</p>
+
+<p>발생한 문제점들을 해결하기 위해</p>
+
+<p>하드포크가 이루어졌다.</p>
+
+<p>해당 옵션은 새로운 버전의 Geth를 이용하여</p>
+
+<p>1.6 이전 버전의 이더리움 네트워크에 접속하였을 때</p>
+
+<p>발생 될 수 있는 문제점을 해결하기 위한 옵션으로</p>
+
+<p>사설 네트워크의 경우 가이드처럼 값을 설정하면 된다.</p>
+
+<h4 id="2-nonce">2. nonce</h4>
+
+<p>mixhash 옵션과 함께</p>
+
+<p>현 블록의 작업 증명을 위해서</p>
+
+<p>충분한 양의 계산을 수행했음을 증명해주는 옵션이다.</p>
+
+<p>블록체인의 작업 증명을 위해서는</p>
+
+<p>mixhash 값과 nonce가 조합된 값의 hash값이</p>
+
+<p>일정한 수 이하인 nonce를 찾는데,</p>
+
+<p>가장 최근에 추가된 블록의 헤더의 해시가</p>
+
+<p>nonce값의 조합으로 일정 수를 찾아</p>
+
+<p>작업 증명을 완료하게 된다.</p>
+
+<h4 id="3-timestamp">3. timestamp</h4>
+
+<p>해당 블록이 취득된 시점을 나타내는 옵션이다.</p>
+
+<p>유닉스의 time() 함수의 결과와 동일한다.</p>
+
+<p>Genesis 블록은 최초의 블록이기 때문에</p>
+
+<p>값이 0이다.</p>
+
+<p><br /></p>
+
+<p>timestamp는 블록체인에서 2가지 용도로 활용된다.</p>
+
+<p>첫 째로 작업 증명의 난이도를 조절하는데 사용된다.</p>
+
+<p>즉 두 블록 간의 timestamp 값의 기간이 짧다면</p>
+
+<p>작업 증명을 위한 난이도가 올라가게 되고,</p>
+
+<p>기간이 너무 길면 난이도가 내려가고</p>
+
+<p>다음 블록의 작업 증명 계산량이 즐어들게 된다.</p>
+
+<p>둘 째로 블록 간의 순서를 확인할 때 활용된다.</p>
+
+<h4 id="4-parenthash">4. parentHash</h4>
+
+<p>nonce와 mixhash를 포함한</p>
+
+<p>부모 블록의 헤더에 대한 해시 값을 갖는 옵션이다.</p>
+
+<p>Genesis 블록의 값은 당연히 0이다.</p>
+
+<h4 id="5-extradata">5. extraData</h4>
+
+<p>현재 뚜렷한 목적을 가지고 사용하는 옵션은 아니지만</p>
+
+<p>앞으로 추가될지도 모르는 옵션을 위한</p>
+
+<p>32바이트의 임시 저장 공간으로 활용된다.</p>
+
+<p>필요에 따라 임의의 값을 넣어도 무방하다.</p>
+
+<h4 id="6-gaslimit">6. gasLimit</h4>
+
+<p>하나의 블록이 담을 수 있는 gas의 임계치이다.</p>
+
+<p>몇 차례의 거래를</p>
+
+<p>하나의 블록에 묶어서</p>
+
+<p>담을 수 있는지를 결정하는데</p>
+
+<p>필요한 옵션으로</p>
+
+<p>값이 클수록 많은 거래를 담을 수 있기 때문에</p>
+
+<p>그만큼 거래가 더 빨라질 수 있다.</p>
+
+<h4 id="7-difficulty">7. difficulty</h4>
+
+<p>블록 생성을 위한 계산 난이도를 조절하는 옵션이다.</p>
+
+<p>이 옵션을 조절하여</p>
+
+<p>블록이 생성되는 시간을 일정 수준으로 유지할 수 있다.</p>
+
+<p>값이 클수록 유효한 블록을 발견하기 위해</p>
+
+<p>채굴자가 통계적으로 더 많은 계산을 수행해야한다.</p>
+
+<p>지연 없이 원활한 거래 수행을 하여</p>
+
+<p>테스트를 진행하기 위해선 낮은 값을 설정하면 된다.</p>
+
+<h4 id="8-mixhash">8. mixhash</h4>
+
+<p>nonce 옵션과 함께</p>
+
+<p>현 블록의 작업 증명을 위해서</p>
+
+<p>충분한 양의 계산을 수행했음을</p>
+
+<p>증명해 주는 옵션이다.</p>
+
+<h4 id="9-coinbase">9. coinbase</h4>
+
+<p>해당 블록에 대해서 채굴에 성공하면</p>
+
+<p>얻게 되는 총 보상금을</p>
+
+<p>160비트의 주소 값으로 표현한 옵션이다.</p>
+
+<p>채굴 보상금과</p>
+
+<p>스마트 컨트랙트 실행에 대한 환불 값의 합을 나타낸다.</p>
+
+<h4 id="10-alloc">10. alloc</h4>
+
+<p>Genesis 블록을 생성함과 동시에</p>
+
+<p>사전에 정의한 이더리움 계좌에 원하는 액수의 이더를 미리 송금해 놓을 수 있다.</p>
+
+<p>즉 초기 잔고를 정의한다.</p>
+
+<hr />
+
+<h2 id="genesis-블록-생성하기">Genesis 블록 생성하기</h2>
+
+<ul>
+  <li>
+    <p><a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">환경 설정 가이드</a>에서 [ Private Network 구성 -   C. DB 초기화 하기 ] 참고</p>
+  </li>
+  <li>
+    <p>geth의 --dev 옵션을 이용하여 이더리움 클라이언트가 자동으로 Genesis 블록을 만들어 사용하게 할 수 있다.</p>
+  </li>
+  <li>
+    <p>--dev 옵션은 개발자모드로 이더리움의 네트워크에 접속하는 옵션으로 기본 Genesis 블록을 자동 생성한다.</p>
+  </li>
+  <li>
+    <p>이 때 생성된 Genesis 블록은 생성 계산 난이도가 낮다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Genesis/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Execute-Private-Network/"> Ethereum Basic :: Execute Private Network </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-25
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Execute-Private-Network/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page27" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">28/57</span>
+          
+            <a href="/page29" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

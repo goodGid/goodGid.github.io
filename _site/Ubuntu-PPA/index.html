@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Ubuntu :: PPA(Personal Package Archive) </title>
+    <meta name="description" content="  What is PPA(Personal Package Archive)?What is PPA(Personal Package Archive)?일반적으로 Ubuntu 소프트웨어 센터에서 다운로드 받을수 있는 각종 패키지의 버전들은 최신의 것들이 아니다.우분투는 6개월 주기로 새로운 버...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Ubuntu-PPA/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Ubuntu :: PPA(Personal Package Archive) </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-27
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Technology" title="Category: Technology" rel="category">Technology</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Technology" title="Tag: Technology" rel="tag">Technology</a-->
+        <a href="/tag/#Technology" title="Tag: Technology" rel="tag">Technology</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#what-is-ppapersonal-package-archive" id="markdown-toc-what-is-ppapersonal-package-archive">What is PPA(Personal Package Archive)?</a></li>
+  <li><a href="#ppa-사용하기" id="markdown-toc-ppa-사용하기">PPA 사용하기</a></li>
+</ul>
+
+<h2 id="what-is-ppapersonal-package-archive">What is PPA(Personal Package Archive)?</h2>
+
+<p>일반적으로 Ubuntu 소프트웨어 센터에서 다운로드 받을수 있는 각종 패키지의 버전들은 최신의 것들이 아니다.</p>
+
+<p>우분투는 6개월 주기로 새로운 버전이 출시된다.</p>
+
+<p>이렇게 새로운 버전이 나올때마다</p>
+
+<p>사용하던 소프트웨어들도 함께 최신버전으로 탑재된다.</p>
+
+<p>그렇게 되면 소프트웨어들도 6개월씩 기다려야하게 되는 경우가 생긴다.</p>
+
+<p>예를 들어</p>
+
+<p>기존에 사용하던 프로그램이 이미 업데이트 되었는데도</p>
+
+<p>6개월이나 기다려야 된다.</p>
+
+<p><br /></p>
+
+<p>이를 극복하기 위한 방법으로 <code class="highlighter-rouge">PPA(Personal Package Archive)</code>를 통해 최신 버전들을 다운로드 할 수 있다.</p>
+
+<p><br /></p>
+
+<p>그렇다면 PPA는 무엇일까?</p>
+
+<p>Ubuntu에서 소프트웨어를 설치하는 것은 윈도우나 Mac과는 다르다.</p>
+
+<p>인터넷에서 일일이 패키지를 찾아서 다운받지 않고</p>
+
+<p>Ubuntu 소프트웨어 센터에서</p>
+
+<p>원하는 모든 것들을 검색하고 설치할 수 있다.</p>
+
+<p><br /></p>
+
+<p>게다가 저장소에 있는 소프트웨어들은</p>
+
+<p>아무 웹사이트에서 다운받은 EXE 파일들보다 훨씬 안정성있다.</p>
+
+<p>기본적으로 Ubuntu 소프트웨어 센터의 소프트웨어들은</p>
+
+<p>우분투 팀에 의해서 미리 안전하고 안정적이라고 판단되는 것들만 모여있기 때문이다.</p>
+
+<p><br /></p>
+
+<p>하지만 이것이 항상 좋기만 한 것은 아니다.</p>
+
+<p>바로 소프트웨어의 최신버전이 나와도</p>
+
+<p>우분투의 다음버전까지 기다려야 하기 때문이다.</p>
+
+<p>그래서 필요한 기능이 바로 PPA이다.</p>
+
+<hr />
+
+<h2 id="ppa-사용하기">PPA 사용하기</h2>
+
+<ul>
+  <li>저장소 추가하기</li>
+</ul>
+
+<p>sudo add-apt-repository 저장소이름</p>
+
+<p><br /></p>
+
+<ul>
+  <li>저장소 업데이트</li>
+</ul>
+
+<p>sudo apt-get update</p>
+
+<p><br /></p>
+
+<ul>
+  <li>설치</li>
+</ul>
+
+<p>sudo apt-get install XXXXX</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p>해외 PPA 검색 : <a href="https://launchpad.net/ubuntu">https://launchpad.net/ubuntu</a></p>
+  </li>
+  <li>
+    <p>국내 PPA 사이트 : <a href="https://launchpad.net/~ubuntu-ko/+archive/ppa">https://launchpad.net/~ubuntu-ko/+archive/ppa</a></p>
+  </li>
+</ul>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/Jekyll/"> Jekyll이란? 
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/Ubuntu-Nohup/"> Ubuntu :: Nohup </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Konlpy/"> Install Konlpy </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Ubuntu-PPA/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Ubuntu-PPA/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

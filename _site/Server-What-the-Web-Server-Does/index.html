@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> [공개 서버의 기본] 웹 서버에서 하는 처리</title>
+    <meta name="description" content="  웹 서버에서 하는 처리  정적 웹 콘텐츠의 처리  동적 웹 콘텐츠의 처리  차이점웹 서버에서 하는 처리      웹 서버는 웹 브라우저로부터 요청을 받으면 그에 따른 처리를 수행        웹 서버의 처리는 요청한 URL에 지정된 파일이 정적/동적인지에 따라 달라진다.  정적...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Server-What-the-Web-Server-Does/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> [공개 서버의 기본] 웹 서버에서 하는 처리</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-08-10
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a-->
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#웹-서버에서-하는-처리" id="markdown-toc-웹-서버에서-하는-처리">웹 서버에서 하는 처리</a></li>
+  <li><a href="#정적-웹-콘텐츠의-처리" id="markdown-toc-정적-웹-콘텐츠의-처리">정적 웹 콘텐츠의 처리</a></li>
+  <li><a href="#동적-웹-콘텐츠의-처리" id="markdown-toc-동적-웹-콘텐츠의-처리">동적 웹 콘텐츠의 처리</a></li>
+  <li><a href="#차이점" id="markdown-toc-차이점">차이점</a></li>
+</ul>
+
+<h1 id="웹-서버에서-하는-처리">웹 서버에서 하는 처리</h1>
+
+<ul>
+  <li>
+    <p>웹 서버는 웹 브라우저로부터 요청을 받으면 그에 따른 처리를 수행</p>
+  </li>
+  <li>
+    <p>웹 서버의 처리는 요청한 URL에 지정된 파일이 <code class="highlighter-rouge">정적</code>/<code class="highlighter-rouge">동적</code>인지에 따라 달라진다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="정적-웹-콘텐츠의-처리">정적 웹 콘텐츠의 처리</h1>
+
+<ul>
+  <li>
+    <p>정적 웹 콘텐츠란 누군가가 변경하지 않는 한 똑같은 표시 내용을 반환하는 웹 콘텐츠</p>
+  </li>
+  <li>
+    <p>웹 서버는 정적 웹 콘텐츠에 대한 요청을 받으면 미리 저장되어 있는 파일을 반환</p>
+  </li>
+  <li>
+    <p>정적 웹 콘텐츠의 처리는 가지고 있는 파일을 반환하는 것이기 때문에 빠름</p>
+  </li>
+  <li>
+    <p>하지만 웹 콘텐츠에 정보가 바뀔 때마다 대상 파일을 갱신할 필요가 있어 관리의 번거로움 존재</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="동적-웹-콘텐츠의-처리">동적 웹 콘텐츠의 처리</h1>
+
+<ul>
+  <li>
+    <p>동적 웹 콘텐츠란 클라이언트로부터 받은 정보에 따라 표시 내용이 달라지는 웹 콘텐츠</p>
+  </li>
+  <li>
+    <p>웹 서버는 동적 웹 콘텐츠에 대한 요청을 받으면 필요한 처리를 수행 후 그 결과를 반환</p>
+  </li>
+  <li>
+    <p>동적 콘텐츠를 생성하기 위한 대표적 수단으로는 <code class="highlighter-rouge">CGI(Common Gateway Interface)</code>와 <code class="highlighter-rouge">Web API(Application Programming Interface)</code>가 있다.</p>
+  </li>
+  <li>
+    <p>예전에는 CGI가 많았지만 최근에는 Web API가 대세</p>
+  </li>
+  <li>
+    <p>웹 서버는 Web API에 대한 요청을 XML or JSON 형식으로 받아 처리 후 같은 형식으로 반환</p>
+  </li>
+  <li>
+    <p>웹 브라우저는 받은 결과를 바탕으로 동적 웹 콘텐츠를 구성하여 표시</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="차이점">차이점</h1>
+
+<ul>
+  <li>
+    <p>정적은 받은 걸 그냥 보여주는 역할</p>
+  </li>
+  <li>
+    <p>동적은 필요한 데이터를 주고 서버로부터 데이터를 받아 콘텐츠를 생성 !</p>
+  </li>
+</ul>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/server/what_the_web_server_does_1.png"><img src="/assets/img/server/what_the_web_server_does_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/Server-Two-Encryption-Technologies/"> [공개 서버의 기본] 두 가지 암호화 기술 </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Server-Clustering/"> [서버를 장애로부터 보호하기] 클러스터링 </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Server-What-the-Web-Server-Does/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Server-What-the-Web-Server-Does/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

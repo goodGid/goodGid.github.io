@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page56/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-Trigger/">Trigger</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Trigger는 이벤트가 발생 시 자동적으로 수행되는 사용자 정의 프로시저이다.</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create Trigger 트리거명 [After | Before] [Insert | Update | Delete ] on 테이블명
+Referencing [New | Old ] Table as 테이블명
+For Each Row
+When 조건식
+트리거 Body
+</code></pre></div></div>
+
+<ul>
+  <li>After : 테이블이 변경된 後 트리거 실행</li>
+  <li>
+    <p>Before : 테이블이 변경되기 前 트리거 실행</p>
+  </li>
+  <li>New : 새로 추가되거나 변경에 참여할 튜플들의 집합에 트리거가 적용</li>
+  <li>
+    <p>Old : 변경된 튜플들의 집합에 트리거가 적용</p>
+  </li>
+  <li>
+    <p>Set : 변수에 값을 치환할 때는 예약어 Set을 사용</p>
+  </li>
+  <li>Begin으로 시작해서 End로 끝나는데, 적어도 1개 이상의 SQL문이 있어야 함</li>
+</ul>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Old</th>
+      <th style="text-align: center">New</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Insert</td>
+      <td style="text-align: center">Null</td>
+      <td style="text-align: center">입력 값</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Update</td>
+      <td style="text-align: center">변경 前 값</td>
+      <td style="text-align: center">변경 後 값</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Delete</td>
+      <td style="text-align: center">삭제 前 값</td>
+      <td style="text-align: center">Null</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="example">Example</h2>
+
+<p class="notice">Q. <학생> 테이블에 새로운 레코드가 삽인될 때, 삽입되는 레코드에 학년 정보가 누락됐으면 학년 필드에 
+ "신입생"을 치환하는 트리거를 '학년정보_tri'라는 이름으로 정의하시오</학생></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create Trigger 학년정보_tri Before Insert On 학생
+Referencing New Table AS new_table
+For Each Row
+When new_table.학년 = ''
+Begin
+    Set new_table.학년 = '신입생';
+End;
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-Trigger/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-Select/">Select</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Select은 튜플들 중 전체 또는 조건을 만족하는 튜플을 검색</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [PREDICATE] [테이블명.] 속성명 [AS 별칭]
+FROM 테이블명
+[ WHERE 조건 ]
+[ GROUP BY 속성명 ]
+[ HAVING 조건 ]
+[ ORDER BY 속성명 [ ASC | DESC ];
+</code></pre></div></div>
+
+<ul>
+  <li>Predicate
+    <ol>
+      <li>ALL: Deafult 값</li>
+      <li>Distinct : 중복된 튜플 제거</li>
+    </ol>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>비교 연산자</li>
+</ul>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">연산자</th>
+      <th style="text-align: center">=</th>
+      <th style="text-align: center">&lt;&gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">의미</td>
+      <td style="text-align: center">같다</td>
+      <td style="text-align: center">같지 않다</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<ul>
+  <li>LIKE 연산자</li>
+</ul>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">대표 문자</th>
+      <th style="text-align: center">* or %</th>
+      <th style="text-align: center">? or _</th>
+      <th style="text-align: center">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">의미</td>
+      <td style="text-align: center">ALL 문자</td>
+      <td style="text-align: center">문자 1개</td>
+      <td style="text-align: center">숫자 1개</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<figure>
+    
+    <a href="/assets/img/posts/select_1.png"><img src="/assets/img/posts/select_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q.<사원> 테이블에서 이름에 문자열 "월급은", 기본급에 10을 더한 값을 검색하는 SQL문을 작성하시오. <br /> 단 '이름' 속성에 있을지 모르는 좌우 공백을 모두 제거하시오</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select Trim(이름)+”월급은” AS 이름, 기본급+10 AS  기본급 From 사원;
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/posts/select_2.png"><img src="/assets/img/posts/select_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-Select/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-SQL/">SQL</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<p>1.DDL (Data Define Laguage)</p>
+
+<ol>
+  <li>CREATE</li>
+  <li><a href="https://goodgid.github.io/DB-Alter/">ALTER</a></li>
+  <li><a href="https://goodgid.github.io/DB-Drop/">DROP</a></li>
+</ol>
+
+<ul>
+  <li>SQL에서 지원하는 기본 데이터 타입
+    <ol>
+      <li>정수 : INT(4Byte 정수), SMALLINT(2Byte 정수)</li>
+      <li>실수 : FLOAT, REAL, DOUBLE PRECISION</li>
+      <li>형식화된 숫자 : DEC(i, j) –&gt; i: 전체 자릿수,   j: 소수부 자릿수</li>
+      <li>고정길이 문자 : CHAR(n) –&gt; n: 문자 수</li>
+      <li>가변길이 문자 : VARCHAR(n) –&gt; n: 최대 문자 수</li>
+      <li>고정길이 비트 열(Bit String) –&gt; BIT(n)</li>
+      <li>가변길이 비트열 : VARBIT(n)</li>
+      <li>날짜 : DATE</li>
+      <li>시간 : TIME</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<p>2.DML (Data Manipulation Language)</p>
+
+<ol>
+  <li>INSERT</li>
+  <li>DELETE</li>
+  <li>UPDATE</li>
+</ol>
+
+<hr />
+
+<p><strong>INSERT</strong></p>
+
+<ul>
+  <li>테이블의 모든 속성을 삽입할 때는 속성명을 생략할 수 있다. 단 이때 <code class="highlighter-rouge">Create Table</code>문에서 기술된 속성 순으로 삽입 된다.</li>
+  <li>Select문을 사용하여 다른 테이블의 검색 결과를 삽입 할 수 있다.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO 테이블명[(속성명1, 속성명2)]
+VALUES (데이터1, 데이터2)
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에 있는 이름이 "이순신"이고, 부서가 "기획"인 사원을 삽입하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insert Into 사원(이름, 부서)
+Values ('이순신', '기획');
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에 있는 편집 부서의 모든 튜플을 &lt;편집부원(이름,생일,주소,기본급)&gt; 테이블에 삽입하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insert Into 편집부원(이름, 생일, 주소, 기본급)
+Select 이름, 생일, 주소, 기본급 From 사원 Where 부서 = '편집';
+</code></pre></div></div>
+
+<hr />
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-SQL/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-Join(2)/">Join (2)</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Join은 2개의 테이블에 대해 연관된 튜플들을 결합하여 새로운 릴레이션을 반환</p>
+</blockquote>
+
+<ul>
+  <li>JOIN은 크게 INNER &amp; OUTER JOIN 으로 구분됨</li>
+</ul>
+
+<hr />
+
+<p><strong>OUTER JOIN</strong></p>
+<ul>
+  <li>Join 조건에 만족하지 않는 튜플도 결과로 출력하기 위한 방법</li>
+  <li><code class="highlighter-rouge">LEFT OUTER JOIN</code>, <code class="highlighter-rouge">RIGHT OUTER JOIN</code>, <code class="highlighter-rouge">FULL OUTER JOIN</code>이 있다.</li>
+</ul>
+
+<hr />
+
+<p><strong>LEFT OUTER JOIN</strong></p>
+<ul>
+  <li>INNER JOIN의 결과를 구한 후, <code class="highlighter-rouge">우측</code> 릴레이션의 어떤 튜플과도 맞지 않는 <code class="highlighter-rouge">좌측</code> 릴레이션에 있는 튜플들에 <br /> <code class="highlighter-rouge">NULL 값</code>을 붙여 INNER JOIN의 결과에 추가</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1 LEFT OUTER JOIN 테이블명2
+ON 테이블명1.속성명 = 테이블명2.속성명;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1, 테이블명2
+ON 테이블명1.속성명 = 테이블명2.속성명(+);
+</code></pre></div></div>
+
+<hr />
+
+<p><strong>RIGHT OUTER JOIN</strong></p>
+<ul>
+  <li>INNER JOIN의 결과를 구한 후, <code class="highlighter-rouge">좌측</code> 릴레이션의 어떤 튜플과도 맞지 않는 <code class="highlighter-rouge">우측</code> 릴레이션에 있는 튜플들에 <br /> <code class="highlighter-rouge">NULL 값</code>을 붙여 INNER JOIN의 결과에 추가</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1 RIGHT OUTER JOIN 테이블명2
+ON 테이블명1.속성명 = 테이블명2.속성명;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1, 테이블명2
+ON 테이블명1.속성명(+) = 테이블명2.속성명;
+</code></pre></div></div>
+
+<hr />
+
+<ul>
+  <li>Inner Join은 두 릴레이션에서 <code class="highlighter-rouge">관련 있는 튜플만</code> 표시</li>
+  <li>Left Outer Join은 <code class="highlighter-rouge">좌측 릴레이션</code>이 <code class="highlighter-rouge">기준</code>이 되어 좌측 릴레이션에 있는 튜플은 <code class="highlighter-rouge">모두 표시</code> <br /> <code class="highlighter-rouge">우측 릴레이션</code>에서는 <code class="highlighter-rouge">관련 있는 튜플</code>만 표시</li>
+  <li>
+    <p>Right Outer Join은 <code class="highlighter-rouge">우측 릴레이션</code>이 <code class="highlighter-rouge">기준</code>이 되어 우측 릴레이션에 있는 튜플은 <code class="highlighter-rouge">모두 표시</code> <br /> <code class="highlighter-rouge">좌측 릴레이션</code>에서는 <code class="highlighter-rouge">관련 있는 튜플</code>만 표시</p>
+  </li>
+  <li>Outer Join에서 <code class="highlighter-rouge">'+'</code>를 사용하면 Inner Join과 동일한 형식으로 사용 가능. <br /> <code class="highlighter-rouge">Left일 때</code>는 <code class="highlighter-rouge">조건문의 우측</code>에, <code class="highlighter-rouge">Right일 때</code>는 <code class="highlighter-rouge">조건문의 좌측</code>에 ‘+’를 붙힘</li>
+</ul>
+
+<hr />
+
+<p><strong>FULL OUTER JOIN</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">LEFT OUTER JOIN</code>과 <code class="highlighter-rouge">RIGHT OUTER JOIN</code>을 합쳐 놓은 것</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1 FULL OUTER JOIN 테이블명2
+ON 테이블명1.속성명 = 테이블명2.속성명;
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<figure class="half">
+    
+    <a href="/assets/img/posts/join_1.png"><img src="/assets/img/posts/join_1.png" alt="" /></a>
+    
+    <a href="/assets/img/posts/join_2.png"><img src="/assets/img/posts/join_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q. <학생> 테이블과 <학과> 테이블에서 학과코드값이 같은 튜플을 Join하여 학번, 이름, 학과코드, 학과명을 <br /> 출력하는 SQL문을 작성하시오. 이 때 학과코드가 입력되지 않은 학생도 출력하시오.</학과></학생></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select 학번, 이름, 학생.학과코드, 학과명
+From 학생 Left Outer Join 학과
+On 학생.학과코드 = 학과.학과코드;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select 학번, 이름, 학생.학과코드, 학과명
+From 학생, 학과
+Where 학생.학과코드 = 학과.학과코드(+);
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/posts/join_6.png"><img src="/assets/img/posts/join_6.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-Join(2)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-Join(1)/">Join (1)</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Join은 2개의 테이블에 대해 연관된 튜플들을 결합하여 새로운 릴레이션을 반환</p>
+</blockquote>
+
+<ul>
+  <li>JOIN은 크게 INNER &amp; OUTER JOIN 으로 구분됨</li>
+</ul>
+
+<hr />
+
+<p><strong>INNER JOIN</strong></p>
+
+<ul>
+  <li><code class="highlighter-rouge">EQUI JOIN</code>과 <code class="highlighter-rouge">NON-EQUI JOIN</code>으로 구분됨</li>
+</ul>
+
+<hr />
+
+<p><strong>EQUI 조인</strong></p>
+<ul>
+  <li>EQUI JOIN은 JOIN 대상 테이블에서 <code class="highlighter-rouge">공통 속성</code>을 기준으로 ‘=’ 비교에 의해 같은 값을 가지는 행을 연결하여 결과를 생성</li>
+  <li>EQUI JOIN에서 JOIN 조건이 ‘=’일 때 <code class="highlighter-rouge">동일 속성</code>이 2번 나타나게 되는데, 이 중 <code class="highlighter-rouge">중복된 속성</code>을 제거하여 1번만 표기하는 방법을  <code class="highlighter-rouge">NATURAL JOIN</code>이라 한다.</li>
+  <li>EQUI JOIN에서 <code class="highlighter-rouge">연결 고리</code>가 되는 <code class="highlighter-rouge">공통 속성</code>을 <code class="highlighter-rouge">JOIN 속성</code>이라 한다.</li>
+</ul>
+
+<p>– WHERE절을 이용한 EQUI JOIN의 표기 형식</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1, 테이블명2
+WHERE 테이블명1.속성명 = 테이블명2.속성명;
+</code></pre></div></div>
+
+<p>– NATURAL JOIN을 이용한 EQUI JOIN의 표기 형식</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1 NATURAL JOIN 테이블명2;
+</code></pre></div></div>
+
+<p>– JOIN ~ USING절을 이용한 EQUI JOIN의 표기 형식</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1 JOIN 테이블명2 USING(속성명);
+</code></pre></div></div>
+<hr />
+
+<h2 id="example">Example</h2>
+
+<figure class="third">
+    
+    <a href="/assets/img/posts/join_1.png"><img src="/assets/img/posts/join_1.png" alt="" /></a>
+    
+    <a href="/assets/img/posts/join_2.png"><img src="/assets/img/posts/join_2.png" alt="" /></a>
+    
+    <a href="/assets/img/posts/join_3.png"><img src="/assets/img/posts/join_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q. <학생> 테이블과 <학과> 테이블에서 학과코드값이 같은 튜플을 Join하여 학번, 이름, 학과코드, 학과명을 출력하는 SQL문을 작성하시오.</학과></학생></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select 학번, 이름, 학생.학과코드, 학과명
+From 학생, 학과
+Where 학생.학과코드 = 학과.학과코드;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select 학번, 이름, 학생.학과코드, 학과명
+From 학생 Natural Join 학과;
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select 학번, 이름, 학생.학과코드, 학과명
+From 학생 Join 학과 Using(학과코드);
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/posts/join_4.png"><img src="/assets/img/posts/join_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>테이블을 조인하여 사용할 때 <code class="highlighter-rouge">한 테이블에만</code> 있는 속성은 테이블명을 <code class="highlighter-rouge">생략</code>할 수 있지만 <code class="highlighter-rouge">두 테이블</code>에 모두 속해 있는 속성은 <code class="highlighter-rouge">반드시</code> 속성명을 테이블명과 함께 표시해야 한다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Natural Join</code>은 <code class="highlighter-rouge">조인할 속성</code>을 <code class="highlighter-rouge">지정하지 않기</code> 때문에 조인하려는 두 테이블에는 <code class="highlighter-rouge">같은 이름</code>, <code class="highlighter-rouge">같은 속성의 도메인</code>이 반드시 <code class="highlighter-rouge">존재</code>해야 한다. <학생> 테이블과 <학과>테이블에는 같은 이름의 속성과 범위가 같은 도메인을 갖는 학과코드가 있기 때문에 Natural Join이 가능</학과></학생></p>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>NON-EQUI 조인</strong></p>
+
+<ul>
+  <li>NON-EQUI은 JOIN 조건에 ‘=’ 조건이 아닌 나머지 비교 연산자를 사용하는 JOIN 방법이다.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT [테이블명1.]속성명, [테이블명2.]속성명
+FROM 테이블명1, 테이블명2
+WHERE (NON-EQUI JOIN 조건);
+</code></pre></div></div>
+
+<p class="notice">Q. <학생> 테이블과 <성적등급> 테이블을 Join하여 각 학생의 학번, 이름, 성적, 등급을 <br /> 출력하는 SQL문을 작성하시오.</성적등급></학생></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT 학번, 이름, 성적, 등급
+FROM 학생, 성적등급
+WHERE 학생.성적 BETWEEN 성적등급.최저 AND 성적등급.최고;
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/posts/join_5.png"><img src="/assets/img/posts/join_5.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-Join(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/DB-Index/">Index</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-10-08
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Index는 인덱스는 검색을 빠르게 하기 위해 만든 보조적인 데이터 구조</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE [ UNIQUE ] INDEX &lt;인덱스명&gt;
+    ON 테이블명({속성명 [ ASC | DESC ][, 속성명 [ ASC | DESC ]]}) ;
+</code></pre></div></div>
+<p>– Unique</p>
+
+<ul>
+  <li>사용된 경우 : 중복 값이 없는 속성으로 인덱스 생성</li>
+  <li>생략된 경우 : 중복 값을 허용하는 속성으로 인덱스 생성</li>
+</ul>
+
+<hr />
+
+<h2 id="example">Example</h2>
+
+<p class="notice">Q. <고객> 테이블에서 Unique한 특성을 갖는 고객번호 속성에 대해 내림차순으로 정렬하여 ‘고객번호_idx’라는 이름으로 인덱스를 정의하시오</고객></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create Unique 고객번호_idx
+	On 고객(고객번호 DESC);
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/DB-Index/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page55" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">56/57</span>
+          
+            <a href="/page57" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page5/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-Role-Of-PrintServer/"> [사내 서버의 기본] 프린트 서버의 역할</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#프린트-서버의-역할" id="markdown-toc-프린트-서버의-역할">프린트 서버의 역할</a></li>
+</ul>
+
+<h1 id="프린트-서버의-역할">프린트 서버의 역할</h1>
+
+<ul>
+  <li>
+    <p>프린트 서버는 여러 컴퓨터가 프린터를 공유 or NIC을 내장하지 않은 프린터를 네트워크에 연결하기 위해 사용하는 서버이다.</p>
+  </li>
+  <li>
+    <p>프린트 서버가 갖고 있는 편리한 기능 중 하나로 <code class="highlighter-rouge">프린터 드라이버 배포</code>가 있다.</p>
+  </li>
+  <li>
+    <p>프린트 서버에 여러 Window 버전의 프린터 드라이브를 사전에 설치하여 클라이언트의 OS환경에 따라 드라이버가 자동으로 인스톨된다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/server/role_of_print_server_1.png"><img src="/assets/img/server/role_of_print_server_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-Role-Of-PrintServer/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-Role-Of-POP3-Server/"> [사내 서버의 기본] POP3 서버의 역할</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#pop3-서버의-역할" id="markdown-toc-pop3-서버의-역할">POP3 서버의 역할</a></li>
+</ul>
+
+<h1 id="pop3-서버의-역할">POP3 서버의 역할</h1>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">메일 박스</code>라는 사서함에 들어 있는 메일 데이터를 <b>상대방 사용자에게 전달하는 서버가 POP3 서버이다.</b></p>
+  </li>
+  <li>
+    <p>최종적으로 사용자에게 메일을 전달하는 것은 SMTP 서버가 아니라 <code class="highlighter-rouge">POP3 서버</code>의 역할이다.</p>
+  </li>
+  <li>
+    <p>POP3 서버는 사용자로부터 ‘내 메일을 달라’는 요청을 받으면 <code class="highlighter-rouge">POP3(Post Office Protocol version 3)</code>라는 프로토콜을 이용하여 메일 데이터를 전송한다.</p>
+  </li>
+  <li>
+    <p>가장 마지막에만 POP3을 사용하는 데는 이유가 있다.</p>
+  </li>
+  <li><b>SMTP는 데이터를 송신하고 싶을 때에 송시하는 <code class="highlighter-rouge">푸시형</code>프로토콜이다.</b>
+    <ul>
+      <li>푸시형 프로토콜은 항상 전원이 켜져 있는 서버에 대한 통신 or 서버 간 통신인 경우에는 <br /> 실시간으로 데이터를 전송할 수 있어 무척 편리하다.</li>
+      <li>하지만 메일 SW를 작동시키는 컴퓨터의 전원이 항상 들어있냐고 하면 반드시 그렇다고는 할 수 없다.</li>
+    </ul>
+  </li>
+  <li>그래서 <b>전원이 켜져 있고 원할 때만 메일 상자에서 메일 데이터를 다운로드할 수 있는 <code class="highlighter-rouge">풀형</code> 프로토콜인 POP3을 사용한다.</b></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>메일 SW는 수동 or 자동으로 POP3 서버에게 ‘내 메일을 달라’는 요청을 한다.</p>
+  </li>
+  <li>
+    <p>POP3 서버는 메일 SW로부터 받은 사용자 ID/PW를 인증하고 성공하면 <code class="highlighter-rouge">메일 상자</code>에서 메일 데이터를 꺼내 전송한다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>SMTP</p>
+
+<figure>
+    
+    <a href="/assets/img/server/role_of_pop3_server_1.png"><img src="/assets/img/server/role_of_pop3_server_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-Role-Of-POP3-Server/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-Role-Of-FileServer/"> [사내 서버의 기본] 파일 서버의 역할</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#파일-서버의-역할" id="markdown-toc-파일-서버의-역할">파일 서버의 역할</a></li>
+</ul>
+
+<h1 id="파일-서버의-역할">파일 서버의 역할</h1>
+
+<ul>
+  <li>
+    <p>파일 서버는 LAN, WAN과 같은 네트워크에서 다른 컴퓨터와 파일을 공유or 데이터를 송수신하기 위해 사용하는 서버이다.</p>
+  </li>
+  <li>
+    <p>파일 서버를 사용하면 여러 클라이언트가 하나의 파일을 다룰 때 발생하기 쉬운 <code class="highlighter-rouge">갱신 무결성 문제</code>를 막을 수 있다.</p>
+  </li>
+  <li>
+    <p>파일 서버에서 중요한 설정은 바로 <code class="highlighter-rouge">액세스 권한</code>이다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/server/role_of_file_server_1.png"><img src="/assets/img/server/role_of_file_server_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-Role-Of-FileServer/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-DNS/"> [사내 서버의 기본] DNS 서버의 역할 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#dns-서버의-역할" id="markdown-toc-dns-서버의-역할">DNS 서버의 역할</a></li>
+  <li><a href="#도메인명은-트리-구조로-되어-있다" id="markdown-toc-도메인명은-트리-구조로-되어-있다">도메인명은 트리 구조로 되어 있다.</a></li>
+  <li><a href="#dns-서버는-2종류" id="markdown-toc-dns-서버는-2종류">DNS 서버는 2종류</a></li>
+</ul>
+
+<h1 id="dns-서버의-역할">DNS 서버의 역할</h1>
+
+<ul>
+  <li>
+    <p>인터넷에서는 컴퓨터를 식별하기 위해 IP 주소를 사용</p>
+  </li>
+  <li>
+    <p>하지만 이 숫자만으로는 무엇에 사용되고 있는지 알 수 없다.</p>
+  </li>
+  <li>
+    <p>그래서 인터넷에서는 IP 주소에 <code class="highlighter-rouge">도메인명</code>이라는 이름을 붙혀 알기 쉽게 한다.</p>
+  </li>
+  <li>
+    <p>IP 주소와 도메인명을 서로 교환하는 장치를 <code class="highlighter-rouge">DNS(Domain Name System)</code>이라 한다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="도메인명은-트리-구조로-되어-있다">도메인명은 트리 구조로 되어 있다.</h1>
+
+<ul>
+  <li>
+    <p>도메인명은 ‘www.examaple.co.kr’과 같이 점으로 구분된 문자열로 구성되어 있다.</p>
+  </li>
+  <li>
+    <p>이 하나하나의 문자열을 <code class="highlighter-rouge">라벨</code>이라고 하며, <br /> <code class="highlighter-rouge">오른쪽</code>부터 순서대로 ‘탑레벨 도메인’, ‘제 2레벨 도메인’, ‘제 3레벨 도메인’과 같이 부른다.</p>
+  </li>
+  <li>
+    <p>즉 트리 모양의 계층 구조로 되어 있다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="dns-서버는-2종류">DNS 서버는 2종류</h1>
+
+<ul>
+  <li>
+    <p>DNS 서버는 <code class="highlighter-rouge">캐시 서버</code>와 <code class="highlighter-rouge">콘텐츠 서버</code>로 크게 나눈다.</p>
+  </li>
+  <li><code class="highlighter-rouge">캐시 서버</code>는 LAN 안에 있는 클라이언트로부터 조회를 받아 클라이언트를 대신하여 인터넷에 조회해 주는 DNS 서버
+    <ul>
+      <li>클라이언트가 인터넷에 Access할 때 사용
+  <br /></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">콘텐츠 서버</code>는 외부 호스트로부터 자신이 관리하는 도메인에 관한 조회를 받는 DNS 서버
+    <ul>
+      <li>자신의 도메인 내의 호스트명은 <code class="highlighter-rouge">zone 파일</code>이라는 DB에서 관리
+  <br /></li>
+    </ul>
+  </li>
+  <li>클라이언트로부터 조회를 받은 캐시 서버는 받은 도메인명을 <code class="highlighter-rouge">오른쪽</code>부터 순서대로 검색하여 <br /> 해당 도메인명을 관리하는 콘텐츠 서버를 찾는다. <br /> 거기까지 도달하면 해당 콘텐츠 서버에 대해 <code class="highlighter-rouge">호스트명+도메인명</code>에 대응하는 IP주소를 가르쳐 준다. <br /> 이러한 동작을 <code class="highlighter-rouge">이름 해결</code>이라 한다.</li>
+</ul>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/server/dns_1.png"><img src="/assets/img/server/dns_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-DNS/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-DNS-Redundancy/"> [사내 서버의 기본] DNS 서버의 이중화</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#dns-서버의-이중화" id="markdown-toc-dns-서버의-이중화">DNS 서버의 이중화</a></li>
+  <li><a href="#캐시-서버의-이중화" id="markdown-toc-캐시-서버의-이중화">캐시 서버의 이중화</a></li>
+  <li><a href="#콘텐츠-서버의-이중화" id="markdown-toc-콘텐츠-서버의-이중화">콘텐츠 서버의 이중화</a></li>
+</ul>
+
+<h1 id="dns-서버의-이중화">DNS 서버의 이중화</h1>
+
+<ul>
+  <li>
+    <p>DNS 서버는 인터넷을 보이지 않는 곳에서 지지해 주는 중요한 서버이다.</p>
+  </li>
+  <li>
+    <p>DNS 서버에서 도메인명을 <a href="https://goodgid.github.io/Server-DNS/"><code class="highlighter-rouge">이름 해결</code></a>할 수 없으면 목적하는 웹 서버에 Access할 수 없다.</p>
+  </li>
+  <li>
+    <p>그래서 DNS 서버는 단독 구성이 아니라 <code class="highlighter-rouge">프라이머리 DNS 서버</code>와 <code class="highlighter-rouge">세컨더리 DNS 서버</code>와 같이 <code class="highlighter-rouge">이중 구성</code>으로 구축하는 것이 기본이다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="캐시-서버의-이중화">캐시 서버의 이중화</h1>
+
+<ul>
+  <li>
+    <p>LAN에 배치하는 캐시 서버는 클라이언트가 조회한 이름 해결 정보를 캐시할 뿐이다.</p>
+  </li>
+  <li>
+    <p>따라서 프라이머리 DNS 서버와 세컨더리 DNS 서버에서 특별한 이중화 설정을 할 필요가 없다.</p>
+  </li>
+  <li>
+    <p>프라이머리 DNS 서버로부터 Response가 오지 않으면 세컨더리 DNS에게 다시 조회한다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="콘텐츠-서버의-이중화">콘텐츠 서버의 이중화</h1>
+
+<ul>
+  <li>
+    <p>콘텐츠 서버는 도메인명에 관한(zone 파일)을 저장하는 중요한 서버이다.</p>
+  </li>
+  <li>
+    <p>만일 프라이머리 DNS 서버가 다운되어도 세컨더리 DNS 서버가 동일한 정보를 반환할 수 있도록 <br /> 동일한 <code class="highlighter-rouge">zone 파일</code>을 저장해 둘 필요가 있다.</p>
+  </li>
+  <li>
+    <p>이것은 프라이머리 DNS 서버에서 세컨더리 DNS 서버로 zone 전송을 하여 <code class="highlighter-rouge">zone 파일</code>을 <code class="highlighter-rouge">동기화</code>한다.</p>
+  </li>
+  <li>
+    <p>정기적 or 임의의 타이밍에 zone 파일을 동기화한다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-DNS-Redundancy/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Server-DHCP/"> [사내 서버의 기본] DHCP 서버의 역할 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-08-07
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Server" title="Category: Server" rel="category">Server</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Server" title="Tag: Server" rel="tag">Server</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#dhcp-서버의-역할" id="markdown-toc-dhcp-서버의-역할">DHCP 서버의 역할</a></li>
+  <li><a href="#어드레스-풀에서-ip주소를-배포한다" id="markdown-toc-어드레스-풀에서-ip주소를-배포한다">어드레스 풀에서 IP주소를 배포한다.</a></li>
+</ul>
+
+<h1 id="dhcp-서버의-역할">DHCP 서버의 역할</h1>
+
+<ul>
+  <li>
+    <p>DHCP 서버는 네트워크와 관련된 설정 정보를 DHCP 클라이언트에게 배포하는 서버</p>
+  </li>
+  <li>
+    <p>컴퓨터에 IP 주소를 할당하는 방법으로는 <code class="highlighter-rouge">정적 할당</code>과 <code class="highlighter-rouge">동적 할당</code>이 존재</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">정적 할당</code>은 수동으로 IP 주소를 설정하는 방법</p>
+    <ul>
+      <li>서버나 네트워크 기기 등 동일한 IP 주소를 계속 사용해야하는 기기에서 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li><code class="highlighter-rouge">동적 할당</code>은 서버가 클라이언트에 대해 IP주소, 서브넷 마스크, 기본 게이트웨이 등과 같은 <br /> 네트워크와 관련된 설정 정보를 배포하여 자동으로 설정하는 방법
+    <ul>
+      <li><code class="highlighter-rouge">DHCP(Dynamic Host Configuration Protocol)</code>는 <code class="highlighter-rouge">동적 할당</code>으로 IP주소를 배포할 때 사용하는 프로토콜이다.</li>
+      <li><code class="highlighter-rouge">DHCP</code>를 사용하면 번잡한 IP 주소 관리를 편하게 사용 + 부족한 IP 주소를 활용</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="어드레스-풀에서-ip주소를-배포한다">어드레스 풀에서 IP주소를 배포한다.</h1>
+
+<ul>
+  <li>DHCP 서버는 다음과 같은 설정을 해준다.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>배포할 IP 주소의 범위
+192.168.0.2 ~ 192.168.0.100/24
+
+배포해서는 안 되는 IP 주소의 범위
+192.168.0.101 ~ 192.168.0.255/24
+
+배포할 IP 주소의 유효기간
+1일
+
+기본 게이트웨에의 IP 주소
+192.168.0.1
+
+DNS 서버의 IP 주소
+192.168.0.1
+</code></pre></div></div>
+
+<ul>
+  <li>설정 정보를 받은 클라이언트는 리스 기간이 경과 or 네트워크 연결이 해제되면 배포받은 설정 정보를 반환</li>
+</ul>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/server/dhcp_1.png"><img src="/assets/img/server/dhcp_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Server-DHCP/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page4" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">5/57</span>
+          
+            <a href="/page6" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

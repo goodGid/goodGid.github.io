@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> 정렬/합병 [ Part 1 ] </title>
+    <meta name="description" content="  정렬/합병의 개요  정렬 단계  [1] 내부 정렬  [2] 대체 선택  [3] 자연 선택  런 생성 방법의 비교  파일 정렬/합병 방법의 차이점정렬/합병의 개요  내부 정렬          데이터가 적어서 메인 메모리 내에 모두 저장시켜 정렬가능할 때        외부 정렬  ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/FP-Sort-Merge-(1)/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> 정렬/합병 [ Part 1 ] </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-04-17
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC" title="Tag: 파일처리" rel="tag">파일처리</a-->
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#정렬합병의-개요" id="markdown-toc-정렬합병의-개요">정렬/합병의 개요</a></li>
+  <li><a href="#정렬-단계" id="markdown-toc-정렬-단계">정렬 단계</a></li>
+  <li><a href="#1-내부-정렬" id="markdown-toc-1-내부-정렬">[1] 내부 정렬</a></li>
+  <li><a href="#2-대체-선택" id="markdown-toc-2-대체-선택">[2] 대체 선택</a></li>
+  <li><a href="#3-자연-선택" id="markdown-toc-3-자연-선택">[3] 자연 선택</a></li>
+  <li><a href="#런-생성-방법의-비교" id="markdown-toc-런-생성-방법의-비교">런 생성 방법의 비교</a></li>
+  <li><a href="#파일-정렬합병-방법의-차이점" id="markdown-toc-파일-정렬합병-방법의-차이점">파일 정렬/합병 방법의 차이점</a></li>
+</ul>
+
+<h1 id="정렬합병의-개요">정렬/합병의 개요</h1>
+
+<ul>
+  <li>내부 정렬
+    <ul>
+      <li>데이터가 적어서 메인 메모리 내에 모두 저장시켜 정렬가능할 때</li>
+    </ul>
+  </li>
+  <li>외부 정렬
+    <ul>
+      <li>데이터가 많아서 <code class="highlighter-rouge">메인 메모리</code>의 용량을 <code class="highlighter-rouge">초과</code>하여 보조 저장 장치에 저장된 파일을 정렬할 때</li>
+      <li><code class="highlighter-rouge">레코드 판독</code>, <code class="highlighter-rouge">기록</code>에 <code class="highlighter-rouge">걸리는 시간</code>이 중요</li>
+      <li>정렬/합병
+        <ul>
+          <li><code class="highlighter-rouge">런(run)</code> : <code class="highlighter-rouge">하나의 파일</code>을 <code class="highlighter-rouge">여러 서브파일</code>로 나누어 <code class="highlighter-rouge">내부 정렬 기법</code>을 사용하여 정렬시킨 파일</li>
+          <li><code class="highlighter-rouge">런</code>을 <code class="highlighter-rouge">합병</code>하여 원하는 <code class="highlighter-rouge">하나의 정렬된 파일</code>을 만듬</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_1.png"><img src="/assets/img/file_processing/sort_merge_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h1 id="정렬-단계">정렬 단계</h1>
+
+<ul>
+  <li>런 생성방법
+    <ul>
+      <li>내부 정렬</li>
+      <li>대체 선택</li>
+      <li>자연 선택</li>
+      <li>런의 수를 줄이기 위해 <code class="highlighter-rouge">길이</code>는 <code class="highlighter-rouge">길게</code> <br /> 그래야 합병할 때 <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">수</code>가 <code class="highlighter-rouge">적어</code> 빠른 시간내 처리 가능</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="1-내부-정렬">[1] 내부 정렬</h1>
+
+<ul>
+  <li>런 생성 방법
+    <ul>
+      <li>파일을 n개 레코드씩 분할</li>
+      <li>분할된 레코드들을 <code class="highlighter-rouge">내부 정렬 기법</code>으로 정렬</li>
+      <li>길이를 고정</li>
+    </ul>
+  </li>
+  <li>특징
+    <ul>
+      <li>제일 <code class="highlighter-rouge">마지막 런</code>을 <code class="highlighter-rouge">제외</code>하고 모두 길이가 같다.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_2.png"><img src="/assets/img/file_processing/sort_merge_1_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h1 id="2-대체-선택">[2] 대체 선택</h1>
+
+<ul>
+  <li>런 생성 방법</li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_3.png"><img src="/assets/img/file_processing/sort_merge_1_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>특징
+    <ul>
+      <li>내부 정렬과 달리 입력 파일의 일부 정렬된 레코드들의 순서를 이용</li>
+      <li>내부 정렬을 이용한 경우보다 <code class="highlighter-rouge">런의 길이</code>가 <code class="highlighter-rouge">길다</code>.
+        <ul>
+          <li>런의 개수가 줄어(↓) –&gt; 합병 과정 비용 줄임(↓)</li>
+        </ul>
+      </li>
+      <li>런의 평균 예상 길이 : 2m</li>
+      <li>내림차순일 때 최악</li>
+      <li>오름차순일 때 런 1개 생성</li>
+      <li>내부에 비해 <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">수</code>는 <code class="highlighter-rouge">1/2배</code>, <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">길이</code>는 <code class="highlighter-rouge">2배</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="3-자연-선택">[3] 자연 선택</h1>
+
+<ul>
+  <li>런 생성 방법
+    <ul>
+      <li>대체 선택과는 달리 동결된 레코드들을 버퍼에 유지하지 않고 <br /> 보조 저장 장치에 <code class="highlighter-rouge">예비 장소</code>를 설정하여 별도 저장</li>
+      <li>하나의 런은 예비장소가 꽉 차고 버퍼에 들어올 데이터가 없거나 입력 파일이 공백이 될 때까지 계속 생성</li>
+    </ul>
+  </li>
+  <li>특징
+    <ul>
+      <li><code class="highlighter-rouge">대체 선택</code>보다 <code class="highlighter-rouge">런</code>을 <code class="highlighter-rouge">길게</code>하여 런 수를 <code class="highlighter-rouge">줄임(↓)</code> <br /> –&gt; <code class="highlighter-rouge">합병과정 비용</code>을 <code class="highlighter-rouge">줄임(↓)</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="런-생성-방법의-비교">런 생성 방법의 비교</h1>
+
+<ul>
+  <li>내부 정렬
+    <ul>
+      <li>마지막 럭을 제외하고 모든 런들의 길이가 같음</li>
+      <li>런의 길이를 예측할 수 있으므로 합병 알고리즘이 간단</li>
+    </ul>
+  </li>
+  <li>대체 선택
+    <ul>
+      <li>내부 정렬보다 평균적으로 훨씬 긴 런을 생성</li>
+      <li>런의 길이가 길수록 합병 비용이 적음</li>
+      <li>런의 길이가 일정치 않아 정렬/합병 알고리즘이 복잡</li>
+    </ul>
+  </li>
+  <li>자연 선택
+    <ul>
+      <li>앞의 두 방법보다 더 긴 런을 생성할 수 있음</li>
+      <li>예비 장소로의 입출력이 문제가 됨</li>
+      <li>긴 런 생성에 따른 효율화가 예비 장소 전송 비용보다 이익이 될 수도 있음</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="파일-정렬합병-방법의-차이점">파일 정렬/합병 방법의 차이점</h1>
+
+<ul>
+  <li>차이점을 나타내는 매개 변수
+    <ul>
+      <li>적용하는 내부 정렬 방식</li>
+      <li>내부정렬을 위해 할당된 메인 메모리의 크기</li>
+      <li>정렬된 런들의 보조 저장 장치에서의 저장 분포</li>
+      <li>정렬/합병 단계에서 동시에 처리할 수 있는 런의 수</li>
+    </ul>
+  </li>
+  <li>정렬/합병 기법의 성능
+    <ul>
+      <li>매개 변수에 따라 런의 수와 합병의 <code class="highlighter-rouge">패스(pass)수</code> 결정
+        <ul>
+          <li><code class="highlighter-rouge">패스 수</code> : 정렬/합병 기법이 몇 번의 반복적 수행을 거쳐서 최종 파일에 출력하느냐를 나타내는 것</li>
+        </ul>
+      </li>
+      <li>레코드 판독/기록 횟수 성능에 영향을 미치는 요인
+        <ul>
+          <li>가능한 <code class="highlighter-rouge">런의 길이</code>를 <code class="highlighter-rouge">길게</code> 만들어 <code class="highlighter-rouge">런의 수</code>를 <code class="highlighter-rouge">최소화</code></li>
+          <li><code class="highlighter-rouge">동시</code>에 <code class="highlighter-rouge">합병</code>할 수 있는 <code class="highlighter-rouge">런의 수</code>를 <code class="highlighter-rouge">늘리면</code> <code class="highlighter-rouge">합병</code>의 <code class="highlighter-rouge">패스 수</code>는 <code class="highlighter-rouge">감소</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/FP-Sequeintial-File-(2)/"> 순차 파일 [ Part 2 ] </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/FP-Sort-Merge-(2)/"> 정렬/합병 [ Part 2 ] </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/FP-Sort-Merge-(1)/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/FP-Sort-Merge-(1)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

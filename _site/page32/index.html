@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page32/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-10-3/"> Machine Learning 10-(3) ::  Dropout과 앙상블 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-20
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#solution-for-overfitting" id="markdown-toc-solution-for-overfitting">Solution for overfitting</a></li>
+  <li><a href="#dropout" id="markdown-toc-dropout">Dropout</a></li>
+  <li><a href="#dropout-implementation-code" id="markdown-toc-dropout-implementation-code">Dropout Implementation code</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wTxMsp22llc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="solution-for-overfitting">Solution for overfitting</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_1.png"><img src="/assets/img/machine_learning/ML_10_3_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ol>
+  <li>
+    <p>학습 데이터를 늘리자.</p>
+  </li>
+  <li>
+    <p>features를 줄이면 되는데 굳이 할 필욘 없다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Regularization</code> : Let’s not have too big numbers in the weight <br /></p>
+  </li>
+</ol>
+
+<p class="notice">Q. “Let’s not have too big numbers in the weight”가 무슨 말이지 ?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Weight값으로 너무 큰 값을 주지말자는 뜻이다.
+학습 데이터가 너무 넓은 범위에 분포되어 있으면
+W값이 모든 경우를 처리하기 위해서
+값이 커질수가 있다. 그런 경우를 방지하기 위해
+W값은 줄이되 모든 경우를 포함할 수 있도록 
+Regularization하자는 것이다.
+( 약간 soft_max처럼 [ 0 ~ 1 ]사이로 줄이는 느낌이랄까 ? )
+( 지극히 주관적인 생각이라 틀린 답변일수있다.)
+</code></pre></div></div>
+
+<p><br /></p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_2.png"><img src="/assets/img/machine_learning/ML_10_3_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>각각 W(Element)를 제곱한 값을 더한게 최소화가 되게 하자.</li>
+</ul>
+
+<hr />
+
+<h2 id="dropout">Dropout</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_3.png"><img src="/assets/img/machine_learning/ML_10_3_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>Neural Networks에는</p>
+
+<p><code class="highlighter-rouge">Solution for overfitting</code>에 대한 해결책이</p>
+
+<p>1가지 더 있다.</p>
+
+<p>바로 <code class="highlighter-rouge">Dropout</code>이다.</p>
+
+<p><br /></p>
+
+<p>Random하게 어떤 neurons을 squeeze하자.</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_4.png"><img src="/assets/img/machine_learning/ML_10_3_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>그런데 Random하게 설정을 해도 될까? …</p>
+
+<p>가.능.하.다.</p>
+
+<center><b> How ? </b></center>
+
+<p><br /></p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_5.png"><img src="/assets/img/machine_learning/ML_10_3_5.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>각각의 neurons들은</p>
+
+<p>각각의 정보를 갖고 있다.</p>
+
+<p><br /></p>
+
+<p>그래서</p>
+
+<p>일부는 쉬게하고</p>
+
+<p>남은 것들로 훈련을 시킨다.</p>
+
+<p><br /></p>
+
+<p>그리고</p>
+
+<p>마지막에 쉬게한 것들을 총 동원해서</p>
+
+<p>예측을 한다.</p>
+
+<hr />
+
+<h2 id="dropout-implementation-code">Dropout Implementation code</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_3_6.png"><img src="/assets/img/machine_learning/ML_10_3_6.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>주의할 점은</p>
+
+<p>학슬 할 때만 dropout을 한다.</p>
+
+<p>실전에서는 dropout을 하지 않는다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c"># Train:</span>
+<span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">batch_xs</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">batch_ys</span><span class="p">,</span> <span class="n">dropout_rate</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">})</span>
+
+<span class="c"># Evaluation:</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Accuracy:'</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span>
+      <span class="n">X</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">:</span> <span class="mi">1</span><span class="p">}))</span>
+
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-10-3/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-10-2/"> Machine Learning 10-(2) :: Weight 초기화 잘해보자 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-20
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#weight-초기화-잘해보자" id="markdown-toc-weight-초기화-잘해보자">Weight 초기화 잘해보자</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4rC0sWrp3Uw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="weight-초기화-잘해보자">Weight 초기화 잘해보자</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_1.png"><img src="/assets/img/machine_learning/ML_10_2_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>문제 해결법으로 2가지 있다.</p>
+
+<ol>
+  <li>
+    <p>ReLU를 사용한다.</p>
+  </li>
+  <li>
+    <p>Weight의 초기값을 제대로 적용시키자.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p>그런데 ReLU를 사용할 때</p>
+
+<p>돌릴 때 마다 결과값이 다르다.</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_2.png"><img src="/assets/img/machine_learning/ML_10_2_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>W를 초기화할 때</p>
+
+<p>[ -1 ~ 1 ] 랜덤값을 줬기 때문이다.</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p>그러면 초기값을 0으로 주자 !</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_3.png"><img src="/assets/img/machine_learning/ML_10_2_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>그러면 어떤 문제가 생길까?</p>
+
+<p>여기서 x는 input값이기 때문에 0이 아닐수도 일수도 있다.</p>
+
+<p><br /></p>
+
+<p>그런데 W를 0으로 초기화해줬기 때문에</p>
+
+<p>그림의 좌상단 x쪽 부분의 미분 영역을 보면</p>
+
+<p><code class="highlighter-rouge">W</code>가 chain rule을 할 때 사용이 된다.</p>
+
+<p>x라는 값과 상관없이</p>
+
+<p>기울기가 0이된다.</p>
+
+<p><br /></p>
+
+<p>그렇게 되면</p>
+
+<p>그 뒤에 있는 모든 기울기가 <code class="highlighter-rouge">0</code>이 된다.</p>
+
+<p class="notice">Q. 왜 뒤에 있는 모든 기울기가 0이 될까?</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-10-2/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-10-1/"> Machine Learning 10-(1) :: Sigmoid 보다 ReLU가 더 좋아 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-20
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-10-1/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/1202/">BOJ - 보석 도둑 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-20
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Algorithm" title="Category: Algorithm" rel="category">Algorithm</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BOJ" title="Tag: BOJ" rel="tag">BOJ</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#problem" id="markdown-toc-problem">Problem</a></li>
+  <li><a href="#explain-logic" id="markdown-toc-explain-logic">Explain Logic</a></li>
+  <li><a href="#1-answer-code-18-02-20" id="markdown-toc-1-answer-code-18-02-20">[1] Answer Code (18. 02. 20)</a></li>
+</ul>
+
+<h2 id="problem">Problem</h2>
+<p>Problem URL : <strong><a href="https://www.acmicpc.net/problem/1202">보석 도둑</a></strong></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/algorithm/1202_1.png"><img src="/assets/img/algorithm/1202_1.png" alt="" /></a>
+    
+    <a href="/assets/img/algorithm/1202_2.png"><img src="/assets/img/algorithm/1202_2.png" alt="" /></a>
+    
+    <figcaption>Screenshots of Problem Explain</figcaption>
+</figure>
+
+<hr />
+
+<h2 id="explain-logic">Explain Logic</h2>
+
+<p>큰 가방은 작은 가방이 넣을 수 있는 보석을</p>
+
+<p>모두 넣을 수 있다.</p>
+
+<p>그렇기 때문에</p>
+
+<p>작은 가방에 들어갈 수 있는</p>
+
+<p>가능한 보석의 Value를 Priority Queue에 넣고</p>
+
+<p>그 중 Root에 있는걸 pop 한다.</p>
+
+<p>(= Max Value pop)</p>
+
+<p><br /></p>
+
+<p>여기서 핵심이</p>
+
+<p>그 다음 가방은 현재 가방이 담을 수 있는 보석들을 담을 수 있기 때문에</p>
+
+<p>현재 가방에 대한 위의 과정 + 현재 Priority Queue의 값들 중에서</p>
+
+<p>Root를 pop한다.</p>
+
+<p>이 말이 이해가 안간다며 Code를 참고하자.</p>
+
+<p><br /></p>
+
+<p>Priority Queue가 유지되기 때문에</p>
+
+<p>무게로 sort를 하지만</p>
+
+<p>무게는 더 무겁지만 가치가 작은값은</p>
+
+<p>어차피 Priority Queue는 Value를 기준으로 정렬을 하기 때문에</p>
+
+<p>최적의 해가 구해진다.</p>
+
+<p>이 말이 이해가 안간다면 Code를 참고하자.</p>
+
+<hr />
+
+<h2 id="1-answer-code-18-02-20">[1] Answer Code (18. 02. 20)</h2>
+<p>``` cpp</p>
+
+<p>#include<iostream>
+#include<queue>
+#include<vector>
+#include<algorithm>
+using namespace std;</algorithm></vector></queue></iostream></p>
+
+<p>typedef pair&lt;int, int&gt; p;
+vector&lt;p&gt; v;
+vector<int> b; // b is bag</int></p>
+
+<p>int main(){
+    int n,k;
+    cin » n » k;
+    for(int i=1; i&lt;=n; i++){
+        int a,b;
+        scanf(“%d %d”,&amp;a, &amp;b);
+        v.push_back({a,b});
+    }</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for(int i=1; i&lt;=k; i++){
+    int a;
+    scanf("%d",&amp;a);
+    b.push_back(a);
+}
+
+sort(v.begin(),v.end());
+sort(b.begin(), b.end());
+
+priority_queue&lt;int&gt; q;
+long long sum = 0;
+// i : Bag index -- k
+// j : Jewelry index -- n
+for(int i=0,j=0; i&lt;k; i++){
+    while ( j&lt;n &amp;&amp; v[j].first &lt;= b[i]) {
+        q.push(v[j++].second);
+    }
+    
+    if(! q.empty()){
+        sum += q.top();
+        q.pop();
+    }
+}
+
+cout &lt;&lt; sum &lt;&lt; endl;
+
+return 0; }
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/1202/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-9-4/"> Machine Learning 9-(4) :: Tensorboard (Neural Net for XOR) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#tensorboard-neural-net-for-xor" id="markdown-toc-tensorboard-neural-net-for-xor">Tensorboard (Neural Net for XOR)</a></li>
+  <li><a href="#tensorboard-usage" id="markdown-toc-tensorboard-usage">Tensorboard Usage</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmrWZPFYjHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="tensorboard-neural-net-for-xor">Tensorboard (Neural Net for XOR)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_4_1.png"><img src="/assets/img/machine_learning/ML_9_4_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>학습을 길게/많이 할 때 진행 상황을 한 눈에 보게해주는게 <code class="highlighter-rouge">Tensorboard</code>이다.</p>
+  </li>
+  <li>
+    <p>그래프를 복잡하게 그릴 때 그래프 모양으로 볼 수 있다.</p>
+  </li>
+  <li>
+    <p>특정 값을 바로 그림으로 그려줄 수 있다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<figure class="half">
+    
+    <a href="/assets/img/machine_learning/ML_9_4_2.png"><img src="/assets/img/machine_learning/ML_9_4_2.png" alt="" /></a>
+    
+    <a href="/assets/img/machine_learning/ML_9_4_3.png"><img src="/assets/img/machine_learning/ML_9_4_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>많은 Log를 그래프와 같이 시각화해서 볼 수 있게 도와준다.</li>
+</ul>
+
+<hr />
+
+<h2 id="tensorboard-usage">Tensorboard Usage</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_4_4.png"><img src="/assets/img/machine_learning/ML_9_4_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>Tensorboard를 사용하기 위해선 5개의 step만 잘 따라하면 된다.</li>
+</ul>
+
+<ol>
+  <li>
+    <p>어떤 것을 log화 할지 정한다.</p>
+  </li>
+  <li>
+    <p>log화 할 모든 것을 summary한다.</p>
+  </li>
+  <li>
+    <p>세션에 들어가 summary를 어디 위치에 기록할지 정하고, 세션에 그래프를 넣어준다. <br /> 쉽게 말해 File경로를 지정한다.</p>
+  </li>
+  <li>
+    <p>summary자체도 tense이기 때문에 실행을 시켜준다. <br /> (summary에 data가 필요하다면 feed_dict으로 넘겨준다.) <br /> 실행 결과값을 File에 Write한다.</p>
+  </li>
+  <li>
+    <p>Tensorboard를 확인한다. <br /> 만약 remote server에서 작동중이라면 (아래 사진 참고)</p>
+  </li>
+</ol>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_4_8.png"><img src="/assets/img/machine_learning/ML_9_4_8.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-9-4/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-9-3/"> Machine Learning 9-(3) :: Neural Net for XOR </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#neural-net-for-xor" id="markdown-toc-neural-net-for-xor">Neural Net for XOR</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oFGHOsAYiz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="neural-net-for-xor">Neural Net for XOR</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_3_1.png"><img src="/assets/img/machine_learning/ML_9_3_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-9-3/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page31" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">32/57</span>
+          
+            <a href="/page33" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

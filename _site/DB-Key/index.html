@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Key</title>
+    <meta name="description" content="  ConceptConcept  Key란 데이터베이스에서 조건에 맞는 튜플을 찾거나 검색 시 기준이 되는 속성                 Super Key      릴레이션을 구성하는 모든 Tuple에 대해 유일성(Unique)은 만족하지만 최소성(Minimality)은 만족하지...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/DB-Key/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Key</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-10-11
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a-->
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<blockquote>
+  <p>Key란 데이터베이스에서 조건에 맞는 튜플을 찾거나 검색 시 기준이 되는 속성</p>
+</blockquote>
+
+<figure>
+    
+    <a href="/assets/img/posts/key_1.png"><img src="/assets/img/posts/key_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p><strong>Super Key</strong></p>
+
+<ul>
+  <li>
+    <p>릴레이션을 구성하는 모든 Tuple에 대해 <code class="highlighter-rouge">유일성(Unique)</code>은 만족하지만 <code class="highlighter-rouge">최소성(Minimality)</code>은 만족하지 못한다.</p>
+  </li>
+  <li>
+    <p>슈퍼키는 <code class="highlighter-rouge">최소성</code>과 관계없이 튜플을 유일하게 구분할 수 있으면 된다.</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;학생&gt; 릴레이션에서는
+학번, 주민등록번호, (학번, 주민등록번호), (학번, 주민등록번호, 성명)등이 [슈퍼키]이다.
+
+(학번, 주민등록번호)를 사용한 슈퍼키는 다른 튜플들과 구분할 수 있는 [유일성]은 만족하지만, 
+학번이나 주민등록번호 1개 만으로도 다른 튜플들을 구분할 수 있으므로 [최소성]은 만족하지 못한다.
+</code></pre></div></div>
+
+<hr />
+
+<p><em>유일성</em> : 하나의 키 값으로 하나의 튜플만을 유일하게 식별할 수 있어야 함</p>
+
+<p><em>최소성</em> : 키를 구성하는 속성 하나를 제거하면 유일하게 식별할 수 없도록 꼭 필요한 최소의 속성으로 구성되어야 함</p>
+
+<hr />
+
+<p><strong>Candidate Key</strong></p>
+
+<ul>
+  <li>
+    <p>후보키는 <code class="highlighter-rouge">유일성</code>과 <code class="highlighter-rouge">최소성</code>을 모두 만족한다.</p>
+  </li>
+  <li>
+    <p>슈퍼키 중에서 <code class="highlighter-rouge">유일성</code>과 <code class="highlighter-rouge">최소성</code>을 만족시키는 것</p>
+  </li>
+  <li>
+    <p>릴레이션을 구성하는 속성들 중 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;학생&gt; 릴레이션에서는 학번, 주민등록번호는       유일성과 최소성을 만족하므로 [후보키]가 된다.
+&lt;수강&gt; 릴레이션에서는 (학번, 과목명)으로 조합해야 유일성과 최소성을 만족하므로 [후보키]가 된다.
+</code></pre></div></div>
+
+<p><strong>Primary Key</strong></p>
+
+<ul>
+  <li>
+    <p>후보키 중에서 특별히 선정된 것</p>
+  </li>
+  <li>
+    <p>기본키는 <code class="highlighter-rouge">유일성</code>과 <code class="highlighter-rouge">최소성</code>을 갖는다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">후보키</code>의 성질을 갖는다.</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;학생&gt; 릴레이션에서는 후보키인 학번이나 주민등록번호 중에서 선택하여 [기본키]로 설정할 수 있다.
+&lt;수강&gt; 릴레이션에서는 (학번, 과목명)을 조합해서 [기본키]로 설정할 수 있다.
+</code></pre></div></div>
+
+<p><strong>Alternate Key</strong></p>
+
+<ul>
+  <li><code class="highlighter-rouge">후보키</code> 중에서 <code class="highlighter-rouge">선정된 기본키</code>를 제외한 나머지 후보키를 의미</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;학생&gt; 릴레이션에서 학번이 기본키로 설정되면 주민등록번호는 [대체키]가 된다.
+</code></pre></div></div>
+
+<p><strong>Foreign Key</strong></p>
+
+<ul>
+  <li>다른 릴레이션의 기본키를 참조하는 속성</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;수강&gt; 릴레이션의 학번은 &lt;학생&gt; 릴레이션의 기본키인 학번을 참조하고 있으므로 
+&lt;수강&gt; 릴레이션에서 학번은 [외래키]가 된다.
+</code></pre></div></div>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/DB-Integrity/">Integrity</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/DB-Relation/">Relation</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/DB-Key/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/DB-Key/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

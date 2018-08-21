@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SQL</title>
+    <meta name="description" content="  ConceptConcept1.DDL (Data Define Laguage)  CREATE  ALTER  DROP  SQL에서 지원하는 기본 데이터 타입          정수 : INT(4Byte 정수), SMALLINT(2Byte 정수)      실수 : FLOAT, REAL,...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/DB-SQL/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>SQL</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-10-08
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Database" title="Category: Database" rel="category">Database</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a-->
+        <a href="/tag/#Database" title="Tag: Database" rel="tag">Database</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#concept" id="markdown-toc-concept">Concept</a></li>
+</ul>
+
+<h2 id="concept">Concept</h2>
+
+<p>1.DDL (Data Define Laguage)</p>
+
+<ol>
+  <li>CREATE</li>
+  <li><a href="https://goodgid.github.io/DB-Alter/">ALTER</a></li>
+  <li><a href="https://goodgid.github.io/DB-Drop/">DROP</a></li>
+</ol>
+
+<ul>
+  <li>SQL에서 지원하는 기본 데이터 타입
+    <ol>
+      <li>정수 : INT(4Byte 정수), SMALLINT(2Byte 정수)</li>
+      <li>실수 : FLOAT, REAL, DOUBLE PRECISION</li>
+      <li>형식화된 숫자 : DEC(i, j) –&gt; i: 전체 자릿수,   j: 소수부 자릿수</li>
+      <li>고정길이 문자 : CHAR(n) –&gt; n: 문자 수</li>
+      <li>가변길이 문자 : VARCHAR(n) –&gt; n: 최대 문자 수</li>
+      <li>고정길이 비트 열(Bit String) –&gt; BIT(n)</li>
+      <li>가변길이 비트열 : VARBIT(n)</li>
+      <li>날짜 : DATE</li>
+      <li>시간 : TIME</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<p>2.DML (Data Manipulation Language)</p>
+
+<ol>
+  <li>INSERT</li>
+  <li>DELETE</li>
+  <li>UPDATE</li>
+</ol>
+
+<hr />
+
+<p><strong>INSERT</strong></p>
+
+<ul>
+  <li>테이블의 모든 속성을 삽입할 때는 속성명을 생략할 수 있다. 단 이때 <code class="highlighter-rouge">Create Table</code>문에서 기술된 속성 순으로 삽입 된다.</li>
+  <li>Select문을 사용하여 다른 테이블의 검색 결과를 삽입 할 수 있다.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO 테이블명[(속성명1, 속성명2)]
+VALUES (데이터1, 데이터2)
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에 있는 이름이 "이순신"이고, 부서가 "기획"인 사원을 삽입하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insert Into 사원(이름, 부서)
+Values ('이순신', '기획');
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에 있는 편집 부서의 모든 튜플을 &lt;편집부원(이름,생일,주소,기본급)&gt; 테이블에 삽입하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insert Into 편집부원(이름, 생일, 주소, 기본급)
+Select 이름, 생일, 주소, 기본급 From 사원 Where 부서 = '편집';
+</code></pre></div></div>
+
+<hr />
+
+<p><strong>DELETE</strong></p>
+
+<ul>
+  <li>테이블에 있는 튜플들 중 특정 튜플을 삭제할 때 사용되는 명령어</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE FROM 테이블명 WHERE 조건;
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에서 이름이 '임꺽정'인 튜플을 삭제하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Delete From 사원 Where 이름 = '임꺽정';
+</code></pre></div></div>
+
+<hr />
+
+<p><strong>UPDATE</strong></p>
+
+<ul>
+  <li>테이블에 있는 튜플들 중에서 특정 튜플의 내용을 갱신할 때 사용되는 명령어</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UPDATE 테이블명
+SET 속성명 = 데이터
+WHERE 조건명;
+</code></pre></div></div>
+
+<p class="notice">Q. <사원> 테이블에서 황진이의 부서를 "기획"으로 변경하고 기본급을 5 인상하는 SQL문을 작성하시오.</사원></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Update 사원
+Set 부서 = '기획', 기본급 = 기본급 + 5
+Where 이름 = '황진이';
+</code></pre></div></div>
+
+<hr />
+
+<p>3.DCL (Date Control Language)</p>
+
+<ol>
+  <li>COMMIT</li>
+  <li>ROLLBACK</li>
+  <li>GRANT</li>
+  <li>REVOKE</li>
+</ol>
+
+<hr />
+
+<p><strong>COMMIT</strong></p>
+
+<ul>
+  <li>트랜잭션<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>의 모든 변경 내용들을 영구적으로 데이터베이스에 반영하는 명령어</li>
+</ul>
+
+<ul>
+  <li>트랜잭션이 성공적으로 끝나면 데이터베이스가 새로운 <code class="highlighter-rouge">일관성 상태(Consistency)</code>를 가지기 위해 수행된 모든 변경을 <br /> 데이터베이스에 <code class="highlighter-rouge">반영(Commit)</code>하여 완료하여야한다.</li>
+</ul>
+
+<hr />
+
+<p><strong>ROLLBACK</strong></p>
+
+<ul>
+  <li>
+    <p>변경된 모든 내용들을 취소하고 데이터베이스를 이전 상태로 되돌리는 명령어</p>
+  </li>
+  <li>
+    <p>트랜잭션의 일부를 성공적으로 끝내지 못하면 데이터베이스가 <code class="highlighter-rouge">비일관성(Inconsistency)</code>인 상태를 가질 수 있기 때문에 <br /> (즉 트랜잭션이 수행한 일부 변경이 데이터베이스에 반영될 가능성이 있기 때문에) <br /> 일부분만 완료된 트랜잭션은 <code class="highlighter-rouge">롤백(Rollback)</code>되어야 한다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>GRANT / REVOKE</strong></p>
+
+<ul>
+  <li>DBA가 데이터베이스 사용자에게 권한을 부여하고 취소하기 위한 명령어</li>
+</ul>
+
+<p><strong>GRANT</strong> : <code class="highlighter-rouge">권한 부여</code>를 위한 명령어</p>
+
+<p><strong>REVOKE</strong> : <code class="highlighter-rouge">권한 취소</code>를 위한 명령어</p>
+
+<p>– 사용자등급 지정 및 해제</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GRANT 사용자등급 TO 사용자_ID_리스트; 
+REVOKE 사용자등급 FROM 사용자_ID_리스트;
+</code></pre></div></div>
+
+<ul>
+  <li>사용자등급
+    <ol>
+      <li>DBA : 데이터베이스 관리자</li>
+      <li>RESOURCE : 데이터베이스 및 테이블 생성 가능자</li>
+      <li>CONNECT : 단순 사용자</li>
+    </ol>
+  </li>
+</ul>
+
+<p class="notice">Q. 사용자 ID가 “NABI”인 사람에게 DB 및 테이블을 생성할 수 있는 권한을 부여하는 SQL문을 작성하시오.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Grant Resource To Nabi;
+</code></pre></div></div>
+
+<p class="notice">Q. 사용자 ID가 “STAR”인 사람에게 단순히 DB에 있는 정보를 검색할 수 있는 권한을 부여하는 SQL문을 작성하시오.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Grant Connect To Star;
+</code></pre></div></div>
+
+<p>– 테이블 및 속성에 대한 권한 부여 및 취소</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GRANT 권한_리스트 ON 개체 TO 사용자 [WITH GRANT OPTION];
+REVOKE [GRANT OPTION FOR] 권한_리스트 ON 객체 FROM 사용자 [CASCADE];
+</code></pre></div></div>
+
+<ul>
+  <li>권한 종류 : <code class="highlighter-rouge">All</code>, <code class="highlighter-rouge">Select</code>, <code class="highlighter-rouge">Insert</code>, <code class="highlighter-rouge">Delete</code>, <code class="highlighter-rouge">Update</code>, <code class="highlighter-rouge">Alter</code> 등</li>
+  <li>With Grant Option : 부여받은 권한을 다른 사용자에게 다시 부여할 수 있는 권한을 부여</li>
+  <li>Grant Option For : 다른 사용자에게 권한을 부여할 수 있는 권한을 취소</li>
+  <li>Cascade : 권한 취소 시 권한을 부여받았던 사용자가 다른 사용자에게 부여한 권한도 연쇄적으로 취소</li>
+</ul>
+
+<p class="notice">Q. 사용자 ID가 “NABI”인 사람에게 <고객> 테이블에 대한 모든 권한과 다른 사람에게 권한을 부여할 수 있는 권한까지 <br /> 부여하는 SQL문을 작성하시오.</고객></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Grant All On 고객 To Nabi With Grant Option;
+</code></pre></div></div>
+
+<p class="notice">Q. 사용자 ID가 “STAR”인 사람에게 부여한 <고객> 테이블에 대한 권한 중 UPDATE 권한을 다른 사람에게 부여할 수 있는 <br /> 권한만 취소하는 SQL문을 작성하시오.</고객></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Revoke Grant Option For Update On 고객 From Star;
+</code></pre></div></div>
+
+<p class="notice">Q. 홍길동에게 부여된 <강좌> 테이블에 대해 INSERT 권한은 [유지]하면서 <br /> 다른 사람에게 부여할 수 있는 권한만 [취소]하는 SQL문을 작성하시오.</강좌></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Revoke Grant Option For Insert On 강좌 From 홍길동;
+</code></pre></div></div>
+
+<p class="notice">Q. 홍길동에게 부여된 <강좌> 테이블에 대한 SELECT, INSERT, DELETE 권한을 취소하는 SQL문을 작성하시오.</강좌></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Revoke Select, Insert, Delete On 강좌 From 홍길동;
+</code></pre></div></div>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>데이터베이스에서 하나의 논리적 기능을 수행하기 위한 일련의 연산 집합으로서 작업의 단위 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/DB-Join(2)/">Join (2)</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/DB-Select/">Select</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/DB-SQL/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/DB-SQL/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

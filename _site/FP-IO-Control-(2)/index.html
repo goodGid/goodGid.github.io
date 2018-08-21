@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> 파일 입출력 제어 [ Part 2 ] </title>
+    <meta name="description" content="  [1] 단순 버퍼 시스템  버퍼를 채우는 채널 프로그램의 기본 구성  예상 버퍼링  단순 버퍼 시스템의 단점  [2] 이중 버퍼 시스템  이중 버퍼 시스템의 장/단점          장점      단점      [1] 단순 버퍼 시스템버퍼를 채우는 채널 프로그램의 기본 구성  ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/FP-IO-Control-(2)/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> 파일 입출력 제어 [ Part 2 ] </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-04-15
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC" title="Tag: 파일처리" rel="tag">파일처리</a-->
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#1-단순-버퍼-시스템" id="markdown-toc-1-단순-버퍼-시스템"><code class="highlighter-rouge">[1] 단순 버퍼 시스템</code></a></li>
+  <li><a href="#버퍼를-채우는-채널-프로그램의-기본-구성" id="markdown-toc-버퍼를-채우는-채널-프로그램의-기본-구성">버퍼를 채우는 채널 프로그램의 기본 구성</a></li>
+  <li><a href="#예상-버퍼링" id="markdown-toc-예상-버퍼링">예상 버퍼링</a></li>
+  <li><a href="#단순-버퍼-시스템의-단점" id="markdown-toc-단순-버퍼-시스템의-단점">단순 버퍼 시스템의 단점</a></li>
+  <li><a href="#2-이중-버퍼-시스템" id="markdown-toc-2-이중-버퍼-시스템"><code class="highlighter-rouge">[2] 이중 버퍼 시스템</code></a></li>
+  <li><a href="#이중-버퍼-시스템의-장단점" id="markdown-toc-이중-버퍼-시스템의-장단점">이중 버퍼 시스템의 장/단점</a>    <ul>
+      <li><a href="#장점" id="markdown-toc-장점">장점</a></li>
+      <li><a href="#단점" id="markdown-toc-단점">단점</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-단순-버퍼-시스템"><code class="highlighter-rouge">[1] 단순 버퍼 시스템</code></h1>
+
+<hr />
+
+<h1 id="버퍼를-채우는-채널-프로그램의-기본-구성">버퍼를 채우는 채널 프로그램의 기본 구성</h1>
+
+<ol>
+  <li>
+    <p>프로그램의 READ 명령이 있을 때까지 기다림</p>
+  </li>
+  <li>
+    <p>제어 장치에 I/O시작 명령을 내림</p>
+  </li>
+  <li>
+    <p>버퍼가 채워지기를 기다림</p>
+  </li>
+  <li>
+    <p>프로그램에 인터럽트를 발생시켜 버퍼로부터 데이터를 읽도록 함 <br /> –&gt; 사용자 프로그램은 버퍼가 찰 때까지 유휴 상태</p>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="예상-버퍼링">예상 버퍼링</h1>
+
+<ul>
+  <li>
+    <p>프로그램이 대기 상태에 있을 가능성을 어느 정도 제거</p>
+  </li>
+  <li>
+    <p>I/O 제어 시스템은 <br /> 프로그램이 필요로 할 데이터를 미리 예측해서 <br /> 항상 버퍼를 가득 채워 놓음 <br /> –&gt; 프로그램은 버퍼가 채워질 때까지 기다릴 필요 X (= 필요할것 같다 싶으면 미리 Get)</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="단순-버퍼-시스템의-단점">단순 버퍼 시스템의 단점</h1>
+
+<ol>
+  <li>
+    <p>프로그램이 매 n+1번 째 read를 요청할 때마다 <br /> 응용 프로그램, 즉 CPU는 버퍼가 다 채워질 때까지 대기 상태</p>
+  </li>
+  <li>
+    <p>버퍼가 비워지는 동안 <code class="highlighter-rouge">생산자</code>는 버퍼를 채우기 위해 <code class="highlighter-rouge">대기 상태</code></p>
+  </li>
+  <li>
+    <p>그러므로 다중버퍼를 사용한다.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h1 id="2-이중-버퍼-시스템"><code class="highlighter-rouge">[2] 이중 버퍼 시스템</code></h1>
+
+<ul>
+  <li>파일당 두 개의 버퍼 구역을 할당 <br /> 하나를 비우는 동안 나머지 버퍼를 채움</li>
+</ul>
+
+<hr />
+
+<h1 id="이중-버퍼-시스템의-장단점">이중 버퍼 시스템의 장/단점</h1>
+
+<h2 id="장점">장점</h2>
+
+<ul>
+  <li>버퍼를 채우고 비우는 작업이 중복되어 <code class="highlighter-rouge">병렬</code>로 수행되므로 <br /> <code class="highlighter-rouge">CPU</code>의 <code class="highlighter-rouge">대기 시간</code> 감소</li>
+</ul>
+
+<h2 id="단점">단점</h2>
+
+<ul>
+  <li>
+    <p>생산자나 소비자 루틴의 <code class="highlighter-rouge">실행 시간</code>과 <code class="highlighter-rouge">복잡성</code> 증가</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">메인 메모리</code>의 <code class="highlighter-rouge">소요량</code> 증가</p>
+  </li>
+</ul>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/FP-IO-Control-(1)/"> 파일 입출력 제어 [ Part 1 ] </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/FP-Sequeintial-File-(1)/"> 순차 파일 [ Part 1 ] </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/FP-IO-Control-(2)/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/FP-IO-Control-(2)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
