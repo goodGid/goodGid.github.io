@@ -10,7 +10,6 @@ title: Gid Blog
 brief-intro: BE Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://goodgid.github.io" # the base hostname & protocol for your site
-img_url : goodGid.github.io/assets/img/
     
 
 permalink: /:title/
