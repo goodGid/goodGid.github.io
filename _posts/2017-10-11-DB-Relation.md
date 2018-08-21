@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "DataBase :: Relation"
-date:   2017-10-11
-excerpt: "Relation 개념"
-cate : "post"
-tag:
-- DB
+title:  "Relation"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
 
 ## Concept
 

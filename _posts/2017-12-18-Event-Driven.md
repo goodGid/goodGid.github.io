@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  " Node :: Event Driven "
-date:   2017-12-18
-excerpt: " Event Drivens "
-cate : "post"
-tag:
-- Node.js
+title:  " Event Driven "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
+
 
 ## What is Event Driven ?
 

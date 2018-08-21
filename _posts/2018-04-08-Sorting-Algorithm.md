@@ -1,17 +1,18 @@
 ---
 layout: post
 title:  " 정렬 알고리즘 (Sort Algorithm) "
-date:   2018-04-08
-excerpt: " Sorting "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ### Sorting Algorithm
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <vector>
@@ -208,4 +209,4 @@ int main()
     return 0;
 }
 
-{% endhighlight %}
+```

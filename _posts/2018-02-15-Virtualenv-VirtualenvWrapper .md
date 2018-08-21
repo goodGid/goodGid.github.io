@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Install Virtualenv / VirtualenvWrapper "
-date:   2018-02-15
-excerpt: " Install Virtualenv / VirtualenvWrapper  "
-cate : "post"
-tag:
-- Python
+categories: Python
+tags: Python
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Virtualenv?
 
@@ -126,18 +127,18 @@ $ pip3 install virtualenv virtualenvwrapper
 
 ### 1. 각각의 가상 환경을 관리할 폴더를 만든다.
 
-{% highlight bash %}
+```
 $ mkdir ~/dev/.virtualenvs
-{% endhighlight %}
+```
 
 --- 
 
 
 ### 2. WORK_HOME 변수에 값을 지정해준다.
 
-{% highlight bash %}
+```
 $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
-{% endhighlight %}
+```
 
 ---
 
@@ -151,15 +152,15 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 {% include gallery images=images caption=" " cols=1 %}
 
 
-{% highlight bash %}
+```
 $ which python3
-{% endhighlight %}
+```
 
 * 환경 변수 VIRTUALENVWRAPPER_PYTHON 값 지정
 
-{% highlight bash %}
+```
 $ echo export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3 >> ~/.bash_profile
-{% endhighlight %}
+```
 
 ---
 
@@ -169,9 +170,9 @@ $ echo export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3 >> ~/.bash_profile
 
 * `virtualenvwrapper.sh` 설치 경로 찾기
 
-{% highlight bash %}
+```
 $ sudo find / -name 'virtualenvwrapper.sh'
-{% endhighlight %}
+```
 
 {% capture images %}
 /assets/img/posts/virtualenv-virtualenvWrapper_3.png
@@ -180,18 +181,18 @@ $ sudo find / -name 'virtualenvwrapper.sh'
 
 * 터미널이 실행될 때 마다 해당 파일을 실행하여 환경 변수값을 설정할 수 있는 명령어를 ~/.bash_profile 에 추가해준다.
 
-{% highlight bash %}
+```
 $ echo source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh >> ~/.bash_profile
-{% endhighlight %}
+```
 
 
 ---
 
 ### 5. 최신 .bash_profile 적용
 
-{% highlight bash %}
+```
 $ source ~/.bash_profile
-{% endhighlight %}
+```
 
 
 ---
@@ -200,11 +201,11 @@ $ source ~/.bash_profile
 
 #### 6-1. 가상 환경 만들기
 
-{% highlight bash %}
+```
 $ mkvirtualenv 가상환경이름
 # 예시
 # $ mkvirtualenv test_env
-{% endhighlight %}
+```
 
 * mkvirtualenv 명령어를 사용할 경우 홈 디렉토리의 .virtualenvs폴더 안에 가상환경이름을 가진 폴더(test_env)가 생긴다.
 
@@ -212,11 +213,11 @@ $ mkvirtualenv 가상환경이름
 
 #### 6-2. 가상 환경 지우기
 
-{% highlight bash %}
+```
 $ rmvirtualenv 가상환경이름
 # 예시
 # $ rmvirtualenv test_env
-{% endhighlight %}
+```
 
 * rmvirtualenv 명령어를 사용할 경우 mkvirtualenv로 만든 가상환경을 지워준다.
 
@@ -226,22 +227,22 @@ $ rmvirtualenv 가상환경이름
 
 #### 6-3. 가상 환경 리스트 조회
 
-{% highlight bash %}
+```
 $ workon 
-{% endhighlight %}
+```
 
 ---
 
 #### 6-4. 가상 환경 진입
 
-{% highlight bash %}
+```
 $ workon 가상환경이름
 # 가상환경으로 진입시 앞에 (가상환경이름)이 붙는다.
 (가상환경이름) $
 # 예시
 # $ workon test_env
 # (test_env) $
-{% endhighlight %}
+```
 
 * 가상 환경 진입시 쉘의 앞단에 (test_env) 이라는 문구가 추가되는 것을 볼 수 있다.
 
@@ -257,20 +258,15 @@ $ workon 가상환경이름
 
 ### 6-5. 가상 환경 나오기
 
-{% highlight bash %}
+```
 (가상환경이름) $ deactivate
 $
 # 예시
 # (test_env) $ deactivate
 # $
-{% endhighlight %}
-
-
+```
 
 ---
-
-
-
 
 ## Related Resource
 

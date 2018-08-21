@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: Ethereum Feature & Component "
-date:   2018-02-22
-excerpt: " Ethereum Feature & Component  "
-cate : "post"
-tag:
-- BlockChain
+title:  " Ethereum Feature & Component "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Ethereum Feature
 

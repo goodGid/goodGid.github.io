@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 맵핑(Mapping) (중요)  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## 맵핑(Mapping)
 
@@ -35,7 +36,7 @@ mapping (key type => data type) name
 선언, 접근, 대입이 가능하다.
 
 
-{% highlight JavaScript %}
+``` js
 
 1 pragma solidity ^0.4.8; 
 2 
@@ -47,7 +48,7 @@ mapping (key type => data type) name
 8     }
 9 }
 
-{% endhighlight %}
+```
 
 위 예제에서 `msg.sender`는 `컨트랙트를 실행`시킨 `사람의 주소`를 의미한다.
 

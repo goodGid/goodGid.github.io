@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 파일 입출력 제어 [ Part 1 ] "
-date:   2018-04-15
-excerpt: " 파일 입출력 제어 [1] "
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 # 파일 입력 (Read)

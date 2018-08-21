@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " DB Access Error from EC2 "
-date:   2017-11-12
-excerpt: " DB Access Error from EC2 "
-cate : "post"
-tag:
-- EC2
+categories: Technology
+tags: EC2
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

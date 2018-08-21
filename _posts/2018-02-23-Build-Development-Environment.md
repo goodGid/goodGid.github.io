@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: Build Development Environment "
-date:   2018-02-23
-excerpt: "  Build Development Environment "
-cate : "post"
-tag:
-- BlockChain
+title:  " Build Development Environment "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Build Development Environment
 

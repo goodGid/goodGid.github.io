@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 상속  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## 상속 (Inheritance)
@@ -39,7 +40,7 @@ tag:
 `출력 매개 변수`는 완전히 같아야 한다.
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.11;
 
@@ -64,7 +65,7 @@ contract Child3 is Mom, Dad {
 }
 
 
-{% endhighlight %}
+```
 
 상속받는 순서에 따라 결과값이 달라진다.
 

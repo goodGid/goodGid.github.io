@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Conference :: Key Platform "
-date:   2017-04-27
-excerpt: " Key Platform "
-cate : "post"
-tag:
-- Conference
+title:  " Key Platform "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Key Platform ?
 

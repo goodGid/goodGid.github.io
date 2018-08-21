@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Binding-HTML-Solidity "
-date:   2018-03-04
-excerpt: " Binding-HTML-Solidity  "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

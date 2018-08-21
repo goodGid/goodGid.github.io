@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "ASCII Value "
-date:   2018-07-24
-excerpt: "ASCII Value "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem 
 Problem URL : **[시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)**
@@ -21,7 +22,7 @@ Problem URL : **[시저 암호](https://programmers.co.kr/learn/courses/30/lesso
 
 ## Code
 
-{% highlight cpp %}
+``` cpp
 
 string solution(string s, int n) {
     string answer = "";
@@ -46,7 +47,7 @@ string solution(string s, int n) {
     return answer;
 }
 
-{% endhighlight %}
+```
 
 
 ---

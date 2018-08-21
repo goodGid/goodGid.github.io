@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 정렬/합병 [ Part 1 ] "
-date:   2018-04-17
-excerpt: " 정렬/합병 [1] "
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 정렬/합병의 개요
 

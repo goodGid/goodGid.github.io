@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 다이아몬드 출력하기 "
-date:   2018-06-01
-excerpt: "  Print Diamond  "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Related Problem
@@ -15,7 +16,7 @@ Problem URL : **[별찍기-7](https://www.acmicpc.net/problem/2444)**
 
 ---
 
-{% highlight cpp %}
+``` cpp
 
 void printDiamond(int n){
     for(int i = 1; i <= n; i++){
@@ -38,7 +39,7 @@ void printDiamond(int n){
     }
 }
  
-{% endhighlight %}
+```
 
 
 ---
@@ -46,7 +47,7 @@ void printDiamond(int n){
 
 Problem URL : **[홈 방범 서비스](https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V61LqAf8DFAWu)**
 
-{% highlight cpp %}
+``` cpp
 
 
 void check_Diamond(int x,int y, int K) {
@@ -61,7 +62,7 @@ void check_Diamond(int x,int y, int K) {
 }
 
 
-{% endhighlight %}
+```
 
 
 ---

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 해커톤 멘토링 : 경기자동차과학고등학교 "
-date:   2017-12-15
-excerpt: " 해커톤 멘토링 "
-cate : "post"
-tag:
-- Mentoring
+categories: E.T.C
+tags: Mentoring
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Hackerton Mentoring
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Count Positon Number"
-date:   2017-10-17
-excerpt: "Count Positon Number"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
@@ -24,7 +25,7 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 
     자릿수 구하기 
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <cmath>
@@ -59,13 +60,13 @@ int main(){
 }
 
 
-{% endhighlight %}
+```
 
 ---
 
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <cstring>
@@ -122,4 +123,4 @@ int main(){
     return 1; 
 }
 
-{% endhighlight %}
+```

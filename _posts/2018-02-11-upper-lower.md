@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "upper_bound vs lower_bound "
-date:   2018-02-11
-excerpt: "upper_bound vs lower_bound"
-cate : "algorithm"
-tag:
-- Key Point
+title:  "Upper_bound vs Lower_bound "
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
 
 
 ## Related Problem
@@ -35,7 +35,7 @@ lower_bound는 세 개의 3 중 첫 번째 3의 위치를 반환해주며
 upper_bound는 4의 위치를 반환해준다.
 ```
 
-{% highlight cpp %}
+``` cpp
 
 #include<iostream>
 #include<algorithm>
@@ -74,7 +74,7 @@ int main(void) {
 }
 
  
-{% endhighlight %}
+```
 
 
 * Sector 1 부분이 핵심이다.

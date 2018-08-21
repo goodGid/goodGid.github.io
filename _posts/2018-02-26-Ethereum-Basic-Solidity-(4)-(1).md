@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer (1) - 배열 (중요) "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## 고정 바이트 배열(Fixed-size byte arrays)
@@ -42,7 +43,7 @@ bytes momory name = new bytes(length);
 
 무조건 `memory`로 선언되어야 한다.
 
-{% highlight JavaScript %}
+``` js
 
 1  pragma solidity ^0.4.8; 
 2 
@@ -56,7 +57,7 @@ bytes momory name = new bytes(length);
 10     }
 11 }
 
-{% endhighlight %}
+```
 
 5행에서 2바이트의 크기의 byte2형으로
 

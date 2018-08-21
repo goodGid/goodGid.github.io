@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] 스위칭 "
-date:   2018-06-16
-excerpt: " Switching "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 # 이더넷 네트워크는 스위치를 중심으로 구축한다.

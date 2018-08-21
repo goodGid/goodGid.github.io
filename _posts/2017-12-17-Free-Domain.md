@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Free Domain "
-date:   2017-12-17
-excerpt: " Free Domain "
-cate : "post"
-tag:
-- Domain
+categories: E.T.C
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Freenom ?
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 구조체  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 구조체는 기본적으로 `저장소`에 배치된다.
 
@@ -21,7 +22,7 @@ tag:
 구조체가 `키`인 `맵핑`은 만들 수 없다.
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.11;
 
@@ -62,7 +63,7 @@ contract Example4 {
     }
 }
 
-{% endhighlight %}
+```
 
 
 [1]을 보면 지역 변수로 구조체의 대입은

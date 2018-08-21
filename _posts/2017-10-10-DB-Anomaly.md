@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "DataBase :: Anomaly"
-date:   2017-10-10
-excerpt: "Anomaly 개념"
-cate : "post"
-tag:
-- DB
+title:  "Anomaly"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
 
 ## Concept
 

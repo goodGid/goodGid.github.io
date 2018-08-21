@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  "Receive Char Input"
-date:   2017-12-21
-excerpt: "Receive Char Input"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
+
 
 ## Problem
 Problem URL : **[트리 순회](https://www.acmicpc.net/problem/1991)**
@@ -29,7 +31,7 @@ Problem URL : **[트리 순회](https://www.acmicpc.net/problem/1991)**
 
 ## Code
 
-{% highlight cpp %}
+``` cpp
 
 #include<iostream>
 using namespace std;
@@ -83,4 +85,4 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```

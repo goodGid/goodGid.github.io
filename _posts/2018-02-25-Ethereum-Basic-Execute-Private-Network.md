@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Execute Private Network "
-date:   2018-02-25
-excerpt: " Execute Private Network "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## 사설 이더리움 네트워크 실행하기

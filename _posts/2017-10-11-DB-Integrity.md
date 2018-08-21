@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "DataBase :: Integrity"
-date:   2017-10-11
-excerpt: "Integrity 개념"
-cate : "post"
-tag:
-- DB
+title:  "Integrity"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
 
 ## Concept
 

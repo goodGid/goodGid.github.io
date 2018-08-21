@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: 사설 이더리움 네트워크(Geth) 구축하기 "
-date:   2018-02-25
-excerpt: " 사설 이더리움 네트워크(Geth) 구축하기 "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 * 이더리움의 다양한 클라이언트에 대해 살펴보자.
 

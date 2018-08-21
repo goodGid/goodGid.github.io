@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 "
-date:   2018-08-17
-excerpt: " OSI 참조 모델 "
-cate : "posts"
-tag:
-- Network
+categories: Network
+tags: Network
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # OSI 참조 모델
 

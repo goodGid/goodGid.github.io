@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Content Type "
-date:   2017-11-26
-excerpt: " Content Type "
-cate : "post"
-tag:
-- Content Type
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Contetn Type ?
 

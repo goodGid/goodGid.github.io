@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  " Node :: Async "
-date:   2017-10-29
-excerpt: " Escape from CallBack Hell "
-cate : "post"
-tag:
-- Node.js
+title:  " Async "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 
 * 단순 Callback으로만 비동기를 동기화 시키려면 너무나 많은 중첩 Callback이 필요하다.
 
-{% highlight JavaScript %}
+``` js
 
 http.createServer(function(req, res) {
   let beforeHashing = 'Example Password';
@@ -45,7 +46,7 @@ http.createServer(function(req, res) {
 	console.log("Server running on port 3000!");
 })
 
-{% endhighlight %}
+```
 
 ---
 
@@ -65,7 +66,7 @@ http.createServer(function(req, res) {
 ---
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 const fs = require('fs');
 const crypto = require('crypto');
@@ -120,7 +121,7 @@ http.createServer(function(req, res) {
   console.log("Server running on port 3000!");
 });
 
-{% endhighlight %}
+```
 
 ---
 

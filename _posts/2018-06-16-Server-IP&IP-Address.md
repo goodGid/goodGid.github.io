@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] IP 와 IP 주소 "
-date:   2018-06-16
-excerpt: " IP & IP Address "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 # IP와 IP 주소

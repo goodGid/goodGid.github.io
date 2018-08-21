@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 함수  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
 
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.0; 
 
@@ -27,7 +27,7 @@ contract SimpleStorage {
     
 }
 
-{% endhighlight %}
+```
 
 함수 내부에 선언된 변수를 `지역변수 (local variable)`
 
@@ -111,7 +111,7 @@ constant를 붙여서
 
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.0; 
 
@@ -133,7 +133,7 @@ contract Example4Creator {
 }
 
 
-{% endhighlight %}
+```
 
 이렇게 생성자를 선언하면 
 

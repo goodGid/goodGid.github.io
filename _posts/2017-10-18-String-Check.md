@@ -1,18 +1,19 @@
 ---
 layout: post
 title:  "String Check"
-date:   2017-10-18
-excerpt: "String Check"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Review
 
 * 문자열 비교
 
-{% highlight cpp %}
+``` cpp
 
 #include <cstring> // toupper 사용
 
@@ -28,13 +29,13 @@ tag:
     return true;
  }
  
-{% endhighlight %}
+```
 
 ---
 
 * 문자열에서 1개씩 컨트롤
 
-{% highlight cpp %}
+``` cpp
 
  string str1;
  int len = str1.length();
@@ -44,7 +45,7 @@ tag:
 	 // 필요 Logic 구현
 	}
 
-{% endhighlight %}
+```
 
 ---
 
@@ -52,7 +53,7 @@ tag:
 
 * `char`형 변수 사용 
 
-{% highlight cpp %}
+``` cpp
 
 int main(){
     char input[100];
@@ -80,7 +81,7 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```
 
 
 ---
@@ -89,7 +90,7 @@ int main(){
 
 * `string`형 변수 사용 
 
-{% highlight cpp %}
+``` cpp
 
 int main(){
     string s;
@@ -108,7 +109,7 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```
 
 ```
 input :

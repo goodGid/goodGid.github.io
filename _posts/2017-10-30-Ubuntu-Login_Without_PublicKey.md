@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ubuntu Login without Public Key "
-date:   2017-10-30
-excerpt: " Login Using Password Option"
-cate : "post"
-tag:
-- EC2
+categories: Technology
+tags: EC2
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 
@@ -33,11 +34,11 @@ tag:
 
 #### Access Config File
 
-{% highlight JavaScript %}
+``` js
 
 sudo vi /etc/ssh/sshd_config
 
-{% endhighlight %}
+```
 
 ### Step 3
 
@@ -55,21 +56,21 @@ sudo vi /etc/ssh/sshd_config
 
 1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
 
-{% highlight JavaScript %}
+``` js
 
 passwd user_ID
 
-{% endhighlight %}
+```
 
 
 
 2) 현재 Login ID의 PW를 바꾸는 경우
 
-{% highlight JavaScript %}
+``` js
 
 passwd
 
-{% endhighlight %}
+```
 
 {% capture images %}
 /assets/img/posts/ec2_login_3.png
@@ -84,11 +85,11 @@ passwd
 
 #### Restart SSH
 
-{% highlight JavaScript %}
+``` js
 
 sudo service ssh restart
 
-{% endhighlight %}
+```
 
 
 ### Step 6

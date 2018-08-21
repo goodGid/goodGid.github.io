@@ -1,15 +1,16 @@
 ---
 layout: post
 title:  "Vector :: Implemented Function"
-date:   2017-10-07
-excerpt: "Vector :: Implemented Function"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <vector>
@@ -96,27 +97,27 @@ int main(){
 }
 
 
-{% endhighlight %}
+```
 
 ---
 ## Input
 
-{% highlight cpp %}
+``` cpp
 
 5
 1 2 3 4 5
 
-{% endhighlight %}
+```
 
 ---
 ## Output
 
-{% highlight cpp %}
+``` cpp
 
 2 4
 Program ended with exit code: 0
 
-{% endhighlight %}
+```
 
 
 

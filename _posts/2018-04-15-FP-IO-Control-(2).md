@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 파일 입출력 제어 [ Part 2 ] "
-date:   2018-04-15
-excerpt: " 파일 입출력 제어 [2] "
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # `[1] 단순 버퍼 시스템`
 

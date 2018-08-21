@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  " [사내 서버의 기본] POP3 서버의 역할"
-date:   2018-08-07
-excerpt: " Role of POP3 Server "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
 
 # POP3 서버의 역할
 

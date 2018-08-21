@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "가장 큰 정사각형 찾기 "
-date:   2018-07-25
-excerpt: "가장 큰 정사각형 찾기"
-cate : "algorithm"
-tag:
-- Key Point
+title:  "가장 큰 정사각형 찾기"
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Problem 
 Problem URL : **[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905)**
@@ -25,7 +25,7 @@ Problem URL : **[가장 큰 정사각형 찾기](https://programmers.co.kr/learn
 
 ## Code
 
-{% highlight cpp %}
+``` cpp
 
 int dp[1001][1001];
 
@@ -52,7 +52,7 @@ int solution(vector<vector<int>> board){
     return answer;
 }
 
-{% endhighlight %}
+```
 
 
 ---

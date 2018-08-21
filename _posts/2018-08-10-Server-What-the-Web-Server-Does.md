@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [공개 서버의 기본] 웹 서버에서 하는 처리"
-date:   2018-08-10
-excerpt: " What the Web server does "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 웹 서버에서 하는 처리
 

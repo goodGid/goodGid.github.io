@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] 라우팅 "
-date:   2018-06-16
-excerpt: " Routing "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 # 라우팅 테이블을 사용하여 패킷을 전송

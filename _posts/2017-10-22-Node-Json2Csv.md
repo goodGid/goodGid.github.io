@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  " Node :: Json to CSV "
-date:   2017-10-22
-excerpt: " Json to CSV "
-cate : "post"
-tag:
-- Node.js
+title:  " Json to CSV "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 const fs = require('fs');
 const json2csv = require('json2csv');
@@ -43,7 +44,7 @@ fs.writeFile('./music.csv', object, function(err){
 	}
 })
 
-{% endhighlight %}
+```
 
 ---
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ubuntu :: Nohup "
-date:   2018-02-27
-excerpt: " Nohup "
-cate : "post"
-tag:
-- Ubuntu
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Nohup?
 

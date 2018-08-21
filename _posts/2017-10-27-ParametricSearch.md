@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Parametric Search "
-date:   2017-10-27
-excerpt: "BOJ_2110"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
@@ -30,7 +31,7 @@ Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
 
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <algorithm>
@@ -82,7 +83,7 @@ int main()
 }
 
 
-{% endhighlight %}
+```
 
 ---
 

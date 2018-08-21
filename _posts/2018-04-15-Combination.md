@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 조합 (Combination) "
-date:   2018-04-15
-excerpt: "  Combination "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Related Problem
@@ -15,7 +16,7 @@ Problem URL : **[다리 놓기](https://www.acmicpc.net/problem/1010)**
 
 ---
 
-{% highlight cpp %}
+``` cpp
 
 
 //[1]
@@ -36,7 +37,7 @@ int C(int n, int r) {
 }
 
 
-{% endhighlight %}
+```
 
 
 ## Review

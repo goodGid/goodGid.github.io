@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 제주도 해커톤 "
-date:   2018-06-21
-excerpt: " 제주도 해커톤 "
-cate : "post"
-tag:
-- Hackathon
+categories: E.T.C
+tags: Hackathon
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 어모어뷰티 X 핵캠
 

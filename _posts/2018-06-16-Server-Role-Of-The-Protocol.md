@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] 프로토콜의 역할 "
-date:   2018-06-16
-excerpt: " Role of the protocol "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 프로토콜의 역할
 

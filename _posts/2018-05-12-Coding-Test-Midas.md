@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Midas Online Coding Test "
-date:   2018-05-12
-excerpt: " Coding Test "
-cate : "posts"
-tag:
-- Coding Test
+categories: E.T.C
+tags: E.T.C
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # Problem
 

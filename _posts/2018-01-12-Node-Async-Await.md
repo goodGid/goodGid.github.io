@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: Async and Await "
-date:   2018-01-12
-excerpt: " Async and Await "
-cate : "post"
-tag:
-- Node.js
+title:  "Async and Await "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Async and Await ? 
 
@@ -24,7 +25,7 @@ tag:
 
 * module/pool.js
 
-{% highlight JavaScript %}
+``` js
 
 module.exports = {
   queryParamCnt_None : async (...args) => {
@@ -62,11 +63,11 @@ module.exports = {
     }
   }
 
-{% endhighlight %}
+```
 
 * Usage
 
-{% highlight JavaScript %}
+``` js
 
 const db = require('../../module/pool.js');
 
@@ -85,7 +86,7 @@ router.get('/', async(req, res, next) => {
     });
 });
 
-{% endhighlight %}
+```
 
 ---
 

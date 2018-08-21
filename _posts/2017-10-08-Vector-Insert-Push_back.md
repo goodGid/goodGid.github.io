@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Vector :: Insert vs Push_back"
-date:   2018-07-25
-excerpt: "Vector :: Insert vs Push_back"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Function
 
@@ -14,7 +15,7 @@ tag:
 
 You can use `insert` to perform the same job as `push_back` with `v.insert(v.end(), value)`
 
-{% highlight cpp %}
+``` cpp
 
 ex 1)
     vector<int> v = {1, 3, 4};
@@ -34,7 +35,7 @@ ex 1)
     v --> {5,1,3,4,6}
     
 
-{% endhighlight %}
+```
 
 
 

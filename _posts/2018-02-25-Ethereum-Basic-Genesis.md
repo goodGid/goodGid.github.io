@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Genesis "
-date:   2018-02-25
-excerpt: " Genesis "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## 사설 네트워크의 Genesis 블록 파일 정의
 

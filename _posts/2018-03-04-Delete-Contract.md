@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Delete Contract  "
-date:   2018-03-04
-excerpt: "  Delete Contract   "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

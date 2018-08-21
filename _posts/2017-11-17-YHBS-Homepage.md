@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  " YHBS Home Page "
-date:   2017-11-17
-excerpt: " www.youngheartsboardingschool.com "
-cate : "post"
-tag: Volunteer
-
+categories: E.T.C
+tags: E.T.C
+author: goodGid
 ---
+* content
+{:toc}
+
+
 ## Home Page
 
 See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>]

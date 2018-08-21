@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "DataBase :: Trigger"
-date:   2017-10-08
-excerpt: "Trigger 개념"
-cate : "post"
-tag:
-- DB
+title:  "Trigger"
+categories: Database
+tags: Database
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Concept
 

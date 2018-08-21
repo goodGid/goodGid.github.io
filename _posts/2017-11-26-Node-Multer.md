@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: Multipart/form-data "
-date:   2017-11-26
-excerpt: " Multipart/form-data "
-cate : "post"
-tag:
-- Node.js
+title:  " Multipart/form-data "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

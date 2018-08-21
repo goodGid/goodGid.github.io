@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 순차 파일 [ Part 1 ] "
-date:   2018-04-16
-excerpt: " 순차 파일 [1] "
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 순차 파일 (Sequential File)
 

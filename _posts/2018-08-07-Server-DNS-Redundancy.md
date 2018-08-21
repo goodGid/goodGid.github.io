@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [사내 서버의 기본] DNS 서버의 이중화"
-date:   2018-08-07
-excerpt: " DNS Redundancy "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # DNS 서버의 이중화
 

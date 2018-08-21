@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [서버를 장애로부터 보호하기] UPS "
-date:   2018-08-13
-excerpt: " UPS "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # UPS
 

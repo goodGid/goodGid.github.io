@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Education :: Smart Contract "
-date:   2018-02-14
-excerpt: " Smart Contract "
-cate : "post"
-tag:
-- Education
+title:  " Smart Contract 교육 (1) "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## [1] Education Smart Contract
 

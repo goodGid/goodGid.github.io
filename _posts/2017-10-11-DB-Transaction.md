@@ -1,12 +1,15 @@
 ---
 layout: post
-title:  "DataBase :: Transaction"
-date:   2017-10-12
-excerpt: "Transaction 개념"
-cate : "post"
-tag:
-- DB
+title:  "Transaction"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
+
 
 ## Concept
 

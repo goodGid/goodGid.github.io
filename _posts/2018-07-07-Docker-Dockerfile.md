@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Dockerfile 자세히 알아보기 "
-date:   2018-07-07
-excerpt: " Dockerfile  "
-cate : "posts"
-tag:
-- Docker
+categories: Technology
+tags: Technology Docker
+author: goodGid
 ---
+* content
+{:toc}
+
 
 * Dockerfile은 다음과 같이 `<명령> <매개 변수>` 형식으로 작성
 

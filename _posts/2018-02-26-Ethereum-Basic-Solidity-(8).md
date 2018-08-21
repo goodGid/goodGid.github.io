@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 추상 컨트랙트 & 인터페이스 "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
 
----
 
 ## 추상 컨트랙트 (Abstract contract)
 
@@ -71,7 +70,7 @@ function    name (x1,...,xN)  option   returns (y1, ... , yN);
 
 사용법은 `contract` 키워드 대신 `interface` 키워드를 사용한다.
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.11;
 
@@ -81,4 +80,4 @@ interface BankingSystem {
 }
 
 
-{% endhighlight %}
+```

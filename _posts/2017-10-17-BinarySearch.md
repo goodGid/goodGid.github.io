@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "BinarySearch"
-date:   2017-10-17
-excerpt: "BOJ_1920"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
@@ -27,7 +28,7 @@ Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <vector>
@@ -58,7 +59,7 @@ int main(){
 }
 
 
-{% endhighlight %}
+```
 
 ---
 

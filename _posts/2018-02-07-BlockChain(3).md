@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " BlockChain (3) "
-date:   2018-02-07
-excerpt: " BlockChain (3) "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 {% capture images %}
   /assets/img/block_chain/ethereum.png
 {% endcapture %}
@@ -46,7 +47,7 @@ tag:
 이를 다시 불러올 수 있도록 하는 컨트랙트입니다.
 
 
-{% highlight JavaScript %}
+``` js
 pragma solidity ^0.4.0; 
 
 contract SimpleStorage {
@@ -60,15 +61,15 @@ contract SimpleStorage {
         return storedData;
     }
 }
-{% endhighlight %}
+```
 
 ​﻿하나씩 쪼개서 살펴봅시다.
 <br><br>
 
 
-{% highlight JavaScript %}
+``` js
 pragma solidity ^0.4.0; 
-{% endhighlight %}
+```
 
 
 
@@ -137,12 +138,12 @@ pragma 뒤에 나와있는 solidity ^0.4.0;
 하나의 컨트랙트는 다음과 같이 컨트랙 선언문에 의해 정의됩니다.
 
 
-{% highlight JavaScript %}
+``` js
 contract SimpleStorage {
             ...   
 }
 
-{% endhighlight %}
+```
 
 
 즉, 위의 코드는 
@@ -155,9 +156,9 @@ SimpleStorage 라는 이름의 컨트랙트을 선언하고
 <br><br>
 
 
-{% highlight JavaScript %}
+``` js
     uint storedData; 
-{% endhighlight %}
+```
 
 
 블록체인 위에 storedData라는
@@ -206,14 +207,14 @@ storedData라는 변수가 컨트랙트의 메인 {...} 안에
 써먹을 수가 있습니다. 전역변수 (Global Variable)라고 부르죠.
 
  
-{% highlight JavaScript %}
+``` js
   function set(uint x) {
 
         storedData = x;
 
     }
 
-{% endhighlight %}
+```
 
 function은 함수라는 뜻입니다. 
 
@@ -240,26 +241,26 @@ set의 (  ) 안에는 사용자로부터 입력받을 x 값이
 
 
 
-{% highlight JavaScript %}
+``` js
     function get() constant returns (uint) {
 
         return storedData;
 
     }
 
-{% endhighlight %}
+```
 
 
 다음으로
 
-{% highlight JavaScript %}
+``` js
     function get() constant returns (uint) {
 
         return storedData;
 
     }
 
-{% endhighlight %}
+```
 
 {% capture images %}
   /assets/img/block_chain/blockchain(3)_1.png
@@ -354,14 +355,14 @@ uint로 선언했습니다.
 <br><br>
 
 
-{% highlight JavaScript %}
+``` js
     function get() constant returns (uint x) {
         x = storedData;
         return x;
         
      }
 
-{% endhighlight %}
+```
 
 
 보시다시피 위에서는 returns (   ) 안에 uint x 라고 

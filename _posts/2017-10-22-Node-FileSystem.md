@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  " Node :: File System "
-date:   2017-10-22
-excerpt: " File System "
-cate : "post"
-tag:
-- Node.js
+title:  " File System "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 const fs = require('fs');
 
@@ -27,9 +28,9 @@ const readFile = function(){
 }
 readFile();
 
-{% endhighlight %}
+```
 
-{% highlight JavaScript %}
+``` js
 
 const fs = require('fs');
 
@@ -46,7 +47,7 @@ const writeFile = function(){
 
 writeFile();
 
-{% endhighlight %}
+```
 
 ---
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] ARP "
-date:   2018-06-16
-excerpt: " ARP "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # ARP
 

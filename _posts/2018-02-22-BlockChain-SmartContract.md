@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: What is Smart Contract? "
-date:   2018-02-22
-excerpt: " What is Smart Contract? "
-cate : "post"
-tag:
-- BlockChain
+title:  " What is Smart Contract? "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 ## What is Smart Contract?
 

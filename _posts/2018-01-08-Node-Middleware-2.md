@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: Middleware (2) "
-date:   2018-01-08
-excerpt: " Middleware "
-cate : "post"
-tag:
-- Node.js
+title:  " Middleware (2) "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## What is Middleware ?
@@ -26,7 +27,7 @@ tag:
 {% include gallery images=images caption=" " cols=1 %}
 
 
-{% highlight JavaScript %}
+``` js
 
 var express = require('express');
 var app = express();
@@ -44,7 +45,7 @@ app.get('/', function (req, res) {
 
 app.listen(3000);
 
-{% endhighlight %}
+```
 
 
 위의 예에서 next()에 대한 호출에 주목하십시오. 이 함수를 호출하면 앱 내의 그 다음 미들웨어 함수가 호출됩니다. next() 함수는 Node.js 또는 Express API의 일부가 아니지만, 미들웨어 함수에 전달되는 세 번째 인수입니다. next() 함수에는 어떠한 이름을 지정해도 좋지만,일반적으로 항상 “next”라는 이름을 갖습니다. 혼란을 방지하려면 항상 이러한 방식을 사용하십시오.

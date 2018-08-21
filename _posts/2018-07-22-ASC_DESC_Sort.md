@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "오름/내림 차순"
-date:   2018-07-22
-excerpt: "오름/내림 차순"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 
@@ -20,7 +21,7 @@ Problem URL : **[문자열 다루기 기본](https://programmers.co.kr/learn/cou
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 #include <functional>
 
 string solution(string s) {
@@ -34,7 +35,7 @@ string solution(string s) {
 }
 
 
-{% endhighlight %}
+```
 
 ---
 

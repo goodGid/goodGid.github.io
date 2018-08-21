@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [공개 서버의 기본] 두 가지 암호화 기술 "
-date:   2018-08-10
-excerpt: " Two Encryption Technologies "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 두 가지 암호화 기술
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 기본 자료형  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 기본 자료형 
 
@@ -68,7 +69,7 @@ type  name = data;
 
 <br>
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.0; 
 
@@ -84,7 +85,7 @@ contract Example4 {
     }   
 }
 
-{% endhighlight %}
+```
 
 Error가 발생한다.
 
@@ -113,7 +114,7 @@ false : 거짓
 
 유용한 자료형이다.
 
-{% highlight JavaScript %}
+``` js
 
 enum Tier {Bronze, Silver, Gold, Platinum, Diamond}
 
@@ -121,7 +122,7 @@ Tier a = Tier.Bronze;
 Tier b = Tier.Gold;
 Tier c = Tier.Diamond;
 
-{% endhighlight %}
+```
 
 
 ---
@@ -151,7 +152,7 @@ address 키워드로 선언하며
 
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.0; 
 
@@ -165,7 +166,7 @@ contract Example4 {
     }   
 }
 
-{% endhighlight %}
+```
 
 ---
 
@@ -179,7 +180,7 @@ contract Example4 {
 `괄호`로 묶어서 선언한다.
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.0; 
 
@@ -193,4 +194,4 @@ contract Example4 {
 }
 
 
-{% endhighlight %}
+```

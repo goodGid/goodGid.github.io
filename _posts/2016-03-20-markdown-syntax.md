@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "Markdown Syntax"
-date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-cate : "post"
-tag:
-- Markdown Syntax
-comments: true
+categories: E.T.C
+tags: E.T.C
+author: goodGid
 ---
+* content
+{:toc}
+
+
 [1. 정리되어 있는 Blog](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 [2. 정리되어 있는 Blog](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -169,7 +170,6 @@ it is intended only for human readers.[^1]
 
 Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
 
-{% gist mmistakes/6589546 %}
 
 [Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
 

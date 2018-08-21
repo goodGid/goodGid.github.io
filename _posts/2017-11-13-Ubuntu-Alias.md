@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ubuntu :: Set Alias "
-date:   2017-11-13
-excerpt: " Set Alias in Ubuntu "
-cate : "post"
-tag:
-- Ubuntu
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

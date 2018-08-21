@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] 이더넷과 MAC 주소 "
-date:   2018-06-16
-excerpt: " Ethernet and MAC Address "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 이더넷에서 프레임을 만든다.
 

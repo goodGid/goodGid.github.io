@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Crawling :: Start with Particular String "
-date:   2017-10-22
-excerpt: " 특정 문자열 Crawling 하기 "
-cate : "post"
-tag:
-- Crawling
+title:  " Crawling :: 특정 문자열 Crawling 하기 "
+categories: E.T.C
+tags: Crawling
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## To do
 
@@ -17,7 +18,7 @@ tag:
 ---
 
 ## Code
-{% highlight java %}
+``` java 
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Attribute;
@@ -98,7 +99,7 @@ public class Main {
 }
 
 
-{% endhighlight %}
+```
 
 ---
 
@@ -113,7 +114,7 @@ public class Main {
 ## Output
 
 {% capture images %}
-    /assets/img/posts/crawling_string_1.png
+    /assets/img/posts/```_string_1.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
