@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Machine Learning 10-(2) :: Weight 초기화 잘해보자 </title>
+    <meta name="description" content="  Weight 초기화 잘해보자Weight 초기화 잘해보자                 문제 해결법으로 2가지 있다.      ReLU를 사용한다.        Weight의 초기값을 제대로 적용시키자.  그런데 ReLU를 사용할 때돌릴 때 마다 결과값이 다르다.          ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/ML-10-2/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Machine Learning 10-(2) :: Weight 초기화 잘해보자 </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-20
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a-->
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#weight-초기화-잘해보자" id="markdown-toc-weight-초기화-잘해보자">Weight 초기화 잘해보자</a></li>
+  <li><a href="#how-to-solve" id="markdown-toc-how-to-solve">How to solve?</a></li>
+  <li><a href="#activation-functions-and-initailization-on-cifar-10" id="markdown-toc-activation-functions-and-initailization-on-cifar-10">Activation functions and initailization on CIFAR-10</a></li>
+  <li><a href="#still-in-research" id="markdown-toc-still-in-research">Still in Research</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4rC0sWrp3Uw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="weight-초기화-잘해보자">Weight 초기화 잘해보자</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_1.png"><img src="/assets/img/machine_learning/ML_10_2_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>문제 해결법으로 2가지 있다.</p>
+
+<ol>
+  <li>
+    <p>ReLU를 사용한다.</p>
+  </li>
+  <li>
+    <p>Weight의 초기값을 제대로 적용시키자.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p>그런데 ReLU를 사용할 때</p>
+
+<p>돌릴 때 마다 결과값이 다르다.</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_2.png"><img src="/assets/img/machine_learning/ML_10_2_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p><br /></p>
+
+<p>W를 초기화할 때</p>
+
+<p>[ -1 ~ 1 ] 랜덤값을 줬기 때문이다.</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p>그러면 초기값을 0으로 주자 !</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_3.png"><img src="/assets/img/machine_learning/ML_10_2_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>그러면 어떤 문제가 생길까?</p>
+
+<p>여기서 x는 input값이기 때문에 0이 아닐수도 일수도 있다.</p>
+
+<p><br /></p>
+
+<p>그런데 W를 0으로 초기화해줬기 때문에</p>
+
+<p>그림의 좌상단 x쪽 부분의 미분 영역을 보면</p>
+
+<p><code class="highlighter-rouge">W</code>가 chain rule을 할 때 사용이 된다.</p>
+
+<p>x라는 값과 상관없이</p>
+
+<p>기울기가 0이된다.</p>
+
+<p><br /></p>
+
+<p>그렇게 되면</p>
+
+<p>그 뒤에 있는 모든 기울기가 <code class="highlighter-rouge">0</code>이 된다.</p>
+
+<p class="notice">Q. 왜 뒤에 있는 모든 기울기가 0이 될까?</p>
+
+<p>다음과 같이 구성되어 있다 가정해보자.</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_4.png"><img src="/assets/img/machine_learning/ML_10_2_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>그러면</p>
+
+<p>\( \frac{df}{dy} \) = \( \frac{df}{dx} \) * \( \frac{dx}{dy} \)</p>
+
+<p><br /></p>
+
+<p>그런데 여기서</p>
+
+<p>\( \frac{df}{dx} \)의 값이 0 이라는 것을 알 수 있다.</p>
+
+<p>그렇기 때문에</p>
+
+<p>뒤에 있는 모든 기울기는 자연스레 0이된다.</p>
+
+<hr />
+
+<h2 id="how-to-solve">How to solve?</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_5.png"><img src="/assets/img/machine_learning/ML_10_2_5.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>우리는 초기값을 굉장히 잘 똑똑하게 초기화 해줘야한다.</p>
+  </li>
+  <li>
+    <p>RBM 알고리즘을 사용하지 않아도 된다.</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/machine_learning/ML_10_2_6.png"><img src="/assets/img/machine_learning/ML_10_2_6.png" alt="" /></a>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_7.png"><img src="/assets/img/machine_learning/ML_10_2_7.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">Xavier initialization</code> : 2010년도 논문에서 발표</p>
+
+    <ul>
+      <li>input Count와 output Count에 맞게 초기값을 셋팅해주면 된다.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_8.png"><img src="/assets/img/machine_learning/ML_10_2_8.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">He's initalization</code> : 2015년도 논문에서 발표</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">Xavier initialization</code>를 수정/보완</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_9.png"><img src="/assets/img/machine_learning/ML_10_2_9.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h2 id="activation-functions-and-initailization-on-cifar-10">Activation functions and initailization on CIFAR-10</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_10.png"><img src="/assets/img/machine_learning/ML_10_2_10.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h2 id="still-in-research">Still in Research</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_11.png"><img src="/assets/img/machine_learning/ML_10_2_11.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>이것 저것 실행시켜보고</p>
+
+<p>가장 맞는 것을 사용하면 된다.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_10_2_12.png"><img src="/assets/img/machine_learning/ML_10_2_12.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>2가지 문제가 해결되었기 때문에</p>
+
+<p>딥러닝을 잘 학습시킬 수 있는</p>
+
+<p>모든 조건을 갖추었다.</p>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/ML-10-1/"> Machine Learning 10-(1) :: Sigmoid 보다 ReLU가 더 좋아 </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/ML-10-3/"> Machine Learning 10-(3) ::  Dropout과 앙상블 </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/ML-10-2/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/ML-10-2/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

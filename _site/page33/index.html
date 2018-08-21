@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page33/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-9-2/"> Machine Learning 9-(2) :: 딥넷트웍 학습 시키기 (backpropagation) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#딥넷트웍-학습-시키기-backpropagation" id="markdown-toc-딥넷트웍-학습-시키기-backpropagation">딥넷트웍 학습 시키기 (Backpropagation)</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/573EZkzfnZ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="딥넷트웍-학습-시키기-backpropagation">딥넷트웍 학습 시키기 (Backpropagation)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_2_1.png"><img src="/assets/img/machine_learning/ML_9_2_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>위 사진이 무엇을 말하는지 알고 싶다면</p>
+
+<p>가장 추천하고 싶은 방법은 동영상을 다시 보자 …</p>
+
+<p>교수님의 설명이 너무나 잘 되어 있다.</p>
+
+<p><br /></p>
+
+<p>그래도 위 사진을 설명하자면</p>
+
+<p>가장 오른쪽에 f로 부터 Back으로 타고타고 가는 것이다.</p>
+
+<p>그렇게 되면 아무리 많은 관계가 있다하더라도</p>
+
+<p>결론적으로 해결할 수 가 있다는 원리이다.</p>
+
+<p><br /></p>
+
+<p>\( \frac{df}{dw} \)는 w가 f에 어떤 영향을 미치는가를 뜻한다.</p>
+
+<p>(내가 이해한 바로는) w가 f에 영향을 끼치기 위해선</p>
+
+<p>중간에 g라는게 있으니 다음과 같은 식이 나온거라 생각한다.</p>
+
+<p>\( \frac{df}{dw} \) = \( \frac{df}{dg} \) * \( \frac{dg}{dw} \)</p>
+
+<p><br /></p>
+
+<p>이러한 방식으로</p>
+
+<p>다음과 같은 복잡한 관계도 해결을 할 수가 있게 된다.</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_2_2.png"><img src="/assets/img/machine_learning/ML_9_2_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-9-2/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-9-1/"> Machine Learning 9-(1) :: Neural Net for XOR </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#neural-net-for-xor" id="markdown-toc-neural-net-for-xor">Neural Net for XOR</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oFGHOsAYiz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="neural-net-for-xor">Neural Net for XOR</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_9_1_1.png"><img src="/assets/img/machine_learning/ML_9_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>1개의 Unit or Model로는 XOR을 구현 못한다.</p>
+  </li>
+  <li>
+    <p>2~3개를 합친다면 XOR 구현이 가능하다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-9-1/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-8-3/"> Machine Learning 8-(3) :: Tensor Manipulation (new) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#tensor-manipulation-new" id="markdown-toc-tensor-manipulation-new">Tensor Manipulation (new)</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYX0FaqUeN4" frameborder="0" allow="encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="tensor-manipulation-new">Tensor Manipulation (new)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_8_3_1.png"><img src="/assets/img/machine_learning/ML_8_3_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>결과값이 달라진다 !</p>
+
+<p>반드시 Matrix 곱인지 일반적인 곱인지 제대로 알고 사용해야한다.</p>
+
+<p><br /></p>
+
+<p>일반적 곱이 일어난 이유는</p>
+
+<p>Broadcasting개념 때문이다.</p>
+
+<p><br /></p>
+
+<p>굉장히 유용하지만 독이 될 수도 있다.</p>
+
+<p><br /></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/machine_learning/ML_8_3_2.png"><img src="/assets/img/machine_learning/ML_8_3_2.png" alt="" /></a>
+    
+    <a href="/assets/img/machine_learning/ML_8_3_3.png"><img src="/assets/img/machine_learning/ML_8_3_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>각각 다른 Rank에 대해 계산을 할 때</p>
+
+<p>임의로 맞춰주는게 Broadcasting이다.</p>
+
+<p><br /></p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_8_3_4.png"><img src="/assets/img/machine_learning/ML_8_3_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>위 사진처럼 Shape이 바뀐 상태로 계산을 한다.</p>
+
+<p><br /></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/machine_learning/ML_8_3_5.png"><img src="/assets/img/machine_learning/ML_8_3_5.png" alt="" /></a>
+    
+    <a href="/assets/img/machine_learning/ML_8_3_6.png"><img src="/assets/img/machine_learning/ML_8_3_6.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q. matrix2가 어떤 구조로 바껴서 계산이 되는거지 ?</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-8-3/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-8-2/"> Machine Learning 8-(2) :: 딥러닝의 기본 개념2- Back-propagation 과 2006-2007 '딥'의 출현 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#딥러닝의-기본-개념2--back-propagation-과-2006-2007-딥의-출현" id="markdown-toc-딥러닝의-기본-개념2--back-propagation-과-2006-2007-딥의-출현">딥러닝의 기본 개념2- Back-propagation 과 2006-2007 ‘딥’의 출현</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AByVbUX1PUI" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="딥러닝의-기본-개념2--back-propagation-과-2006-2007-딥의-출현">딥러닝의 기본 개념2- Back-propagation 과 2006-2007 ‘딥’의 출현</h2>
+
+<p>Neural Networks에 대한 이미지가 안좋으니</p>
+
+<p>Neural Networks를 Rebranding한게 Deep Learning이다.</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-8-2/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-8-1/"> Machine Learning 8-(1) :: 딥러닝의 기본 개념: 시작과 XOR 문제 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#딥러닝의-기본-개념-시작과-xor-문제" id="markdown-toc-딥러닝의-기본-개념-시작과-xor-문제">딥러닝의 기본 개념: 시작과 XOR 문제</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n7DNueHGkqE" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="딥러닝의-기본-개념-시작과-xor-문제">딥러닝의 기본 개념: 시작과 XOR 문제</h2>
+
+<p>Activation Function</p>
+
+<p>사람이 생각할 때를 파보니까</p>
+
+<p>어 ?… 생각보다 어려운 Logic이 아니네 !</p>
+
+<p><br /></p>
+
+<p>그래서 식으로 만들어 보자 !</p>
+
+<p>CNN = Convolutional Neural Networks</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-8-1/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2220/">BOJ - 힙 정렬 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-19
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Algorithm" title="Category: Algorithm" rel="category">Algorithm</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BOJ" title="Tag: BOJ" rel="tag">BOJ</a>&nbsp;
+    
+        <a href="/tag/#reSolve" title="Tag: reSolve" rel="tag">reSolve</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#problem" id="markdown-toc-problem">Problem</a></li>
+  <li><a href="#explain-logic" id="markdown-toc-explain-logic">Explain Logic</a></li>
+  <li><a href="#1-answer-code-18-02-19" id="markdown-toc-1-answer-code-18-02-19">[1] Answer Code (18. 02. 19)</a></li>
+</ul>
+
+<h2 id="problem">Problem</h2>
+<p>Problem URL : <strong><a href="https://www.acmicpc.net/problem/2220">힙 정렬</a></strong></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/algorithm/2220_1.png"><img src="/assets/img/algorithm/2220_1.png" alt="" /></a>
+    
+    <a href="/assets/img/algorithm/2220_2.png"><img src="/assets/img/algorithm/2220_2.png" alt="" /></a>
+    
+    <figcaption>Screenshots of Problem Explain</figcaption>
+</figure>
+
+<hr />
+
+<h2 id="explain-logic">Explain Logic</h2>
+
+<p>먼저 첫 번째 규칙은 최댓값을 삭제 했을 때, 무조건 전 값의 힙 모양이 나온다.</p>
+
+<p>예를 들어 (6, 5, 3, 2, 4, 1)에서 6을 삭제하게 되면</p>
+
+<p>무조건 5일 때 최대로 swap이 되는 모양의 힙이 나온다는 것이다.</p>
+
+<p>즉, (5, 4, 3, 2, 1)이 된다.</p>
+
+<p><br /></p>
+
+<p>마찬가지로 (5, 4, 3, 2, 1)에서</p>
+
+<p>5를 삭제하게 되면</p>
+
+<p>4일 때 최대로 swap되는 모양의 힙인 (4, 2, 3, 1)이 나오게 된다.</p>
+
+<p><br /></p>
+
+<p>두 번째 규칙은 최대의 swap을 위해</p>
+
+<p>무조건 1이 힙에서 가장 끝에 위치해야 된다는 점이다.</p>
+
+<p>즉 최댓값이 삭제가 되면 (힙 삭제 규칙 상)</p>
+
+<p>1이 최댓값 자리로 swap(이 스왑은 힙 삭제 규칙이기 때문에 교환 횟수로 간주하지 않는다.)이 되게 되고,</p>
+
+<p><br /></p>
+
+<p>이 때부터 1은</p>
+
+<p>힙 정렬의 끝의 자리를 목표점으로</p>
+
+<p>교환이 되어야 한다는 점이다.</p>
+
+<p><br /></p>
+
+<p>예를 들어 3의 경우 (4, 3, 2, 1)와 (4, 2, 3, 1)의 총 2가지 경우가 존재하게 되는데,</p>
+
+<p>(4, 3, 2, 1)의 경우 (1, 3, 2) → (3, 1, 2) swapCnt++</p>
+
+<p>(3, 1, 2)의 경우 (2, 1)</p>
+
+<p>총 1번의 교환이 이루어지게 되는데,</p>
+
+<p>이는 swap된 1의 위치가 힙의 끝에 위치하지 않기 때문이다.</p>
+
+<p><br /></p>
+
+<p>그렇다면 (4, 2, 3, 1)의 경우를 보자.</p>
+
+<p>(4, 2, 3, 1)의 경우 (1, 2, 3) → (3, 2, 1) swapCnt++</p>
+
+<p>(3, 2, 1)의 경우 (1, 2) → (2, 1) swapCnt++</p>
+
+<p>총 2번의 교환이 이루어지게 된다.</p>
+
+<p>여기서 중요한 것은 (4, 2, 3, 1)의 삭제 결과 (3, 2, 1)은</p>
+
+<p>최대로 swap이 많이 되는 힙 모양이다.</p>
+
+<p><br /></p>
+
+<p>그렇다면 구현을 어떻게 해야 될까?</p>
+
+<p>필자는 동적 알고리즘답게 2부터 시작해서</p>
+
+<p>입력 값까지의 힙 모양을 구하는 방식으로 구현을 진행하였다.</p>
+
+<p><br /></p>
+
+<p>i=1일 때, vecArr[1]=1로 세팅을 하고,</p>
+
+<p>i=2일 때, 힙의 맨 마지막에 2를 삽입(vecArr[2]=2)하고</p>
+
+<p>숫자 1을 힙의 맨 마지막에 두어야 하니까</p>
+
+<p>vecArr[1]과 vecArr[2]를 swap한다.</p>
+
+<p><br /></p>
+
+<p>그리고 최대 힙 모양을 맞춰야 하니까</p>
+
+<p>while문을 통해 최대 힙 모양을 만든다.</p>
+
+<p>그리고 이게 전부다.</p>
+
+<p><br /></p>
+
+<p>i=3일 때,</p>
+
+<p>힙의 맨 마지막에 3을 삽입(vecArr[3]=3)하고</p>
+
+<p>숫자 1을 힙의 맨 마지막에 두어야 하니까</p>
+
+<p>(2, 1, 3)모양에서</p>
+
+<p>vecArr[2]와 vecArr[3]을 교환한다.</p>
+
+<p>그러면 (2, 3, 1) 모양이 되고</p>
+
+<p>최대 힙을 위해 vecArr[1]과 vecArr[2]를 교환한다.</p>
+
+<p>그러면 (3, 2, 1)일 때 swap이 가장 많이 되는 힙이 된다.</p>
+
+<p><br /></p>
+
+<p>자 마지막으로 i=4일 때,</p>
+
+<p>힙의 맨 마지막에 4를 삽입(vecArr[4]=4)하고</p>
+
+<p>숫자 1을 힙의 맨 마지막에 두어야 하니까</p>
+
+<p>(3, 2, 1, 4)모양에서</p>
+
+<p>vecArr[3]과 vecArr[4]를 교환한다.</p>
+
+<p>이쯤 되면 1의 위치는 항상 맨 마지막에 존재한다는 것을 눈치 챘을 것이다.</p>
+
+<p>그러면 (3, 2, 4, 1)이 되고</p>
+
+<p>최대 힙을 맞추기 위해 vecArr[3]과 vecArr[1]을 교환한다.</p>
+
+<p>이것도 Index로 따지면</p>
+
+<p>2를 나눈 값과 교환하는 것을 눈치 챌 수 있다.</p>
+
+<p>그러면 (4, 2, 3, 1)이 되고</p>
+
+<p>4일 때 교환이 가장 많이 되는 힙 배열은 (4, 2, 3, 1)이 된다.</p>
+
+<p><br /></p>
+
+<p>위 설명은 <a href="http://vvshinevv.tistory.com/23">출처 Blog</a>에서 발췌해</p>
+
+<p>(내 기준)가독성을 높이는 문장 구조로</p>
+
+<p>입맛에 맛게 수정했다.</p>
+
+<hr />
+
+<h2 id="1-answer-code-18-02-19">[1] Answer Code (18. 02. 19)</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include&lt;algorithm&gt;
+#define def_swap(a,b) a ^= b ^= a ^= b
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">SwapArr</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">vecArr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">vecArr</span><span class="p">[</span><span class="n">n1</span><span class="p">];</span>
+    <span class="n">vecArr</span><span class="p">[</span><span class="n">n1</span><span class="p">]</span> <span class="o">=</span> <span class="n">vecArr</span><span class="p">[</span><span class="n">n2</span><span class="p">];</span>
+    <span class="n">vecArr</span><span class="p">[</span><span class="n">n2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">num</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">;</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vecArr</span><span class="p">(</span><span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">vecArr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">vecArr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  
+        <span class="c1">// #include&lt;algorithm&gt;
+</span>        <span class="n">swap</span><span class="p">(</span><span class="n">vecArr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">vecArr</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]);</span>
+        
+        <span class="c1">// define Func
+//        def_swap(vecArr[i],vecArr[i-1]);
+</span>        
+        <span class="c1">// Make Func
+//        SwapArr(vecArr, i, i - 1);
+</span>        <span class="k">while</span> <span class="p">(</span><span class="n">j</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">swap</span><span class="p">(</span><span class="n">vecArr</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">vecArr</span><span class="p">[</span><span class="n">j</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">]);</span>
+<span class="c1">//            def_swap(vecArr[j], vecArr[j &gt;&gt; 1]);
+//            SwapArr(vecArr, j, j / 2);
+</span>            <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">vecArr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2220/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page32" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">33/57</span>
+          
+            <a href="/page34" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

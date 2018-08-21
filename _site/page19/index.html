@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page19/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/FP-Sort-Merge-(1)/"> 정렬/합병 [ Part 1 ] </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-17
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#정렬합병의-개요" id="markdown-toc-정렬합병의-개요">정렬/합병의 개요</a></li>
+  <li><a href="#정렬-단계" id="markdown-toc-정렬-단계">정렬 단계</a></li>
+  <li><a href="#1-내부-정렬" id="markdown-toc-1-내부-정렬">[1] 내부 정렬</a></li>
+  <li><a href="#2-대체-선택" id="markdown-toc-2-대체-선택">[2] 대체 선택</a></li>
+  <li><a href="#3-자연-선택" id="markdown-toc-3-자연-선택">[3] 자연 선택</a></li>
+  <li><a href="#런-생성-방법의-비교" id="markdown-toc-런-생성-방법의-비교">런 생성 방법의 비교</a></li>
+  <li><a href="#파일-정렬합병-방법의-차이점" id="markdown-toc-파일-정렬합병-방법의-차이점">파일 정렬/합병 방법의 차이점</a></li>
+</ul>
+
+<h1 id="정렬합병의-개요">정렬/합병의 개요</h1>
+
+<ul>
+  <li>내부 정렬
+    <ul>
+      <li>데이터가 적어서 메인 메모리 내에 모두 저장시켜 정렬가능할 때</li>
+    </ul>
+  </li>
+  <li>외부 정렬
+    <ul>
+      <li>데이터가 많아서 <code class="highlighter-rouge">메인 메모리</code>의 용량을 <code class="highlighter-rouge">초과</code>하여 보조 저장 장치에 저장된 파일을 정렬할 때</li>
+      <li><code class="highlighter-rouge">레코드 판독</code>, <code class="highlighter-rouge">기록</code>에 <code class="highlighter-rouge">걸리는 시간</code>이 중요</li>
+      <li>정렬/합병
+        <ul>
+          <li><code class="highlighter-rouge">런(run)</code> : <code class="highlighter-rouge">하나의 파일</code>을 <code class="highlighter-rouge">여러 서브파일</code>로 나누어 <code class="highlighter-rouge">내부 정렬 기법</code>을 사용하여 정렬시킨 파일</li>
+          <li><code class="highlighter-rouge">런</code>을 <code class="highlighter-rouge">합병</code>하여 원하는 <code class="highlighter-rouge">하나의 정렬된 파일</code>을 만듬</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_1.png"><img src="/assets/img/file_processing/sort_merge_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h1 id="정렬-단계">정렬 단계</h1>
+
+<ul>
+  <li>런 생성방법
+    <ul>
+      <li>내부 정렬</li>
+      <li>대체 선택</li>
+      <li>자연 선택</li>
+      <li>런의 수를 줄이기 위해 <code class="highlighter-rouge">길이</code>는 <code class="highlighter-rouge">길게</code> <br /> 그래야 합병할 때 <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">수</code>가 <code class="highlighter-rouge">적어</code> 빠른 시간내 처리 가능</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="1-내부-정렬">[1] 내부 정렬</h1>
+
+<ul>
+  <li>런 생성 방법
+    <ul>
+      <li>파일을 n개 레코드씩 분할</li>
+      <li>분할된 레코드들을 <code class="highlighter-rouge">내부 정렬 기법</code>으로 정렬</li>
+      <li>길이를 고정</li>
+    </ul>
+  </li>
+  <li>특징
+    <ul>
+      <li>제일 <code class="highlighter-rouge">마지막 런</code>을 <code class="highlighter-rouge">제외</code>하고 모두 길이가 같다.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_2.png"><img src="/assets/img/file_processing/sort_merge_1_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h1 id="2-대체-선택">[2] 대체 선택</h1>
+
+<ul>
+  <li>런 생성 방법</li>
+</ul>
+
+<figure>
+    
+    <a href="/assets/img/file_processing/sort_merge_1_3.png"><img src="/assets/img/file_processing/sort_merge_1_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>특징
+    <ul>
+      <li>내부 정렬과 달리 입력 파일의 일부 정렬된 레코드들의 순서를 이용</li>
+      <li>내부 정렬을 이용한 경우보다 <code class="highlighter-rouge">런의 길이</code>가 <code class="highlighter-rouge">길다</code>.
+        <ul>
+          <li>런의 개수가 줄어(↓) –&gt; 합병 과정 비용 줄임(↓)</li>
+        </ul>
+      </li>
+      <li>런의 평균 예상 길이 : 2m</li>
+      <li>내림차순일 때 최악</li>
+      <li>오름차순일 때 런 1개 생성</li>
+      <li>내부에 비해 <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">수</code>는 <code class="highlighter-rouge">1/2배</code>, <code class="highlighter-rouge">런</code>의 <code class="highlighter-rouge">길이</code>는 <code class="highlighter-rouge">2배</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="3-자연-선택">[3] 자연 선택</h1>
+
+<ul>
+  <li>런 생성 방법
+    <ul>
+      <li>대체 선택과는 달리 동결된 레코드들을 버퍼에 유지하지 않고 <br /> 보조 저장 장치에 <code class="highlighter-rouge">예비 장소</code>를 설정하여 별도 저장</li>
+      <li>하나의 런은 예비장소가 꽉 차고 버퍼에 들어올 데이터가 없거나 입력 파일이 공백이 될 때까지 계속 생성</li>
+    </ul>
+  </li>
+  <li>특징
+    <ul>
+      <li><code class="highlighter-rouge">대체 선택</code>보다 <code class="highlighter-rouge">런</code>을 <code class="highlighter-rouge">길게</code>하여 런 수를 <code class="highlighter-rouge">줄임(↓)</code> <br /> –&gt; <code class="highlighter-rouge">합병과정 비용</code>을 <code class="highlighter-rouge">줄임(↓)</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="런-생성-방법의-비교">런 생성 방법의 비교</h1>
+
+<ul>
+  <li>내부 정렬
+    <ul>
+      <li>마지막 럭을 제외하고 모든 런들의 길이가 같음</li>
+      <li>런의 길이를 예측할 수 있으므로 합병 알고리즘이 간단</li>
+    </ul>
+  </li>
+  <li>대체 선택
+    <ul>
+      <li>내부 정렬보다 평균적으로 훨씬 긴 런을 생성</li>
+      <li>런의 길이가 길수록 합병 비용이 적음</li>
+      <li>런의 길이가 일정치 않아 정렬/합병 알고리즘이 복잡</li>
+    </ul>
+  </li>
+  <li>자연 선택
+    <ul>
+      <li>앞의 두 방법보다 더 긴 런을 생성할 수 있음</li>
+      <li>예비 장소로의 입출력이 문제가 됨</li>
+      <li>긴 런 생성에 따른 효율화가 예비 장소 전송 비용보다 이익이 될 수도 있음</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="파일-정렬합병-방법의-차이점">파일 정렬/합병 방법의 차이점</h1>
+
+<ul>
+  <li>차이점을 나타내는 매개 변수
+    <ul>
+      <li>적용하는 내부 정렬 방식</li>
+      <li>내부정렬을 위해 할당된 메인 메모리의 크기</li>
+      <li>정렬된 런들의 보조 저장 장치에서의 저장 분포</li>
+      <li>정렬/합병 단계에서 동시에 처리할 수 있는 런의 수</li>
+    </ul>
+  </li>
+  <li>정렬/합병 기법의 성능
+    <ul>
+      <li>매개 변수에 따라 런의 수와 합병의 <code class="highlighter-rouge">패스(pass)수</code> 결정
+        <ul>
+          <li><code class="highlighter-rouge">패스 수</code> : 정렬/합병 기법이 몇 번의 반복적 수행을 거쳐서 최종 파일에 출력하느냐를 나타내는 것</li>
+        </ul>
+      </li>
+      <li>레코드 판독/기록 횟수 성능에 영향을 미치는 요인
+        <ul>
+          <li>가능한 <code class="highlighter-rouge">런의 길이</code>를 <code class="highlighter-rouge">길게</code> 만들어 <code class="highlighter-rouge">런의 수</code>를 <code class="highlighter-rouge">최소화</code></li>
+          <li><code class="highlighter-rouge">동시</code>에 <code class="highlighter-rouge">합병</code>할 수 있는 <code class="highlighter-rouge">런의 수</code>를 <code class="highlighter-rouge">늘리면</code> <code class="highlighter-rouge">합병</code>의 <code class="highlighter-rouge">패스 수</code>는 <code class="highlighter-rouge">감소</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/FP-Sort-Merge-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/FP-Sequeintial-File-(2)/"> 순차 파일 [ Part 2 ] </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-16
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#순차-파일의-설계" id="markdown-toc-순차-파일의-설계">순차 파일의 설계</a></li>
+  <li><a href="#순차-파일의-생성" id="markdown-toc-순차-파일의-생성">순차 파일의 생성</a></li>
+  <li><a href="#키-순차-파일의-갱신" id="markdown-toc-키-순차-파일의-갱신">키 순차 파일의 갱신</a></li>
+  <li><a href="#순차-마스터-파일의-갱신" id="markdown-toc-순차-마스터-파일의-갱신">순차 마스터 파일의 갱신</a></li>
+  <li><a href="#마스터-파일-갱신-빈도수" id="markdown-toc-마스터-파일-갱신-빈도수">마스터 파일 갱신 빈도수</a></li>
+</ul>
+
+<h1 id="순차-파일의-설계">순차 파일의 설계</h1>
+
+<ul>
+  <li>설계 시 고려 사항
+    <ul>
+      <li>[1] 레코드내의 필드 배치는 어떻게 할 것인가?
+        <ul>
+          <li>고정 길이 / 가변 길이</li>
+          <li>고정 길이 레코드 사용
+            <ul>
+              <li>사용하지 않는 공간 낭비</li>
+              <li>ex) 가장 긴 레코드 기준</li>
+            </ul>
+          </li>
+          <li>가변 길이 레코드 사용
+            <ul>
+              <li>각 레코드 길이를 나타내기 위한 <br /> 적절한 제어 정보와 함께 저장</li>
+              <li>각 레코드 앞부분에 있는 시스템용 필드에 제어 정보를 저장</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>[2] 키 필드는 어느 것으로 할 것인가?
+        <ul>
+          <li>응용 요건에 따라 선정</li>
+          <li>순차 파일에서 이 키는 레코드 접근 순서를 결정</li>
+        </ul>
+      </li>
+      <li>[3] 적정 블로킹 인수는 얼마로 할 것인가?
+        <ul>
+          <li>일반적으로 가능한 한 블록을 크게 하는것이 바람직</li>
+          <li>메인 메모리 내 버퍼 공간, 운영 체제가 지원하는 블록 크기에 의해 제한 받을 수 있음</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="순차-파일의-생성">순차 파일의 생성</h1>
+
+<ul>
+  <li>순차 파일 생성
+    <ul>
+      <li>생성 : 데이터 저장 장치에 레코드들을 <code class="highlighter-rouge">순서대로</code> 입력</li>
+      <li>키 순차 파일의 갱신 : 트랜잭션 파일 이용</li>
+    </ul>
+  </li>
+  <li>순차 파일에서의 검색
+    <ul>
+      <li>레코드의 저장 순서에 따라 연속적으로 검색</li>
+    </ul>
+  </li>
+  <li>순차 파일에 대한 질의
+    <ul>
+      <li>파일 구조상 <code class="highlighter-rouge">연속적인 검색</code>의 경우에 <code class="highlighter-rouge">효율적</code></li>
+      <li><code class="highlighter-rouge">파일의 질의 적중 비율</code>은? <br /> 질의에 응답하기 위해 접근해야 할 레코드 수 / 파일 전체의 레코드 수 <br /> = 검색 대상 Data / 전체</li>
+    </ul>
+  </li>
+  <li>질의 적중 비율↑ ==&gt; 입력 순차 파일 구조에 더 적합</li>
+</ul>
+
+<hr />
+
+<h1 id="키-순차-파일의-갱신">키 순차 파일의 갱신</h1>
+
+<ul>
+  <li>키 순차 파일에 대한 레코드 <code class="highlighter-rouge">삽입</code> : 값에 따라 오름/내림차순을 유지해야 한다.
+    <ul>
+      <li>[1] 두 기존 레코드 사이에 삽입 위치를 검색</li>
+      <li>[2] 삽입점 앞에 있는 모든 레코드를 <br /> <code class="highlighter-rouge">새로운 파일</code>에 <code class="highlighter-rouge">복사</code>하고 <code class="highlighter-rouge">새로운 레코드</code>를 <code class="highlighter-rouge">삽입</code></li>
+      <li>[3] 삽입점 뒤에 있는 나머지 레코드들을 <code class="highlighter-rouge">새로운 파일</code>로 <code class="highlighter-rouge">복사</code></li>
+    </ul>
+  </li>
+  <li>키 순차 파일에 대한 레코드 <code class="highlighter-rouge">삭제</code>와 <code class="highlighter-rouge">수정</code> : 삽입과 비슷</li>
+</ul>
+
+<hr />
+
+<h1 id="순차-마스터-파일의-갱신">순차 마스터 파일의 갱신</h1>
+
+<ul>
+  <li>갱신 트랜잭션을 트랜잭션 파일에 모와서 <code class="highlighter-rouge">일괄 처리</code>
+    <ul>
+      <li><code class="highlighter-rouge">트랜잭션 파일</code>의 <code class="highlighter-rouge">트랜잭션들</code>
+        <ul>
+          <li>마스터 파일과 똑같은 키로 정렬</li>
+          <li>각 트랜잭션은 <br /> 대응하는 <code class="highlighter-rouge">마스터 레코드</code>의 <code class="highlighter-rouge">키 값</code>과 갱신 타입을 나타내는 <code class="highlighter-rouge">갱신코드(Update Code)</code>를 갖고 있음</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>트랜잭션의 <code class="highlighter-rouge">삽입</code>
+    <ul>
+      <li>트랜잭션 코드, <code class="highlighter-rouge">키 값</code>은 반드시 있어야 함</li>
+    </ul>
+  </li>
+  <li>트랜잭션의 <code class="highlighter-rouge">삭제</code>
+    <ul>
+      <li>보통 해당 마스터 레코드의 <code class="highlighter-rouge">키 값</code>만 지정해도 됨</li>
+    </ul>
+  </li>
+  <li>트랜잭션의 <code class="highlighter-rouge">수정</code>
+    <ul>
+      <li><code class="highlighter-rouge">키 값</code>과 <code class="highlighter-rouge">수정될 필드들</code>과 해당 값만 명세</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="마스터-파일-갱신-빈도수">마스터 파일 갱신 빈도수</h1>
+
+<ul>
+  <li>갱신 빈도수를 결정하는 요인
+    <ul>
+      <li>데이터 <code class="highlighter-rouge">변경율</code>이 클수록(↑) –&gt; 갱신 빈도수 증가(↑)</li>
+      <li>마스터 파일의 <code class="highlighter-rouge">크기</code> 클수록(↑) –&gt; 갱신비용 증가(↑)되므로 빈도수 감소(↓)</li>
+      <li>마스터 파일의 <code class="highlighter-rouge">최신 데이터 요구</code> 클수록(↑) –&gt; 갱신 빈도수 증가(↑)</li>
+      <li><code class="highlighter-rouge">파일 활동 비율</code> 클수록(↑) –&gt; 빈도수 증가(↑)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>파일 활동 비율이란?
+    <ul>
+      <li>일련의 트랜잭션에 의해 영향을 받는 마스터 파일의 레코드 수 /  마스터 파일의 총 레코드 수 <br /> = 변경될 양 / All</li>
+      <li>파일 활동 비율값이 <code class="highlighter-rouge">높다</code>는건 <code class="highlighter-rouge">변경사항</code>이 <code class="highlighter-rouge">많다</code>는 뜻</li>
+    </ul>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/FP-Sequeintial-File-(2)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/FP-Sequeintial-File-(1)/"> 순차 파일 [ Part 1 ] </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-16
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#순차-파일-sequential-file" id="markdown-toc-순차-파일-sequential-file">순차 파일 (Sequential File)</a></li>
+  <li><a href="#스트림-파일-stream-file" id="markdown-toc-스트림-파일-stream-file">스트림 파일 (Stream File)</a></li>
+  <li><a href="#순차-접근-스트림-파일" id="markdown-toc-순차-접근-스트림-파일">순차 접근 스트림 파일</a></li>
+</ul>
+
+<h1 id="순차-파일-sequential-file">순차 파일 (Sequential File)</h1>
+
+<ul>
+  <li>
+    <p>정의</p>
+
+    <ul>
+      <li>레코드들을 조직하는 가장 기본적인 방법</li>
+      <li>파일 생성 시 레코드들을 연속적으로 저장</li>
+      <li>레코드들을 접근할 때도 저장할 때의 <code class="highlighter-rouge">순서대로</code> 연속적으로 접근</li>
+    </ul>
+  </li>
+  <li>
+    <p>종류</p>
+    <ul>
+      <li>입력 순차 파일 (Entry-Sequenced File)
+        <ul>
+          <li>레코드가 입력되는 순서대로 저장</li>
+        </ul>
+      </li>
+      <li>키 순차 파일 (Key-Sequenced File)
+        <ul>
+          <li>레코드의 특정 필드 값 순서에 따라 저장</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="스트림-파일-stream-file">스트림 파일 (Stream File)</h1>
+
+<ul>
+  <li>정의
+    <ul>
+      <li><code class="highlighter-rouge">연속적인</code> 판독 연산을 통해 <br /> 레코드가 파일에 저장되어있는 <br /> <code class="highlighter-rouge">순서</code>에 따라 데이터를 접근하는 파일</li>
+    </ul>
+  </li>
+  <li>종류
+    <ul>
+      <li><code class="highlighter-rouge">순차</code> 접근 스트림 파일</li>
+      <li><code class="highlighter-rouge">임의</code> 접근 스트림 파일</li>
+    </ul>
+  </li>
+  <li>접근 모드 (Access Mode)
+    <ul>
+      <li>파일에서 수행하려는 연산에 따라 <br /> 판독(Read), 기록(Write), 갱신(Read/Write), 첨가(Append) 등을 명세</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="순차-접근-스트림-파일">순차 접근 스트림 파일</h1>
+
+<ul>
+  <li>판독 (Read)
+    <ul>
+      <li>기본 스트림 파일을 <code class="highlighter-rouge">판독(Read)</code> 모드로 열면 <br /> 판독 포인터는 파일의 <code class="highlighter-rouge">첫 번째</code> 바이트를 가리킴</li>
+    </ul>
+  </li>
+  <li>판독 연산
+    <ul>
+      <li>해당 위치에서 시작하여 해당 바이트 값을 전송</li>
+      <li>판독 포인터를 스트림 파일의 다음 바이트 시작 위치로 변경</li>
+      <li>n번째 바이트 값을 판독하기 위해서는 <br /> 반드시 (n-1)번째 바이트 값을 <code class="highlighter-rouge">판독</code>해야함</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="third">
+    
+    <a href="/assets/img/file_processing/seq_file_1_1.png"><img src="/assets/img/file_processing/seq_file_1_1.png" alt="" /></a>
+    
+    <a href="/assets/img/file_processing/seq_file_1_2.png"><img src="/assets/img/file_processing/seq_file_1_2.png" alt="" /></a>
+    
+    <a href="/assets/img/file_processing/seq_file_1_3.png"><img src="/assets/img/file_processing/seq_file_1_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/FP-Sequeintial-File-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/FP-IO-Control-(2)/"> 파일 입출력 제어 [ Part 2 ] </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-15
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#1-단순-버퍼-시스템" id="markdown-toc-1-단순-버퍼-시스템"><code class="highlighter-rouge">[1] 단순 버퍼 시스템</code></a></li>
+  <li><a href="#버퍼를-채우는-채널-프로그램의-기본-구성" id="markdown-toc-버퍼를-채우는-채널-프로그램의-기본-구성">버퍼를 채우는 채널 프로그램의 기본 구성</a></li>
+  <li><a href="#예상-버퍼링" id="markdown-toc-예상-버퍼링">예상 버퍼링</a></li>
+  <li><a href="#단순-버퍼-시스템의-단점" id="markdown-toc-단순-버퍼-시스템의-단점">단순 버퍼 시스템의 단점</a></li>
+  <li><a href="#2-이중-버퍼-시스템" id="markdown-toc-2-이중-버퍼-시스템"><code class="highlighter-rouge">[2] 이중 버퍼 시스템</code></a></li>
+  <li><a href="#이중-버퍼-시스템의-장단점" id="markdown-toc-이중-버퍼-시스템의-장단점">이중 버퍼 시스템의 장/단점</a>    <ul>
+      <li><a href="#장점" id="markdown-toc-장점">장점</a></li>
+      <li><a href="#단점" id="markdown-toc-단점">단점</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-단순-버퍼-시스템"><code class="highlighter-rouge">[1] 단순 버퍼 시스템</code></h1>
+
+<hr />
+
+<h1 id="버퍼를-채우는-채널-프로그램의-기본-구성">버퍼를 채우는 채널 프로그램의 기본 구성</h1>
+
+<ol>
+  <li>
+    <p>프로그램의 READ 명령이 있을 때까지 기다림</p>
+  </li>
+  <li>
+    <p>제어 장치에 I/O시작 명령을 내림</p>
+  </li>
+  <li>
+    <p>버퍼가 채워지기를 기다림</p>
+  </li>
+  <li>
+    <p>프로그램에 인터럽트를 발생시켜 버퍼로부터 데이터를 읽도록 함 <br /> –&gt; 사용자 프로그램은 버퍼가 찰 때까지 유휴 상태</p>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="예상-버퍼링">예상 버퍼링</h1>
+
+<ul>
+  <li>
+    <p>프로그램이 대기 상태에 있을 가능성을 어느 정도 제거</p>
+  </li>
+  <li>
+    <p>I/O 제어 시스템은 <br /> 프로그램이 필요로 할 데이터를 미리 예측해서 <br /> 항상 버퍼를 가득 채워 놓음 <br /> –&gt; 프로그램은 버퍼가 채워질 때까지 기다릴 필요 X (= 필요할것 같다 싶으면 미리 Get)</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="단순-버퍼-시스템의-단점">단순 버퍼 시스템의 단점</h1>
+
+<ol>
+  <li>
+    <p>프로그램이 매 n+1번 째 read를 요청할 때마다 <br /> 응용 프로그램, 즉 CPU는 버퍼가 다 채워질 때까지 대기 상태</p>
+  </li>
+  <li>
+    <p>버퍼가 비워지는 동안 <code class="highlighter-rouge">생산자</code>는 버퍼를 채우기 위해 <code class="highlighter-rouge">대기 상태</code></p>
+  </li>
+  <li>
+    <p>그러므로 다중버퍼를 사용한다.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h1 id="2-이중-버퍼-시스템"><code class="highlighter-rouge">[2] 이중 버퍼 시스템</code></h1>
+
+<ul>
+  <li>파일당 두 개의 버퍼 구역을 할당 <br /> 하나를 비우는 동안 나머지 버퍼를 채움</li>
+</ul>
+
+<hr />
+
+<h1 id="이중-버퍼-시스템의-장단점">이중 버퍼 시스템의 장/단점</h1>
+
+<h2 id="장점">장점</h2>
+
+<ul>
+  <li>버퍼를 채우고 비우는 작업이 중복되어 <code class="highlighter-rouge">병렬</code>로 수행되므로 <br /> <code class="highlighter-rouge">CPU</code>의 <code class="highlighter-rouge">대기 시간</code> 감소</li>
+</ul>
+
+<h2 id="단점">단점</h2>
+
+<ul>
+  <li>
+    <p>생산자나 소비자 루틴의 <code class="highlighter-rouge">실행 시간</code>과 <code class="highlighter-rouge">복잡성</code> 증가</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">메인 메모리</code>의 <code class="highlighter-rouge">소요량</code> 증가</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/FP-IO-Control-(2)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/FP-IO-Control-(1)/"> 파일 입출력 제어 [ Part 1 ] </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-15
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#파일처리" title="Category: 파일처리" rel="category">파일처리</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#파일처리" title="Tag: 파일처리" rel="tag">파일처리</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+
+                </div>
+                <div class="read-all">
+                    <a  href="/FP-IO-Control-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Combination/"> 조합 (Combination) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-04-15
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#KeyPoint" title="Category: KeyPoint" rel="category">KeyPoint</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#KeyPoint" title="Tag: KeyPoint" rel="tag">KeyPoint</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Combination/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page18" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">19/57</span>
+          
+            <a href="/page20" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

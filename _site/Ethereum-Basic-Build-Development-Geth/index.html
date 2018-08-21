@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Ethereum Basic :: 사설 이더리움 네트워크(Geth) 구축하기 </title>
+    <meta name="description" content="  이더리움 클라이언트 소개  사설 이더리움 네트워크 구축하기  Geth 클라이언트 프로그램의 옵션  Geth 클라이언트 계좌 만들기  이더리움의 다양한 클라이언트에 대해 살펴보자.이더리움 클라이언트 소개      이더리움은 중앙 집중형 서버 프로그램이 따로 존재하지 않는다.   ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Ethereum-Basic-Build-Development-Geth/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Ethereum Basic :: 사설 이더리움 네트워크(Geth) 구축하기 </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-25
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a-->
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#이더리움-클라이언트-소개" id="markdown-toc-이더리움-클라이언트-소개">이더리움 클라이언트 소개</a></li>
+  <li><a href="#사설-이더리움-네트워크-구축하기" id="markdown-toc-사설-이더리움-네트워크-구축하기">사설 이더리움 네트워크 구축하기</a></li>
+  <li><a href="#geth-클라이언트-프로그램의-옵션" id="markdown-toc-geth-클라이언트-프로그램의-옵션">Geth 클라이언트 프로그램의 옵션</a></li>
+  <li><a href="#geth-클라이언트-계좌-만들기" id="markdown-toc-geth-클라이언트-계좌-만들기">Geth 클라이언트 계좌 만들기</a></li>
+</ul>
+
+<ul>
+  <li>이더리움의 다양한 클라이언트에 대해 살펴보자.</li>
+</ul>
+
+<h2 id="이더리움-클라이언트-소개">이더리움 클라이언트 소개</h2>
+
+<ul>
+  <li>
+    <p>이더리움은 중앙 집중형 서버 프로그램이 따로 존재하지 않는다.</p>
+  </li>
+  <li>
+    <p>이오로지 클라이언트 프로그램만 존재한다.</p>
+  </li>
+  <li>
+    <p>이더리움 클라이언트는 멀티 플랫폼 환경을 지원하기 위해 다양한 프로그래밍 언어로 개발되고 있다.</p>
+  </li>
+</ul>
+
+<h2 id="사설-이더리움-네트워크-구축하기">사설 이더리움 네트워크 구축하기</h2>
+
+<p>공용 이더리움 네트워크상에서</p>
+
+<p>개발자가 새롭게 만든 dApp을 배포하려면</p>
+
+<p>실제 이더를 소비하여</p>
+
+<p>컴파일된 코드를 블록으로 저장해야한다.</p>
+
+<p><br /></p>
+
+<p>그런데 오류가 발견된다면</p>
+
+<p>수정 후 다시 배포를 해야하는데</p>
+
+<p>이 때 추가로 이더를 소비해야한다.</p>
+
+<p><br /></p>
+
+<p>따라서 개발한 dApp을</p>
+
+<p>이더 걱정없이 마음 편하게</p>
+
+<p>테스트할 수 있는 공간이 필요하다.</p>
+
+<p><br /></p>
+
+<p>이더리움 사설 네트워크에서는</p>
+
+<p>이더를 원하는 만큼 생성 or 채굴 할 수 있기 때문에</p>
+
+<p>dApp을 테스트하는데 매우 효율적인 공간이다.</p>
+
+<p><b></b></p>
+
+<p>이러한 사설 네트워크를 구축하기 위해선</p>
+
+<p>생성 or 설정할 요소들이 있다.</p>
+
+<p>　1. Genesis 블록 파일 생성</p>
+
+<p>이더리움 네트워크에서 사용되는 블록체인의 최초 시작 블록을 생성한다.</p>
+
+<p>　2. Data 디렉토리 설정</p>
+
+<p>계좌나 블록 정보들이 저장될 디렉토리를 설정한다.</p>
+
+<p>　3. 네트워크 ID 설정</p>
+
+<p>사설 이더리움 네트워크의 ID를 정의한다.</p>
+
+<p>　4. Node Discovery 비활성화</p>
+
+<p>이더리움 네트워크에 있는 모든 노드들은</p>
+
+<p>끊임없이 다른 노드를 찾아</p>
+
+<p>자신의 Peer로 등록하게 되는데</p>
+
+<p>테스트의 용도로 구성된 사설 네트워크에서는</p>
+
+<p>이러한 과정이 필요하지 않으므로 비활성화한다.</p>
+
+<hr />
+
+<h2 id="geth-클라이언트-프로그램의-옵션">Geth 클라이언트 프로그램의 옵션</h2>
+
+<ul>
+  <li>옵션을 통해 이더리움 네트워크 환경을 설정할 수 있다.</li>
+</ul>
+
+<p>　1. --identity</p>
+
+<p>다른 이더리움 네트워크와</p>
+
+<p>구분 짓기 위한 일종의 식별자(ID) 역할</p>
+
+<p>　2. --nodiscovery</p>
+
+<p>자신의 peer을 찾으려하는 다른 노드들로부터</p>
+
+<p>나의 노드를 발견하지 못하게 숨기는 역할</p>
+
+<p>　3. --maxprees 0</p>
+
+<p>이 옵션 값을 0으로 하면</p>
+
+<p>어떤 노드도 사설 네트워크에 접속할 수 없다.</p>
+
+<p>원하는 개수의 peer들만</p>
+
+<p>사설 네트워크에 연결할 수 있도록 설정할 수 있다.</p>
+
+<p>　4. --rpc</p>
+
+<p>해당 이더리움 노드에 접근할 수 있는</p>
+
+<p>RPC 인터페이스를 활성화한다.</p>
+
+<p>Geth에서는 기본적으로 활성화되어 있다.</p>
+
+<p>　5. --rpcapi : “db, eth, web3, miner”</p>
+
+<p>RPC 인터페이스를 통해서</p>
+
+<p>어떤 API를 사용할 것인지 정의할 수 있다.</p>
+
+<p>RPC 인터페이스가 활성화되면</p>
+
+<p>누구나 API를 통해 노드에 접근할 수 있기 때문에</p>
+
+<p>필요한 API만 정의한다.</p>
+
+<p>　6. --rpcaddr</p>
+
+<p>RPC 인터페이스를 통해</p>
+
+<p>접근을 허용할 IP주소를 설정할 수 있다.</p>
+
+<p>0.0.0.0으로 설정할 경우,</p>
+
+<p>모든 내부 네트워크 IP가 접근할 수 있다.</p>
+
+<p>　7. --rpcport “8123”</p>
+
+<p>RPC 인터페이스에 접근하기 위한 포트를 정의</p>
+
+<p>　8. --rpccorsdomain “*”</p>
+
+<p>사설 네트워크에 어떤 주소를 가진 RPC 클라이언트들이 접근하여</p>
+
+<p>작업을 수행할 수 있는지를 정의한다.</p>
+
+<p>인증되지 않은 노드들이</p>
+
+<p>RPC를 통해서 사설 네트워크에 접속하는 것을 막기 위해</p>
+
+<p>와일드카드(*) 대신에 특정 URL을 정의하는 것이 좋으나,</p>
+
+<p>단순히 dApp을 테스트하기 위한 용도라면</p>
+
+<p>와일드카드를 사용해도 무방하다.</p>
+
+<p>　9. --dataidr “(path)”</p>
+
+<p>사설 네트워크의 블록 데이터들이 저장될 폴더를 지정한다.</p>
+
+<p>만약 공개 네트워크를 같이 사용하고자 한다면,</p>
+
+<p>사설 네트워크용 폴더를 확실하게 구분해서 지정해야한다.</p>
+
+<p>　10. --port “30303”</p>
+
+<p>이더리움 네트워크의 노드들이</p>
+
+<p>수동으로 사설 네트워크에 접속하기 위한 포트를 정의한다.</p>
+
+<p>　11. --mine</p>
+
+<p>이더리움 채굴을 활성화한다.</p>
+
+<hr />
+
+<h2 id="geth-클라이언트-계좌-만들기">Geth 클라이언트 계좌 만들기</h2>
+
+<ul>
+  <li>자세한 설치 방법은 <a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">환경 설정 가이드</a>을 참고</li>
+</ul>
+
+<p>사설 네트워크를 구축하기에 앞서 Geth 클라이언트용 개인 계좌를 개설해야 한다.</p>
+
+<p>Geth 클라이언트의 계좌를 생성하는 2가지 방법</p>
+
+<ol>
+  <li>
+    <p>기본적으로 이더리움 사설 네트워크를 구축한 후 콘솔에 접속하여 개설하는 방법</p>
+  </li>
+  <li>
+    <p>Geth 클라이언트를 실행하기 전에 미리 계좌를 생성하는 방법</p>
+  </li>
+</ol>
+
+<p>2번째 방법으로 진행을 해보자.</p>
+
+<p><br /></p>
+
+<p><code class="highlighter-rouge">--datadir</code> 옵션은</p>
+
+<p>블록 데이터와 계좌 정보가</p>
+
+<p>저장될 폴더를 지정하는 옵션이다.</p>
+
+<p><a href="https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options">–datadir</a> “/home/karalabe/.ethereum”  Data directory for the databases and keystore</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>geth --datadir {저장시킬 위치} account new
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>accout list 옵션을 사용하면</p>
+
+<p>우리가 개설한 계좌의 정보를 조회할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./geth --datadir=$ETH_HOME/db/pnet account list
+
+./geth --datadir $ETH_HOME/db/pnet account list
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/ethereum/eth_basic_build_dev_get_1.png"><img src="/assets/img/ethereum/eth_basic_build_dev_get_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/ML-12/"> Machine Learning 12-(1) :: NN의 꽃 RNN 이야기 </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Ethereum-Basic-Execute-Private-Network/"> Ethereum Basic :: Execute Private Network </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Ethereum-Basic-Build-Development-Geth/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Ethereum-Basic-Build-Development-Geth/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
