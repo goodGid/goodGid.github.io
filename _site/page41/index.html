@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page41/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Python3(2)-(4)/"> Python Study (2) - (4) :: 반복문 작성 시 도움이 되는 함수  </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#반복문-작성-시-도움이-되는-함수" id="markdown-toc-반복문-작성-시-도움이-되는-함수">반복문 작성 시 도움이 되는 함수</a>    <ul>
+      <li><a href="#filter-함수" id="markdown-toc-filter-함수">Filter() 함수</a></li>
+      <li><a href="#zip-함수" id="markdown-toc-zip-함수">Zip() 함수</a></li>
+      <li><a href="#map-함수" id="markdown-toc-map-함수">Map() 함수</a></li>
+      <li><a href="#효울적인-순회-방법" id="markdown-toc-효울적인-순회-방법">효울적인 순회 방법</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="반복문-작성-시-도움이-되는-함수">반복문 작성 시 도움이 되는 함수</h2>
+
+<h3 id="filter-함수">Filter() 함수</h3>
+
+<ul>
+  <li>
+    <p>리스트 내장의 if문으로 필터링하는 방법과 동일한 기능을 하는 함수가 내장 함수인 <code class="highlighter-rouge">filter()</code>이다.</p>
+  </li>
+  <li>
+    <p>함수는 입력받은 시퀀스형 객체, 즉 이터레이션이 가능한 객체를 순회하며, 함수의 결과가 Ture인 경우만을 묶어 <br /> 해당 이터레이터 객체를 반환한다.</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter( &lt;function&gt; | None, &lt;이터레이션이 가능한 자료형&gt;)
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>첫 번째 인자는 <function>은 함수의 이름으로 `필터링할 방법`을 제공한다.</function></p>
+  </li>
+  <li>
+    <p>함수의 이름에 None을 지정하면 아무런 필터링도 수행하지 않는다. <br /> 즉 시퀀스 객체의 모든 아이템을 선택하고 싶을 때는 ‘None’을 사용한다.</p>
+  </li>
+  <li>
+    <p>두 번째 인자는 <code class="highlighter-rouge">필터링할 대상</code>으로, 리스트, 튜플, 문자열 형태의 시퀀스형 자료, 이터레이터를 지원하는 사용자정의 클래스, 이터레이터 객체가 올 수 있다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">filter()</code> 내장 함수는 <code class="highlighter-rouge">반환값</code>으로 <code class="highlighter-rouge">이터레이터를 반환</code>하므로 리스트나 튜플에 담으려면 내장 함수인 list(), tuple()을 사용해야 한다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">IterL</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">IterL</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">" Itme : {0}"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<span class="o">...</span> 
+ <span class="n">Itme</span> <span class="p">:</span> <span class="mi">10</span>
+ <span class="n">Itme</span> <span class="p">:</span> <span class="mi">25</span>
+ <span class="n">Itme</span> <span class="p">:</span> <span class="mi">30</span>
+</code></pre></div></div>
+
+<ul>
+  <li>필터링 함수를 지정해 필터링 하는 예제</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">IterL</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="n">GetBiggerThan20</span><span class="p">,</span><span class="n">L</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">IterL</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">"Item : {0}"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">25</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">30</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>필터링 결과로 이터레이터 객체를 사용하지 않고 원본 객체와 동일한 리스트, 튜플, 사전 형식으로 사용하기 위해선 list(), tuple(), dict() 함수를 사용한다.</p>
+  </li>
+  <li>
+    <p>이때 기존 객체인 L은 아무것도 바뀌지 않는다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">NewL</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">GetBiggerThan20</span><span class="p">,</span><span class="n">L</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">NewL</span>
+<span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">L</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+</code></pre></div></div>
+
+<ul>
+  <li>def Function 정의를 하지 않고 <code class="highlighter-rouge">람다(Lambda)</code> 함수를 이용해 작성할 수 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">IterL</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">i</span> <span class="p">:</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">IterL</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">"Item : {0}"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">25</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">30</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="zip-함수">Zip() 함수</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">zip()</code>함수는 순회 가능한 시퀀스형이나 이터레이터형 객체들을 결합하여 쌍으로 순회가능한 이터레이터 객체를 얻을 수 있다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">zip()</code>함수의 인자로는 <code class="highlighter-rouge">내장 시퀀스형 자료</code>, <code class="highlighter-rouge">이터레이터를 지원하는 사용자 클래스</code>, <code class="highlighter-rouge">이터레이터 객체</code>가 가능하며, 결합을 시키고자 하는 개수만큼 올 수 있다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">반환 값</code>은 쌍을 이룬 <code class="highlighter-rouge">튜플 객체</code>의 <code class="highlighter-rouge">이터레이터형</code>이다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span><span class="s">'B'</span><span class="p">,</span><span class="s">'C'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">"Item : {0}"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+<span class="n">Item</span> <span class="p">:</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s">'A'</span><span class="p">)</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s">'B'</span><span class="p">)</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s">'C'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> 
+
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">zip()</code>함수는 이터레이터를 반환하므로 결과 값을 객체에 저장하려면 <code class="highlighter-rouge">filter()</code>와 동일하게 내장 함수인 list(), tuple(), dict()등을 이용해야 한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span>
+<span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="s">'A'</span><span class="p">),</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s">'B'</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s">'C'</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">zip()</code>함수로 결합된 결과를 분리하기 위해 <code class="highlighter-rouge">zip()</code>을 호출할 때 결합된 객체나 이터레이터인자 앞에 <code class="highlighter-rouge">*</code>붙여 분리할 수 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">X2</span><span class="p">,</span> <span class="n">Y2</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">RetList</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">X2</span>
+<span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Y2</span>
+<span class="p">(</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="s">'C'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">zip()</code>함수를 이용해 2개 이상의 객체도 결합할 수 있다.</p>
+  </li>
+  <li>
+    <p>결합을 하는 인자의 개수가 동일하지 않은 경우 가장 짧은 쪽을 기준으로 결합된다. 나머지 시퀀스 객체는 포함되지 않는다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Y</span> <span class="o">=</span> <span class="s">"ABC"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span>
+<span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">),</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s">'C'</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="map-함수">Map() 함수</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>map( &lt;함수 이름&gt;, 이터레이션 가능한 객체, ...)
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>첫 인자로 ‘함수의 이름’이 온다. 뒤에 오는 인자는 순회 가능한 객체로 <code class="highlighter-rouge">filter()</code>, <code class="highlighter-rouge">zip()</code>과 동일하다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">map()</code> 함수는 객체를 순회하며 <br /> 각 아이템을 첫 인자인 함수에 전달하고, <br /> 함수의 수행 결과를 이터레이터 객체로 생성해서 반환한다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">Add10</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">i</span><span class="o">+</span><span class="mi">10</span>
+
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="n">Add10</span><span class="p">,</span> <span class="n">L</span><span class="p">):</span>       <span class="c"># 정의한 함수와 순회할 객체를 map()인자로 전달한다.</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">"Item : {0}"</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">11</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">12</span>
+<span class="n">Item</span> <span class="p">:</span> <span class="mi">13</span>
+</code></pre></div></div>
+
+<ul>
+  <li>수행할 함수가 간단하다면 <code class="highlighter-rouge">람다(Lambda) 함수</code>로 작성할 수 있다.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">((</span><span class="k">lambda</span> <span class="n">i</span> <span class="p">:</span> <span class="n">i</span><span class="o">+</span><span class="mi">10</span><span class="p">),</span> <span class="n">L</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span>
+<span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>수행할 함수가 2개 이상의 인자를 받는 경우, map()함수를 호출할 때도 수행할 함수에 맞는 이터레이션 가능한 객체를 전달해야 한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">pow</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RetList</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">81</span><span class="p">]</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="효울적인-순회-방법">효울적인 순회 방법</h3>
+
+<ul>
+  <li>파이썬에서 시퀀스형 자료를 순회하며 출력하는 방법은 여러 가지가 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Apple"</span><span class="p">,</span> <span class="s">"Orange"</span><span class="p">,</span> <span class="s">"Banana"</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>         <span class="c"># for문 이용</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="n">Apple</span>
+<span class="n">Orange</span>
+<span class="n">Banana</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>       <span class="c"># join 메서드를 이용하는 경우</span>
+<span class="n">Apple</span>
+<span class="n">Orange</span>
+<span class="n">Banana</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span> <span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">))</span>           <span class="c"># 리스트 내장을 이용하는 경우</span>
+<span class="n">Apple</span>
+<span class="n">Orange</span>
+<span class="n">Banana</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>위의 결과는 같지만 수행 속도는 차이가 있다.</p>
+  </li>
+  <li>
+    <p>for문을 이용해 출력하는 경우에는 리스트의 아이템 개수만큼 print() 함수를 호출한다.</p>
+  </li>
+  <li>
+    <p>join()이나 리스트 내장을 이용하는 경우에는 print()함수가 한 번만 호출된다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Python3(2)-(4)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Python3(2)-(3)/"> Python Study (2) - (3) :: 제어문과 연관된 유용한 함수  </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#제어문과-연관된-유용한-함수" id="markdown-toc-제어문과-연관된-유용한-함수">제어문과 연관된 유용한 함수</a>    <ul>
+      <li><a href="#range---수열의-생성" id="markdown-toc-range---수열의-생성">range() - 수열의 생성</a></li>
+      <li><a href="#리스트-항목과-인덱스-값을-동시에-얻는-법" id="markdown-toc-리스트-항목과-인덱스-값을-동시에-얻는-법">리스트 항목과 인덱스 값을 동시에 얻는 법</a></li>
+      <li><a href="#리스트-내장" id="markdown-toc-리스트-내장">리스트 내장</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="제어문과-연관된-유용한-함수">제어문과 연관된 유용한 함수</h2>
+
+<h3 id="range---수열의-생성">range() - 수열의 생성</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>range( ['시작값'], '종료값'[, '증가값'])
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>‘종료값’은 수열의 종료조건으로 필수 항목이며, 생성되는 수열에 포함되지 않는다.</p>
+  </li>
+  <li>
+    <p>‘시작값’과 ‘증가값’은 선택적으로 입력 가능 !</p>
+  </li>
+  <li>
+    <p>입력하지 않으면 Default : ‘시작값’은 0, ‘증가값’은 1이다.</p>
+  </li>
+  <li>
+    <p>range() 함수를 수행하면 이터레이션이 가능한 객체가 반환된다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>                <span class="c"># 종료값만 있는 경우 10은 포함되지 않는다.</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>               <span class="c"># 시작값, 종료값이 있는 경우</span>
+<span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>           <span class="c"># 시작값, 종료값, 증가값이 있는 경우</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>            <span class="c"># 10부터 20까지 짝수 출력</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>range() 함수를 이용해 10에서 20까지 짝수를 출력하는 예제 코드</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="mi">10</span>
+<span class="mi">12</span>
+<span class="mi">14</span>
+<span class="mi">16</span>
+<span class="mi">18</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="리스트-항목과-인덱스-값을-동시에-얻는-법">리스트 항목과 인덱스 값을 동시에 얻는 법</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>enumerate('시퀀스 타입 객체'[, '시작값' = 0])
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>첫 인자인 ‘시퀀스 타입 객체’에는 시퀀스형 객체, 즉 이터레이션이 가능한 객체가 입력된다.</p>
+  </li>
+  <li>
+    <p>‘시작값’은 인덱스 순번의 시작값으로 생략 가능 ! <br /> 생략시 0부터 시작.</p>
+  </li>
+  <li>
+    <p>함수를 실행하고 나면 튜플 형태로 (인덱스, 시퀀스 객체의 아이템)이 반환된다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">,</span> <span class="s">"Apple"</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="o">...</span> 
+<span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'Apple'</span><span class="p">)</span>
+
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>       <span class="c">## i가 아닌 다른 변수명을 사용해도 된다 !</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span>
+<span class="o">...</span> 
+<span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">15.5</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'Apple'</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="o">...</span> 
+<span class="mi">101</span> <span class="mi">100</span>
+<span class="mi">102</span> <span class="mf">15.5</span>
+<span class="mi">103</span> <span class="n">Apple</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="리스트-내장">리스트 내장</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;표현식&gt; for &lt;아이템&gt; in &lt;시퀀스 타입 객체&gt; (if &lt;조건식&gt;)
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>기존의 리스트 객체를 이용해 조합, 필터링 등의 추가적인 연산을 통해 새로운 리스트 객체를 생성하는 경우, <br /> <code class="highlighter-rouge">리스트 내장(List Comprehensions)</code>은 매우 효율적이다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">시퀀스 타입객체</code>에는 시퀀스형 객체(리스트, 튜플, 셋) or 이터레이션이 가능한 객체가 들어간다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">아이템</code>은 리스트 객체의 개별 아이템</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">표현식</code>은 개별 <code class="highlighter-rouge">아이템</code>을 사용해 <code class="highlighter-rouge">사상 함수(mapping)</code> 형태로 새로운 리스트 객체를 생성하는데 사용한다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">if 조건식</code>은 조건식에 맞는 원본 리스트의 아이템을 선별하는 데 사용되며 생략 가능하다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Python3(2)-(3)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Python3(2)-(2)/"> Python Study (2) - (2) :: while / for </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#while문" id="markdown-toc-while문">while문</a></li>
+  <li><a href="#for문" id="markdown-toc-for문">for문</a></li>
+  <li><a href="#break-continue-else" id="markdown-toc-break-continue-else">break, continue, else</a></li>
+</ul>
+
+<h2 id="while문">while문</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">value</span> <span class="o">&gt;</span><span class="mi">0</span> <span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="o">...</span>     <span class="n">value</span> <span class="o">-=</span> <span class="mi">1</span>
+
+<span class="mi">5</span>
+<span class="mi">4</span>
+<span class="mi">3</span>
+<span class="mi">2</span>
+<span class="mi">1</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="for문">for문</h2>
+
+<ul>
+  <li>for 문에 사용될 수 있는 <code class="highlighter-rouge">시퀀스형 자료</code>로는 <code class="highlighter-rouge">문자열</code>, <code class="highlighter-rouge">리스트</code>, <code class="highlighter-rouge">튜풀</code>, <code class="highlighter-rouge">사전</code>과 같은 <code class="highlighter-rouge">내장 클래스</code>와 <br /> <code class="highlighter-rouge">내장 함수 iter()</code>로 생성되는 <code class="highlighter-rouge">이터레이터 객체</code>, 또는 이러한 동작이 가능하도록 관련 연산자를 재정의한 <br /> <code class="highlighter-rouge">(__iter__(), __next__() )객체</code>이다.
+``` python
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>l = [10, 20, 30]
+iterator = iter(l)
+for i in iterator:
+…     print(i)</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<p>10
+20
+30</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+* 2중 for문도 가능하다.
+
+``` python
+&gt;&gt;&gt; for n in [1,2]:
+...     print(" -- {0} 단 --".format(n))
+...     for i in [1,2,3]:
+...             print(" {0} * {1} = {2}".format(n,i, n*i))
+
+ -- 1 단 --
+ 1 * 1 = 1
+ 1 * 2 = 2
+ 1 * 3 = 3
+ -- 2 단 --
+ 2 * 1 = 2
+ 2 * 2 = 4
+ 2 * 3 = 6
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="break-continue-else">break, continue, else</h2>
+
+<ul>
+  <li>
+    <p>다른 언어와 마찬가지 기능을 한다.</p>
+  </li>
+  <li>
+    <p>다만 사용시 콜론(:)을 붙히지 않는다.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">break</span>
+<span class="o">...</span>     <span class="k">continue</span>
+
+</code></pre></div></div>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Python3(2)-(2)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Python3(2)-(1)/"> Python Study (2) - (1) ::  if, 단축 평가</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#if" id="markdown-toc-if">if</a></li>
+  <li><a href="#조건식-참거짓-판단" id="markdown-toc-조건식-참거짓-판단">조건식 참/거짓 판단</a></li>
+  <li><a href="#단축-평가" id="markdown-toc-단축-평가">단축 평가</a></li>
+</ul>
+
+<h2 id="if">if</h2>
+
+<ul>
+  <li>
+    <p>if (조건식) 이후에 <code class="highlighter-rouge">콜론(:)</code>을 지정해 조건식이 종료됨을 나타낸다.</p>
+  </li>
+  <li>
+    <p>C or JAVA 계열은 ‘ grade &gt;= 70 &amp;&amp; grade &lt;80 ‘</p>
+  </li>
+  <li>
+    <p>파이썬은 더욱 직관적으로 ‘ 70 &lt;= score &lt; 80 ‘</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">((</span><span class="s">'Input Score : '</span><span class="p">)))</span>
+<span class="n">Input</span> <span class="n">Score</span> <span class="p">:</span> <span class="mi">77</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="mi">90</span> <span class="o">&lt;=</span> <span class="n">score</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">grade</span> <span class="o">=</span> <span class="s">'A'</span>
+<span class="o">...</span> <span class="k">elif</span> <span class="mi">80</span> <span class="o">&lt;=</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">grade</span> <span class="o">=</span> <span class="s">'B'</span>
+<span class="o">...</span> <span class="k">else</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">grade</span> <span class="o">=</span> <span class="s">'C'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"Grade is "</span> <span class="o">+</span> <span class="n">grade</span> <span class="p">)</span>
+<span class="n">Grade</span> <span class="ow">is</span> <span class="n">C</span>
+<span class="o">&gt;&gt;&gt;</span> 
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="조건식-참거짓-판단">조건식 참/거짓 판단</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정수 계열 : 0
+실수 계열 : 0.0
+시퀀스 계열 : (), [], {}, 빈 문자열(''), 아무것도 없음을 의미하는 None
+==&gt; 언제나 거짓으로 판단
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
+<span class="bp">False</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(())</span>
+<span class="bp">False</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+<span class="bp">False</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="n">none</span><span class="p">)</span>        <span class="c"># 일부러 Input을 none로 넣어봄 ! </span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">'none'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="단축-평가">단축 평가</h2>
+
+<ul>
+  <li>논리식 판단은 <code class="highlighter-rouge">Left -&gt; Right</code>로 진행 된다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&amp;</span> <span class="mi">10</span> <span class="o">/</span> <span class="n">a</span> <span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">" a is 0 "</span><span class="p">)</span>
+<span class="o">...</span> <span class="k">else</span> <span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">" Success "</span> <span class="p">)</span>
+
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">ZeroDivisionError</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>ZeroDivisionError 에러는 10이란 값을 0으로 나누려고 하였기 때문에 나는 에러다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">a</span> <span class="ow">and</span> <span class="mi">10</span> <span class="o">/</span> <span class="n">a</span> <span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">" a is 0 "</span> <span class="p">)</span>
+<span class="o">...</span> <span class="k">else</span> <span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">" Success "</span> <span class="p">)</span>
+
+ <span class="n">Success</span> 
+
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>논리적인 구조는 같지만 &amp; -&gt; and 사용하면 단축 평가가 이뤄져 예외가 발생하지 않는다.</p>
+  </li>
+  <li>
+    <p>a가 ‘0’인 경우 조건식 [ a &amp; 10/1 ] 중 ‘a’가 거짓이기 때문에 <br /> 조건식 전체를 보지 않는 것을 <code class="highlighter-rouge">단축 평가</code>라 한다.</p>
+  </li>
+  <li>
+    <p>파이썬에서는 <code class="highlighter-rouge">and</code>, <code class="highlighter-rouge">or</code>의 경우 반드시 좌변 피연산자가 우변 피연산자보다 먼저 <code class="highlighter-rouge">단축 평가</code>되도록 <br /> <code class="highlighter-rouge">파이썬 인터프리터</code>에서 보장하고 있다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">단축 평가</code>로 얻을 수 있는 장점은 다음과 같다.</p>
+    <ol>
+      <li>조건문 결과가 결정되는 시점 이후로 추가 판별 연산을 수행하지 않기 때문에 속도가 향상</li>
+      <li>예제와 같은 런타임 에러발생을 try ~ except 구문이 아닌 논리식으로 사전에 차단 가능</li>
+    </ol>
+  </li>
+</ul>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Python3(2)-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/1103/">BOJ - 게임</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Algorithm" title="Category: Algorithm" rel="category">Algorithm</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BOJ" title="Tag: BOJ" rel="tag">BOJ</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#problem" id="markdown-toc-problem">Problem</a></li>
+  <li><a href="#code" id="markdown-toc-code">Code</a></li>
+  <li><a href="#feed-back" id="markdown-toc-feed-back">Feed Back</a>    <ul>
+      <li><a href="#anser-condition-code" id="markdown-toc-anser-condition-code">Anser Condition Code</a></li>
+      <li><a href="#wrong-condition-code" id="markdown-toc-wrong-condition-code">Wrong Condition Code</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="problem">Problem</h2>
+<p>Problem URL : <strong><a href="https://www.acmicpc.net/problem/1103">게임</a></strong></p>
+
+<figure class="half">
+    
+    <a href="/assets/img/algorithm/1103_1.png"><img src="/assets/img/algorithm/1103_1.png" alt="" /></a>
+    
+    <a href="/assets/img/algorithm/1103_2.png"><img src="/assets/img/algorithm/1103_2.png" alt="" /></a>
+    
+    <figcaption>Screenshots of Problem Explain</figcaption>
+</figure>
+
+<hr />
+
+<h2 id="code">Code</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">dx</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dy</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="mi">51</span><span class="p">][</span><span class="mi">51</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">d</span><span class="p">[</span><span class="mi">51</span><span class="p">][</span><span class="mi">51</span><span class="p">];</span> <span class="c1">// d is DP
+</span><span class="kt">bool</span> <span class="n">v</span><span class="p">[</span><span class="mi">51</span><span class="p">][</span><span class="mi">51</span><span class="p">];</span> <span class="c1">// v is Visit
+</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">ans</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">y</span><span class="p">,</span><span class="kt">int</span> <span class="n">idg</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">])</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-1"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">d</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">idg</span><span class="p">;</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">&lt;</span> <span class="n">idg</span> <span class="o">?</span> <span class="n">idg</span> <span class="o">:</span> <span class="n">ans</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">];</span>
+        <span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">];</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">nx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&lt;=</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&lt;=</span> <span class="n">m</span> <span class="o">&amp;&amp;</span> <span class="n">map</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">d</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">idg</span><span class="p">)</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">idg</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">m</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">;</span>
+            <span class="k">if</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'H'</span><span class="p">)</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+            <span class="k">else</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span> <span class="o">-</span> <span class="sc">'0'</span> <span class="p">;</span>
+        <span class="p">}</span>
+    
+    <span class="n">dfs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="feed-back">Feed Back</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">])</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-1"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span> 
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">exit(0)</code>을 해주면 프로그램이 종료가 된다.</p>
+  </li>
+  <li>
+    <p>이전에는 main에서 호출한 함수에서 <code class="highlighter-rouge">return ;</code>을 해주고 main에서 종료를 해줬는데 <br /> <code class="highlighter-rouge">exit(0)</code>을 사용하면 Code가 간결해진다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="anser-condition-code">Anser Condition Code</h3>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">nx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&lt;=</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&lt;=</span> <span class="n">m</span> <span class="o">&amp;&amp;</span> <span class="n">map</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">d</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">idg</span><span class="p">)</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">idg</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="wrong-condition-code">Wrong Condition Code</h3>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">nx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&lt;=</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&lt;=</span> <span class="n">m</span> <span class="o">&amp;&amp;</span> <span class="n">map</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">idg</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+
+</code></pre></div></div>
+<hr />
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">d[nx][ny] &lt;= idg</code> 조건의 유무에 따라 Anser or Wrong</p>
+  </li>
+  <li>
+    <p>저 이유 찾는게 너무 어려웠다. ㅡ.ㅡ^</p>
+  </li>
+  <li>
+    <p>이제 (x,y)를 가려고 할 때 그 전에 (x,y)값이 존재한다면 그 뜻은 다른 경로로 (x,y)를 visit했다는 뜻이다. <br /> 그래서 만약에 현재 내가 가는 경로에서 다음에 탐색할 위치가 (x,y)일 때 그 값이 내가 지금 갖고있는 idg값보다 클 경우에는 (x,y)를 갈 필요가 없기 때문에 조건을 추가해주어야지 시간 초과가 안나게 된다.</p>
+  </li>
+</ul>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/1103/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Python3(1)-(6)/"> Python Study (1) - (6) :: yield vs return </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-01-30
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#yield-vs-return" id="markdown-toc-yield-vs-return">yield vs return</a></li>
+</ul>
+
+<h3 id="yield-vs-return">yield vs return</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">abc</span><span class="p">():</span>
+<span class="o">...</span>     <span class="n">data</span> <span class="o">=</span> <span class="s">"abc"</span>
+<span class="o">...</span>     <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+<span class="o">...</span>             <span class="k">return</span> <span class="n">char</span>
+ 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">abc</span><span class="p">())</span>        <span class="c"># iter 함수를 사용해 함수 abc() 의 이터레이터 객체를 가지고 온다.</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="s">'a'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">StopIteration</span>
+</code></pre></div></div>
+
+<ul>
+  <li>처음 next(it)를 호출하면 ‘a’가 호출되지만, 두 번째 호출에선 abc 함수가 끝나 버렸기 때문에 예외가 발생한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">abc</span><span class="p">():</span>
+<span class="o">...</span>     <span class="n">data</span> <span class="o">=</span> <span class="s">"abc"</span>
+<span class="o">...</span>     <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+<span class="o">...</span>             <span class="k">yield</span> <span class="n">char</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">abc</span>
+<span class="o">&lt;</span><span class="n">function</span> <span class="n">abc</span> <span class="n">at</span> <span class="mh">0x104861c80</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">abc</span><span class="p">()</span>       <span class="c"># 제너레이터가 반환됨</span>
+<span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">abc</span> <span class="n">at</span> <span class="mh">0x1038711a8</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">abc</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="s">'a'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="s">'b'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="s">'c'</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">abc()</code>가 실행되면 <code class="highlighter-rouge">제너레이터 객체</code>가 반환된다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">함수의 상태</code>가 그대로 <code class="highlighter-rouge">보존</code>되기 때문에 for문의 순회 인덱스가 초기화되지 않아 a,b,c를 순서대로 반환할 수 있다.</p>
+  </li>
+  <li>
+    <p>함수의 상태를 그대로 보존하고, 다시 호출될 수 있다는 것 때문에 이터레이터 객체를 만들 때 매우 강력한 도구가 될 수 있다.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">제너레이터</code>는 <code class="highlighter-rouge">메모리가 절약</code>된다는 장점이 있다.</p>
+  </li>
+  <li>
+    <p>필요할 때마다 데이터를 생성할 수 있어서 메모리 사용을 줄 일 수 있다.</p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Python3(1)-(6)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page40" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">41/57</span>
+          
+            <a href="/page42" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> SW Expert Academy - 등산로 조성</title>
+    <meta name="description" content="  Problem  [1] Answer Code (18. 04. 08)  [2] Answer Code (18. 04. 08)  Code Review          [1] Answer Code (18. 04. 08)      [2] Answer Code (18. 04. 08)   ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/SWEA-1949/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> SW Expert Academy - 등산로 조성</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-04-08
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Algorithm" title="Category: Algorithm" rel="category">Algorithm</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#SWEA" title="Tag: SWEA" rel="tag">SWEA</a-->
+        <a href="/tag/#SWEA" title="Tag: SWEA" rel="tag">SWEA</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#problem" id="markdown-toc-problem">Problem</a></li>
+  <li><a href="#1-answer-code-18-04-08" id="markdown-toc-1-answer-code-18-04-08">[1] Answer Code (18. 04. 08)</a></li>
+  <li><a href="#2-answer-code-18-04-08" id="markdown-toc-2-answer-code-18-04-08">[2] Answer Code (18. 04. 08)</a></li>
+  <li><a href="#code-review" id="markdown-toc-code-review">Code Review</a>    <ul>
+      <li><a href="#1-answer-code-18-04-08-1" id="markdown-toc-1-answer-code-18-04-08-1">[1] Answer Code (18. 04. 08)</a></li>
+      <li><a href="#2-answer-code-18-04-08-1" id="markdown-toc-2-answer-code-18-04-08-1">[2] Answer Code (18. 04. 08)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="problem">Problem</h2>
+<p>Problem URL : <strong><a href="https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq">등산로 조성</a></strong></p>
+
+<hr />
+
+<h2 id="1-answer-code-18-04-08">[1] Answer Code (18. 04. 08)</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">dx</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dy</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span> <span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">9</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">visit</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">9</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">ans</span><span class="p">;</span>
+<span class="kt">bool</span> <span class="n">chk</span><span class="p">;</span>
+
+
+<span class="kt">void</span> <span class="n">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="n">prev</span><span class="p">,</span> <span class="kt">int</span> <span class="n">d</span><span class="p">){</span> <span class="c1">// d is depth
+</span>    <span class="k">if</span><span class="p">(</span> <span class="n">visit</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="p">)</span>
+        <span class="k">return</span> <span class="p">;</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">&lt;</span> <span class="n">d</span> <span class="o">?</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ans</span><span class="p">;</span>
+    
+    <span class="k">if</span><span class="p">(</span> <span class="n">prev</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span> <span class="c1">// [0]
+</span>        <span class="n">visit</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> <span class="c1">// [1]
+</span>            <span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            
+            <span class="kt">int</span> <span class="n">now</span> <span class="o">=</span> <span class="n">prev</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">next</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">];</span>
+            
+            <span class="k">if</span><span class="p">(</span> <span class="n">now</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">next</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span>
+                <span class="k">continue</span><span class="p">;</span>
+            
+            <span class="k">if</span><span class="p">(</span> <span class="n">now</span> <span class="o">&gt;</span> <span class="n">next</span> <span class="p">)</span>
+                <span class="n">dfs</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">next</span><span class="p">,</span> <span class="n">d</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+            
+            <span class="k">if</span><span class="p">(</span><span class="o">!</span> <span class="n">chk</span><span class="p">){</span>
+                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">k</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="p">(</span> <span class="n">now</span> <span class="o">&gt;</span> <span class="n">next</span> <span class="o">-</span> <span class="n">i</span><span class="p">){</span>
+                        <span class="n">chk</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                        <span class="n">dfs</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">next</span><span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="n">d</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+                        <span class="n">chk</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+                    <span class="p">}</span>
+            <span class="p">}</span>
+            
+        <span class="p">}</span> <span class="c1">// End of [1] Loop
+</span>        <span class="n">visit</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span> <span class="c1">// End of [0] If
+</span><span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">tc</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">tc</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">tc</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">chk</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">map</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">map</span><span class="p">));</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">visit</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">visit</span><span class="p">));</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
+        
+        <span class="kt">int</span> <span class="n">_max</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">a</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">a</span><span class="o">++</span><span class="p">)</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">b</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">b</span><span class="o">++</span><span class="p">){</span>
+                <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">map</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]);</span>
+                <span class="n">_max</span> <span class="o">=</span> <span class="n">_max</span> <span class="o">&lt;</span> <span class="n">map</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]</span> <span class="o">?</span> <span class="n">map</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]</span> <span class="o">:</span> <span class="n">_max</span><span class="p">;</span>
+            <span class="p">}</span>
+        
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">a</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">a</span><span class="o">++</span><span class="p">)</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">b</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">b</span><span class="o">++</span><span class="p">){</span>
+                <span class="k">if</span><span class="p">(</span> <span class="n">map</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]</span> <span class="o">==</span> <span class="n">_max</span><span class="p">)</span>
+                    <span class="n">dfs</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">map</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">],</span><span class="mi">1</span><span class="p">);</span>
+            <span class="p">}</span>
+            
+                
+        <span class="n">printf</span><span class="p">(</span><span class="s">"#%d %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">ans</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="2-answer-code-18-04-08">[2] Answer Code (18. 04. 08)</h2>
+
+<pre><code class="language-cppp">
+#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+using namespace std;
+
+int dx[] = { 0,1,0,-1 };
+int dy[] = { 1,0,-1,0 };
+
+int map[9][9];
+int visit[9][9];
+int n,k;
+int ans;
+
+void dfs(int x, int y, int prev, int d, bool chk){ // d is depth
+    ans = ans &lt; d ? d : ans;
+    visit[x][y] = 1;
+    
+    for(int i=0; i&lt;4; i++){ // [1]
+        int nx = x + dx[i];
+        int ny = y + dy[i];
+        
+        int now = prev;
+        int next = map[nx][ny];
+        
+        // 다음 위치가 map범위 벗어나거나
+        // 다음 위치를 이미 방문
+        if( next == 0 || visit[nx][ny])
+            continue;
+        
+        if( now &gt; next )
+            dfs(nx,ny,next, d+1, chk);
+        
+        if(!chk){
+            for(int i=1; i&lt;=k; i++)
+                if ( now &gt; next - i){
+                    dfs(nx, ny, next-i, d+1, true);
+                }
+        }
+    } // End of [1] Loop
+    visit[x][y] = 0;
+}
+
+int main(){
+    int tc = 10;;
+    cin &gt;&gt; tc;
+    
+    for(int i=1; i&lt;=tc; i++){
+        memset(map, 0, sizeof(map));
+        memset(visit, 0, sizeof(visit));
+        ans = 0;
+        cin &gt;&gt; n &gt;&gt; k;
+        
+        int _max = -1;
+        for(int a=1; a&lt;=n; a++)
+            for(int b=1; b&lt;=n; b++){
+                scanf("%d",&amp;map[a][b]);
+                _max = _max &lt; map[a][b] ? map[a][b] : _max;
+            }
+        
+        for(int a=1; a&lt;=n; a++)
+            for(int b=1; b&lt;=n; b++)
+                if( map[a][b] == _max)
+                    dfs(a,b,map[a][b],1,false);
+        
+        printf("#%d %d\n",i,ans);
+    }
+    return 0;
+}
+
+</code></pre>
+
+<hr />
+
+<h2 id="code-review">Code Review</h2>
+
+<h3 id="1-answer-code-18-04-08-1">[1] Answer Code (18. 04. 08)</h3>
+
+<ul>
+  <li>
+    <p>SW Expert Academy 문제.</p>
+  </li>
+  <li>
+    <p>Code가 너무 간결하지 못하다.</p>
+  </li>
+  <li>
+    <p>반드시 가장 높은곳에서 라는 조건을 인지하지 못하고 풀다가 시간낭비를 엄청 했다.</p>
+  </li>
+  <li>
+    <p>[1] 조건 필요가 없었다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="2-answer-code-18-04-08-1">[2] Answer Code (18. 04. 08)</h3>
+
+<ul>
+  <li>Code 리뷰 결과 Changed Code</li>
+</ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/FP-Basic-Concepts-Of-Files-(2)/"> 파일의 기본개념 - 파일의 종류  [ Part 2 ] </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/SWEA-4008/"> SW Expert Academy - 숫자 만들기</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/SWEA-1949/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/SWEA-1949/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

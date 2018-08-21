@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Ethereum Basic :: Solidity Grammer - 함수  </title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Ethereum-Basic-Solidity-(2)/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Ethereum Basic :: Solidity Grammer - 함수  </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-26
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a-->
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#1-external--public--internal--private" id="markdown-toc-1-external--public--internal--private">1. external / public / internal / private</a></li>
+  <li><a href="#2-constant" id="markdown-toc-2-constant">2. constant</a></li>
+  <li><a href="#3-payable" id="markdown-toc-3-payable">3. payable</a></li>
+  <li><a href="#생성자-constructor" id="markdown-toc-생성자-constructor">생성자 (Constructor)</a></li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span> 
+
+<span class="nx">contract</span> <span class="nx">SimpleStorage</span> <span class="p">{</span>
+    <span class="nx">uint</span> <span class="nx">storedData</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="kd">set</span><span class="p">(</span><span class="nx">uint</span> <span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">storedData</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="kd">get</span><span class="p">()</span> <span class="nx">constant</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">storedData</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>함수 내부에 선언된 변수를 <code class="highlighter-rouge">지역변수 (local variable)</code></p>
+
+<p>외부에 선언된 변수를 <code class="highlighter-rouge">상태 변수 (state variable)</code></p>
+
+<p><br /></p>
+
+<p>함수의 형태</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      1.함수 이름    2.입력 매개 변수      3.옵션           4.출력 매개 변수
+function name   (x1, x2, ... , xN)   option returns (y1, y2, ... ,yN) {
+                5.함수 내용
+}
+</code></pre></div></div>
+
+<p>1번은 필수, 2,3,4번은 생략이 가능하다.</p>
+
+<p>3번 생략시 자동으로 pulbic이 적용된다.</p>
+
+<p><br /></p>
+
+<p>3.옵션에 대해 알아보자.</p>
+
+<h4 id="1-external--public--internal--private">1. external / public / internal / private</h4>
+
+<p>외부 컨트랙트가</p>
+
+<p>이 함수에 접근 할 수 있는지 설정할 수 있다.</p>
+
+<p>이를 <code class="highlighter-rouge">가시성(visibility)</code>라 한다.</p>
+
+<p>private 함수는 내부에서만</p>
+
+<p>internal 함수는 내부와 상속된 컨트랙트에서 접근이 가능하다.</p>
+
+<p>컨트랙트 밖에서도 접근을 가능하게 하려면</p>
+
+<p>external or public을 붙이면 된다.</p>
+
+<p><br /></p>
+
+<h4 id="2-constant">2. constant</h4>
+
+<p>함수가</p>
+
+<p>컨트랙트의 상태 변수를</p>
+
+<p>수정하지 않음을 보장하려면</p>
+
+<p>constant를 붙여서</p>
+
+<p><code class="highlighter-rouge">상수 함수(constant function)</code>으로 선언할 수 있다.</p>
+
+<p>상수 함수의 실행은 gas를 소모하지 않는다.</p>
+
+<p>만약 함수에서 컨트랙트의 상태를 수정하고 싶다면,</p>
+
+<p>이 옵션을 사용해서는 안된다.</p>
+
+<p><br /></p>
+
+<h4 id="3-payable">3. payable</h4>
+
+<p>컨트랙트가 자신의 함수를 통해</p>
+
+<p>다른 지갑이나 컨트랙트에서 이더를 송금받고 싶은 경우,</p>
+
+<p><code class="highlighter-rouge">payable</code>를 붙여 <code class="highlighter-rouge">지불 가능 함수(payable function)</code>로 선언해야 한다.</p>
+
+<hr />
+
+<h2 id="생성자-constructor">생성자 (Constructor)</h2>
+
+<p><code class="highlighter-rouge">생성자</code>를 <code class="highlighter-rouge">선언</code>하려면</p>
+
+<p><code class="highlighter-rouge">컨트랙트와 같은 이름의 함수</code>를 선언하면 된다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span> 
+
+<span class="nx">contract</span> <span class="nx">Example4</span> <span class="p">{</span>
+
+    <span class="nx">uint</span> <span class="nx">count</span><span class="p">;</span>
+    <span class="nx">address</span> <span class="k">from</span><span class="p">;</span>
+    <span class="nx">address</span> <span class="nx">to</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="nx">Example4</span><span class="p">(</span><span class="nx">uint</span> <span class="nx">_count</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_to</span><span class="p">)</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">count</span> <span class="o">=</span> <span class="nx">_count</span><span class="p">;</span>
+        <span class="k">from</span> <span class="o">=</span> <span class="nx">_from</span><span class="p">;</span>
+        <span class="nx">to</span> <span class="o">=</span> <span class="nx">_to</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">contract</span> <span class="nx">Example4Creator</span> <span class="p">{</span>
+    <span class="nx">Example4</span> <span class="nx">e</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Example4</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">MyAddress</span><span class="p">,</span> <span class="nx">ToAddress</span>  <span class="p">,</span><span class="mi">2018</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+</code></pre></div></div>
+
+<p>이렇게 생성자를 선언하면</p>
+
+<p>Mist or Remix에서 컨트랙트를 생성할 때,</p>
+
+<p>생성자의 입력 매개 변수를 넣어줄 수 있는</p>
+
+<p>공간이 따로 생긴다.</p>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/Ethereum-Basic-Solidity-(14)/"> Ethereum Basic :: Solidity Grammer - 대비책 함수 (Fallback Function) & 오류 처리 (Error Handling) </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Ethereum-Basic-Solidity-(3)/"> Ethereum Basic :: Solidity Grammer - 형 변환(Type Conversion)  </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Ethereum-Basic-Solidity-(2)/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Ethereum-Basic-Solidity-(2)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

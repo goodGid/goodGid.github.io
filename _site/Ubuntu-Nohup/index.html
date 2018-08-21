@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Ubuntu :: Nohup </title>
+    <meta name="description" content="  What is Nohup?  &amp;이란 ?  주의사항  출력  nohup과 &amp;차이  TipWhat is Nohup?사전적 정의를 알아보자.리눅스, 유닉스에서 쉘스크립트파일 (*.sh)을 데몬형태로 실행시키는 프로그램&amp;이란 ?프로세스를 실행할 때 백그라운드에서 ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Ubuntu-Nohup/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Ubuntu :: Nohup </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-27
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Technology" title="Category: Technology" rel="category">Technology</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Technology" title="Tag: Technology" rel="tag">Technology</a-->
+        <a href="/tag/#Technology" title="Tag: Technology" rel="tag">Technology</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#what-is-nohup" id="markdown-toc-what-is-nohup">What is Nohup?</a></li>
+  <li><a href="#이란-" id="markdown-toc-이란-">&amp;이란 ?</a></li>
+  <li><a href="#주의사항" id="markdown-toc-주의사항">주의사항</a></li>
+  <li><a href="#출력" id="markdown-toc-출력">출력</a></li>
+  <li><a href="#nohup과-차이" id="markdown-toc-nohup과-차이">nohup과 &amp;차이</a></li>
+  <li><a href="#tip" id="markdown-toc-tip">Tip</a></li>
+</ul>
+
+<h2 id="what-is-nohup">What is Nohup?</h2>
+
+<p><a href="https://ko.wikipedia.org/wiki/Nohup">사전적 정의</a>를 알아보자.</p>
+
+<p>리눅스, 유닉스에서 쉘스크립트파일 (*.sh)을 데몬형태로 실행시키는 프로그램</p>
+
+<hr />
+
+<h2 id="이란-">&amp;이란 ?</h2>
+
+<p>프로세스를 실행할 때 백그라운드에서 동작하도록 만드는 명령어이다.</p>
+
+<hr />
+
+<h2 id="주의사항">주의사항</h2>
+
+<p>nohup으로 실행할 쉘스크립트파일 (*.sh)은</p>
+
+<p>현재 퍼미션이 755상태이여야 한다.</p>
+
+<p>chmod 755 shell.sh</p>
+
+<hr />
+
+<h2 id="출력">출력</h2>
+
+<p>nohup으로 쉘파일을 실행하면</p>
+
+<p>자동으로 “nohup.out” 파일이 생성되며,</p>
+
+<p>이 파일에는 리다이렉션을 사용하지 않은 출력문자열이 자동으로 저장된다.</p>
+
+<p><br /></p>
+
+<ul>
+  <li>기본 출력</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup shell.sh
+
+cat nohup.out
+hello
+</code></pre></div></div>
+
+<ul>
+  <li>다른 파일에 출력</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup shell.sh &gt; 1.txt
+cat 1.txt
+hello
+</code></pre></div></div>
+
+<ul>
+  <li>출력 안하기</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nohup shell.sh &gt; /dev/null
+cat nohup.out
+cat: nohup.out: No such file or directory
+</code></pre></div></div>
+
+<hr />
+
+<ul>
+  <li>nohup 종료방법</li>
+</ul>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>“ps -ef</td>
+          <td>grep 쉘스크립트파일명” 명령으로 데몬형식으로 실행</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>“kill -9 PID번호“ 명령으로 해당 프로세스 종료</li>
+</ol>
+
+<hr />
+
+<h2 id="nohup과-차이">nohup과 &amp;차이</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./run &amp;
+$ nohup ./run &amp;
+</code></pre></div></div>
+
+<p>위 두 명령어의 차이점은 다음과 같다.</p>
+
+<p><br /></p>
+
+<p>nohup으로 실행하면 hang-up signal 이 와도 동작하기 때문에</p>
+
+<p>터미널 연결이 끊어져도 실행을 멈추지 않는다.</p>
+
+<p>‘&amp;’으로만 실행해도 터미널이 끊어져도 실행이 멈추지는 않던데…’ 라고 말하는 분들도 있다.</p>
+
+<p>&amp; 은 백그라운드로 돌린다는 의미이며,</p>
+
+<p>기본적으로는 nohup이 아닐 경우 터미널이 끊어지면 실행도 끊어진다.</p>
+
+<p>하지만 요즘 옵션에 nohup과 같은 동작을 하게 설정이 되어 있어서</p>
+
+<p>&amp; 만으로도 nohup 과 같은 동작을 보인다.</p>
+
+<hr />
+
+<h2 id="tip">Tip</h2>
+
+<p>만약 nohup명령어로</p>
+
+<p>직접 만든 스크립트를 실행하고자 하는데</p>
+
+<p>명령어를 입력한 후 엔터를 치면</p>
+
+<p>exit이 나온다면 스크립트에 에러가 있어 종료가 되는 것이다.</p>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/Jekyll/"> Jekyll이란? 
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/Edu-Training/"> Smart Contract 교육 (2) </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Ubuntu-PPA/"> Ubuntu :: PPA(Personal Package Archive) </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Ubuntu-Nohup/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Ubuntu-Nohup/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

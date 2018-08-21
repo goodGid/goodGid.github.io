@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> BlockChain (2) </title>
+    <meta name="description" content="                       원문은 Blog에서 확인하자 !        아래는 위 Blog에서 핵심적인 부분(주관적)을 발췌하였다.  데이터를 중앙서버가 가지는 것이 아니라, 각 노드들이 동일한 복제본을 각각 보관하는 것입니다.각 노드들이 가진 데이터를 지속적인 싱크...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/BlockChain(2)/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> BlockChain (2) </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-06
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a-->
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        
+<figure>
+    
+    <a href="/assets/img/block_chain/ethereum.png"><img src="/assets/img/block_chain/ethereum.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>원문은 <a href="http://www.chaintalk.io/archive/lecture/43">Blog</a>에서 확인하자 !</p>
+  </li>
+  <li>
+    <p>아래는 위 Blog에서 핵심적인 부분(주관적)을 발췌하였다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>데이터를 중앙서버가 가지는 것이 아니라, 각 노드들이 동일한 복제본을 각각 보관하는 것입니다.</p>
+
+<p>각 노드들이 가진 데이터를 지속적인 싱크를 통해서 일치시켜 나감으로써 <code class="highlighter-rouge">데이터의 정합성</code>을 유지합니다.<br /><br /></p>
+
+<p>이 데이터는 다수의 <code class="highlighter-rouge">어카운트</code>로 구성되는데, 어카운트에는 두가지 형태가 있습니다.</p>
+
+<ol>
+  <li>사용자 어카운트 (프라이빗 키에 의해 제어됨)</li>
+  <li>컨트랙트 (코드에 의해서 제어됨) <br /><br /></li>
+</ol>
+
+<p>이들 어카운트들은 모두 <code class="highlighter-rouge">상태(state)</code> 정보를 가집니다.<br /><br /></p>
+
+<p>이 상태정보를 바꾸는 것이 <code class="highlighter-rouge">트랜잭션</code>입니다.</p>
+
+<p>트랜잭션은 사용자 어카운트에서 일으킬 수도 있고, 컨트랙트가 발생시킬 수도 있습니다.<br /><br /></p>
+
+<p>이 중 컨트랙트에 포함되는 코드가 바로 <code class="highlighter-rouge">애플리케인션</code>의 <code class="highlighter-rouge">핵심적인 비지니스 로직</code>을 구성하게 됩니다.<br /><br /></p>
+
+<p>이더리움은 컨트랙트 코드를 프로그래밍하는 상위 언어를 제공하는데,</p>
+
+<p>그 중 가장 보편적으로 쓰이는 것이 <code class="highlighter-rouge">솔리디티(solidity)</code> 입니다.<br /><br /></p>
+
+<p>이더리움 컨트랙트 코드는</p>
+
+<p><code class="highlighter-rouge">EVM</code> 이라는 가상머신을 통해 수행되고</p>
+
+<p>그 결과에 의해서 어카운트의 상태가 변화하게 됩니다.<br /><br /></p>
+
+<p>트랜잭션들은 일정한 주기마다</p>
+
+<p>블록이라는 그룹으로 묶여서</p>
+
+<p>다른 노드들로 전파가 됩니다. <br /><br /></p>
+
+<p>각 블록에는 이 안에 포함된 트랜잭션들의 해시값과</p>
+
+<p>이전 블록의 해시값을 포함하게 됨으로써</p>
+
+<p>상호간에 불일치가 있거나,</p>
+
+<p>과거기록에 대한 변조가 있을시 쉽게 발견될 수 있도록 합니다. <br /><br /></p>
+
+<p>네트워크에 참가하는 모든 노드들(정확히는 Full Node입니다)은</p>
+
+<p>이들 블록을 각자 처리하고 그 결과가 동일함을</p>
+
+<p>서로 합의해(Consensus) 갑니다. <br /><br /></p>
+
+<p>이 <code class="highlighter-rouge">합의과정</code>이 <code class="highlighter-rouge">블록체인 기술</code>의 <code class="highlighter-rouge">가장 중요한 메카니즘</code>입니다.</p>
+
+<p>이 합의 방식에는 여러 가지 솔루션들이 있는데,</p>
+
+<p>이더리움이 현재 사용하고 있는 방식은 <code class="highlighter-rouge">Proof of Work</code> 의 일종입니다.</p>
+
+<p>하지만 보안성을 더 높이고, 처리속도와 용량을</p>
+
+<p>대폭적으로 향상시키기 위해 <code class="highlighter-rouge">Proof of Stake</code> 의 한 형태인</p>
+
+<p><code class="highlighter-rouge">캐스퍼 방식</code>으로 전환하고자 계획 중입니다. <br /><br /></p>
+
+<p>이렇게 각 노드들의 합의에 의해 dApp 의 백엔드인</p>
+
+<p>블록체인의 <code class="highlighter-rouge">정합성</code>이 유지됩니다.<br /><br /></p>
+
+<p>그렇다면 dApp 아키텍쳐가 중앙서버 모델에 비해</p>
+
+<p>가지는 장점은 무엇일까요?<br /><br /></p>
+
+<p>지금까지 많은 언급된 장점들은 주로 다음과 같은 점들이었습니다.</p>
+
+<hr />
+
+<ol>
+  <li>
+    <p>운영주체에 대한 신뢰가 필요 없거나 최소화</p>
+  </li>
+  <li>
+    <p>투명한 운영 원칙과 규칙 관철 용이</p>
+  </li>
+  <li>
+    <p>보안 향상</p>
+  </li>
+  <li>
+    <p>프라이버시 보호</p>
+  </li>
+  <li>
+    <p>이미 투자된 자원의 활용도 증가</p>
+  </li>
+  <li>
+    <p>국가별 규제를 넘어선 글로벌 서비스 용이</p>
+  </li>
+  <li>
+    <p>IoT 네트워크에 매우 유리</p>
+  </li>
+  <li>
+    <p>소수기업의 서비스/이윤 독점화 해소</p>
+  </li>
+</ol>
+
+<hr />
+<p><br /></p>
+
+<p>이들 장점들이 dApp 만 사용한다고 해서</p>
+
+<p>모두 발휘되고 기존 중앙서버 모델의 문제를</p>
+
+<p>단번에 모두 해결한다고는 볼 수 없을 겁니다.
+<br /><br /></p>
+
+<p>독자적인 인터넷 서비스로서</p>
+
+<p>사용자들에게 경쟁력있는 사용가치를 만들어내지 못한다면,</p>
+
+<p>탈중앙화된 모델을 사용한다는 것만으로는</p>
+
+<p>큰 장점이 되지 못하는 경우가 많을 것입니다. 
+<br /><br /></p>
+
+<p>반면, 탈중앙화된 어플리케이션들이</p>
+
+<p>넘어야 할 <code class="highlighter-rouge">제약</code> 또는 <code class="highlighter-rouge">단점</code>들도 존재합니다. 
+<br /><br /></p>
+
+<p>어떤 트랜잭션을 실행하기 위해서는,</p>
+
+<p>네트워크에 있는 모든 노드들이</p>
+
+<p>전부 이를 다 실행해봐야 한다는</p>
+
+<p><code class="highlighter-rouge">비효율성</code>이 항상 존재합니다.</p>
+
+<p><code class="highlighter-rouge">스케일링</code>에 매우 제한이 되는 요소입니다. 
+<br /><br /></p>
+
+<p>이를 해결하기 위한 노력,</p>
+
+<p>예를 들어 <code class="highlighter-rouge">샤딩 기법</code>,</p>
+
+<p>멀티체인 솔루션들이 활발히 연구되고 있지만,</p>
+
+<p>안정적인 솔루션이 나오기까지는</p>
+
+<p>아직 많은 시간이 필요합니다.</p>
+
+<p>스케일링에 제한이 있다 보니,</p>
+
+<p>트랜잭션에 대한 비용이</p>
+
+<p>부담이 될 수도 있습니다. 
+<br /><br /></p>
+
+<p>너무 복잡한 트랜잭션이나 로직을 구현하려다 보면</p>
+
+<p>이에 소모되는 비용이 너무 클 수 있습니다.</p>
+
+<p>아직까지는 비교적 단순한 형태의 로직에</p>
+
+<p>촛점을 맞추는 이유들 중의 하나입니다. 
+<br /><br /></p>
+
+<p>블록체인에서 직접 제공되는 데이터는</p>
+
+<p><code class="highlighter-rouge">단순 키-밸류</code>에 불과합니다.</p>
+
+<p>다른 현대적인 데이터베이스에 비하면</p>
+
+<p>형편없이 초보적인 기능만이 제공됩니다.</p>
+
+<p>따라서 이를 보완하기 위해</p>
+
+<p>블록체인과 함께 별도의 여러 가지 형태의</p>
+
+<p>인덱스와 필터링을 제공하는</p>
+
+<p>로컬 데이터베이스를 운용하는 기법들도</p>
+
+<p>더 많이 발전할 것으로 예상됩니다.
+<br /><br /></p>
+
+<p>dApp 을 기획하고 설계함에 있어서</p>
+
+<p>탈중앙화된 모델이 가진 장점들을</p>
+
+<p>극대화시키면서도,</p>
+
+<p>피하기 어려운 단점들을 잘 보완하는 것이</p>
+
+<p>좋은 설계의 핵심일 것 같습니다.</p>
+
+<p>그리고 이런 좋은 설계는 한 번에 완성되는 것이 아니라</p>
+
+<p>많은 실패와 경험의 축적이 필요하리라 생각합니다.</p>
+
+<p><a href="https://goodgid.github.io/BlockChain(3)/">다음 편</a></p>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/BlockChain(1)/"> BlockChain (1) </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Python3(4)-(1)/"> Python Study (4) - (1) :: 클래스/인스턴스 객체의 관계, 생성자/소멸자 </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/BlockChain(2)/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/BlockChain(2)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

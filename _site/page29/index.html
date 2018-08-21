@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page29/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Ethereum-Basic-Build-Development-Geth/"> Ethereum Basic :: 사설 이더리움 네트워크(Geth) 구축하기 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-25
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#Ethereum" title="Tag: Ethereum" rel="tag">Ethereum</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#이더리움-클라이언트-소개" id="markdown-toc-이더리움-클라이언트-소개">이더리움 클라이언트 소개</a></li>
+  <li><a href="#사설-이더리움-네트워크-구축하기" id="markdown-toc-사설-이더리움-네트워크-구축하기">사설 이더리움 네트워크 구축하기</a></li>
+  <li><a href="#geth-클라이언트-프로그램의-옵션" id="markdown-toc-geth-클라이언트-프로그램의-옵션">Geth 클라이언트 프로그램의 옵션</a></li>
+  <li><a href="#geth-클라이언트-계좌-만들기" id="markdown-toc-geth-클라이언트-계좌-만들기">Geth 클라이언트 계좌 만들기</a></li>
+</ul>
+
+<ul>
+  <li>이더리움의 다양한 클라이언트에 대해 살펴보자.</li>
+</ul>
+
+<h2 id="이더리움-클라이언트-소개">이더리움 클라이언트 소개</h2>
+
+<ul>
+  <li>
+    <p>이더리움은 중앙 집중형 서버 프로그램이 따로 존재하지 않는다.</p>
+  </li>
+  <li>
+    <p>이오로지 클라이언트 프로그램만 존재한다.</p>
+  </li>
+  <li>
+    <p>이더리움 클라이언트는 멀티 플랫폼 환경을 지원하기 위해 다양한 프로그래밍 언어로 개발되고 있다.</p>
+  </li>
+</ul>
+
+<h2 id="사설-이더리움-네트워크-구축하기">사설 이더리움 네트워크 구축하기</h2>
+
+<p>공용 이더리움 네트워크상에서</p>
+
+<p>개발자가 새롭게 만든 dApp을 배포하려면</p>
+
+<p>실제 이더를 소비하여</p>
+
+<p>컴파일된 코드를 블록으로 저장해야한다.</p>
+
+<p><br /></p>
+
+<p>그런데 오류가 발견된다면</p>
+
+<p>수정 후 다시 배포를 해야하는데</p>
+
+<p>이 때 추가로 이더를 소비해야한다.</p>
+
+<p><br /></p>
+
+<p>따라서 개발한 dApp을</p>
+
+<p>이더 걱정없이 마음 편하게</p>
+
+<p>테스트할 수 있는 공간이 필요하다.</p>
+
+<p><br /></p>
+
+<p>이더리움 사설 네트워크에서는</p>
+
+<p>이더를 원하는 만큼 생성 or 채굴 할 수 있기 때문에</p>
+
+<p>dApp을 테스트하는데 매우 효율적인 공간이다.</p>
+
+<p><b></b></p>
+
+<p>이러한 사설 네트워크를 구축하기 위해선</p>
+
+<p>생성 or 설정할 요소들이 있다.</p>
+
+<p>　1. Genesis 블록 파일 생성</p>
+
+<p>이더리움 네트워크에서 사용되는 블록체인의 최초 시작 블록을 생성한다.</p>
+
+<p>　2. Data 디렉토리 설정</p>
+
+<p>계좌나 블록 정보들이 저장될 디렉토리를 설정한다.</p>
+
+<p>　3. 네트워크 ID 설정</p>
+
+<p>사설 이더리움 네트워크의 ID를 정의한다.</p>
+
+<p>　4. Node Discovery 비활성화</p>
+
+<p>이더리움 네트워크에 있는 모든 노드들은</p>
+
+<p>끊임없이 다른 노드를 찾아</p>
+
+<p>자신의 Peer로 등록하게 되는데</p>
+
+<p>테스트의 용도로 구성된 사설 네트워크에서는</p>
+
+<p>이러한 과정이 필요하지 않으므로 비활성화한다.</p>
+
+<hr />
+
+<h2 id="geth-클라이언트-프로그램의-옵션">Geth 클라이언트 프로그램의 옵션</h2>
+
+<ul>
+  <li>옵션을 통해 이더리움 네트워크 환경을 설정할 수 있다.</li>
+</ul>
+
+<p>　1. --identity</p>
+
+<p>다른 이더리움 네트워크와</p>
+
+<p>구분 짓기 위한 일종의 식별자(ID) 역할</p>
+
+<p>　2. --nodiscovery</p>
+
+<p>자신의 peer을 찾으려하는 다른 노드들로부터</p>
+
+<p>나의 노드를 발견하지 못하게 숨기는 역할</p>
+
+<p>　3. --maxprees 0</p>
+
+<p>이 옵션 값을 0으로 하면</p>
+
+<p>어떤 노드도 사설 네트워크에 접속할 수 없다.</p>
+
+<p>원하는 개수의 peer들만</p>
+
+<p>사설 네트워크에 연결할 수 있도록 설정할 수 있다.</p>
+
+<p>　4. --rpc</p>
+
+<p>해당 이더리움 노드에 접근할 수 있는</p>
+
+<p>RPC 인터페이스를 활성화한다.</p>
+
+<p>Geth에서는 기본적으로 활성화되어 있다.</p>
+
+<p>　5. --rpcapi : “db, eth, web3, miner”</p>
+
+<p>RPC 인터페이스를 통해서</p>
+
+<p>어떤 API를 사용할 것인지 정의할 수 있다.</p>
+
+<p>RPC 인터페이스가 활성화되면</p>
+
+<p>누구나 API를 통해 노드에 접근할 수 있기 때문에</p>
+
+<p>필요한 API만 정의한다.</p>
+
+<p>　6. --rpcaddr</p>
+
+<p>RPC 인터페이스를 통해</p>
+
+<p>접근을 허용할 IP주소를 설정할 수 있다.</p>
+
+<p>0.0.0.0으로 설정할 경우,</p>
+
+<p>모든 내부 네트워크 IP가 접근할 수 있다.</p>
+
+<p>　7. --rpcport “8123”</p>
+
+<p>RPC 인터페이스에 접근하기 위한 포트를 정의</p>
+
+<p>　8. --rpccorsdomain “*”</p>
+
+<p>사설 네트워크에 어떤 주소를 가진 RPC 클라이언트들이 접근하여</p>
+
+<p>작업을 수행할 수 있는지를 정의한다.</p>
+
+<p>인증되지 않은 노드들이</p>
+
+<p>RPC를 통해서 사설 네트워크에 접속하는 것을 막기 위해</p>
+
+<p>와일드카드(*) 대신에 특정 URL을 정의하는 것이 좋으나,</p>
+
+<p>단순히 dApp을 테스트하기 위한 용도라면</p>
+
+<p>와일드카드를 사용해도 무방하다.</p>
+
+<p>　9. --dataidr “(path)”</p>
+
+<p>사설 네트워크의 블록 데이터들이 저장될 폴더를 지정한다.</p>
+
+<p>만약 공개 네트워크를 같이 사용하고자 한다면,</p>
+
+<p>사설 네트워크용 폴더를 확실하게 구분해서 지정해야한다.</p>
+
+<p>　10. --port “30303”</p>
+
+<p>이더리움 네트워크의 노드들이</p>
+
+<p>수동으로 사설 네트워크에 접속하기 위한 포트를 정의한다.</p>
+
+<p>　11. --mine</p>
+
+<p>이더리움 채굴을 활성화한다.</p>
+
+<hr />
+
+<h2 id="geth-클라이언트-계좌-만들기">Geth 클라이언트 계좌 만들기</h2>
+
+<ul>
+  <li>자세한 설치 방법은 <a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">환경 설정 가이드</a>을 참고</li>
+</ul>
+
+<p>사설 네트워크를 구축하기에 앞서 Geth 클라이언트용 개인 계좌를 개설해야 한다.</p>
+
+<p>Geth 클라이언트의 계좌를 생성하는 2가지 방법</p>
+
+<ol>
+  <li>
+    <p>기본적으로 이더리움 사설 네트워크를 구축한 후 콘솔에 접속하여 개설하는 방법</p>
+  </li>
+  <li>
+    <p>Geth 클라이언트를 실행하기 전에 미리 계좌를 생성하는 방법</p>
+  </li>
+</ol>
+
+<p>2번째 방법으로 진행을 해보자.</p>
+
+<p><br /></p>
+
+<p><code class="highlighter-rouge">--datadir</code> 옵션은</p>
+
+<p>블록 데이터와 계좌 정보가</p>
+
+<p>저장될 폴더를 지정하는 옵션이다.</p>
+
+<p><a href="https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options">–datadir</a> “/home/karalabe/.ethereum”  Data directory for the databases and keystore</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>geth --datadir {저장시킬 위치} account new
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>accout list 옵션을 사용하면</p>
+
+<p>우리가 개설한 계좌의 정보를 조회할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./geth --datadir=$ETH_HOME/db/pnet account list
+
+./geth --datadir $ETH_HOME/db/pnet account list
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/ethereum/eth_basic_build_dev_get_1.png"><img src="/assets/img/ethereum/eth_basic_build_dev_get_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Ethereum-Basic-Build-Development-Geth/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-12/"> Machine Learning 12-(1) :: NN의 꽃 RNN 이야기 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-23
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#sequence-data" id="markdown-toc-sequence-data">Sequence Data</a></li>
+  <li><a href="#recurrent-neural-network" id="markdown-toc-recurrent-neural-network">Recurrent Neural Network</a></li>
+  <li><a href="#example-character-level-language-model" id="markdown-toc-example-character-level-language-model">Example Character-level language Model</a></li>
+  <li><a href="#multi-layer-rnn" id="markdown-toc-multi-layer-rnn">Multi-Layer RNN</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-SHPG_KMUkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><a href="https://github.com/nlintz/TensorFlow-Tutorials">Source</a></p>
+
+<hr />
+
+<h2 id="sequence-data">Sequence Data</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_1.png"><img src="/assets/img/machine_learning/ML_12_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>기존에는 시리즈 데이터가 아닌</p>
+
+<p>독립적인 데이터였다.</p>
+
+<p><br /></p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_2.png"><img src="/assets/img/machine_learning/ML_12_1_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>현재 State가 다음 State에 영향을 끼친다.</p>
+
+<p>시리즈인 데이터에 적합한 모델이다.</p>
+
+<p><code class="highlighter-rouge">Notice</code>를 주의깊게 보자.</p>
+
+<hr />
+
+<h2 id="recurrent-neural-network">Recurrent Neural Network</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_3.png"><img src="/assets/img/machine_learning/ML_12_1_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>x라는 입력값과 이전의 값으로</p>
+
+<p>어떤 함수 fx()에 넣어서</p>
+
+<p>새로운 상태값(=Ht)을 구한다.</p>
+
+<hr />
+
+<h2 id="example-character-level-language-model">Example Character-level language Model</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_4.png"><img src="/assets/img/machine_learning/ML_12_1_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>hidden layer을 보면</p>
+
+<p>그 전에 값이 현재 값에 영향을 미친다.</p>
+
+<p>즉 이전에 값들을 기억한다고 볼 수 있다.</p>
+
+<p>그리고 Y값을 뽑아낼 때</p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_5.png"><img src="/assets/img/machine_learning/ML_12_1_5.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h2 id="multi-layer-rnn">Multi-Layer RNN</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_12_1_6.png"><img src="/assets/img/machine_learning/ML_12_1_6.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>1개의 Layer가 아닌</p>
+
+<p>여러개의 Layer도 가능하다.</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-12/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/Build-Development-Environment/"> Build Development Environment </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-23
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#build-development-environment" id="markdown-toc-build-development-environment">Build Development Environment</a></li>
+</ul>
+
+<h2 id="build-development-environment">Build Development Environment</h2>
+
+<p><a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">Github Gist</a></p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/Build-Development-Environment/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-11-5/"> Machine Learning 11-(5) :: ConvNet을 TensorFlow로 구현하자 (MNIST 99%) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#convnet을-tensorflow로-구현하자-mnist-99" id="markdown-toc-convnet을-tensorflow로-구현하자-mnist-99">ConvNet을 TensorFlow로 구현하자 (MNIST 99%)</a></li>
+  <li><a href="#relu-정의하기" id="markdown-toc-relu-정의하기">ReLU 정의하기</a></li>
+  <li><a href="#pooling-layer-sampling" id="markdown-toc-pooling-layer-sampling">Pooling layer (sampling)</a></li>
+  <li><a href="#shape-not-sure--print-tensor" id="markdown-toc-shape-not-sure--print-tensor">Shape not sure ? Print Tensor</a></li>
+  <li><a href="#dropout" id="markdown-toc-dropout">Dropout</a></li>
+  <li><a href="#fully-connected-net" id="markdown-toc-fully-connected-net">Fully connected net</a></li>
+  <li><a href="#other-tf-optimizers" id="markdown-toc-other-tf-optimizers">Other TF Optimizers</a></li>
+  <li><a href="#train-and-testing" id="markdown-toc-train-and-testing">Train and testing</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6KlkiKyjEu0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><a href="https://github.com/nlintz/TensorFlow-Tutorials">Source</a></p>
+
+<hr />
+
+<h2 id="convnet을-tensorflow로-구현하자-mnist-99">ConvNet을 TensorFlow로 구현하자 (MNIST 99%)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_1.png"><img src="/assets/img/machine_learning/ML_11_5_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>CNN을 다른 형태의 그림으로 표현해보자.</p>
+
+<hr />
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_2.png"><img src="/assets/img/machine_learning/ML_11_5_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>Conv를 정의하는 방법:</p>
+
+<p>tf.nn.conv2d(X,w, …)</p>
+
+<p>여기서 X는 이미지</p>
+
+<p>w는 (사진을 보면)위에서 정의한 Weight</p>
+
+<p><br /></p>
+
+<p>strids = [a,b,c,d]는</p>
+
+<p>a와 d는 1로 Fix시킨다.</p>
+
+<p>b는 옆으로 몇칸씩 움직일 것인가</p>
+
+<p>c는 아래로 몇칸씩 움직일 것인가</p>
+
+<p>padding=’SAME’으로 지정해주면</p>
+
+<p>원래 이미지와 같은 크기로 Activation Map을 만들어준다.</p>
+
+<hr />
+
+<h2 id="relu-정의하기">ReLU 정의하기</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_3.png"><img src="/assets/img/machine_learning/ML_11_5_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h2 id="pooling-layer-sampling">Pooling layer (sampling)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_4.png"><img src="/assets/img/machine_learning/ML_11_5_4.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>각각 하나의 레이어에 대해서</p>
+
+<p>max pooling과 같은 방식으로</p>
+
+<p>pooling을 하고</p>
+
+<p>다시 조립 !</p>
+
+<p><br /></p>
+
+<p>ksize는 필터처럼</p>
+
+<p>어떤 사이즈로 읽은 것인가를 지정</p>
+
+<hr />
+
+<h2 id="shape-not-sure--print-tensor">Shape not sure ? Print Tensor</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_5.png"><img src="/assets/img/machine_learning/ML_11_5_5.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>ReLU나 Max Pooling을 했을 때</p>
+
+<p>결과값을 알고 싶을 때</p>
+
+<p>손으로 하는게 아니라</p>
+
+<p>컴퓨터로 출력을 해보면 된다.</p>
+
+<hr />
+
+<h2 id="dropout">Dropout</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_6.png"><img src="/assets/img/machine_learning/ML_11_5_6.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<hr />
+
+<h2 id="fully-connected-net">Fully connected net</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_7.png"><img src="/assets/img/machine_learning/ML_11_5_7.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>reshape를 해줘서</p>
+
+<p>보기 좋게 펴준다.</p>
+
+<p>(= [[[][][]][][][][] ]이런 구조를 [[][][][]] 이렇게 해준다는 뜻 )</p>
+
+<p>그리고 사진속 마지막 코드</p>
+
+<p>pyx가 최종적인 값이다.</p>
+
+<hr />
+
+<h2 id="other-tf-optimizers">Other TF Optimizers</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_8.png"><img src="/assets/img/machine_learning/ML_11_5_8.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>여러가지 최적화 시켜주는 Method를 알아보자.</p>
+
+<hr />
+
+<h2 id="train-and-testing">Train and testing</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_5_9.png"><img src="/assets/img/machine_learning/ML_11_5_9.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>이젠 실행시켜보자 !</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-11-5/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-11-4/"> Machine Learning 11-(4) :: ConvNet의 활용예 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#convnet의-활용예" id="markdown-toc-convnet의-활용예">ConvNet의 활용예</a></li>
+  <li><a href="#review" id="markdown-toc-review">Review</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KbNbWTnlYXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><a href="https://github.com/nlintz/TensorFlow-Tutorials">Source</a></p>
+
+<hr />
+
+<h2 id="convnet의-활용예">ConvNet의 활용예</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_4_1.png"><img src="/assets/img/machine_learning/ML_11_4_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q. Output값 어떻게 나온거지?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ 227 x 227 ]을 [ 11 x 11 ] 사이즈로 
+stride : 4 값으로 
+필터를 하게 되면
+4n+7이라는 식이 나온다.
+여기서 n값을 구하면 된다.
+4n+7 = 227 ==&gt; n = 55
+</code></pre></div></div>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_4_2.png"><img src="/assets/img/machine_learning/ML_11_4_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p class="notice">Q. Output값 어떻게 나온거지?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ 55 x 55 ]을 [ 3 x 3 ] 사이즈로 
+stride : 2 값으로 
+필터를 하게 되면
+2n+1이라는 식이 나온다.
+여기서 n값을 구하면 된다.
+2n+1 = 55 ==&gt; n = 27
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="review">Review</h2>
+
+<ul>
+  <li>그냥 이런저런 알고리즘 설명하는 강의였다.</li>
+</ul>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-11-4/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-11-3/"> Machine Learning 11-(3) :: Google Cloud ML with Examples 1 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#review" id="markdown-toc-review">Review</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Jkz2HexDAM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><a href="https://github.com/hunkim/GoogleCloudMLExamples">Source</a></p>
+
+<hr />
+
+<h2 id="review">Review</h2>
+
+<ul>
+  <li>다 좋은데 Google Cloud ML이 유료다.</li>
+</ul>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-11-3/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page28" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">29/57</span>
+          
+            <a href="/page30" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

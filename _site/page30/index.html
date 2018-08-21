@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gid Blog</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page30/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1> 기용이의 자유로운 기술 블로그 </h1>
+        <small>Hello Everyone :D </small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-11-2/"> Machine Learning 11-(2) :: ConvNet Max pooling 과 Full Network </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#pooling" id="markdown-toc-pooling">Pooling</a></li>
+  <li><a href="#max-pooling" id="markdown-toc-max-pooling">Max Pooling</a></li>
+  <li><a href="#fully-connected-layer-fc" id="markdown-toc-fully-connected-layer-fc">Fully Connected Layer (FC)</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2-75C-yZaoA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="pooling">Pooling</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_2_1.png"><img src="/assets/img/machine_learning/ML_11_2_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>각각 한 layer씩 뽑아서</p>
+
+<p>Sampling을하고</p>
+
+<p>Resize하는 것을</p>
+
+<p>다시 쌓는다.</p>
+
+<p>이것을 Pooling이라 한다.</p>
+
+<hr />
+
+<h2 id="max-pooling">Max Pooling</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_2_2.png"><img src="/assets/img/machine_learning/ML_11_2_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>한 필터에서</p>
+
+<p>가장 큰 값을 뽑는다.</p>
+
+<p>위 사진에서는</p>
+
+<p>빨간 부분을 보면</p>
+
+<p>[1, 1, 5, 6]에서</p>
+
+<p>가장 큰 값인 [6]을 뽑는 것이다.</p>
+
+<p><br /></p>
+
+<p>이와 같은 방식을</p>
+
+<p>여러 Pooling 중 <code class="highlighter-rouge">Max Pooling</code>이라 한다.</p>
+
+<hr />
+
+<h2 id="fully-connected-layer-fc">Fully Connected Layer (FC)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_2_3.png"><img src="/assets/img/machine_learning/ML_11_2_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>위 사진에서는</p>
+
+<p>[ CONV RELU CONV RELU POOL ] 순서로 진행을 하는데</p>
+
+<p>이 순서는 내 마음대로 하면 된다.</p>
+
+<p>ex : [ CONV POOL ] , [ CONV RELU POOL ]</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-11-2/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/ML-11-1/"> Machine Learning 11-(1) :: ConvNet의 Conv 레이어 만들기 </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#MachineLearning" title="Category: MachineLearning" rel="category">MachineLearning</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#MachineLearning" title="Tag: MachineLearning" rel="tag">MachineLearning</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#convnet의-conv-레이어-만들기" id="markdown-toc-convnet의-conv-레이어-만들기">ConvNet의 Conv 레이어 만들기</a></li>
+  <li><a href="#start-with-an-image--width-x-height-x-depth" id="markdown-toc-start-with-an-image--width-x-height-x-depth">Start with an image ( width x height x depth)</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Em63mknbtWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="convnet의-conv-레이어-만들기">ConvNet의 Conv 레이어 만들기</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_1_1.png"><img src="/assets/img/machine_learning/ML_11_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>자동차란 이미지가 있다.</p>
+
+<p>자동차 이미지를 잘라서</p>
+
+<p>하나의 입력으로 넣게 된다.</p>
+
+<p><br /></p>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_1_2.png"><img src="/assets/img/machine_learning/ML_11_1_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>CONV 레이어라고 부른다.</p>
+
+<p>그 오른쪽은 RELU 레이어라 부른다.</p>
+
+<p>FC(Fully Connected)는</p>
+
+<p>최종적인 Labling을 하게 된다.</p>
+
+<hr />
+
+<h2 id="start-with-an-image--width-x-height-x-depth">Start with an image ( width x height x depth)</h2>
+
+<figure>
+    
+    <a href="/assets/img/machine_learning/ML_11_1_3.png"><img src="/assets/img/machine_learning/ML_11_1_3.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<p>이미지 크기가 32 x 32 이고</p>
+
+<p>Color이기 때문에 3가지의 RGB가 있다.</p>
+
+<p>그리고 이런 작업을 통해서</p>
+
+<p>1개의 값을 뽑아낸다.</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/ML-11-1/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/BlockChain-Transaction,-Message,-Call/"> Transaction, Message, Call </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#concept-define" id="markdown-toc-concept-define">Concept Define</a></li>
+  <li><a href="#question" id="markdown-toc-question">Question</a></li>
+  <li><a href="#call" id="markdown-toc-call">Call</a></li>
+  <li><a href="#transaction" id="markdown-toc-transaction">Transaction</a></li>
+  <li><a href="#recommendation-to-call-first-then-sendtransaction" id="markdown-toc-recommendation-to-call-first-then-sendtransaction">Recommendation to Call first, then sendTransaction</a></li>
+</ul>
+
+<h2 id="concept-define">Concept Define</h2>
+
+<p><a href="http://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html#subcurrency-example">Docs » Introduction to Smart Contracts</a></p>
+
+<h2 id="question">Question</h2>
+
+<p>Q. <a href="https://ethereum.stackexchange.com/questions/765/what-is-the-difference-between-a-transaction-and-a-call">What is the difference between a transaction and a call?</a></p>
+
+<h2 id="call">Call</h2>
+
+<p>A call is a local invocation of a contract function that does not broadcast or publish anything on the blockchain.</p>
+
+<p>It is a read-only operation and will not consume any Ether. It simulates what would happen in a transaction, but discards all the state changes when it is done.</p>
+
+<p>It is synchronous and the return value of the contract function is returned immediately.</p>
+
+<h2 id="transaction">Transaction</h2>
+
+<p>A transaction is broadcasted to the network, processed by miners, and if valid, is published on the blockchain.</p>
+
+<p>It is a write-operation that will affect other accounts, update the state of the blockchain, and consume Ether (unless a miner accepts it with a gas price of zero).</p>
+
+<p>It is asynchronous, because it is possible that no miners will include the transaction in a block (for example, the gas price for the transaction may be too low). <br /> Since it is asynchronous, the immediate return value of a transaction is always the transaction’s hash. To get the “return value” of a transaction to a function, Events need to be used</p>
+
+<h2 id="recommendation-to-call-first-then-sendtransaction">Recommendation to Call first, then sendTransaction</h2>
+
+<p>Since a sendTransaction costs Ether, it is a good practice to “test the waters” by issuing a call first, before the sendTransaction. This is a free way to debug and estimate if there will be any problems with the sendTransaction, for example if an Out of Gas exception will be encountered.</p>
+
+<p>This “dry-run” usually works well, but in some cases be aware that call is an estimate, for example a contract function that returns the previous blockhash, will return different results based on when the call was performed, and when the transaction is actually mined.</p>
+
+<p>Finally, note that even though a call does not consume any Ether, sometimes it may be necessary to specify the actual gas amount for the call: the default gas for call in clients such as Geth, may still be insufficient and can still lead to Out of Gas.</p>
+
+<hr />
+
+<p>Q. <a href="https://ethereum.stackexchange.com/questions/7358/what-is-the-difference-between-transaction-and-message">What is the difference between transaction and message?</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Transaction: A piece of data, signed by an External Actor. 
+
+It represents either a Message or a new Autonomous Object. 
+
+Transactions are recorded into each block of the blockchain.
+</code></pre></div></div>
+
+<p>This means that a transaction represents either a Message or a new contract.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Message: Data (as a set of bytes) and Value (specified as Ether) that is passed between two 
+
+Accounts, either through the deterministic operation of an Autonomous Object or the 
+
+cryptographically secure signature of the Transaction
+</code></pre></div></div>
+
+<p>This means that a Message is the data and amount of Ether that is passed between two accounts.</p>
+
+<p>A message is created by contracts interacting with each other, or by a transaction.</p>
+
+<p>(In practice the Ether is specified in units of Wei.)</p>
+
+<p><br /></p>
+
+<p>Transactions are explicitly on the blockchain, and messages are “internal”, see <a href="https://ethereum.stackexchange.com/questions/6429/normal-transactions-vs-internal-transactions-in-etherscan/6476#6476">example</a>.</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/BlockChain-Transaction,-Message,-Call/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/BlockChain-SmartContract/"> What is Smart Contract? </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#what-is-smart-contract" id="markdown-toc-what-is-smart-contract">What is Smart Contract?</a></li>
+</ul>
+
+<h2 id="what-is-smart-contract">What is Smart Contract?</h2>
+
+<p>- 닉 자보(Nick Szabo)가 1994년 최초 제안한 개념</p>
+
+<p><br /></p>
+
+<p>- 디지털 명령어로 계약을 작성하면</p>
+
+<p>조건에 따라 계약 내용을 자동으로 실행할 수 있다 주장</p>
+
+<p><br /></p>
+
+<p>- 디지털로 된 계약서는 조건에 따른</p>
+
+<p>계약 결과가 명확하고, 계약 내용을 즉각 이행 가능</p>
+
+<p><br /></p>
+
+<p>- 조건과 행위가 정의되고</p>
+
+<p>이를 강제적으로 수행되는 <code class="highlighter-rouge">디지털 계약서</code></p>
+
+<p><br /></p>
+
+<p>- 블록체인의 장점 중 신뢰성이</p>
+
+<p>스마트 컨트랙트와 접목이 되며</p>
+
+<p>거래를 한 번에 깔끔하게 처리하는 것</p>
+
+<p><br /></p>
+
+<p>- 스크립트가 정상이면</p>
+
+<p>거래를 정상을 본다는 일종의 계약 개념이 있으므로</p>
+
+<p><code class="highlighter-rouge">Contract Code</code>로 불리기도 한다.</p>
+
+<p><br /></p>
+
+<p>- 비트코인 스크립트는 반복문을 사용할 수 없고,</p>
+
+<p>비트코인 잔고 외의 다른 정보를 관리 할 수 없는 한계가 있다.</p>
+
+<p><br /></p>
+
+<p>- 블록체인의 특이한 구조 때문에 비트코인 스크립트에서 반복문을 허용할 경우</p>
+
+<p>스크립트 조건 때문에 무한 루프가 발생할 경우 네트워크 전체가 멈출 수 있다.</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/BlockChain-SmartContract/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/BlockChain-SmartContract-Flow-(2)/"> BlockChain :: SmartContract Flow (2) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>크게 3가지로 나뉜다.</p>
+
+<ol>
+  <li>
+    <p>Creation / Deployment</p>
+  </li>
+  <li>
+    <p>Invoke by Message</p>
+  </li>
+  <li>
+    <p>Call</p>
+  </li>
+</ol>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/BlockChain-SmartContract-Flow-(2)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/BlockChain-SmartContract-Flow-(1)/"> SmartContract Flow (1) </a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-02-22
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>goodGid
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#smartcontract-flow" id="markdown-toc-smartcontract-flow">SmartContract Flow</a>    <ul>
+      <li><a href="#1-smartcontract-개발-환경" id="markdown-toc-1-smartcontract-개발-환경">1. SmartContract 개발 환경</a>        <ul>
+          <li><a href="#1-1-byte-code" id="markdown-toc-1-1-byte-code">1-1. Byte Code</a></li>
+          <li><a href="#1-2-function-signature" id="markdown-toc-1-2-function-signature">1-2. Function Signature</a></li>
+          <li><a href="#1-3-abiapplication-binary-interface" id="markdown-toc-1-3-abiapplication-binary-interface">1-3. ABI(Application Binary Interface)</a></li>
+        </ul>
+      </li>
+      <li><a href="#2-blockchain-engine" id="markdown-toc-2-blockchain-engine">2. BlockChain Engine</a></li>
+      <li><a href="#3-applications" id="markdown-toc-3-applications">3. Applications</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="smartcontract-flow">SmartContract Flow</h2>
+
+<figure>
+    
+    <a href="/assets/img/block_chain/bc_sc_flow_1_1.png"><img src="/assets/img/block_chain/bc_sc_flow_1_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<h3 id="1-smartcontract-개발-환경">1. SmartContract 개발 환경</h3>
+
+<p>개발 도구와 Compiler 까지를 포함한 범위를 표시</p>
+
+<p>Code를 작성하고 컴파일하면</p>
+
+<p><code class="highlighter-rouge">Byte Code</code> / <code class="highlighter-rouge">Function Signature</code> / <code class="highlighter-rouge">ABI</code>를 최소한 출력</p>
+
+<h4 id="1-1-byte-code">1-1. Byte Code</h4>
+
+<p>SmartContract Code를 컴파일 한 결과</p>
+
+<p>BlockChain에</p>
+
+<p>Contract Creation Transaction을 발생시켜</p>
+
+<p>배포하거나</p>
+
+<p>Contract로의 Message Tx(트랜잭션)이나</p>
+
+<p>Call을 통해 EVM(Ethereum Virtual Machine) 위에서 실행</p>
+
+<hr />
+
+<h4 id="1-2-function-signature">1-2. Function Signature</h4>
+
+<p>Contract내의 함수 이름의 SHA3한 Hash값의 4Byte 값으로,</p>
+
+<p>Contract의 함수를 실행시킬 때</p>
+
+<p>Transaction의</p>
+
+<p>to: 주소에는 Contract Address</p>
+
+<p>data: 부분에는 이 method signature 4Byte와 함께</p>
+
+<p>파라미터 값이 payload로 들어간다.</p>
+
+<hr />
+
+<h4 id="1-3-abiapplication-binary-interface">1-3. ABI(Application Binary Interface)</h4>
+
+<p>- 특정 언어나 플랫폼에 종속되지 않은 방식으로</p>
+
+<p>기술된 Application Interface에 대한 정의</p>
+
+<p><br /></p>
+
+<p>- <a href="https://www.slideshare.net/ssusere4785c/abi-34537158">ABI</a>는 컴파일러 혹은 ABI Generator가 출력하는데,</p>
+
+<p>이 ABI에는 SmartContract의 함수와 Parameter에 대한</p>
+
+<p>Metadata가 정의 되어있음.</p>
+
+<p><br /></p>
+
+<p>- ABI를 갖고 JavaScript 언어 기반의 어플리케이션을 만들 때</p>
+
+<p>객체를 만들게 할 수 있고,</p>
+
+<p>쉽게 그 객체의 Method를 호출하는 것 만으로</p>
+
+<p>Contract의 함수가 호출 되도록 할 수 있음</p>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="2-blockchain-engine">2. BlockChain Engine</h3>
+
+<p>- Ethereum Node를 의미</p>
+
+<p><br /></p>
+
+<p>- 모든 Smart Contract와 관련된 Transaction 처리와</p>
+
+<p>Contract 실행을 위한 EVM은 Node가 갖고 있다.</p>
+
+<hr />
+
+<h3 id="3-applications">3. Applications</h3>
+
+<p>- Smart Contract는 Logic만 갖고 있다.</p>
+
+<p>- 사용자나 외부 시스템과의</p>
+
+<p>상호작용을 위해서는</p>
+
+<p>당연히 Application이 필요하다.</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/BlockChain-SmartContract-Flow-(1)/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page29" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">30/57</span>
+          
+            <a href="/page31" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page57" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/Jekyll/"> Jekyll이란? </a></li>
+                    
+                        <li><a href="/NW-UDP/"> [OSI 참조 모델과 TCP/IP 기초] UDP </a></li>
+                    
+                        <li><a href="/NW-TCP/"> [OSI 참조 모델과 TCP/IP 기초] TCP </a></li>
+                    
+                        <li><a href="/NW-TCP-IP/"> [OSI 참조 모델과 TCP/IP 기초] TCP/IP </a></li>
+                    
+                        <li><a href="/NW-Subnet-Mask/"> [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 </a></li>
+                    
+                        <li><a href="/NW-Packet/"> [OSI 참조 모델과 TCP/IP 기초] 패킷 </a></li>
+                    
+                        <li><a href="/NW-OSI-Model/"> [OSI 참조 모델과 TCP/IP 기초] OSI 참조 모델 </a></li>
+                    
+                        <li><a href="/NW-Node/"> [OSI 참조 모델과 TCP/IP 기초] 노드 </a></li>
+                    
+                        <li><a href="/NW-IP/"> [OSI 참조 모델과 TCP/IP 기초] IP </a></li>
+                    
+                        <li><a href="/NW-IP-Address/"> [OSI 참조 모델과 TCP/IP 기초] IP 주소 </a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#E.T.C" class="categories-list-item" cate="E.T.C">
+                            <span class="name">
+                                E.T.C
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Conference" class="categories-list-item" cate="Conference">
+                            <span class="name">
+                                Conference
+                            </span>
+                            <span class="badge">10</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#KeyPoint" class="categories-list-item" cate="KeyPoint">
+                            <span class="name">
+                                KeyPoint
+                            </span>
+                            <span class="badge">34</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Algorithm" class="categories-list-item" cate="Algorithm">
+                            <span class="name">
+                                Algorithm
+                            </span>
+                            <span class="badge">86</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Database" class="categories-list-item" cate="Database">
+                            <span class="name">
+                                Database
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Node.js" class="categories-list-item" cate="Node.js">
+                            <span class="name">
+                                Node.js
+                            </span>
+                            <span class="badge">20</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Technology" class="categories-list-item" cate="Technology">
+                            <span class="name">
+                                Technology
+                            </span>
+                            <span class="badge">17</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Python" class="categories-list-item" cate="Python">
+                            <span class="name">
+                                Python
+                            </span>
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#BlockChain" class="categories-list-item" cate="BlockChain">
+                            <span class="name">
+                                BlockChain
+                            </span>
+                            <span class="badge">38</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#MachineLearning" class="categories-list-item" cate="MachineLearning">
+                            <span class="name">
+                                MachineLearning
+                            </span>
+                            <span class="badge">19</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#파일처리" class="categories-list-item" cate="파일처리">
+                            <span class="name">
+                                파일처리
+                            </span>
+                            <span class="badge">14</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#OS" class="categories-list-item" cate="OS">
+                            <span class="name">
+                                OS
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Server" class="categories-list-item" cate="Server">
+                            <span class="name">
+                                Server
+                            </span>
+                            <span class="badge">31</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#JavaScript" class="categories-list-item" cate="JavaScript">
+                            <span class="name">
+                                JavaScript
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Network" class="categories-list-item" cate="Network">
+                            <span class="name">
+                                Network
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#E.T.C" style="font-size: 10.5pt; color: #888;">E.T.C</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#KeyPoint" style="font-size: 17.5pt; color: #111;">KeyPoint</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BOJ" style="font-size: 18pt; color: #000;">BOJ</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Database" style="font-size: 13.5pt; color: #444;">Database</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Crawling" style="font-size: 9.5pt; color: #888;">Crawling</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Node.js" style="font-size: 14pt; color: #444;">Node.js</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Technology" style="font-size: 12.5pt; color: #666;">Technology</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Tizen" style="font-size: 9pt; color: #999;">Tizen</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#EC2" style="font-size: 9.5pt; color: #888;">EC2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mentoring" style="font-size: 9pt; color: #999;">Mentoring</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Python" style="font-size: 16pt; color: #222;">Python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#reSolve" style="font-size: 14pt; color: #444;">reSolve</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#BlockChain" style="font-size: 14pt; color: #444;">BlockChain</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#MachineLearning" style="font-size: 13.5pt; color: #444;">MachineLearning</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ethereum" style="font-size: 13.5pt; color: #555;">Ethereum</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#SWEA" style="font-size: 12pt; color: #666;">SWEA</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#파일처리" style="font-size: 12.5pt; color: #666;">파일처리</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#OS" style="font-size: 9pt; color: #999;">OS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Server" style="font-size: 16.5pt; color: #111;">Server</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Hackathon" style="font-size: 9.5pt; color: #999;">Hackathon</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Docker" style="font-size: 9pt; color: #999;">Docker</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Programmers" style="font-size: 18pt; color: #000;">Programmers</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#JavaScript" style="font-size: 9pt; color: #999;">JavaScript</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Network" style="font-size: 11pt; color: #777;">Network</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
