@@ -27,17 +27,26 @@ pull 을 실행하면, 원격 저장소의 내용을 가져와 자동으로 병�
 <br>
 
 
-예를 들어, 로컬 저장소와 원격 저장소에 B에서 진행된 커밋이 있는 상태에서 fetch 를 수행하면 아래 그림과 같이 이력이 남겨진다.
+예를 들어, 로컬 저장소와 원격 저장소에 B에서 진행된 커밋이 있는 상태에서 
 
+fetch 를 수행하면 아래 그림과 같이 이력이 남겨진다.
 
-![](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/git/git_merge_vs_fetch_1.png)
+{% capture images %}
+    /assets/img/git/git_merge_vs_fetch_1.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
 
+<br>
 
 이 상태에서 원격 저장소의 내용을 로컬 저장소의 'master'에 통합하고 싶은 경우에는, 
 
 'FETCH_HEAD' 브랜치를 merge 하거나 다시 pull을 실행하면 된다.
 
-[](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/git/git_merge_vs_fetch_2.png)
+{% capture images %}
+    /assets/img/git/git_merge_vs_fetch_2.png
+{% endcapture %}
+{% include gallery images=images caption=" " cols=1 %}
+
 
 이렇게 fetch 후 merge 를 수행하면, pull 명령을 실행했을 때와 같은 이력이 만들어진다.
 
