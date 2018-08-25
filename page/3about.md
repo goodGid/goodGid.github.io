@@ -30,6 +30,7 @@ type: page
 * [GitHub](https://github.com/goodGid)
 * [Facebook](https://www.facebook.com/sgy8971)
 * [Instagram](https://www.instagram.com/___gid/)
+* [BOJ](https://www.acmicpc.net/user/sgy8971)
 
 --- 
 
