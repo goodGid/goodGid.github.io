@@ -37,6 +37,8 @@ type: page
 
 ### 2018
 
+* 　08. 25 블로그에 SEO 적용
+
 * 　07. 20 ~ 07. 21	[Amathon](https://goodgid.github.io/2018_Amathon/) 참가
 
 * 　06. 30 ~ 07. 14	App Jam Server Develop 대상 수상 ( Supported by Naver D2 )
