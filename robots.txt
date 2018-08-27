@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://goodgid.github.io//sitemap.xml
