@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  " Node :: CSV to Json "
-date:   2017-10-22
-excerpt: " CSV to Json "
-cate : "post"
-tag:
-- Node.js
+title:  "CSV to Json"
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
 
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 const Converter = require('csvtojson').Converter;
 const fs = require('fs');
@@ -39,7 +39,7 @@ const server = http.createServer(function(req, res) {
   console.log("3000번 포트로 구동중!");
 })
 
-{% endhighlight %}
+```
 
 
 ---

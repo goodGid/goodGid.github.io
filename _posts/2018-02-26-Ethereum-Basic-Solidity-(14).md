@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 대비책 함수 (Fallback Function) & 오류 처리 (Error Handling) "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## 대비책 함수 (fallback Function)
 

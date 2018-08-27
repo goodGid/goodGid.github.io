@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ubuntu :: PPA(Personal Package Archive) "
-date:   2018-02-27
-excerpt: " PPA(Personal Package Archive) "
-cate : "post"
-tag:
-- Ubuntu
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is PPA(Personal Package Archive)?
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  " Time Setting in Linux "
-date:   2017-11-21
-excerpt: " Time Setting in Linux "
-cate : "post"
-tag:
-
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Promblem
 

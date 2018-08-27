@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  " [서버를 장애로부터 보호하기] 서버 부하분산 기술 "
-date:   2018-08-13
-excerpt: " Server Load Balancing Technology "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
+
 
 # 서버 부하분산 기술
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 블록과 거래 속성들  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## 블록 속성들
 

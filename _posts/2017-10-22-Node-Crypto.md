@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  " Node :: Crypto "
-date:   2017-10-22
-excerpt: " Crypto "
-cate : "post"
-tag:
-- Node.js
+title:  " Crypto "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
 
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 
 const crypto = require('crypto');
@@ -51,7 +51,7 @@ crypto.randomBytes(32, function(err, buffer){
 });
 
 
-{% endhighlight %}
+```
 
 ---
 

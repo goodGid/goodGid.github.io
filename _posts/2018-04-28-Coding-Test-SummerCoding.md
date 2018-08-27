@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 2018 SummerCoding - 여름방학 스타트업 인턴 프로그램 "
-date:   2018-04-28
-excerpt: " Coding Test "
-cate : "posts"
-tag:
-- Coding Test
+categories: E.T.C
+tags: E.T.C
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 >> [2018 SummerCoding - 여름방학 스타트업 인턴 프로그램](https://programmers.co.kr/competitions/59/2018-summercoding-%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8)
@@ -53,7 +54,7 @@ tag:
 {% include gallery images=images caption=" " cols=3 %}
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <stdio.h>
@@ -68,7 +69,7 @@ int solution(vector<int> d, int budget) {
 }
 
 
-{% endhighlight %}
+```
 
 
 
@@ -94,7 +95,7 @@ int solution(vector<int> d, int budget) {
 {% include gallery images=images caption=" " cols=2 %}
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <string>
 #include <vector>
@@ -114,7 +115,7 @@ vector<int> solution(int n, vector<string> words) {
 
 
 
-{% endhighlight %}
+```
 
 
 
@@ -134,7 +135,7 @@ vector<int> solution(int n, vector<string> words) {
 {% include gallery images=images caption=" " cols=3 %}
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <string>
 #include <vector>
@@ -146,7 +147,7 @@ int solution(vector<int> A, vector<int> B) {
     return answer;
 }
 
-{% endhighlight %}
+```
 
 
 ---
@@ -156,7 +157,7 @@ int solution(vector<int> A, vector<int> B) {
 
 ## 1번
 
-{% highlight cpp %}
+``` cpp
 
 
 int solution(vector<int> d, int budget) {
@@ -174,7 +175,7 @@ int solution(vector<int> d, int budget) {
 
 
 
-{% endhighlight %}
+```
 
 * 내 Code가 날라가서 재훈이껄로 대체 ! 
 
@@ -183,7 +184,7 @@ int solution(vector<int> d, int budget) {
 ## 2번
 
 
-{% highlight cpp %}
+``` cpp
 
 // 2번
 
@@ -246,7 +247,7 @@ int main(){
 
 
 
-{% endhighlight %}
+```
 
 
 
@@ -255,7 +256,7 @@ int main(){
 ## 3번
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <string>
 #include <vector>
@@ -278,5 +279,5 @@ int solution(vector<int> A, vector<int> B) {
     return answer;
 }
 
-{% endhighlight %}
+```
 

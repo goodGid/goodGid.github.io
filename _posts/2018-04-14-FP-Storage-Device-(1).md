@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 파일 저장 장치 [ Part 1 ] "
-date:   2018-04-14
-excerpt: " 파일 저장 장치 [1] "
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 파일 저장 장치의 특성 (1)
 

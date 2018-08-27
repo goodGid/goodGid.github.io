@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Build Development Environment </title>
+    <meta name="description" content="  Build Development EnvironmentBuild Development EnvironmentGithub Gist">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Build-Development-Environment/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Build Development Environment </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-02-23
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#BlockChain" title="Category: BlockChain" rel="category">BlockChain</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a-->
+        <a href="/tag/#BlockChain" title="Tag: BlockChain" rel="tag">BlockChain</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#build-development-environment" id="markdown-toc-build-development-environment">Build Development Environment</a></li>
+  <li><a href="#extra-resource" id="markdown-toc-extra-resource">Extra Resource</a>    <ul>
+      <li><a href="#eth_home" id="markdown-toc-eth_home">$ETH_HOME</a></li>
+      <li><a href="#folders-및-files" id="markdown-toc-folders-및-files">Folders 및 files</a></li>
+      <li><a href="#geth-옵션" id="markdown-toc-geth-옵션">Geth 옵션</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="build-development-environment">Build Development Environment</h2>
+
+<p><a href="https://gist.github.com/goodGid/0067ca063bcdf9a5c5fdfac5b84cbf1f">Github Gist</a></p>
+
+<hr />
+
+<h2 id="extra-resource">Extra Resource</h2>
+
+<h3 id="eth_home">$ETH_HOME</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">file</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">file</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">abigen <br /> <br /></td>
+      <td style="text-align: center">contract ABI 기반 Go Pakage 생성 <br /> <br /></td>
+      <td style="text-align: center">geth  <br /> <br /></td>
+      <td>Go Ethereum Node <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">bootnode <br /> <br /></td>
+      <td style="text-align: center">Network Discovery 용 Boot Node <br /> <br /></td>
+      <td style="text-align: center">gethrpctest <br /> <br /></td>
+      <td>ethereum/rpc-tests Test Suite 실행 도구 <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">disasm <br /> <br /></td>
+      <td style="text-align: center">Contract Byte Code를 Op Code로 변환 <br /> <br /></td>
+      <td style="text-align: center">rlpdump <br /> <br /></td>
+      <td>RLP 데이터를 해석하는 개발 도구 <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ethtest <br /> <br /></td>
+      <td style="text-align: center">geth 빌드 후 검증용 도구 <br /> <br /></td>
+      <td style="text-align: center">swarm <br /> <br /></td>
+      <td>Swarm 데몬 ( 개발중 ) <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">evm <br /> <br /></td>
+      <td style="text-align: center">개발자용 EVM 디버깅 도구 <br /> <br /></td>
+      <td style="text-align: center">wnode <br /> <br /></td>
+      <td>Whisper 데몬 (개발중) <br /> <br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="folders-및-files">Folders 및 files</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">dir</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">file(s)</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">geth  <br /> <br /></td>
+      <td style="text-align: center">data dir의 root  <br /> <br /></td>
+      <td style="text-align: center">geth ipc  <br /> <br /></td>
+      <td>Console or IPC API 통신을 위한 파일 <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">chaindata  <br /> <br /></td>
+      <td style="text-align: center">Block, State, Storage의 Trie DB  <br /> <br /></td>
+      <td style="text-align: center">*.ldb  <br /> <br /></td>
+      <td>지속 분할/Merge 되는 DB 들 <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">nodes  <br /> <br /></td>
+      <td style="text-align: center">접속한 Node들의 관리 DB  <br /> <br /></td>
+      <td style="text-align: center">*.ldb   <br /> <br /></td>
+      <td>Node 관리를 위한 DB <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">keystore  <br /> <br /></td>
+      <td style="text-align: center">Account들의 암호화된 Key 정보  <br /> <br /></td>
+      <td style="text-align: center">UTC-&lt;time&gt;--&lt;address&gt;  <br /> <br /></td>
+      <td>Account별 Key 정보 파일 생성 <br /> <br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="geth-옵션">Geth 옵션</h3>
+
+<p><a href="https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options">API Document</a></p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Category</th>
+      <th style="text-align: center">Option Name</th>
+      <th style="text-align: center">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Command</td>
+      <td style="text-align: center">init</td>
+      <td style="text-align: center">새로운 Genesis Block을 기반으로 DB 생성</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">account</td>
+      <td style="text-align: center">list, new, update</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">console</td>
+      <td style="text-align: center">node 시작 및 console 진입</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">attach <br /> <br /></td>
+      <td style="text-align: center">ipc or rpc로 console attach <br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ethereum</td>
+      <td style="text-align: center">--datadir &lt;string&gt;</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--networkid &lt;num&gt;</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--testnet</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--identity &lt;string&gt; <br /> <br /></td>
+      <td style="text-align: center"><br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Account</td>
+      <td style="text-align: center">—unlock &lt;filename&gt;</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">—password &lt;filename&gt; <br /> <br /></td>
+      <td style="text-align: center"><br /> <br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">API &amp; Console</td>
+      <td style="text-align: center">–rpc</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--rpcaddr &lt;ipaddr&gt;</td>
+      <td style="text-align: center">기본 “localhost”</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--rpcport &lt;port&gt;</td>
+      <td style="text-align: center">기본 “8545”</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--rpcapi &lt;apis&gt;</td>
+      <td style="text-align: center">기본 “eth, net, web3” <br />(admin, debug, eth, miner, net, personal, shh, txpool, web3)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">--rpccorsdomain</td>
+      <td style="text-align: center">CORS</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/ML-11-5/"> Machine Learning 11-(5) :: ConvNet을 TensorFlow로 구현하자 (MNIST 99%) </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/ML-12/"> Machine Learning 12-(1) :: NN의 꽃 RNN 이야기 </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Build-Development-Environment/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Build-Development-Environment/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " Education :: Training "
-date:   2018-02-17
-excerpt: " Smart Contract "
-cate : "post"
-tag:
-- Education
+title:  " Smart Contract 교육 (2) "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
 
 
 지갑설치를 하자.
@@ -65,7 +65,7 @@ remix 홈페이지는 solidity 언어를 코딩 하기위한 온라인 IDE라고
 코드를 복사하자. 
 
 
-{% highlight JavaScript %}
+``` js
 
 contract MyToken {
     /* This creates an array with all balances */
@@ -87,7 +87,7 @@ contract MyToken {
     }
 }
 
-{% endhighlight %}
+```
 
 
 

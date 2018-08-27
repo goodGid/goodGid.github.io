@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Type Conversion : String to Int"
-date:   2017-10-17
-excerpt: "Type Conversion"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
@@ -28,7 +29,7 @@ Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 
 
 ## [1] Code
-{% highlight cpp %}
+``` cpp
 
 
 #include <iostream>
@@ -51,27 +52,27 @@ int main() {
     return 0;
 }
 
-{% endhighlight %}
+```
 
 ## Input
 
-{% highlight cpp %}
+``` cpp
 
 12 23 34 45
 
-{% endhighlight %}
+```
 
 ---
 ## Output
 
-{% highlight cpp %}
+``` cpp
 
 1223
 3445
 4668
 Program ended with exit code: 0
 
-{% endhighlight %}
+```
 
 
 ---
@@ -88,7 +89,7 @@ Problem URL : **[문자열을 정수로 바꾸기](https://programmers.co.kr/lea
 
 ## [2] Code (18. 07. 23)
 
-{% highlight cpp %}
+``` cpp
 
 int solution(string s) {
     int answer = 0;
@@ -154,5 +155,5 @@ int solution(string s) {
     return answer*m;
 }
 
-{% endhighlight %}
+```
 

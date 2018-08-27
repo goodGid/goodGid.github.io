@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "PrimeNumber"
-date:   2017-10-17
-excerpt: "PrimeNumber"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## The Key Point
 
@@ -25,7 +26,7 @@ x를 2부터 x의 제곱근까지의 숫자로 나누어 떨어지는지 검사�
 
 ## [1] Code - Check if a specific value is a prime number
 
-{% highlight cpp %}
+``` cpp
 
 #include<iostream>
 #include<cmath>
@@ -66,9 +67,7 @@ int main(){
     return 0;    
 }
 
-
-
-{% endhighlight %}
+```
 
 ---
 
@@ -77,9 +76,7 @@ int main(){
 
 Problem URL : **[Programmers : 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)**
 
-{% highlight cpp %}
-
-
+``` cpp
 // [1]
 int arr[1000000];
 int solution(int n) {
@@ -134,7 +131,4 @@ int solution(int n) {
     }
     return answer;
 }
-
-
-
-{% endhighlight %}
+```

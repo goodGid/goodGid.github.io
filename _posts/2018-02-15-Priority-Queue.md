@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Priority Queue "
-date:   2018-02-15
-excerpt: "  Priority Queue "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Related Problem
@@ -17,7 +18,7 @@ Problem URL : **[최소 힙](https://www.acmicpc.net/problem/1927)**
 
 ---
 
-{% highlight cpp %}
+``` cpp
 
 // Root is Max Value
 priority_queue<int> pq;
@@ -26,7 +27,7 @@ priority_queue<int,vector<int>,less<int> > pq;
 // Root is Min Value
 priority_queue<int,vector<int>,greater<int> > pq;
  
-{% endhighlight %}
+```
 
 
 

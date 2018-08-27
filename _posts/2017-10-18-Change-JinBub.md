@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "10진수를 임의의 진수로 변환"
-date:   2017-10-18
-excerpt: "진수 변환"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Review
 
@@ -14,7 +15,7 @@ tag:
 
 * 10진수 -> 2진수 변환
 
-{% highlight cpp %}
+``` cpp
  int tenConvertTwo(int num)
   {
     int result = 0;
@@ -27,12 +28,12 @@ tag:
     return result;
   }
 
-{% endhighlight %}
+```
 
 
 * 2진수 -> 10진수 변환
 
-{% highlight cpp %}
+``` cpp
 
  int twoConvertTen(int num)
   {
@@ -47,12 +48,12 @@ tag:
     return result;
   }
 
-{% endhighlight %}
+```
 
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <cstdlib>
@@ -91,4 +92,4 @@ int main(){
     cout << ans << endl;
 }
 
-{% endhighlight %}
+```

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [네트워크 기초 지식] TCP와 UDP"
-date:   2018-08-03
-excerpt: " TCP & UDP  "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # TCP와 UDP
 

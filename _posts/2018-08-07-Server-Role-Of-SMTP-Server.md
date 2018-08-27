@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [사내 서버의 기본] SMTP 서버의 역할"
-date:   2018-08-07
-excerpt: " Role of SMTP Server "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 # SMTP 서버의 역할

@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  " Node :: Understanding Functions "
-date:   2017-12-18
-excerpt: " Understanding Functions "
-cate : "post"
-tag:
-- Node.js
+title:  " 함수 이해하기  "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
+
 
 
 ## Understanding functions
@@ -18,7 +20,7 @@ tag:
 
 
 
-{% highlight JavaScript %}
+``` js
 //1
 function sayHello(){            
     console.log('Hello!);
@@ -30,7 +32,7 @@ var sayHello = function() {
     console.log('Hello!);
 }
 
-{% endhighlight %}
+```
 
 
 위 예제에서 2가지 메소드는 거의 동일하다.
@@ -48,7 +50,7 @@ var sayHello = function() {
 
 
 
-{% highlight JavaScript %}
+``` js
 one(); // Hello를 출력
 two(); // 정의 부분이 나오지 않았으므로 에러가 발생
 
@@ -63,7 +65,7 @@ var two = function() {
 
 two(); // Hello를 출력
 
-{% endhighlight %}
+```
 
 
 위의 코드에서 함수 one은 부모 Scope 어디에서나 호출 가능하다.

@@ -1,19 +1,20 @@
 ---
 layout: post
 title:  "Vector :: STL Function"
-date:   2018-07-25
-excerpt: "Vector :: STL Function"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Code
 
 1. Find min Value in Vector
 2. Delete min Value in Vector
 
-{% highlight cpp %}
+``` cpp
 
 vector<int> solution(vector<int> arr) {
     int nMin = *min_element(arr.begin(), arr.end());
@@ -23,4 +24,4 @@ vector<int> solution(vector<int> arr) {
 }
 
 
-{% endhighlight %}
+```

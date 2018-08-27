@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " Node :: Error about Router.use() "
-date:   2017-10-31
-excerpt: " TypeError: Router.use() requires middleware function but got a Object "
-cate : "post"
-tag:
-- Node.js
+title:  " Error about Router.use() "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Problem
 

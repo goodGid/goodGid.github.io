@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: Gas "
-date:   2018-02-22
-excerpt: " Gas "
-cate : "post"
-tag:
-- BlockChain
+title:  " Gas "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 ## What is Gas ?
 

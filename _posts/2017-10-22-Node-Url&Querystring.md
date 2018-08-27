@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  " Node :: Url and Querystring "
-date:   2017-10-22
-excerpt: " Url and Querystring "
-cate : "post"
-tag:
-- Node.js
+title:  " Url and Querystring "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Code
-{% highlight JavaScript %}
+``` js
 
 
 const url = require('url');
@@ -28,7 +29,7 @@ console.log("===================================================================
 console.log(queryParsed);
 
 
-{% endhighlight %}
+```
 
 ---
 

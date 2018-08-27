@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Manachers Algorithm"
-date:   2018-08-02
-excerpt: "Manachers Algorithm"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem 
 Problem URL : **[가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904)**
@@ -25,7 +26,7 @@ Problem URL : **[가장 긴 팰린드롬](https://programmers.co.kr/learn/course
 
 ## Code
 
-{% highlight cpp %}
+``` cpp
 
 const int MAXN = 100001 * 2;
 int A[MAXN];
@@ -70,7 +71,7 @@ int solution(string s){
     return ans;
 }
 
-{% endhighlight %}
+```
 
 
 ---

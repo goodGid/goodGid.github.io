@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  " Node :: Object vs Array "
-date:   2017-10-31
-excerpt: " Object vs Array in Javascript "
-cate : "post"
-tag:
-- Node.js
+title:  " Object vs Array "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Example
 
-{% highlight JavaScript %}
+``` js
 
 router.get('/', function(req, res)
 {
@@ -52,7 +53,7 @@ res.status(200).send({
 });
 });
 
-{% endhighlight %}
+```
 
 {% capture images %}
 	/assets/img/posts/node_object_vs_array_1.png

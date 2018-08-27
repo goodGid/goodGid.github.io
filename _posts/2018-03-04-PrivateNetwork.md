@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Join Private Network "
-date:   2018-03-04
-excerpt: " Join Private Network  "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "DataBase :: Normalization (2)"
-date:   2017-10-10
-excerpt: "Normalization 개념 (2)"
-cate : "post"
-tag:
-- DB
+title:  "Normalization (2)"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
 
 ## Concept
 

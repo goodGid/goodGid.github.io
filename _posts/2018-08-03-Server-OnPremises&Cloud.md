@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [서버 준비하기] 온프레미스형과 클라우드형"
-date:   2018-08-03
-excerpt: " OnPremises & Cloud  "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 온프레미스형과 클라우드형
 

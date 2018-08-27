@@ -1,16 +1,17 @@
 ---
 layout: post
 title:  " String Split ( 구분자로 구분하기 )"
-date:   2018-03-30
-excerpt: " String Split "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## [1] String Split : 모든 strTok 가능
 
-{% highlight cpp %}
+``` cpp
 
 #include<iostream>
 #include<vector>
@@ -72,7 +73,7 @@ I
  empty 
 Program ended with exit code: 0 
 
-{% endhighlight %}
+```
 
 ---
 
@@ -91,7 +92,7 @@ Program ended with exit code: 0
 
 ## [2] String Split : Space 전용
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <sstream>
@@ -133,7 +134,7 @@ int main(){
          back_inserter(words));
     
 }
-{% endhighlight %}
+```
 
 ---
 

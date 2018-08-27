@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 "
-date:   2018-08-17
-excerpt: " 서브넷 마스크 "
-cate : "posts"
-tag:
-- Network
+categories: Network
+tags: Network
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 서브넷 마스크
 

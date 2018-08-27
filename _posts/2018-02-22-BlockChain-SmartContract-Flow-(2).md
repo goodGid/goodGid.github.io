@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  " BlockChain :: SmartContract Flow (2) "
-date:   2018-02-22
-excerpt: "  SmartContract Flow (2) "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 
 크게 3가지로 나뉜다.

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  " ICT Volunteer "
-date:   2017-11-17
-excerpt: " ICT Volunteer  "
-cate : "post"
-tag: Volunteer
-
+categories: E.T.C
+tags: E.T.C
+author: goodGid
 ---
+* content
+{:toc}
 
 ## [World Friends ICT Volunteer](https://kiv.nia.or.kr/front/main/main.do)
 

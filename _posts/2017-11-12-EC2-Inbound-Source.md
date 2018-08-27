@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " EC2 Inbound Source "
-date:   2017-11-13
-excerpt: " EC2 Inbound Source "
-cate : "post"
-tag:
-- EC2
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Concept
 

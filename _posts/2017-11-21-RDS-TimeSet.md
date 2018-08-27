@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Time Setting in MySQL "
-date:   2017-11-21
-excerpt: " Time Setting in MySQL "
-cate : "post"
-tag:
-
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Promblem
 

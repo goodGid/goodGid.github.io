@@ -1,6 +1,14 @@
 ---
 layout: post
 title:  " JavaScript :: 'var' vs 'let' vs 'const' "
+categories: JavaScript
+tags: JavaScript
+author: goodGid
+---
+* content
+{:toc}
+
+
 date:   2018-08-02
 excerpt: " 'var' vs 'let' vs 'const' "
 cate : "post"

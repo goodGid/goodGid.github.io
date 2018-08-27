@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer (2) - 배열 (중요) "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 굉장히 중요한 개념이다 !!! 
 
@@ -57,7 +58,7 @@ tag:
 임시로 메모리에 저장되는 `메모리 배열`이다.
 
 
-{% highlight JavaScript %}
+``` js
 
 1 pragma solidity ^0.4.8; 
 2
@@ -73,7 +74,7 @@ tag:
 12    }
 13 }
 
-{% endhighlight %}
+```
 
 [1],[2],[3]에서 오류가 발생한다.
 

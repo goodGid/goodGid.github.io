@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 한이음 데이 "
-date:   2018-05-13
-excerpt: " 한이음 데이 "
-cate : "post"
-tag:
-- Conference
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
+
 
 * `한이음 데이 캠프`를 갔다왔다.
 

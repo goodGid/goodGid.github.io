@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  " BlockChain (2) "
-date:   2018-02-06
-excerpt: " BlockChain (2) "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
+
 {% capture images %}
   /assets/img/block_chain/ethereum.png
 {% endcapture %}

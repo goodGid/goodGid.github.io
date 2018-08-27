@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Nginx </title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Nginx/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Nginx </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-12-17
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Node.js" title="Category: Node.js" rel="category">Node.js</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Node.js" title="Tag: Node.js" rel="tag">Node.js</a-->
+        <a href="/tag/#Node.js" title="Tag: Node.js" rel="tag">Node.js</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#what-is-nginx-" id="markdown-toc-what-is-nginx-">What is Nginx ?</a></li>
+  <li><a href="#reverse-proxy" id="markdown-toc-reverse-proxy">Reverse Proxy</a></li>
+  <li><a href="#set-nginx" id="markdown-toc-set-nginx">Set Nginx</a></li>
+  <li><a href="#related-resource" id="markdown-toc-related-resource">Related Resource</a></li>
+</ul>
+
+<h2 id="what-is-nginx-">What is Nginx ?</h2>
+
+<figure>
+    
+    <a href="/assets/img/posts/nginx_1.png"><img src="/assets/img/posts/nginx_1.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>비동기 이벤트 기반의 웹서버 소프트웨어</p>
+  </li>
+  <li>
+    <p>가볍고 높은 성능으로 더 적은 자원으로 더 빠르게 서비스를 제공하는것이 목표</p>
+  </li>
+  <li>
+    <p>적은 쓰레드로 클라이언트의 Request 처리</p>
+  </li>
+  <li>
+    <p>HTTP, Reverse Proxy, IMAP/POP Proxy server 제공</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="reverse-proxy">Reverse Proxy</h2>
+
+<figure>
+    
+    <a href="/assets/img/posts/nginx_2.png"><img src="/assets/img/posts/nginx_2.png" alt="" /></a>
+    
+    <figcaption> </figcaption>
+</figure>
+
+<ul>
+  <li>
+    <p>클라이언트는 Reverse Proxy Server에 Request</p>
+  </li>
+  <li>
+    <p>Reverse Proxy Server는 요청을 받아서 내부서버에 요청, 응답받은후 클라이언트에게 전달</p>
+  </li>
+  <li>
+    <p>클라이언트에서 Origin Server에 직접 접속할 수 없으므로 <code class="highlighter-rouge">높은 보안성</code> 유지</p>
+  </li>
+  <li>
+    <p>한개의 Reverse Proxy Server에 여러 <code class="highlighter-rouge">Origin Server</code>를 연결할 수 있으므로 <code class="highlighter-rouge">Load Balancing</code>이 쉽게 가능해짐</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="set-nginx">Set Nginx</h2>
+
+<p>1.　Express 프로젝트 완성 후 PM2로 구동</p>
+
+<p>2.　 EC2 의 보안그룹 – 인바운드 설정에서 80, 443, 8080포트 열기</p>
+
+<p>3.　 EC2 접속후 nginx 설치하기 <br /> sudo apt update -y &amp;&amp; sudo apt-get install nginx -y</p>
+
+<p>4.　 nginx가 제대로 설치되었는지 확인 <br /> sudo systemctl status nginx</p>
+
+<p>5.　 nginx 시작 및 재시작해도 자동으로 시작되게 설정 <br /> sudo systemctl start nginx <br /> sudo systemctl enable nginx</p>
+
+<p>6.　 nginx 설정 파일 수정 ( Delete the existing code and add the following code) <br /> sudo vim /etc/nginx/sites-available/default</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+listen 8080; 
+server_name localhost;
+
+location / {
+    proxy_pass http://localhost:3000; // http://localhost:express의포트번호
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade; 
+    proxy_set_header Connection 'upgrade'; 
+    proxy_set_header Host $host; 
+    proxy_cache_bypass $http_upgrade;
+}
+
+location /public {
+    root /usr/local/var/www; }
+}
+
+</code></pre></div></div>
+<p>7.　 nginx 재시작으로 설정 적용 <br /> sudo service nginx restart</p>
+
+<p>8.　 IP:Port/가 아닌 IP/만으로 접속 확인</p>
+
+<hr />
+
+<h2 id="related-resource">Related Resource</h2>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/goodGid/NodeSeminar/blob/master/Seminar_8th/SOPT21th_8%EC%B0%A8%EC%84%B8%EB%AF%B8%EB%82%98.pdf">Nginx PDF</a></p>
+  </li>
+  <li>
+    <p>정리가 잘된 <a href="http://jaynewho.com/post/18">Blog</a></p>
+  </li>
+</ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/JWT/"> JWT </a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Event-Driven/"> Event Driven </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Nginx/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Nginx/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

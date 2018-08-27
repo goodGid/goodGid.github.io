@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 각 자릿수 더하기 (Add each digit) "
-date:   2018-03-26
-excerpt: "  Add each digit "
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Related Problem
@@ -15,7 +16,7 @@ Problem URL : **[분해합](https://www.acmicpc.net/problem/2231)**
 
 ---
 
-{% highlight cpp %}
+``` cpp
 
 int cal(int num) {
     int sum = 0;
@@ -36,7 +37,7 @@ output : 17
 
 */
  
-{% endhighlight %}
+```
 
 
 ## Review

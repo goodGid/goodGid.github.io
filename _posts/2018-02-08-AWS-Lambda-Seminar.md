@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  " Conference :: AWS Lambda Seminar "
-date:   2018-01-17
-excerpt: " AWS로 무료 이미지 리사이즈 서버 만들기 with AWS Lambda "
-cate : "post"
-tag:
-- Conference
+title:  " AWS Lambda Seminar "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
 
-## AWS Lambda Seminar
+## AWS로 무료 이미지 리사이즈 서버 만들기 with AWS Lambda
 
 ### Seminar Info 
 

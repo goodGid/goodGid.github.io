@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "DataBase :: Functional Dependency"
-date:   2017-10-10
-excerpt: "Functional Dependency 개념"
-cate : "post"
-tag:
-- DB
+title:  "Functional Dependency"
+categories: Database
+tags: Database
+author: goodGid
 ---
+
+* content
+{:toc}
+
 
 ## Concept
 

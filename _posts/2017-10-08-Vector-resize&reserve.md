@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Vector :: Resize vs Reserve"
-date:   2017-10-07
-excerpt: "Vector 사용법"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Review
 
@@ -51,7 +52,7 @@ tag:
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <vector>
@@ -103,12 +104,12 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```
 
 ---
 ## Output
 
-{% highlight cpp %}
+``` cpp
 
 1 2 3 -1 -1 
 1 2 3 
@@ -116,7 +117,7 @@ int main(){
 1 2 3 4 5 
 Program ended with exit code: 0
 
-{% endhighlight %}
+```
 
 
 

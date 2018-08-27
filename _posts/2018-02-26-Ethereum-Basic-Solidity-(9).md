@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - 이벤트 & 전처리문(pragma)과 파일 참조(import)  "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 컨트랙트에서 함수가 실행되는 중간에
 
@@ -27,7 +28,7 @@ tag:
 실시간으로 정보를 업데이트하거나 대응할 수 있다.
 
 
-{% highlight JavaScript %}
+``` js
 
 pragma solidity ^0.4.11;
 
@@ -43,7 +44,7 @@ contract Example4 {
     }
 }
 
-{% endhighlight %}
+```
 
 
 위의 예시에서 pay()가 실행될 때 마다 

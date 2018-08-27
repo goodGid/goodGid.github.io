@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Crawling :: Robots.txt "
-date:   2017-11-03
-excerpt: " Robots.txt "
-cate : "post"
-tag:
-- Crawling
+categories: E.T.C
+tags: Crawling
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Concept
 

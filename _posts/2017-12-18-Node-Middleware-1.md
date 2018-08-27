@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: Middleware (1) "
-date:   2017-12-18
-excerpt: " Middleware "
-cate : "post"
-tag:
-- Node.js
+title:  " Middleware (1) "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## What is Middleware ?
@@ -25,28 +26,28 @@ tag:
 
 * morgan : 로깅을 담당하는 모듈로, Debug를 하는데 아주 중요하다.
 
-{% highlight JavaScript %}
+``` js
 const logger = require('morgan');
 app.use(logger('dev'));
-{% endhighlight %}
+```
 
 * bodyParser : 브라우저의 HTML 양식을 통해 제출된 양식 데이터의 해석을 도와준다. <br> POST 요청을 통해 제출된 양식 데이터는 req.body 프로퍼티를 통해 접근 가능하다.
 
-{% highlight JavaScript %}
+``` js
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-{% endhighlight %}
+```
 
 
 * methodOverride : `REST API`를 위한 `UPDATE`와 `PUT`같은 HTTP 메소드를 지원하지 않는 구형 브라우저들을 위해서 methodOverride 미들웨어는 숨겨진 input 필드를 사용해 그러한 요청들을 흉내 낼 수 있게 한다.
 
 * cookieParser : 쿠키를 보내고 받을 수 있게 해준다.
 
-{% highlight JavaScript %}
+``` js
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
-{% endhighlight %}
+```
 
 
 * errorHandler : 전체 미들웨어 프로세스 중에 발생하는 어떤 에러든 처리할 수 있게 해준다. <br> 일반적으로 자체 errorHandler를 작성해 기본 404 HTML 페이지를 반환하거나 데이터 저장소에 에러를 남기는 작업 등을 할 수 있다.
@@ -54,7 +55,7 @@ app.use(cookieParser());
 * Handlebars : 뷰를 위해 사용할 템플릿 엔진이다.
 
 * express.static : 미리 정의도니 디렉토리의 정적 자원을 브라우저에 그려줄 때 사용한다.
-{% highlight JavaScript %}
+``` js
 app.use(express.static(path.join(__dirname, 'public')));
-{% endhighlight %}
+```
 

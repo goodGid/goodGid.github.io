@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [서버 준비하기] 클라우드 서비스의 종류 "
-date:   2018-08-03
-excerpt: " Types Of Cloud Services "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 클라우드 서비스의 종류
 

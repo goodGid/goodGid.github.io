@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "String Input (2)"
-date:   2017-10-20
-excerpt: "String Input (2)"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Review
 
@@ -21,7 +22,7 @@ getline은 '\n'까지 입력 버퍼에 들어간다.
 --- 
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 using namespace std;
@@ -40,7 +41,7 @@ int main(){
 }
 
 
-{% endhighlight %}
+```
 
 ```
 [ solve 1 ]
@@ -113,7 +114,7 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
 
 ---
 
- {% highlight cpp %}
+ ``` cpp
 
     #include <iostream>
     using namespace std;
@@ -133,7 +134,7 @@ delim 조건 이 후 값만 입력 버퍼에 들어간다.
     }
 
 
-{% endhighlight %}
+```
 
 ```
 [ solve 1 ]

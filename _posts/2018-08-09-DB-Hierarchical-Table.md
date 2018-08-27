@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "DataBase :: Hierarchical Table "
-date:   2018-08-09
-excerpt: "Hierarchical Table"
-cate : "post"
-tag:
-- DB
+title:  "Hierarchical Table "
+categories: Database
+tags: Database
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Concept
 

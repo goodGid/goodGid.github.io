@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Conference :: Open Insight "
-date:   2017-12-23
-excerpt: " Open Insight "
-cate : "post"
-tag:
-- Conference
+title:  " Open Insight "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Open Insight ?
 

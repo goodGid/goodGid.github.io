@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Framework "
-date:   2017-12-18
-excerpt: " Framework "
-cate : "post"
-tag:
-- Framework
+categories: Technology
+tags: Technology
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## What is Framework ?
 

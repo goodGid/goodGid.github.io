@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: Transaction, Message, Call "
-date:   2018-02-22
-excerpt: "  Transaction, Message, Call "
-cate : "post"
-tag:
-- BlockChain
+title:  " Transaction, Message, Call "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 ## Concept Define
 

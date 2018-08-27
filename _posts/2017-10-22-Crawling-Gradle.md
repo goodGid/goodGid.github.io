@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Crawling :: Usage Gradle "
-date:   2017-10-22
-excerpt: " Gradle 사용법 "
-cate : "post"
-tag:
-- Crawling
+title:  " Crawling :: Gradle 사용법 "
+categories: E.T.C
+tags: Crawling
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## To do
 
@@ -15,8 +16,8 @@ tag:
 ---
 
 ## Code
-{% highlight java %}
 
+``` java
 [Sector 1]
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Attribute;
@@ -32,7 +33,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-{% endhighlight %}
+```
 
 ---
 

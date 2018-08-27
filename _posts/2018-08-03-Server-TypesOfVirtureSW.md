@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [서버 준비하기] 가상화 S/W 종류 "
-date:   2018-08-03
-excerpt: " Types Of Virture SW "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 가상화 S/W 종류
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [공개 서버의 기본] 웹 애플리케이션 서버의 역할 "
-date:   2018-08-10
-excerpt: " Role of Web Application Server "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 웹 애플리케이션 서버의 역할
 

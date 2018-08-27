@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: Upload Image's "
-date:   2017-11-26
-excerpt: " Upload Image's "
-cate : "post"
-tag:
-- Node.js
+title:  " Upload Image's "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Upload Method
 
@@ -37,7 +38,7 @@ req.files[i].location이 아닌
 req.file.location으로 Aws의 S3에 업로드 된 1개의 이미지 URL을 참조한다.
 
 
-{% highlight JavaScript %}
+``` js
 
 router.post('/single', upload.single('image'), function(req, res){
     let imgIdx = req.body.imgIdx;
@@ -82,7 +83,7 @@ router.post('/single', upload.single('image'), function(req, res){
     });
 });
 
-{% endhighlight %}
+```
 
 --- 
 
@@ -100,7 +101,7 @@ single은 req.file  / array는 req.files 처럼 사용해야 한다.
 그래서 req.files[0].location / req.files[1].location 이런식으로 참조를 하면 된다.
 
 
-{% highlight JavaScript %}
+``` js
 
 router.post('/array', upload.array('image',2), function(req, res){
     let imgIdx = req.body.imgIdx;
@@ -146,4 +147,4 @@ router.post('/array', upload.array('image',2), function(req, res){
     });
 });
 
-{% endhighlight %}
+```

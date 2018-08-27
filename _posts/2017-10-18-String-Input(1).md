@@ -1,18 +1,19 @@
 ---
 layout: post
 title:  "String Input (1)"
-date:   2017-10-18
-excerpt: "String Input (1)"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Review
 
 * cin : `문자`와 `문자열` 모두 입력 받을 수 있다.
 
-{% highlight cpp %}
+``` cpp
 
 int main(){
          char a, b;
@@ -29,7 +30,7 @@ int main(){
      }
 
 
-{% endhighlight %}
+```
 
 ```
 solve)
@@ -52,7 +53,7 @@ solve)
 
  * get : `문자`만 입력받을 수 있다.
 
- {% highlight cpp %}
+ ``` cpp
 
      #include <iostream>
      void main() {
@@ -63,7 +64,7 @@ solve)
          cout<< a << " " << b << " " << c << endl;    //2
      }
 
-{% endhighlight %}
+```
 
 ```
 solve)
@@ -96,7 +97,7 @@ solve)
  
  * getline : `문자열`만 입력받을 수 있다.
 
- {% highlight cpp %}
+ ``` cpp
 
     #include<iostream>
      void main(){
@@ -112,7 +113,7 @@ solve)
      }
 
 
-{% endhighlight %}
+```
 
 ```
 solve)
@@ -149,7 +150,7 @@ solve)
 
  * scanf 
 
- {% highlight cpp %}
+ ``` cpp
 
     #include<iostream>
     using namespace std;
@@ -163,7 +164,7 @@ solve)
      }
 
 
-{% endhighlight %}
+```
 
 ```
 solve)
@@ -188,7 +189,7 @@ solve)
 * scanf 이용하여 한 글자씩 입력받기
 
  
- {% highlight cpp %}
+ ``` cpp
 
 #include<iostream>
 using namespace std;
@@ -203,7 +204,7 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```
 
 ```
 solve)
@@ -221,7 +222,7 @@ solve)
 * cin.get()과 scanf("%1c")의 공통점
 
 
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <cstring>
@@ -248,7 +249,7 @@ int main() {
     return 0;
 }
 
-{% endhighlight %}
+```
 
 
 ```

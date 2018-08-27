@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Permutation"
-date:   2017-10-17
-excerpt: "Permutation"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
@@ -36,7 +37,7 @@ Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <algorithm>
@@ -105,7 +106,6 @@ int main() {
     return 0;
 }
 
-
-{% endhighlight %}
+```
 
 

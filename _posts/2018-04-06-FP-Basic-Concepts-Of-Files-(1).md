@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " 파일의 기본개념 - 파일의 종류  [ Part 1 ] "
-date:   2018-04-06
-excerpt: " 파일의 종류  [ Part 1 ]"
-cate : "posts"
-tag:
-- File Processing
+categories: 파일처리
+tags: 파일처리
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # 파일의 종류
 

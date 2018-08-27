@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Ethereum Basic :: Solidity Grammer - dApp과 EVM "
-date:   2018-02-26
-excerpt: " Solidity Grammer  "
-cate : "post"
-tag:
-- Ethereum
+categories: BlockChain
+tags: Ethereum
+author: goodGid
 ---
+* content
+{:toc}
+
 
 * 스마트 계약을 활용환 분산형 응용 프로그램인 DApp(Decentralized Application)
 

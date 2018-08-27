@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  " Node :: app.use() vs app.get() "
-date:   2017-12-06
-excerpt: " app.use() vs app.get() "
-cate : "post"
-tag:
-- Node.js
+title:  " app.use() vs app.get() "
+categories: Node.js
+tags: Node.js
+author: goodGid
 ---
+* content
+{:toc}
+
 
 
 ## Concept

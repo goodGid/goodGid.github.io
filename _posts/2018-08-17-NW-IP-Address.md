@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  " [OSI 참조 모델과 TCP/IP 기초] IP 주소 "
-date:   2018-08-17
-excerpt: " IP 주소 "
-cate : "posts"
-tag:
-- Network
+categories: Network
+tags: Network
+author: goodGid
 ---
+* content
+{:toc}
 
 # IP 주소
 

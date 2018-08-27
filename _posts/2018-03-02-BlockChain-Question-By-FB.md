@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " When is the geth.ipc file produced? "
-date:   2018-03-02
-excerpt: " When is the geth.ipc file produced? "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " [공개 서버의 기본] SSL 서버의 역할"
-date:   2018-08-10
-excerpt: " Role of SSL Server "
-cate : "posts"
-tag:
-- Server
+categories: Server
+tags: Server
+author: goodGid
 ---
+* content
+{:toc}
+
 
 # SSL 서버의 역할
 

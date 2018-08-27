@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  " Connecting Mist to a local test network "
-date:   2018-03-02
-excerpt: "  Connecting Mist to a local test network "
-cate : "post"
-tag:
-- BlockChain
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " BlockChain :: Mining Term "
-date:   2018-02-22
-excerpt: "  Mining Term "
-cate : "post"
-tag:
-- BlockChain
+title:  " Mining Term "
+categories: BlockChain
+tags: BlockChain
+author: goodGid
 ---
+* content
+{:toc}
 
 
 ## Mining Term

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Check Input Data Format "
-date:   2018-07-22
-excerpt: "Check Input Data Format"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## Problem : Alphabet
 
@@ -20,7 +21,7 @@ Problem URL : **[문자열 내림차순으로 배치하기](https://programmers.
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 bool solution(string s) {
     for (int i = 0; i < s.length(); i++) {
@@ -35,7 +36,7 @@ bool solution(string s) {
 }
 
 
-{% endhighlight %}
+```
 
 ---
 
@@ -51,7 +52,7 @@ Problem URL : **[문자열 다루기 기본](https://programmers.co.kr/learn/cou
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 bool solution(string s) {
     for (int i = 0; i < s.length(); i++) {
@@ -62,7 +63,7 @@ bool solution(string s) {
 }
 
 
-{% endhighlight %}
+```
 
 ---
 

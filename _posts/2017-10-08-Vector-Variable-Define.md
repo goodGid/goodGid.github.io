@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Vector :: Vector 선언"
-date:   2017-10-07
-excerpt: "Vector 선언"
-cate : "algorithm"
-tag:
-- Key Point
+categories: KeyPoint
+tags: KeyPoint
+author: goodGid
 ---
+* content
+{:toc}
+
 
 ## [1] Review (17. 10. 07)
 
@@ -36,9 +37,9 @@ Vector를 사용하여 2차원 배열을 구현하는 법을 알아보자.
 ### 1차원 Vector
 
 
-{% highlight cpp %}
+``` cpp
 vector<T> v(5)
-{% endhighlight %}
+```
 
 기본적인 vector의 선언 방식이다. 
 
@@ -53,9 +54,9 @@ T형 데이터 타입을 원소로 갖는
 크기가 5인 vector가 생성된다.
 
 
-{% highlight cpp %}
+``` cpp
 vector<int> v(5,7)
-{% endhighlight %}
+```
 
 int형 타입을 원소로 가지고 
 
@@ -68,9 +69,9 @@ int형 타입을 원소로 가지고
 
 ### 2차원 Vector
 
-{% highlight cpp %}
+``` cpp
 vector<vector<int> > v
-{% endhighlight %}
+```
 
 
 기본적인 2차원 벡터의 선언 방식이다. 
@@ -84,9 +85,9 @@ vector를 선언함으로써
 2차원 배열과 같은 구조의 벡터를 선언하는 방식이다.
 
 
-{% highlight cpp %}
+``` cpp
 vector<vector<int> > v(5)
-{% endhighlight %}
+```
 
 위와 같이 vector를 선언하면 
 
@@ -103,9 +104,9 @@ vector의 공간을 5개 마련했지만
 아직 int형에 공간은 할당이 되어있지 않다.
 
 
-{% highlight cpp %}
+``` cpp
 vector<vector<int> > v(5, vector<int>(3,-1))
-{% endhighlight %}
+```
 
 일단 int형을 원소로 가지는 vector를 
 
@@ -120,7 +121,7 @@ _위 내용은 [해당 Blog](http://canna90.tistory.com/41)에서 발췌하였�
 ---
 
 ## Code
-{% highlight cpp %}
+``` cpp
 
 #include <iostream>
 #include <vector>
@@ -145,12 +146,12 @@ int main(){
     return 0;
 }
 
-{% endhighlight %}
+```
 
 ---
 ## Output
 
-{% highlight cpp %}
+``` cpp
 
 7 7 7 
 7 7 7 
@@ -159,7 +160,7 @@ int main(){
 7 7 7 
 Program ended with exit code: 0
 
-{% endhighlight %}
+```
 
 
 

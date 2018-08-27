@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  " Conference :: BlockChain ChainPartners "
-date:   2018-02-21
-excerpt: " BlockChain - ChainPartners "
-cate : "post"
-tag:
-- Conference
+title:  " BlockChain ChainPartners "
+categories: Conference
+tags: 
+author: goodGid
 ---
+* content
+{:toc}
 
 
 ## Conference Info

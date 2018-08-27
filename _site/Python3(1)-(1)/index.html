@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Python Study (1) - (1) :: Type </title>
+    <meta name="description" content="  유니코드  리스트  튜플  사전유니코드      파이썬은 Default가 Unicode이다.        어떤 문자의 유니코드 값을 알고 싶거나 반대로 유니코드 값을 문자로 변환할 때  &gt;&gt;&gt; ord('s')115&gt;&gt;&gt; chr(115)'s'리스트...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/Python3(1)-(1)/">
+    <link rel="alternate" type="application/rss+xml" title="Gid Blog" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Gid Blog</a>
+        <small>BE Developer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1> Python Study (1) - (1) :: Type </h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-01-30
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>goodGid
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Python" title="Category: Python" rel="category">Python</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a-->
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#유니코드" id="markdown-toc-유니코드">유니코드</a></li>
+  <li><a href="#리스트" id="markdown-toc-리스트">리스트</a></li>
+  <li><a href="#튜플" id="markdown-toc-튜플">튜플</a></li>
+  <li><a href="#사전" id="markdown-toc-사전">사전</a></li>
+</ul>
+
+<h2 id="유니코드">유니코드</h2>
+
+<ul>
+  <li>
+    <p>파이썬은 Default가 Unicode이다.</p>
+  </li>
+  <li>
+    <p>어떤 문자의 유니코드 값을 알고 싶거나 반대로 유니코드 값을 문자로 변환할 때</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="s">'s'</span><span class="p">)</span>
+<span class="mi">115</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">115</span><span class="p">)</span>
+<span class="s">'s'</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="리스트">리스트</h2>
+
+<ul>
+  <li>
+    <p>리스트는 값의 나열이다.</p>
+  </li>
+  <li>
+    <p>순서 존재, 여러 종류의 값을 담을 수 있다.</p>
+  </li>
+  <li>
+    <p>다음 예제와 같이 []로 묶어서 정의</p>
+  </li>
+  <li>
+    <p>append, insert, extend, + ,index, pop, remove, reverse, sort 등 함수 사용 가능
+``` python</p>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>colors = [‘red’, ‘green’, ‘gold’]
+colors
+[‘red’, ‘green’, ‘gold’]</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>type(colors)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&lt;class ‘list’&gt;</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+---
+
+## 세트
+
+* 수학시간에 배운 집합과 동일한 개념이다.
+
+* 세트는 리스트와 마찬가지로 값의 모임 But 순서는 없다. 
+
+* 다음 예제와 같이 {}로 묶어서 정의
+
+``` python
+&gt;&gt;&gt; a = {1,2,3}
+&gt;&gt;&gt; b = {3,4,5}
+
+&gt;&gt;&gt; a.union(b)
+{1,2,3,4,5}
+# a 세트값이 바뀌는건 아니다 ! 
+
+&gt;&gt;&gt; a.intersection(b)
+{3}
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="튜플">튜플</h2>
+
+<ul>
+  <li>
+    <p>리스트와 유사하지만 리스트와 달리 [] 대신 ()로 묶어서 표현</p>
+  </li>
+  <li>
+    <p>읽기 전용</p>
+  </li>
+  <li>
+    <p>읽기 전용인 만큼 제공되는 함수도 리스트에 비해 적지만, 속도는 그만큼 빠름</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">tuple</span><span class="s">'&gt;</span><span class="err">
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="사전">사전</h2>
+
+<ul>
+  <li>키와 쌍으로 구성되어 있다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span>
+<span class="p">{</span><span class="s">'a'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'b'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'c'</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">dict</span><span class="s">'&gt;</span><span class="err">
+</span></code></pre></div></div>
+
+<ul>
+  <li>dict()생성자를 사용하지 않고 직접 사전을 생성할 수 있다</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">color</span> <span class="o">=</span> <span class="p">{</span><span class="s">"apple"</span><span class="p">:</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">:</span><span class="s">"yellow"</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span><span class="p">[</span><span class="s">"apple"</span><span class="p">]</span>
+<span class="s">'red'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># 인덱스는 지원 x </span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">KeyError</span><span class="p">:</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<ul>
+  <li>새로운 값 추가하려면 새로운 키와 값을 할당하면 되고, 변경하는 법도 변경하려는 항목의 키에 변경할 값을 할당하면 된다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span><span class="p">[</span><span class="s">"cherry"</span><span class="p">]</span> <span class="o">=</span> <span class="s">"red"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span><span class="p">[</span><span class="s">"apple"</span><span class="p">]</span> <span class="o">=</span> <span class="s">"green"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'green'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>사전의 내용을 얻으려면 다음과 같이 items(), keys(), values()를 사용한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">color</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="o">...</span> 
+<span class="p">(</span><span class="s">'apple'</span><span class="p">,</span> <span class="s">'green'</span><span class="p">)</span>
+<span class="p">(</span><span class="s">'banana'</span><span class="p">,</span> <span class="s">'yellow'</span><span class="p">)</span>
+<span class="p">(</span><span class="s">'cherry'</span><span class="p">,</span> <span class="s">'red'</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">color</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+
+<span class="n">apple</span>
+<span class="n">banana</span>
+<span class="n">cherry</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">color</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="n">green</span>
+<span class="n">yellow</span>
+<span class="n">red</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'green'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">:</span> <span class="s">'red'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">color</span><span class="p">[</span><span class="s">'cherry'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{</span><span class="s">'apple'</span><span class="p">:</span> <span class="s">'green'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">:</span> <span class="s">'yellow'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">color</span>
+<span class="p">{}</span>
+</code></pre></div></div>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>Back : </strong> <a href="/1516/">BOJ - 게임 개발</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>Next : </strong> <a href="/Python3(1)-(2)/"> Python Study (1) - (2) :: 얕은 복사와 깊은 복사, 함수 </a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/Python3(1)-(1)/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/Python3(1)-(1)/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//goodGid.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+              
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/goodGid" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>   
+            <a href="https://www.facebook.com/sgy8971" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+        </p>
+        <!-- <p>
+            Total visits to the site<span id="busuanzi_value_site_pv"></span>the number of visitors to this site<span id="busuanzi_value_site_uv"></span>total reading of this article<span id="busuanzi_value_page_pv"></span>
+        </p> -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
