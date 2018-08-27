@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 함수  "
+title:  " 함수  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

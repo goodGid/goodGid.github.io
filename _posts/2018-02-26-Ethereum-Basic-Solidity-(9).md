@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 이벤트 & 전처리문(pragma)과 파일 참조(import)  "
+title:  " 이벤트 & 전처리문(pragma)과 파일 참조(import)  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

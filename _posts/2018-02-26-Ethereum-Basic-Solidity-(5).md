@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 맵핑(Mapping) (중요)  "
+title:  " 맵핑(Mapping) (중요)  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

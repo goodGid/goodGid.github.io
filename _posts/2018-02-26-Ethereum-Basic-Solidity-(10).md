@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 가시성  "
+title:  " 가시성  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

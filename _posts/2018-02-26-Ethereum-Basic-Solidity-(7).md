@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 상속  "
+title:  " 상속  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Mist "
+title:  " Mist "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

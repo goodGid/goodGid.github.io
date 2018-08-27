@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - dApp과 EVM "
+title:  " dApp과 EVM "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 형 변환(Type Conversion)  "
+title:  " 형 변환(Type Conversion)  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer (1) - 배열 (중요) "
+title:  " 배열 - (1) (중요) "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 추상 컨트랙트 & 인터페이스 "
+title:  " 추상 컨트랙트 & 인터페이스 "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

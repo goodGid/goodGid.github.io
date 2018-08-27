@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Execute Private Network "
+title:  " Execute Private Network "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

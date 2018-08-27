@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 블록과 거래 속성들  "
+title:  " 블록과 거래 속성들  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

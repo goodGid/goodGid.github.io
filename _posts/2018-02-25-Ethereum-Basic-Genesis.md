@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Genesis "
+title:  " Genesis "
 categories: BlockChain
 tags: Ethereum
 author: goodGid

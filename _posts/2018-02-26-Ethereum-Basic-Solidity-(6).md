@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Ethereum Basic :: Solidity Grammer - 구조체  "
+title:  " 구조체  "
 categories: BlockChain
 tags: Ethereum
 author: goodGid
