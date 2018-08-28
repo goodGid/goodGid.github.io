@@ -24,15 +24,9 @@ description_footer: ""
 
 # comments
 # two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
-# duoshuo_shortname: goodGid
 disqus_shortname: goodGid
 
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-# baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+# Statistic Analysis 
 google_analytics_id: UA-124748625-1 # google analytics id
 
 # Build settings
