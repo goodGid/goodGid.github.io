@@ -38,6 +38,8 @@ type: page
 
 ### 2018
 
+* 　08. 28 블로그에 Google Analytics 적용
+
 * 　08. 25 블로그에 SEO 적용
 
 * 　07. 20 ~ 07. 21	[Amathon](https://goodgid.github.io/2018_Amathon/) 참가
