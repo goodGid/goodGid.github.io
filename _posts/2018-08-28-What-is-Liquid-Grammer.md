@@ -14,6 +14,10 @@ author: goodGid
 
 * Liquid는 2006년 6월부터 웹페이지에 동적인 컨텐츠를 로드(load)하는 Shopify의 백본(backbone)으로 기능하고 있다.
 
+
+
+
+
 ---
 
 ## Liquid는 어디에 사용되는가?

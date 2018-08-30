@@ -32,6 +32,12 @@ author: goodGid
 이 자료 구조를 "프로세스 제어 블록(PCB)"라 부른다.
 ```
 
+
+
+
+
+
+
 * [PCB](https://goodgid.github.io/OS-How-Computer-Systems-Work/#4-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%ED%95%B8%EB%93%A4%EB%A7%81)에는 인터럽트가 발생했을 때 그 프로그램의 어느 부분까지 수행했는지를 저장하기 위한 영역이 존재한다.
 
 ```
