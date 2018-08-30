@@ -186,6 +186,8 @@ type: page
 
 * 3D Print & IoT Camp 1박2일
 
+* 커뮤니티 운영 장학금 기부
+
 ---
 
 ## Comments
