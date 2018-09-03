@@ -9,7 +9,7 @@ author: goodGid
 {:toc}
 
 
-* **req.query**와 **req.params**의 사용법을 익혀보자 !
+# ToDo : req.query와 req.params의 사용법을 익혀보자 !
 
 
 
