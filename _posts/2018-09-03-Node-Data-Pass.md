@@ -21,6 +21,9 @@ author: goodGid
 
 
 ``` js
+
+## req.query
+
 // GET /search?q=tobi+ferret
 req.query.q
 // => "tobi ferret"
@@ -36,6 +39,8 @@ req.query.shoe.type
 // => "converse"
 
 
+
+## req.params
 
 router.get('/topic/:id/:name', function(req, res){
 	const id = req.params.id;
