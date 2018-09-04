@@ -14,19 +14,28 @@ author: goodGid
 
 Problem URL : **[다리 놓기](https://www.acmicpc.net/problem/1010)**
 
+
+
+
+
+
 ---
 
 ``` cpp
 
-
 //[1]
 int a,b,n,r;
-    a = b = 1;
-    scanf("%d%d",&r,&n);
-        
-    for(int i=n-r+1; i<=n; i++)
+    a = b =1;
+    scanf("%d%d",&n,&r);
+    
+    for(int i=n-r+1; i<=n; i++){
         b = ( b * i ) / a++ ;
-        
+    }
+    cout << b << endl;
+
+// 4 2를 입력하면 b=6 출력 
+// 10 3을 입력하면 b=120 출력 
+
 
 //[2]
 int d[31][31];
