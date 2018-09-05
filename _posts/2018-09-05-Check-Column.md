@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "세로로 값 체크하기"
+title:  "Column을 기준으로 값 체크하기"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
