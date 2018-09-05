@@ -8,7 +8,9 @@ author: goodGid
 * content
 {:toc}
 
-## ToDo : JS의 특징에 대해 공부해보자.
+## ToDo
+
+* JS의 특징에 대해 공부해보자.
 
 
 

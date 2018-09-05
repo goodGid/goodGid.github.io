@@ -9,7 +9,9 @@ author: goodGid
 {:toc}
 
 
-# ToDo : req.query와 req.params의 사용법을 익혀보자 !
+## ToDo 
+
+* req.query와 req.params의 사용법을 익혀보자 !
 
 
 
@@ -58,6 +60,6 @@ router.get('/topic/:id/:name', function(req, res){
 
 ---
 
-# Review
+## Review
 
 * 항상 헷갈렸던 **req.query**와 **preq.params** 사용법 정리를 했다.
