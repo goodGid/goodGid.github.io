@@ -51,7 +51,7 @@ author: goodGid
 
 * **교착상태(Deadlock)**이 발생할 수있다.
 
-* 2단계 로킹 규약 준수 o --> 직렬가능 <br> 2단계 로킹 규약 준수 x --> 직렬가능성을 보장 할 수없다. 직렬이 가능할수도, 가능하지 않을수도....
+* 2단계 로킹 규약 준수 o --> [직렬가능](https://goodgid.github.io/Concurrency-Control/#%EB%B3%91%ED%96%89%EC%88%98%ED%96%89%EA%B3%BC-%EC%A7%81%EB%A0%AC%EC%84%B1) <br> 2단계 로킹 규약 준수 x --> [직렬가능성](https://goodgid.github.io/Concurrency-Control/#%EB%B3%91%ED%96%89%EC%88%98%ED%96%89%EA%B3%BC-%EC%A7%81%EB%A0%AC%EC%84%B1)을 보장 할 수없다. 직렬이 가능할수도, 가능하지 않을수도....
 
 
 
