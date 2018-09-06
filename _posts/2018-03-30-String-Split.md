@@ -75,9 +75,7 @@ Program ended with exit code: 0
 
 ```
 
----
-
-## [1] Review
+### Review
 
 * [1]은 Error가 발생한다.
 
@@ -136,8 +134,6 @@ int main(){
 }
 ```
 
----
-
-## [2] Review
+### Review
 
 * " " 전용
