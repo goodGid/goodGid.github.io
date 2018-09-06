@@ -1,0 +1,73 @@
+---
+layout: post
+title:  " HDLC란 무엇인가? "
+categories: Technology
+tags: Technology
+author: goodGid
+---
+* content
+{:toc}
+
+## HDLC란 무엇인가?
+
+* 컴퓨터 데이터 통신에 적합한 전송제어방식
+     - 점대점,다중점 링크 상에서 반이중,전이중 통신을 모두 지원하도록 설계됨
+
+
+
+
+
+
+
+
+---
+
+## HDLC의 특징
+
+* 비트(Bit)위주의 프로토콜, 각각의 프레임에 데이터의 흐름을 제어하며 오류를 검출할 수 있는 비트 열을 삽입해 전송
+
+* 포인트 투 포인트 및 멀티 포인트, 루프 방식에서 모두 사용 가능
+
+* 단방향, 반이중, 전이중 통신을 모두 지원하며, **동기식 전송 방식**을 사용
+
+* 오류 제어를 위해 **Go-Back-N ARQ**와 **선택적 재전송(Selective Repeat) ARQ**를 사용
+
+* 흐름 제어를 위해 **슬라이딩 윈도우 방식**을 사용
+
+* 전송 제어상의 제한을 받지 않고 자유롭게 비트 정보를 전송할 수 있는 것을 **비트 투과성(투명성)**이라 함
+
+* 비트 투과성(투명성)을 보장하기 위한 기능으로 **비트 스터핑(Bit Stuffing)**이 사용됨
+
+* **전송 효율**과 **신뢰성**이 높음
+
+
+
+---
+
+## HDLC 프레임 구조 
+
+![](/assets/img/posts/what_is_hdlc_1.png)
+
+<center><small> "**주제**넘는 **정**보를 달라하네" 라고 외워보는건 어떨까?  </small></center>
+
+* 플래그(Flag) : 프레임의 시작과 끝을 나타내는 고유한 비트 패턴(01111110)으로 각 통화로의 혼선을 방지하기 위해 동기 유지
+
+* FCS(프레임 검사 순서 필드) : 프레임 내용에 대한 오류 검출을 위해 사용되는 부분으로 일반적으로 CRC 코드가 사용됨
+
+![](/assets/img/posts/what_is_hdlc_2.png)
+
+
+<br>
+
+
+![](/assets/img/posts/what_is_hdlc_3.png)
+
+
+
+---
+
+## 출처
+
+* [HDLC   High-level Data-Link Control   하이레벨 데이타링크 제어 절차](http://www.ktword.co.kr/abbr_view.php/abbr_view.php?m_temp1=89&m_search=%ED%95%98)
+
+* [HDLC 프레임 전송모드 특징](https://m.blog.naver.com/PostView.nhn?blogId=c_18&logNo=220687580321&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
