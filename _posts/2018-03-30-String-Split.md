@@ -9,7 +9,7 @@ author: goodGid
 {:toc}
 
 
-## [1] String Split : 모든 strTok 가능
+## String Split : 모든 strTok 가능
 
 ``` cpp
 
@@ -88,7 +88,7 @@ Program ended with exit code: 0
 
 
 
-## [2] String Split : Space 전용
+## String Split : Space 전용
 
 ``` cpp
 
@@ -136,4 +136,4 @@ int main(){
 
 ### Review
 
-* " " 전용
+* Space 전용이다.

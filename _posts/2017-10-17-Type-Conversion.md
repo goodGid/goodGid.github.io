@@ -9,7 +9,18 @@ author: goodGid
 {:toc}
 
 
-## Problem
+## The Key Point
+
+* [문자열 - 숫자] 형 변환
+
+
+
+
+
+
+---
+
+## [1] Problem
 Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 
 {% capture images %}
@@ -18,19 +29,14 @@ Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
----
 
-
-## The Key Point
-
-    [문자열 - 숫자] 형 변환
 
 ---
 
 
-## [1] Code
+## [1] Code (17. 10. 17)
+
 ``` cpp
-
 
 #include <iostream>
 #include <string>
@@ -54,7 +60,7 @@ int main() {
 
 ```
 
-## Input
+### Input
 
 ``` cpp
 
@@ -63,7 +69,8 @@ int main() {
 ```
 
 ---
-## Output
+
+### Output
 
 ``` cpp
 
@@ -78,7 +85,7 @@ Program ended with exit code: 0
 ---
 
 
-## Problem
+## [2] Problem
 Problem URL : **[문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)**
 
 {% capture images %}
