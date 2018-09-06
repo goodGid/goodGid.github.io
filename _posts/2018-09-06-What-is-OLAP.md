@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " OALP란 무엇인가? "
+title:  " OLAP란 무엇인가? "
 categories: Technology
 tags: Technology
 author: goodGid
@@ -8,9 +8,9 @@ author: goodGid
 * content
 {:toc}
 
-## OALP란 무엇인가?
+## OLAP란 무엇인가?
 
-* OALP(Online Analytical Processing)은 대용량 업무 데이터베이스를 구성하고 BI(Business Intelligence)를 지원하기 위해 사용되는 기술
+* OLAP(Online Analytical Processing)은 대용량 업무 데이터베이스를 구성하고 BI(Business Intelligence)를 지원하기 위해 사용되는 기술
 
 * **데이터 웨어하우스**나 **데이터 마트**와 같은 대규모 데이터에 대해 최종 사용자가 정보에 **직접 접근**하여 **대화식**으로 정보를 분석하고 의사결정에 활용할 수 있는 실시간 분석처리
 
@@ -24,7 +24,7 @@ author: goodGid
 
 ---
 
-## OALP 특징
+## OLAP 특징
 
 | 특징 | 주요 개념 |
 |:------: |:-------:|
@@ -36,7 +36,7 @@ author: goodGid
 
 ---
 
-## OALP 기능
+## OLAP 기능
 
 
 | 다차원 데이터 분석 | 다양한 데이터에 접근 |
@@ -54,4 +54,4 @@ author: goodGid
 
 ## 출처
 
-* [OALP(Online Analytical Processing) :: 인생극장](http://azurecourse.tistory.com/406)
+* [OLAP(Online Analytical Processing) :: 인생극장](http://azurecourse.tistory.com/406)
