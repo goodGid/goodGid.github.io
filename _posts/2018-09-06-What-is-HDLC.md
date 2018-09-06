@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " HDLC란 무엇인가? "
+title:  " HDLC(High-level Data Link Control)프로토콜이란? "
 categories: Technology
 tags: Technology
 author: goodGid
@@ -48,7 +48,7 @@ author: goodGid
 
 ![](/assets/img/posts/what_is_hdlc_1.png)
 
-<center><small> "**주제**넘는 **정**보를 달라하네" 라고 외워보는건 어떨까?  </small></center>
+<center><small> **주제**넘는 **정**보를 달라하네 라고 외워보는건 어떨까?  </small></center>
 
 * 플래그(Flag) : 프레임의 시작과 끝을 나타내는 고유한 비트 패턴(01111110)으로 각 통화로의 혼선을 방지하기 위해 동기 유지
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Locking이란 무엇인가? "
+title:  " 로킹(Locking)이란 무엇인가? "
 categories: Technology
 tags: Technology
 author: goodGid
@@ -8,7 +8,7 @@ author: goodGid
 * content
 {:toc}
 
-## 로킹이란 무엇인가?
+## 로킹(Locking)이란 무엇인가?
 
 * 상호배제와 접근제어 기능
 
