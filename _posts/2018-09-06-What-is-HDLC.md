@@ -30,9 +30,9 @@ author: goodGid
 
 * 단방향, 반이중, 전이중 통신을 모두 지원하며, **동기식 전송 방식**을 사용
 
-* 오류 제어를 위해 **Go-Back-N ARQ**와 **선택적 재전송(Selective Repeat) ARQ**를 사용
+* 오류 제어를 위해 **[Go-Back-N ARQ](https://goodgid.github.io/Error-Flow-Control/#go-back-n-arq-gbn-arq)**와 **[선택적 재전송(Selective Repeat) ARQ](https://goodgid.github.io/Error-Flow-Control/#selective-rejectsr-arq)**를 사용
 
-* 흐름 제어를 위해 **슬라이딩 윈도우 방식**을 사용
+* 흐름 제어를 위해 **[슬라이딩 윈도우 방식](https://goodgid.github.io/Error-Flow-Control/#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EC%9C%88%EB%8F%84%EC%9A%B0sliding-window)**을 사용
 
 * 전송 제어상의 제한을 받지 않고 자유롭게 비트 정보를 전송할 수 있는 것을 **비트 투과성(투명성)**이라 함
 
