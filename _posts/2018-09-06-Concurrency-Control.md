@@ -101,7 +101,7 @@ author: goodGid
 
 ---
 
-## 출처
+## 참고
 
 * [병행 제어(Concurrency Control)](http://ehpub.co.kr/tag/%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B2%95/)
 

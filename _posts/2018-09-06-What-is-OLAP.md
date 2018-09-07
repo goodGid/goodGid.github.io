@@ -52,6 +52,6 @@ author: goodGid
 
 ---
 
-## 출처
+## 참고
 
 * [OLAP(Online Analytical Processing) :: 인생극장](http://azurecourse.tistory.com/406)

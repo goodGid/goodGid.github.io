@@ -66,7 +66,7 @@ author: goodGid
 
 ---
 
-## 출처
+## 참고
 
 * [HDLC   High-level Data-Link Control   하이레벨 데이타링크 제어 절차](http://www.ktword.co.kr/abbr_view.php/abbr_view.php?m_temp1=89&m_search=%ED%95%98)
 
