@@ -13,8 +13,6 @@ author: goodGid
 
 >> <b>[2017 Contributhon Home Page](https://2017.contributhon.kr/)<b>
 
-
-
 {% capture images %}
 	/assets/img/conference/contributhon_1.png
 {% endcapture %}
@@ -26,6 +24,21 @@ author: goodGid
 	/assets/img/conference/contributhon_2.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
+
+
+
+아두이노를 통한 하드웨어 개발과 웹 기술을 이용한 소프트웨어 개발
+
+IoT 디바이스는 잘 다루지만 Web 개발에 익숙하지 않은 개발자를 위해 만들었습니다. 
+
+자신의 IoT 아이디어를 쉽게 구현할 수 있게 도움을 주려는 것이 이 프로젝트의 목적입니다.
+
+이번 행사를 통해 IoT Labs : Farm 을 개발할 것입니다. 
+
+비닐하우스의 각종 정보를 센서를 통해 수집하고 웹으로 시각화(visualization)하여 농작물 관리에 도움을 주려 합니다.
+
+
+
 
 ---
 
