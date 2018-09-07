@@ -25,6 +25,16 @@ author: goodGid
 
 * 실질적으로 <b>IP 주소와 MAC 주소를 대응</b>시키는 일을 한다.
 
+
+
+
+
+
+
+
+
+
+
 ```
 컴퓨터는 제 3계층으로부터 받은 패킷을 프레임으로 만들어 케이블로 흘려 보낸다.
 
@@ -81,3 +91,32 @@ Why?
 {% endcapture %}
 {% include gallery images=images caption=" " cols=1 %}
 
+
+---
+
+
+* *ARP와 RARP*
+
+![](/assets/img/server/arp_2.png) 
+
+![](/assets/img/server/arp_5.png) 
+
+---
+
+* *TCP/IP 프로토콜에서 ARP의 위치*
+
+![](/assets/img/server/arp_3.png)
+
+
+---
+
+* *ARP 동작*
+
+![](/assets/img/server/arp_4.png)
+
+
+---
+
+# 참고 자료
+
+* [주소 변환 프로토콜(ARP)](http://elearning.kocw.net/document/lec/2012/AnDong/ChungJoongSoo/3-1.pdf)
