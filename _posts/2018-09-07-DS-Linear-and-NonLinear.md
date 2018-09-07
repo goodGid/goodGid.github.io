@@ -45,6 +45,9 @@ author: goodGid
 ![](/assets/img/data_structure/linear_and_nonlinear_3.png)
 
 
+![](/assets/img/data_structure/linear_and_nonlinear_4.png)
+
+
 
 ---
 
