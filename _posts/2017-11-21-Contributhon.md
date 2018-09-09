@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Contributhon "
-categories: Conference
-tags: 
+categories: Competition
+tags: Competition
 author: goodGid
 ---
 * content
