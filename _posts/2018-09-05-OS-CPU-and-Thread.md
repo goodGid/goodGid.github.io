@@ -9,9 +9,9 @@ author: goodGid
 {:toc}
 
 
-## ToDo
-
 * CPU와 쓰레드 개념에 대해 알아보자.
+
+
 
 
 
