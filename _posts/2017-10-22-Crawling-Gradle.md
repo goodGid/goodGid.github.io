@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Crawling :: Gradle 사용법 "
-categories: E.T.C
+categories: Technology
 tags: Crawling
 author: goodGid
 ---

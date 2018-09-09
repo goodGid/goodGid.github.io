@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Free Domain "
-categories: E.T.C
-tags: 
+categories: Technology
+tags: Technology
 author: goodGid
 ---
 * content

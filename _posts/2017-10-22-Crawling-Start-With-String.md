@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Crawling :: 특정 문자열 Crawling 하기 "
-categories: E.T.C
+categories: Technology
 tags: Crawling
 author: goodGid
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Crawling :: Robots.txt "
-categories: E.T.C
+categories: Technology
 tags: Crawling
 author: goodGid
 ---
