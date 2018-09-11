@@ -11,7 +11,7 @@ author: goodGid
 
 ## Conference Info
 
->> [공식 사이트](http://www.chain.partners/)
+> [공식 사이트](http://www.chain.partners/)
 
 
 

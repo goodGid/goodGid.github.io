@@ -11,7 +11,7 @@ author: goodGid
 
 ## What is Open Insight ?
 
->> <b>[청년창업 컨퍼런스 : Open Insight](https://onoffmix.com/event/122023)<b>
+> <b>[청년창업 컨퍼런스 : Open Insight](https://onoffmix.com/event/122023)<b>
 
 
 

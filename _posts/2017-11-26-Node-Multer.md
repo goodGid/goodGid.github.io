@@ -30,7 +30,7 @@ author: goodGid
 {% include gallery images=images caption=" " cols=1 %}
 
 
->> `application/x-www-form-urlencoded`이란 ?
+> `application/x-www-form-urlencoded`이란 ?
 
 1. Post로 데이터를 보낼 때 표준 MIME type이다.
 2. Key - Value 형태로 인코딩 된다.

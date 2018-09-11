@@ -11,7 +11,7 @@ author: goodGid
 
 ## What is Key Platform ?
 
->> <b>[2017 Key Platform Home Page](http://www.keyplatform.or.kr/)<b>
+> <b>[2017 Key Platform Home Page](http://www.keyplatform.or.kr/)<b>
 
 
 
