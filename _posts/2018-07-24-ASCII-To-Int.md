@@ -13,6 +13,13 @@ author: goodGid
 Problem URL : **[시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)**
 
 
+
+
+
+
+
+
+
 {% capture images %}
     /assets/img/algorithm/ascii_value_1.png
 {% endcapture %}
@@ -47,6 +54,25 @@ string solution(string s, int n) {
     return answer;
 }
 
+```
+
+
+``` cpp
+int main(){
+    // [1], [2] 어느걸로 해도 상관 없다.
+    char s[5] = "aAzZ"; // [1]
+    string s = "aAzZ"; // [2]
+    
+    // 0의 ASCII값은 48이다.
+    // 그렇기 때문에  [ A - '0' + 48 ]을 해주게 되면
+    // A의 ASCII값을 알 수 있다.
+    printf("%d \n", s[0] - '0' + 48); // 97
+    printf("%d \n", s[1] - '0' + 48); // 65
+    printf("%d \n", s[2] - '0' + 48); // 122
+    printf("%d \n", s[3] - '0' + 48); // 90
+    
+    return 0;
+}
 ```
 
 
