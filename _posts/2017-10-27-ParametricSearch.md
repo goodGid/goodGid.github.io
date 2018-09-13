@@ -18,12 +18,15 @@ Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
----
 
 
-## The Key Point
 
-* Parametric Search
+
+
+
+
+
+
 
 
 ---
