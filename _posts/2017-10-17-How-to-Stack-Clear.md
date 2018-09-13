@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stack"
+title:  "Stack 초기화 하는 법"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -9,9 +9,17 @@ author: goodGid
 {:toc}
 
 
-## Review
+## Key Point
 
-    Stack Clear 하는 법
+* Stack Clear 하는 법
+
+
+
+
+
+
+
+
 
 ---
 
@@ -33,7 +41,8 @@ int main(){
     /*
      Stack Clear !
      */
-    while( !s.empty() ) s.pop();
+    while( !s.empty() ) 
+        s.pop();
     
     return 1;
 }
