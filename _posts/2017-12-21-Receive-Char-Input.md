@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Receive Char Input"
+title:  " Char 타입 입력 받기 "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -19,12 +19,11 @@ Problem URL : **[트리 순회](https://www.acmicpc.net/problem/1991)**
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
----
 
 
-## The Key Point
 
-    Char Type 입력 받기 
+
+
 
 
 ---

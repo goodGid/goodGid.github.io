@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Count Positon Number"
+title:  "Int 총 자릿 수 구하기"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -18,12 +18,16 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
+
+
+
+
+
+
+
 ---
 
 
-## The Key Point
-
-    자릿수 구하기 
 
 ``` cpp
 

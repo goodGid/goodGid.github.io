@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "10진수를 임의의 진수로 변환"
+title:  " 진법 변환하기 "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -8,12 +8,7 @@ author: goodGid
 * content
 {:toc}
 
-
-## Review
-
-> 많이 사용되는 진수 변환
-
-* 10진수 -> 2진수 변환
+## 10진수 -> 2진수 변환
 
 ``` cpp
  int tenConvertTwo(int num)
@@ -31,7 +26,13 @@ author: goodGid
 ```
 
 
-* 2진수 -> 10진수 변환
+
+
+
+
+---
+
+## 2진수 -> 10진수 변환
 
 ``` cpp
 
@@ -52,7 +53,8 @@ author: goodGid
 
 ---
 
-## Code
+## 특정 진법으로 바꾸기
+
 ``` cpp
 
 #include <iostream>

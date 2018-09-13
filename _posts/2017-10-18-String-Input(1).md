@@ -9,9 +9,29 @@ author: goodGid
 {:toc}
 
 
-## Review
 
-* cin : `문자`와 `문자열` 모두 입력 받을 수 있다.
+## To Do
+
+* 코딩테스트를 치루다 보면 n값을 주어지지 않고 임의의 Input이 들어 올 때가 있다.
+
+* 이러한 문제의 입력을 준비하고자 공부하였다.
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## cin
+
+* `문자`와 `문자열` 모두 입력 받을 수 있다.
 
 ``` cpp
 
@@ -51,7 +71,9 @@ solve)
  ---
 
 
- * get : `문자`만 입력받을 수 있다.
+## cin.get()
+
+* `문자`만 입력받을 수 있다.
 
  ``` cpp
 
@@ -95,38 +117,36 @@ solve)
 
 ---
  
- * getline : `문자열`만 입력받을 수 있다.
+## cin.getline()
+ 
+* `문자열`만 입력받을 수 있다.
 
  ``` cpp
+#include<iostream>
+void main(){
+    char a[10];
+    cin.getline(a,10);             //1
+    cout << a << endl;             //2
+    cin.getline(a, 10, 'u');       //3
+    cout << a << endl;             //4
 
-    #include<iostream>
-     void main(){
-         char a[10];
-         cin.getline(a,10);             //1
-         cout << a << endl;             //2
-         cin.getline(a, 10, 'u');       //3
-         cout << a << endl;             //4
-
-	 string s;
-         getline(cin, s);		//5
-         cout << s << endl;
-     }
-
-
+    string s;
+    getline(cin, s);		//5
+    cout << s << endl;
+}
 ```
 
 ```
-solve)
-
-     1번 so cute! 입력 후 엔터
-     2번 결과 => so cute!
-     cf)cin의 경우 공백이 나오면 입력이 끝났다고 간주, but getline은 공백(ascii 32)도 문자로 받아들임
+    solve)
+    1번 so cute! 입력 후 엔터
+    2번 결과 => so cute!
+    cf)cin의 경우 공백이 나오면 입력이 끝났다고 간주, but getline은 공백(ascii 32)도 문자로 받아들임
  
-     3번 so cute! 입력 후 엔터
-     4번 결과 => so c
+    3번 so cute! 입력 후 엔터
+    4번 결과 => so c
  
  
-   cin.getline(변수의 주소, 최대입력가능 문자수, 종결문자);
+    cin.getline(변수의 주소, 최대입력가능 문자수, 종결문자);
  
  - getline()하면은 Enter키가 전달하는 개행문자를 
    입력의 끝으로 인식하여 한줄 전체를 읽는다.
@@ -148,49 +168,40 @@ solve)
 
 ---
 
- * scanf 
+## scanf 
 
  ``` cpp
-
     #include<iostream>
     using namespace std;
 
     int main(){
-         char c[10];
-	 scanf("%s",c);	        	// 1
-	 cout << c[1] << endl;  	// 2
-     cout << c << endl;         // 3
-	 return 0;
-     }
-
-
+    char c[10];
+    scanf("%s",c);	       	// 1
+	cout << c[1] << endl;  	// 2
+    cout << c << endl;      // 3
+	return 0;
+    }
 ```
 
 ```
-solve)
-     1번 abc 입력 후 엔터
-     2번 b 출력
+    solve)
+    1번 abc 입력 후 엔터
+    2번 b 출력
 
-     1번 a
-     2번 공백 출력
+    1번 a 입력 후 엔터
+    2번 공백 출력
 
-     1번 abc def
-     2번 b
-     3번 abc
-
-
+    1번 abc def 입력 후 엔터
+    2번 b
+    3번 abc
 
     - scanf는 공백전까지 입력받는다.
 ```     
- 
 
----
 
 * scanf 이용하여 한 글자씩 입력받기
 
- 
  ``` cpp
-
 #include<iostream>
 using namespace std;
 
@@ -219,7 +230,7 @@ solve)
 
 ---
 
-* cin.get()과 scanf("%1c")의 공통점
+## cin.get()과 scanf("%1c")의 공통점
 
 
 ``` cpp
@@ -228,13 +239,13 @@ solve)
 #include <cstring>
 using namespace std;
 
+char c[100];
 int main() {
-    char c[100];
-    
     int i=0;
     while (1) {
-        c[i] = cin.get();
-        scanf("%1c",c+i);
+        // [1] 또는 [2]로 하면 된다.
+        c[i] = cin.get(); // [1]
+        // scanf("%1c",c+i); // [2]
         if( c[i] == '\n'){
             cout << "Enter1" << endl;
             break;
@@ -253,20 +264,18 @@ int main() {
 
 
 ```
-solve)
-    input : abc de
+    solve)
+    input : qwer asdf zxcv 입력 후 엔터
     output :
-    Enter1 
-    abc de
+    Enter1
+    qwer asdf zxcv 
+
+    Program ended with exit code: 0
+
+    - 엔터까지 들어가서 qwer asdf zxcv 출력 후 (엔터) 하고 "Program ended with exit code: 0" 출력
+    - Enter2가 아닌 Enter1이 출력 된다. 
+    - Enter를 입력했을 시 그 값은 `\n`이다.
 ```
-
-* 코딩테스트를 치루다 보면 n값을 주어지지 않고 임의의 Input이 들어 올 때가 있다.
-
-* 이러한 문제의 입력을 준비하고자 공부하였다.
-
-* `Enter2`이 아닌 `Enter1`이 출력 된다. 
-
-* `Enter`를 입력했을 시 그 값은 `\n`이다.
 
 
 

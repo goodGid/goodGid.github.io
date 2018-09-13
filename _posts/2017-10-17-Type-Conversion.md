@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Type Conversion : String to Int"
+title:  " String을 Int로 변환하기 "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -9,9 +9,9 @@ author: goodGid
 {:toc}
 
 
-## The Key Point
+## To Do
 
-* [문자열 - 숫자] 형 변환
+* String을 Int로 변환하는 방법에 대해 알아보자.
 
 
 
@@ -21,6 +21,7 @@ author: goodGid
 ---
 
 ## [1] Problem
+
 Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 
 {% capture images %}
@@ -86,6 +87,7 @@ Program ended with exit code: 0
 
 
 ## [2] Problem
+
 Problem URL : **[문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)**
 
 {% capture images %}

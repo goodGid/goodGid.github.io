@@ -9,15 +9,22 @@ author: goodGid
 {:toc}
 
 
-## Review
-
-* cin vs getline
+## cin vs getline
 
 ```
 cin은 '\n'전 까지 입력 버퍼에 들어간다.
 
 getline은 '\n'까지 입력 버퍼에 들어간다.
 ```
+
+
+
+
+
+
+
+
+
 
 --- 
 
@@ -84,10 +91,10 @@ int main(){
 
 ```     
  
- ---
+---
 
 
- * cin.ignore()
+## cin.ignore()
 
 ```
 ignore(n, delim)

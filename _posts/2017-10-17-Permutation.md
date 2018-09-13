@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Permutation"
+title:  "조합(Permutation)"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -10,6 +10,7 @@ author: goodGid
 
 
 ## Problem
+
 Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
 
 {% capture images %}
@@ -18,6 +19,15 @@ Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
     /assets/img/algorithm/10972_3.png
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=3 %}
+
+
+
+
+
+
+
+
+
 
 ---
 

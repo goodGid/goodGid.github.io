@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distance between two points"
+title:  "두 점 사이 거리 구하기"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -11,7 +11,15 @@ author: goodGid
 
 ## The Key Point
 
-    두 점 사이의 거리 구하기
+* 두 점 사이의 거리 구하기
+
+
+
+
+
+
+
+
 
 ---
 
