@@ -19,6 +19,25 @@ Problem URL : **[가장 긴 팰린드롬](https://programmers.co.kr/learn/course
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
+
+
+* [10174 팰린드롬](https://www.acmicpc.net/problem/10174)
+
+* [13275 가장 긴 팰린드롬 부분 문자열](https://www.acmicpc.net/problem/13275)
+
+* [11046 팬린드롬?](https://www.acmicpc.net/problem/11046)
+
+* [10942 팰린드롬?](https://www.acmicpc.net/problem/10942)
+
+
+
+
+
+
+
+
+
+
 ---
 
 
