@@ -63,6 +63,11 @@ int main(){
     char s[5] = "aAzZ"; // [1]
     string s = "aAzZ"; // [2]
     
+    printf("%d \n", s[0] - 'a'); // 0
+    printf("%d \n", s[1] - 'A'); // 0
+    printf("%d \n", s[2] - 'z'); // 0
+    printf("%d \n", s[3] - 'Z'); // 0
+    
     // 0의 ASCII값은 48이다.
     // 그렇기 때문에  [ A - '0' + 48 ]을 해주게 되면
     // A의 ASCII값을 알 수 있다.
@@ -71,13 +76,9 @@ int main(){
     printf("%d \n", s[2] - '0' + 48); // 122
     printf("%d \n", s[3] - '0' + 48); // 90
     
+    
     return 0;
 }
 ```
 
-
----
-
-## Feed Back 
-
-* ASCII값을 갖고 노는 법 !
+s
