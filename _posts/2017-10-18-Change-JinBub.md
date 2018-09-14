@@ -11,11 +11,9 @@ author: goodGid
 ## 10진수 -> 2진수 변환
 
 ``` cpp
- int tenConvertTwo(int num)
-  {
+ int tenConvertTwo(int num){
     int result = 0;
-    for(int i=1; num>0; i*=10)
-    {
+    for(int i=1; num>0; i*=10){
         int binary = num % 2;
         result += binary*i;
         num /= 2;
@@ -36,11 +34,9 @@ author: goodGid
 
 ``` cpp
 
- int twoConvertTen(int num)
-  {
+ int twoConvertTen(int num){
     int result = 0, mul = 1;
-    while(num>0)
-    {
+    while(num>0){
         if(num%2)
             result += mul;
         mul *= 2;
@@ -71,8 +67,7 @@ long long ChangeJinBub(int base, int decimal){
     // result[] 마지막 위치에 Null 문자 넣기
     result[i] = '\0'; // i=99
     
-    while( decimal !=0 )
-    {
+    while( decimal !=0 ){
         result[--i] = c[ decimal % base ]; // result[] <-- 나머지
         decimal /= base; // 몫
     }
