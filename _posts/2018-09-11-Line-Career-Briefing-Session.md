@@ -156,4 +156,4 @@ author: goodGid
 
 * kafka
 
-* 아이코 파운데이션과 루프 체인 
+* 아이콘 파운데이션(ICON Foundation)과 루프 체인 
