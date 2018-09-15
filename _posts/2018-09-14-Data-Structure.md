@@ -19,6 +19,8 @@ author: goodGid
 
 
 
+
+
 ---
 
 ## Stack
@@ -89,3 +91,328 @@ int main() {
 * [출처](http://coding-all.tistory.com/3)
 
 ---
+
+## Queue
+
+``` cpp
+constint MAX_QUEUE_SIZE =10000;
+intqueue[MAX_QUEUE_SIZE +1];
+int queue_head;
+int queue_tail;
+
+void queueInit() {
+   queue_head = queue_tail =0;
+}
+
+int queueSize() {
+   return queue_tail - queue_head;
+}
+
+bool queueIsEmpty() {
+   return queueSize() ==0;
+}
+
+void queuePush(int x) {
+   queue[queue_tail++] = x;
+}
+
+int queuePop() {
+   returnqueue[queue_head++];
+}
+```
+
+---
+
+## Tree
+
+``` cpp
+typedefstruct node{
+   int data;
+   struct node* leftchild;
+   struct node* rightchild;
+};
+
+node* Make_Tree(int key) {
+   node* Newnode = (node*)malloc(sizeof(node));
+   Newnode->data = key;
+   Newnode->leftchild =NULL;
+   Newnode->rightchild =NULL;
+   
+   Newnode->leftchild = Make_Tree();
+   Newnode->rightchild = Make_Tree();
+   return Newnode;
+}
+```
+
+
+
+---
+
+
+
+## Sort 
+
+### 선택 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void swap(int *arr, int a, int b){
+    int tmp = arr[b];
+    arr[b] = arr[a];
+    arr[a] = tmp;
+}
+
+void SelectionSort(int *arr, int begin, int end){
+    for(int i=begin; i<end; i++){
+        int tmp = i;
+        for(int j=i+1; j <= end; j++)
+            if( arr[tmp] > arr[j] )
+                tmp = j;
+        if( tmp != i )
+            swap(arr,i,tmp);
+    }
+}
+
+
+int main(){
+    int arr[5] = {5,2,1,4,3};
+    SelectionSort(arr, 0, 4);
+    return 0;
+}
+```
+
+---
+
+### 버블 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void swap(int *arr, int a, int b){
+    int tmp = arr[b];
+    arr[b] = arr[a];
+    arr[a] = tmp;
+}
+
+void BubbleSort(int *arr, int begin, int end){
+    for(int i=end; i>begin; i--){
+        for(int j=begin; j<i; j++)
+            if(arr[j] > arr[j+1])
+                swap(arr, j, j+1);
+    }
+}
+
+int main(){
+    int arr[5] = {5,2,1,4,3};
+    BubbleSort(arr, 0, 4);
+    
+    for(int i=0; i<5; i++)
+        cout << arr[i] << endl;
+    return 0;
+}
+```
+
+
+---
+
+### 삽입 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void InsertSort(int *arr, int begin, int end){
+    for(int i=begin+1; i<=end; i++){
+        int j;
+        int v = arr[i];
+        
+        for(j=i; j>begin && arr[j-1] > v; j--)
+            arr[j] = arr[j-1];
+        
+        if( i != j)
+            arr[j] = v;
+    }
+}
+
+int main(){
+    int arr[5] = {5,2,1,4,3};
+    InsertSort(arr, 0, 4);
+    return 0;
+}
+```
+
+---
+
+### 퀵 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void swap(int *arr, int a, int b){
+    int tmp = arr[b];
+    arr[b] = arr[a];
+    arr[a] = tmp;
+}
+
+void QuickSort(int *arr, int begin, int end){
+    int pivot = begin;
+    int left = begin;
+    int right = end;
+    
+    while (left < right) {
+        while (arr[left] <= arr[pivot] && left < end)
+            left += 1;
+        while (arr[right] >= arr[pivot] && right > begin)
+            right -= 1;
+        if( left < right ){
+            swap(arr, left, right);
+            continue;
+        }
+        swap(arr, pivot, right);
+        QuickSort(arr, begin, right-1);
+        QuickSort(arr, right+1, end);
+    }
+}
+
+int main(){
+    int arr[5] = {5,2,1,4,3};
+    QuickSort(arr, 0, 4);
+    return 0;
+}
+
+```
+
+
+---
+
+
+### 머지 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void MergeArray(int *arr, int *copy, int start, int end){
+    int mid = (start + end ) >> 1;
+    int i = start;
+    int j = mid+1;
+    int k = start;
+    while (i <= mid && j <= end) {
+        if( arr[i] <= arr[j])
+            copy[k++] = arr[i++];
+        else
+            copy[k++] = arr[j++];
+    }
+    while (i <= mid)
+        copy[k++] = arr[i++];
+    while (j <= end)
+        copy[k++] = arr[j++];
+    
+    for(int i=start; i<=end; i++)
+        arr[i] = copy[i];
+}
+    
+void MergeSort(int *arr, int *copy, int start, int end){
+    if(start == end)
+        return ;
+    int mid = (start + end) >> 1;
+    MergeSort(arr, copy, start, mid);
+    MergeSort(arr, copy, mid+1, end);
+    MergeArray(arr, copy, start, end);
+}
+int main(){
+    int arr[5] = {5,1,4,3,2};
+    int arr2[5];
+    
+    MergeSort(arr, arr2, 0, 4);
+    for(int i=0; i<5; i++)
+        cout << arr2[i] << endl;
+}
+```
+
+---
+
+### 힙 정렬
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+void swap(int *arr, int a, int b){
+    int tmp = arr[b];
+    arr[b] = arr[a];
+    arr[a] = tmp;
+}
+
+void Heapify(int*arr, int index, int size) {
+    for (int ch = (index << 1) | 1; ch <size; index = ch, ch = ch << 1 | 1) {
+        if (ch + 1<size&& arr[ch + 1] > arr[ch])
+            ++ch;
+        if (arr[ch] <= arr[index])
+            return;
+        
+        swap(arr,ch, index);
+    }
+}
+
+void HeapSort(int*arr, int begin, int end) {
+    int *base = arr + begin;
+    int size = end - begin + 1;
+    
+    for (int i = size / 2 - 1; i >= 0; i--)
+        Heapify(base, i, size);
+    
+    while (--size >= 1) {
+        swap(arr,0, size);
+        Heapify(base, 0, size);
+    }
+}
+
+int main(){
+    int arr[5] = {5,2,1,4,3};
+    HeapSort(arr, 0, 4);
+    return 0;
+}
+```
+
+
+---
+
+
+## 바이너리 서치(Binary Search)
+
+``` cpp
+#include<iostream>
+using namespace std;
+
+/*
+ return target index
+ */
+int BinarySearch(int arr[], int end, int target){
+    int first = 0;
+    int last = end;
+    int mid;
+    while (first <= last) {
+        mid = (first + last) >> 1 ;
+        if( target == arr[mid])
+            return mid;
+        else if (target > arr[mid])
+            first = mid + 1;
+        else
+            last = mid - 1;
+    }
+    return -1;
+}
+
+int main(){
+    // arr은 정렬된 상태여야 한다.
+    int arr[5] = {1,2,3,4,5};
+    printf("%d\n", BinarySearch(arr, 4, 2)); // 1
+    printf("%d\n", BinarySearch(arr, 4, 6)); // -1
+    printf("%d\n", BinarySearch(arr, 4, 4)); // 3
+}
+```
