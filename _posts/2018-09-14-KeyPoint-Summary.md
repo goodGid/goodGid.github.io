@@ -183,7 +183,7 @@ int main(){
 ---
 
 
-## [각 자릿수 더하기 (Add each digit)]({{site.url}}/Add-Each-Digit/)
+## [각 자릿수 더하기(Add each digit)]({{site.url}}/Add-Each-Digit/)
 
 ``` cpp
 int cal(int num) {
@@ -255,5 +255,31 @@ int main(){
 }
 ```
 
+---
 
+## [반올림 처리]({{site.url}}/Rounds/)
 
+``` cpp
+int C, K, t = 1;
+int main() {
+	scanf("%d %d", &C, &K);
+	for (int i = 0; i < K; i++) t *= 10;
+	K = t / 10;
+	printf("%d\n", (C + (K * 5)) / (K * 10) * (K * 10));
+
+	return 0;
+}
+
+/*
+K자리 의미는 
+1일 때는 10단위로
+2일 때는 100단위로
+n일 때는 pow(10,n)이다.
+*/
+
+Input : 123 1 
+Output : 120
+
+Input : 123 2
+Output : 100
+```
