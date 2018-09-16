@@ -23,11 +23,11 @@ Problem URL : **[가장 긴 팰린드롬](https://programmers.co.kr/learn/course
 
 * [10174 팰린드롬](https://www.acmicpc.net/problem/10174)
 
-* [13275 가장 긴 팰린드롬 부분 문자열](https://www.acmicpc.net/problem/13275)
+* [13275 가장 긴 팰린드롬 부분 문자열]({{site.url}}/BOJ-13275/)
 
-* [11046 팬린드롬?](https://www.acmicpc.net/problem/11046)
+* [11046 팬린드롬??](https://www.acmicpc.net/problem/11046)
 
-* [10942 팰린드롬?](https://www.acmicpc.net/problem/10942)
+* [10942 팰린드롬?]({{site.url}}/BOJ-10942/)
 
 
 
