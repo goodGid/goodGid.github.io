@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 자료 구조 구현 "
+title:  " 자료 구조(Data Structure) 구현 "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -95,29 +95,34 @@ int main() {
 ## Queue
 
 ``` cpp
-constint MAX_QUEUE_SIZE =10000;
-intqueue[MAX_QUEUE_SIZE +1];
-int queue_head;
-int queue_tail;
+const int size = 10;
+int queue[size];
 
-void queueInit() {
-   queue_head = queue_tail =0;
+int q_front;
+int q_rear;
+
+void QueueInit(){
+    q_front = q_rear = 0;
 }
 
-int queueSize() {
-   return queue_tail - queue_head;
+int QueueSize(){
+    return q_rear - q_front;
 }
 
-bool queueIsEmpty() {
-   return queueSize() ==0;
+void QueuePush(int value){
+    queue[q_rear++ % size] = value;
 }
 
-void queuePush(int x) {
-   queue[queue_tail++] = x;
+int QueuePop(){
+    if(q_front == 0)
+        return -1;
+    return queue[q_front++];
 }
 
-int queuePop() {
-   returnqueue[queue_head++];
+bool QueueEmpty(){
+    if( q_front == q_rear )
+        return true;
+    return false;
 }
 ```
 
@@ -390,20 +395,21 @@ int main(){
 using namespace std;
 
 /*
- return target index
+ BS function return target index
  */
-int BinarySearch(int arr[], int end, int target){
-    int first = 0;
-    int last = end;
+ int BS(int *arr, int _end, int target){
+    int st = 0;
+    int end = _end;
     int mid;
-    while (first <= last) {
-        mid = (first + last) >> 1 ;
-        if( target == arr[mid])
+    
+    while (st <= end) {
+        mid = ( st + end ) >> 1;
+        if( target == arr[mid] )
             return mid;
-        else if (target > arr[mid])
-            first = mid + 1;
+        else if( target > arr[mid] )
+            st = mid + 1;
         else
-            last = mid - 1;
+            end = mid - 1;
     }
     return -1;
 }
@@ -411,8 +417,8 @@ int BinarySearch(int arr[], int end, int target){
 int main(){
     // arr은 정렬된 상태여야 한다.
     int arr[5] = {1,2,3,4,5};
-    printf("%d\n", BinarySearch(arr, 4, 2)); // 1
-    printf("%d\n", BinarySearch(arr, 4, 6)); // -1
-    printf("%d\n", BinarySearch(arr, 4, 4)); // 3
+    printf("%d\n", BS(arr, 4, 2)); // 1
+    printf("%d\n", BS(arr, 4, 6)); // -1
+    printf("%d\n", BS(arr, 4, 4)); // 3
 }
 ```
