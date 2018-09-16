@@ -14,8 +14,8 @@ author: goodGid
  int tenConvertTwo(int num){
     int result = 0;
     for(int i=1; num>0; i*=10){
-        int binary = num % 2;
-        result += binary*i;
+        int tmp = num % 2;
+        result += tmp * i;
         num /= 2;
     }
     return result;
@@ -32,6 +32,20 @@ author: goodGid
 ---
 
 ## 2진수 -> 10진수 변환
+
+``` cpp
+int twoConvertTen(int num){
+    int result = 0;
+    for(int i=1; num>0; i*=2){
+        int tmp = num % 2;
+        result += tmp * i;
+        num /= 10;
+    }
+    return result;
+}
+```
+
+
 
 ``` cpp
  int twoConvertTen(int num){

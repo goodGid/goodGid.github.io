@@ -14,8 +14,8 @@ author: goodGid
  int tenConvertTwo(int num){
     int result = 0;
     for(int i=1; num>0; i*=10){
-        int binary = num % 2;
-        result += binary*i;
+        int tmp = num % 2;
+        result += tmp * i;
         num /= 2;
     }
     return result;
@@ -34,17 +34,15 @@ author: goodGid
 
 ``` cpp
 
- int twoConvertTen(int num){
-    int result = 0, mul = 1;
-    while(num>0){
-        if(num%2)
-            result += mul;
-        mul *= 2;
+int twoConvertTen(int num){
+    int result = 0;
+    for(int i=1; num>0; i*=2){
+        int tmp = num % 2;
+        result += tmp * i;
         num /= 10;
     }
     return result;
-  }
-
+}
 ```
 
 
