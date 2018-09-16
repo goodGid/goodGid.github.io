@@ -20,8 +20,9 @@ author: goodGid
     }
     return result;
   }
-
 ```
+
+
 
 
 
@@ -33,7 +34,6 @@ author: goodGid
 ## 2진수 -> 10진수 변환
 
 ``` cpp
-
  int twoConvertTen(int num){
     int result = 0, mul = 1;
     while(num>0){
@@ -44,7 +44,6 @@ author: goodGid
     }
     return result;
   }
-
 ```
 
 ---
@@ -52,7 +51,6 @@ author: goodGid
 ## 특정 진법으로 바꾸기
 
 ``` cpp
-
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -89,4 +87,12 @@ int main(){
     cout << ans << endl;
 }
 
+
+Input
+2 10
+4 10
+
+Output
+1010
+22
 ```
