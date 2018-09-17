@@ -123,7 +123,7 @@ type: page
 
 ### 2014 
 
-* 　14. 07 ~ 16. 04. 13 S/W관리병으로 국방부/합참 근무 - Web Monitoring System 개발 (Java Swing)
+* 　14. 07 ~ 16. 04. 13 [S/W 관리병](https://goodgid.github.io/SW-Management-Soldier/)으로 국방부/합참 근무 - Web Monitoring System 개발 (Java Swing)
 
 * 　학술 연구 장학생
 
