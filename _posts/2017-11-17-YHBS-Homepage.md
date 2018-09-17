@@ -11,8 +11,9 @@ author: goodGid
 
 ## Home Page
 
-See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>]
+See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>
 
+* 　18. 08. 16 기준으로 사이트가 닫혔다. :<
 
 * Node의 기본 View Engine인 `EJS`로 개발을 하였다.
 
