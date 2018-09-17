@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  " 프림(Prim) 알고리즘 "
-categories: KeyPoint
-tags: KeyPoint
+categories: Algorithm
+tags: Algorithm
 author: goodGid
 ---
 * content
 {:toc}
-
-
 
 ## 신장 트리란?
 
@@ -16,27 +14,33 @@ author: goodGid
 
 * 그리고 **최소 신장 트리(MST, Minimum Spanning Tree)**란 정점과 정점 사이의 경로의 합이 최소인 신장 트리를 말한다.
 
-* 그래프에서 MST를 만드는 여러가지 방법 중 많이 알려진 방법으로는 **프림 알고리즘**과 **크루스칼 알고리즘**이 있다.
+* 그래프에서 MST를 만드는 여러가지 방법 중 많이 알려진 방법으로는 **프림 알고리즘**과 **[크루스칼 알고리즘](https://goodgid.github.io/Kruskal-Algorithm/)**이 있다.
+
+
+
+
+
+
+
+
+
+
 
 * **프림 알고리즘**은 **정점**을 추가하면서 트리를 확장하는 방법이고, <br> **크루스칼 알고리즘**은 **간선**을 추가하면서 최소 신장 트리를 만드는 방법이다.
+    - 프림은 시작점을 정하고, 시작점에서 가까운 정점을 선택하면서 MST를 구성하므로 그 과정에서 사이클을 이루지 않는다.
+    - 크루스칼은 시작점을 정하지 않고, 최소 비용의 간선을 차례로 대입하면서 MST를 구성하므로, <br> 그 과정에서 사이클이 이뤄지는지 체크해야한다. <br> 사이클을 확인하는 방법으로는 Union-Find(Disjoint-Set) 방법이 있다.
+
+<br>
 
 * 그래프에서는 **트리**와 비슷하게 **노드(Node)**와 **엣지(Edge)**로 구성되어 있다. 
 
 * 그래프에서는 **노드(Node)**를 **버텍스(Vertex)**, **엣지(Edge)**를 **아크(Arc)**라고 부른다.
 
-
-
-
-
-
-
-
-
 ---
 
 ## Prim Algorithm
 
-* **프림(Prim) MST(Minimum Spanning Tree, 최소 신장 트리)**라고도 한다.
+* **MST(Minimum Spanning Tree, 최소 신장 트리)**이다.
 
 * **그리디(Greedy) 알고리즘**이다.
 
@@ -57,6 +61,8 @@ author: goodGid
 3. 1,2 과정을 반복 하여 모든 정점이 선택될까지 한다.
 ```
 
+> [1] Example
+
 ![](/assets/img/algorithm/prim_algorithm_1.png)
 
 ![](/assets/img/algorithm/prim_algorithm_2.png)
@@ -70,20 +76,12 @@ author: goodGid
 ![](/assets/img/algorithm/prim_algorithm_6.png)
 
 
-
-
-
-> Q. 최소 신장트리는 최단 경로인가?
-
-* 답은 아니다. 
-
-* 예를 들어보자.
+> [2] Exmaple
 
 ![](/assets/img/algorithm/prim_algorithm_7.png)
 
-* 최단 경로처럼 보이지만 `A->E`가는 길은 최소 신장 트리인 `ACDE`보다 `ACE`가 더 짧다.
+![](/assets/img/algorithm/prim_algorithm_8.png)
 
-* 최단 경로를 구하는 알고리즘은 [다익스트라 알고리즘]()을 사용한다.
 
 
 
@@ -95,3 +93,4 @@ author: goodGid
 
 * [최소 신장 트리(MST, minimum spanning tree)](https://www.zerocho.com/category/Algorithm/post/584bcd42580277001862f1a7)
 
+* [최소 스패닝 트리 Prim(프림), Kruskal(크루스칼) 알고리즘 + Union-Find 자료구조](http://stack07142.tistory.com/54)
