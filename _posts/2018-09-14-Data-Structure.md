@@ -226,10 +226,15 @@ int main(){
 ### 삽입 정렬
 
 ``` cpp
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void InsertSort(int *arr, int begin, int end){
+void swap(int *arr, int a, int b){
+    int tmp = arr[b];
+    arr[b] = arr[a];
+    arr[a] = tmp;
+}
+void InsertSort2(int *arr, int begin, int end){
     for(int i=begin+1; i<=end; i++){
         int j;
         int v = arr[i];
@@ -239,6 +244,15 @@ void InsertSort(int *arr, int begin, int end){
         
         if( i != j)
             arr[j] = v;
+    }
+}
+
+void InsertSort(int *arr, int begin, int end){
+    for(int i=0; i<end; i++){
+        for(int j=i+1; j>=0; j--){
+            if( arr[j-1] > arr[j])
+                swap(arr, j-1, j);
+        }
     }
 }
 
