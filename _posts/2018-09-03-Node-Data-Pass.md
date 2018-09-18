@@ -8,7 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-
 ## ToDo 
 
 * req.query와 req.params의 사용법을 익혀보자 !
