@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Dockerfile 자세히 알아보기 "
-categories: Technology
-tags: Technology Docker
+categories: Docker
+tags: Docker
 author: goodGid
 ---
 * content
