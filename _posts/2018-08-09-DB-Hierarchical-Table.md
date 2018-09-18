@@ -33,6 +33,6 @@ author: goodGid
 
 ---
 
-# 참고 블로그
+## 참고
 
 * [답변형 게시판](http://vkein.tistory.com/entry/%EB%8B%B5%EB%B3%80%ED%98%95-%EA%B2%8C%EC%8B%9C%ED%8C%90)

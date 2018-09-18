@@ -161,7 +161,7 @@ root 디렉토리에 /robots.txt 파일을 만들고 [코드](https://gist.githu
 
 ---
 
-# 참고 블로그 
+# 참고
 
 1. [지킬 블로그 구글 검색 가능하게 하는 방법](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
 

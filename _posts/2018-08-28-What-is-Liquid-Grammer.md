@@ -125,7 +125,7 @@ author: goodGid
 ---
 
 
-## 참고 블로그 
+## 참고
 
 * [Liquid Introduction](http://shopify.github.io/liquid/basics/introduction/)
 

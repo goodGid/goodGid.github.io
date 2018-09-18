@@ -193,7 +193,7 @@ author: goodGid
 ---
 
 
-# 참고 블로그 
+# 참고
 
 * [클러스터링이랑 로드밸런싱의 차이](https://blog.naver.com/tnrms007/221335657847)
 

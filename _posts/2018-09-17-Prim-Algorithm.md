@@ -87,7 +87,7 @@ author: goodGid
 
 ---
 
-## 참고 블로그
+## 참고
 
 * [프림(Prim) MST(Minimum Spanning Tree 최소 신장 트리)](http://swlock.blogspot.com/2016/02/prim-mstminimum-spanning-tree.html)
 
