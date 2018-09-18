@@ -9,6 +9,8 @@ author: goodGid
 {:toc}
 
 
+* Docekr는 이미지를 만들기 위해 Dockerfile이라는 파일에 자체 )**DSL(Domain-specific language)**언어를 이용하여 이미지 생성 과정을 적는다.
+
 * Dockerfile은 다음과 같이 `<명령> <매개 변수>` 형식으로 작성
 
 * Docker는 Dockerfile에 작성된 명령을 순서대로 처리
@@ -27,6 +29,17 @@ docker build -t goodgid/example .
 --tag or -t 옵션으로 이미지 이름 설정 가능
 _a_/ : Docker Hub에 이미지를 올리려면 / 앞에 사용자명(_a_) 명시
 ```
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
