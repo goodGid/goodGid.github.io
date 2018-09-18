@@ -61,4 +61,4 @@ router.get('/topic/:id/:name', function(req, res){
 
 ## Review
 
-* 항상 헷갈렸던 **req.query**와 **preq.params** 사용법 정리를 했다.
+* 항상 헷갈렸던 **req.query**와 **req.params** 사용법 정리를 했다.
