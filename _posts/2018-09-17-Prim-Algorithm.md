@@ -28,7 +28,7 @@ author: goodGid
 
 * **프림 알고리즘**은 **정점**을 추가하면서 트리를 확장하는 방법이고, <br> **크루스칼 알고리즘**은 **간선**을 추가하면서 최소 신장 트리를 만드는 방법이다.
     - 프림은 시작점을 정하고, 시작점에서 가까운 정점을 선택하면서 MST를 구성하므로 그 과정에서 사이클을 이루지 않는다.
-    - 크루스칼은 시작점을 정하지 않고, 최소 비용의 간선을 차례로 대입하면서 MST를 구성하므로, <br> 그 과정에서 사이클이 이뤄지는지 체크해야한다. <br> 사이클을 확인하는 방법으로는 Union-Find(Disjoint-Set) 방법이 있다.
+    - - 크루스칼은 시작점을 정하지 않고, 최소 비용의 간선을 차례로 대입하면서 MST를 구성하므로, <br> 그 과정에서 사이클이 이뤄지는지 체크해야한다. <br> 사이클을 확인하는 방법으로는 [Union-Find(Disjoint-Set)]({{site.url}}/Union-Find-Algorithm) 방법이 있다.
 
 <br>
 
@@ -74,13 +74,6 @@ author: goodGid
 ![](/assets/img/algorithm/prim_algorithm_5.png)
 
 ![](/assets/img/algorithm/prim_algorithm_6.png)
-
-
-> [2] Exmaple
-
-![](/assets/img/algorithm/prim_algorithm_7.png)
-
-![](/assets/img/algorithm/prim_algorithm_8.png)
 
 
 

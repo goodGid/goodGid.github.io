@@ -124,7 +124,7 @@ int Find(int x){
 
 * 압축되지 않은 유니온에서 Leaf 노드에서 루트를 찾기 위해선 높이만큼 재귀를 해야하는 비효율성이 생긴다. 
 
-* 따라서 **경로 압축 최적화**을 하여 효율성을 추구한다. <br> <small>여기서 말하는 **경로 압축 최적화**는 [2 코드](http://localhost:4000/Union-Find-Algorithm/#find-%ED%95%A8%EC%88%98)처럼 했을 경우를 말한다.</small>
+* 따라서 **경로 압축 최적화**을 하여 효율성을 추구한다. <br> <small>여기서 말하는 **경로 압축 최적화**는 [2 코드]({{site.url}}//Union-Find-Algorithm/#find-함수)처럼 했을 경우를 말한다.</small>
 
 
 
