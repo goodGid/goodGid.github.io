@@ -19,7 +19,7 @@ author: goodGid
 
 * TCP : 데이터를 중요하게 주고 받고 싶을 경우
 
-* UDP : 신뢰성보다는 빨리 보내고 싶을 경우 <br> ex) VoIP, 시간 동기, 이름 해결 등
+* UDP : 신뢰성보다는 빨리 보내고 싶을 경우 <br> ex) VoIP, 시간 동기, [이름 해결]({{site.url}}/Server-DNS/#dns-서버는-2종류) 등
 
 ---
 
