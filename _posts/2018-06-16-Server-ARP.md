@@ -37,17 +37,18 @@ author: goodGid
 
 ```
 컴퓨터는 제 3계층으로부터 받은 패킷을 프레임으로 만들어 케이블로 흘려 보낸다.
-
 하지만 받은 패킷만으로는 프레임을 만들기 위한 정보가 부족
 
 Why? 
-
 출발지 MAC 주소는 자기 자신의 NIC에 있어 알 수 있지만
-
 목적지 MAC 주소는 모르기 때문이다.
-
 이 때 ARP를 이용하여 IP 주소로부터 MAC 주소를 구한다.
 ```
+
+
+![](/assets/img/server/arp_6.png) 
+
+
 
 ---
 
@@ -86,10 +87,7 @@ Why?
 
 <br>
 
-{% capture images %}
-    /assets/img/server/arp_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/server/arp_1.png) 
 
 
 ---
@@ -117,6 +115,8 @@ Why?
 
 ---
 
-# 참고 자료
+# 참고 
 
 * [주소 변환 프로토콜(ARP)](http://elearning.kocw.net/document/lec/2012/AnDong/ChungJoongSoo/3-1.pdf)
+
+* [[데통] ARP protocol 에 대해서](http://blockdmask.tistory.com/189)
