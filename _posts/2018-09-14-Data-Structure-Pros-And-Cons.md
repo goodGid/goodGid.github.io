@@ -48,7 +48,7 @@ author: goodGid
 * 단점
     - 크기가 제한적이다.
     - 큐의 앞 부분이 비어도 데이터를 삽입할 수 없다.
-    - 큐가 Not Empty여도 Empty라 판단할 수 있다. (rear가 맨 뒤에 있을 경우)
+    - 큐가 Empty여도 Not Empty라 판단할 수 있다. (rear가 맨 뒤에 있을 경우)
 
 
 ---
@@ -65,7 +65,6 @@ author: goodGid
     - 구현이 복잡한편에 속한다.
 
 
-
 ---
 
 ## 참고
@@ -77,5 +76,3 @@ author: goodGid
 * [스택, 큐, 덱(Stack, queue, deque)의 특징에 대해 설명해보세요!](http://jeong-pro.tistory.com/97)
 
 * [08-자료구조: 트리(Tree) - 일반 트리와 트리의 정의,일반트리의 구현](https://m.blog.naver.com/PostView.nhn?blogId=justkukaro&logNo=220548164184&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
-
-* []()
