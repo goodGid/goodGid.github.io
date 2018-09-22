@@ -28,6 +28,25 @@ author: goodGid
 
 ## Liquid 문법 요소
 
+
+### Escape
+
+* Liquid 태그를 그대로 보여줄 수 있게 **Escape**하는 방법이다.
+
+> Example
+
+* {　% raw %　} 와 {　% endraw %　} 사이에 Liquid 문법을 입력하면 그대로 볼 수 있다.
+
+![](/assets/img/posts/what_is_liquid_grammer_1.png)
+
+* 위 사진 처럼 MD를 작성하게 되면
+
+![](/assets/img/posts/what_is_liquid_grammer_2.png)
+
+* 실제로 블로그에선 위와 같이 보인다.
+
+---
+
 ### Object
 
 * Object는 페이지의 어느 지점에 해당 대상을 배치할 지 지시한다. 
@@ -49,6 +68,9 @@ author: goodGid
 ```
 
 * 위의 경우, Liquid는 page.title 객체에 들어있는 텍스트를 출력한다.
+
+---
+
 
 ### Tag
 
@@ -101,25 +123,6 @@ author: goodGid
 {% endcomment %}
 {% endraw %}
 ```
-
----
-
-### Escape
-
-* Liquid 태그를 그대로 보여줄 수 있게 **Escape**하는 방법이다.
-
-> Example
-
-* {　% raw %　} 와 {　% endraw %　} 사이에 Liquid 문법을 입력하면 그대로 볼 수 있다.
-
-![](/assets/img/posts/what_is_liquid_grammer_1.png)
-
-* 위 사진 처럼 MD를 작성하게 되면
-
-![](/assets/img/posts/what_is_liquid_grammer_2.png)
-
-* 실제로 블로그에선 위와 같이 보인다.
-
 
 ---
 
