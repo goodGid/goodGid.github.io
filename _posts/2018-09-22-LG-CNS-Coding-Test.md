@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 2018 LG CNS Code Monster  "
+title:  " 2018 LG CNS Code Monster 후기 "
 categories: E.T.C
 tags: E.T.C
 author: goodGid
