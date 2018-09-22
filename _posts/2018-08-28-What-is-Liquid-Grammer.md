@@ -112,14 +112,13 @@ author: goodGid
 
 * {　% raw %　} 와 {　% endraw %　} 사이에 Liquid 문법을 입력하면 그대로 볼 수 있다.
 
-```
-{ raw }{% raw %}
-{{ test }}
-{% endraw %}{ endraw }
+![](/assets/img/posts/what_is_liquid_grammer_1.png)
 
---> 알맞은 자리에 %를 쓰면 된다.
---> 알맞은 자리에 %를 쓰게되면 실제로 적용이되어 raw 텍스트 자체가 안보여진다.
-```
+* 위 사진 처럼 MD를 작성하게 되면
+
+![](/assets/img/posts/what_is_liquid_grammer_2.png)
+
+* 실제로 블로그에선 위와 같이 보인다.
 
 
 ---
