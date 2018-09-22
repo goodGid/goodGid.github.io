@@ -112,9 +112,11 @@ int solution(int n, vector<vector<int>> house) {
 }
 ```
 
+* 좌표가 -100 ~ 100 이기 때문에 +100을 해줘서 좌표 이동을 해주었다.
+
 * 좌표를 기준으로 해당 좌표값에서 House마다 거리를 계산해서 최소의 거리를 갖는다.
 
-* 마짐가에 House가 3이라면 queue에서 pop을 n-1번 한 후 answer에 q.top()을 넣는다.
+* 마지막에 House가 3이라면 queue에서 pop을 n-1번 한 후 answer에 q.top()을 넣는다.
 
 * O( 200 * 200 * 100) <br> map 크기 : 200 , house 크기 : 100 
 
