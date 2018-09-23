@@ -9,7 +9,7 @@ author: goodGid
 {:toc}
 
 
-* Docekr는 이미지를 만들기 위해 Dockerfile이라는 파일에 자체 )**DSL(Domain-specific language)**언어를 이용하여 이미지 생성 과정을 적는다.
+* Docekr는 이미지를 만들기 위해 Dockerfile이라는 파일에 자체 **DSL(Domain-specific language)**언어를 이용하여 이미지 생성 과정을 적는다.
 
 * Dockerfile은 다음과 같이 `<명령> <매개 변수>` 형식으로 작성
 
