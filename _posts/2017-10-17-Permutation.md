@@ -40,6 +40,25 @@ author: goodGid
 132부터 시작한다.
 ```
 
+* **next or prev permutation**의 Return Value에 대해 알아보자.
+
+``` cpp
+next_permutation(v.begin(),v.end());
+
+/*
+만약 
+vector에 1 2 3 4 가 있다면
+1 2 4 3 으로 순열을 구할 수 있기 때문에 
+Return Value는 1이 된다.
+
+하지만
+vector에 4 3 2 1 순서로 있다면
+더이상의 순열을 구할 수 없기 때문에
+Return Value는 0이 된다.
+*/
+```
+
+
 > next_permutation()
 
 * **작은 값 -> 큰 값** 순서로 진행된다.
