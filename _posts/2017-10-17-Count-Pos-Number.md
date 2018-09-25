@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Int 총 자릿 수 구하기"
+title:  "입력된 Input의 자릿 수 구하기"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -8,15 +8,9 @@ author: goodGid
 * content
 {:toc}
 
-
 ## Problem
 Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 
-{% capture images %}
-    /assets/img/algorithm/2331_1.png
-    /assets/img/algorithm/2331_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
 
 
@@ -24,6 +18,14 @@ Problem URL : **[반복 수열](https://www.acmicpc.net/problem/2331)**
 
 
 
+
+
+
+
+
+![](/assets/img/algorithm/2331_1.png)
+
+![](/assets/img/algorithm/2331_2.png)
 
 ---
 
