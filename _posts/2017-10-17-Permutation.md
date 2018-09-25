@@ -24,6 +24,139 @@ author: goodGid
 
 
 
+
+
+## Key Point
+
+* n값에 따라 앞에서 부터 n자리까지만 순열을 구한다.
+
+* do ~ while이 아닌 while문을 사용하게되면 다음과 같은 문제가 발생한다.
+
+```
+123
+132가 아닌
+
+즉 123상태에서 이미 swap을 시키게 된다.
+132부터 시작한다.
+```
+
+> next_permutation()
+
+* **작은 값 -> 큰 값** 순서로 진행된다.
+
+``` cpp
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+    int arr[10];
+    for(int i=0; i<10; i++)
+        arr[i] = i;
+
+    int n = 3;
+    do {
+        for(int i=0; i<10; i++)
+            cout << arr[i] << " ";
+        cout << endl;
+    } while (next_permutation(arr, arr+n));
+    return 0;
+}
+
+/*
+Output
+n = 3일 때
+0 1 2 3 4 5 6 7 8 9 
+0 2 1 3 4 5 6 7 8 9 
+1 0 2 3 4 5 6 7 8 9 
+1 2 0 3 4 5 6 7 8 9 
+2 0 1 3 4 5 6 7 8 9 
+2 1 0 3 4 5 6 7 8 9 
+
+
+n = 4일 때
+0 1 2 3 4 5 6 7 8 9 
+0 1 3 2 4 5 6 7 8 9 
+0 2 1 3 4 5 6 7 8 9 
+0 2 3 1 4 5 6 7 8 9 
+0 3 1 2 4 5 6 7 8 9 
+0 3 2 1 4 5 6 7 8 9 
+1 0 2 3 4 5 6 7 8 9 
+1 0 3 2 4 5 6 7 8 9 
+1 2 0 3 4 5 6 7 8 9 
+1 2 3 0 4 5 6 7 8 9 
+1 3 0 2 4 5 6 7 8 9 
+1 3 2 0 4 5 6 7 8 9 
+2 0 1 3 4 5 6 7 8 9 
+2 0 3 1 4 5 6 7 8 9 
+2 1 0 3 4 5 6 7 8 9 
+2 1 3 0 4 5 6 7 8 9 
+2 3 0 1 4 5 6 7 8 9 
+2 3 1 0 4 5 6 7 8 9 
+3 0 1 2 4 5 6 7 8 9 
+3 0 2 1 4 5 6 7 8 9 
+3 1 0 2 4 5 6 7 8 9 
+3 1 2 0 4 5 6 7 8 9 
+3 2 0 1 4 5 6 7 8 9 
+3 2 1 0 4 5 6 7 8 9 
+*/
+```
+
+
+> prev_permutation()
+
+* **큰 값 -> 작은 값** 순서로 진행된다.
+
+
+``` cpp
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+    int arr[4] = {3,2,4,1};
+
+    int n = 3;
+     do {
+        for(int i=0; i<4; i++)
+            cout << arr[i] << " ";
+        cout << endl;
+     } while (prev_permutation(arr, arr+n));
+    return 0;
+}
+
+/*
+Output
+n = 3일 때
+3 2 4 1 
+2 4 3 1 
+2 3 4 1 
+
+
+n = 4일 때
+3 2 4 1 
+3 2 1 4 
+3 1 4 2 
+3 1 2 4 
+2 4 3 1 
+2 4 1 3 
+2 3 4 1 
+2 3 1 4 
+2 1 4 3 
+2 1 3 4 
+1 4 3 2 
+1 4 2 3 
+1 3 4 2 
+1 3 2 4 
+1 2 4 3 
+1 2 3 4 
+*/
+```
+
+
+
+---
+
 ## [1] Problem
 
 Problem URL : **[다음 순열](https://www.acmicpc.net/problem/10972)**
