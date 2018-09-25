@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Priority Queue "
+title:  " 우선순위 큐(Priority Queue) "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -8,18 +8,9 @@ author: goodGid
 * content
 {:toc}
 
-
-
-## Related Problem
-
-Problem URL : **[최대 힙](https://www.acmicpc.net/problem/11279)**
-
-Problem URL : **[최소 힙](https://www.acmicpc.net/problem/1927)**
-
----
+## To Do
 
 ``` cpp
-
 // Root is Max Value
 priority_queue<int> pq;
 priority_queue<int,vector<int>,less<int> > pq;
@@ -30,6 +21,43 @@ priority_queue<int,vector<int>,greater<int> > pq;
 ```
 
 
+
+
+
+
+
+
+---
+
+## 활용
+
+``` cpp
+    priority_queue<pair<int,int>> q;
+    
+    q.push({1,1});
+    // front : 1,1
+
+    q.push({1,2});
+    // front : 1,2
+    
+    q.push({2,2});
+    // front : 2,2
+```
+
+* 1st 값으로 최대 값을 선정한 후 같을 시 2st 값으로 선정한다.
+
+* 어디 사용할 수 있을까?
+
+* (1,1) -> (n,m)로 최단으로 가야하는 문제가 있을 시 <br> 우선 순위는 x값이 증가된 상태이고 그 다음이 y값이 증가된 상태일 것이다.
+
+* 이럴 때 (x,y)구조로 priority_queue에 넣게 되면 값이 큰 x값부터 pop을 하게 되고 그 다음이 x값은 같고 y값이 큰 값을 pop을 하게 된다.
+
+* 즉 아래로 쭉 간 후 오른쪾으로 쭉 진행 할 수 있게 된다.
+
+* [알고스팟]({{site.url}}/BOJ-1261/)이라는 문제를 푸는데 이러한 방식으로 [풀이](http://wookje.dance/2017/03/14/boj-1261-%EC%95%8C%EA%B3%A0%EC%8A%A4%ED%8C%9F/)를 진행한 코드가 있다.
+
+
+---
 
 
 ## Review
@@ -52,9 +80,15 @@ priority_queue<int,vector<int>,greater<int> > pq;
 
 ---
 
-## Related Resource
+## 문제
 
-* 참고 Blog
+Problem URL : **[최대 힙](https://www.acmicpc.net/problem/11279)**
 
-1. [Blog 1](http://koosaga.com/9)
+Problem URL : **[최소 힙](https://www.acmicpc.net/problem/1927)**
+
+---
+
+## 참고
+
+* [STL priority queue 활용법](http://koosaga.com/9)
 
