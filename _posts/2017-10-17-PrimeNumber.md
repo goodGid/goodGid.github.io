@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "소수(PrimeNumber)"
+title:  "소수 (PrimeNumber)"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
 ---
 * content
 {:toc}
-
 
 ## The Key Point
 
@@ -20,6 +19,15 @@ x를 2부터 x의 제곱근까지의 숫자로 나누어 떨어지는지 검사�
 제곱근까지의 수 중 한 개의 수에 대해서라도
 나누어 떨어지면 소수가 아니다. 
 ```
+
+
+
+
+
+
+
+
+
 
 
 ---
