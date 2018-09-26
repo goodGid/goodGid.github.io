@@ -32,7 +32,7 @@ Problem URL : **[숫자 카드 2](https://www.acmicpc.net/problem/10816)**
 lower_bound, upper_bound로 검색했을 때
 
 lower_bound는 세 개의 3 중 첫 번째 3의 위치를 반환해주며
-upper_bound는 4의 위치를 반환해준다.
+upper_bound는 세 개의 3 중 세 번째 3의 위치를 반환해준다.
 ```
 
 ``` cpp
@@ -60,7 +60,6 @@ int main(void) {
             continue;
         }
         else{
-
             // Sector 1
             auto a = upper_bound(v.begin(), v.end(), num);
             auto b = lower_bound(v.begin(), v.end(), num);
@@ -82,26 +81,29 @@ int main(void) {
 ```
 Input
 10
-6 3 2 10 10 10 -10 -10 7 3
-8
-10 9 -5 2 3 4 5 -10
+6 3 2 10 10 10 -10 -10 7 3 이라면
+
 
 Output
+찾는 값 : 10
 &a 와 &b 주소값
 0x7ffeefbfef60 0x7ffeefbfef48
 a - b를 통한 Vector에서 Index 차이값 
 3
 
+찾는 값 : 2
 &a 와 &b 주소값
 0x7ffeefbfef60 0x7ffeefbfef48
 a - b를 통한 Vector에서 Index 차이값 
 1
 
+찾는 값 : 3
 &a 와 &b 주소값
 0x7ffeefbfef60 0x7ffeefbfef48
 a - b를 통한 Vector에서 Index 차이값 
 2
 
+찾는 값 : -10
 &a 와 &b 주소값
 0x7ffeefbfef60 0x7ffeefbfef48
 a - b를 통한 Vector에서 Index 차이값 
