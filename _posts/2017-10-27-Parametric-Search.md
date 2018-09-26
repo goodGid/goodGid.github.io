@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Parametric Search "
+title:  " 파라메트릭 서치 (Parametric Search) "
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
@@ -8,20 +8,20 @@ author: goodGid
 * content
 {:toc}
 
+## To Do
 
-## Problem
-Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
+* `이진 탐색`을 활용한 기법이다.
 
-{% capture images %}
-    /assets/img/algorithm/2110_1.png
-    /assets/img/algorithm/2110_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
+* `이진 탐색`만으로 푸는 문제와 굉장히 비슷한 코드 구조를 띈다.
 
+* 답이 될 수 있는 해를 `이진 탐색`으로 계속해서 찾아나가며 Max or Min 값을 구한다.
 
+* 정답이 될 수 있는 후보가 `연속적`이여야 한다.
 
-
-
+```
+(최솟값을 구하는 경우) 최솟값이 x라면, x이상의 값에 대해서는 모두 조건을 만족
+(최댓값을 구하는 경우) 최댓값이 x라면, x이하의 값에 대해서는 모두 조건을 만족
+```
 
 
 
@@ -32,10 +32,26 @@ Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
 ---
 
 
+## 관련 문제
+
+Problem URL : **[랜선 자르기]({{site.url}}/BOJ-1654/)**
+
+Problem URL : **[예산]({{site.url}}/BOJ-2512/)**
+
+Problem URL : **[나무 자르기]({{site.url}}/BOJ-2805/)**
+
+Problem URL : **[공유기 설치](https://www.acmicpc.net/problem/2110)**
+
+![](/assets/img/algorithm/2110_1.png)
+
+![](/assets/img/algorithm/2110_2.png)
+
 
 ## Code
-``` cpp
 
+* 공유기 설치 Code
+
+``` cpp
 #include <iostream>
 #include <algorithm>
 #define MAX_SIZE 200000
@@ -84,24 +100,11 @@ int main()
     
     return 0;
 }
-
-
 ```
 
 ---
 
 ## Feed Back 
-
-* 답이 될 수 있는 해를 `이진 탐색`으로 계속해서 찾아나가며 Max or Min 값을 구한다.
-
-* `이진 탐색`만으로 푸는 문제와 굉장히 비슷한 코드 구조를 띈다.
-
-* 정답이 될 수 있는 후보가 `연속적`이여야 한다.
-
-```
-(최솟값을 구하는 경우) 최솟값이 x라면, x이상의 값에 대해서는 모두 조건을 만족
-(최댓값을 구하는 경우) 최댓값이 x라면, x이하의 값에 대해서는 모두 조건을 만족
-```
 
 * 문제가 힌트다. 최대 `거리`를 구하라 ! <br> ==> `거리`를 Pivot으로 문제를 풀어라 // 지극히 주관적인 의견임 ㅎㅎ;;
 
