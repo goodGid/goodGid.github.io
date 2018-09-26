@@ -8,21 +8,30 @@ author: goodGid
 * content
 {:toc}
 
-
 ## Problem
 Problem URL : **[수 찾기](https://www.acmicpc.net/problem/1920)**
 
-{% capture images %}
-    /assets/img/algorithm/1920_1.png
-    /assets/img/algorithm/1920_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
+
+
+
+
+
+
+
+
+
+
+
+
+![](/assets/img/algorithm/1920_1.png)
+
+![](/assets/img/algorithm/1920_2.png)
 
 ---
 
 ## The Key Point
 
-    [BinarySearch]라는 Method가 있다.
+* [BinarySearch]라는 Method가 있다.
     
 
 ---
