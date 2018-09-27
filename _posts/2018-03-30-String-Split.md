@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " String Split ( 구분자로 구분하기 )"
+title:  " 구분자로 String 구분하기"
 categories: KeyPoint
 tags: KeyPoint
 author: goodGid
