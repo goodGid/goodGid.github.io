@@ -16,6 +16,7 @@ priority_queue<int> pq;
 priority_queue<int,vector<int>,less<int> > pq;
 
 // Root is Min Value
+#include <functional>
 priority_queue<int,vector<int>,greater<int> > pq;
  
 ```
