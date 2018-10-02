@@ -37,6 +37,24 @@ bool compare(p &p1, p &p2){
 
 sort(v.begin(), v.end(), compare);
 ```
+
+``` cpp
+struct game{
+    double value;
+    int row;
+};
+
+vector<game> v;
+
+bool compare(game &p1, game &p2){
+    if( p1.value == p2.value)
+        return p1.row < p2.row;
+    return p1.value > p2.value;
+}
+
+sort(v.begin(), v.end(), compare);
+```
+
 * pair의 first값으로 정렬을 하고 같을 땐 second로 정렬을 한다. 
 
 ---
