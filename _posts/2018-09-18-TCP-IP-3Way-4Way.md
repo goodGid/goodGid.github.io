@@ -41,9 +41,18 @@ author: goodGid
 
 * 한마디로 **신뢰성**을 보장하기위해 사용한다.
 
-* 동기화 요청을 뜻하는 **SYN**은 'Synchronize sequence numbers'의 약자이다.
-
 * 확인, 응답을 뜻하는 **ACK**는 'Acknowledgment'의 약자이다.
+    - 신뢰적 데이터 전송을 위해 사용된다.
+
+* 동기화 요청을 뜻하는 **SYN**은 'Synchronize sequence numbers'의 약자이다.
+    - 이 떄 SYN 패킷의 Sequence Number는 난수를 이용해 생성한다.
+    - 처음 클라이언트에서 SYN 패킷을 보낼 때 Sequence Number에는 랜덤한 숫자가 담겨진다. 
+    - 초기 **Sequence Number**를 **ISN**이라고 한다. 
+    - ISN이 0부터 시작하지 않고 난수를 생성해서 number를 설정하는 이유는 무엇일까?
+    - Connection을 맺을 때 사용하는 포트(port)는 유한 범위 내에서 사용하고 시간이 지남에 따라 재사용된다. 
+    - 따라서 두 통신 호스트가 과거에 사용된 포트 번호 쌍을 사용하는 가능성이 존재한다. 
+    - 서버 측에서는 패킷의 SYN을 보고 패킷을 구분하게 되는데 난수가 아닌 순차적인 number가 전송된다면 이전의 connection으로부터 오는 패킷으로 인식할 수 있다. 
+    - 이러한 **문제**가 **발생할 가능성**을 줄이기 위해서 **난수**로 **ISN**을 설정하는 것이다.
 
 ---
 
@@ -98,7 +107,6 @@ Client > Server : TCP ACK
 
 ![](/assets/img/network/tcp_ip_3way_4way_2.png)
 
-
 ---
 
 ## 4-way Handshaking 과정
@@ -107,6 +115,11 @@ Client > Server : TCP ACK
 
 * 최초에는 서로 통신 상태이기 때문에 양쪽이 ESTABLISHED 상태이다.
 
+* 한 가지 주의할 점은 일반적으로 클라이언트가 FIN을 보내고 서버가 그 패킷을 받는 그림으로 4 way Handshaking을 학습하는데 무조건 클라이언트만 FIN 패킷을 보내는 것은 아니다.
+
+* 서버가 먼저 종료하겠다고 FIN을 보낼 수 있고, 이런 경우 서버가 FIN_WAIT1 상태가 된다. 
+
+* 따라서, 클라이언트와 서버가 아닌 **Active Close(또는 Initiator, 기존 클라이언트)**와 **Passive Close(또는 Receiver, 기존 서버)**로 표현하는 것이 정확하다.
 
 * [STEP 1]
     - 통신을 종료하고자 클라이언트가 서버에게 **FIN 패킷**을 보내고 자신은 **FIN_WAIT_1** 상태로 대기한다.
@@ -138,6 +151,58 @@ Client > Server : TCP ACK
 
 * 이러한 현상에 대비하여 클라이언트는 서버로부터 **FIN 패킷**을 수신하더라도 <br> 일정시간(디폴트 240초)동안 세션을 남겨놓고 잉여 패킷을 기다리는 과정을 거치게 되는데 <br> 이 과정을 **TIME_WAIT**라고 한다.
 
+
+
+
+
+> Q. [비정상 종료 상황] 다양한 상황에 따른 연결의 종료를 적절하게 처리하지 못하여 CLOSE_WAIT 상태로 남아있는 상황
+
+* CLOSE_WAIT 상태 : Application에서 close()를 적절하게 처리해주지 못하면, TCP 포트는 CLOSE_WAIT 상태로 계속 기다리게 된다. 
+
+* 이렇게 CLOSE_WAIT 상태가 statement에 많아지게 되면, Hang이 걸려 더이상 연결을 하지 못하는 경우가 생기기도 한다. 
+
+* 따라서 어플리케이션 개발시 여러 상황에 따라 close() 처리를 잘 해줘야 한다.
+
+
+
+
+
+> Q. [비정상 종료 상황] 다양한 상황에 따른 연결의 종료를 적절하게 처리하지 못하여 FIN_WAIT_1 상태로 남아있는 상황
+
+* FIN_WAIT_1 상태 : FIN_WAIT_1 상태라는 것은 상대방측에 커넥션 종료 요청을 했는데, ACK를 받지 못한 상태로 기다리고 있는 것이다. 
+
+* 이것은 아마 서버를 찾을 수 없는 것으로, 네트워크 및 방화벽의 문제일 수 있다.
+
+* FIN_WAIT_1의 상태는 일정 시간이 지나면 **Time Out**이 되면 스스로 Closed하게 된다.
+
+
+
+
+
+> Q. [비정상 종료 상황] 다양한 상황에 따른 연결의 종료를 적절하게 처리하지 못하여 FIN_WAIT_2 상태로 남아있는 상황
+
+* FIN_WAIT_2 상태 : FIN_WAIT_2 상태는 클라이언트가 서버에 종료를 요청한 후 서버에서 요청을 접수했다고 ACK를 받았지만, 서버에서 종료를 완료했다는 FIN 을 받지 못하고 기다리고 있는 상태이다. 
+
+* 이 상태는 양방의 두번의 통신이 이루어졌기 때문에 **네트워크의 문제**는 **아닌 것**으로 판단된다.
+
+* 서버측에서 CLOSE를 처리하지 못하는 경우일 수도 있다. 
+
+* FIN_WAIT_2 역시 일정 시간이 지나면 **Time Out**이 되면 스스로 Closed하게 된다.
+
+<br>
+
+* 어떠한 이유에서 FIN_WAIT_1과 FIN_WAIT_2 상태인 연결이 많이 남아있다면 문제가 발생할 수 있다. 
+
+* 물론 일정 시간이 지나 Time Out이 되면 연결이 자동으로 종료되긴 하지만, 이 Time Out이 길어서 많은 수의 소켓이 늘어만 난다면 **메모리 부족**으로 더 이상 소켓을 오픈하지 못하는 경우가 발생한다.
+
+* 이 경우는 **네트워크나 방화벽** 또는 **Application**에서 close()처리 등에 대한 문제등으로 발생할 수 있으며 원인을 찾기가 쉽지 않다.
+
+ * 이러한 문제 해결을 위해서 FIN_WAIT_1과 FIN_WAIT_2 의 **Time Out**시간을 적절히 조절할 필요가 있다.
+
+
+
+
+
 ---
 
 ## 참고
@@ -148,9 +213,10 @@ Client > Server : TCP ACK
 
 * [TCP의 3 way Handshake과 4 way Handshake](http://needjarvis.tistory.com/157)
  
+* [CLOSE_WAIT & TIME_WAIT 최종 분석](http://tech.kakao.com/2016/04/21/closewait-timewait/)
 
+* [[TCP] 3-way-handshake & 4-way-handshake](http://asfirstalways.tistory.com/356)
 
-
-
+* [네트워크 :: 네트워크?](https://woovictory.github.io/2018/05/17/network/)
 
 
