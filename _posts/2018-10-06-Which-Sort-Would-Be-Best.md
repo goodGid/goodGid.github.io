@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " 어떤 정렬 알고리즘이 대부분 정렬 된 데이터에서 가장 좋을까? "
-categories: KeyPoint
-tags: KeyPoint
+categories: Technology
+tags: Technology
 author: goodGid
 ---
 * content
