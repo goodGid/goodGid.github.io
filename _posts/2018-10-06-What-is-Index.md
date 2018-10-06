@@ -1,10 +1,11 @@
 ---
 layout: post
-tItle:  " 인덱스(Index) "
-categorIes: Technology
+title:  " 인덱스(Index) "
+categories: Technology
 tags: Technology
-author: goodGId
+author: goodGid
 ---
+
 * content
 {:toc}
 
