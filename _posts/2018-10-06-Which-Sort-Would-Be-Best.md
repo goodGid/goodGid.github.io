@@ -21,6 +21,15 @@ author: goodGid
 * 가능한 한 적은 코드로 작성하고자하는 욕구 --> 삽입(INSERTION) 정렬
 
 
+
+
+
+
+
+
+
+
+
 ![](/assets/img/posts/which_sort_would_be_best_1.png)
 
 ---
