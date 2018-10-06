@@ -8,17 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-## To Do
-
-* 상황에 맞는 가장 좋은 정렬 알고리즘에 대해 알아보자.
-
-
-
-
-
-
-
-
 * 몇 가지 항목 만 --> 삽입(INSERTION) 정렬
 
 * 아이템은 대부분 이미 정렬되어 있습니다. --> 삽입(INSERTION) 정렬
@@ -30,6 +19,9 @@ author: goodGid
 * 아이템은 조밀 한 우주에서 가져옵니다 --> 버켓 정렬
 
 * 가능한 한 적은 코드로 작성하고자하는 욕구 --> 삽입(INSERTION) 정렬
+
+
+![](/assets/img/posts/which_sort_would_be_best_1.png)
 
 ---
 
