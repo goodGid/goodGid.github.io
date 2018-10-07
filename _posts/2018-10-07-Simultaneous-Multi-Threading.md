@@ -81,6 +81,7 @@ author: goodGid
 
 * 그래서 **HT(=하이퍼쓰레딩)**가 지원되는 CPU를 작업 관리자에서 보면 코어 수가 2배로 뻥튀기 되는 것을 알 수 있다.
 
+![](/assets/img/os/simultaneous_multi_threading_1.png)
 ---
 
 ## SMT 예시
