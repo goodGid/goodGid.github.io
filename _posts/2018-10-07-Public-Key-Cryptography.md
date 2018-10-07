@@ -46,11 +46,11 @@ author: goodGid
 
 * Facebook에 [질문](https://www.facebook.com/groups/codingeverybody/permalink/2425685487471973/?comment_id=2425687414138447&reply_comment_id=2425766587463863&notif_id=1538897680326645&notif_t=group_comment)을 남겼고 다양한 답변이 달렸다.
 
-* 여러 답변 중 하나만 대표로 스샷을 떴다.
-
 * 한줄 요약하자면 RSA 방식은 가능하다. 
 
 ![](/assets/img/posts/public_key_cryptography_1.png)
+
+![](/assets/img/posts/public_key_cryptography_3.png)
 
 * 추가적으로 **전자 서명**에서도 **개인키로 암호화 -> 공개키로 복호화**하는 과정이 들어간다.
 
