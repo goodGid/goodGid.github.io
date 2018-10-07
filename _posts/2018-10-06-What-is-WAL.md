@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 로그 선행 기록((write-ahead logging, WAL) "
+title:  " 로그 선행 기록(Write-Ahead Logging, WAL) "
 categories: Technology
 tags: Technology
 author: goodGId
@@ -10,7 +10,7 @@ author: goodGId
 
 ## 로그 선행 기록(WAL)이란?
 
-* 로그 선행 기입(write-ahead logging, WAL)은 데이터베이스 시스템에서 **ACID**의 특성 가운데 **원자성**과 **내구성**을 제공하는 기술의 한 계열이다.
+* 로그 선행 기입(Write-Ahead Logging, WAL)은 데이터베이스 시스템에서 **ACID**의 특성 가운데 **원자성**과 **내구성**을 제공하는 기술의 한 계열이다.
 
 * WAL을 사용하는 시스템에서 **모든 수정**은 **적용 이전**에 **로그**에 **기록**된다. 
 
