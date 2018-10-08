@@ -20,13 +20,13 @@ author: goodGid
 
 
 {% capture images %}
-    /assets/img/posts/hierarchical_table_1.png
-    /assets/img/posts/hierarchical_table_2.png
-    /assets/img/posts/hierarchical_table_3.png
-    /assets/img/posts/hierarchical_table_4.png
-    /assets/img/posts/hierarchical_table_5.png
-    /assets/img/posts/hierarchical_table_6.png
-    /assets/img/posts/hierarchical_table_7.png
+    /assets/img/database/hierarchical_table_1.png
+    /assets/img/database/hierarchical_table_2.png
+    /assets/img/database/hierarchical_table_3.png
+    /assets/img/database/hierarchical_table_4.png
+    /assets/img/database/hierarchical_table_5.png
+    /assets/img/database/hierarchical_table_6.png
+    /assets/img/database/hierarchical_table_7.png
 {% endcapture %}
 {% include gallery images=images caption=" " cols=7 %}
 
