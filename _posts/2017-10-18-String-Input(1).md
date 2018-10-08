@@ -71,7 +71,7 @@ solve)
  ---
 
 
-## cin.get()
+## cin.get
 
 * `문자`만 입력받을 수 있다.
 
@@ -117,7 +117,7 @@ solve)
 
 ---
  
-## cin.getline()
+## cin.getline
  
 * `문자열`만 입력받을 수 있다.
 
