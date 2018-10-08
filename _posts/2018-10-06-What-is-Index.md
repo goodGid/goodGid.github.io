@@ -33,7 +33,7 @@ author: goodGid
 
 * 테이블의 값을 빠르게 엑세스 하도록 하는 것이 Index의 역할인데 **SQL 구문 실행**에 있어 **속도 향상**을 기대할 수 있다.
  
-* 그러나 **잘못된 Index**는 오히려 **SQL(DML**) **속도 저하**의 원인이 되므로 Index 생성할 때는 신중히 생각하고 만들어야 한다.
+* 그러나 **잘못된 Index**는 오히려 **SQL(DML) 속도 저하**의 원인이 되므로 Index 생성할 때는 신중히 생각하고 만들어야 한다.
 
 * Index가 **불필요한 경우**는 다음과 같다.
     - 데이터가 적은(수천전 미만) 경우
@@ -90,6 +90,16 @@ author: goodGid
 * 사용자가 SQL문을 날리게 되면 그 Table의 해당 컬럼의 Index **존재 유무**부터 검사 한다.
 
 * Index가 존재한다면 그 Index에서 주소를 찾은 다음, 바로 그 주소에 쓰여진 부분만 조회 한다.
+
+* **모든 MySQL 데이터 타입**은 Index가 될 수 있다. 
+
+* 상호 연관된 컬럼에서 Index를 사용하는 것이 SELECT 연산 성능을 향상시키는 최선의 방법이다.
+
+* 테이블 당 **최대 Index 숫자** 및 **최대 Index 길이**는 **스토리지 엔진 별**로 정의 된다.
+
+* 모든 **스토리지 엔진**은 **테이블 당 최소 16개**의 Index와 **최소 256 바이트**의 Index 길이를 지원한다. 
+
+
 
 
 ---
@@ -275,3 +285,6 @@ author: goodGid
 * [DB Index 란?](https://lalwr.blogspot.com/2016/02/db-index.html)
 
 * [[DB] mysql index 정리](http://2factor.tistory.com/30)
+
+* [7.4.3. 컬럼 인덱스](http://www.mysqlkorea.com/sub.html?mcode=manual&scode=01&m_no=21712&cat1=7&cat2=219&cat3=251&lang=k)
+
