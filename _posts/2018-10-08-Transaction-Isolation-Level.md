@@ -84,7 +84,7 @@ author: goodGid
 
 1. Transaction2가 Update를 하게된다. 
 
-2. 아직 Commit하지 않아 Transaction1은 Select를 하지 못하고 대기하게 된다.
+2. 아직 Commit하지 않아 Transaction1은 SELECT를 하지 못하고 대기하게 된다.
 
 3. Transaction2가 Commit명령어를 날리게 된다. 
 
@@ -99,7 +99,7 @@ author: goodGid
 
 * 트랜잭션이 완료될 때까지 SELECT 문장이 사용하는 모든 데이터에 **Shared Lock**이 걸리므로 <br> 다른 사용자는 그 영역에 해당되는 데이터에 대한 수정이 불가능하다. 
 
-* 가령, *Select col1 from A where col1 between 1 and 10* 을 수행하였고 <br> 이 범위에 해당하는 데이터가 2건이 있는 경우(col1 = 1,5) <br> 다른 사용자가 col1 = 1 or col1 = 5인 Row에 대한 UPDATE 작업이 불가능하다. 
+* 가령, *SELECT col1 from A where col1 between 1 and 10* 을 수행하였고 <br> 이 범위에 해당하는 데이터가 2건이 있는 경우(col1 = 1,5) <br> 다른 사용자가 col1 = 1 or col1 = 5인 Row에 대한 UPDATE 작업이 불가능하다. 
 
 * 하지만, col1이 1과 5를 제외한 **나머지 범위**에 해당하는 Row를 **INSERT**하는 것은 **가능**하다.
 
@@ -107,7 +107,7 @@ author: goodGid
 
 ![](/assets/img/database/transaction_isolation_lvel_3.png)
 
-1. Transaction1이 Select시점에 아무개가 조회된다. 
+1. Transaction1이 SELECT시점에 아무개가 조회된다. 
 
 2. Transaction2가 Update후 Commit을 시행하였지만 Update가 안된다. <br> 그러나 Insert는 된다. 
 
@@ -187,7 +187,7 @@ author: goodGid
 
 * **Oracle**은 **READ-COMMITED**와 **SERIALIZABLE**만 지원하며 나머지 두가지 **Isolation Level**은 지원하지 않는다.
 
-* 각 DBMS별 isolation level 에 자세한 내용은 다음 링크에서 참조할 수 있다.
+* 각 DBMS별 isolation Level 에 자세한 내용은 다음 링크에서 참조할 수 있다.
 
 * MySQL : [http://dev.mysql.com/doc/refman/5.5/en/set-transaction.html](http://dev.mysql.com/doc/refman/5.5/en/set-transaction.html)
 
@@ -199,6 +199,6 @@ author: goodGid
 
 ## 참고
 
-* [데이터베이스 Isolation Level](http://hundredin.net/2012/07/26/isolation-level/)
+* [데이터베이스 Isolation Level](http://hundredin.net/2012/07/26/isolation-Level/)
 
-* [Isolation level 이해하기](https://medium.com/@wonderful.dev/isolation-level-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-94e2c30cd8c9)
+* [Isolation Level 이해하기](https://medium.com/@wonderful.dev/isolation-Level-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-94e2c30cd8c9)
