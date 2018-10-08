@@ -142,13 +142,13 @@ author: goodGid
 
 ---
 
-## Index로 사용할 필드
+## Index를 생성해야 하는 경우와 그렇지 않은 경우
 
 * 자주 검색하는 필드, 정렬하는 필드, 쿼리에서 다른 테이블에 있는 필드로 조인하는 필드에 주로 Index를 만든다. 
 
 * 그러나 추가 쿼리와 같은 실행 쿼리 작업이 수행되는 동안 여러 필드의 Index들이 업데이트되어야 할 때는 속도가 느려질 수 있다.
 
-* 테이블의 **기본 키**에는 **자동**으로 **Index**가 만들어지지만, **데이터 형식**이 **OLE 개체**인 필드에는 Index를 만들 수 없습니다. 
+* 테이블의 **기본 키**에는 **자동**으로 **Index**가 만들어지지만, **데이터 형식**이 **OLE 개체**인 필드에는 Index를 만들 수 없다. 
 
 * 다음과 같은 경우에 Index를 만들면 좋다.
 
@@ -157,6 +157,22 @@ author: goodGid
 2. 필드에 저장된 값을 찾는 작업이 예상되는 경우 
 
 3. 필드의 값을 정렬하는 작업이 예상되는 경우 
+
+* Index는 열 단위로 생성된다.
+
+* WHERE절에서 사용되는 컬럼을 Index로 만든다.
+
+* 데이터의 중복도가 높은 열은 Index로 만들어도 효용이 없다. (예 : 성별, 타입이 별로 없는 경우, 적은경우)
+
+* 외래키가 사용되는 열에는 Index를 되도록 생성해주는 것이 좋다.
+
+* JOIN에 자주 사용되는 열에는 Index를 생성해주는 것이 좋다.
+
+* INSERT / UPDATE / DELETE가 얼마나 자주 일어나는지를 고려한다.
+
+* 사용하지 않는 Index는 제거하자
+
+
 
 ---
 
@@ -240,3 +256,5 @@ author: goodGid
 * [4강. 데이터베이스 기초 4: Index에 대하여](http://www.offIcetutor.com/column/kkk-db/kkk_01_4.htm)
 
 * [테이블과 인덱스의 관계 및 인덱스 종류 및 생성 방법](http://support.dbworks.co.kr/index.php?document_srl=4191&mid=ora_tb)
+
+* [DB Index 란?](https://lalwr.blogspot.com/2016/02/db-index.html)
