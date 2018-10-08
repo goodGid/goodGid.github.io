@@ -176,6 +176,21 @@ author: goodGid
 
 ---
 
+## 주의 사항
+
+* Index가 적용되는 필드는 **가능한 Null값**이 없어야 한다.
+
+* Index를 사용한 필드를 조건에서 **연산,가공**하여 사용하면 Index효과는 없다. 
+    - ex : Select * from 테이블 where Index필드 * 10 > 100 <br> --> Select * from 테이블 where Index필드  > 100 / 10 으로 사용
+<br>
+
+* 다음 연산자는 Index를 타지 않는다.
+    - not, <> 는 인덱스 사용못함
+    - >=, <=는 사용가능
+
+
+---
+
 ## 다중 필드 Index
 
 * 두 개 이상의 필드를 조건으로 찾기나 정렬 작업을 많이 하면 그 필드들을 함께 Index로 지정할 수 있다.
@@ -258,3 +273,5 @@ author: goodGid
 * [테이블과 인덱스의 관계 및 인덱스 종류 및 생성 방법](http://support.dbworks.co.kr/index.php?document_srl=4191&mid=ora_tb)
 
 * [DB Index 란?](https://lalwr.blogspot.com/2016/02/db-index.html)
+
+* [[DB] mysql index 정리](http://2factor.tistory.com/30)
