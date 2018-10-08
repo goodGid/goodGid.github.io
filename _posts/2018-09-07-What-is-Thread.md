@@ -18,6 +18,8 @@ author: goodGid
 
 * 각 Thread별로 자신만의 **스택**과 **레지스터**를 가진다.
 
+![](/assets/img/posts/os/what_is_thread_1.gif)
+
 * 한순간에 하나의 쓰레드만이 실행 가능하다.
 
 
@@ -158,3 +160,6 @@ author: goodGid
 * [[운영체제] 뮤텍스(Mutex) 세마포어(Semaphore) 모니터(Monitor)](http://about-myeong.tistory.com/34)
 
 * [스핀 락(Spin lock), 크리티컬 섹션(Critical section), 세마포어(Semaphore), 뮤텍스(Mutex)](http://brownbears.tistory.com/45)
+
+* [[OS]메모리 관점에서 본 쓰레드(thread)](https://mooneegee.blogspot.com/2015/01/os-thread.html)
+
