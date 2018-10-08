@@ -84,7 +84,7 @@ author: goodGid
 
 1. Transaction2가 Update를 하게된다. 
 
-2. 아직 Commit하지 않아 Transaction1은 SELECT를 하지 못하고 대기하게 된다.
+2. 아직 Commit하지 않아 Transaction1은 SELECT을 하지 못하고 대기하게 된다.
 
 3. Transaction2가 Commit명령어를 날리게 된다. 
 
