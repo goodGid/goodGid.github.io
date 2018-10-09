@@ -98,7 +98,7 @@ author: goodGid
 
 * 공유 버스가 Broadcasting과 Snooping에 유리하므로 스누핑 프로토콜은 버스 기반 다중 프로세서에 적합하다. 
 
-* write-invalidate, write-update, write-broadcast 등으로 스누피 방식을 구현한다.
+* write-invalidate, write-update, write-broadcast 등으로 스누핑 방식을 구현한다.
 
 * 이 방법은 모든 캐시 라인의 상태를 Modified, Exclusive, Shared, Invalid로 표현하기에 **MESI 프로토콜**이라고도 한다.
 

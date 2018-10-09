@@ -45,7 +45,7 @@ author: goodGid
     - 신뢰적 데이터 전송을 위해 사용된다.
 
 * 동기화 요청을 뜻하는 **SYN**은 'Synchronize sequence numbers'의 약자이다.
-    - 이 떄 SYN 패킷의 Sequence Number는 난수를 이용해 생성한다.
+    - 이 때 SYN 패킷의 Sequence Number는 난수를 이용해 생성한다.
     - 처음 클라이언트에서 SYN 패킷을 보낼 때 Sequence Number에는 랜덤한 숫자가 담겨진다. 
     - 초기 **Sequence Number**를 **ISN**이라고 한다. 
     - ISN이 0부터 시작하지 않고 난수를 생성해서 number를 설정하는 이유는 무엇일까?
