@@ -18,7 +18,7 @@ author: goodGid
 
 * 각 Thread별로 자신만의 **스택**과 **레지스터**를 가진다.
 
-![](/assets/img/posts/os/what_is_thread_1.gif)
+![](/assets/img/os/what_is_thread_1.png)
 
 * 한순간에 하나의 쓰레드만이 실행 가능하다.
 
