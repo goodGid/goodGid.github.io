@@ -76,6 +76,13 @@ author: goodGid
 ![](/assets/img/algorithm/prim_algorithm_6.png)
 
 
+---
+
+## 문제 풀어보기
+
+
+* [[Programmers] 42861. 섬 연결하기]({{site.url}}/PGM-42861/)
+
 
 
 ---
