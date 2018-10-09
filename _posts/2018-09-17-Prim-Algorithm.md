@@ -80,7 +80,6 @@ author: goodGid
 
 ## 문제 풀어보기
 
-
 * [[Programmers] 42861. 섬 연결하기]({{site.url}}/PGM-42861/)
 
 
