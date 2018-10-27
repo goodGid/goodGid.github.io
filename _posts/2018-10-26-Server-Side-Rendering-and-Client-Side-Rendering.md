@@ -20,6 +20,9 @@ author: goodGid
 
 
 
+
+---
+
 ## SSR
 
 ![](/assets/img/posts/ssr_and_csr_1.png)
