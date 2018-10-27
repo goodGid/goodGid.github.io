@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Multi~로 시작하는 OS 단어 정리 "
+title:  " Multi로 시작하는 OS 단어 정리 "
 categories: OS
 tags: OS
 author: goodGid
