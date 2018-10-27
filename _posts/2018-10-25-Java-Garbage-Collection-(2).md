@@ -78,7 +78,7 @@ author: goodGid
 
 * 그러나 **멀티 쓰레드 환경**을 고려하면 이야기가 달라진다. 
 
-* Thread-Safe하기 위해서 만약 여러 스레드에서 사용하는 객체를 Eden 영역에 저장하려면 <br> **락(lock)**이 발생할 수 밖에 없고 **lock-contention** 때문에 성능은 매우 떨어지게 될 것이다. 
+* Thread-Safe하기 위해서 만약 여러 쓰레드에서 사용하는 객체를 Eden 영역에 저장하려면 <br> **락(lock)**이 발생할 수 밖에 없고 **lock-contention** 때문에 성능은 매우 떨어지게 될 것이다. 
 
 * HotSpot VM에서 이를 해결한 것이 **TLABs**이다.
 
@@ -159,7 +159,7 @@ author: goodGid
 
 * **Minor GC, Full GC 모두 All Stop**인건 *Serial GC* 와 같다.
 
-* 그러나 Serial GC는 GC를 처리하는 스레드가 하나인 것에 비해 <br> Parallel GC는 **GC를 처리**하는 **쓰레드**가 **여러 개**이다.
+* 그러나 Serial GC는 GC를 처리하는 쓰레드가 하나인 것에 비해 <br> Parallel GC는 **GC를 처리**하는 **쓰레드**가 **여러 개**이다.
 
 * 즉 Minor GC와 Full GC 모두 멀티쓰레드를 사용한다.
 
@@ -173,7 +173,7 @@ author: goodGid
 * Parallel GC는 **Throughput GC**라고도 부른다.
 
 
-* 다음 그림은 Serial GC와 Parallel GC의 스레드를 비교한 그림이다.
+* 다음 그림은 Serial GC와 Parallel GC의 쓰레드를 비교한 그림이다.
 
 ![](/assets/img/java/java_garbage_collection_2_1.png)
 
@@ -224,13 +224,13 @@ author: goodGid
 
 * 그리고 **Concurrent Mark 단계**에서는 <br> 방금 **살아있다고 확인한 객체**에서 **참조하고 있는 객체들**을 따라가면서 확인한다. 
 
-* 이 단계의 특징은 다른 스레드가 실행 중인 상태에서 **동시에 진행**된다는 것이다.
+* 이 단계의 특징은 다른 쓰레드가 실행 중인 상태에서 **동시에 진행**된다는 것이다.
 
 * 그 다음 **Remark 단계**에서는 *Concurrent Mark 단계* 에서 **새로 추가**되거나 **참조가 끊긴 객체**를 확인한다. 
 
 * 마지막으로 **Concurrent Sweep 단계**에서는 **쓰레기를 정리**하는 작업을 실행한다. 
 
-* 이 작업도 다른 스레드가 실행되고 있는 상황에서 진행한다. <br> 즉 **동시에 진행**이 된다.
+* 이 작업도 다른 쓰레드가 실행되고 있는 상황에서 진행한다. <br> 즉 **동시에 진행**이 된다.
 
 * 이러한 단계로 진행되는 GC 방식이기 때문에 **stop-the-world 시간**이 매우 짧다. 
 
