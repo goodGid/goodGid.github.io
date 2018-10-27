@@ -75,6 +75,8 @@ author: goodGid
 
 ## MVP
 
+![](/assets/img/posts/design_pattern_mvc_mvp_mvvm_2.png)
+
 > Presenter
 
 * View에서 요청한 정보를 Model로 부터 가공해서 View로 전달하는 부분이다.
@@ -119,6 +121,8 @@ author: goodGid
 ---
 
 ## MVVM
+
+![](/assets/img/posts/design_pattern_mvc_mvp_mvvm_3.png)
 
 * MVVM은 WPF나 SilverLight에서 많이 사용되는 프레임워크 패턴이다.
 
