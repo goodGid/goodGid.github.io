@@ -142,6 +142,55 @@ author: goodGid
 
 * 그리고 Data Binding으로 인해 View Model의 값이 변화하면 **바로 View의 정보**가 바뀌게 된다.
 
+* 여기서 Data Binding은 VM의 어떤 값이 바뀌면 그거와 Binding되어 있는 View의 속성도 동시에 바뀌게 된다로 이해하면 된다.
+
+```
+View의 A라는 속성과
+View Model의 B라는 속성을 
+Biding 시킨 상태라고 하면
+B의 속성을 변경 시
+A의 속성은 자동으로 Binding되어 있기 때문에 
+동시에 변경이 된다.
+```
+
+* MVVM의 이해를 높이기 위한 예를 들어보자.
+
+```
+주소를 서울에서 인천으로 수정할 경우
+
+텍스트박스에서 주소를 수정하고 저장을 누르면 
+인천으로 저장되어야 한다. 
+
+그리고 그 과정은 UI에서 저장을 누르면 
+UI는 변경된 텍스트값을 알고있는 상황이다.
+
+하지만 현재까지 vm이나 m(data 처리 객체)은 변경된 값을 모른다. 
+이런 경우 MVC에서는 
+컨트롤러가 이미 뷰와 모델을 모두 참조로 가지고 있기 때문에 
+컨트롤러에서 텍스트받스의 값을 직접 m으로 넘겨줘서 저장하도록 한다. 
+
+컨트롤러에는 
+string addr = view.toString(); 
+model.save(addr); 이런식의 코드가 존재하게 된다.
+
+그런데
+만약 view가 변경되어서 
+텍스트박스의 이름이 바뀌거나 없어지면 어떻게 될까?
+
+컨트롤러 내부 코드중 view.toString()이라는 부분은
+명시적으로 view에 의존하기 때문에 문제가 발생한다.
+
+MVVM패턴에서는 vm이 view에 의존하지 않도록 한다.
+view에서는 어차피 주소를 출력하려면 vm을 접근해야한다.
+
+이 때 주소를 변경할 경우
+view가 직접 vm의 속성인 주소값을 변경해 주고 
+(vm의 속성을 변경시키는 작업은 Command 패턴을 이용해 이뤄진다.)
+vm은 그저 자신의 속성인 주소 값을 
+model.save(this.주소) 이런식으로 처리를 시키면 된다.
+```
+
+
 > Summary
 
 1. View에 입력이 들어오면 Command 패턴으로 View Model에 명령을 내린다.
@@ -176,3 +225,5 @@ author: goodGid
 * [[WPF] MVC, MVP, MVVM 차이점](http://hackersstudy.tistory.com/71)
 
 * [MVVM 패턴에 대해서...](https://blog.outsider.ne.kr/672)
+
+* [MVC, MVP, MVVM 디자인 패턴이란](http://plzhoney.tistory.com/7)
