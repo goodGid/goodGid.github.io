@@ -252,4 +252,4 @@ author: goodGid
 
 * [JAVA - Garbage Collection(가비지 컬렉션)](http://mllab.tistory.com/329)
 
-
+* [Java Garbage Collection](https://d2.naver.com/helloworld/1329)

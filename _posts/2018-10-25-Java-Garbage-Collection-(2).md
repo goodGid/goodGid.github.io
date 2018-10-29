@@ -25,7 +25,7 @@ author: goodGid
 
 * GC는 두 가지 가정 하에 만들어졌다.
 
-> 대부분의 객체는 금방 접근 불가능 상태(unreachable)가 된다. <br> 오래된 객체에서 젊은 객체로의 참조는 아주 적게 존재한다.
+> 1. 대부분의 객체는 금방 접근 불가능 상태(unreachable)가 된다. <br> 2. 오래된 객체에서 젊은 객체로의 참조는 아주 적게 존재한다.
 
 * 이러한 가설을 **Weak generational hypothesis**라 한다. 
 
@@ -34,6 +34,14 @@ author: goodGid
 * 이 가설의 장점을 최대한 살리기 위해서 **[HotSpot VM](https://ko.wikipedia.org/wiki/%ED%95%AB%EC%8A%A4%ED%8C%9F_(%EA%B0%80%EC%83%81_%EB%A8%B8%EC%8B%A0))**에서는 크게 2개로 물리적 공간(Young / Old)을 나누었다. 
 
 * 이러한 경험적 사실들을 바탕으로 Generational GC가 디자인 되었다.
+
+* 우선 2번째 가설에 대해 살펴보면 Old 영역에는 512바이트의 **덩어리(chunk)**로 되어 있는 **카드 테이블(card table)**이 존재한다.
+
+* 카드 테이블에는 Old 영역에 있는 객체가 Young 영역의 객체를 참조할 때마다 정보가 표시된다. 
+
+* Young 영역의 GC를 실행할 때에는 Old 영역에 있는 모든 객체의 참조를 확인하지 않고 <br> 이 카드 테이블만 뒤져서 GC 대상인지 식별한다.
+
+![](/assets/img/java/java_garbage_collection_2_4.png)
 
 * 힙을 Young Generation 영역과 Old Generation 영역으로 나눈 뒤 <br> Young Generation 영역을 **주기적**으로 **청소**하고 <br> 상대적으로 오랜 기간 사용되는 객체는 Old Generation으로 보내버린다. <br> 그리고 Old 영역에 **공간이 부족**하게 될 때만 Old영역을 청소를 하게 된다.
 
@@ -319,3 +327,4 @@ author: goodGid
 * [Java Garbage Collection](https://d2.naver.com/helloworld/1329)
 
 * [[JAVA] 가비지 컬렉터의 배경과 종류](https://okky.kr/article/379036)
+
