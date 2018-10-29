@@ -33,7 +33,7 @@ author: goodGid
 * 단, 모든 TCP 세션을 무한정 유지할 수는 없으므로 Timeout 및 Max 설정을 통해 관리되어야 한다. 
     - Keep Alive Timeout : 요청에 대한 응답을 보낸 후 Timeout을 위한 timer가 동작하기 시작한다.
     - 최근에는 N/W 환경이 개선되면서 Keep Alive Timeout이 점점 줄어드는 추세이다.
-    - Event-driven 구조여서 non-blocking을 사용하는 Nginx 등은 Keep Alive를 하면서도 Thread를 점유하지 않기 때문에 동시 처리에 유리하다.
+    - Event-driven 구조여서 non-blocking을 사용하는 Nginx 등은 <br> Keep Alive를 하면서도 Thread를 점유하지 않기 때문에 동시 처리에 유리하다.
 
 <br>
 
@@ -57,9 +57,9 @@ author: goodGid
 
 ## HTTP에서 Keep Alive란?
 
-* HTTP는 Connectionless 방식이라 매번 Socket(port)를 열어야 하고 이는 비용적인 측면에서 비효율적인 구조이다. 
+* HTTP는 Connectionless 방식이라 매번 Socket(port)를 열어야 하고 <br> 이는 비용적인 측면에서 비효율적인 구조이다. 
 
-* 그래서 Keep Alive Timeout내에 Client에서 Request를 재요청하면 <br> 새로운 세션을 생성하는 게 아닌 기존에 세션을 사용해 전송하는 구조이다.
+* 그래서 Keep Alive Timeout내에 Client에서 **Request를 재요청**하면 <br> 새로운 세션을 생성하는 게 아닌 **기존에 세션**을 사용해 전송하는 구조이다.
 
 * 예를 들면 Image를 4개를 보여주는 구조에서 Client는 동시에 2개의 Image만 얻어 올수 있고 <br> 1개의 Image는 얻는데 2초 걸리고 Port를 여는데 1초가 걸린다고 가정해보자.
 
@@ -84,7 +84,7 @@ Client의 Socket이 닫히거나 Browser가 더이상 얻어 올 것이 없으�
 
 ## ThreadPool 과 Keep Alive
 
-* 웹 서버만 놓고 볼 때, 웹 서버 역시 ThreadPool을 사용하는 방식으로 설정 할 수 있다.
+* 웹 서버만 놓고 볼 때 웹 서버 역시 ThreadPool을 사용하는 방식으로 설정 할 수 있다.
 
 * 이때 ThreadPool은 사용자 수와 관련이 있는데, <br> 동시 사용자가 500명이라면 최소한 500개 이상으로 ThreadPool을 설정해야 한다.
 

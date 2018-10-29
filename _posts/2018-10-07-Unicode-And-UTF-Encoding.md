@@ -100,7 +100,7 @@ author: goodGid
 
 * UTF-16은 유니코드 문자 인코딩 방식의 하나이다. 
 
-* 주로 사용되는 **기본 다국어 평면(BMP, Basic multilingual plane)**에 속하는 문자들은 그대로 **16bit**값으로 인코딩이 되고 <br> 그 이상의 문자는 특별히 정해진 방식으로 32bit로 인코딩이 된다.
+* 주로 사용되는 **기본 다국어 평면(BMP, Basic multilingual plane)**에 속하는 문자들은 <br> 그대로 **16bit**값으로 인코딩이 되고 그 이상의 문자는 특별히 정해진 방식으로 32bit로 인코딩이 된다.
 
 * UTF-16의 **코드 단위**는 **16bit**이다.
 
@@ -120,7 +120,7 @@ author: goodGid
 
 * 두 Encoding 방식의 큰 차이는 최소 8bit가 필요하냐 16bit가 필요하냐에 따라 다른 것이다. 
 
-* **최적의 상황(저쟝, 통신 용량을 아껴야할 때)**이 필요하다면, 어떤 CodePoint를 주로 사용하냐에 따라 UTF-8 또는 UTF-16을 선택하는 기준이 달라질 것이다.
+* **최적의 상황(저쟝, 통신 용량을 아껴야할 때)**이 필요하다면 <br> 어떤 CodePoint를 주로 사용하냐에 따라 UTF-8 또는 UTF-16을 선택하는 기준이 달라질 것이다.
 
 ![](/assets/img/posts/unicode_and_utf_encoding_1.png)
 
