@@ -25,7 +25,7 @@ author: goodGid
 
 * GC는 두 가지 가정 하에 만들어졌다.
 
-> 1. 대부분의 객체는 금방 접근 불가능 상태(unreachable)가 된다. <br> 2. 오래된 객체에서 젊은 객체로의 참조는 아주 적게 존재한다.
+> 1.대부분의 객체는 금방 접근 불가능 상태(unreachable)가 된다. <br> 2.오래된 객체에서 젊은 객체로의 참조는 아주 적게 존재한다.
 
 * 이러한 가설을 **Weak generational hypothesis**라 한다. 
 
@@ -35,7 +35,7 @@ author: goodGid
 
 * 이러한 경험적 사실들을 바탕으로 Generational GC가 디자인 되었다.
 
-* 우선 2번째 가설에 대해 살펴보면 Old 영역에는 512바이트의 **덩어리(chunk)**로 되어 있는 **카드 테이블(card table)**이 존재한다.
+* 우선 2번째 가설에 대해 살펴보면 <br> Old 영역에는 512바이트의 **덩어리(chunk)**로 되어 있는 **카드 테이블(card table)**이 존재한다.
 
 * 카드 테이블에는 Old 영역에 있는 객체가 Young 영역의 객체를 참조할 때마다 정보가 표시된다. 
 
@@ -111,19 +111,19 @@ author: goodGid
 
 * Old 영역에서는 **기본적**으로 데이터가 가득 차면 GC를 실행한다. 
 
-* GC 방식은 JDK 7을 기준으로 5가지 방식이 있다.
+* GC 방식은 JDK 7을 기준으로 알아보자.
 
+<br>
 
 1. Serial GC
 
 2. Parallel GC
 
-3. Parallel Old GC(Parallel Compacting GC)
+3. Concurrent Mark & Sweep GC(이하 CMS)
 
-4. Concurrent Mark & Sweep GC(이하 CMS)
+4. G1(Garbage First) GC
 
-5. G1(Garbage First) GC
-
+<br>
 
 * 이 중에서 운영 서버에서 절대 사용하면 안 되는 방식이 Serial GC다. 
 
@@ -275,7 +275,7 @@ author: goodGid
 
 * 그러다 해당 영역이 꽉 차면 **다른 영역**에서 **객체를 할당**하고 GC를 실행한다. 
 
-* 즉, 지금까지 설명한 Young의 세가지 영역에서 데이터가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다. 
+* 즉 지금까지 설명한 Young의 세가지 영역에서 <br> 객체가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다. 
 
 * G1 GC는 장기적으로 말도 많고 탈도 많은 **CMS GC를 대체**하기 위해서 만들어졌다.
 
