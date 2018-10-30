@@ -95,6 +95,11 @@ public void execute{
 }
 ```
 
+
+![](/assets/img/posts/design_pattern_command_pettern_1.png)
+
+
+
 ---
 
 
