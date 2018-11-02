@@ -25,7 +25,7 @@ author: goodGid
 * 따라서 요청과 수행의 관계가 느슨하여 SOLID의 **DIP(The Dependency Inversion Priciple)**를 따른다.
 
 
-![](/assets/img/posts/design_pattern_command_pettern_1.png)
+![](/assets/img/posts/design_pattern_command_pettern_2.png)
 
 
 
