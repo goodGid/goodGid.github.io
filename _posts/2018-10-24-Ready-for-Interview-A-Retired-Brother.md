@@ -25,13 +25,31 @@ author: goodGid
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b3OXQKfKrDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+* 1분 자기 소개를 통해 질문을 받는 것이 핵심이다.
 
+* 자소서 내용과 **일관된 자기 소개**를 하자.
 
+* 자기 소개를 할 때 **눈으로 보는 글**과 **귀로 듣는 말**이 다르기 때문에 안좋다.
+
+* 1분 자기 소개의 목표
+    - 자기 소개에서 질문 받기
+    - 나의 면접에 대한 목차
 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KwUq_LENyEs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+
+* 면접의 자기 소개는 구체성을 강조해야한다.
+
+* 자소서의 지원동기보다 좀 더 구체적이어야한다.
+
+* 산업 분석 / 기업 분석 필요하다.
+
+* 지원동기 꿀팁
+    - 나의 직무성 강조해라
+    - 이 기업에만 있는 특징을 찾아라
+    - 
 
 
 ---
@@ -47,13 +65,22 @@ author: goodGid
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oK-qhsOyDgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-
 ---
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v9pJvR7-DBg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+* 성공 경험이 가장 중요하다.
 
+1. 성공 경험
+
+2. 성공의 원인
+
+3. 나의 기여
+
+4. 나의 경쟁력
+
+5. 역량매칭
 
 ---
 
