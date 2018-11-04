@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " 흐름 / 혼잡 / 오류 제어 기법 "
-categories: Technology
-tags: Technology
+categories: Network
+tags: Network
 author: goodGid
 ---
 * content
@@ -39,7 +39,7 @@ author: goodGid
 
 ### 정지-대기(Stop-and-wait)
 
-![](/assets/img/posts/error_flow_control_1.png)
+![](/assets/img/network/error_flow_control_1.png)
 
 * 구조가 간단한 대신, 하나를 주고 응답을 받기 때문에 비효율적이다.
 
@@ -55,19 +55,19 @@ author: goodGid
 
 * 전송측 윈도우 n-1 개의 프레임을 포함한다.
 
-![](/assets/img/posts/error_flow_control_2.png)
+![](/assets/img/network/error_flow_control_2.png)
 
 
 * 위와 같은 구조에서 데이터 0, 1을 전송했다고 가정하면 <br> 슬라이딩 윈도우의 구조는 다음과 같이 변하며 윈도우의 크기는 전송한 데이터 프레임만큼 줄어들게 된다.
 
 
-![](/assets/img/posts/error_flow_control_3.png)
+![](/assets/img/network/error_flow_control_3.png)
 
 
 * 이때 만약 수신측에서 ACK라는 프레임을 받게 된다면 전송측은 0, 1이 데이터를 정상적으로 받았음을 알게 되고, <br> 전송측은 ACK 프레임에 따른 프레임의 수만큼 오른쪽으로 경계가 확장된다.
 
 
-![](/assets/img/posts/error_flow_control_4.png)
+![](/assets/img/network/error_flow_control_4.png)
 
 
 
@@ -129,7 +129,7 @@ author: goodGid
 4) 수신 호스트로부터 수신응답을 수신하면 윈도우의 크기 8로 하여 전송
 ```
 
-![](/assets/img/posts/error_flow_control_10.png)
+![](/assets/img/network/error_flow_control_10.png)
 
 
 
@@ -197,7 +197,7 @@ author: goodGid
 
 * 만약 데이터나 ACK가 분실되었을 경우 일정간격의 시간을 두고 타임아웃이 되면, 송신측은 데이터를 재전송한다.
 
-![](/assets/img/posts/error_flow_control_5.png)
+![](/assets/img/network/error_flow_control_5.png)
 
 
 ---
@@ -231,10 +231,10 @@ author: goodGid
         - 전송측에서는 이 타이머의 타임아웃동안 ACK 데이터를 받지 못했을 경우, 마지막 ACK된 데이터부터 재전송한다.
 
 
-![](/assets/img/posts/error_flow_control_6.png)
+![](/assets/img/network/error_flow_control_6.png)
 
 
-![](/assets/img/posts/error_flow_control_7.png)
+![](/assets/img/network/error_flow_control_7.png)
 
 
 * 전송측은 NAK 프레임을 받았을 경우, NAK 프레임 번호부터 다시 재전송을 시작한다.
@@ -258,10 +258,10 @@ author: goodGid
 
 ## GBn ARQ 기법과 SR ARQ의 비교
 
-![](/assets/img/posts/error_flow_control_8.png)
+![](/assets/img/network/error_flow_control_8.png)
 
 
-![](/assets/img/posts/error_flow_control_9.png)
+![](/assets/img/network/error_flow_control_9.png)
 
 
 
@@ -278,5 +278,5 @@ author: goodGid
 
 * [8. Congestion Control - TCP의 혼잡 제어](http://movefast.tistory.com/38)
 
-* [http://jwprogramming.tistory.com/36](http://jwprogramming.tistory.com/36)
+* [TCP의 흐름제어, 혼잡제어](http://jwprogramming.tistory.com/36)
 
