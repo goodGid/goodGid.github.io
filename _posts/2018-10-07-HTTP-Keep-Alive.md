@@ -30,7 +30,7 @@ author: goodGid
 
 * 즉 Handshake 과정이 생략되므로 성능 향상을 기대 할 수 있다.
 
-* 단, 모든 TCP 세션을 무한정 유지할 수는 없으므로 Timeout 및 Max 설정을 통해 관리되어야 한다. 
+* 단 모든 TCP 세션을 무한정 유지할 수는 없으므로 Timeout 및 Max 설정을 통해 관리되어야 한다. 
     - Keep Alive Timeout : 요청에 대한 응답을 보낸 후 Timeout을 위한 timer가 동작하기 시작한다.
     - 최근에는 N/W 환경이 개선되면서 Keep Alive Timeout이 점점 줄어드는 추세이다.
     - Event-driven 구조여서 non-blocking을 사용하는 Nginx 등은 <br> Keep Alive를 하면서도 Thread를 점유하지 않기 때문에 동시 처리에 유리하다.
@@ -50,6 +50,16 @@ author: goodGid
 * 하지만 사람들이 적게 접속한다면 소수의 사람이 빠르게 인터넷을 사용 할 수 있다는 장점이 있다.
 
 * Why? Request 요청을 하기 위한 작업이 생략되므로 속도는 빨라진다.
+
+<br>
+
+* 정적 자원(HTML, 이미지 파일 등)으로만 구성된 웹 서버에 Keep Alive을 사용할 경우 약 50%의 성능 향상을 보인다고 한다.
+
+* 단 이와 같은 성능 향상을 보이려면 서버가 바쁘지 않아야 하는데 <br> 바쁜 서버 환경에서 Keep Alive 기능을 사용할 경우 <br> 모든 요청 마다 연결을 유지해야 하기 때문에 프로세스 수가 기하급수적으로 늘어나 MaxClient값을 초과하게 된다.
+
+* 따라서 메모리를 많이 사용하게 되며 이는 곧 성능 저하의 원인이 된다.
+
+* 즉 대량 접속 시 효율이 떨어지게 된다.
 
 
 ---
@@ -194,3 +204,5 @@ Connection to pungjoo.com closed by foreign host.
 * [Keepalive란?](https://sarc.io/index.php/miscellaneous/998-keepalive)
 
 * [Keep Alive 정리.](https://weicomes.tistory.com/1)
+
+* [[Web Server] 아파치 2.4와 Nginx 특징 및 비교](http://victorydntmd.tistory.com/231)
