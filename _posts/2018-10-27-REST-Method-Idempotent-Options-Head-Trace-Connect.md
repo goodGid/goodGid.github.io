@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " REST API Methods "
+title:  " HTTP Method :: Idempotent, Options, Head, Trace, Connect "
 categories: Technology
 tags: Technology
 author: goodGid
