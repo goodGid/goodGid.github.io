@@ -42,6 +42,8 @@ author: goodGid
 
 * 즉 생성자 함수의 prototype과 인스턴스의 ___proto___는 **같은 객체를 참조**한다.
 
+* 다시말해 **prototype은 객체**이다.
+
 ![](/assets/img/javascript/js_prototype_3.png)
 
 <br>
