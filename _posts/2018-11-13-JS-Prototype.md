@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " prototype(Prototype) "
+title:  " 프로토타입(Prototype) "
 categories: JavaScript
 tags: JavaScript
 author: goodGid
