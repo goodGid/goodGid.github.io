@@ -12,7 +12,7 @@ author: goodGid
 
 # 디스크 데이터 접근
 
-* 데이타 접근 시간의 구분
+* 데이터 접근 시간의 구분
     1. 탐구 시간 (Seek Time)
     2. 회전 지연 시간 (Rotational Latency Time)
     3. 전송 시간 (Transfer Time)

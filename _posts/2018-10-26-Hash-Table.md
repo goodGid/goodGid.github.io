@@ -67,7 +67,7 @@ author: goodGid
 
 * JDK 내부에서도 사용하고 있는 충돌 처리 방식인데 **Linked List**를 이용하는 방식이다.
 
-* 각 Index에 데이타를 저장하는 Linked list에 대한 포인터를 가지는 방식이다.
+* 각 Index에 데이터를 저장하는 Linked list에 대한 포인터를 가지는 방식이다.
 
 ![](/assets/img/posts/hash_table_2.png)
 
@@ -108,11 +108,11 @@ static final int UNTREEIFY_THRESHOLD = 6;
 
 > 데이터 검색
 
-* 데이타를 찾고자 할 때는 Key에 대한 Index를 구한 후 
+* 데이터를 찾고자 할 때는 Key에 대한 Index를 구한 후 
 
 * Index가 가리키고 있는 Linked list를 **선형** 검색한다.
 
-* 해당 Key에 대한 데이타가 있는지를 검색하여 있으면 리턴하면 된다. 
+* 해당 Key에 대한 데이터가 있는지를 검색하여 있으면 리턴하면 된다. 
 
 
 > 데이터 삭제
@@ -150,7 +150,7 @@ static final int UNTREEIFY_THRESHOLD = 6;
 
 > Resizing
 
-* Open addressing의 경우 **고정 크기 배열**을 사용하기 때문에 데이타를 더 넣기 위해서는 배열을 확장해야 한다. 
+* Open addressing의 경우 **고정 크기 배열**을 사용하기 때문에 데이터를 더 넣기 위해서는 배열을 확장해야 한다. 
 
 * 또한 Separate changing에 경우에도 <br> 버킷이 일정 수준으로 차 버리면 각 버킷에 연결되어 있는 List의 길이가 늘어나기 때문에 <br> 검색 성능이 떨어지기 때문에 버킷의 개수를 늘려줘야 한다. 
 
