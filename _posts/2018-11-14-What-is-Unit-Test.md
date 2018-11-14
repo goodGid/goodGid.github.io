@@ -8,7 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-
 ## 유닛 테스트란?
 
 * 단위 테스트(Unit test)는 프로그램의 기본 단위인 모듈을 테스트하여 모듈 테스트(moduletest)라고도 한다. 
