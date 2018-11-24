@@ -305,7 +305,7 @@ author: goodGid
 
 * Young Generation 영역을 정리하는 건 Parallel이나 CMS처럼 **멀티쓰레드**로 정리를 한다.
 
-* 그리고 Old Generation 영역에 해당하는 여러개의 Region에 대해선 <br> CMS처럼 **백그라운드 쓰레드**로 이 영역들을 정리를 합니다.
+* 그리고 Old Generation 영역에 해당하는 여러개의 Region에 대해선 <br> CMS처럼 **백그라운드 쓰레드**로 이 영역들을 정리를 한다.
 
 * 그런데 **CMS와 차이점**은 중간 중간 쓸모없는 객체들을 정리하는게 아닌 <br> 한 Region을 통째로 정리해버린다.
 
