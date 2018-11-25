@@ -37,6 +37,15 @@ author: goodGid
 
 <br>
 
+* 수상내역
+    - 대상(1) : 1,000만원
+    - 최우수상(1) : 500만원
+    - 우수상(3) : 각 300만원
+    - 장려상(10) : 각 100만원
+    - 노력상(15) : 각 50만원
+
+<br>
+
 * 문의사항
 	- 공모전 및 TourAPI : tourapi@knto.or.kr / 033-738-3874 
 	- [SKT OPEN API](http://www.true-inno.com/sub/noticeView?sSeq=85&sKey=&sWord=&cPage=1&topYn=N) : tour2018@sk.com 
