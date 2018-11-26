@@ -30,9 +30,12 @@ author: goodGid
 
 
 
-<br>
 
-* 쉽게 말해서 String은 **new 연산을 통해 생성되면 그 인스턴스의 메모리 공간은 절대 변하**지 않는다.
+---
+
+## String
+
+* String은 **new 연산을 통해 생성되면 그 인스턴스의 메모리 공간은 절대 변하**지 않는다.
 
 * 그래서 `+` 연산이나 concat을 이용해서 문자열에 변화를 줘도 **메모리 공간이 변하**는 것이 아니라 
 
@@ -54,6 +57,8 @@ author: goodGid
 
 ---
 
+## StringBuffer와 StringBuilder
+
 * StringBuffer와 StringBuilder 클래스는 String과 다르게 **mutable(가변)**하다.
 
 * 즉 문자열 연산에 있어서 클래스를 **한 번만 만들고(new)**
@@ -64,9 +69,9 @@ author: goodGid
 
 * 심지어 StringBuffer와 StringBuilder **클래스의 메서드들이 같으므로 호환**이 가능하다.
 
-<br>
+---
 
-* 그렇다면 StringBuffer와 StringBuilder의 차이는 무엇일까?
+## StringBuffer와 StringBuilder의 차이점
 
 * 차이점은 StringBuffer는 멀티 쓰레드 환경에서 **synchronized 키워드가 가능하므로 동기화**가 가능하다.
 
@@ -84,9 +89,9 @@ author: goodGid
 
 * 싱글 쓰레드 또는 쓰레드를 신경쓰지 않아도 되는 환경에서는 StringBuilder를 사용하는 것이 적절하다.
 
-<br>
+---
 
-* 다시 한번 정리하면
+## 정리
 
 * **String 클래스**는 불변 객체이기 때문에 문자열 연산이 많은 프로그래밍이 필요할 때 
 
