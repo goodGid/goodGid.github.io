@@ -18,6 +18,17 @@ author: goodGid
 
 * 이를 해결하기 위해 탄생한 것이 *Connection Pool* 이다. 
 
+
+
+
+
+
+
+
+
+
+
+
 * Connection Pool이란 동시 접속자가 가질 수 있는 Connection을 하나로 모아놓고 관리한다는 개념이다. 
 
 * 누군가 접속하면 자신이 관리하는 Pool에서 남아있는 Connection을 제공한다. 
