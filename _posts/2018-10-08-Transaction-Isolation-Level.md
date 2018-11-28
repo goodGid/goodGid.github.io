@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Transaction Isolation Level  "
+title:  " 트랜잭션 고립화 레벨(Transaction Isolation Level) "
 categories: Database
 tags: Database
 author: goodGid
