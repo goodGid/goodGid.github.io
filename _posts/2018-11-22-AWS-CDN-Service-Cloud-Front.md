@@ -104,7 +104,7 @@ Route53에 의해서 Client와 가장 가까운 위치에 있는 Cloud Front의 
 
 * 이런 문제를 해결하기 위해서 Cloud Front는 **invalidation API(특정 파일을 캐쉬에서 지우는 기능)**을 제공한다.
 
-* 한번에 **최대 3*개**의 invalidation request을 실행할 수 있으며
+* 한번에 **최대 3개**의 invalidation request을 실행할 수 있으며
 
 * 각 invalidation request는 **최대 1000개의 파일**까지만 지원한다. 
 

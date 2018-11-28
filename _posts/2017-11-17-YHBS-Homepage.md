@@ -11,7 +11,7 @@ author: goodGid
 
 ## Home Page
 
-See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>
+See **[Home Page](http://www.youngheartsboardingschool.com/)**
 
 * 　18. 08. 16 기준으로 사이트가 닫혔다. :<
 
@@ -33,7 +33,6 @@ See [<b>[Home Page](http://www.youngheartsboardingschool.com/)<b>
 
 6. Using Node Module - Multer
 
-## Host
 
 ## Review
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hierarchical Table "
+title:  " 계층형 테이블(Hierarchical Table) "
 categories: Database
 tags: Database
 author: goodGid

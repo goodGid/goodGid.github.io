@@ -41,7 +41,7 @@ mapping (key type => data type) name
 1 pragma solidity ^0.4.8; 
 2 
 3 contract Example4 {
-4     mapping ( address => uint) public balances;
+4     mapping (address => uint) public balances;
 5
 6     function setBalance (uint input) {
 7         balances[msg.sender] = input;
@@ -74,7 +74,7 @@ msg.sender와 입력받은 input으로 [키, 데이터] 쌍을 만들어
 
 4행처럼 `맵핑`에 `public 키워드`를 붙이면
 
-자동으로 값을 반환할 수 있는 `함수(getter)가 되는데,
+자동으로 값을 반환할 수 있는 `함수(getter)`가 되는데,
 
 맵핑의 getter는 조금 어렵다.
 
