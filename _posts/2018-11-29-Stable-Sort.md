@@ -21,6 +21,8 @@ author: goodGid
 
 ## Stable Sort
 
+* 버블 정렬, 삽입 정렬은 Stable하다.
+
 ### 머지(Merge) 정렬
 
 * 다음과 같이 초기값이 있다고 가정하자.
@@ -55,8 +57,9 @@ author: goodGid
 
 ## Unstable Sort
 
-### 퀵(Quick) 정렬
+* 선택 정렬은 Unstable하다.
 
+### 퀵(Quick) 정렬
 
 ![](/assets/img/algorithm/stable_sort_6.png)
 
@@ -88,3 +91,9 @@ author: goodGid
 * 그 다음엔 2(1)가 아닌 2(2)가 출력된다.
 
 * 그렇기 때문에 **힙(Heap) 정렬**은 **Unstable Sort**이다.
+
+---
+
+## 참고
+
+* [stable & unstable sort 에 대하여](http://blog.naver.com/zephyehu/150013176075)
