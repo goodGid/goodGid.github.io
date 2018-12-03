@@ -38,7 +38,9 @@ type: page
 
 ### 2018
 
-* 　09. 01 ~ 졸업 프로젝트 진행
+* 　12. 07 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
+
+* 　09. 01 ~ 12.10 졸업 프로젝트 진행
 
 * 　08. 28 블로그에 Google Analytics 적용
 
