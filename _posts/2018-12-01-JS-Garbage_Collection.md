@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Javascript Garbage Collection "
-categories: Javascript
-tags: Javascript
+categories: JavaScript
+tags: JavaScript
 author: goodGid
 ---
 * content
