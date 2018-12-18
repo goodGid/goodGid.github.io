@@ -63,7 +63,7 @@ author: goodGid
 
 
 
-![](/assets/img/posts/2018_koreatour_app_competition_3.png)
+![](/assets/img/competition/2018_koreatour_app_competition_3.png)
 
 
 ---
@@ -137,5 +137,30 @@ SK텔레콤 Open Collabo.개발그룹 --- 매니저 입니다.
 
 ---
 
-## Review
+## 최종 발표
 
+![](/assets/img/competition/2018_koreatour_app_competition_4.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_5.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_6.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_7.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_8.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_9.png)
+
+* 장려상 수상 !
+
+* 솔직히 최소 우수상을 생각했는데 장려라서 팀원들도 많이 실망했다.
+
+![](/assets/img/competition/2018_koreatour_app_competition_10.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_11.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_12.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_13.png)
+
+![](/assets/img/competition/2018_koreatour_app_competition_14.png)
