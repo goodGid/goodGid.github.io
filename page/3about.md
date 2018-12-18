@@ -38,7 +38,7 @@ type: page
 
 ### 2018
 
-* 　12. 07 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
+* 　12. 17 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
 
 * 　09. 01 ~ 12.10 졸업 프로젝트 진행
 
@@ -132,6 +132,8 @@ type: page
 ---
 
 ## Prize
+
+* 　18. 12. 17 SKT X 한국관광공사 앱 공모전 장려상 수상
 
 * 　18. 07. 14 App Jam Server Develop 대상 수상
 
