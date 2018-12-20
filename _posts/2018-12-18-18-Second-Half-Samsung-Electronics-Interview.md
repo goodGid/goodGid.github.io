@@ -186,3 +186,101 @@ author: goodGid
 <br>
 
 > 축하 선물
+
+* 꽃과 케익 !
+
+* 그런데 황금 명함과 편지가 없어서 실망했었다.
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_7.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_8.png)
+
+<br>
+
+## O.T
+
+* 일단 목걸이를 받았다.
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_9.png)
+
+* 우선 대강당에서 모든 인원이 도착할때까지 대기하다가 밥을 먹으러갔다.
+
+* 강당 앞에 대형 스크린에 좌석표가 있었는데 인원수를 카운트해보니 150명이였다.
+
+* 모든 직군 다합해 150명이였다.
+
+* 석사는 다해서 10명이 안된거 같다.
+
+* 나머진 다 학사인듯 싶다.
+
+* 인원이 다 도착하고 밥을 먹으러 갔다.
+
+* 면접때 먹었던 밥은 그냥 그랬는데 오늘은 진짜 너무 맛있었다.
+
+* 밥을 먹고 실내 대강당으로 다시 이동했다.
+
+* 본격적으로 OT시작이 되었다.
+
+* 부모님은 사옥 투어를 하였고 입사 예정자는 강당에서 2시간가량 삼성전자 무선사업부의 역사와 자랑을 들었다.
+
+* 입사 유무를 떠나 삼성이 우리나라 기업이라는게 너무나 뿌듯하더라.
+
+* 추가로 선배님들과의 Q&A 시간을 가졌다.
+
+* 그리고 근로계약서 작성 시간
+
+* 총 3장에 서명했다.
+
+* *개인 보관용 근로계약서* , *기업 보관용 근로계약서* , *서약서*
+
+* 근로계약서에는 연봉과 기타 사항이 적혀있었다.
+
+* 그리고 OT를 마치고 집으로 돌아가기전에 드디어 입사 선물을 받았다.
+
+
+
+> 쇼핑백
+
+* 입사 예정자 이름이 다 붙어있었다.
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_10.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_11.png)
+
+* 그리고 그 안에 보조배터리와 **편지**, **황금 명함**이 들어있었다. 
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_12.png)
+
+> 편지
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_13.png)
+
+* 부모님용과 입사 예정자용이 따로 있다.
+
+* 겉표지부터 멘트와 편지 내용까지 달랐다.
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_14.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_15.png)
+
+* 아이보리가 부모님 네이비가 입사 예정자 !
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_16.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_17.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_18.png)
+
+
+> 황금 명함 
+
+* 그리고 가장 중요한 **황금 명함** !!! 
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_19.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_20.png)
+
+![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_21.png)
+
+
+
