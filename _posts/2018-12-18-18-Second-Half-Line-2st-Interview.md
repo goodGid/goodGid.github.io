@@ -117,7 +117,29 @@ Q. 마지막 할 말
 
 
 
+---
 
+## O.T
 
+* 신인사원 LINER 
 
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_10.png)
+
+* 그리고 샐리 쿠션과 샐리 머그컵과 샐리 노트
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_11.png)
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_12.png)
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_13.png)
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_14.png)
+
+* 마지막으로 CTO님께 질문하는 시간이 있었는데 
+
+* CTO님께서 추천해주시는 마우스와 키보드는 뭔가요? 라는 질문을 해서 
+
+* 센스있다고 마우스를 선물 받았다. 
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_15.png)
 
