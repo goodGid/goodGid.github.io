@@ -164,3 +164,5 @@ SK텔레콤 Open Collabo.개발그룹 --- 매니저 입니다.
 ![](/assets/img/competition/2018_koreatour_app_competition_13.png)
 
 ![](/assets/img/competition/2018_koreatour_app_competition_14.png)
+
+* [결과물 저장소](https://github.com/team-walkD)와 [동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/competition/2018_koreatour_app_competition_15.mp4)은 Git Repository에 저장해두었다.
