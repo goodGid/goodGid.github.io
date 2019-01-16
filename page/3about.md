@@ -36,6 +36,10 @@ type: page
 
 ## Trace
 
+### 2019
+
+* 　01. 02 LINE BizPlus BackEnd Developer - LINE Pay Server
+ 
 ### 2018
 
 * 　12. 17 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
