@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " ~(틸트)와 ^(캐럿) "
-categories: Technology
-tags: Technology
+categories: Git
+tags: Git
 author: goodGid
 ---
 * content
