@@ -38,7 +38,7 @@ type: page
 
 ### 2019
 
-* 　01. 02 LINE BizPlus BackEnd Developer - LINE Pay Server
+* 　01. 02 LINE+ Developer
  
 ### 2018
 
