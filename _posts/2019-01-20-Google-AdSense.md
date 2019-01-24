@@ -44,3 +44,20 @@ author: goodGid
 
 * 이후 구글로부터 합/불 연락을 기다린다.
 
+
+---
+
+## 2단계 : 합격한 경우 Google AdSense 적용
+
+* AdSense 신청이 합격하면 다음과 같은 이메일이 온다.
+
+![](/assets/img/posts/google_adsense_3.png)
+
+![](/assets/img/posts/google_adsense_4.png)
+
+* 여기서 *Get Strated* 를 누르고 들어가면 사이트가 뜬다.
+
+* 해당 사이트에 원하는 옵션으로 설정을 해주면 자동으로 블로그에 **광고**가 뜨게 된다. 
+
+* 해당 사이트에서 클릭 클릭만 하면 자동으로 뜨니 더 신청해야하나 불안해 할 필요가 없다. 
+
