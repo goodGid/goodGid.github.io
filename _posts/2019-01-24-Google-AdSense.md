@@ -28,7 +28,7 @@ author: goodGid
 
 ```
 ## 문제 상황 
-Verda의 Redis 서비스를 사용할 때 Local에서는 작동되는 명렁어가 Redis 서비스를 사용할 땐 안먹히는 슈가 발생했다.
+Verda의 Redis 서비스를 사용할 때 Local에서는 작동되는 명렁어가 Redis 서비스를 사용할 땐 안먹히는 이슈가 발생했다.
 
 ## 해결책
 버전의 차이였다.
