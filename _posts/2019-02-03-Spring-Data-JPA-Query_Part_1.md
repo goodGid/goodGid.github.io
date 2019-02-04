@@ -16,13 +16,11 @@ author: goodGid
 
 1. [쿼리 메소드]({{site.url}}/Spring-Data-JPA-Query_Part_1/#쿼리-메소드-이용하기)라는 **메소드의 이름**만으로 원하는 SQL을 실행하는 방법 
 
-2. [페이징과 정렬]({{site.url}}/Spring-Data-JPA-Query_Part_1/Spring-Data-JPA-Query_Part_1/#페이징-처리와-정렬)에 대한 처리
+2. [페이징과 정렬]({{site.url}}/Spring-Data-JPA-Query_Part_1/#페이징-처리와-정렬)에 대한 처리
 
-3. @Query를 이용한 좀 더 구체화된 JPQL 처리 
+3. [*@Query를 이용한 좀 더 구체화된 JPQL 처리*]({{site.url}}/Spring-Data-JPA-Query_Part_2)
 
-4. Querydsl을 이용한 동적 쿼리
-
-
+4. [*Querydsl을 이용한 동적 쿼리*]({{site.url}}/Spring-Data-JPA-Query_Part_2)
 
 
 
@@ -48,7 +46,7 @@ author: goodGid
 
 ---
 
-### 쿼리 메소드 이용하기
+## 쿼리 메소드 이용하기
 
 * Spring Data JPA는 메소드의 이름만으로 원하는 **질의(query)**를 실행할 수 있는 방법을 제공한다.
 
@@ -147,7 +145,7 @@ public Collection<Board> findByBnoGreaterThanOrderByBnoDesc(Long bno);
 
 ---
 
-### 페이징 처리와 정렬 
+## 페이징 처리와 정렬 
 
 * 쿼리 메소드들에는 마지막 파라미터로 페이지 처리를 할 수 있는 **Pageable** 인터페이스와 정렬을 처리하는 **Sort** 인터페이스를 사용할 수 있다.
 
@@ -217,3 +215,60 @@ public void testBnoPagingSort() {
     results.forEach(board -> System.out.println(board));
 }
 ```
+
+---
+
+## Page< T > 타입 
+
+* Page< T > 타입을 이용하면 Sprig MVC와 연동할 때 편리함을 제공한다.
+
+``` sql
+public Page<Board> findByBnoGreaterThan(Long bno, Pageable paging);
+```
+
+``` java
+@Test
+public void testBnoPagingSort() {
+    //Pageable paging = new PageRequest(0, 10, Sort.Direction.ASC, "bno");
+    
+    //spring boot 2.0.0
+    Pageable paging = PageRequest.of(0, 10, Sort.Direction.ASC, "bno");
+    Page<Board> result = repo.findByBnoGreaterThan(0L, paging);
+    
+    System.out.println("PAGE SIZE: " + result.getSize());
+    System.out.println("TOTAL PAGES: " + result.getTotalPages());
+    System.out.println("TOTAL COUNT: " + result.getTotalElements());
+    System.out.println("NEXT: " + result.nextPageable());
+    
+    List<Board> list = result.getContent();
+
+    list.forEach(board -> System.out.println(board));	
+}
+```
+
+* Page< Board >는 단순 데이터만을 추출하는 용도가 아니라
+
+* 웹에서 필요한 데이터들을 추가적으로 처리해준다. 
+
+``` java
+Hibernate: select board0_.bno as bno1_0_, board0_.content as content2_0_, board0_.regdate as regdate3_0_, board0_.title as title4_0_, board0_.updatedate as updateda5_0_, board0_.writer as writer6_0_ from tbl_boards board0_ where board0_.bno>? order by board0_.bno asc limit ?
+
+Hibernate: select count(board0_.bno) as col_0_0_ from tbl_boards board0_ where board0_.bno>?
+```
+
+* 주목할점은 테스트 코드를 실행하면 실제로 SQL문이 **2번 실행**된다.
+
+* 첫번째 SQL : 데이터를 추출
+
+* 두번째 SQL : 데이터의 개수를 파악하기 위해 *SELECT COUNT(...)* 실행
+
+* 정리하자면 리턴 타입을 Page< T >로 하게 되면 웹 페이징에서 필요한 데이터를 한 번에 처리할 수 있기 때문에 
+
+* **데이터를 위한 SQL**과 **개수를 파악하기 위한 SQL**을 매번 작성하는 불편함을 줄일 수 있다.
+
+
+---
+
+## 참고
+
+* [스타트 스프링 부트 초급 개발자들을 위한 가볍고 넓은 스프링 부트](https://book.naver.com/bookdb/book_detail.nhn?bid=12247655)
