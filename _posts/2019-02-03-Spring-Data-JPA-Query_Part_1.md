@@ -14,13 +14,11 @@ author: goodGid
 
 * 다양한 조건을 실행하는 쿼리를 작성하는 방법에 대해 알아보자.
 
-1. [쿼리 메소드]({{site.url}}/Spring-Data-JPA-Query_Part_1/#쿼리-메소드-이용하기)라는 **메소드의 이름**만으로 원하는 SQL을 실행하는 방법 
+1. *[쿼리 메소드]({{site.url}}/Spring-Data-JPA-Query_Part_1/#쿼리-메소드-이용하기)라는 **메소드의 이름**만으로 원하는 SQL을 실행하는 방법* 
 
-2. [페이징과 정렬]({{site.url}}/Spring-Data-JPA-Query_Part_1/#페이징-처리와-정렬)에 대한 처리
+2. *[페이징과 정렬]({{site.url}}/Spring-Data-JPA-Query_Part_1/#페이징-처리와-정렬)에 대한 처리*
 
-3. [*@Query를 이용한 좀 더 구체화된 JPQL 처리*]({{site.url}}/Spring-Data-JPA-Query_Part_2)
-
-4. [*Querydsl을 이용한 동적 쿼리*]({{site.url}}/Spring-Data-JPA-Query_Part_2)
+3. [@Query를 이용한 좀 더 구체화된 JPQL 처리]({{site.url}}/Spring-Data-JPA-Query_Part_2)
 
 
 
@@ -196,7 +194,7 @@ public void testBnoOrderByPaging() {
 
 > 정렬 
 
-* 정렬은 쿼리 메솓에서 *OrderBy* 로 처리해도 되지만
+* 정렬은 쿼리 메소드에서 *OrderBy* 로 처리해도 되지만
 
 * Sort를 이용하면 원하는 방향을 파라미터로 결정할 수 있다는 장점이 있다.
 
@@ -249,6 +247,8 @@ public void testBnoPagingSort() {
 * Page< Board >는 단순 데이터만을 추출하는 용도가 아니라
 
 * 웹에서 필요한 데이터들을 추가적으로 처리해준다. 
+
+![](/assets/img/java/spring_data_jpa_query_part_1_2.png)
 
 ``` java
 Hibernate: select board0_.bno as bno1_0_, board0_.content as content2_0_, board0_.regdate as regdate3_0_, board0_.title as title4_0_, board0_.updatedate as updateda5_0_, board0_.writer as writer6_0_ from tbl_boards board0_ where board0_.bno>? order by board0_.bno asc limit ?
