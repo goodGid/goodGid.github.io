@@ -14,6 +14,7 @@ author: goodGid
 
 
 
+
 ## January
 
 * LINE 연수로 한달이 지나갔다.
@@ -71,6 +72,18 @@ author: goodGid
     - 캐시
     - 웹 MVC
     - 강의 마무리
+
+<h5>Sun</h5>
+
+* **Spring 웹 MVC** 강의 시청
+    - 스프링 MVC 소개
+    - 서블릿 소개
+    - 서블릿 애플리케이션 개발
+        - [Servlet의 Life Cycle]({{site.url}}/Java-Servlet-Life-Cycle)
+        - Tomcat Deploy 설정시 War와 War Exploded의 차이
+            - War : 압축 형태로 톰캣에 배포
+            - War Exploded : 압축 해제 형태로 톰캣에 배포
+    - 서블릿 리스너와 필터
 
 <h5> A Weekly Retrospective </h5>
 
