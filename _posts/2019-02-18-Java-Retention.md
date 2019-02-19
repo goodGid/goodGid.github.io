@@ -8,7 +8,7 @@ author: goodGid
 * content
 {:toc}
 
-* [Meta Annotations]({{site.url}}/) 중 대표적인 예시이다.
+* [Meta Annotations]({{site.url}}/Java-Annotation/) 중 대표적인 예시이다.
 
 * Annotation Type Retention의 Oracle Docs를 읽어보자.
 
