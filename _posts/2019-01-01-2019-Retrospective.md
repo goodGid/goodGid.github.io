@@ -27,19 +27,7 @@ author: goodGid
 
 > 190211 ~ 190217
 
-<h5>Mon</h5>
-
-* LINE OJT 교육
-
-<h5>Tue</h5>
-
-* LINE OJT 교육
-
-<h5>Wed</h5>
-
-* LINE OJT 교육
-
-<h5>Thu</h5>
+<h5>Mon ~ Thu</h5>
 
 * LINE OJT 교육
 
@@ -92,6 +80,14 @@ author: goodGid
 * 이제 시작이다. 조급해하지 말자!
 
 > 190218 ~ 1902124
+
+<h5> Mon </h5>
+
+* [@Retention Annotation]({{site.url}}/Java-Retention)개념을 공부했다.
+
+* [Kerberos](https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%B2%A0%EB%A1%9C%EC%8A%A4) 개념
+
+
 
 > 190225 ~ 1900303
 
