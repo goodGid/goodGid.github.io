@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Intellij에서 Craate From Archetype 뜻 "
+title:  " Intellij에서 Create From Archetype 뜻 "
 categories: Java
 tags: Java
 author: goodGid
@@ -8,9 +8,9 @@ author: goodGid
 * content
 {:toc}
 
-* Intellij에서 Maven 프로젝트를 만들때 **Craate From Archetype** 버튼이 보인다.
+* Intellij에서 Maven 프로젝트를 만들때 **Create From Archetype** 버튼이 보인다.
 
-* Craate From Archetype의 리스트들은 **Maven이 미리 만들어놓은 프로젝트**라 생각할 수 있다.
+* Create From Archetype의 리스트들은 **Maven이 미리 만들어놓은 프로젝트**라 생각할 수 있다.
 
 * 만약 간단한 웹 MVC 프로젝트를 진행하고자 한다면 maven-archtype-webapp을 선택하면 된다.
 
