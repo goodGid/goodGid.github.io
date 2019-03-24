@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " @Component와 @Bean의 차이 "
-categories: Spring
-tags: Spring
+categories: Java
+tags: Java
 author: goodGid
 ---
 * content

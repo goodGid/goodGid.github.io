@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Maven Project Structure 알아보기 "
-categories: Spring
-tags: Spring
+categories: Java
+tags: Java
 author: goodGid
 ---
 * content
