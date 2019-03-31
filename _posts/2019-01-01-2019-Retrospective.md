@@ -27,16 +27,10 @@ author: goodGid
 
 > 190211 ~ 190217
 
-<h5>Mon ~ Thu</h5>
-
 * LINE OJT 교육
-
-<h5>Fri</h5>
 
 * **Spring 프레임워크 핵심 기술** 강의 시청
     - 스프링 AOP: 개념 소개
-
-<h5>Sat</h5>
 
 * **Spring 프레임워크 핵심 기술** 강의 시청
     - 스프링 AOP: 프록시 기반 AOP
@@ -61,8 +55,6 @@ author: goodGid
     - 웹 MVC
     - 강의 마무리
 
-<h5>Sun</h5>
-
 * **Spring 웹 MVC** 강의 시청
     - 스프링 MVC 소개
     - 서블릿 소개
@@ -73,23 +65,21 @@ author: goodGid
             - War Exploded : 압축 해제 형태로 톰캣에 배포
     - 서블릿 리스너와 필터
 
-<h5> A Weekly Retrospective </h5>
-
-* 스프링에 개념에 대해 아직 많이 부족하다. 분발하자
-
-* 이제 시작이다. 조급해하지 말자!
-
 > 190218 ~ 1902124
 
-<h5> Mon </h5>
+* [@Retention Annotation]({{site.url}}/Java-Retention)개념 학습
 
-* [@Retention Annotation]({{site.url}}/Java-Retention)개념을 공부했다.
+* [Kerberos](https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%B2%A0%EB%A1%9C%EC%8A%A4)개념 학습
 
-* [Kerberos](https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%B2%A0%EB%A1%9C%EC%8A%A4) 개념
+> 190318 ~ 190324
 
-
-
-> 190225 ~ 1900303
+* **스프링 부트 개념과 활용** 강의 시청
+    - 스프링 웹 MVC 1부 소개
+    - [스프링 웹 MVC 2부 HttpMessageConverters]({{site.url}}/HttpMessageConverts/)
+    - 스프링 웹 MVC 3부 ViewResolve
+    - [스프링 웹 MVC 4부 정적 리소스 자원]({{site.url}}/How-to-control-Static-Resource/)
+    - 스프링 웹 MVC 5부 웹JAR
+    - 스프링 웹 MVC 6부 index 페이지와 파비콘
 
 
 ## March
