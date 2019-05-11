@@ -25,6 +25,19 @@ author: goodGid
 
 ---
 
+## Servlet이란?
+
+* 자바로 웹 어플리케이션을 개발 할 수 있는 스펙과 API를 제공한다.
+
+* 가장 핵심적인 클래스는 **HttpServlet**이다.
+
+* 한 요청을 처리할 때마다 프로세스를 만드는 게 아니라 쓰레드를 만들어서 공유한다.
+
+* Servlet 컨테이너(톰캣, 제티, 언더토 등등)는 Servlet 스펙에 기반해 Servlet의 생명 주기(라이프 사이클)를 다룬다.
+
+
+
+---
 
 
 ## Servlet Code
@@ -64,7 +77,6 @@ public class HelloServlet extends HttpServlet {
 
 
 ## Log
-
 
 * 처음으로 http://localhost:8080/hello 요청하게 되면 2가지 동작이 수행된다.
 
