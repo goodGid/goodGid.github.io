@@ -154,7 +154,7 @@ type: page
 
 ---
 
-## Certicate
+## Certificate
 
 1. 정보처리기사 (18. 08. 17) - 18202050951A
 1. OPIc IM1 (17. 12. 04) - 1A7636534792 / ACTFL
