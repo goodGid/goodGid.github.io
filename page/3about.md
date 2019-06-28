@@ -13,8 +13,6 @@ type: page
 
 ## Kiyong Shin
 
-* Age : 92. 08. 16
-
 * Univ : Catholic Univ
 
 * Major : Computer Science Information Engineering 
