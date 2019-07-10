@@ -10,6 +10,11 @@ author: goodGid
 
 > 회사에서 지원해주는 영어 회화 스터디
 
+# Index
+
+[190701(Mon)](https://goodgid.github.io/English-Class/#190701)
+[190703(Wed)](https://goodgid.github.io/English-Class/#190703)
+[190708(Mon)](https://goodgid.github.io/English-Class/#190708)
 
 
 
@@ -20,9 +25,11 @@ author: goodGid
 
 
 
-# English Speaking
 
-## 190701(Mon)
+
+
+
+## 190701
 
 ```
 M.I.A = Missing in Action
@@ -100,10 +107,10 @@ im gonna go with
 If you don’t mind, will you have something to eat after class?
 ```
 
+---
 
 
-
-## 190703(Wed)
+## 190703
 
 ```
 눈치보다
@@ -184,7 +191,7 @@ Who was it?
 
 ---
 
-## 190708(Mon)
+## 190708
 
 ```
 Unit 2.
@@ -270,4 +277,13 @@ Don't you ever get on Facebook or Twitter?
 ```
 
 
+---
 
+## 190710
+
+```
+
+* * * * * * * * * *
+I have not received the book yet.
+So, can you make a copy for today?
+```
