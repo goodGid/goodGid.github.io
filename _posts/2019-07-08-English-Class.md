@@ -203,10 +203,8 @@ Here go on a diet
 ==> 식단 조절한다
 ==> 다이어트를 한다는 뜻은 아니다.
 
-
 pressed for time 
 ==> 시간에 쫓기다
-
 
 fell down
 fell off
@@ -233,6 +231,7 @@ ex) he pulled some strings
 wears the pants
 ==> 실권을 가지고 있는 사람
 ex) It is pretty clear who wears the pants in your family - your wife 
+ex) my wife wears the pants
 
 the ball and chain
 ==> 족쇄 / 속박 / 걸림돌 
@@ -278,6 +277,7 @@ LINE is better than way Kakao
 Just the same old, Work, bars, movies, guys, you know
 
 Don't you ever get on Facebook or Twitter?
+
 ```
 
 
@@ -287,7 +287,80 @@ Don't you ever get on Facebook or Twitter?
 
 ```
 
+on the fast track
+= 고속 승진
+ex) he is on the fast track
+
+My boss found me out at a wrong moment
+        = find
+        = bust (=found out)
+= My boss가 나를 괴롭힌다.
+
+I got busted taking a nap
+= 낮잠자다 걸렸다.
+
+This song remind me of ex-girlfriend
+
+You remind me of my mom
+= 생각나게 만든다.
+ex) Some scent remind me of Korea
+
+genuine 
+= 정품의
+= 제뉴
+
+I like a friend who has/have something in common with me 
+= 나와 공통점이 많은 친구를 좋아한다.
+I like a friend who has/have nothing in common with me 
+= 니와 공통점이 많은 친구를 좋아하지 않는다.
+
+We hava something in common
+= 우리는 잘 맞는다.
+= 우리는 공통점이 많다.
+
+How do you spell [ this/that ] ?
+= 이거 철자가 어떻게 되나요? 
+How do you sepll the word?
+= 그 단어 철자가 어떻게 되요?
+
+all the time
+= always
+
+I'm in sick and tired of foodbox
+I'm in sick and tired of being busy
+
+Grab on beer
+= 맥주 한 잔 하자.
+
+I agreed with what 기용 said
+= with + 사람
+I agrred to what 기용 said
+= with + E.T.C
+
 * * * * * * * * * *
+
 I have not received the book yet.
 So, can you make a copy for today?
+
+I can't work it not all 
+
+It's been ages since we met
+= 정말 오래만이다.
+
+It's been ages since i watched movie
+= 오랜만에 영화를 본다.
+
+No chance to eat to chicken
+
+How did you get this one?
+
+workload less than LINE
+
+I get paid more than LINE
+
+It's the first time you eat
+
+How many sibling do you have?
+
+And any idea? 
 ```
