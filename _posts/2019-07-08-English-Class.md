@@ -8,13 +8,17 @@ author: goodGid
 * content
 {:toc}
 
-> 회사에서 지원해주는 영어 회화 스터디
+> 영어로 말하자 !!! 그래서 시작한 영어 회화 스터디
 
 # Index
 
-[190701(Mon)](https://goodgid.github.io/English-Class/#190701)
-[190703(Wed)](https://goodgid.github.io/English-Class/#190703)
-[190708(Mon)](https://goodgid.github.io/English-Class/#190708)
+* [190701(Mon)]({{site.url}}/English-Class/#190701)
+
+* [190703(Wed)]({{site.url}}/English-Class/#190703)
+
+* [190708(Mon)]({{site.url}}/English-Class/#190708)
+
+* [190710(Wed)]({{site.url}}/English-Class/#190710)
 
 
 
