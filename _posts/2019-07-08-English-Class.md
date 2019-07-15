@@ -20,6 +20,8 @@ author: goodGid
 
 * [190710(Wed)]({{site.url}}/English-Class/#190710)
 
+* [190715(Mon)]({{site.url}}/English-Class/#190715)
+
 
 
 
@@ -363,4 +365,27 @@ It's the first time you eat
 How many sibling do you have?
 
 And any idea? 
+```
+
+
+---
+
+## 190715
+
+I can do an impression of IU
+==> impression = 성대모사
+= mimic (목소리만) 성대모사
+
+work out 
+= 헬스장에서 하는거 
+
+wrap it up 
+= 정리하다.
+
+```
+What about you?
+
+Do you actually use it?
+
+Girl who is tall like the man who is way taller then her
 ```
