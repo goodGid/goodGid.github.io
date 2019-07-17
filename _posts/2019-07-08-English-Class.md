@@ -22,6 +22,8 @@ author: goodGid
 
 * [190715(Mon)]({{site.url}}/English-Class/#190715)
 
+* [190717(Wed)]({{site.url}}/English-Class/#190717)
+
 
 
 
@@ -138,10 +140,8 @@ line in the middle
 Blind Date
 소개팅
 
-
 It went wrong ?
 It went (well or good) ?
-
 
 Do you go out with 기용?
 = Do you date 기용?
@@ -388,4 +388,98 @@ What about you?
 Do you actually use it?
 
 Girl who is tall like the man who is way taller then her
+```
+
+
+---
+
+## 190717
+
+
+more mannly / womanly 
+= 더 남자다움 / 여자다움
+
+passed by
+= 스쳐지나가다.
+
+very very weired
+= 이상하다
+ex) actually he was weired
+
+can you notice it? 
+
+I am biased against 강남언니
+= 편견이 있다.
+
+old saying
+= 속담
+
+at least
+= 최소한
+
+I am dressed in my Sunday best when ask women out
+= 여자에게 데이트를 신청할 때 나는 차려입는다.
+
+she has spitting spot of 안소희
+= 그녀는 안소희를 닮았다.
+ex) I have my father's eye
+ex) I have spitting spot of My father eye
+ex) I look like my father
+
+It makes sense
+= 말이 된다
+It doesn't make sense.
+= 말이 안된다.
+
+
+```
+Are you working out? 
+= 운동했어?
+
+chip in
+= take up a collection
+
+ex) take up a collection for his going away party
+= 송별회를 위해서 돈을 모으자 !
+
+In his generation
+= this generation
+
+Request a certificate
+= 인증을 요청하다
+
+Here in asia
+
+not that often
+= 종종의 not 표현
+
+get close to him
+
+when i encounter 
+= 우연히 마주치다
+
+I am a 안소희 bias
+= 나는 안소희를 좋아한다.
+
+before they got popular
+= 인기를 얻기 전에
+
+i don't like the way you eat
+i don't like the way you talk
+
+the way you talk, the way you look
+= 생긴대로 논다.
+
+He was nothing special to look at
+
+John's new girlfriend is a dead ringer for 안소희
+you are a dead ringer for 안소희
+
+It can not be expressed in words.
+= 말로 표현 할 수 없다.
+
+I review it while commuting.
+= 출퇴근 하면서 복습을 한다.
+
+is good for you?
 ```
