@@ -168,6 +168,10 @@ type: page
 
 ## Travled
 
+* 　2019. 08. 11 ~ 08. 17	Kota Kinabalu, Malaysia
+
+* 　2019. 05. 01 ~ 05. 06	Nha trang, Vietnam
+
 * 　2018. 06. 24 ~ 06. 26	Jeju
 
 * 　2017. 08. 01 ~ 08. 30	Nepal
