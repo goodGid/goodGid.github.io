@@ -36,6 +36,10 @@ type: page
 
 ### 2019
 
+* 　07. 11 [알고리즘 책 집필 문의](https://www.instagram.com/p/BzxPv88Fq9W/)
+
+* 　06. 08 [Google AdSense 인증](https://www.instagram.com/p/Byb-2hGlX9I/)
+
 * 　01. 02 LINE+ Developer
  
 ### 2018
@@ -188,9 +192,9 @@ type: page
 
 * 　2014. 06. 30 ~ 07. 03 Hong Kong & Makao
 
-* 　I was in child : )　　China
+* 　~ 2014 China
 
-* 　I was in child : )　　North of Korea
+* 　~ 2014 North of Korea
 
 ---
 
