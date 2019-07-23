@@ -120,7 +120,7 @@ author: goodGid
 
 * 두 Encoding 방식의 큰 차이는 최소 8bit가 필요하냐 16bit가 필요하냐에 따라 다른 것이다. 
 
-* **최적의 상황(저쟝, 통신 용량을 아껴야할 때)**이 필요하다면 <br> 어떤 CodePoint를 주로 사용하냐에 따라 UTF-8 또는 UTF-16을 선택하는 기준이 달라질 것이다.
+* **최적의 상황(저장, 통신 용량을 아껴야할 때)**이 필요하다면 <br> 어떤 CodePoint를 주로 사용하냐에 따라 UTF-8 또는 UTF-16을 선택하는 기준이 달라질 것이다.
 
 ![](/assets/img/posts/unicode_and_utf_encoding_1.png)
 
