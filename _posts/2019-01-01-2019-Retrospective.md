@@ -63,6 +63,7 @@ author: goodGid
 	    - 3.5 템플릿과 콜백
 	    - 3.6 스프링의 JdbcTemplate
 	    - 3.7 정리
+
     - 4장 예외	
         - 4.1 사라진 SQLException
 	    - 4.2 예외 전환
@@ -217,7 +218,18 @@ author: goodGid
 
 * [Open Session In View Pattern](http://egloos.zum.com/aeternum/v/2798098) 원문
 
+
+> 190715 ~ 190721
+
 * 토비의 스프링 3.1 Vol. 1 스프링의 이해와 원리
+    - 2장 테스트
+        - 2.1 UserDaoTest 다시보기
+        - 2.2 UserDaoTest 개선
+        - 2.3 개발자를 위한 테스팅 프레임워크 JUnit
+            - [JUnit의 예외(Exception) 테스트 작성하기]({{site.url}}/Spring-JUnit-Exception-Test/)
+            - [JUnit의 동작 방식]({{site.url}}/How-JUnit-Works/)
+
+> 190722 ~ 190729
 
 
 
