@@ -8,7 +8,7 @@ author: goodGid
 * content
 {:toc}
 
-> 영어로 말하자 !!! 그래서 시작한 영어 회화 스터디
+> 영어로 말하자 !!! 그래서 시작한 영어 회화
 
 # Index
 
@@ -23,6 +23,8 @@ author: goodGid
 * [190715(Mon)]({{site.url}}/English-Class/#190715)
 
 * [190717(Wed)]({{site.url}}/English-Class/#190717)
+
+* [190722(Mon)]({{site.url}}/English-Class/#190722)
 
 
 
@@ -482,4 +484,55 @@ I review it while commuting.
 = 출퇴근 하면서 복습을 한다.
 
 is good for you?
+```
+
+---
+
+## 190722
+
+```
+Can i have some towels please?
+= 타월을 갖다 주실 수 있나요?
+
+Can i have some blanket?
+= 담요 좀 주실 수 있나요?
+
+what do you have in mind?
+= 네 맘속에 어떤 생각이 있니?
+
+What makes 
+= 왜?
+ex) What makes a restaurant busy and popular?
+
+They serve bread.
+==> 판매하다는 sell이 아니라 serve를 사용한다.
+
+ring a bell
+= 모르겠다.
+
+penciled me in 
+= 이름 좀 적어줘
+
+please save me a seat
+= 자리 좀 맡아줘
+
+is this seat taken?
+= 자리 맡아놨나요?
+
+next Friday
+= 다음주 금요일
+= a week from Friday
+= 2 weeks from Friday
+
+under the name (of) 신기용
+= ~ 이름으로 예약을 했다.
+ex) I have/made a reservationn under the name (of) 신기용
+
+what ~ like 
+= 어떤가요
+ex) what is the weather like?
+ex) what is your team member like?
+
+chill
+= 느긋하게 있는 상황
 ```
