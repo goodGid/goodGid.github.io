@@ -11,7 +11,7 @@ type: page
 
 
 
-## Kiyong Shin
+## Who am i
 
 * Univ : Catholic Univ
 
@@ -29,6 +29,7 @@ type: page
 * [Facebook](https://www.facebook.com/sgy8971)
 * [Instagram](https://www.instagram.com/___gid/)
 * [BOJ](https://www.acmicpc.net/user/sgy8971)
+* [Linkedin](https://www.linkedin.com/in/kiyong-shin-a498a2142/)
 
 --- 
 
@@ -44,7 +45,13 @@ type: page
  
 ### 2018
 
+* 　12. 18 [18 하반기 공채 라인(LINE) 합격]({{site.url}}/18-Second-Half-Line-2st-Interview/)
+
+* 　12. 18 [18 하반기 공채 삼성전자 무선사업부 합격]({{site.url}}/18-Second-Half-Samsung-Electronics-Interview/)
+
 * 　12. 17 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
+
+* 　11. 24 [100일간의 1일 1커밋]({{site.url}}/1Day-1Commit/)
 
 * 　09. 01 ~ 12.10 졸업 프로젝트 진행
 
@@ -74,7 +81,7 @@ type: page
 
 * 　02. 05 ~ Study Block Chain
 
-* 　02. 12 ~ Study machine Learning
+* 　02. 12 ~ Study Machine Learning
 
 * 　02. 08 [AWS Lambda Seminar](https://goodgid.github.io/AWS-Lambda-Seminar/)
 
@@ -131,7 +138,7 @@ type: page
 
 ### 2014 
 
-* 　14. 07 ~ 16. 04. 13 [S/W 관리병](https://goodgid.github.io/SW-Management-Soldier/)으로 국방부/합참 근무 - Web Monitoring System 개발 (Java Swing)
+* 　14. 07 ~ 16. 04. 13 [S/W 관리병](https://goodgid.github.io/SW-Management-Soldier/)으로 국방부/합참 근무 - Web Monitoring System 개발
 
 * 　학술 연구 장학생
 
@@ -176,6 +183,8 @@ type: page
 
 * 　2019. 05. 01 ~ 05. 06	Nha trang, Vietnam
 
+* 　2019. 01. 08 ~ 01. 10	Shinjuku, Japan (LINE 연수)
+
 * 　2018. 06. 24 ~ 06. 26	Jeju
 
 * 　2017. 08. 01 ~ 08. 30	Nepal
@@ -186,11 +195,11 @@ type: page
 
 * 　2017. 06. 25 ~ 06. 26	Rusia
 
-* 　2014. 07. 06 ~ 07. 10 Thailand 
+* 　2014. 07. 06 ~ 07. 10	Thailand 
 
-* 　2014. 07. 03 ~ 07. 06 Pataya
+* 　2014. 07. 03 ~ 07. 06	Pataya
 
-* 　2014. 06. 30 ~ 07. 03 Hong Kong & Makao
+* 　2014. 06. 30 ~ 07. 03	Hong Kong & Makao
 
 * 　~ 2014 China
 
