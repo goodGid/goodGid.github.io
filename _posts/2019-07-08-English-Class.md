@@ -26,6 +26,7 @@ author: goodGid
 
 * [190722(Mon)]({{site.url}}/English-Class/#190722)
 
+* [190724(Wed)]({{site.url}}/English-Class/#190724)
 
 
 
@@ -340,6 +341,7 @@ I agreed with what 기용 said
 = with + 사람
 I agrred to what 기용 said
 = with + E.T.C
+= 동의하다
 
 * * * * * * * * * *
 
@@ -535,4 +537,47 @@ ex) what is your team member like?
 
 chill
 = 느긋하게 있는 상황
+```
+
+
+---
+
+## 190724
+
+```
+You are not allow to smoke here
+= 담배피면 안됩니다.
+
+designated 
+= 지정되어 있다.
+ex) 유네스코 designated 한라산
+
+What would you recommend?
+= 추천하실꺼 있으세요?
+
+sightsee
+= (v) 구경하다
+= (v) 관광하다
+ex) i sightsaw 경복궁
+
+recommend + ~ing 
+suggest + ~ing
+enjoy + ~ing
+
+hit the spot
+= ~가 딱이다.
+ex) the weather hit the spot
+
+give a 2-weeks notice
+= 사직서를 내다.
+
+7 out of 10
+= 10점만점에 7ㅕ점
+
+soy been paste
+= 된장
+hot pepper paste
+= 고추장
+
+
 ```
