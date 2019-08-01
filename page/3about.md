@@ -13,8 +13,6 @@ type: page
 
 ## Who am i
 
-* Univ : Catholic Univ
-
 * Major : Computer Science Information Engineering 
 
 * Mail : gy8971@gmail.com
