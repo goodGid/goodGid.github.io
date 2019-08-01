@@ -17,7 +17,7 @@ type: page
 
 * Mail : gy8971@gmail.com
 
-* Phone Number : 010 - 6286 - 8971
+* Number : 010 - 6286 - 8971
 
 ---
 
@@ -31,7 +31,12 @@ type: page
 
 --- 
 
-## Trace
+## Writing
+
+    {% include opinion.html %}
+
+
+## History
 
 ### 2019
 
@@ -175,7 +180,7 @@ type: page
 
 ---
 
-## Travled
+## Travel
 
 * 　2019. 08. 11 ~ 08. 17	Kota Kinabalu, Malaysia
 
