@@ -230,7 +230,7 @@ author: goodGid
             - [JUnit의 예외(Exception) 테스트 작성하기]({{site.url}}/Spring-JUnit-Exception-Test/)
             - [JUnit의 동작 방식]({{site.url}}/How-JUnit-Works/)
 
-> 190722 ~ 190729
+> 190722 ~ 190728
 
 * 토비의 스프링 3.1 Vol. 1 스프링의 이해와 원리
     - 2장 테스트
@@ -240,10 +240,16 @@ author: goodGid
         - 3.1 다시 보는 초난감 DAO
         - 3.2 변하는 것과 변하지 않는 것
         - 3.3 ~ 3.7 Skip
-        
 
 
 ## August
+
+> 190729 ~ 190804
+
+* Mybatis Lazy Loading 개념
+    - [MyBatis의 Association과 Collection 알아보기 - Artist, Album]({{site.url}}/Mybatis-Association-Collection-Part-1)
+    - [MyBatis의 Association과 Collection 알아보기 - Song]({{site.url}}/Mybatis-Association-Collection-Part-2)
+
 
 ## September
 
