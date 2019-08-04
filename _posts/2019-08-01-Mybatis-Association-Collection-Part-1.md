@@ -8,8 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-
-
 ## 배경 지식
 
 ### Association & Collection
@@ -22,6 +20,16 @@ author: goodGid
 
 * 이를 위해 한번 더 정제 작업이 필요하다.
 
+
+
+
+
+
+
+
+
+
+
 ---
 
 ### Mybatis에서 관계를 정의하는 방법
@@ -29,15 +37,6 @@ author: goodGid
 *  **Nested Select** = 1번의 추가 Select을 통한 데이터 검색
     
 *  **Nested Results** = Join을 통한 한 번에 데이터를 검색
-
-
-
-
-
-
-
-
-
 
 ---
 
