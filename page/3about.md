@@ -52,7 +52,7 @@ type: page
 
 * 　12. 18 [18 하반기 공채 삼성전자 무선사업부 합격]({{site.url}}/18-Second-Half-Samsung-Electronics-Interview/)
 
-* 　12. 17 [2018 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
+* 　12. 17 [2018 SKT X 한국관광공사 앱 공모전 수상]({{site.url}}/2018-Korea-Tour-App-Competition)
 
 * 　11. 24 [100일간의 1일 1커밋]({{site.url}}/1Day-1Commit/)
 
@@ -149,13 +149,13 @@ type: page
 
 ## Prize
 
-* 　18. 12. 17 SKT X 한국관광공사 앱 공모전 장려상 수상
+* 　18. 12. 17 [SKT X 한국관광공사 앱 공모전 장려상 수상]({{site.url}}/2018-Korea-Tour-App-Competition/)
 
 * 　18. 07. 14 App Jam Server Develop 대상 수상
 
-* 　17. 12. 05 [World Friends ICT 봉사단](https://goodgid.github.io/ICT-Volunteer/) - 우수 프로젝트상
+* 　17. 12. 05 [World Friends ICT 봉사단]({{site.url}}/ICT-Volunteer/) - 우수 프로젝트상
 
-* 　17. 11. 21 [Contributhon](https://goodgid.github.io/Contributhon/) - 장려상
+* 　17. 11. 21 [Contributhon]({{site.url}}/Contributhon/) - 장려상
 
 * 　17. 07. 08 App Jam iOS Develop 우수상 수상
 
