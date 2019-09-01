@@ -79,6 +79,7 @@ author: goodGid
 * [요청 맵핑하기 1부 HTTP Method]({{site.url}}/Spring-MVC-Mapping-HTTP-Method)
 * [요청 맵핑하기 2부 URI 패턴]({{site.url}}/Spring-MVC-Mapping-URI)
 * [요청 맵핑하기 3부 미디어 타입]({{site.url}}/Spring-MVC-Mapping-Media-Type)
+* [요청 맵핑하기 4부 헤더와 매개변수]({{site.url}}/Spring-MVC-Mapping-Header-Parameter)
 
 
 
@@ -243,6 +244,7 @@ author: goodGid
     - [요청 맵핑하기 1부 HTTP Method]({{site.url}}/Spring-MVC-Mapping-HTTP-Method)
     - [요청 맵핑하기 2부 URI 패턴]({{site.url}}/Spring-MVC-Mapping-URI)
     - [요청 맵핑하기 3부 미디어 타입]({{site.url}}/Spring-MVC-Mapping-Media-Type)
+    - [요청 맵핑하기 4부 헤더와 매개변수]({{site.url}}/Spring-MVC-Mapping-Header-Parameter)
 
 
 ## September
