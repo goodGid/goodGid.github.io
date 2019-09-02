@@ -81,6 +81,9 @@ author: goodGid
 * [요청 맵핑하기 3부 미디어 타입]({{site.url}}/Spring-MVC-Mapping-Media-Type)
 * [요청 맵핑하기 4부 헤더와 매개변수]({{site.url}}/Spring-MVC-Mapping-Header-Parameter)
 
+> 스프링 프레임워크 핵심 기술
+
+* [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
 
 
 
@@ -237,7 +240,7 @@ author: goodGid
 	    - 4.2 예외 전환
 	    - 4.3 정리
 
-> 190826 ~ 190931
+> 190826 ~ 190901
 
 * **스프링 웹 MVC** 강의
     - 스프링 MVC 활용 소개
@@ -248,6 +251,11 @@ author: goodGid
 
 
 ## September
+
+> 190902 ~ 190908
+
+* **스프링 프레임워크 핵심 기술** 강의
+    - [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
 
 ## October
 
