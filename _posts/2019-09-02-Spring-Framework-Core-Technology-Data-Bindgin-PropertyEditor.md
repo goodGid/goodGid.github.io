@@ -231,7 +231,7 @@ MockHttpServletResponse:
 
 * 이런 단점을 보완하고자 스프링에서는 3.0 이후부터 <br> 데이터 바인딩과 관련해 **Converter**와 **Formater**와 같은 기능들이 추가되었다.
 
-* 관련 글은 [Spring 프레임워크 핵심 기술 - Converter와 Formatter]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter/)을 참고하자.
+* 관련 글은 [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)을 참고하자.
 
 
 <br>
