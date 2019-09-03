@@ -49,6 +49,8 @@ author: goodGid
 
 * 하지만 **State Full**하다는 특징 때문에 치명적인 단점이 존재하게 된다.
 
+* 또한 **String <-> Object 변환**만 가능하기 때문에 자유롭지 못하다는 단점도 존재한다.
+
 * 자세한건 글 아래에 있는 [PropertyEditor의 단점]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor/#propertyeditor의-단점) 부분에서 알아보자.
 
 ---
@@ -164,13 +166,13 @@ Actual   :500
 public class EventEditor extends PropertyEditorSupport {
 
     @Override
-    public String getAsText() {
+    public String getAsText() { // Return Type인 String으로 변환한다.
         return super.getAsText();
     }
 
     @Override
     public void setAsText(String text) throws IllegalArgumentException {
-        setValue(new Event(Integer.parseInt(text)));
+        setValue(new Event(Integer.parseInt(text))); // 입력받은 String을 Object로 변환한다.
     }
 }
 ```
@@ -201,7 +203,13 @@ MockHttpServletResponse:
 
 ## PropertyEditor의 단점
 
-* 하지만 문제가 있다.
+### String <-> Ojbect 변환
+
+* 위 코드에서 보면 알 수 있듯이 PropertyEditor는 **String <-> Object 변환**만 가능하다.
+
+* 그렇기 때문에 `A Object <-> B Object`와 같은 변환은 불가능하다.
+
+### State Full 
 
 * 위에서 언급했듯이 PropertyEditor는 **State Full**하다는 특징으로 인해 치명적인 단점이 발생한다.
 
@@ -222,6 +230,8 @@ MockHttpServletResponse:
 * 즉 Bean으로 등록해서 사용하면 안된다.
 
 * 이런 단점을 보완하고자 스프링에서는 3.0 이후부터 <br> 데이터 바인딩과 관련해 **Converter**와 **Formater**와 같은 기능들이 추가되었다.
+
+* 관련 글은 [Spring 프레임워크 핵심 기술 - Converter와 Formatter]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter/)을 참고하자.
 
 
 <br>
