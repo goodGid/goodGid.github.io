@@ -84,6 +84,7 @@ author: goodGid
 > 스프링 프레임워크 핵심 기술
 
 * [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
+* [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 
 
 
@@ -256,6 +257,7 @@ author: goodGid
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
+    - [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 
 ## October
 
