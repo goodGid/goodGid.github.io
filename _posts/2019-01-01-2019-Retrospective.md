@@ -86,7 +86,7 @@ author: goodGid
 * [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
 * [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 * [Spring 프레임워크 핵심 기술 - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
-
+* [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
 
 
 
@@ -261,6 +261,8 @@ author: goodGid
     - [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
     - [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
     - [Spring 프레임워크 핵심 기술 - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
+    - [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
+
 
 ## October
 
