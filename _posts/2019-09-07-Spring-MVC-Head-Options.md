@@ -11,7 +11,6 @@ author: goodGid
 > 이 글의 코드 및 정보들은 강의를 들으며 정리한 내용을 토대로 작성하였습니다.
 
 
-
 ## 스프링 MVC의 HTTP 메소드 지원
 
 * Http 메소드 중 **HEAD**와 **OPTIONS**는 스프링 MVC가 지원을 해준다.
@@ -46,7 +45,8 @@ author: goodGid
 
 ```
 9.4 HEAD
-The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response. 
+The HEAD method is identical to GET except that the server MUST NOT 
+return a message-body in the response. 
 ```
 
 
