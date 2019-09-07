@@ -80,14 +80,21 @@ author: goodGid
 * [요청 맵핑하기 2부 URI 패턴]({{site.url}}/Spring-MVC-Mapping-URI)
 * [요청 맵핑하기 3부 미디어 타입]({{site.url}}/Spring-MVC-Mapping-Media-Type)
 * [요청 맵핑하기 4부 헤더와 매개변수]({{site.url}}/Spring-MVC-Mapping-Header-Parameter)
+* [요청 맵핑하기 5부 HEAD와 OPTIONS]({{site.url}}/Spring-MVC-Head-Options/)
+* [요청 맵핑하기 6부 커스텀 애노테이션(Custom Annotation)]({{site.url}}/Spring-MVC-Custom-Annotation)
+* [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/)
+* [Documented 애노테이션]({{site.url}}/Spring-MVC-Documented-Annotation/)
+* [Target 애노테이션]({{site.url}}/Spring-MVC-Target-Annotation/)
+
 
 > 스프링 프레임워크 핵심 기술
 
-* [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
-* [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
-* [Spring 프레임워크 핵심 기술 - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
+* [Spring 프레임워크 핵심 기술 - 데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
+* [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
+* [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
 * [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
-
+* [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-Concept)
+* [Spring 프레임워크 핵심 기술 - 스프링 AOP : 적용하기]({{site.url}}/Spring-Framework-Apply-AOP/)
 
 
 
@@ -126,10 +133,10 @@ author: goodGid
     - 빈(Bean)
     - 의존성 주입 (Dependency Injection)
         - @Repository 선언이 없는데 Bean 등록이 되는 이유
-        - 클래스의 생성자에서 @Autowired 어노테이션이 없어도 Bean 주입이 되는 이유 
+        - 클래스의 생성자에서 @Autowired 애노테이션이 없어도 Bean 주입이 되는 이유 
     - AOP 소개
     - AOP 적용 예제
-        - Repository안에 메소드는 기본적으로 @Transactional 어노테이션이 선언되어있다.
+        - Repository안에 메소드는 기본적으로 @Transactional 애노테이션이 선언되어있다.
         - 만약 @Transactional(readOnly = true)라고 명시했다면 Override한다는 뜻이다.
     - PSA 소개
     - 스프링 트랜잭션
@@ -251,17 +258,28 @@ author: goodGid
     - [요청 맵핑하기 2부 URI 패턴]({{site.url}}/Spring-MVC-Mapping-URI)
     - [요청 맵핑하기 3부 미디어 타입]({{site.url}}/Spring-MVC-Mapping-Media-Type)
     - [요청 맵핑하기 4부 헤더와 매개변수]({{site.url}}/Spring-MVC-Mapping-Header-Parameter)
-
+    
 
 ## September
 
 > 190902 ~ 190908
 
+* **스프링 웹 MVC** 강의
+
+    - [요청 맵핑하기 5부 HEAD와 OPTIONS]({{site.url}}/Spring-MVC-Head-Options/)
+    - [요청 맵핑하기 6부 커스텀 애노테이션(Custom Annotation)]({{site.url}}/Spring-MVC-Custom-Annotation)
+    - [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/)
+    - [Documented 애노테이션]({{site.url}}/Spring-MVC-Documented-Annotation/)
+    - [Target 애노테이션]({{site.url}}/Spring-MVC-Target-Annotation/)
+
 * **스프링 프레임워크 핵심 기술** 강의
-    - [데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
-    - [Spring 프레임워크 핵심 기술 - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
-    - [Spring 프레임워크 핵심 기술 - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
+
+    - [Spring 프레임워크 핵심 기술 - 데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
+    - [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
+    - [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
     - [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
+    - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-Concept)
+    - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 적용하기]({{site.url}}/Spring-Framework-Apply-AOP/)
 
 
 ## October
