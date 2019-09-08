@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  " goodGid의 코딩 테스트 준비 방법 "
+title:  " goodGid의 취직을 위한 코딩 테스트 준비 방법 "
 categories: E.T.C
-tags: Youtube
+tags: E.T.C
 author: goodGid
 ---
 * content
