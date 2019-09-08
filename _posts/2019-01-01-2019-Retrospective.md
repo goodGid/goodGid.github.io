@@ -85,6 +85,8 @@ author: goodGid
 * [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/)
 * [Documented 애노테이션]({{site.url}}/Spring-MVC-Documented-Annotation/)
 * [Target 애노테이션]({{site.url}}/Spring-MVC-Target-Annotation/)
+* [Handler Methods : Return Type Values]({{site.url}}/Spring-MVC-Return-Type/)
+* [Handler Methods : Argument]({{site.url}}/Spring-MVC-Argument/)
 
 
 > 스프링 프레임워크 핵심 기술
@@ -271,6 +273,8 @@ author: goodGid
     - [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/)
     - [Documented 애노테이션]({{site.url}}/Spring-MVC-Documented-Annotation/)
     - [Target 애노테이션]({{site.url}}/Spring-MVC-Target-Annotation/)
+    - [Handler Methods : Return Type Values]({{site.url}}/Spring-MVC-Return-Type/)
+    - [Handler Methods : Argument]({{site.url}}/Spring-MVC-Argument/)
 
 * **스프링 프레임워크 핵심 기술** 강의
 
