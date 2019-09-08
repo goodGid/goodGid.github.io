@@ -283,4 +283,42 @@ author: goodGid
 ![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_21.png)
 
 
+---
 
+## Q & A
+
+* 후기 글을 작성하고 거의 1년이 지나가는 시점에도 꾸준히 연락이 오고있다.
+
+* 크게 2가지 종류의 질문이 있다.
+
+> Q. 삼성전자 무선사업부에서 어떤 개발을 하고 있는가?
+
+* 취업 당시 삼성전자와 [LINE]({{site.url}}/18-Second-Half-Line-2st-Interview/)에 합격을 하였고
+
+* 고민 끝에 LINE에 취업을 하였다.
+
+* 그렇기 때문에 삼성전자 무선사업부에서 어떤 개발을 하고 있는지는 
+
+* 나도 모르며 나도 궁금하다 ㅠㅠ
+
+> Q. 코딩 테스트와 전산학은 어떻게 준비했는가?
+
+* 그동안 메일과 댓글 혹은 카톡으로 답장을 드리는데 
+
+* 차라리 글로 기록해서 공유하는게 더 서로에게 편하지 않을까 생각이 들었다.
+
+* 그래서 작성했다.
+
+* [goodGid의 취직을 위한 CS(= 컴퓨터 전산학) 준비 방법]({{site.url}}/Prepared-for-Computer-Science/)
+
+* [goodGid의 취직을 위한 코딩 테스트 준비 방법]({{site.url}}/Prepared-for-Coding-Test/)
+
+<br>
+
+* 끝으로 더 궁금한게 있다면
+
+* 언제든 편하게 연락을 하여도 된다고 말해주고 싶다 ㅎㅎ 
+
+* Email : gy8971@gmail.com
+
+* Kakao : https://open.kakao.com/o/sD37fM3

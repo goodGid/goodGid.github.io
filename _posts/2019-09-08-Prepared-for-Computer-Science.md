@@ -8,9 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-
-
-
 ## OS
 
 1. 운영 체제와 정보기술의 원리 <br> ( https://book.naver.com/bookdb/book_detail.nhn?bid=4392911 )
