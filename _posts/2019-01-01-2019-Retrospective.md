@@ -95,9 +95,9 @@ author: goodGid
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
 * [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
-* [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-Concept)
+* [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-AOP-Concept)
 * [Spring 프레임워크 핵심 기술 - 스프링 AOP : 적용하기]({{site.url}}/Spring-Framework-Apply-AOP/)
-
+* [Spring 프레임워크 핵심 기술 - 스프링 AOP : 프록시 기반 AOP]({{site.url}}/Spring-Framework-Proxy-AOP/)
 
 
 
@@ -267,7 +267,6 @@ author: goodGid
 > 190902 ~ 190908
 
 * **스프링 웹 MVC** 강의
-
     - [요청 맵핑하기 5부 HEAD와 OPTIONS]({{site.url}}/Spring-MVC-Head-Options/)
     - [요청 맵핑하기 6부 커스텀 애노테이션(Custom Annotation)]({{site.url}}/Spring-MVC-Custom-Annotation)
     - [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/)
@@ -277,13 +276,19 @@ author: goodGid
     - [Handler Methods : Argument]({{site.url}}/Spring-MVC-Argument/)
 
 * **스프링 프레임워크 핵심 기술** 강의
-
     - [Spring 프레임워크 핵심 기술 - 데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
     - [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
     - [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
     - [Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language)]({{site.url}}/Spring-Framework-Core-Technology-SpEL/)
-    - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-Concept)
+    - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-AOP-Concept)
     - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 적용하기]({{site.url}}/Spring-Framework-Apply-AOP/)
+
+> 190909 ~ 190915
+
+* **스프링 웹 MVC** 강의
+
+* **스프링 프레임워크 핵심 기술** 강의
+    - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 프록시 기반 AOP]({{site.url}}/Spring-Framework-Proxy-AOP/)
 
 
 ## October
