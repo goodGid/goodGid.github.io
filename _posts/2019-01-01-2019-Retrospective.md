@@ -98,6 +98,8 @@ author: goodGid
 * [Spring 프레임워크 핵심 기술 - 스프링 AOP : 개념 소개]({{site.url}}/Spring-Framework-AOP-Concept)
 * [Spring 프레임워크 핵심 기술 - 스프링 AOP : 적용하기]({{site.url}}/Spring-Framework-Apply-AOP/)
 * [Spring 프레임워크 핵심 기술 - 스프링 AOP : 프록시 기반 AOP]({{site.url}}/Spring-Framework-Proxy-AOP/)
+* [Spring 프레임워크 핵심 기술 - 스프링 @AOP]({{site.url}}/Spring-Framework-Spring-AOP/)
+
 
 
 
@@ -289,6 +291,7 @@ author: goodGid
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 프록시 기반 AOP]({{site.url}}/Spring-Framework-Proxy-AOP/)
+    - [Spring 프레임워크 핵심 기술 - 스프링 @AOP]({{site.url}}/Spring-Framework-Spring-AOP/)
 
 
 ## October
