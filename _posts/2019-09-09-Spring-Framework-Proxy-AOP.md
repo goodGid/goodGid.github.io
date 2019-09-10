@@ -111,7 +111,7 @@ public void createEvent() {
 
 * 원하는 목표는 이뤘지만
 
-* 리얼 서브젝트 메소드에 시간을 측정하는 코드를 추가하는게 최선의 선택일까?
+* Real Subject 메소드에 시간을 측정하는 코드를 추가하는게 최선의 선택일까?
 
 <br>
 
@@ -137,7 +137,7 @@ public void createEvent() {
 
 * 코드를 Refactoring해보자.
 
-* 리얼 서브젝트 메소드에 
+* Real Subject 메소드에 
 
 * 시간을 측정하기 위해 추가했던 코드를 제거하자.
 
@@ -157,7 +157,7 @@ public void createEvent() {
 
 * 클라이언트 코드를 건드리지 않으며
 
-* 동시에 리얼 서브젝트 코드도 건드리지 않고
+* 동시에 Real Subject 코드도 건드리지 않고
 
 * 메서드의 시간을 측정하는 것이다.
 
@@ -170,11 +170,11 @@ public void createEvent() {
 
 * 여러 방법 중 하나로 **프록시 패턴**을 적용시켜보자.
 
-* 리얼 서브젝트를 감싸는 프록시 서비스를 만들자.
+* Real Subject를 감싸는 프록시 서비스를 만들자.
 
 > ProxyRealEventService
 
-* 리얼 서브젝트를 감싸는 프록시 서비스이다.
+* Real Subject를 감싸는 프록시 서비스이다.
 
 ``` java
 @Primary // [1] : 같은 타입 빈이 여러개 존재시 우선 순위를 통해 선택받게 하는 방식
@@ -183,8 +183,8 @@ public class ProxyRealEventService implements EventService{
 
     /*
     [2] 방식과 같은 결과를 보여준다.
-    @Autowired                      // 선언한 타입은 리얼 서브젝트가 아니지만
-    EventService realEventService;  // 이름으로 리얼 서브젝트 주입을 받을 수 있다. 
+    @Autowired                      // 선언한 타입은 Real Subject가 아니지만
+    EventService realEventService;  // 이름으로 Real Subject 주입을 받을 수 있다. 
     */
 
     @Autowired
@@ -211,13 +211,13 @@ public class ProxyRealEventService implements EventService{
 }
 ```
 
-* 프록시 서비스가 리얼 서브젝트를 갖고 있고 (= [2] )
+* 프록시 서비스가 Real Subject를 갖고 있고 (= [2] )
 
 * 그 프록시 서비스에서
 
 * **realEventService.createEvent()**와 같은 코드로 
 
-* 리얼 서브젝트에게 기능을 위임하고
+* Real Subject에게 기능을 위임하고
 
 * 부가적인 기능(= [3], [4] )을 추가했다.
 
@@ -274,6 +274,8 @@ public void publishEvent() {
 * 어떻게 더 깔끔하게 
 
 * 시간을 측정할 수 있을까?
+
+* [스프링 AOP]({{site.url}}/Spring-Framework-Spring-AOP/)글을 읽어보자.
 
 ---
 

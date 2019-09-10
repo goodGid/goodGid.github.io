@@ -15,7 +15,7 @@ author: goodGid
 
 * Aspect-oriendted Programming (AOP)은 OOP를 보완하는 수단이다.
 
-* 흩어진 Aspect를 모듈화 할 수 있는 프로그래밍 기법이다. <small> 와닿지 않는다. 그러니 이 글을 읽고 같이 이해해보자. </small>
+* 흩어진 Aspect를 모듈화 할 수 있는 프로그래밍 기법이다.
 
 
 ---
@@ -79,7 +79,7 @@ author: goodGid
 
 ### Aspect
 
-* Aspect = **Advice** + **Pointcut**
+* Aspect = **Advice** + **PointCut**
 
 * 모듈화 그 자체
 
@@ -87,9 +87,9 @@ author: goodGid
 
 * Aspect가 갖고 있는 Advice를 적용하는 대상들 <br> ex) A,B,C 클래스
 
-* Pointcut보다 **상위 개념 느낌**이다. 
+* PointCut보다 **상위 개념 느낌**이다. 
 
-* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> Pointcut : B 메소드
+* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> PointCut : B 메소드
 
 ### Advice
 
@@ -121,11 +121,11 @@ author: goodGid
 * 즉 Join Point는 Spec이라 생각하면 된다.
 
 
-### Pointcut
+### PointCut
 
 * 어디에 적용해야하는지에 대한 정보
 
-* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> Pointcut : B 메소드
+* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> PointCut : B 메소드
 
 
 ---
