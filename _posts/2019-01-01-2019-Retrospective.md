@@ -87,10 +87,13 @@ author: goodGid
 * [Target 애노테이션]({{site.url}}/Spring-MVC-Target-Annotation/)
 * [Handler Methods : Return Type Values]({{site.url}}/Spring-MVC-Return-Type/)
 * [Handler Methods : Argument]({{site.url}}/Spring-MVC-Argument/)
-
+* 핸들러 메소드 2부 URI 패턴
+* 핸들러 메소드 3부 요청 매개변수 (단순 타입)
+* 핸들러 메소드 4부 폼 서브밋
 
 > 스프링 프레임워크 핵심 기술
 
+* IoC 컨테이너 1부/ 스프링 IoC 컨테이너와 빈
 * [Spring 프레임워크 핵심 기술 - 데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
@@ -288,6 +291,10 @@ author: goodGid
 > 190909 ~ 190915
 
 * **스프링 웹 MVC** 강의
+    - 핸들러 메소드 2부 URI 패턴
+    - 핸들러 메소드 3부 요청 매개변수 (단순 타입)
+    - 핸들러 메소드 4부 폼 서브밋
+
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [Spring 프레임워크 핵심 기술 - 스프링 AOP : 프록시 기반 AOP]({{site.url}}/Spring-Framework-Proxy-AOP/)
