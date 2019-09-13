@@ -168,7 +168,7 @@ public Event hello( @ModelAttribute Event event,
 
 * Binding이 되었는지 확인하기 위해서
 
-* **@Valid** or **@Validated** 애노테이션을 사용할 수 있다.
+* **[@Valid]({{site.url}}/Spring-MVC-Valid-And-Validated/#valid)** or **[@Validated]({{site.url}}/Spring-MVC-Valid-And-Validated/#validated)** 애노테이션을 사용할 수 있다.
 
 <br>
 
