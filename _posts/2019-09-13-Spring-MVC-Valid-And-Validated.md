@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " @Valid와 @Validated "
+title:  " @Valid와 @Validated 애노테이션 "
 categories: Spring
 tags: Spring
 author: goodGid
