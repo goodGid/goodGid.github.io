@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - Retention 애노테이션 "
+title:  " Spring MVC - @Retention 애노테이션 "
 categories: Spring
 tags: Spring
 author: goodGid
@@ -112,10 +112,7 @@ public enum RetentionPolicy {
 
 * @Retention 옵션에 의해 Test Code의 성공 유무가 정해지는 좋은 예시가 있다.
 
-* 반드시 [커스텀 애노테이션(Custom Annotation) 사용하기]({{site.url}}/Spring-MVC-Custom-Annotation/#커스텀-애노테이션custom-annotation-사용하기) 글을 읽고 
-
-* @Retention 애노테이션을 정리해보자.
-
+* 반드시 [커스텀 애노테이션(Custom Annotation) 사용하기]({{site.url}}/Spring-MVC-Custom-Annotation/#커스텀-애노테이션custom-annotation-사용하기) 글을 읽어보자.
 
 ---
 

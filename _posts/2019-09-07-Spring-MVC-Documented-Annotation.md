@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - Documented 애노테이션 "
+title:  " Spring MVC - @Documented 애노테이션 "
 categories: Spring
 tags: Spring
 author: goodGid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - @ModelAttribute 또 다른 사용법 "
+title:  " Spring MVC - @ModelAttribute 애노테이션의 또 다른 사용법 "
 categories: Spring
 tags: Spring
 author: goodGid

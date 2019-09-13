@@ -156,7 +156,9 @@ public @interface GetHelloAnnotation {
 
 * 즉 SampleController를 바이트 코드로 컴파일 하고
 
-* 클래스 로더가 해당 바이트 코드를 로드할 때 @GetHelloAnnotation는 사라지게 되는 것이다.
+* 클래스 로더가 해당 바이트 코드를 로드할 때 
+
+* @GetHelloAnnotation는 사라지게 되는 것이다.
 
 * 그런데 스프링은 런타임때 @GetHelloAnnotation를 참고해야한다.
 
