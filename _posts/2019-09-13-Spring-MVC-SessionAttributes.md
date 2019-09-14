@@ -128,6 +128,65 @@ public void helloTest() throws Exception {
 
 ---
 
+## @SessionAttributes 한계
+
+* **@SessionAttributes**를 선언한 클래스 내에서만
+
+* 선언시 명시한 이름에 해당하는
+
+* Model을 Session에 넣어줄 뿐
+
+* 여러 컨트롤러에 걸쳐서는 적용이 안된다.
+
+<br>
+
+* 예를 들면 
+
+``` java
+@SessionAttributes("event")
+public class A_Controller {
+    model.addAttribute("event", event);
+    ...
+}
+
+
+public class B_Controller {
+    model.addAttribute("event", event);
+    ...
+}
+```
+
+* 이런 구조의 Controller가 있다면
+
+* A_Controller에서는 
+
+* *event* 라는 Key로
+
+* Model에 저장 시
+
+* Http Session에도 저장이 되겠지만
+
+* 그 기능이
+
+* B_Controller에서는 적용이 되지 않는다.
+
+* 뿐만 아니라 Interceptor 혹은 Filter에도 적용이 안된다.
+
+<br>
+
+* 만약 Controller 밖(Interceptor 혹은 Filter 등)에서 
+
+* (= Http Session 전반에 걸쳐 )
+
+* 만들어 준 Session 데이터에 접근하고자 한다면
+
+* [@SessionAttribute]({{site.url}}/Spring-MVC-SessionAttribute)를 사용하면 된다.
+
+* **s**가 붙고 안붙고가 다르다.
+
+
+---
+
 ## Session Clear
 
 * Http Session을 초기화 시키고 싶을 경우엔
