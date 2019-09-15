@@ -16,10 +16,14 @@ author: goodGid
 
 * **HttpMessageConveter**를 이용하여
 
-* 바디안에 있는 데이터를
+* 특정 객체 타입으로 변환시킬 수 있다.
 
-* 해당 타입으로 변환을 시켜준다.
+* 또한 @Valid 또는 @Validated를 사용해서 값을 검증 할 수 있다.
 
+
+
+
+---
 
 ## How ?
 
@@ -231,6 +235,7 @@ public class SampleControllerTest {
                .andExpect(status().isOk())
                .andExpect(jsonPath("name").value("goodGid"));
     }
+}
 ```
 
 > Result
@@ -251,13 +256,27 @@ MockHttpServletRequest:
 
 * **Header 정보**에는 접근을 할 수 없다.
 
-* 단순히 본문에 있는 정보에만 접근이 가능하다.
+* 단순히 본문에 있는 **정보만** 접근이 가능하다.
 
 * 비슷한 기능을 하지만
 
 * Header 정보까지 접근이 가능한
 
 * [HttpEntity]({{site.url}}/Spring-MVC-HttpEntity)도 같이 알아보자.
+
+---
+
+## 맺음말
+
+* 기본적으로 **HttpMessageConveter**에 
+
+* 특정 객체 타입으로 변환하는 Converter가 등록되어 있다.
+
+* 만약 **HttpMessageConveter**과 관련하여 
+
+* 설정하는 방법이 궁금하다면 
+
+* [HttpMessageConverter 설정하기]({{site.url}}/Spring-MVC-Http-Message-Converter-Setting)글을 참고하자.
 
 ---
 
