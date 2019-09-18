@@ -48,7 +48,7 @@ public class PerfAspect {
 
 * 스프링 IoC를 사용하여
 
-* 컴포넌트 스캔 시 Bean 등록을 시키기 위해
+* Component Scan 시 Bean 등록을 시키기 위해
 
 * @Component 어노테이션도 붙혀준다.
 
