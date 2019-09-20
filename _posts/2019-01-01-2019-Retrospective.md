@@ -104,6 +104,8 @@ author: goodGid
 * [핸들러 메소드 15부 @RequestBody 애노테이션]({{site.url}}/Spring-MVC-RequestBody)
 * [핸들러 메소드 15부 HttpEntity]({{site.url}}/Spring-MVC-HttpEntity)
 * [핸들러 메소드 15부 HttpMessageConverter 설정하기]({{site.url}}/Spring-MVC-Http-Message-Converter-Setting)
+* [핸들러 메소드 16부 @ResponseBody]({{site.url}}/Spring-MVC-Responsebody)
+* [핸들러 메소드 16부 ResponseEntity]({{site.url}}/Spring-MVC-ResponseEntity)
 
 * [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
 
@@ -334,7 +336,6 @@ author: goodGid
     - [핸들러 메소드 15부 @RequestBody 애노테이션]({{site.url}}/Spring-MVC-RequestBody)
     - [핸들러 메소드 15부 HttpEntity]({{site.url}}/Spring-MVC-HttpEntity)
     - [핸들러 메소드 15부 HttpMessageConverter 설정하기]({{site.url}}/Spring-MVC-Http-Message-Converter-Setting)
-
     - [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
 
 
@@ -346,6 +347,10 @@ author: goodGid
     - Spring 프레임워크 핵심 기술 - Outro
 
 > 190916 ~ 190922
+
+* **스프링 웹 MVC** 강의
+    - [핸들러 메소드 16부 @ResponseBody]({{site.url}}/Spring-MVC-Responsebody)
+    - [핸들러 메소드 16부 ResponseEntity]({{site.url}}/Spring-MVC-ResponseEntity)
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [IoC 컨테이너 2부/ ApplicationContext와 다양한 빈 설정 방법 : XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean/)
