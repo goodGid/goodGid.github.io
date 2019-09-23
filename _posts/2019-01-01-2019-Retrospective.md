@@ -109,7 +109,9 @@ author: goodGid
 * 핸들러 메소드 17부 정리 및 과제
 * [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
 * [데이터 바인더 @InitBinder]({{site.url}}/Spring-MVC-InitBinder)
+* [예외 처리 핸들러 @ExceptionHandler]({{site.url}}/Spring-MVC-Exception-Handler)
 
+* 스프링 MVC 강좌 마무리
 
 
 > 스프링 프레임워크 핵심 기술
@@ -355,6 +357,9 @@ author: goodGid
     - 핸들러 메소드 17부 정리 및 과제
     - [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
     - [데이터 바인더 @InitBinder]({{site.url}}/Spring-MVC-InitBinder)
+    - [예외 처리 핸들러 @ExceptionHandler]({{site.url}}/Spring-MVC-Exception-Handler)
+    - 
+    - 스프링 MVC 강좌 마무리
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [IoC 컨테이너 2부/ ApplicationContext와 다양한 빈 설정 방법 : XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean/)
