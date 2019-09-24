@@ -12,6 +12,17 @@ author: goodGid
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvHP4Q3LGFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## 머릿말 
+
+* 위 동영상의 주인공분은
+
+* **필자**가 아니다.
+
+* 그냥 유투브에서 
+
+* 신입 개발자를 위한 영상을 
+
+* 찾다가 본 영상일뿐이다.
 
 
 
