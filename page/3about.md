@@ -40,6 +40,8 @@ type: page
 
 ### 2019
 
+* 　09. 24 [addThis](https://www.addthis.com/) 서비스 추가
+
 * 　07. 11 [알고리즘 책 집필 문의](https://www.instagram.com/p/BzxPv88Fq9W/)
 
 * 　06. 08 [Google AdSense 인증](https://www.instagram.com/p/Byb-2hGlX9I/)
