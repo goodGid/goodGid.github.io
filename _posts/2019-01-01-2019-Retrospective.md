@@ -110,7 +110,7 @@ author: goodGid
 * [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
 * [데이터 바인더 @InitBinder]({{site.url}}/Spring-MVC-InitBinder)
 * [예외 처리 핸들러 @ExceptionHandler]({{site.url}}/Spring-MVC-Exception-Handler)
-
+* [전역 컨트롤러 @ControllerAdvice]({{site.url}}/Spring-MVC-Controller-Advice)
 * 스프링 MVC 강좌 마무리
 
 
@@ -359,7 +359,6 @@ author: goodGid
     - [@ModelAttribute 또 다른 사용법]({{site.url}}/Spring-MVC-ModelAttribute-Extra-Usage/)
     - [데이터 바인더 @InitBinder]({{site.url}}/Spring-MVC-InitBinder)
     - [예외 처리 핸들러 @ExceptionHandler]({{site.url}}/Spring-MVC-Exception-Handler)
-    - 
     - 스프링 MVC 강좌 마무리
 
 * **스프링 프레임워크 핵심 기술** 강의
@@ -371,6 +370,8 @@ author: goodGid
     - [IoC 컨테이너 3부/ @Autowire]({{site.url}}/Spring-Framework-Autowired/)
 
 > 190923 ~ 190929
+* **스프링 웹 MVC** 강의
+    - [전역 컨트롤러 @ControllerAdvice]({{site.url}}/Spring-MVC-Controller-Advice)
 
 * **스프링 프레임워크 핵심 기술** 강의
     - [IoC 컨테이너 4부/ @Component와 컴포넌트 스캔]({{site.url}}/Spring-Framework-Component-Scan/)
