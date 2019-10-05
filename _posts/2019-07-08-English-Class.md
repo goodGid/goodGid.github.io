@@ -28,6 +28,12 @@ author: goodGid
 
 * [190724(Wed)]({{site.url}}/English-Class/#190724)
 
+* [190805(Mon)]({{site.url}}/English-Class/#190805)
+
+* [190807(Wed)]({{site.url}}/English-Class/#190807)
+
+* [190819(Mon)]({{site.url}}/English-Class/#190819)
+
 
 
 
@@ -386,6 +392,7 @@ work out
 wrap it up 
 = 정리하다.
 
+
 ```
 What about you?
 
@@ -578,6 +585,161 @@ soy been paste
 = 된장
 hot pepper paste
 = 고추장
+
+```
+
+
+---
+
+
+## 190805
+
+```
+Jet leg
+시차 적응 
+
+I am a bit jet legged
+시차 때문에 좀 피곤하다.
+
+Are you good at swimming?
+수영 잘하나요?
+
+
+
+
+```
+
+
+---
+
+## 190807
+
+```
+in a nutshell : to briefly summarize something
+
+let's get down to business
+이제 일 시작하죠
+
+The grass is greener on the other side
+남의 떡이 더 커보인다.
+
+landlord
+건물주 
+
+
+It goes well 치킨 with 맥주
+
+
+
+```
+
+
+---
+
+## 190819
+
+```
+That's not what I mean
+내 말은 그게 아니다.
+
+I know who he is 
+알기는 하는데 건너 건너 아는 사이
+
+I know goodgid
+내가 진짜 아는 사이
+
+
+Why?
+왜?
+How come?
+대체 왜?
+```
+
+## 190821
+
+```
+I prefer tea to coffee
+
+which : 선택지가 있을 경우, 제한된 범위 내에서 고르는 경우
+what : 선택지가 없을 경우
+```
+
+
+---
+
+## 190911
+
+```
+what        am      I 
+which       are     you/we/they
+who         is      he/she/it
+
+what / which / who + 불완전
+what / which / who ==> 명사를 지칭
+
+where
+when
+why
+how
+
+where / when / why / how + 완전
+where / when / why / how ==> 부사 느낌
+
+------------------------------------
+
+are you going to work?
+= where are you going
+
+are you looking for him?
+= who are you looking for?
+
+it closes at 12AM
+what time does it close (at 12AM)
+// what time = when
+// when + 완전
+
+
+피자빵은 어디 있나요?
+피자빵 is here 
+// here은 부사
+
+___ is 피자빵 here(=부사) 니까 
+___에는 부사가 온다
+그래서 where is 피자빵
+
+
+Q. 언제 출발하나요?
+are we leaving at 2pm ?
+= when are we leaving ?
+= what time are we leaving ?
+leave가 자동사이기 때문에
+are we leaving이 완전한 문장이다.
+when = what time 같다.
+
+
+Q.여기에서 매니저는 누구인가요?
+Tom is the manager.
+= is tom the manager ?
+= who is the manager ?
+여기서는 who가 주어로 사용된다.
+
+
+Q. It is pizza
+= what is it ?
+be + 명사
+명사를 모르니까 
+명사의 성질인 what을 갖고온다.
+
+
+Q. 그는 아프다.
+is he sick
+sick은 형용사다
+그렇기 때문에 
+명사의 느낌을 제외할 수 없기 때문에
+부사를 넣는다
+부사 = where / when / why / how
+==> why is he sick?
+
 
 
 ```
