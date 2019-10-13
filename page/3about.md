@@ -40,6 +40,8 @@ type: page
 
 ### 2019
 
+* 　10. 12 [Buy me Coffee](https://www.buymeacoffee.com/8eHiD71) 추가
+
 * 　09. 24 [addThis](https://www.addthis.com/) 서비스 추가
 
 * 　07. 11 [알고리즘 책 집필 문의](https://www.instagram.com/p/BzxPv88Fq9W/)
