@@ -49,6 +49,8 @@ type: page
 * 　06. 08 [Google AdSense 인증](https://www.instagram.com/p/Byb-2hGlX9I/)
 
 * 　01. 02 LINE+ Developer
+
+* 　01. 01 [Dev History]({{site.url}}/2019-Retrospective/)
  
 ### 2018
 
@@ -186,13 +188,15 @@ type: page
 
 ## Travel
 
+* 　2019. 10. 06 ~ 10. 09	Geoje Island, Tongyeong, Korea
+
 * 　2019. 08. 11 ~ 08. 17	Kota Kinabalu, Malaysia
 
 * 　2019. 05. 01 ~ 05. 06	Nha trang, Vietnam
 
 * 　2019. 01. 08 ~ 01. 10	Shinjuku, Japan (LINE 연수)
 
-* 　2018. 06. 24 ~ 06. 26	Jeju
+* 　2018. 06. 24 ~ 06. 26	Jeju, Korea
 
 * 　2017. 08. 01 ~ 08. 30	Nepal
 
