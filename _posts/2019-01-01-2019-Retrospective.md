@@ -388,6 +388,12 @@ author: goodGid
     - [IoC 컨테이너 5부/ 빈의 스코프]({{site.url}}/Spring-Framework-Bean-Scope/)
     - [IoC 컨테이너 5부/ Proxy 객체를 만드는 방법]({{site.url}}/Spring-Framework-Make-Proxy-Bean)
     - [IoC 컨테이너 6부/ Environment 1부. 프로파일]({{site.url}}/Spring-Framework-Environment-Profile)
+
+* WebFlux Study 발표 준비
+
+> 191007 ~ 191013
+
+
     
 
 
