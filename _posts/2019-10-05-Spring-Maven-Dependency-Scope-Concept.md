@@ -193,17 +193,15 @@ This is much like compile, but indicates you expect the JDK or a container to pr
 
 ## 참고
 
+* [Maven(메이븐) pom.xml 파일의 scope 설정은 무엇입니까?](https://sarc.io/index.php/development/812-maven-pom-xml-scope)
 
-[Maven(메이븐) pom.xml 파일의 scope 설정은 무엇입니까?](https://sarc.io/index.php/development/812-maven-pom-xml-scope)
+* [[Maven] pom.xml <scope> 설명.](https://jjeong.tistory.com/834)
 
+* [[Maven] Dependency Scope의 종류](https://krespo.net/166)
 
-[[Maven] pom.xml <scope> 설명.](https://jjeong.tistory.com/834)
+* [Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)
 
-[[Maven] Dependency Scope의 종류](https://krespo.net/166)
-
-[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)
-
-[Maven Dependency의 scope의 의미](https://homo-ware.tistory.com/43)
+* [Maven Dependency의 scope의 의미](https://homo-ware.tistory.com/43)
 
 
 
