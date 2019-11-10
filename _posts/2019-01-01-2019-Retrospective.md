@@ -75,6 +75,8 @@ author: goodGid
 
 > 스프링 웹 MVC
 
+* 서블릿 리스너와 필터
+
 * 스프링 MVC 활용 소개
 * [요청 맵핑하기 1부 HTTP Method]({{site.url}}/Spring-MVC-Mapping-HTTP-Method)
 * [요청 맵핑하기 2부 URI 패턴]({{site.url}}/Spring-MVC-Mapping-URI)
@@ -127,7 +129,12 @@ author: goodGid
 * [IoC 컨테이너 5부/ 빈의 스코프]({{site.url}}/Spring-Framework-Bean-Scope/)
 * [IoC 컨테이너 5부/ Proxy 객체를 만드는 방법]({{site.url}}/Spring-Framework-Make-Proxy-Bean)
 * [IoC 컨테이너 6부/ Environment 1부. 프로파일]({{site.url}}/Spring-Framework-Environment-Profile)
-
+* IoC 컨테이너 6부/ Environment 2부. 프로퍼티
+* IoC 컨테이너 7부/ MessageSource
+* IoC 컨테이너 8부/ ApplicationEventPublisher
+* [IoC 컨테이너 9부/ ResourceLoader]({{site.url}}/Spring-Framework-ResourceLoader/)
+* IoC 컨테이너 10부/ Resource 추상화
+* IoC 컨테이너 11부/ Validation 추상화
 * [Spring 프레임워크 핵심 기술 - 데이터 바인딩 추상화/ PropertyEditor]({{site.url}}/Spring-Framework-Core-Technology-Data-Bindgin-PropertyEditor)
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 1부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-1/)
 * [Spring 프레임워크 핵심 기술  - Converter와 Formatter 2부]({{site.url}}/Spring-Framework-Core-Technology-Converter-Formatter-Part-2/)
@@ -397,8 +404,21 @@ author: goodGid
 
 > 191028 ~ 191103
 
+* [Target 디렉토리(Directory)는 언제 생성될까?]({{site.url}}/Java-Target-Directory/)
+
+* **스프링 프레임워크 핵심 기술** 강의
+    * [IoC 컨테이너 9부/ ResourceLoader]({{site.url}}/Spring-Framework-ResourceLoader/)
 
 
 ## November
+
+> 191104 ~ 191110
+
+* **스프링 웹 MVC** 강의 시청
+    - 서블릿 리스너와 필터
+
+* **스프링 프레임워크 핵심 기술** 강의
+    - IoC 컨테이너 10부/ Resource 추상화
+    - IoC 컨테이너 11부/ Validation 추상화
 
 ## December
