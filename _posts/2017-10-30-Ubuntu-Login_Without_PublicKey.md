@@ -2,7 +2,7 @@
 layout: post
 title:  " Ubuntu Login without Public Key "
 categories: Technology
-tags: EC2
+tags: ubuntu
 author: goodGid
 ---
 * content
@@ -11,99 +11,71 @@ author: goodGid
 
 ## Problem
 
-* 아마존 웹 서비스(AWS)에서 생성한 EC2 인스턴스는 기본적으로 생성시 발급한 공개키로만 접근이 가능하다.
+* 아마존 웹 서비스(AWS)에서 생성한 EC2 인스턴스는 
 
-* 공개키 접속 방법이 가장 뛰어난 보안성을 제공하지만, 경우에 따라서 Password를 통한 Login이 필요하다.
+* 기본적으로 생성시 발급한 공개키로만 접근이 가능하다.
+
+* 공개키 접속 방법이 가장 뛰어난 보안성을 제공하지만
+
+* 경우에 따라서 Password를 통한 Login이 필요하다.
+
+
+
+
+
 
 ## How to Login Using Password
 
 * Environment : Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1022-aws x86_64)
 
-### Step 1
+### 1. Login with Public Key
 
-#### Login with Public Key
+```
+ssh -i "goodgid-ec2.pem" ubuntu@ec2-13-124-47-92.ap-northeast-2.compute.amazonaws.com
+```
 
-{% capture images %}
-	/assets/img/posts/ec2_login_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+### 2. Access Config File
 
-
-
-### Step 2
-
-#### Access Config File
-
-``` js
-
+```
 sudo vi /etc/ssh/sshd_config
-
 ```
 
-### Step 3
+### 3. Edit Config File
 
-#### Edit Config File
+* **PasswordAuthentication** 필드 값만 하여도
 
-{% capture images %}
-	/assets/img/posts/ec2_login_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+* PW로 로그인이 가능하다.
+
+![](/assets/img/posts/ec2_login_1.png)
 
 
-### Step 4
+### 4. Change Password
 
-#### Change Password
+1. root 권한으로 접속
 
-1) sudo su - 로 root 권한으로 접속 후 타 계정의 PW를 바꾸는 경우
+``` 
+sudo su -
+```
 
-``` js
+* PW 변경
 
-passwd user_ID
-
+```
+passwd ubuntu
 ```
 
 
+### 5. Restart SSH
 
-2) 현재 Login ID의 PW를 바꾸는 경우
-
-``` js
-
-passwd
-
-```
-
-{% capture images %}
-/assets/img/posts/ec2_login_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
-* 보이는 것과 같이 현재 Login ID는 ubuntu이고 <br> "Changing password for ubuntu."라는 멘트가 뜬다. <br> 그리고 PW를 바꾸면 된다.
-
-
-
-### Step 5
-
-#### Restart SSH
-
-``` js
-
+``` 
 sudo service ssh restart
-
 ```
 
+![](/assets/img/posts/ec2_login_2.png)
 
-### Step 6
+### 6. Login without Public Key
 
-#### Login with Using Password Option
+![](/assets/img/posts/ec2_login_3.png)
 
-{% capture images %}
-	/assets/img/posts/ec2_login_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+* **-i "goodgid-ec2.pem"** 옵션없이 로그인이 가능하다.
 
-* Step 4에서 바꾼 PW로 Login을 하면 된다.
-
-* 입력시 주의할 점은 ___@에서 @ 앞부분은 user_ID를 입력하면 된다.
-
-
-
+* @ 앞에 User ID를 입력하면 된다.
