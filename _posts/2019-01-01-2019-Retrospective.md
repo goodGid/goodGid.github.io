@@ -421,4 +421,11 @@ author: goodGid
     - IoC 컨테이너 10부/ Resource 추상화
     - IoC 컨테이너 11부/ Validation 추상화
 
+> 191111 ~ 191117
+
+* 예비군
+
+* [Git Flow 전략]({{site.url}}/Git-Flow)
+
+
 ## December
