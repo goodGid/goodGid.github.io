@@ -309,9 +309,9 @@ author: goodGid
 
 * 그래서 작성했다.
 
-* [goodGid의 취직을 위한 CS(= 컴퓨터 전산학) 준비 방법]({{site.url}}/Prepared-for-Computer-Science/)
+* [goodGid의 CS(= 컴퓨터 전산학) 준비 방법]({{site.url}}/Prepared-for-Computer-Science/)
 
-* [goodGid의 취직을 위한 코딩 테스트 준비 방법]({{site.url}}/Prepared-for-Coding-Test/)
+* [goodGid의 코딩 테스트 준비 방법]({{site.url}}/Prepared-for-Coding-Test/)
 
 ---
 

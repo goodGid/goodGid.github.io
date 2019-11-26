@@ -35,6 +35,7 @@ author: goodGid
 
     - [Index와 Primary Key의 차이점](https://goodgid.github.io/Index-vs-Primary-Key/)
 
+---
 
 ## Algorithm
 
@@ -45,8 +46,6 @@ author: goodGid
     - [Stable Sort](https://goodgid.github.io/Stable-Sort/)
 
     - [해시(Hash) 테이블 개념과 방식](https://goodgid.github.io/Hash-Table/)
-
-
 
 ---
 
@@ -96,6 +95,11 @@ author: goodGid
 
 ---
 
+## Git
+
+* [Git Flow 전략](https://goodgid.github.io/Git-Flow/)
+
+---
 
 ## E.T.C
 
