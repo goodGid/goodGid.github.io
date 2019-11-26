@@ -40,6 +40,8 @@ type: page
 
 ### 2019
 
+* 　11. 25 [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
+
 * 　10. 12 [Buy me Coffee](https://www.buymeacoffee.com/8eHiD71) 추가
 
 * 　09. 24 [addThis](https://www.addthis.com/) 서비스 추가
