@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " goodGid의 취직을 위한 CS(= 컴퓨터 전산학) 준비 방법 "
+title:  " goodGid의 CS(= 컴퓨터 전산학) 준비 방법 "
 categories: E.T.C
 tags: E.T.C
 author: goodGid
@@ -14,6 +14,15 @@ author: goodGid
 
 2. 블로그 ( https://goodgid.github.io/category/#OS )
 
+    - [쓰레드(Thread)란 무엇인가?](https://goodgid.github.io/What-is-Thread/)
+
+    - [Multi로 시작하는 OS 단어 정리](https://goodgid.github.io/OS-Start-From-Multi/)
+
+
+
+
+
+
 ---
 
 ## DB
@@ -22,34 +31,99 @@ author: goodGid
 
 2. 블로그 ( https://goodgid.github.io/category/#Database )
 
+    - [트랜잭션 고립화 레벨(Transaction Isolation Level)](https://goodgid.github.io/Transaction-Isolation-Level/)
+
+    - [Index와 Primary Key의 차이점](https://goodgid.github.io/Index-vs-Primary-Key/)
 
 
+## Algorithm
+
+* 기본적인 Algorithm은 알고 있다는 전제하에
+
+* 면접에서 어필하기 좋은 개념들
+
+    - [Stable Sort](https://goodgid.github.io/Stable-Sort/)
+
+    - [해시(Hash) 테이블 개념과 방식](https://goodgid.github.io/Hash-Table/)
 
 
 
 ---
 
-## 네트워크
+## Network
 
 1. 그림 한 장으로 보는 최신 네트워크 용어 해설 <br> ( https://book.naver.com/bookdb/book_detail.nhn?bid=11091520 )
 
 2. 블로그 ( https://goodgid.github.io/category/#Network )
 
+    - [TCP와 UDP 그리고 TCP/IP](https://goodgid.github.io/TCP-UDP/)
+
+    - [HTTP/1.1](https://goodgid.github.io/HTTP-1.1/)
+
+    - [HTTP Keep Alive 기능](https://goodgid.github.io/HTTP-Keep-Alive/)
+
+    - [URL과 URI, URN](https://goodgid.github.io/URL-URI-URN/)
+    
+    - [HTTP Method :: Idempotent, Options, Head, Trace, Connect](https://goodgid.github.io/REST-Method-Idempotent-Options-Head-Trace-Connect/)
+
+    - [HTTP 함수 - Post vs Put vs Patch](https://goodgid.github.io/HTTP-Method-Post-vs-Put-vs-Patch/)
+
+    - [TCP 3-way Handshake, 4-way Handshake](https://goodgid.github.io/TCP-IP-3Way-4Way/)
+
 ---
 
-## 서버
-
-* 필자는 Bakend 개발을 주로 하였다.
+## Server
 
 1. 그림 한 장으로 보는 최신 서버 가이드북 <br> ( https://book.naver.com/bookdb/book_detail.nhn?bid=11433282 )
 
 2. 블로그 ( https://goodgid.github.io/category/#Server )
 
+    - [포워드(Forward) 프록시와 리버스(Reverse) 프록시](https://goodgid.github.io/Forwad-Proxy-and-Reverse-Proxy/)
+
+    - [웹 서버(WS)와 웹 어플리케이션 서버(WAS)](https://goodgid.github.io/WS-and-WAS/)
+
+---
+
+## Blog
+
+* 만약 자신이 Blog를 한다면 
+
+* 어필하기 좋은 내용들
+
+    - [서버 사이드 렌더링(SSR)과 클라이언트 사이드 렌더링(CSR)](https://goodgid.github.io/Server-Side-Rendering-and-Client-Side-Rendering/)
+
+    - [SEO 최적화 하는 방법](https://goodgid.github.io/SEO-Optimization/)
+
+---
+
+
+## E.T.C
+
+* 추가적으로
+
+* IT 전반적인 기술들에 대한 개념들
+
+    - [SSL(Secure Sockets Layer)](https://goodgid.github.io/TLS-SSL/)
+
+    - [JWT 소개 및 구조](https://goodgid.github.io/JWT/)
+
+    - [네이버 메인 페이지의 트래픽 처리](https://goodgid.github.io/Handling-traffic-on-the-Naver-main-page/)
+
+    - [동시성(Concurrency)과 병렬성(Parallelism)](https://goodgid.github.io/Concurrency-vs-Paraleelism/)
+
+    - [Blocking/Non-Blocking & Sync/Async](https://goodgid.github.io/Blocking-NonBlocking-Synchronous-Asynchronous/)
+
+    - [공개 키 암호 방식(Public Key Crytography)](https://goodgid.github.io/Public-Key-Cryptography/)
+
+    - [계층형 테이블(Hierarchical Table)](https://goodgid.github.io/DB-Hierarchical-Table/) // 자신이 했던 프로젝트에 댓글 기능이 있다면 참고
+
 ---
 
 ## 필살 개념
 
-* 위에서 분류한 OS, DB, 네트워크, 서버로 분류하기 힘든 개념들은
+* 위에서 분류한 내용들과 더불어
+
+* 추가적으로 면접 시 어필하기 좋은 개념들은
 
 * **[Technology](https://goodgid.github.io/category/#Technology)**라는 Category에 다 정리해놨다.
 
@@ -59,11 +133,11 @@ author: goodGid
 
 <br>
 
-* 2018년 하반기 공채로 취업을 하였기 때문에
+* 약간 이런 느낌이랄까
 
-* 취업하면서 공부하였던 개념들은
+* 면접관분들 
 
-* 2019년 전에 썼던 글들이 전부라고 보면 된다.
+* 저 이런 이런 개념들도 알고 있어요 !!! 
 
 ---
 
