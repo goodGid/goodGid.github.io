@@ -8,6 +8,8 @@ author: goodGid
 * content
 {:toc}
 
+> 이 글의 코드 및 정보들은 [책](https://book.naver.com/bookdb/book_detail.nhn?bid=13540082)을 바탕으로 작성하였습니다.
+
 ## Kafka의 특징
 
 ### 프로듀서와 컨슈머의 분리
