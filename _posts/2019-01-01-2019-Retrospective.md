@@ -427,5 +427,28 @@ author: goodGid
 
 * [Git Flow 전략]({{site.url}}/Git-Flow)
 
+> 191118 ~ 191124
+
+* 교내 취업 특강 발표 // 191120 (수)
+
+* Kafka
+    * [카프카의 특징]({{site.url}}/Kafka-Features/)
+    
+    * [주키퍼(Zookeeper)]({{site.url}}/Zookeeper/)
+
+> 191125 ~ 191201
+
+* [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
+
+* Kafka
+
+    - [Kafka 디자인 특징]({{site.url}}/Kafka-Design-Features/)
+
+    - [Kafka 데이터 모델]({{site.url}}/Kafka-Data-Model/)
+
+    - [Kafka 파티션 설정시 고려할 점]({{site.url}}/Kafka-Partition-Config/)
+
+    - [Kafka Replication(복제)]({{site.url}}/Kafka-Replication/)
+    
 
 ## December
