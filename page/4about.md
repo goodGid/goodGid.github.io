@@ -40,6 +40,8 @@ type: page
 
 ### 2019
 
+* 　11. 30 [**2019 Dev** 네비게이션]({{site.url}}/2019-Retrospective/) 추가
+
 * 　11. 25 [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
 
 * 　10. 12 [Buy me Coffee](https://www.buymeacoffee.com/8eHiD71) 추가
@@ -50,7 +52,7 @@ type: page
 
 * 　06. 08 [Google AdSense 인증](https://www.instagram.com/p/Byb-2hGlX9I/)
 
-* 　01. 02 LINE+ Developer
+* 　01. 02 Work in **LINE+ Developer**
 
 * 　01. 01 [Dev History]({{site.url}}/2019-Retrospective/)
  
