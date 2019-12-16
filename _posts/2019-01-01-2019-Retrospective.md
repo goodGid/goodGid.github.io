@@ -452,3 +452,22 @@ author: goodGid
     
 
 ## December
+
+> 191202 ~ 191208
+
+* Kafka 
+
+    - [Kafka ISR(In Sync Replica)]({{site.url}}/Kafka-ISR/)
+
+> 191209 ~ 191215
+
+* Kafka
+
+    - [Kafka Producer Option]({{site.url}}/Kafka-Producer-Option/)
+
+    - [Kafka Message Send Method :: 1st]({{site.url}}/Kafka-Send-Message-Mehotd-1/)
+
+    - [Kafka Message Send Method :: 2st]({{site.url}}/Kafka-Send-Message-Mehotd-2/)
+
+    - [Kafka 메시지 손실 (Under Certain Conditions)]({{site.url}}/Kafka-Lost-Message-Under-Certain-Conditions/)
+

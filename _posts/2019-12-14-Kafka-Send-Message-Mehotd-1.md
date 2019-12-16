@@ -190,7 +190,7 @@ author: goodGid
 
 * 메시지가 손실될 수 있는 현상은 발생할 수 있다.
 
-* 이와 관련해서는 [Kafka 메시지 손실 (Under Certain Conditions)]({{site.url}}/Kafka-Kafka-Lost-Message-Under-Certain-Conditions) 글을 참고하자.
+* 이와 관련해서는 [Kafka 메시지 손실 (Under Certain Conditions)]({{site.url}}/Kafka-Lost-Message-Under-Certain-Conditions) 글을 참고하자.
 
 ---
 
