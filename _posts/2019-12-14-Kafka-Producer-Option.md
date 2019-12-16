@@ -80,6 +80,15 @@ author: goodGid
 
 * 요청을 완료하였다고 판단하기 위해 사용되는 옵션이다.
 
+* acks 옵션과 관련해서
+
+* 다음 2가지 글을 반드시 읽어보길 추천한다.
+
+    - [Kafka Message Send Method :: 1st]({{site.url}}/Kafka-Send-Message-Mehotd-1/)
+
+    - [Kafka Message Send Method :: 2st]({{site.url}}/Kafka-Send-Message-Mehotd-2/)
+
+
 <br>
 
 > Case 1. acks = 0
