@@ -40,7 +40,7 @@ type: page
 
 ### 2019
 
-* 　11. 30 [**2019 Dev** 네비게이션]({{site.url}}/2019-Retrospective/) 추가
+* 　11. 30 [**2019 Dev** 네비게이션]({{site.url}}/2019-Retrospective/) 추가 // Commit : 577d5ee
 
 * 　11. 25 [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
 
