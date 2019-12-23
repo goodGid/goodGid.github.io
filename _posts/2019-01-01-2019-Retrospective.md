@@ -440,6 +440,8 @@ author: goodGid
 
 * [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
 
+* [Font Awesome Web Application Icons]({{site.url}}/Font-Awesome-Web-Application-Icons/)
+
 * Kafka
 
     - [Kafka 디자인 특징]({{site.url}}/Kafka-Design-Features/)
@@ -471,3 +473,24 @@ author: goodGid
 
     - [Kafka 메시지 손실 (Under Certain Conditions)]({{site.url}}/Kafka-Lost-Message-Under-Certain-Conditions/)
 
+> 191216 ~ 191222
+
+* Kafka
+
+    - [Kafka Consumer Option]({{site.url}}/Kafka-Consumer-Option/)
+
+    - [Kafka Consumer Groups]({{site.url}}/Kafka-Consumer-Group/)
+
+    - [Kafka Consumer Groups Rebalance]({{site.url}}/Kafka-Consumer-Group-Rebalance/)
+
+> 191223 ~ 191229
+
+* Kafka
+
+    - [하나의 토픽에 다수의 컨슈머 그룹 (Multiple consumer groups in one topic)]({{site.url}}/Kafka-Consumer-Multiple-Consumer-Groups-in-one-Topic/)
+
+    - [Kafka Commit & Offset]({{site.url}}/Kafka-Commit-Offset/)
+
+    - [Kafka Commit Type : Auto Commit]({{site.url}}/Kafka-Commit-Type-Auto-Commit/)
+
+    - [Kafka Commit Type : Manual Commit]({{site.url}}/Kafka-Commit-Type-Manual-Commit/)
