@@ -494,3 +494,5 @@ author: goodGid
     - [Kafka Commit Type : Auto Commit]({{site.url}}/Kafka-Commit-Type-Auto-Commit/)
 
     - [Kafka Commit Type : Manual Commit]({{site.url}}/Kafka-Commit-Type-Manual-Commit/)
+
+* [SQL : Insert Query에 SEQUENCE.nextVAL을 바로 사용하기]({{site.url}}/DB-Using-SEQUENCE.nextVAL-directly-in-Insert-Query/)
