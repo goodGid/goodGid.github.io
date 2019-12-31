@@ -2,7 +2,7 @@
 layout: post
 title:  " SQL : Insert Query에 SEQUENCE.nextVAL을 바로 사용하기 "
 categories: DB
-categories: DB
+tags: DB
 author: goodGid
 ---
 * content
