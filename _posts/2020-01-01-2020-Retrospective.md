@@ -65,4 +65,5 @@ author: goodGid
 
 > 191230 ~ 200105
 
+* [DispatcherServlet가 WebApplicationContext를 생성하는 2가지 방법]({{site.url}}/Spring-DispatcherServlet/)
 
