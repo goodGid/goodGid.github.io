@@ -158,6 +158,12 @@ public class WebConfig {
 }
 ```
 
+* 좀 더 Live 하게 보고 싶다면
+
+* 첨부한 동영상 파일을 다운받아 보자.
+
+* [XML 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-DispatcherServlet_1.mp4)
+
     
 ## Java를 사용한 방법
     
@@ -229,6 +235,13 @@ public class WebConfig {
     }
 }
 ```
+
+* 좀 더 Live 하게 보고 싶다면
+
+* 첨부한 동영상 파일을 다운받아 보자.
+
+* [Java 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-DispatcherServlet_2.mov)
+
 
 
 ## Trouble Shooting
