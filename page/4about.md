@@ -28,6 +28,7 @@ type: page
 * [Instagram](https://www.instagram.com/___gid/)
 * [BOJ](https://www.acmicpc.net/user/sgy8971)
 * [Linkedin](https://www.linkedin.com/in/kiyong-shin-a498a2142/)
+* [Kakao](https://open.kakao.com/o/sD37fM3)
 
 --- 
 
@@ -39,6 +40,8 @@ type: page
 ## History
 
 ### 2020
+
+* 　01. 02 It's been a year since I worked on **LINE Biz+ Developer**
 
 ### 2019
 
@@ -54,7 +57,7 @@ type: page
 
 * 　06. 08 [Google AdSense 인증](https://www.instagram.com/p/Byb-2hGlX9I/)
 
-* 　01. 02 Work in **LINE+ Developer**
+* 　01. 02 Work in **LINE Biz+ Developer**
 
 * 　01. 01 [Dev History]({{site.url}}/2019-Retrospective/)
  
