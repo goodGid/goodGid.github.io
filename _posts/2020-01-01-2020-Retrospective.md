@@ -67,3 +67,6 @@ author: goodGid
 
 * [DispatcherServlet가 WebApplicationContext를 생성하는 2가지 방법]({{site.url}}/Spring-DispatcherServlet/)
 
+* [@EnableWebMvc 어노테이션을 선언하면 무엇이 달라질까?]({{site.url}}/Spring-Enable-MVC-Annotation/)
+
+* [WebMvcConfigurer을 상속하면 무엇이 달라질까?]({{site.url}}/Spring-WebMvcConfigurer/)
