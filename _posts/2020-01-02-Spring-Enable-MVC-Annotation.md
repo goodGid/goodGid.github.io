@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " @EnableWebMvc 선언 유무의 차이 "
+title:  " @EnableWebMvc 어노테이션을 선언하면 무엇이 달라질까? "
 categories: Spring
 tags: Spring
 author: goodGid
@@ -131,7 +131,6 @@ protected final Object[] getInterceptors(
 * @EnableWebMvc 어노테이션을 사용하는 것이다.
 
 <br>
-
 
 * 그로인해
 
