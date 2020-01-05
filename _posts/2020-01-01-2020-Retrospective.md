@@ -70,3 +70,8 @@ author: goodGid
 * [@EnableWebMvc 어노테이션을 선언하면 무엇이 달라질까?]({{site.url}}/Spring-Enable-MVC-Annotation/)
 
 * [WebMvcConfigurer을 상속하면 무엇이 달라질까?]({{site.url}}/Spring-WebMvcConfigurer/)
+
+* [@EnableAutoConfiguration 어노테이션을 선언하면 내부적으로 어떤 일이 일어날까?]({{site.url}}/Spring-Boot-EnableAutoConfiguration/)
+
+
+> 200106 ~ 200112
