@@ -117,10 +117,13 @@ public @interface SpringBootApplication {
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_3.png)
 
-* @EnableAutoConfiguration를 사용하기 위한
+* Dependency를 추가하는
 
-* 환경 설정은 끝났다.
+* 일련의 과정을 영상으로 확인하고 싶다면
 
+* 아래 영상을 다운받아서 보자.
+
+* [Dependency 영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_1.mp4) 다운로드
 
 
 
@@ -258,6 +261,16 @@ private static Map<String, List<String>> loadSpringFactories(@Nullable ClassLoad
 * 읽어와 등록하게 된다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_6.png)
+
+<br>
+
+* [동작 과정]({{site.url}}/Spring-Boot-EnableAutoConfiguration/#동작-과정) 내용을
+
+* 영상을 통해 보고 싶다면 
+
+* 아래 링크에서 다운을 받아보자.
+
+* [@EnableAutoConfiguration 선언 시 동작 과정](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_2.mp4) 다운로드
 
 
 
