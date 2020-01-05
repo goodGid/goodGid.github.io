@@ -1,0 +1,299 @@
+---
+layout: post
+title:  " @EnableAutoConfiguration 어노테이션을 선언하면 내부적으로 어떤 일이 일어날까? "
+categories: Spring
+tags: Spring
+author: goodGid
+---
+* content
+{:toc}
+
+> 이 글의 코드 및 정보들은 강의를 들으며 정리한 내용을 토대로 작성하였습니다.
+
+## 글의 목표
+
+* @EnableAutoConfiguration 어노테이션을
+
+* 선언하면
+
+* 어떤 일이나는지 알아보자.
+
+
+
+
+
+## 사용처
+
+* 우선 @EnableAutoConfiguration는 언제 사용될까?
+
+* 가장 흔하게 볼 수 있는 환경은
+
+* 스프링부트 환경에서
+
+* **@SpringBootApplication** 어노테이션
+
+* 내부에 메타 어노테이션에서 찾을 수 있다.
+
+
+> GidhubApplication.java
+
+``` java
+@SpringBootApplication
+public class GidhubApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(GidhubApplication.class, args);
+	}
+}
+```
+
+> SpringBootApplication.java
+
+``` java
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
+@SpringBootConfiguration
+@EnableAutoConfiguration // @EnableAutoConfiguration 사용 !
+@ComponentScan(excludeFilters = { @Filter(type = FilterType.CUSTOM, classes = TypeExcludeFilter.class),
+		@Filter(type = FilterType.CUSTOM, classes = AutoConfigurationExcludeFilter.class) })
+public @interface SpringBootApplication {
+        ...
+}
+```
+
+
+## Dependency 추가
+
+* @EnableAutoConfiguration 어노테이션을 사용하기 위한
+
+* dependency를 추가해보자.
+
+> pom.xml
+
+``` xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    ...
+</dependencies>
+```
+
+* 다음과 같이 
+
+* dependency를 추가한다.
+
+<br>
+
+* 그러면 자동적으로 
+
+* Spring에 필요한 
+
+* dependency들이 같이 import된다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_1.png)
+
+* 많은 dependency 중에서
+
+* spring-boot-autoconfigure-2.2.2.release.jar를 살펴보자.
+
+
+
+### spring-boot-autoconfigure-2.2.2.release.jar
+
+* spring-boot-autoconfigure-2.2.2.release.jar의 구성은 다음과 같다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_2.png)
+
+<br>
+
+### spring.factories
+
+* spring-boot-autoconfigure-2.2.2.release.jar 파일 내부에서
+
+* META-INF/spring.factories는 다음과 같다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_3.png)
+
+* @EnableAutoConfiguration를 사용하기 위한
+
+* 환경 설정은 끝났다.
+
+
+
+
+## 동작 과정
+
+* 본격적으로 
+
+* @EnableAutoConfiguration을 선언하면
+
+* 어떤 일이 발생하는지 알아보자.
+
+
+
+
+> GidhubApplication.java
+
+``` java
+@SpringBootApplication
+public class GidhubApplication {
+    public static void main(String[] args) {
+        // Step into SpringApplication
+        SpringApplication.run(GidhubApplication.class, args);
+    }
+}
+```
+
+> SpringApplication#SpringApplication()
+
+``` java
+public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySources) {
+    this.resourceLoader = resourceLoader;
+    Assert.notNull(primarySources, "PrimarySources must not be null");
+    this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
+    this.webApplicationType = WebApplicationType.deduceFromClasspath();
+
+    // Step into getSpringFactoriesInstances()
+    setInitializers(
+        (Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class)
+    );
+
+    setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
+    this.mainApplicationClass = deduceMainApplicationClass();
+}
+```
+
+
+> SpringApplication#getSpringFactoriesInstances()
+
+``` java
+private <T> Collection<T> getSpringFactoriesInstances(Class<T> type, Class<?>[] parameterTypes, Object... args) {
+    ClassLoader classLoader = getClassLoader();
+
+    // Step into SpringFactoriesLoader.loadFactoryNames()
+    Set<String> names = 
+    new LinkedHashSet<>(SpringFactoriesLoader.loadFactoryNames(type, classLoader));
+
+    List<T> instances = createSpringFactoriesInstances(type, parameterTypes, classLoader, args, names);
+    AnnotationAwareOrderComparator.sort(instances);
+    return instances;
+}
+```
+
+
+
+> SpringFactoriesLoader#loadFactoryNames()
+
+``` java
+public static List<String> loadFactoryNames(
+    Class<?> factoryType, 
+    @Nullable ClassLoader classLoader) {
+    String factoryTypeName = factoryType.getName();
+    return loadSpringFactories(classLoader).getOrDefault(factoryTypeName, Collections.emptyList());
+}
+
+private static Map<String, List<String>> loadSpringFactories(@Nullable ClassLoader classLoader) {
+    MultiValueMap<String, String> result = cache.get(classLoader);
+    if (result != null) {
+        return result;
+    }
+
+    try {
+        Enumeration<URL> urls = (classLoader != null ?
+                classLoader.getResources(FACTORIES_RESOURCE_LOCATION) :
+                ClassLoader.getSystemResources(FACTORIES_RESOURCE_LOCATION));
+        result = new LinkedMultiValueMap<>();
+        while (urls.hasMoreElements()) {
+            URL url = urls.nextElement();
+            UrlResource resource = new UrlResource(url);
+            Properties properties = PropertiesLoaderUtils.loadProperties(resource);
+            for (Map.Entry<?, ?> entry : properties.entrySet()) {
+                String factoryTypeName = ((String) entry.getKey()).trim();
+                for (String factoryImplementationName : StringUtils.commaDelimitedListToStringArray((String) entry.getValue())) {
+                    result.add(factoryTypeName, factoryImplementationName.trim());
+                }
+            }
+        }
+        cache.put(classLoader, result);
+        return result;
+    }
+    catch (IOException ex) {
+        throw new IllegalArgumentException("Unable to load factories from location [" +
+                FACTORIES_RESOURCE_LOCATION + "]", ex);
+    }
+}
+```
+
+* loadSpringFactories() 메소드 안에서
+
+* Break Point를 걸고
+
+* Debug를 하다보면
+
+* 다음과 같은 화면을 볼 수 있다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_4.png)
+
+* factoryTypeName = <br> **org.springframework.boot.autoconfigure.EnableAutoConfiguration**
+
+* factoryImplementationName = <br> **org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration**
+
+<br>
+
+* 즉 **spring.factoires**에 명시되어 있는 
+
+* 무수히 많은 값들을
+
+* while loop를 통해 읽어온다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_5.png)
+
+* 그리고 그 중에 
+
+* org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration 클래스도
+
+* 읽어와 등록하게 된다.
+
+![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_6.png)
+
+
+
+
+## Summary
+
+* @EnableAutoConfiguration을 사용하면
+
+* 프로그래머는 편하게
+
+* 프로그래밍을 할 수 있음을 알아봤다.
+
+<br>
+
+* 그 이유는 
+
+* 스프링 부트가
+
+* 자동으로 다양한 Config들을 
+
+* 세팅해주기 때문이다.
+
+<br>
+
+* 그리고 그런 Config들이 
+
+* 어떠한 과정을 통해
+
+* 등록되는지
+
+* 직접 Debug를 하면서
+
+* 알아봤다.
+
+---
+
+## 참고
+
+* [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
