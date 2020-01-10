@@ -74,4 +74,15 @@ author: goodGid
 * [@EnableAutoConfiguration 어노테이션을 선언하면 내부적으로 어떤 일이 일어날까?]({{site.url}}/Spring-Boot-EnableAutoConfiguration/)
 
 
+
+
 > 200106 ~ 200112
+
+* [Spring Boot에서 WebMvcAutoConfiguration 클래스가 하는 역할 :: Converter / Formatter]({{site.url}}/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter)
+
+```
+일이 너무 바빠서
+(= LINE Card Point Use 작업)
+따로 공부할 시간이 없었다.
+변명이 아니라 정말로 바빳다.
+```
