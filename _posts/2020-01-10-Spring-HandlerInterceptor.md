@@ -39,6 +39,14 @@ author: goodGid
 * 다음과 같은 차이가 있다 생각한다.
 
 
+
+
+
+
+
+
+
+
 > 영향 범위 : Filter > Interceptor
 
 ![](/assets/img/spring/Spring-HandlerInterceptor_1.png)

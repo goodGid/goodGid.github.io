@@ -80,6 +80,8 @@ author: goodGid
 
 * [Spring Boot에서 WebMvcAutoConfiguration 클래스가 하는 역할 :: Converter / Formatter]({{site.url}}/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter)
 
+* [Spring에서 Handler Interceptor 개념 및 구현해보기]({{site.url}}/Spring-HandlerInterceptor)
+
 ```
 일이 너무 바빠서
 (= LINE Card Point Use 작업)
