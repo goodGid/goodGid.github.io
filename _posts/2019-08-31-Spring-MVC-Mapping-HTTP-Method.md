@@ -166,16 +166,15 @@ public String hello(){
 
 * 만약 HTTP Method를 2개 이상 허용하고 싶다면 다음과 같이 코드를 수정하면 된다.
 
-* 배열이기 때문에 **[ ]**라고 생각했지만 **{ }**이다.
-
 ``` java
 @RequestMapping(value = "/hello", method = { RequestMethod.GET, RequestMethod.PUT })
 @ResponseBody
 public String hello() {
     return "hello";
 }
-
 ```
+
+* 배열이기 때문에 **[ ]**라고 생각했지만 **{ }**이다.
 
 * 마지막으로 클래스 레벨에서 HTTP Method를 컨트롤해보자.
 

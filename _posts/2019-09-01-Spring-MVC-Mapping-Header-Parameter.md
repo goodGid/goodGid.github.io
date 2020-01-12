@@ -12,7 +12,7 @@ author: goodGid
 
 ## 헤더 및 매개변수 
 
-* **헤더(=header)**와 **매개변수(=param)**와 사용법은 동일하다.
+* **헤더(=header)**와 **매개변수(=param)** 사용법은 동일하다.
 
 * Controller에서 사용 시 ~s를 붙히고 <br> TC에서는 ~s를 붙히지 않는다.
 

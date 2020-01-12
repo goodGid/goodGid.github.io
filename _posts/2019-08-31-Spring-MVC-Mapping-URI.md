@@ -14,8 +14,8 @@ author: goodGid
 
 ```
 - ? : 한 글자 (“/author/???” => “/author/123”)
-- * : 여러 글자 (“/author/*” => “/author/keesun”)
-- ** : 여러 패스 (“/author/** => “/author/keesun/book”)
+- * : 여러 글자 (“/author/*” => “/author/goodgid)
+- ** : 여러 패스 (“/author/** => “/author/goodgid/book”)
 ```
 
 
@@ -36,7 +36,9 @@ author: goodGid
 
 * **?**는 랜덤한 한 글자를 허용한다.
 
-* 0글자도 아니고 2글자도 아니고 **Only 1글자만** 허용한다.
+* 0글자도 아니고 2글자도 아니고
+
+* **Only 1글자만** 허용한다.
 
 
 ``` java
@@ -147,10 +149,11 @@ public String hello() {
 
 * 여러 글자라는건 **무조건적인 허용**이라고 생각하면 된다.
 
-* 1글자만 있어도 되고 <br> 2글자 이상 있어도 되고 <br> 없어도 되고
+* 1글자만 있어도 되고 
 
-* 말보단 코드로 이해하자.
+* 2글자 이상 있어도 되고 <
 
+* 없어도 된다.
 
 ``` java
 @GetMapping("/hello*")
@@ -195,9 +198,7 @@ public String hello() {
 
 ## ** : 여러 패스
 
-* 연결된 패스를 허용하자.
-
-* 역시 말보단 코드로 !
+* 연결된 패스를 허용한다.
 
 ``` java
 @GetMapping("/hello/**")
