@@ -58,15 +58,29 @@ author: goodGid
 
 ## AOP : Aspect
 
-* 위와 같은 상황을 방지하기 위해 **AOP**는 **Aspect**라는 개념을 이용하여 해결한다.
+* 위와 같은 상황을 방지하기 위해 
+
+* **AOP**는 **Aspect**라는 개념을 이용하여 해결한다.
+
+<br>
 
 * Aspect로 흩어진 것들을 한 곳으로 모은다.
 
-* Aspect를 만드는 기준은 각각의 Concerns별로 생성을 한다.
+* Aspect를 만드는 기준은 
 
-* 그리고 A,B,C 클래스에 트랜잭션 처리를 위해 들어있던 코드들(=Concerns)을 제거하고 
+* 각각의 Concerns별로 생성을 한다.
 
-* 그 Aspect안에 Concerns을 정의하고 Concerns들이 어디에 적용되어야하는지 개발자가 명시해준다.
+<br>
+
+* 그리고 A,B,C 클래스에 
+
+* 트랜잭션 처리를 위해 들어있던 코드들(=Concerns)을 제거하고 
+
+* 그 Aspect안에 
+
+* Concerns을 정의하고 
+
+* Concerns들이 어디에 적용되어야하는지 개발자가 명시해준다.
 
 * ex) 두번째 그림의 *Aspect Y* 는 A,B 클래스에 적용해야한다를 뜻한다.
 
@@ -85,28 +99,44 @@ author: goodGid
 
 ### Target 
 
-* Aspect가 갖고 있는 Advice를 적용하는 대상들 <br> ex) A,B,C 클래스
+* Aspect가 갖고 있는 Advice를 적용하는 대상들 
+
+* ex) A,B,C 클래스
+
+<br>
 
 * PointCut보다 **상위 개념 느낌**이다. 
 
-* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> PointCut : B 메소드
+* ex) A 클래스의 B 메소드에 적용이라면 
+
+* Target : A 클래스
+
+* PointCut : B 메소드
 
 ### Advice
 
 * What to do = 해야할 일
 
-* ex) 로깅을 한다. <br> Hello를 출력한다. 등등
+* ex) 로깅을 한다. 
+
+* ex) Hello를 출력한다. 등등
 
 
 ### Join Point
 
-* 사전적 의미로는 *합류점* 이라고 생각하면 된다. <small> 매우 와닿지 않는다. -ㅂ- </small>
-
 * 가장 흔하게 사용하는 Join Point는 **메소드 실행 시점**이다.
 
-* 해당 메소드를 실행할 때 이 Advice를 끼워 넣어라 <br> ex) 해당 메소드를 실행하기 전에 'Hello를 출력'(= Adivce)하라.
+* 해당 메소드를 실행할 때 
 
-* 여기서 끼워 넣을 수 있는 지점이 **Joint Point**이다.
+* 이 Advice를 끼워 넣어라 
+
+* ex) 해당 메소드를 실행하기 전에 'Hello를 출력'(= Adivce)하라.
+
+<br>
+
+* 여기서 끼워 넣을 수 있는 지점이 
+
+* **Joint Point**이다.
 
 * 굉장히 다양한 합류점(= Join Point)가 있다.
 
@@ -125,7 +155,11 @@ author: goodGid
 
 * 어디에 적용해야하는지에 대한 정보
 
-* ex) A 클래스의 B 메소드에 적용이라면 <br> Target : A 클래스 <br> PointCut : B 메소드
+* ex) A 클래스의 B 메소드에 적용이라면 
+
+* ex) Target : A 클래스 
+
+* ex) PointCut : B 메소드
 
 
 ---

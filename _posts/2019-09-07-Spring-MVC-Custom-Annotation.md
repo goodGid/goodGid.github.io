@@ -64,7 +64,7 @@ public @interface PostMapping {
 
 * @Documented 애노테이션에 관해서는 [Documented 애노테이션]({{site.url}}/Spring-MVC-Documented-Annotation/) 글을 참고하자.
 
-* @Retention 애노테이션에 대한 개념은 [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/#%EB%81%9D%EC%9C%BC%EB%A1%9C) 글을 참고하자.
+* @Retention 애노테이션에 대한 개념은 [Retention 애노테이션]({{site.url}}/Spring-MVC-Retention-Annotation/) 글을 참고하자.
 
 ---
 
@@ -72,15 +72,15 @@ public @interface PostMapping {
 
 * 커스텀 애노테이션을 만들어보자.
 
-* @GetHelloAnnotation는 GET 메소드로 */hello* 라는 URI값을 처리하는 애노테이션이다.
+* @GetHelloAnnotation는 
+
+* GET 메소드로 */hello* 라는 URI값을 처리하는 애노테이션이다.
 
 ``` java
 @RequestMapping(method = RequestMethod.GET, value = "/hello")
 public @interface GetHelloAnnotation {
 }
 ```
-
-* Controller에 있던 **@GetMapping(value = "/hello")**를 지우고
 
 * 커스텀 애노테이션(= @GetHelloAnnotation)을 사용한다.
 

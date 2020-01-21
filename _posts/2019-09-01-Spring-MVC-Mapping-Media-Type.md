@@ -12,19 +12,25 @@ author: goodGid
 
 ## Consumes
 
-* 특정한 타입의 데이터를 담고 있는 요청만 처리하는 핸들러 지정이 가능하다.
+* 특정 타입의 데이터를 담고 있는 요청만 
 
-    - ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
+* 처리하는 핸들러 지정이 가능하다.
+
+* ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
 
 <br>
     
-* Content-Type 헤더로 필터링을 한다. <br> = 핸들러에 **consumes** 조건을 추가하여 요청을 필터링한다.
+* Content-Type 헤더로 필터링을 한다. 
+
+* = 핸들러에 **consumes** 조건을 추가하여 요청을 필터링한다.
+
+<br>
 
 * 매치 되는 않는 경우엔 [415 : Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415) 응답한다.
 
-* 본격적으로 미디어 타입을 매핑하는 방법을 알아보자.
+* 핸들러에 **consumes**라는 키워드를 사용하여 
 
-* 우선 핸들러에 **consumes**라는 키워드를 사용하여 어떤 미디어 타입을 허용할 것인지 핸들러에게 명시해준다.
+* 어떤 미디어 타입을 허용할 것인지 핸들러에게 명시해준다.
 
 
 
@@ -44,11 +50,25 @@ public class SampleController {
 
 ![](/assets/img/spring/spring_mvc_mapping_media_type_1.png)
 
-* 위 핸들러를 해석해보자.
+* 위 핸들러를 해석해면
 
-* HTTP 헤더 중 <br> Content-Type이라는 HTTP 헤더에 <br> **application/json;charset=UTF-8"** <br> **(=MediaType.APPLICATION_JSON_UTF8_VALUE)**라는 값이 있는 경우에만 처리를 한다. <br> 라고 위 핸들러를 해석할 수 있다.
+* HTTP 헤더 중 
 
-* 즉 HTTP 요청 시  <br> 그 HTTP 요청에 들어가는 본문의 타입을 서버에 알려주는 기능을 한다.
+* Content-Type이라는 HTTP 헤더에 
+
+* **application/json;charset=UTF-8"** 
+
+* **(=MediaType.APPLICATION_JSON_UTF8_VALUE)**라는 값이 있는 경우에만 처리를 한다. 
+
+* 라고 위 핸들러를 해석할 수 있다.
+
+<br>
+
+* 즉 HTTP 요청 시 
+
+* 그 HTTP 요청에 들어가는 본문의 타입을 
+
+* 서버에 알려주는 기능을 한다.
 
 * 그리고 서버는 조건에 맞는 요청만 처리를 한다.
 
@@ -77,7 +97,9 @@ public class SampleController {
 
 * 다음과 같은 결과를 볼 수 있다.
 
-* HTTP Status Code값으로는 [415 : Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)를 받게 된다.
+* HTTP Status Code값으로는 
+
+* [415 : Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)를 받게 된다.
 
 > The HTTP 415 Unsupported Media Type client error response code indicates that the server refuses to accept the request because the payload format is in an unsupported format.
 
@@ -107,8 +129,6 @@ java.lang.AssertionError: Status
 Expected :200
 Actual   :415
 ```
-
-<br>
 
 * Content Type을 담아서 요청을 해보자.
 
@@ -176,7 +196,9 @@ MockHttpServletRequest:
     Session Attrs = {}
 ```
 
-* Headers에 **Accept:"application/json;charset=UTF-8"**가 추가되는 것을 볼 수 있다.
+* Headers에 
+
+* **Accept:"application/json;charset=UTF-8"**가 추가되는 것을 볼 수 있다.
 
 ---
 
@@ -275,7 +297,9 @@ Expected :200
 Actual   :406
 ```
 
-* HTTP Status Code값으로는 [406 : Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)를 받게 된다.
+* HTTP Status Code값으로는 
+
+* [406 : Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)를 받게 된다.
 
 > The HyperText Transfer Protocol (HTTP) 406 Not Acceptable client error response code indicates that the server cannot produce a response matching the list of acceptable values defined in the request's proactive content negotiation headers, and that the server is unwilling to supply a default representation.
 

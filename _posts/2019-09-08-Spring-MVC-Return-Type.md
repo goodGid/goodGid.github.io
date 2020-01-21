@@ -58,25 +58,36 @@ The return value that specifies the full response (including HTTP headers and bo
 public class ResponseEntity<T> extends HttpEntity<T> {
     private final Object statusCode;
 
-    public ResponseEntity(HttpStatus status) {
+    public ResponseEntity(
+        HttpStatus status) {
         this((Object)null, (MultiValueMap)null, (HttpStatus)status);
     }
 
-    public ResponseEntity(T body, HttpStatus status) {
+    public ResponseEntity(
+        T body, 
+        HttpStatus status) {
         this(body, (MultiValueMap)null, (HttpStatus)status);
     }
 
-    public ResponseEntity(MultiValueMap<String, String> headers, HttpStatus status) {
+    public ResponseEntity(
+        MultiValueMap<String, String> headers, 
+        HttpStatus status) {
         this((Object)null, headers, (HttpStatus)status);
     }
 
-    public ResponseEntity(T body, MultiValueMap<String, String> headers, HttpStatus status) {
+    public ResponseEntity(
+        T body, 
+        MultiValueMap<String, String> headers, 
+        HttpStatus status) {
         super(body, headers);
         Assert.notNull(status, "HttpStatus must not be null");
         this.statusCode = status;
     }
 
-    private ResponseEntity(T body, MultiValueMap<String, String> headers, Object statusCode) {
+    private ResponseEntity(
+        T body, 
+        MultiValueMap<String, String> headers, 
+        Object statusCode) {
         super(body, headers);
         this.statusCode = statusCode;
     }

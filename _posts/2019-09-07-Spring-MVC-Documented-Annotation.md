@@ -58,6 +58,20 @@ public @interface RequestMapping {
 }
 ```
 
+* RequestMapping에서 **value**와 **path** 필드를 보면 
+
+``` java
+@AliasFor("path")
+String[] value() default {};
+
+@AliasFor("value")
+String[] path() default {};
+```
+
+* AliasFor 애노테이션을 사용한다. 
+
+* 그리고 AliasFor 애노테이션에는 @Documented가 선언되어 있다.
+
 > AliasFor 애노테이션
 
 ``` java
@@ -75,20 +89,6 @@ public @interface AliasFor {
 }
 ```
 
-* RequestMapping에서 **value**와 **path** 필드를 보면 
-
-``` java
-@AliasFor("path")
-String[] value() default {};
-
-@AliasFor("value")
-String[] path() default {};
-```
-
-* AliasFor 애노테이션을 사용한다. 
-
-* 그리고 AliasFor 애노테이션에는 @Documented가 선언되어 있다.
-
 <br>
 
 * 코드 문서를 확인해보자.
@@ -97,7 +97,7 @@ String[] path() default {};
 
 * [Java Docs : Annotation Type RequestMapping](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html)
  
-* 그리고 [value](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html#value--)와 [path](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html#path--) 필드에 관한 문서를 부분을 보면 다음과 같다.
+* 그리고 [value](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html#value--)와 [path](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html#path--) 필드에 관한 부분을 보면 다음과 같다.
 
 
 ``` java
@@ -128,9 +128,15 @@ Default:
 
 * 문서에서 *@AliasFor(value="value")* 와 *@AliasFor(value="path")* 를 볼 수 있다.
 
-* 즉 @AliasFor에는 @Documented 애노테이션이 메타 애노테이션으로 설정이 되어있기 때문에
+* 즉 @AliasFor에는 
 
-* @RequestMapping에서 @AliasFor를 사용하는 필드에 대한 코드 문서에서는
+* @Documented 애노테이션이 
+
+* 메타 애노테이션으로 설정이 되어있기 때문에
+
+* @RequestMapping에서 
+
+* @AliasFor를 사용하는 필드에 대해서는
 
 * @AliasFor가 노출되게 된다.
 

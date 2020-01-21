@@ -20,13 +20,21 @@ author: goodGid
 
 * 제네릭 타입으로 Source / Target을 입력받는다.
 
-* 상태정보가 없다 <br> = **Stateless** <br> = **Thread Safe**하다. <br> Property Editor의 단점을 보완했다.
+* 상태정보가 없다 
+
+* = **Stateless**
+
+* = **Thread Safe**하다.
+
+* = Property Editor의 단점을 보완했다.
 
 * 그러므로 Bean으로 등록하여 사용해도 된다.
 
 > Converter
 
-* 생성한 Converter 사용법은 ConverterRegistry에 등록하여 사용하면된다. 
+* 생성한 Converter 사용법은 
+
+* ConverterRegistry에 등록하여 사용하면된다.
 
 * = Config같은 파일에 등록하여 사용하면 된다. 
 
@@ -52,8 +60,6 @@ public class EventConverter {
 ```
 
 > Config
-
-* <small>**@Configuration**를 빠뜨려서 TC가 자꾸 실패했었다.</small>
 
 ``` java
 @Configuration
@@ -92,9 +98,17 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### PropertyEditor와 차이점
 
-* Converter와 마찬가지로 **Thread Safe**하기 때문에 Bean으로 등록하여 사용해도 된다.
+* Converter와 마찬가지로 
 
-* 여기서 Locale 정보와 MessageSource를 사용하여 원하는 언어로 변경할 수 있다.
+* **Thread Safe**하기 때문에 
+
+* Bean으로 등록하여 사용해도 된다.
+
+* 여기서 Locale 정보와 
+
+* MessageSource를 사용하여 
+
+* 원하는 언어로 변경할 수 있다.
 
 
 ``` java
@@ -137,8 +151,6 @@ public class WebConfig implements WebMvcConfigurer {
 ## PropertyEditor와 Converter 동시 존재
 
 * 만약 PropertyEditor와 Converter가 동시에 존재한다면 어떻게될까? 라는 궁금증이 발생했다.
-
-* 개발 환경은 아무런 세팅을 하지 않은 상태이다.
 
 > Converter Code
 
@@ -201,9 +213,27 @@ public class EventController {
 
 * 어차피 이 부분은 Config를 등록하는 과정이기 때문에 동일하다고 생각된다.
 
-* 그 다음에 컨트롤러에 <br> @InitBinder가 존재하면 PropertyEditor <br> @InitBinder가 존재하지 않으면 Converter가 동작하는 것을 확인할 수 있었다.
+<br>
 
-* 끝으로 사실 정확한 이유는 모르겠다. <small> 아는 분이 있다면 댓글 혹은 메일로 알려주시면 대단히 감사하겠습니다 !!!</small>
+* 그 다음에 컨트롤러에 
+
+* @InitBinder가 존재하면 **PropertyEditor**
+
+* @InitBinder가 존재하지 않으면 
+
+* **Converter**가 동작하는 것을 확인할 수 있었다.
+
+<br>
+
+* 사실 왜 저렇게 동작하는지
+
+* 정확한 이유는 모른다.
+
+* 혹시 아는 분이 있다면
+
+* 댓글 혹은 메일로 공유해주시면 
+
+* 너무나도 감사하겠습니다 !!!
 
 ---
 

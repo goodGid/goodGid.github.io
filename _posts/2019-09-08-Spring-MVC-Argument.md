@@ -82,12 +82,13 @@ public String hello(HttpServletRequest request, HttpServletResponse response) {
 ``` java
 @GetMapping("/events")
 @ResponseBody
-public String hello(HttpServletRequest request,
-                    HttpServletResponse response,
-                    InputStream requestBody,
-                    OutputStream responseBody,
-                    Reader reader,
-                    Writer writer) throws IOException {
+public String hello(
+    HttpServletRequest request,
+    HttpServletResponse response,
+    InputStream requestBody,
+    OutputStream responseBody,
+    Reader reader,
+    Writer writer) throws IOException {
 
     request.getInputStream();
     request.getReader();
