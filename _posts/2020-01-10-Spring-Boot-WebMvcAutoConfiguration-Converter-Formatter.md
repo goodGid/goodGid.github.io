@@ -359,7 +359,8 @@ public static void addBeans(FormatterRegistry registry, ListableBeanFactory bean
 
 * 이번글을 복습해보자.
 
-* [WebMvcAutoConfiguration가 Converter와 Formatter를 등록하는 과정](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter_1.mp4)
+* [WebMvcAutoConfiguration가 Converter와 Formatter를 등록하는 과정](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter_1.mov)
+
 
 <br>
 

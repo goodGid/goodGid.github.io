@@ -182,7 +182,7 @@ class SimpleControllerTest {
 
 > customStatic()의 Response
 
-```
+``` xml
 MockHttpServletResponse:
            Status = 200
     Error message = null

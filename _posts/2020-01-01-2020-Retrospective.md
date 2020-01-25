@@ -37,8 +37,6 @@ author: goodGid
 
 ## Books
 
-> Read in The future's
-
 * [도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문](https://book.naver.com/bookdb/book_detail.nhn?bid=14636944)
 
 * [모던 자바 인 액션](https://book.naver.com/bookdb/book_detail.nhn?bid=15261103)
@@ -49,15 +47,8 @@ author: goodGid
 
 * [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://book.naver.com/bookdb/book_detail.nhn?bid=15871738)
 
-<br>
-
-> Read in The past 
-
-
 
 ## Develop
-
-
 
 ## Date 
 
@@ -88,3 +79,11 @@ author: goodGid
 따로 공부할 시간이 없었다.
 변명이 아니라 정말로 바빳다.
 ```
+
+> 200120 ~ 200126
+
+* [Spring의 Resource Handler 알아보기]({{site.url}}/Spring-Resource-Handlers)
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Request-Body/)
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestBody, @ResponseBody]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
