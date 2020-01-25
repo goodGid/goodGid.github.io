@@ -84,6 +84,6 @@ author: goodGid
 
 * [Spring의 Resource Handler 알아보기]({{site.url}}/Spring-Resource-Handlers)
 
-* [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Request-Body/)
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
 
-* [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestBody, @ResponseBody]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestBody, @ResponseBody]({{site.url}}/Spring-Controller-Annotation-Analytics-Request-Body-And-Response-Body/)
