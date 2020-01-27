@@ -225,6 +225,29 @@ MockHttpServletResponse:
           Cookies = []
 ```
 
+
+
+## Summary
+
+* Model Attribute 개념에 대해 학습하였다.
+
+* 굉장히 중요한 개념이기 때문에 
+
+* 다른 자료를 참고해서 
+
+* 추가 학습이 필요하다.
+
+<br>
+
+* 그리고 
+
+* 실제로 @ModelAttribute Annotation을 사용하는
+
+* 예제를 통해 이해도를 높혀보도록 하자.
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
+
+
 ---
 
 ## 참고

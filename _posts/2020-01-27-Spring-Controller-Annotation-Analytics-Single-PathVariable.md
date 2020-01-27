@@ -8,7 +8,6 @@ author: goodGid
 * content
 {:toc}
 
-
 ## Prologue
 
 * @PathVariable Annotation을 사용하는
@@ -199,26 +198,6 @@ public class Person1Converter {
 }
 ```
 
-> Person2 Converter
-
-``` java
-public class Person2Converter {
-
-    @Component
-    public static class StringToPersonConverter implements Converter<String, Person2> {
-        @Override
-        public Person2 convert(String s) {
-            System.out.println("[Person`2` Converter] StringToPersonConverter Working");
-            Person2 person2 = new Person2();
-            person2.setIsConvert(true); // Converter 호출했음을 표기하기 위한 값 설정
-            return person2;
-        }
-    }
-}
-```
-
-
-
 
 
 
@@ -391,10 +370,6 @@ public static class StringToPersonConverter implements Converter<String, Person1
 
 #### Controller
 
-* Case 1과 같은 조건에서
-
-* @PathVariable을 삭제해보자.
-
 ``` java
 @RestController
 public class SpringController {
@@ -423,6 +398,10 @@ public class SpringController {
     }
 }
 ```
+
+* Case 1과 같은 조건에서
+
+* @PathVariable을 삭제해보자.
 
 
 #### Test Code

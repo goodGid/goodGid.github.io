@@ -87,3 +87,9 @@ author: goodGid
 * [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
 
 * [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestBody, @ResponseBody]({{site.url}}/Spring-Controller-Annotation-Analytics-Request-Body-And-Response-Body/)
+
+> 200127 ~ 200202
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : Single @PathVariable]({{site.url}}/Spring-Controller-Annotation-Analytics-Single-PathVariable/)
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : Multi @PathVariable]({{site.url}}/Spring-Controller-Annotation-Analytics-Multi-PathVariable/)
