@@ -93,3 +93,6 @@ author: goodGid
 * [Spring Controller에서 사용하는 Annotation 분석하기 : Single @PathVariable]({{site.url}}/Spring-Controller-Annotation-Analytics-Single-PathVariable/)
 
 * [Spring Controller에서 사용하는 Annotation 분석하기 : Multi @PathVariable]({{site.url}}/Spring-Controller-Annotation-Analytics-Multi-PathVariable/)
+
+* [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestParam]({{site.url}}/Spring-Controller-Annotation-Analytics-RequestParam/)
+
