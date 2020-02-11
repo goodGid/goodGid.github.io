@@ -32,6 +32,12 @@ public List<int[]> getThem() {
 
 * 코드의 목적을 짐작하기 어렵다.
 
+
+
+
+
+
+
 <br>
 
 > Why?
