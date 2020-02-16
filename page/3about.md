@@ -41,6 +41,10 @@ type: page
 
 ### 2020
 
+* 　02. 13 Activate Disqus Reaction
+
+* 　02. 11 [Received Referral AWARDS in LINE Corparation]({{site.url}}/Received-Referral-AWARDS-in-LINE-Corparation/)
+
 * 　01. 21 Delete Header Navigation **Tags** // Commit : 0c2e087
 
 * 　01. 31 ~ 02. 29	[LINE 작심삼십일 프로젝트 이끔이가 되다.]({{site.url}}/LINE-Blog-Leader/)
