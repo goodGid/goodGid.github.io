@@ -49,6 +49,8 @@ type: page
 
 * 　01. 31 ~ 02. 29	[LINE 작심삼십일 프로젝트 이끔이가 되다.]({{site.url}}/LINE-Blog-Leader/)
 
+* 　01. 13 Start Phone English Speech : 민병철 유폰
+
 * 　01. 02 It's been a year since I worked on **LINE Biz+ Developer**
 
 ### 2019
