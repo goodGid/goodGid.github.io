@@ -96,3 +96,29 @@ author: goodGid
 
 * [Spring Controller에서 사용하는 Annotation 분석하기 : @RequestParam]({{site.url}}/Spring-Controller-Annotation-Analytics-RequestParam/)
 
+> 200203 ~ 200209
+
+* [CleanCode Property를 Set하고 넘길까? 넘겨서 Set할까?]({{site.url}}/Clean-Code-Idempotent/)
+
+* [Oracle FlashBack 이용한 데이터 복구]({{site.url}}/DB-Oracle-FlashBack-Data-Roll-Back/)
+
+> 200210 ~ 200216
+
+* [[Clean Code] 의미 있는 이름 (Meaningful name) : 의도를 분명히 밝혀라]({{site.url}}/Clean-Code-Meaningful-Name-Make-Clear-Your-Intentions/)
+
+* [[Clean Code] 의미 있는 이름 (Meaningful name) : 클래스 이름 & 메소드 이름 & 생성자 중복 정의]({{site.url}}/Clean-Code-Meaningful-Name-Class-Method-Name-Constructor/)
+
+* [[Clean Code] 의미 있는 이름 (Meaningful name) : 의미 있는 맥락을 추가하라]({{site.url}}/Clean-Code-Meaningful-Name-Add-Meaningful-Context/)
+
+* [[Clean Code] 함수 (Function) : Switch 문]({{site.url}}/Clean-Code-Function-Switch/)
+
+* [[Clean Code] 함수 (Function) : 동사와 키워드]({{site.url}}/Clean-Code-Function-Verb-Keyword)
+
+* [[Clean Code] 함수 (Function) : 이항 함수]({{site.url}}/Clean-Code-Function-Binary-Function)
+
+* [[Clean Code] 함수 (Function) : Try/Catch 블록 뽑아내기]({{site.url}}/Clean-Code-Function-Extract-Try-Catch-Block/)
+
+* [[Clean Code] 함수 (Function) : 명령과 조회를 분리하라 !]({{site.url}}/Clean-Code-Function-Separate-Commands-and-Inquiries/)
+
+* [[Clean Code] 함수 (Function) : 오류 코드보다 예외를 사용하라 !]({{site.url}}/Clean-Code-Function-Use-exceptions-rather-than-error-codes/)
+
