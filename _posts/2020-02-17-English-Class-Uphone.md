@@ -21,7 +21,7 @@ author: goodGid
 
 * I can decide on my own
 
-* Can you correct it right away if i say something wrong senence ? 
+* Can you correct it right away if i say something wrong sentence ? 
 
 * before going to bed
 
