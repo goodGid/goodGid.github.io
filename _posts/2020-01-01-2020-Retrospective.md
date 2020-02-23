@@ -122,3 +122,14 @@ author: goodGid
 
 * [[Clean Code] 함수 (Function) : 오류 코드보다 예외를 사용하라 !]({{site.url}}/Clean-Code-Function-Use-exceptions-rather-than-error-codes/)
 
+> 200217 ~ 200223
+
+* [[Clean Code] 형식 맞추기(Format Match)]({{site.url}}/Clean-Code-Format-Match/)
+
+* [JVM 구조]({{site.url}}/Java-JVM)
+
+* [클래스 로더(Class Loader)]({{site.url}}/Java-Class-Loader)
+
+> 200224 ~ 200301
+
+* [리플렉션(Reflection) : 클래스 정보 조회]({{site.url}}/Java-Reflection-Class-Info-Query/)
