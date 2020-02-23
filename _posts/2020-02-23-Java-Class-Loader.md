@@ -24,11 +24,11 @@ author: goodGid
 
 > Method 영역에 저장하는 데이터
 
-1. Type 정보(클래스, 인터페이스, Enum)
+1. Type 정보 (클래스, 인터페이스, Enum)
 
 2. 메소드와 변수
 
-3. FQCN(Fully Qualified Class Name)
+3. FQCN (Fully Qualified Class Name)
 
 ``` java
 package goodgid.gidhub;
@@ -58,7 +58,7 @@ public class GidhubApplication {
 
 * 로딩이 끝나면
 
-* 해당 클래스 타입의 Class 객체를 생성하여
+* 해당 Class Type의 **Class 객체**를 생성하여
 
 * **힙 영역**에 저장한다.
  
@@ -86,14 +86,14 @@ public class GidhubApplication {
 
 * 일반적으로 99%는 Application에 존재한다.
 
+<br>
+
 > Q. 만약 찾지못한다면?
 
 * **ClassNotFoundException** 발생하게 된다.
 
 
 ### Example
-
-<br>
 
 > GidhubApplication
 
@@ -207,4 +207,4 @@ public class GidhubApplication {
 
 ## 참고
 
-* [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
+* [더 자바, 코드를 조작하는 다양한 방법](https://www.inflearn.com/course/the-java-code-manipulation#)
