@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " DispatcherServlet 동작 원리 "
-categories: Java
-tags: Java
+categories: Spring
+tags: Spring
 author: goodGid
 ---
 * content

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " Static Resource 경로 다루기 "
-categories: Java
-tags: Java
+categories: Spring
+tags: Spring
 author: goodGid
 ---
 * content
@@ -10,7 +10,9 @@ author: goodGid
 
 * Resource 요청과 관련해선 **ResourceHttpRequestHandler**가 처리한다.
 
-* **기본 Resource Path** 이외의 추가적인 Resource Path를 관리하기 위해선 WebMvcConfigurer의 addResourceHandlers로 커스터마이징한다.
+* **기본 Resource Path** 이외의 추가적인 Resource Path를 관리하기 위해선 
+
+* WebMvcConfigurer의 addResourceHandlers로 커스터마이징한다.
 
 ``` java
 package com.example.demo.config;

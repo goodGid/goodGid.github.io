@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  " HttpMessageConverts 알아보기 "
-categories: Java
-tags: Java
+categories: Spring
+tags: Spring
 author: goodGid
 ---
 * content
