@@ -133,3 +133,7 @@ author: goodGid
 > 200224 ~ 200301
 
 * [리플렉션(Reflection) : 클래스 정보 조회]({{site.url}}/Java-Reflection-Class-Info-Query/)
+
+* [Query String의 함정 : List에 null이 담겨온다.]({{site.url}}/Pitfalls-of-Query-String/)
+
+* [[Clean Code] 에러 처리 (Error Handling) : Null 반환 Method]({{site.url}}/Clean-Code-Error-Handling-Null/)

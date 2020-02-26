@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 에러 처리 (Error Handling) : Null 반환 Method "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content
