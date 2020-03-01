@@ -10,7 +10,7 @@ author: goodGid
 
 ## Prologue
 
-* 현재 재직하고 있는 회사에서
+* LINE Pay Real 환경에서
 
 * NPE가 발생했다.
 

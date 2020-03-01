@@ -98,7 +98,7 @@ author: goodGid
 
 > 200203 ~ 200209
 
-* [CleanCode Property를 Set하고 넘길까? 넘겨서 Set할까?]({{site.url}}/Clean-Code-Idempotent/)
+* [Property를 Set하고 넘길까? 넘겨서 Set할까?]({{site.url}}/Clean-Code-Idempotent/)
 
 * [Oracle FlashBack 이용한 데이터 복구]({{site.url}}/DB-Oracle-FlashBack-Data-Roll-Back/)
 

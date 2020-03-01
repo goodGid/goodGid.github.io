@@ -10,9 +10,29 @@ author: goodGid
 
 > 이 글의 개념 및 코드들은 책을 읽으며 정리한 내용을 바탕으로 작성하였습니다.
 
-## 리플렉션 (Reflection)
+## 클래스 정보 조회
 
-* 리플렉션의 핵심은 Class<T> API를 사용하는 것이다.
+* 이번 글에서는
+
+* 클래스에 접근하여
+
+* 클래스 정보를 조회하는 방법에 대해 알아본다.
+
+<br>
+
+* 클래스에 접근하여 
+
+* 정보를 조회하는 과정을 이해하는데 있어 
+
+* 핵심이 되는 개념은 
+
+* **리플렉션(Reflection)**과 **Class< T > API**를 사용하는 것이다.
+
+
+
+
+
+
 
 
 ## 접근 방법
@@ -23,7 +43,7 @@ author: goodGid
 
 * 모든 Class를 로딩 한 후
 
-* Class<T>의 인스턴스를 생성하여 
+* Class< T >의 인스턴스를 생성하여 
 
 * **힙 영역**에 저장한다.
 
@@ -46,7 +66,7 @@ Class<Book> bookClass = Book.class;
 
 ### Instance
 
-* 모든 인스턴스는 getlass() 메소드를 가지고 있다. 
+* 모든 인스턴스는 getClass() 메소드를 가지고 있다. 
 
 
 ``` java
@@ -200,6 +220,21 @@ protected java.lang.String goodgid.gidhub.Book.e
 
 > getDeclaredFields() -> setAccessible()
 
+* 각 필드에 접근을 해보자.
+
+* 만약 private에 그냥 접근을 하게 되면 
+
+* 다음과 같은 Error가 발생한다.
+
+``` 
+java.lang.IllegalAccessException: 
+Class goodgid.gidhub.GidhubApplication can not access a member of class goodgid.gidhub.Book with modifiers "private static"
+```
+
+* 그렇기 때문에
+
+* setAccessible(true) 설정이 필요하다.
+
 ``` java
 Class<? extends Book> aClass = book.getClass();
 Arrays.stream(bookClass.getDeclaredFields()).forEach(f -> {
@@ -219,14 +254,6 @@ public java.lang.String goodgid.gidhub.Book.d : null
 protected java.lang.String goodgid.gidhub.Book.e : null
 ```
 
-* setAccessible(true) 설정이 없으면 
-
-* private에 접근을 할 수 없어 Error가 발생한다.
-
-``` 
-java.lang.IllegalAccessException: 
-Class goodgid.gidhub.GidhubApplication can not access a member of class goodgid.gidhub.Book with modifiers "private static"
-```
 
 <br>
 
@@ -280,6 +307,15 @@ public goodgid.gidhub.Book(java.lang.String,java.lang.String,java.lang.String)
 
 ## Summary
 
+* 클래스 정보를 조회하는 방법에 알아봤다.
+
+---
+
+* 이 글과 관련해서 다음 글들도 함께 보길 추천한다.
+
+1. [리플렉션(Reflection) : 클래스 정보 수정]({{site.url}}/Java-Reflection-Modify-Class-Information/)
+
+1. [리플렉션(Reflection) : 클래스 생성자 접근]({{site.url}}/Java-Reflection-Access-Class-Constructor/)
 
 ---
 

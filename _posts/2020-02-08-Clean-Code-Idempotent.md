@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " CleanCode : Property를 Set하고 넘길까? 넘겨서 Set할까? "
+title:  " Property를 Set하고 넘길까? 넘겨서 Set할까? "
 categories: CleanCode
 tags: CleanCode
 author: goodGid
