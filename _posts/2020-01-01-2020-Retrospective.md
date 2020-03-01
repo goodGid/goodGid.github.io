@@ -134,6 +134,10 @@ author: goodGid
 
 * [리플렉션(Reflection) : 클래스 정보 조회]({{site.url}}/Java-Reflection-Class-Info-Query/)
 
+* [리플렉션(Reflection) : 클래스 정보 수정]({{site.url}}/Java-Reflection-Modify-Class-Information/)
+
+* [리플렉션(Reflection) : 클래스 생성자 접근]({{site.url}}/Java-Reflection-Access-Class-Constructor/)
+
 * [Query String의 함정 : List에 null이 담겨온다.]({{site.url}}/Pitfalls-of-Query-String/)
 
 * [[Clean Code] 에러 처리 (Error Handling) : Null 반환 Method]({{site.url}}/Clean-Code-Error-Handling-Null/)
