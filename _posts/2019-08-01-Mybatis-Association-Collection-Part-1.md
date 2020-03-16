@@ -16,16 +16,6 @@ author: goodGid
 
 * `has many` 관계를 설정하기 위한 **collection**
 
-* 여기서 `has many` 관계에서 **left outer join**을 통해 한 번에 데이터를 가져오는 경우 <br> left측의 데이터가 우측에 나타나는 데이터의 수만큼 반복되어 나타나는 문제가 발생한다. 
-
-* 이를 위해 한번 더 정제 작업이 필요하다.
-
-
-
-
-
-
-
 
 
 
@@ -41,8 +31,6 @@ author: goodGid
 ---
 
 * 본격적으로 Association & Collection에 대해 알아보자 !
-
-* 참고로 XML에서 id에 *ex)[1]* 과 같은 표현이 있는데 <br> 이 표현은 글을 읽는데 가독성을 높히기 위해 사용했음을 알아두자.
 
 * 이 글에서 다룰 가장 기본이 되는 Entity는 3개다.
 
@@ -152,8 +140,10 @@ public class Song {
         <result column="title" property="title" jdbcType="VARCHAR"/>
         <result column="stock" property="stock" jdbcType="INTEGER" typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
         <result column="issueDate" property="issueDate" jdbcType="TIMESTAMP"/>
-        <association column="artist_seq" property="artist" 
-        select="[1] : selectArtistByPrimaryKey"/>
+        <!-- association -->
+        <association column="artist_seq" property="artist" select="[1] : selectArtistByPrimaryKey"/>
+
+        <!-- collection -->
         <collection column="seq" property="songs" select="[2] : selectSongByAlbumKey"/>
     </resultMap>
 
@@ -182,9 +172,11 @@ public class Song {
 ```
 []({{site.url}}/)
 
-<br>
 
-* Song Entity에 대한 글은 <br> [MyBatis의 Association과 Collection 알아보기 - Song]({{site.url}}/Mybatis-Association-Collection-Part-2/)을 참고하자.
+
+## Summary
+
+* Song Entity는 <br> [MyBatis의 Association과 Collection 알아보기 - Song]({{site.url}}/Mybatis-Association-Collection-Part-2/)글을 통해 알아보자.
 
 
 ---

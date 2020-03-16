@@ -16,20 +16,6 @@ author: goodGid
 
 * `has many` 관계를 설정하기 위한 **collection**
 
-* 여기서 `has many` 관계에서 **left outer join**을 통해 한 번에 데이터를 가져오는 경우 <br> left측의 데이터가 우측에 나타나는 데이터의 수만큼 반복되어 나타나는 문제가 발생한다. 
-
-* 이를 위해 한번 더 정제 작업이 필요하다.
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ### Mybatis에서 관계를 정의하는 방법
@@ -43,7 +29,38 @@ author: goodGid
 
 * 반드시 [MyBatis의 Association과 Collection 알아보기 - Artist, Album]({{site.url}}/Mybatis-Association-Collection-Part-1/)글을 정독 후 해당 글을 읽길 바란다.
 
-* 참고로 XML에서 id에 *ex)[1]* 과 같은 표현이 있는데 <br> 이 표현은 글을 읽는데 가독성을 높히기 위해 사용했음을 알아두자.
+
+``` java
+@Data 
+public class Artist {
+    private Long seq;
+    private String name;
+    private Date debutDate;
+}
+
+@Data 
+public class Album {
+    private Long seq;
+    private Artist artist;
+    private String title;
+    private Stock stock;
+    private Date issueDate;
+    private List<Song> songs;
+
+    public int getTotalPlaytime() {
+        return (getSongs() == null || getSongs().size() == 0) ? 0 :
+                getSongs().stream().mapToInt(Song::getPlaytime).sum();
+    }
+}
+
+@Data 
+public class Song {
+    private Long seq;
+    private Album album;
+    private String name;
+    private int playtime;
+}
+```
 
 
 ---
@@ -54,11 +71,11 @@ author: goodGid
 
 * SongRepository 매핑 XML은 다음과 같다.
 
-* 주의해서 볼 부분은 songResultMap에서 <br> Song 객체와 `has one` 관계에 있는 Album 객체를 가져오기 위한 **assocication** 태그 부분이다. 
+* 주의해서 볼 부분은 songResultMap에서 <br> Song 객체와 `has one` 관계에 있는 <br> Album 객체를 가져오기 위한 **assocication** 태그 부분이다. 
 
-* 예시에서는 2개의 **association** 태그가 정의되어 있지만 <br> album이라는 같은 속성에 2개의 **association** 정의를 동시에 사용할 수는 없으므로 1개는 주석처리한다.
+* 2가지 방법으로 **association** 태그를 사용해본다.
 
-* 결과 부터 말하자면 Join을 통해 한번에 가져온 데이터를 <br> **association** 태그 내에 **resultMap**에 지정한 형태로 결과값을 담게된다.
+* 결론부터 말하자면 <br> Join을 통해 한번에 가져온 데이터를 <br> **association** 태그 내에 **resultMap**에 지정한 형태로 결과값을 담게된다.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -69,16 +86,16 @@ author: goodGid
         <id column="seq" property="seq" jdbcType="BIGINT"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="playtime" property="playtime" jdbcType="INTEGER"/>
-        <!-- [2] -->
+        <!-- [association] 1번째 방법 -->
         <association property="album" resultMap="albumResultMap"/> 
-        <!-- [3] -->
-        <!--association column="album_seq" property="album" select="selectAlbumByPrimaryKey"/-->
+        <!-- [association] 2번째 방법 -->
+        <association property="album" column="album_seq" select="selectAlbumByPrimaryKey"/>
     </resultMap>
 </mapper>
 ```
 
 ``` xml
-<!-- [2] ResultMap :albumResultMap  -->
+<!-- [association] 1번째 방법 -->
 <resultMap id="albumResultMap" type="com.devop.test.core.entity.album.Album">
     <id column="seq" property="seq" jdbcType="BIGINT"/>
     <result column="title" property="title" jdbcType="VARCHAR"/>
@@ -89,9 +106,9 @@ author: goodGid
 </resultMap>
 ```
 
-* `[2] : <association property="album" resultMap="albumResultMap"/>` 코드에 대해 더 알아보자.
+<br>
 
-* 이것은 Song 객체의 <br> (= [1] `<resultMap id="songResultMap" type="com.devop.test.core.entity.song.Song">`에서 type이 Song이다.)
+* 여기서 `<association property="album" resultMap="albumResultMap"/>` 코드는 다음과 같이 이해할 수 있다.
 
 * Album 타입의 album이라는 변수명에
 
@@ -99,7 +116,7 @@ author: goodGid
 @Data 
 public class Song {
     private Long seq;
-    private Album album;
+    private Album album; // <-- Album 타입의 album 이라는 변수명
     private String name;
     private int playtime;
 }
@@ -107,11 +124,11 @@ public class Song {
 
 * resultMap으로 선언한 **albumResultMap**형태로 값을 바인딩시킨다.
 
-* 즉 album 변수에 **albumResultMap** 형태로 값이 들어가진다.
+* 즉 album 변수에 **albumResultMap** 형태로 값이 들어가지게 된다.
 
 <br>
 
-* 아래의 코드는 **[3] : Nested Select**을 사용하였을 경우의 필요한 xml코드이다.
+* association을 사용하는 2번째 방법에 대해 알아보자.
 
 ``` xml
     <!-- Nested Select :: selectAlbumByPrimaryKey  -->
@@ -248,12 +265,6 @@ public class AlbumController {
 </body>
 </html>
 ```
-
-출력결과는 다음 그림과 같이 Album 객체를 통해 로드 된 Artist 정보와 Song 목록 정보를 사용해 정상적으로 모든 정보가 출력되고 있는 것을 확인할 수 있다.
-
-
-
-
 
 
 ---
