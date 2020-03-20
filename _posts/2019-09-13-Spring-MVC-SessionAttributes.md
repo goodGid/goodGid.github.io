@@ -32,13 +32,11 @@ author: goodGid
 
 <br>
 
-* Http Session에 값을 
+* Http Session에 값을 저장시키는 방법은
 
-* 저장시키는 방법은
+* 아래 코드처럼
 
-* HttpSession을 가져와
-
-* 직접 저장할 수 있지만 
+* HttpSession을 가져와 직접 저장할 수 있지만 
 
 > Controller 
 
@@ -49,7 +47,7 @@ public class SampleController {
 
     @GetMapping("/events")
     @ResponseBody
-    public String hello(Model model, HttpSession httpSession) {
+    public String hello(Model model, HttpSession httpSession) { // HttpSession을 가져온다.
         Event event = new Event();
         event.setName("goodGid");
         model.addAttribute("event", event);
@@ -59,21 +57,33 @@ public class SampleController {
 }
 ```
 
+---
+
 * @SessionAttributes 애노테이션을 사용하면
 
 * 보다 편리하게 저장할 수 있다.
 
-* @SessionAttributes 애노테이션은
+---
 
-* @SessionAttributes("event")처럼
+* @SessionAttributes 애노테이션을 사용하면
 
-* 설정한 이름(= "event" )과 동일한 
+* 해당 클래스내에서 
 
-* Key 값으로
+* SessionAttributes 애노테이션에 정의되 Key와 동일한 Key로
 
 * Model에 저장하는 코드가 있을 시
 
 * 자동으로 Session에도 저장시켜준다.
+
+---
+
+* 예를 들어 다음 코드에서는 
+
+* SessionAttributes의 Key는 **event**이고
+
+* model에 저장하는 Key 값도 **event**이기 때문에
+
+* 자동으로 Session에도 저장이된다.
 
 > Controller
 
@@ -115,18 +125,17 @@ public void helloTest() throws Exception {
 
 * Test Code는 성공한다.
 
-<br>
+---
 
 * 참고로 TC에서 사용한 
 
-* **request()**는
+* **request()** 메소드의 FQCN (Fully Qualified Class Name)는 다음과 같다.
 
-* *org.springframework.test.web.servlet.result.MockMvcResultMatchers.request* 를 
-
-* import 하여야한다.
+* *org.springframework.test.web.servlet.result.MockMvcResultMatchers.request*
 
 
----
+
+
 
 ## @SessionAttributes 한계
 
@@ -138,7 +147,7 @@ public void helloTest() throws Exception {
 
 * 여러 컨트롤러에 걸쳐서는 적용이 안된다.
 
-<br>
+---
 
 * 예를 들면 
 
@@ -166,13 +175,11 @@ public class B_Controller {
 
 * Http Session에도 저장이 되겠지만
 
-* 그 기능이
-
-* B_Controller에서는 적용이 되지 않는다.
+* 그 기능이 B_Controller에서는 적용이 되지 않는다.
 
 * 뿐만 아니라 Interceptor 혹은 Filter에도 적용이 안된다.
 
-<br>
+---
 
 * 만약 Controller 밖(Interceptor 혹은 Filter 등)에서 
 
@@ -180,9 +187,11 @@ public class B_Controller {
 
 * 만들어 준 Session 데이터에 접근하고자 한다면
 
+* @SessionAttributes가 아닌
+
 * [@SessionAttribute]({{site.url}}/Spring-MVC-SessionAttribute)를 사용하면 된다.
 
-* **s**가 붙고 안붙고가 다르다.
+* 끝에 **s**가 붙지 않는 애노테이션이다.
 
 
 ---
