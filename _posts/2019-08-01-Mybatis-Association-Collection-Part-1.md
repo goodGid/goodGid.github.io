@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " MyBatis의 Association과 Collection 알아보기 - Artist, Album "
-categories: DB
-tags: MyBatis
+categories: DataBase
 author: goodGid
 ---
 * content

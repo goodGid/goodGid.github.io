@@ -125,7 +125,6 @@ function setContentMaxHeight() {
 }
 
 //-------------post Content----------------------
-//将Content内容转移
 function moveTOC() {
     if (document.querySelector('#markdown-toc') !== null) {
         var TOCString = document.querySelector('#markdown-toc').innerHTML

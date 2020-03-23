@@ -141,3 +141,7 @@ author: goodGid
 * [Query String의 함정 : List에 null이 담겨온다.]({{site.url}}/Pitfalls-of-Query-String/)
 
 * [[Clean Code] 에러 처리 (Error Handling) : Null 반환 Method]({{site.url}}/Clean-Code-Error-Handling-Null/)
+
+> 200323 ~ 200329
+
+* [인코딩(Encoding)된 URL은 어떻게 생성이 되는걸까?]({{site.url}}/HTTP-URL-Endocidng/)
