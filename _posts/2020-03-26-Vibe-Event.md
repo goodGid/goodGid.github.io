@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " LINE & Naver 이벤트 : 내 돈은 내가 듣는 음악에 갔으면 좋겠어! "
+title:  " LINE & Naver 이벤트에서 1등하다. (feat. 내 돈은 내가 듣는 음악에 갔으면 좋겠어) "
 categories: E.T.C
 tags: E.T.C
 author: goodGid

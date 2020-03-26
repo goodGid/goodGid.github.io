@@ -41,9 +41,11 @@ type: page
 
 ### 2020
 
+* 　03. 26 [LINE & Naver 이벤트에서 1등하다. (feat. 내 돈은 내가 듣는 음악에 갔으면 좋겠어)]({{site.url}}/Vibe-Event/)
+
 * 　02. 13 Activate Disqus Reaction
 
-* 　02. 11 [Received Referral AWARDS in LINE Corparation]({{site.url}}/Received-Referral-AWARDS-in-LINE-Corparation/)
+* 　02. 11 [2019 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/Received-Referral-AWARDS-in-LINE-Corparation/)
 
 * 　01. 21 Delete **Tags** // Commit : ae7249a
 
