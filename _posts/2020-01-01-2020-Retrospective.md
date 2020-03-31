@@ -145,3 +145,11 @@ author: goodGid
 > 200323 ~ 200329
 
 * [인코딩(Encoding)된 URL은 어떻게 생성이 되는걸까?]({{site.url}}/HTTP-URL-Endocidng/)
+
+* [HTTP Connection 헤더 쉽게 알아보기]({{site.url}}/HTTP-Connection-Header/)
+
+> 200330 ~ 200405
+
+* [HTTP/1.1 알아보기]({{site.url}}/HTTP-1.1/)
+
+* [HTTP Connection 성능 향상 기술 : 병렬(Parallel)/지속(Persistent) Connection]({{site.url}}/HTTP-Connection-Tech/)
