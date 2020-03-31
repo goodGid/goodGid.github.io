@@ -25,8 +25,8 @@ author: goodGid
 public void registerItem(Item item) {
     ItemRegistry registry = peristentStore.getItemRegistry(); // [1]
     if (registry != null) {
-        boolean isExist = registry.getItem(item.getID());
-        if (isExist != null && isExist) { // [2]
+        boolean isExist = registry.getItem(item.getID()); // [2]
+        if (isExist != null && isExist) {
             // Do Something...
         }
     }
@@ -70,8 +70,8 @@ public void registerItem(Item item) {
 > Null Return이 가능한 Method
 
 ``` java
-1. peristentStore.getItemRegistry();
-2. registry.getItem(item.getID());
+[1] peristentStore.getItemRegistry();
+[2] registry.getItem(item.getID());
 ```
 
 * 만약 위 Method가 
@@ -101,8 +101,8 @@ public void registerItem(Item item) {
 ### Refactiong Code
 
 ``` java
-1. peristentStore.getItemRegistry();
-2. registry.getItem(item.getID());
+[1] peristentStore.getItemRegistry();
+[2] registry.getItem(item.getID());
 ```
 
 * 2개의 Method가 null을 return하지 않음을 **보장**한다고 가정해보자.
@@ -114,8 +114,8 @@ public void registerItem(Item item) {
 ``` java
 public void registerItem(Item item) {
     ItemRegistry registry = peristentStore.getItemRegistry(); // [1]
-    boolean isExist = registry.getItem(item.getID());
-    if (isExist) { // [2]
+    boolean isExist = registry.getItem(item.getID()); // [2]
+    if (isExist) {
         // Do Something...
         }
     }
