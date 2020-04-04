@@ -41,6 +41,8 @@ type: page
 
 ### 2020
 
+* 　04. 01 ~ 04. 30	[LINE 작심삼십일 프로젝트 이끔이가 되다.]({{site.url}}/LINE-Blog-Leader/)
+
 * 　03. 26 [LINE & Naver 이벤트에서 1등하다. (feat. 내 돈은 내가 듣는 음악에 갔으면 좋겠어)]({{site.url}}/Vibe-Event/)
 
 * 　02. 13 Activate Disqus Reaction
