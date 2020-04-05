@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " DB Access Error from EC2 "
-categories: Technology
-tags: EC2
+categories: AWS
 author: goodGid
 ---
 * content
@@ -13,10 +12,7 @@ author: goodGid
 
 * Local에서는 RDS접속이 잘 되는데 EC2에서는 접속이 안됐다.
 
-{% capture images %}
-	/assets/img/posts/ec2_rds_error_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/aws/ec2_rds_error_1.png)
 
 ## Solve
 
@@ -30,15 +26,9 @@ Click to `Security Groups`
 
 #### Step 2. 
 
-{% capture images %}
-	/assets/img/posts/ec2_rds_error_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/aws/ec2_rds_error_2.png)
+
 
 #### Step 3. 
 
-{% capture images %}
-	/assets/img/posts/ec2_rds_error_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/aws/ec2_rds_error_3.png)

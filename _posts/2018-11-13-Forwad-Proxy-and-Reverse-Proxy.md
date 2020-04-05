@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " 포워드(Forward) 프록시와 리버스(Reverse) 프록시 "
-categories: Technology
-tags: Technology
+categories: Network
 author: goodGid
 ---
 * content
@@ -42,7 +41,7 @@ author: goodGid
 * 그리고 정해진 사이트만 연결하게 설정하는 등 **웹 사용 환경을 제한**할 수 있으므로 기업 환경등에서 많이 사용한다.
 
 
-![](/assets/img/posts/forward_proxy_and_reverse_proxy_1.png)
+![](/assets/img/network/forward_proxy_and_reverse_proxy_1.png)
 
 
 ## 사용 목적
@@ -94,7 +93,7 @@ author: goodGid
 
 * 아파치 웹 서버가 해킹당해도 웹 서버 권한으로는 내부망으로 연결이 불가하다.
 
-![](/assets/img/posts/forward_proxy_and_reverse_proxy_2.png)
+![](/assets/img/network/forward_proxy_and_reverse_proxy_2.png)
 
 
 ---

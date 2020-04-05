@@ -54,13 +54,13 @@ http.createServer(function(req, res) {
 
 * `Async`를 사용하여 흐름제어를 하기. <br> (=Callback Hell 해결하기)
 
-{% capture images %}
-	/assets/img/posts/async_1.png
-	/assets/img/posts/async_2.png
-	/assets/img/posts/async_3.png
-	/assets/img/posts/async_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+![](/assets/img/node_js/async_1.png)
+
+![](/assets/img/node_js/async_2.png)
+
+![](/assets/img/node_js/async_3.png)
+
+![](/assets/img/node_js/async_4.png)
 
 
 ---

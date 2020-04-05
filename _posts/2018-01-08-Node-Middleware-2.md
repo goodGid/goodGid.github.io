@@ -2,7 +2,6 @@
 layout: post
 title:  " Middleware (2) "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content
@@ -21,10 +20,7 @@ author: goodGid
 5. 미들웨어 함수 우선순위 : 먼저 로드되는 미들웨어 함수가 먼저 실행됨(코드 순서 중요)
 
 
-{% capture images %}
-	/assets/img/posts/middleware_2_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/node_js/middleware_2_1.png)
 
 
 ``` js

@@ -2,7 +2,6 @@
 layout: post
 title:  " HDLC(High-level Data Link Control)프로토콜이란? "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

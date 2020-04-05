@@ -2,7 +2,6 @@
 layout: post
 title:  " ~(틸트)와 ^(캐럿) "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content
@@ -49,9 +48,9 @@ author: goodGid
 ---
 
 
-![](/assets/img/posts/git_tilt_and_Caret_1.png)
+![](/assets/img/git/git_tilt_and_Caret_1.png)
 
-![](/assets/img/posts/git_tilt_and_Caret_2.png)
+![](/assets/img/git/git_tilt_and_Caret_2.png)
 
 
 

@@ -21,10 +21,8 @@ author: goodGid
 
 ---
 
-{% capture images %}
-    /assets/img/posts/anomaly_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/database/anomaly_1.png)
 
 ---
 

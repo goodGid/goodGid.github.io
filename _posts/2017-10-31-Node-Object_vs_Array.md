@@ -2,7 +2,6 @@
 layout: post
 title:  " Object vs Array "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content
@@ -55,11 +54,7 @@ res.status(200).send({
 
 ```
 
-{% capture images %}
-	/assets/img/posts/node_object_vs_array_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/posts/node_object_vs_array_1.png)
 
 ## Review
 

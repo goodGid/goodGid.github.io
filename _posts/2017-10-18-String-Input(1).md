@@ -2,7 +2,6 @@
 layout: post
 title:  "String Input (1)"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

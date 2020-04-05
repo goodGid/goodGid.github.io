@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " EC2 :: 표준시간대 변경 "
-categories: Technology
-tags: EC2
+categories: AWS
 author: goodGid
 ---
 * content
@@ -16,12 +15,7 @@ author: goodGid
   date
 ```
 
-
-{% capture images %}
-  /assets/img/posts/localtime_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/aws/localtime_1.png)
 
 2. 표준 시간대 파일 찾기
   1. 전체 시간대 탐색
@@ -34,10 +28,7 @@ author: goodGid
   ls /usr/share/zoneinfo/Asia
 ```
 
-{% capture images %}
-  /assets/img/posts/localtime_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/aws/localtime_3.png)
 
 3. LocalTime을 원하는 시간으로 바꾸기
 ``` js
@@ -55,7 +46,4 @@ author: goodGid
   date
 ```
 
-{% capture images %}
-  /assets/img/posts/localtime_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/aws/localtime_2.png)

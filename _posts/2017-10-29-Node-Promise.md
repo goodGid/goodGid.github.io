@@ -2,7 +2,6 @@
 layout: post
 title:  " Promise "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content
@@ -54,11 +53,10 @@ http.createServer(function(req, res) {
 
 * `Promise`를 사용하여 흐름제어를 하기. <br> (=Callback Hell 해결하기)
 
-{% capture images %}
-	/assets/img/posts/promise_1.png
-	/assets/img/posts/promise_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/node_js/promise_1.png)
+
+![](/assets/img/node_js/promise_2.png)
 
 
 ---

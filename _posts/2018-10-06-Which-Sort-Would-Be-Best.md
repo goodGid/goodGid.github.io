@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " 어떤 정렬 알고리즘이 대부분 정렬 된 데이터에서 가장 좋을까? "
-categories: Technology
-tags: Technology
+categories: Algorithm
 author: goodGid
 ---
 * content
@@ -30,7 +29,7 @@ author: goodGid
 
 
 
-![](/assets/img/posts/which_sort_would_be_best_1.png)
+![](/assets/img/algorithm/which_sort_would_be_best_1.png)
 
 ---
 

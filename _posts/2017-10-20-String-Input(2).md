@@ -2,7 +2,6 @@
 layout: post
 title:  "String Input (2)"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content
@@ -108,15 +107,14 @@ n자리 이 후에 값만 입력 버퍼에 들어가거나
 delim 조건 이 후 값만 입력 버퍼에 들어간다.
 ```
 
+![](/assets/img/posts/string_1.png)
 
+![](/assets/img/posts/string_2.png)
 
-{% capture images %}
-    /assets/img/posts/string_1.png
-    /assets/img/posts/string_2.png 
-    /assets/img/posts/string_3.png
-    /assets/img/posts/string_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+![](/assets/img/posts/string_3.png)
+
+![](/assets/img/posts/string_4.png)
+
 
 
 ---

@@ -2,7 +2,6 @@
 layout: post
 title:  " Install Virtualenv / VirtualenvWrapper "
 categories: Python
-tags: Python
 author: goodGid
 ---
 * content
@@ -117,11 +116,7 @@ $ pip3 install virtualenv virtualenvwrapper
 
 * `virtualenvwrapper.sh` 내용을 보면 설치 방법이 적혀있다.
 
-{% capture images %}
-    /assets/img/posts/virtualenv-virtualenvWrapper_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/python/virtualenv-virtualenvWrapper_1.png)
 
 ---
 
@@ -146,11 +141,7 @@ $ echo export WORKON_HOME=~/dev/.virtualenvs >> ~/.bash_profile
 
 * `Python3` 설치 경로 찾기
 
-{% capture images %}
-/assets/img/posts/virtualenv-virtualenvWrapper_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/python/virtualenv-virtualenvWrapper_2.png)
 
 ```
 $ which python3
@@ -174,10 +165,8 @@ $ echo export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3 >> ~/.bash_profile
 $ sudo find / -name 'virtualenvwrapper.sh'
 ```
 
-{% capture images %}
-/assets/img/posts/virtualenv-virtualenvWrapper_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %} 
+
+![](/assets/img/python/virtualenv-virtualenvWrapper_3.png)
 
 * 터미널이 실행될 때 마다 해당 파일을 실행하여 환경 변수값을 설정할 수 있는 명령어를 ~/.bash_profile 에 추가해준다.
 

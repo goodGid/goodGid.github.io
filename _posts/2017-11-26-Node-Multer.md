@@ -2,7 +2,6 @@
 layout: post
 title:  " Multipart/form-data "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content
@@ -13,10 +12,7 @@ author: goodGid
 
 * PostMan으로 사진 업로드를 하려고 하는데 다음과 같은 Error가 떴다. 
 
-{% capture images %}
-	/assets/img/posts/multer_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/node_js/multer_1.png)
 
 ---
 
@@ -24,11 +20,7 @@ author: goodGid
 
 * 전송할 때 Header에서 형식이 [`Content Type`](https://goodgid.github.io/ContentType/)을 `application/x-www-form-urlencoded`으로 보내게 되기 때문이다.
 
-{% capture images %}
-	/assets/img/posts/multer_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/node_js/multer_2.png)
 
 > `application/x-www-form-urlencoded`이란 ?
 
@@ -43,8 +35,4 @@ author: goodGid
 
 * Click되어 있는 Content Type값을 Unclick하면 된다 !
 
-{% capture images %}
-	/assets/img/posts/multer_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/node_js/multer_3.png)

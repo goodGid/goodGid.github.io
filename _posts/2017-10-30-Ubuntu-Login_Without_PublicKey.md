@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " Ubuntu Login without Public Key "
-categories: Technology
-tags: ubuntu
+categories: AWS
 author: goodGid
 ---
 * content
@@ -46,7 +45,7 @@ sudo vi /etc/ssh/sshd_config
 
 * PW로 로그인이 가능하다.
 
-![](/assets/img/posts/ec2_login_1.png)
+![](/assets/img/aws/ec2_login_1.png)
 
 
 ### 4. Change Password
@@ -70,11 +69,11 @@ passwd ubuntu
 sudo service ssh restart
 ```
 
-![](/assets/img/posts/ec2_login_2.png)
+![](/assets/img/aws/ec2_login_2.png)
 
 ### 6. Login without Public Key
 
-![](/assets/img/posts/ec2_login_3.png)
+![](/assets/img/aws/ec2_login_3.png)
 
 * **-i "goodgid-ec2.pem"** 옵션없이 로그인이 가능하다.
 

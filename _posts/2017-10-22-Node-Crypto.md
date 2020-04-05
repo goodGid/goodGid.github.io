@@ -66,10 +66,7 @@ crypto.randomBytes(32, function(err, buffer){
 
 ## Output
 
-{% capture images %}
-    /assets/img/posts/crypto_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/node_js/crypto_1.png)
 
 
 ---

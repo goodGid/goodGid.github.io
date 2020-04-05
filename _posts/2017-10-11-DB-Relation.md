@@ -2,7 +2,6 @@
 layout: post
 title:  "Relation"
 categories: Database
-tags: Database
 author: goodGid
 ---
 
@@ -20,7 +19,4 @@ author: goodGid
 
 * 하나의 Attribute가 취할 수 있는 같은 타입의 원자 값들의 집합을 `도메인`이라 함
 
-{% capture images %}
-    /assets/img/posts/relation_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/database/relation_1.png)

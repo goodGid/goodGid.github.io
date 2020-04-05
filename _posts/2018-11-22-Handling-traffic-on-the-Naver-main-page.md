@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " 네이버 메인 페이지의 트래픽 처리 "
-categories: Technology
-tags: Technology
+categories: Network
 author: goodGid
 ---
 * content
@@ -31,7 +30,7 @@ author: goodGid
 * 다음은 로드 밸런서로 구성한 일반적인 3계층(3-Tier) 분산 처리 모델을 표현한 도식이다.
 
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_1.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_1.png)
 
 
 
@@ -95,7 +94,7 @@ author: goodGid
 
 * 네이버 메인 페이지의 서비스 특성과 요구 사항을 반영한 네이버 메인 페이지의 분산 처리 모델을 간략하게 표현하면 다음과 같다.
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_2.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_2.png)
 
 
 ---
@@ -152,7 +151,7 @@ author: goodGid
 * 웹 서버의 활용도도 높여 서버의 자원을 더 효율적으로 사용할 수 있다.
 
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_3.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_3.png)
 
 ---
 
@@ -223,7 +222,7 @@ author: goodGid
 * 다음 그림은 서킷 브레이커에서 서킷의 상태 변화를 나타내는 그림이다.
 
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_4.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_4.png)
 
 
 * 서킷은 다음과 같은 세 가지 상태를 가진다(회로이므로 닫힌 것이 정상, 열린 것이 비정상).
@@ -274,7 +273,7 @@ author: goodGid
 
 
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_5.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_5.png)
 
 
 * 서버군 2에서 10.0.0.5 서버가 신규로 생성됐지만
@@ -295,7 +294,7 @@ author: goodGid
 
 * 다음은 서비스 디스커버리를 도입한 환경을 나타내는 그림이다.
 
-![](/assets/img/posts/handling_traffic_on_the_naver_main_page_6.png)
+![](/assets/img/network/handling_traffic_on_the_naver_main_page_6.png)
 
 
 * 서비스 디스커버리 서버는 각 서버군의 서버 목록을 관리한다. 

@@ -2,7 +2,6 @@
 layout: post
 title:  " 메모리 구조(Memory Structure) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  "Normalization (2)"
 categories: Database
-tags: Database
 author: goodGid
 ---
 
@@ -22,10 +21,7 @@ author: goodGid
 * 테이블 R이 제 2정규형이고, `기본키`가 아닌 `모든 속성`이 기본키에 대해 `이행적 함수적 종속`을 만족하지 않는 정규형
 
 
-{% capture images %}
-    /assets/img/posts/normalization_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/database/normalization_3.png)
 
 
 * <주문> 테이블에서 고객번호가 주문번호에 함수적 종속이고, 주소가 고객번호에 함수적 종속이므로 <br> 주소는 기본키인 주문번호에 대해 이행적 함수적 종속을 만족한다. <br> 즉 [주문번호 -> 고객번호]이고, <br> [고객번호 -> 주소]이므로 <br> [주문번호 -> 주소]는 이행적 함수적 종속이 된다.<br> 따라서 <주문> 테이블은 제 3정규형이 아니다.
@@ -35,11 +31,7 @@ author: goodGid
 
  Q. 다음의 정규화 과정은 어떤 단계의 정규화 과정인가? 그리고 정규화 과정에서 필요한 작업을 간략히 서술하시오.
 
-
-{% capture images %}
-    /assets/img/posts/normalization_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/database/normalization_7.png)
 
 ```    
 <주문목록> 테이블에는 다음과 같은 함수적 종속이 존재한다.
@@ -71,10 +63,8 @@ author: goodGid
 * 일반적으로 제 3정규형에 후보키가 여러 개 존재하고, 이러한 후보키들이 서로 중첩되어 나타나는 경우에 적용 가능하다.
 
 
-{% capture images %}
-    /assets/img/posts/normalization_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/database/normalization_4.png)
 
 
 * <수강_교수> 테이블은 함수적 종속 <br> (학번, 과목명) --> 담당교수 <br> (학번, 담당교수) --> 과목명 <br> (담당교수 --> 과목명) 을 만족하고 있다. <br> <수강_교수> 테이블의 후보키는 (학번, 과목명)과 (학번, 담당교수)이다. <br><br>
