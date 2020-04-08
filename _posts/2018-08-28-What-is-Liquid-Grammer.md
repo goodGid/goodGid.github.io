@@ -10,9 +10,9 @@ author: goodGid
 
 ## Liquid란 무엇인가?
 
-* **Liquid**는 [Shopify](https://github.com/Shopify/liquid)에 의해 개발되고 **Ruby**로 작성된 **오픈소스 템플릿 언어**이다.
+* **Liquid**는 [Shopify](https://github.com/Shopify/liquid)에 의해 개발되었다.
 
-* Liquid는 2006년 6월부터 웹페이지에 동적인 컨텐츠를 로드(load)하는 Shopify의 백본(backbone)으로 기능하고 있다.
+* **Ruby**로 작성된 **오픈소스 템플릿 언어**이다.
 
 
 
@@ -74,7 +74,7 @@ author: goodGid
 
 ### Tag
 
-* Tag는 템플릿의 **논리(logic)**와 **제어 흐름(control flow)**을 만든다. <br> if,else와 유사하다 생각하면 된다.
+* Tag는 템플릿의 **논리(logic)**와 **제어 흐름(control flow)**을 만든다. 
 
 > Example
 
