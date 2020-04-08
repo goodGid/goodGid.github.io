@@ -2,7 +2,6 @@
 layout: post
 title:  " Property를 Set하고 넘길까? 넘겨서 Set할까? "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content
@@ -152,44 +151,25 @@ public void updatePersonToDB(Person person){
 // 엄청나게 방대한 양의 Code가 있는 상황이다.
 
 기용님은 직접 작업을 하셨기 때문에 
-
 update()안에서 어떤 동작을 하는지 알지만
-
 다른이가 runner()를 봤을 때
-
 name값이 null 인지 
-
 어디선가 setting이 되는지 모르는 상황이에요.
-
 그걸 알기 위해선 
-
 update()안에 들어가서 확인을 해봐야해요.
 
-
-
 만약 update()를 보지않고 
-
 넘어가게 된다면 
-
 문제가 될 수 있는 Point가 될 수 있어요.
 
-
-
 누군가가 update() 이후에 
-
 name값이 없으니 set을 해줘야겠다 생각하고
-
 임의의 다른 값으로 set을 해버리면
-
 문제가 될 수 있죠.
 
-
 그렇기 때문에
-
 update()를 호출하기전에 
-
 명시적으로 name을 set해주는게
-
 좋을 수도 있다고 생각해요.
 ```
 
