@@ -195,7 +195,7 @@ This is much like compile, but indicates you expect the JDK or a container to pr
 
 * [Maven(메이븐) pom.xml 파일의 scope 설정은 무엇입니까?](https://sarc.io/index.php/development/812-maven-pom-xml-scope)
 
-* [[Maven] pom.xml <scope> 설명](https://jjeong.tistory.com/834)
+* [[Maven] pom.xml scope 설명](https://jjeong.tistory.com/834)
 
 * [[Maven] Dependency Scope의 종류](https://krespo.net/166)
 
