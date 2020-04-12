@@ -149,3 +149,9 @@ author: goodGid
 * [HTTP/1.1 알아보기]({{site.url}}/HTTP-1.1/)
 
 * [HTTP Connection 성능 향상 기술 : 병렬(Parallel)/지속(Persistent) Connection]({{site.url}}/HTTP-Connection-Tech/)
+
+> 200406 ~ 200412
+
+* [웹 로봇(Web Robots)에 대해 알아보기 : robots.txt]({{site.url}}/HTTP-Robots/)
+
+* [HTTP 인증 : 기본 인증]({{site.url}}/HTTP-Default-Authenticate/)
