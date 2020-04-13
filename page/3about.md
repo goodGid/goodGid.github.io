@@ -41,7 +41,7 @@ type: page
 
 ### 2020
 
-* 　04. 13 Apply [tawk.to](https://www.tawk.to/) Service
+* 　04. 13 Apply [Tawk.to]({{site.url}}/Tawk-to/) Service
 
 * 　04. 01 ~ 04. 30	[LINE 작심삼십일 프로젝트 이끔이가 되다.]({{site.url}}/LINE-Blog-Leader/)
 
