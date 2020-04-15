@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP을 사용한 통신 과정 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content
