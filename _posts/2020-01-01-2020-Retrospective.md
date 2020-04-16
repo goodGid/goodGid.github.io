@@ -44,7 +44,7 @@ author: goodGid
 * [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://book.naver.com/bookdb/book_detail.nhn?bid=15871738)
 
 
-## Develop
+## DevStory
 
 > 191230 ~ 200105
 
@@ -158,5 +158,6 @@ author: goodGid
 
 * [2020 1Q Blog 기록하기]({{site.url}}/2020-1Q-Blog/)
 
+* [HTTP를 사용한 특정 범위 요청 : 서버에게 특정 범위를 요구하다.]({{site.url}}/HTTP-Range-Request/)
 
-* []({{site.url}}/)
+* [유니코드와 UTF-8 / UTF-16]({{site.url}}/Unicode-And-UTF-Encoding/)
