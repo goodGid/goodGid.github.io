@@ -2,13 +2,12 @@
 layout: post
 title:  " DispatcherServlet가 WebApplicationContext를 생성하는 2가지 방법 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content
 {:toc}
 
-## DispatcherServlet 등록하기
+## Prologue
 
 * Spring의 핵심 개념인
 
@@ -20,67 +19,50 @@ author: goodGid
 
 
 
+---
 
+## DispatcherServlet
 
-
-
-
-
-## 시작하기 앞서
-
-> DispatcherServlet 생성 주최 
+### 생성
 
 * DispatcherServlet는 1개만 생성하면 된다.
 
-* 이 글에서는
-
-* XML 혹은 Java로 생성하는 법을 배운다.
-
-* 그렇기 때문에 
+* 이 글에서는 **XML** or **Java**로 생성하는 법에 대해 알아본다.
 
 * 만약 XML으로 DispatcherServlet를 생성한다면
 
-* WebApplication.java 파일(= Java 방법)은 삭제해도 된다.
+  WebApplication.java 파일(= Java 방법)은 삭제해도 된다.
 
 * 만약 Java로 DispatcherServlet를 생성한다면
 
-* web.xml 파일(= XML 방법)은 삭제해도 된다.
+  web.xml 파일(= XML 방법)은 삭제해도 된다.
 
 
-> Interface WebApplicationContext
+---
 
-* [WebApplicationContext Interface](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/WebApplicationContext.html)를
 
-* 구현하는 다양한 구현체가 있다.
+### 구현체
 
-* 그 중에 [AnnotationConfigWebApplicationContext](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/support/AnnotationConfigWebApplicationContext.html) 구현체를 사용한다.
+* [Interface WebApplicationContext](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/WebApplicationContext.html)를 구현한 다양한 구현체가 있다.
 
-* 그 이유는 
-
-* 최근에 Spring 프로젝트의 대부분은
-
-* Annotation을 기반으로 진행되기 때문이다.
+* 그 중 Annotation 기반의 구현체인 [AnnotationConfigWebApplicationContext](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/support/AnnotationConfigWebApplicationContext.html)를 사용한다.
 
 
 
 > Directory
 
-* goodgid의 프로젝트 Directory 구조는 다음과 같다.
+* 프로젝트의 Directory는 다음과 같다.
 
-![](/assets/img/spring/Spring-DispactcherServlet_1.png)
-
-
-
-
-> Source Code
-
-* 전체 코드는 Github Repo를 참고하자.
-
-* Github : [goodGid/Inflearn-Web-MVC](https://github.com/goodGid/Inflearn-Web-MVC/tree/11-%EC%8A%A4%ED%94%84%EB%A7%81-MVC-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EB%A7%88%EB%AC%B4%EB%A6%AC)
+<center><img src="/assets/img/spring/Spring-DispactcherServlet_1.png" alt="" style="max-width: 50%;"></center>
 
 
 
-##  XML을 사용한 방법
+
+---
+
+## Example
+
+### XML
 
 1. *web.xml* 생성
 
@@ -120,12 +102,12 @@ author: goodGid
     </init-param>
   </servlet>
 
-  <!-- 
+    <!-- 
     * 요청 처리 
     * addMapping()의 값으로 `/*`을 지정하면 안된다.
     * 자세한건 다음 글을 참고하자.
-    * https://www.baeldung.com/spring-mvc-404-error
-  -->
+    * https://www.baeldung.com/spring-mvc-404-error#2-incorrect-servlet-mapping
+    -->
   <servlet-mapping>
     <servlet-name>app</servlet-name>
     <url-pattern>/</url-pattern>
@@ -158,14 +140,16 @@ public class WebConfig {
 }
 ```
 
-* 좀 더 Live 하게 보고 싶다면
-
-* 첨부한 동영상 파일을 다운받아 보자.
+* 동영상으로 학습을 원한다면 해당 영상을 다운받도록 하자.
 
 * [XML 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-DispatcherServlet_1.mp4)
 
-    
-## Java를 사용한 방법
+
+
+
+---
+
+### Java
     
 1. *WebApplicationInitializer* 를 구현한다.
 
@@ -192,19 +176,24 @@ public class WebApplication implements WebApplicationInitializer {
         context.refresh();
 
         /**
-         * 위에서 생성한 AnnotationConfigWebApplicationContext 인스턴스를
-         * DispatcherServlet.webApplicationContext의 값으로 세팅해준다.
-         * 
-         * Reference : org.springframework.web.servlet.FrameworkServlet#FrameworkServlet
-         *             (org.springframework.web.context.WebApplicationContext)
+          위에서 생성한 AnnotationConfigWebApplicationContext 인스턴스를
+          DispatcherServlet 생성자 값으로 전달한다.
+
+          public DispatcherServlet(WebApplicationContext webApplicationContext) {
+            super(webApplicationContext);
+            this.setDispatchOptionsRequest(true);
+          }
+          
+          Reference : org.springframework.web.servlet.DispatcherServlet#
+                       DispatcherServlet(org.springframework.web.context.WebApplicationContext)
          */
         DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
         ServletRegistration.Dynamic app = servletContext.addServlet("dispatcher", dispatcherServlet);
 
         /**
-         * addMapping()의 값으로 `/*`을 지정하면 안된다.
+         * <url-pattern>의 값으로 `/*`을 지정하면 안된다.
          * 자세한건 다음 글을 참고하자.
-         * https://www.baeldung.com/spring-mvc-404-error
+         * https://www.baeldung.com/spring-mvc-404-error#2-incorrect-servlet-mapping
          */
         // app.addMapping("/*");
         app.addMapping("/");
@@ -236,15 +225,14 @@ public class WebConfig {
 }
 ```
 
-* 좀 더 Live 하게 보고 싶다면
-
-* 첨부한 동영상 파일을 다운받아 보자.
+* 동영상으로 학습을 원한다면 해당 영상을 다운받도록 하자.
 
 * [Java 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-DispatcherServlet_2.mov)
 
 
+---
 
-## Trouble Shooting
+### Trouble Shooting
 
 ``` java
 AS-IS : servletContext.addServlet("app", dispatcherServlet);
@@ -264,19 +252,17 @@ app.addMapping("/");
 
 * 그 이유는 
 
-* **[servletContext.addServlet](https://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html#addServlet(java.lang.String,%20javax.servlet.Servlet))** 메소드는
+  **[servletContext.addServlet](https://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html#addServlet(java.lang.String,%20javax.servlet.Servlet))** 메소드의 Returns를 보면
 
-* Servlet key에 해당하는 값이  
+  Servlet key에 해당하는 값이  
 
-* 이미 존재하면 
+  이미 존재하면 null을 return하기 때문에
 
-* null을 return하기 때문에
-
-* **app.addMapping("/");** 에서 NPE가 발생했다.
+  **app.addMapping("/");** 에서 NPE가 발생했다.
 
 * 그래서 servletContext에 등록되어있는 
 
-* "app"란 Key를 사용하면 안된다.
+  "app"이란 Key를 사용하면 안된다.
 
 ![](/assets/img/spring/Spring-DispactcherServlet_2.png)
 
@@ -286,23 +272,26 @@ app.addMapping("/");
 
 
 
-
+---
 
 
 ## Summary
 
 * DispatcherServlet가 
 
-* WebApplicationContext를 생성하는 방법으로 
-
-* 2가지 방법을 Code를 통해 알아봤다.
+* WebApplicationContext를 생성하는 방법으로 2가지 방법에 대해 살펴봤다.
 
   - **XML 사용**
 
   - **Java 사용**
 
-* 필요한 상황에 따라
+* 필요한 상황에 따라 적절하게 사용을 하자.
 
-* 적절하게 사용을 하자.
+---
+
+* 전체 코드는 Github Repo를 참고하자.
+
+* Github : [goodGid/Inflearn-Web-MVC](https://github.com/goodGid/Inflearn-Web-MVC/tree/11-%EC%8A%A4%ED%94%84%EB%A7%81-MVC-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EB%A7%88%EB%AC%B4%EB%A6%AC)
+
 
 
