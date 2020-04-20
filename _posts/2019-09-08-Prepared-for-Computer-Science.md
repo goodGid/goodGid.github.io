@@ -2,7 +2,6 @@
 layout: post
 title:  " goodGid의 CS(= 컴퓨터 전산학) 준비 방법 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content
