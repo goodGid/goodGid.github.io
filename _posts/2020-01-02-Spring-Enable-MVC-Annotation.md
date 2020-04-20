@@ -2,7 +2,6 @@
 layout: post
 title:  " @EnableWebMvc 어노테이션을 선언하면 무엇이 달라질까? "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content
@@ -12,32 +11,30 @@ author: goodGid
 
 ## 글의 목표
 
-* @EnableWebMvc 어노테이션을
-
-* 왜 사용하고 
+* @EnableWebMvc 어노테이션 사용 이유와
 
 * 선언 유무가 어떤 차이를 만드는지에 대해 알아보자.
 
 
 
+## Q & A
 
-
-## Qeustion
+### Question
 
 * 많은 프로젝트에서
 
-* @EnableWebMvc 어노테이션을 많이 사용한다.
+  @EnableWebMvc 어노테이션을 많이 사용한다.
 
-* 그 이유가 뭘까?
+  그 이유가 뭘까?
 
 * 단순히 사람들이 사용하니까
 
-* 나도 써야지 자세가 아닌
+  나도 써야지 자세가 아닌
 
-* 왜 사용하는건지 제대로 알고 사용해보자.
+  왜 사용하는건지 제대로 알고 사용해보자.
 
 
-## @EnableWebMvc
+### @EnableWebMvc
 
 * 다음 순서로 코드를 살펴보자.
 
@@ -64,7 +61,7 @@ public class DelegatingWebMvcConfiguration extends WebMvcConfigurationSupport {
 }
 ```
 
-> WebMvcConfigurationSupport#requestMappingHandlerMapping()
+> WebMvcConfigurationSupport.class -> requestMappingHandlerMapping()
 
 ``` java
 
@@ -79,7 +76,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
       RequestMappingHandlerMapping mapping = this.createRequestMappingHandlerMapping();
       mapping.setOrder(0);
 
-      // Interceptors 등록
+      // [Important] See : getInterceptors()
       mapping.setInterceptors(this.getInterceptors(conversionService, resourceUrlProvider));
 
       mapping.setContentNegotiationManager(contentNegotiationManager);
@@ -110,34 +107,25 @@ protected final Object[] getInterceptors(
 
 * getInterceptors() 메소드 안에서 
 
-* 2개의 Interceptor가 등록되는 것을 확인할 수 있다.
+  2개의 Interceptor가 등록되는 것을 확인할 수 있다.
 
-* ConversionServiceExposingInterceptor, ResourceUrlProviderExposingInterceptor
+  ConversionServiceExposingInterceptor, ResourceUrlProviderExposingInterceptor
 
 
 
-## Answer
+### Answer
 
-* Question에 대한 답을 내보자.
+* Question에 대한 답을 생각해보자.
 
 * @EnableWebMvc 어노테이션을 사용하면
 
-* Spring Framework가
+  Spring Framework에서 
 
-* 여러가지의 Config 값을 
+  여러 Config 값을 알아서 세팅해준다.
 
-* 알아서 세팅해주기 때문에
+* 이런 편리함 때문에 @EnableWebMvc 어노테이션을 사용한다.
 
-* @EnableWebMvc 어노테이션을 사용하는 것이다.
-
-<br>
-
-* 그로인해
-
-* 프로그래머는 보다 편하게 
-
-* 프로그래밍을 할 수 있게 된다.
-
+---
 
 ## Code Example
 
@@ -152,31 +140,41 @@ public class WebConfig {
 }
 ```
 
-* DispactcherServlet이 
+* 일반적으로 @EnableWebMvc은 
 
-* WebApplication을 사용하는데
+  WebConfig와 같은 Config 파일에서 사용된다.
 
-* 사용하는 Configuration 파일이
+* 여기서 WebConfig 파일의 존재 목적은 다음과 같다.
 
-* WebConfig인 상황이다.
+* DispactcherServlet을 생성할 때
 
-* 위 문장이 이해가 가지 않는다면
+  생성자 인자로 WebApplicationContext을 전달한다.
 
-* 반드시 [DispatcherServlet가 WebApplicationContext를 생성하는 2가지 방법]({{site.url}}/Spring-DispatcherServlet/)글을 읽길 바란다.
+* 그런데 WebApplicationContext은
+
+  어떤 Config 파일을 사용할 지 명시해줘야 하는데
+
+  그 Config 값으로 일반적으로는 WebConfig를 지정한다.
+
+* 만약 위 문장이 이해가 가지 않는다면
+
+  반드시 [DispatcherServlet가 WebApplicationContext를 생성하는 2가지 방법]({{site.url}}/Spring-DispatcherServlet/) 글을 읽길 바란다.
+
+
 
 ### @EnableWebMvc 설정 X
 
 * @EnableWebMvc을 사용하지 않은 상태로
 
-* Application을 실행시키고 
+  Application을 실행시키고 
 
-* DispatcherServlet.class에서
+  DispatcherServlet.class에서
 
-* doService()에
+  doService()에
 
-* Break Point를 걸고 값을 체크해보자.
+  Break Point를 걸고 값을 체크해보자.
 
-* Reference : org.springframework.web.servlet.DispatcherServlet#doService
+  Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
 ![](/assets/img/spring/Spring-Enable-MVC-Annotation_1.png)
 
@@ -188,31 +186,31 @@ public class WebConfig {
 
 * 이번에는 
 
-* @EnableWebMvc을 사용해보자.
+  @EnableWebMvc을 사용해보자.
 
 * 위와 마찬가지로
 
-* DispatcherServlet.class에서
+  DispatcherServlet.class에서
 
-* doService()에
+  doService()에
 
-* Break Point를 걸고 값을 체크해보자.
+  Break Point를 걸고 값을 체크해보자.
 
-* Reference : org.springframework.web.servlet.DispatcherServlet#doService
+  Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
 ![](/assets/img/spring/Spring-Enable-MVC-Annotation_2.png)
 
 * @EnableWebMvc을 사용하였기 때문에
 
-* Interceptors가 등록되어있다.
+  Interceptors가 등록되어있다.
 
 * 그리고 등록되어 있는
 
-* 2개의 Interceptors는 
+  2개의 Interceptors는 
 
-* **ConversionServiceExposingInterceptor**와 
+  **ConversionServiceExposingInterceptor**와 
 
-* **ResourceUrlProviderExposingInterceptor**다.
+  **ResourceUrlProviderExposingInterceptor**다.
 
 <br>
 
@@ -220,44 +218,42 @@ public class WebConfig {
 
 * 이 글을 꼼꼼히 봤다면
 
-* getInterceptors()함수에서
+  getInterceptors()함수에서
 
-* **ConversionServiceExposingInterceptor**와 
+  **ConversionServiceExposingInterceptor**와 
 
-* **ResourceUrlProviderExposingInterceptor**를 등록하는 코드를 봤을 것이다.
+  **ResourceUrlProviderExposingInterceptor**를 등록하는 코드를 봤을 것이다.
+
+  Reference : [@EnableWebMvc]({{site.url}}/Spring-Enable-MVC-Annotation/#enablewebmvc)
 
 
 ## Summary
 
-* @EnableWebMvc 어노테이션을 
+* @EnableWebMvc 어노테이션 사용 유무에 따른 
 
-* 사용하는 이유와
-
-* 사용하였을 때
-
-* Application이 어떻게 바뀌는지 학습했다.
+  Application의 변화에 대해 살펴봤다.
 
 <br>
 
 * 이 글에서는
 
-* Interceptors 필드만 살펴봤지만
+  Interceptors 필드만 살펴봤지만
 
-* 사실 엄청나게 많은 Config 값이 세팅된다.
+  사실 엄청나게 많은 Config 값이 세팅된다.
+
+<br>
 
 * 어떤 값이 세팅되는지
 
-* 모두 아는건 가능하지도 않고
-
-* 그럴 필요도 없다.
+  모두 아는건 가능하지도 않고 그럴 필요도 없다.
 
 <br>
 
 * 중요한건
 
-* @EnableWebMvc 어노테이션이
+  @EnableWebMvc 어노테이션이
 
-* 하는 역할이 무엇인지에 대해 아는 것이다.
+  하는 역할이 무엇인지에 대해 아는 것이다.
 
 ---
 
