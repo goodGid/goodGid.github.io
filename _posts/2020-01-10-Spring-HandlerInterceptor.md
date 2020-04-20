@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring에서 Handler Interceptor 개념 및 구현해보기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content
@@ -10,98 +9,67 @@ author: goodGid
 
 > 이 글의 코드 및 정보들은 강의를 들으며 정리한 내용을 토대로 작성하였습니다.
 
+## Concept
 
-## 개념
-
-* Interceptor는 
-
-* 쉽게 말하면
-
-* 2가지 역할을 해준다.
+* Interceptor 2가지 역할을 해준다.
 
 1. Handler에 요청을 전달하기 전/후로 **추가적인 작업**이 가능하다.
 
 2. View 렌더링이 된 후 클라이언트에게 Reponse를 전달하기 전에 **추가적인 작업**이 가능하다.
 
 
-## Servlet Filter와의 차이점
 
-* Spring에는 Filter라는 개념이 존재한다.
+---
 
-* Filter 또한 Interceptor와 비슷한 역할을 한다.
-
-<br>
-
-* 이게 정답이다라고 할 순 없지만
-
-* 필자가 생각하기에 
-
-* 다음과 같은 차이가 있다 생각한다.
-
-
-
-
-
-
-
-
-
+## Interceptor vs Filter
 
 > 영향 범위 : Filter > Interceptor
 
 ![](/assets/img/spring/Spring-HandlerInterceptor_1.png)
 
-* Filter가
+* Filter -> DispactcherServlet -> Interceptor 순서로 요청이 전달된다.
 
-* Handler Interceptor보다 
+* 즉 Filter가 Interceptor보다 클라이언트의 요청을 먼저 받아들인다.
 
-* 클라이언트의 요청을 
+---
 
-* 먼저 받아들인다.
 
-<br>
+* 정답은 아니지만
 
-* 그리고 Spring의 핵심 Servlet인
+  필자가 생각하기에 
 
-* DispactcherServlet으로 가게 된다.
+  DispactcherServlet를 기준으로
 
-<br>
+  Spring과 관련된 작업이 아니라면 
+  
+  (= Web에 대한 전반적인 작업)
 
-* 그렇기 때문에
+  Filter에서 구현하는게 적합하다고 생각한다.
 
-* Spring에 관련된 작업이 아닌
 
-* Web과 관련된
-
-* 전반적인 작업이 필요하다면
- 
-* Servlet Filter에 구현하는게 적합하다 생각한다.
-
-### Example
+### Q&A
 
 > Questioon
 
 * 만약 XSS 요청에 대한 
 
-* Validate 작업을 진행한다면
+  Validate 작업을 진행한다면
 
-* Interceptor와 Filter 중
+  Interceptor와 Filter 중
 
-* 어느 곳에 Validate를 진행할 것인가?
+  어느 곳에 Validate를 진행할 것인가?
 
 > Answer
 
 * 특정 Handler에 대한 전처리 작업이라기 보다는
 
-* Web에 대한 전반적인 부분에 대해
-
-* Validate가 필요하기 때문에
-
-* Filter에서 Validation을 진행한다.
+  Web 전반적인 부분에 대한 Validation이기 때문에 Filter에서 진행한다.
 
 
 
-## Handler Interceptor 동작 순서 
+---
+
+## Interceptor 동작 순서 
 
 * Interceptor의 Process에 대해 알아보자.
 
@@ -117,54 +85,42 @@ author: goodGid
 
 * 요청을 처리할 Handler에 가기전에
 
-* Interceptor의 preHandelr() 메소드가 호출된다.
+  Interceptor의 preHandelr() 메소드가 호출된다.
 
 > Step 2
 
 * 요청을 처리할 수 있는 Handler가 
 
-* 요청을 처리하고 
+  요청을 처리하고 retrun을 하게 되면
 
-* retrun을 하게 되면
-
-* Interceptor의 postHandler() 메소드가 호출된다.
+  Interceptor의 postHandler() 메소드가 호출된다.
 
 > Step 3
 
 * Interceptor의 posetHandler() 메소드에
 
-* 정의된 모든 작업이 끝나면
-
-* View를 렌더링한다.
+  정의된 모든 작업이 끝나면 View를 렌더링한다.
 
 > Step 4
 
 * View 렌더링이 끝나면
 
-* Interceptor의 afterCompletion() 메소드가 호출된다.
+  Interceptor의 afterCompletion() 메소드가 호출된다.
 
 > Step 5
 
 * Interceptor의 afterCompletion() 메소드에
 
-* 정의된 모든 작업이 끝나면
-
-* 클라이언트에게 최종적으로 
-
-* Response를 전달한다.
+  정의된 모든 작업이 끝나면 클라이언트에게 최종적으로 Response를 전달한다.
 
 
-### 2개 이상의 Interceptor일 경우
+### Multi Interceptor
 
 * 2개 이상의 Interceptor가 
 
-* 등록이 되어있다는 가정하에 
+  등록이 되어있는 상황에서
 
-* 요청이 들어오면 
-
-* 어떤 순서로 
-
-* Interceptor가 동작하는지 알아보자.
+  각 Interceptor가 어떻게 동작하는지 알아보자.
 
 ```
 1-1. preHandler 1 
@@ -179,37 +135,25 @@ author: goodGid
 
 * 전체적인 Process는 
 
-* Interceptor가 1개일 경우와 동일하다.
+  Interceptor가 1개일 경우와 동일하지만
 
-<br>
+  preHandler / postHandelr / afterCompletion 메소드의 호출이 뒤섞이게 된다.
 
-* 차이점은 
+* 만약 preHandler가 먼저 호출되면
 
-* 각 Interceptor의 
+  postHandelr / afterCompletion 메소드는 나중에 호출된다.
 
-* preHandler / postHandelr / afterCompletion 메소드가 호출되는 
 
-* 타이밍이 다르다는 점이다.
-
-<br>
-
-* preHandler가 먼저 호출되면
-
-* postHandelr / afterCompletion 메소드는 나중에 호출된다.
-
+---
 
 
 ## Example Code
 
-* 실제로 코드를 통해
+### Interceptor
 
-* 위에서 학습한 개념을 확인해보자.
+* preHandler / postHandelr / afterCompletion 
 
-### Interceptor Code
-
-* preHandler / postHandelr / afterCompletion 메소드마다
-
-* Parameter가 다르다.
+  각 메소드마다 Parameter가 다르다.
 
 > GreetingInterceptor
 
@@ -401,42 +345,37 @@ public class WebConfig implements WebMvcConfigurer {
 
 * Test Code를 실행시키면
 
-* Interceptor가 실제로 
+  Interceptor가 실제로 
 
-* 학습한대로 동작하는지 확인할 수 있다.
+  학습한대로 동작하는지 확인할 수 있다.
 
+
+---
 
 ## Summary
 
-* Interceptor의 개념을 알아봤다.
+* Interceptor 개념
 
-* 그리고 2개의 Interceptor를 등록한 후
+  Interceptor 동작 순서
 
-* 실제로 TC를 실행시켜
+  Interceptor vs Filter 차이점
 
-* 어떤 순서로 동작하는지 알아봤다.
+  Multi Interceptor 상황 속에서
 
-<br>
-
-* 이 글에서는 
-
-* preHandler / postHandelr / afterCompletion 메소드의
-
-* 각 역할에 대해
-
-* 깊게 다루진 않았다.
-
-* 다른 자료를 참고해서 개념을 익혀두기로 하자.
+  각 Interceptor가 어떤 순서로 동작하는지에 대해 알아봤다.
 
 <br>
 
-* Interceptor와 Filter의 차이에 대해서도 
+* 또한 preHandler / postHandelr / afterCompletion 
 
-* 아주 간략하게 언급을 하고 지나쳤다.
+  각 메소드마다 Parameter가 다른 이유에 대해서도 알아봤다.
 
-* 이 부분에 대해서도
+<br>
 
-* 다른 자료를 참고해서 개념을 익혀두기로 하자.
+* 이 글에서 다룬 Interceptor에 개념만 숙지하고 있으면
+
+  Interceptor를 사용하는데 있어 충분하지 않을까 생각한다.
+
 
 ---
 
