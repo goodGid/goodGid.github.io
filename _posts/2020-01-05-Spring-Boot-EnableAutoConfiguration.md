@@ -2,7 +2,6 @@
 layout: post
 title:  " @EnableAutoConfiguration 어노테이션을 선언하면 내부적으로 어떤 일이 일어날까? "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content
@@ -14,9 +13,7 @@ author: goodGid
 
 * @EnableAutoConfiguration 어노테이션을
 
-* 선언하면
-
-* 어떤 일이나는지 알아보자.
+  선언하면 어떤 일이나는지 알아보자.
 
 
 
@@ -28,11 +25,11 @@ author: goodGid
 
 * 가장 흔하게 볼 수 있는 환경은
 
-* 스프링부트 환경에서
+  스프링부트 환경에서
 
-* **@SpringBootApplication** 어노테이션
+  **@SpringBootApplication** 어노테이션
 
-* 내부에 메타 어노테이션에서 찾을 수 있다.
+  내부에 메타 어노테이션에서 찾을 수 있다.
 
 
 > GidhubApplication.java
@@ -63,11 +60,11 @@ public @interface SpringBootApplication {
 ```
 
 
+---
+
 ## Dependency 추가
 
-* @EnableAutoConfiguration 어노테이션을 사용하기 위한
-
-* dependency를 추가해보자.
+* @EnableAutoConfiguration 어노테이션을 사용하기 위한 dependency를 추가해보자.
 
 > pom.xml
 
@@ -81,27 +78,25 @@ public @interface SpringBootApplication {
 </dependencies>
 ```
 
-* 다음과 같이 
-
-* dependency를 추가한다.
+* 다음과 같이 dependency를 추가한다.
 
 <br>
 
 * 그러면 자동적으로 
 
-* Spring에 필요한 
+  Spring에 필요한 
 
-* dependency들이 같이 import된다.
+  dependency들이 같이 import 된다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_1.png)
 
 * 많은 dependency 중에서
 
-* spring-boot-autoconfigure-2.2.2.release.jar를 살펴보자.
+  spring-boot-autoconfigure-2.2.2.release.jar를 살펴보자.
 
 
 
-### spring-boot-autoconfigure-2.2.2.release.jar
+### spring-boot-autoconfigure
 
 * spring-boot-autoconfigure-2.2.2.release.jar의 구성은 다음과 같다.
 
@@ -109,31 +104,27 @@ public @interface SpringBootApplication {
 
 <br>
 
-### spring.factories
+#### spring.factories
 
-* spring-boot-autoconfigure-2.2.2.release.jar 파일 내부에서
-
-* META-INF/spring.factories는 다음과 같다.
+* spring-boot-autoconfigure-2.2.2.release.jar / META-INF / spring.factories는 다음과 같다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_3.png)
 
 * Dependency를 추가하는
 
-* 일련의 과정을 영상으로 확인하고 싶다면
+  일련의 과정을 영상으로 확인하고 싶다면
 
-* 아래 영상을 다운받아서 보자.
+  아래 영상을 다운받아서 보자.
 
-* [Dependency 영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_1.mp4) 다운로드
+  [Dependency 영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_1.mp4) 다운로드
 
 
 
 ## 동작 과정
 
-* 본격적으로 
-
 * @EnableAutoConfiguration을 선언하면
 
-* 어떤 일이 발생하는지 알아보자.
+  어떤 일이 발생하는지 알아보자.
 
 
 
@@ -144,13 +135,13 @@ public @interface SpringBootApplication {
 @SpringBootApplication
 public class GidhubApplication {
     public static void main(String[] args) {
-        // Step into SpringApplication
+        // Step into SpringApplication !!!
         SpringApplication.run(GidhubApplication.class, args);
     }
 }
 ```
 
-> SpringApplication#SpringApplication()
+> SpringApplication.class -> SpringApplication()
 
 ``` java
 public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySources) {
@@ -159,7 +150,7 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
     this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
     this.webApplicationType = WebApplicationType.deduceFromClasspath();
 
-    // Step into getSpringFactoriesInstances()
+    // Step into getSpringFactoriesInstances() !!!
     setInitializers(
         (Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class)
     );
@@ -170,13 +161,15 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 ```
 
 
-> SpringApplication#getSpringFactoriesInstances()
+> SpringApplication.class -> getSpringFactoriesInstances()
 
 ``` java
-private <T> Collection<T> getSpringFactoriesInstances(Class<T> type, Class<?>[] parameterTypes, Object... args) {
+private <T> Collection<T> getSpringFactoriesInstances(
+    Class<T> type, Class<?>[] parameterTypes, Object... args) {
+
     ClassLoader classLoader = getClassLoader();
 
-    // Step into SpringFactoriesLoader.loadFactoryNames()
+    // Step into SpringFactoriesLoader.loadFactoryNames() !!!
     Set<String> names = 
     new LinkedHashSet<>(SpringFactoriesLoader.loadFactoryNames(type, classLoader));
 
@@ -188,7 +181,7 @@ private <T> Collection<T> getSpringFactoriesInstances(Class<T> type, Class<?>[] 
 
 
 
-> SpringFactoriesLoader#loadFactoryNames()
+> SpringFactoriesLoader.class -> loadFactoryNames()
 
 ``` java
 public static List<String> loadFactoryNames(
@@ -230,80 +223,72 @@ private static Map<String, List<String>> loadSpringFactories(@Nullable ClassLoad
 }
 ```
 
-* loadSpringFactories() 메소드 안에서
+* loadSpringFactories() 메소드에
 
-* Break Point를 걸고
+  Break Point를 걸고
 
-* Debug를 하다보면
+  Debug를 하다보면
 
-* 다음과 같은 화면을 볼 수 있다.
+  다음과 같은 화면을 볼 수 있다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_4.png)
 
-* factoryTypeName = <br> **org.springframework.boot.autoconfigure.EnableAutoConfiguration**
+* factoryTypeName =
 
-* factoryImplementationName = <br> **org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration**
+  **org.springframework.boot.autoconfigure.EnableAutoConfiguration**
+
+* factoryImplementationName =
+
+  **org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration**
 
 <br>
 
 * 즉 **spring.factoires**에 명시되어 있는 
 
-* 무수히 많은 값들을
+  무수히 많은 값들을
 
-* while loop를 통해 읽어온다.
+  while loop를 통해 읽어온다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_5.png)
 
 * 그리고 그 중에 
 
-* org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration 클래스도
+  org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration 클래스도
 
-* 읽어와 등록하게 된다.
+  읽어와 등록하게 된다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_6.png)
 
 <br>
 
-* [동작 과정]({{site.url}}/Spring-Boot-EnableAutoConfiguration/#동작-과정) 내용을
+* 등록이 되어지는 일련의 과정을
 
-* 영상을 통해 보고 싶다면 
+  영상을 통해 보고 싶다면 
 
-* 아래 링크에서 다운을 받아보자.
-
-* [@EnableAutoConfiguration 선언 시 동작 과정](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_2.mp4) 다운로드
+  아래 링크에서 다운을 받아보자.
+  
+  [@EnableAutoConfiguration 선언 시 동작 과정](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-Boot-EnableAutoConfiguration_2.mp4) 다운로드
 
 
 
 
 ## Summary
 
-* @EnableAutoConfiguration을 사용하면
+* Spring Boot 환경에서 
 
-* 프로그래머는 편하게
+  @EnableAutoConfiguration을 사용하면
 
-* 프로그래밍을 할 수 있음을 알아봤다.
+  자동으로 다양한 Config들이 설정되는 과정을 살펴봤다. 
 
-<br>
+* 그렇기 때문에 
 
-* 그 이유는 
+  Spring Boot에서는 
 
-* 스프링 부트가
+  Spring MVC에 비해 특별한 설정이 없이 
 
-* 자동으로 다양한 Config들을 
+  손쉽게 프로그래밍이 가능해짐을 알 수 있었다.
+  
 
-* 세팅해주기 때문이다.
-
-<br>
-
-* 그리고 그런 Config들이 
-
-* 어떠한 과정을 통해
-
-* 등록되는지
-
-* 직접 Debug를 하면서
-
-* 알아봤다.
 
 ---
 
