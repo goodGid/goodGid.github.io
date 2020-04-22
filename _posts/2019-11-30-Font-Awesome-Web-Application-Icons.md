@@ -13,7 +13,7 @@ author: goodGid
 
   Home, Archives, Categories 등등
 
-  이 이미지 아이콘들 어디서 갖고오는거지?라는 궁금증이 생겼다.
+  이 Image Icon들을 어디서 갖고오는거지? 라는 궁금증이 생겼다.
 
 * 바로 Chrom 개발자 도구(cmd + option + i)를 이용해 확인을 했다.
 
@@ -24,7 +24,7 @@ author: goodGid
 
 ## Code Tracking
 
-* **.fa** 속성이 이미지를 그려주는건 알았다.
+* **.fa** 속성이 Image를 그려주는건 알았다.
 
 * 그리고 그 속성은
 
@@ -64,12 +64,12 @@ author: goodGid
 
   font-awesome.min.css 파일을 가져오고
 
-  그 파일이 Blog Header에서 사용하는 이미지를 제공한다.
+  그 파일이 Blog Header에서 사용하는 Image를 제공한다.
 
 * 궁금증이 해결되었다.
 
 ---
 
-* 그리고 이런 아이콘은 **Font Awesome Icon** 이라고 부른다.
+* 그리고 이런 Icon은 **Font Awesome Icon** 이라고 부른다.
 
-* 아이콘과 관련해서는 [Font Awesome Web Application Icons](https://www.w3schools.com/icons/fontawesome_icons_webapp.asp)와 [fontawesome](https://fontawesome.com/) 사이트를 참고하면 좋을 듯 싶다.
+* Icon과 관련해서는 [Font Awesome Web Application Icons](https://www.w3schools.com/icons/fontawesome_icons_webapp.asp)와 [fontawesome](https://fontawesome.com/) 사이트를 참고하자.
