@@ -2,47 +2,33 @@
 layout: post
 title:  " Font Awesome Web Application Icons "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content
 {:toc}
 
-* 블로그 header에 
+## Curiosity
 
-* 새로운 탭을 추가하고 싶어서 보다보니
+* Blog Header를 보다보니
 
-* 문득 이런 궁금증이 생겼다.
+  Home, Archives, Categories 등등
 
-<br>
+  이 이미지 아이콘들 어디서 갖고오는거지?라는 궁금증이 생겼다.
 
-* 이 이미지 아이콘들 어디서 갖고오는거지?
-
-* ex) Home, Archives, Categories 등등
-
-<br>
+* 바로 Chrom 개발자 도구(cmd + option + i)를 이용해 확인을 했다.
 
 
 
 
+---
 
+## Code Tracking
 
-
-* 궁금증이 생겨서 
-
-* 바로 Chrom에서
-
-* *cmd + option + i* 를 통해 소스코드를 봤다.
-
-<br>
-
-* 그리고 차근차근 파악해봤다.
-
-* 우선 **.fa** 속성이 이미지를 그려주는건 알았다.
+* **.fa** 속성이 이미지를 그려주는건 알았다.
 
 * 그리고 그 속성은
 
-* font-awesome.min.css 파일에 있는 것도 알았다.
+  font-awesome.min.css 파일에 있는 것도 알았다.
 
 ![](/assets/img/posts/Font-Awesome-Web-Application-Icons_1.png)
 
@@ -52,42 +38,38 @@ author: goodGid
 
 * 내가 추가해준적이 없는데...?
 
-* 그래서 그 파일의 출처를 다시 찾아봤다.
+* 파일의 출저를 밝히기 위해 
 
-<br>
-
-* 그리고 답을 찾았다.
-
-* head.html 파일을 보니
-
-* 다음과 코드가 있었다.
+  head.html 파일을 보니 다음과 같은 코드가 있었다.
 
 ``` html
 <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 ```
 
-* 그리고
+<br>
 
-* 실제로 Network 탭에서 
+* 그리고 브라우저 로딩 시 Network 탭을 통해
 
-* 브라우저가 로딩될 때 
-
-* font-awesome.min.css 파일이 
-
-* Load 되는것을 확인하였다.
+* font-awesome.min.css 파일이 Load 되는것을 확인하였다.
 
 ![](/assets/img/posts/Font-Awesome-Web-Application-Icons_2.png)
 
-<br>
 
-* 궁금증이 풀린 필자는
 
-* 마음이 편안해졌다.
+---
 
-<br>
+## Summary
 
-* 추가적으로
+* CDN을 통해 
 
-* 다양한 아이콘을 사용하고 싶다면
+  font-awesome.min.css 파일을 가져오고
 
-* [Font Awesome Web Application Icons](https://www.w3schools.com/icons/fontawesome_icons_webapp.asp) 사이트를 참고하자 !
+  그 파일이 Blog Header에서 사용하는 이미지를 제공한다.
+
+* 궁금증이 해결되었다.
+
+---
+
+* 그리고 이런 아이콘은 **Font Awesome Icon** 이라고 부른다.
+
+* 아이콘과 관련해서는 [Font Awesome Web Application Icons](https://www.w3schools.com/icons/fontawesome_icons_webapp.asp)와 [fontawesome](https://fontawesome.com/) 사이트를 참고하면 좋을 듯 싶다.
