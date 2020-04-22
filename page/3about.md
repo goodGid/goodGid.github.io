@@ -9,35 +9,85 @@ type: page
 * content
 {:toc}
 
-
-
 ## Who am i
 
-* Major : Computer Science Information Engineering 
+* LINE Pay <i class="fa fa-credit-card"></i>에서 BackEnd 개발을 하고 있습니다.
 
-* Mail : gy8971@gmail.com
+  ( Jan 2019 ~ Present )
 
-* Number : 010 - 6286 - 8971
+* <i class="fa fa-edit"></i>: 기록 하는 걸 좋아합니다.
+
+* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실형 개발자 입니다.
+
+* <i class="fa fa-desktop"></i>: Blog에 보고 듣고 느끼고 배운걸 남기는 재미로 살아갑니다.
+
+
 
 ---
 
-## SNS
+## Contact
 
-* [GitHub](https://github.com/goodGid)
-* [Facebook](https://www.facebook.com/sgy8971)
-* [Instagram](https://www.instagram.com/___gid/)
-* [BOJ](https://www.acmicpc.net/user/sgy8971)
-* [Linkedin](https://www.linkedin.com/in/kiyong-shin-a498a2142/)
-* [Kakao](https://open.kakao.com/o/sD37fM3)
+* GitHub : 
+<a href="https://github.com/{{site.github_username}}" title="GitHub">
+<i class="fa fa-github" aria-hidden="true"></i>
+</a>
+
+* Linkedin : 
+<a href="https://www.linkedin.com/in/{{site.linkedIn_username}}" title="LinkedIn">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+
+* Facebook : 
+<a href="https://www.facebook.com/{{site.facebook_username}}" title="Facebook">
+<i class="fa fa-facebook-official" aria-hidden="true" font-size="100px"></i>
+</a>
+
+* Instagram :
+<a href="https://www.instagram.com/{{site.insta_username}}" title="Instagram">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+</a>
+
+* BOJ :
+<a href="https://www.acmicpc.net/user/sgy8971" title="BOJ">
+<i class="fa fa-code" aria-hidden="true"></i>
+</a>
+
+* Kakao :
+<a href="https://open.kakao.com/o/sD37fM3" title="Kako">
+<i class="fa fa-commenting" aria-hidden="true"></i>
+</a>
+
+* <i class="fa fa-envelope-o" aria-hidden="true"></i> : gy8971@gmail.com
 
 --- 
 
-## Writing
 
-    {% include opinion.html %}
+## Writing Attitude
+
+{% include opinion.html %}
 
 
-## History
+
+
+---
+
+
+
+## DevStory
+
+* [2020 Dev History]({{site.url}}/2020-Retrospective)
+
+* [2019 Dev History]({{site.url}}/2019-Retrospective)
+
+
+
+---
+
+
+
+
+
+## Time Line
 
 ### 2020
 
@@ -178,6 +228,8 @@ type: page
 
 ---
 
+
+
 ## Prize
 
 * 　18. 12. 17 [SKT X 한국관광공사 앱 공모전 장려상 수상]({{site.url}}/2018-Korea-Tour-App-Competition/)
@@ -195,7 +247,11 @@ type: page
 * 　16. 10. 01 ACM-ICPC 교내 우수상
 
 
+
 ---
+
+
+
 
 ## Certificate
 
@@ -209,7 +265,12 @@ type: page
 6. 정보처리산업기사 (15. 06. 05) - 15631000141Z
 
 
+
 ---
+
+
+
+
 
 ## Travel
 
@@ -241,7 +302,12 @@ type: page
 
 * 　~ 2014 North of Korea
 
+
+
+
 ---
+
+
 
 ## E.T.C
 
@@ -251,7 +317,13 @@ type: page
 
 * 동문회 홈페이지 관리
 
+
+
 ---
+
+
+
+
 
 ## Comments
 
