@@ -161,3 +161,11 @@ author: goodGid
 * [HTTP를 사용한 특정 범위 요청 : 서버에게 특정 범위를 요구하다.]({{site.url}}/HTTP-Range-Request/)
 
 * [유니코드와 UTF-8 / UTF-16]({{site.url}}/Unicode-And-UTF-Encoding/)
+
+> 200420 ~ 200426
+
+* [Java Reflection으로 Field 값(Value) 참조하기]({{site.url}}/Java-Reflection-Field-Value/)
+
+* [String.class의 equals() 메소드 알아보기]({{site.url}}/Java-Object-String-Equlas/)
+
+* [HTTPS를 사용하면 클라이언트는 데이터를 암호화해서 전달할 필요가 있을까?]({{site.url}}/HTTPS-Used-In-Practice/)
