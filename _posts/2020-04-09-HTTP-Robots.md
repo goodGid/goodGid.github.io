@@ -251,6 +251,97 @@ http://www.goodgid.com/tmprint/logo.img
 
 
 
+--
+
+## Example
+
+* To : All robot 
+
+  Goal : 모든 문서 접근 허락
+
+``` js
+User-agent: *
+Allow: /
+```
+
+---
+
+* To : All robot 
+
+  Goal : 모든 문서 접근 허락 X
+
+``` js
+User-agent: *
+Disallow: /
+```
+
+---
+
+
+* To : All robot 
+
+  Goal : 3개의 접근만 차단
+
+``` js
+User-agent: *
+Disallow: /a/
+Disallow: /b/
+Disallow: /c/
+```
+
+---
+
+* To : All robot 
+
+  Goal : 특정 **파일** 접근 차단
+
+``` js
+User-agent: *
+Disallow: /directory/index.html
+```
+
+---
+
+
+* To : 특정 robot
+
+  Goal : 모든 접근 차단
+
+``` js
+User-agent: badBot
+Disallow: /
+```
+
+---
+
+* To : 특정 robot 
+
+  Goal : 특정 **디렉토리** 접근 차단
+
+``` js
+User-agent: badBot
+User-agent: googlebot
+Disallow: /private/
+```
+
+---
+
+* To : All robot, 특정 robot 
+
+  Goal : 각 robot에 맞는 설정
+
+``` js
+User-agent: googlebot       // googlebot robot만 적용
+Disallow: /private/         // 해당 디렉토리 접근 차단
+
+User-agent: googlebot-news  // googlebot-news robot만 적용
+Disallow: /                 // 모든 디렉토리 접근 차단
+
+User-agent: *               // 모든 로봇 적용
+Disallow: /something/       // 특정 디렉토리 접근 차단
+```
+
+
 ---
 
 
