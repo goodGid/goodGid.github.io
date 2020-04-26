@@ -1,96 +1,121 @@
 ---
 layout: post
-title:  " Ubuntu :: PPA(Personal Package Archive) "
-categories: Technology
-tags: Technology
+title:  " [Ubuntu] PPA(Personal Package Archive) "
+categories: Linux
 author: goodGid
 ---
 * content
 {:toc}
 
+## Ubuntu Problem
 
-## What is PPA(Personal Package Archive)?
+* 일반적으로 [Ubuntu S/W 센터](https://ubuntu.com/blog/tag/ubuntu-software-center)에서 다운로드 받을 수 있는 각종 패키지의 버전들은 최신이 아니다.
 
-일반적으로 Ubuntu 소프트웨어 센터에서 다운로드 받을수 있는 각종 패키지의 버전들은 최신의 것들이 아니다. 
+* Ubuntu는 6개월 주기로 새로운 버전이 출시된다.
 
-우분투는 6개월 주기로 새로운 버전이 출시된다.
+* 그렇기 때문에 
 
-이렇게 새로운 버전이 나올때마다 
+  [Ubuntu S/W 센터](https://ubuntu.com/blog/tag/ubuntu-software-center)에서 
 
-사용하던 소프트웨어들도 함께 최신버전으로 탑재된다. 
+  사용하는 S/W의 최신 버전을 다운받기 위해서는 6개월을 기다려야 한다.
 
-그렇게 되면 소프트웨어들도 6개월씩 기다려야하게 되는 경우가 생긴다.
+  즉 기존에 사용하던 프로그램이 이미 업데이트 되었어도 6개월을 기다려야 한다.
 
-예를 들어
+* 이와 같은 문제를 극복하기 위한 방법이 **PPA(Personal Package Archive)**이다. 
 
-기존에 사용하던 프로그램이 이미 업데이트 되었는데도
 
-6개월이나 기다려야 된다.
 
-<br>
 
-이를 극복하기 위한 방법으로 `PPA(Personal Package Archive)`를 통해 최신 버전들을 다운로드 할 수 있다.
 
-<br>
+## Ubuntu S/W 센터
 
-그렇다면 PPA는 무엇일까?
+* Ubuntu에서 S/W를 설치하는 것은 윈도우나 Mac과는 다르다. 
 
-Ubuntu에서 소프트웨어를 설치하는 것은 윈도우나 Mac과는 다르다. 
+* 인터넷에서 파일을 찾아 다운받지 않고 
 
-인터넷에서 일일이 패키지를 찾아서 다운받지 않고 
+  Ubuntu S/W 센터에서 원하는 모든 것들을 검색하고 설치할 수 있다.
 
-Ubuntu 소프트웨어 센터에서 
+* 게다가 Ubuntu S/W 센터에 있는 S/W들은 
 
-원하는 모든 것들을 검색하고 설치할 수 있다.
+  기본적으로 Ubuntu 팀에 의해서 미리 안전하고 안정적이라고 판단되는 것들만 모여있기 때문에
 
-<br> 
+  아무 웹사이트에서 다운받은 파일들보다 훨씬 안전한다.
 
-게다가 저장소에 있는 소프트웨어들은 
+* 하지만 이것이 항상 좋기만 한 것은 아니다.
 
-아무 웹사이트에서 다운받은 EXE 파일들보다 훨씬 안정성있다. 
+  바로 S/W의 최신버전이 나와도 
 
-기본적으로 Ubuntu 소프트웨어 센터의 소프트웨어들은 
+  Ubuntu의 다음버전까지 기다려야 하기 때문이다.
 
-우분투 팀에 의해서 미리 안전하고 안정적이라고 판단되는 것들만 모여있기 때문이다.
-
-<br>
-
-하지만 이것이 항상 좋기만 한 것은 아니다.
-
-바로 소프트웨어의 최신버전이 나와도 
-
-우분투의 다음버전까지 기다려야 하기 때문이다.
-
-그래서 필요한 기능이 바로 PPA이다.
-
+  그래서 필요한 기능이 바로 PPA이다.
 
 
 ---
 
 
-## PPA 사용하기
+## PPA
+
+* PPA(Personal Package Archive)를 통해 최신 버전을 다운받을 수 있다.
 
 
-* 저장소 추가하기
+### PPA 사용 방법
 
-sudo add-apt-repository 저장소이름
 
-<br>
+[launchpad](https://launchpad.net/)에서 검색을 한다.
+  
 
-* 저장소 업데이트
 
+
+``` shell
+# 저장소 추가
+# 저장소에 추가된 PPA_Info는 apt-get update 명령어를 통해 자동으로 Update 된다.
+# This command adds the PPA repository to the list.
+sudo add-apt-repository <PPA_info> 
+
+# 저장소 업데이트
+# This command updates the list of the packages that can be installed on the system.
 sudo apt-get update
 
-<br>
+# 프로그램 설치
+# This command installs the package.
+sudo apt-get install <package_in_PPA>
 
-* 설치
+# 저장소 삭제
+sudo add-apt-repository --remove <PPA_info>
+```
 
-sudo apt-get install XXXXX
+
+### 용어 해설
+
+> PPA_Info
+
+* PPA_info가 ppa:goodgid/gidhub 라고 한다면 
+
+  다음과 같이 해석하면 된다.
+
+  goodgid = User
+
+  gidhub = 해당 User의 패키지 모음 저장소명
+
+* 관련 Repository는 [https://launchpad.net/](https://launchpad.net/)에서 검색을 하면 된다.
+
+
+
 
 ---
 
-
-* 해외 PPA 검색 : [https://launchpad.net/ubuntu](https://launchpad.net/ubuntu)
+## PPA 검색
 
 * 국내 PPA 사이트 : [https://launchpad.net/~ubuntu-ko/+archive/ppa](https://launchpad.net/~ubuntu-ko/+archive/ppa)
 
+* 해외 PPA 사이트 : [https://launchpad.net/ubuntu](https://launchpad.net/ubuntu)
+
+
+
+
+
+## 참고
+
+* [Using PPA in Ubuntu Linux [Complete Guide]](https://itsfoss.com/ppa-guide/)
+
+* [[Ubuntu] 우분투 APT repository 제거하기](https://m.blog.naver.com/PostView.nhn?blogId=opusk&logNo=220986301109&proxyReferer=https:%2F%2Fwww.google.com%2F)
