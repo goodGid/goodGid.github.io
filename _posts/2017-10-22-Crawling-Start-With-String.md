@@ -1,25 +1,27 @@
 ---
 layout: post
-title:  " Crawling :: 특정 문자열 Crawling 하기 "
-categories: Technology
-tags: Crawling
+title:  " [Java] 특정 문자열 Crawling 하기 "
+categories: Crawling
 author: goodGid
 ---
 * content
 {:toc}
 
+## Goal
 
-## To do
+1. "http://"로 시작하는 URL을 Crawlling 한다.
 
-1. "http://"로 시작하는것만 Crawlling을 해보자.
+2. 그 중 유효한 URL만 파일로 생성한다.
 
-2. 1번 결과물을 파일로 저장해보자.
+
+
+
 
 ---
 
 ## Code
-``` java 
 
+``` java 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Attributes;
@@ -93,30 +95,31 @@ public class Main {
                 System.out.println("ERROR URL :: " + url);
             }
         }
-        // // [ End of Secotr 2 ]
-
+        // [ End of Secotr 2 ]
     }
 }
-
-
 ```
 
 ---
 
 ## Review
 
-* [Sector 1]은 "http://sopt.org/wp/" 사이트에서 "http://"로 시작하는 모든 값을 구한다.
+* [Sector 1]은 
 
-* [Sector 2]에서는 [Sector 1]에서 구한 값을 이용하여 "http://"로 시작하는 URL중에서 <br> 정상적으로 해당 URL 접근이 가능한  각각의 URL들만을 하나의 파일로 생성한다.
+  "http://sopt.org/wp/" 사이트에서 
+  
+  "http://"로 시작하는 모든 값을 구한다.
+
+* [Sector 2]에서는 
+
+  [Sector 1]에서 구한 값 중 유효한 URL들만 파일로 생성한다.
+
+
 
 ---
 
 ## Output
 
-{% capture images %}
-    /assets/img/posts/```_string_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
-
+![](/assets/img/posts/crawling_string_1.png)
 
 * 정상 URL 수 만큼 파일이 생성된다.
