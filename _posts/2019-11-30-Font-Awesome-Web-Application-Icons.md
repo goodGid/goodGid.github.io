@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Font Awesome Web Application Icons "
+title:  " 폰트 어썸(Font Awesome) Web Application Icons 알아보기 "
 categories: Technology
 author: goodGid
 ---

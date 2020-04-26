@@ -438,7 +438,7 @@ author: goodGid
 
 * [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
 
-* [Font Awesome Web Application Icons]({{site.url}}/Font-Awesome-Web-Application-Icons/)
+* [폰트 어썸(Font Awesome) Web Application Icons 알아보기]({{site.url}}/Font-Awesome-Web-Application-Icons/)
 
 * Kafka
 
