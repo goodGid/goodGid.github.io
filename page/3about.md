@@ -57,9 +57,22 @@ type: page
 <i class="fa fa-commenting" aria-hidden="true"></i>
 </a>
 
-* <i class="fa fa-envelope-o" aria-hidden="true"></i> : gy8971@gmail.com
+* Taling :
+<a href="{{site.url}}/Taling" title="Taling">
+<i class="fa fa-id-card-o" aria-hidden="true"></i>
+</a>
+
+* <i class="fa fa-envelope-o" aria-hidden="true"></i>: gy8971@gmail.com
+
 
 --- 
+
+## About Blog
+
+* [2020 1Q Blog 기록하기]({{site.url}}/2020-1Q-Blog/)
+
+
+---
 
 
 ## Writing Attitude
@@ -73,7 +86,7 @@ type: page
 
 
 
-## DevStory
+## Dev Story
 
 * [2020 Dev History]({{site.url}}/2020-Retrospective)
 
