@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  " AWS EC2 Time Zone 변경 "
-categories: AWS
+title:  " [Ubuntu] 우분투(Ubuntu)에서 Time Zone 변경하기 "
+categories: Linux
 author: goodGid
 ---
 * content
 {:toc}
 
-## Prologue
+## Goal
 
-* EC2에서 인스턴스 표준시간대(Time Zone)을 변경하는 법을 알아본다.
+* Ubuntu에서 표준시간대(Time Zone)을 변경하는 법을 알아보자.
 
 
 
@@ -43,7 +43,7 @@ ls /usr/share/zoneinfo
 ls /usr/share/zoneinfo/Asia
 ```
 
-![](/assets/img/aws/localtime_1.png)
+![](/assets/img/linux/Ubuntu-Change-Local-Time_1.png)
 
 ---
 
