@@ -16,9 +16,11 @@ author: goodGid
 
 ---
 
-## Time Zone
+## Set Time Zone
 
-> [Step 1] Check Current Time Zone
+### 1st Method
+
+> Step 1. Check Current Time Zone
 
 ``` js
 ubuntu@node1:~$ date
@@ -27,7 +29,7 @@ Mon Jan 8 01:00:00 UTC 2018
 
 ---
 
-> [Step 2] Find Time Zone files
+> Step 2. Find Time Zone files
 
 * 전체 시간대 탐색
 
@@ -48,7 +50,7 @@ ls /usr/share/zoneinfo/Asia
 ---
 
 
-> [Step 3] Change Local Time
+> Step 3. Change Local Time
 
 ``` js
 sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
@@ -56,7 +58,7 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 ---
 
-> [Step 4] Check the changed Time Zone
+> Step 4. Check the changed Time Zone
 
 ``` js
 ubuntu@node1:~$ date
@@ -76,4 +78,52 @@ Mon Jan 8 10:00:00 KST 2018
 ``` js
 sudo reboot
 ```
+
+
+
+---
+
+### 2st Method
+
+#### Dpkg-reconfigure
+
+* [dpkg-reconfigure](https://wiki.debianusers.or.kr/index.php?title=Dpkg-reconfigure)는 패키지가 설치된 이후에 패키지를 다시 설정한다.
+
+* 재설정을 위해서는 패키지 또는 패키지의 이름을 전달해야 한다.
+
+
+
+#### 사용법
+
+``` shell
+dpkg-reconfigure [ 옵션 ] 패키지이름
+```
+
+---
+
+> Step 1.
+
+``` shell
+sudo dpkg-reconfigure tzdata
+```
+
+---
+
+> Step 2.
+
+<img src="/assets/img/linux/Ubuntu-Change-Local-Time_2.png" alt="" style="max-width: 40%;"> 
+<img src="/assets/img/linux/Ubuntu-Change-Local-Time_3.png" alt="" style="max-width: 50%;">
+
+
+* 설정하고자하는 Time Zone을 선택한다.
+
+---
+
+> Step 3.
+
+![](/assets/img/linux/Ubuntu-Change-Local-Time_4.png)
+
+* 설정이 끝나면 변경된 Time Zone을 확인한다.
+
+
 
