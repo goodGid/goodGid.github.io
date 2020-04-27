@@ -2,19 +2,21 @@
 layout: post
 title:  " HttpMessageConverts 알아보기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content
 {:toc}
 
+## HttpMessageConverts
 
 ``` java
 @RestController
 public class UserController {
+
+    @ResponseBody 
     @PostMapping("/user")
-    public @ResponseBody User create(@RequestBody User user){
-        return null;
+    public User create(@RequestBody User user){
+        return new User();
     }
 ```
 
@@ -22,69 +24,48 @@ public class UserController {
 
 * HttpMessageConverters에는 여러 종류가 있다.
 
-* 그 중 우리가 어떤 요청을 받았는지 또는 어떤 응답을 보내야하는지에 따라 사용하는 HttpMessageConverters가 달라진다.
+* 그 중 우리가 어떤 요청을 받았는지 
+
+  또는 어떤 응답을 보내야하는지에 따라 사용하는 HttpMessageConverters가 달라진다.
+
+* 예를 들어 JSON 요청이고 JSON 본문이 들어올 경우엔
+
+  **JSONMessageConverts**가 사용되어 JSON 메세지를 User라는 객체로 변환시켜준다.
+
+* 그리고 Return 시에도 
+
+  Http는 **문자**로 통신을 하기 때문에
+
+  User 객체 자체를 Response로 내보낼 순 없다.
+
+* 그래서 User와 같은 Composition Type을
+
+  **JSONMessageConverts**를 사용하여 객체 -> 문자로 변환시켜 응답한다.
+
+* Composition Type 이란 그 안에 여러가지 프로퍼티를 갖을 수 있는 것을 뜻한다.
 
 
+---
 
+## Additional Info
 
+### @RestController
 
+* @RestController가 붙어있으면 
 
-
-
-
-```
-예를 들어 JSON 요청이고 JSON 본문이 들어왔다. 
-ContentType이 JSON이고 본문도 JSON이다.
-그러면 JSONMessageConverts가 사용되고 JSON 메세지를 User라는 객체로 Converting 해준다.
-User라는 객체 자체를 Response로 내보낼 순 없다.(Http는 다 문자이기 때문에...)
-```
-
-
-
-* 일반적으로 User처럼 Composition Type일 경우엔 JSONMessageConverts가 사용된다.
-
-* Composition Type이라는것은 그 안에 여러가지 프로퍼티를 갖을 수 있는 것을 뜻한다.
-
-``` java
-package com.journaldev.composition;
-
-public class Job {
-    private String role;
-    private long salary;
-    private int id;
-        
-    public String getRole() {
-        return role;
-    }
-    public void setRole(String role) {
-        this.role = role;
-    }
-    public long getSalary() {
-        return salary;
-    }
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    } 
-}
-```
-
-* 참고로 @RestController가 붙어있으면 @ResponseBody 어노테이션 생략이 가능하다.
+  @ResponseBody 어노테이션 생략이 가능하다.
 
 ``` java
 @RestController
 public class UserController {
+
     @PostMapping("/user")
     public User create(@RequestBody User user){
         return null;
     }
 ```
 
+---
 
 * @RestController안에 이미 @ResponseBody가 존재하기 때문이다.
 
@@ -102,7 +83,12 @@ public @interface RestController {
 }
 ```
 
-* 그러나 @RestController가 아닌 **@Controller**를 사용할 경우엔 @ResponseBody를 명시해야한다.
+---
+
+
+* 그러나 @RestController가 아닌 
+
+  **@Controller**를 사용할 경우엔 @ResponseBody를 명시해야한다.
 
 ``` java
 @Controller
@@ -113,9 +99,13 @@ public class UserController {
     }
 ```
 
-* 그렇지 않으면 ViewNameResolver가 사용되어 그 이름에 해당하는 View를 찾으려고하기 때문이다.
+* 그렇지 않으면 **ViewNameResolver**가 사용되어 
 
-* 추가적으로 만약 Return Type이 String일 경우엔 HttpMessageConverters가 아닌 **StringMessageConverts**가 사용된다.
+  그 이름에 해당하는 View를 찾으려고 하기 때문이다.
+
+* 추가적으로 만약 Return Type이 String일 경우엔 
+
+  HttpMessageConverters가 아닌 **StringMessageConverts**가 사용된다.
 
 
 ---
