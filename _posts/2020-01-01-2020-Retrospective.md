@@ -2,7 +2,6 @@
 layout: post
 title:  " 2020 Dev History "
 categories: Retrospective
-tags: Retrospective
 author: goodGid
 ---
 * content
@@ -31,17 +30,35 @@ author: goodGid
 
 
 
-## Books
+## Book
 
-* [도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문](https://book.naver.com/bookdb/book_detail.nhn?bid=14636944)
+* [카프카, 데이터 플랫폼의 최강자](https://book.naver.com/bookdb/book_detail.nhn?bid=13540082)
 
-* [모던 자바 인 액션](https://book.naver.com/bookdb/book_detail.nhn?bid=15261103)
+* [실전! 스프링 5를 활용한 리액티브 프로그래밍](https://book.naver.com/bookdb/book_detail.nhn?bid=15045543)
+
+* [Clean Code](https://book.naver.com/bookdb/book_detail.nhn?bid=7390287)
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)
+
+> To Read
+
+* [객체지향의 사실과 오해](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968)
+
+* [오브젝트 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773)
+
+* [모던 자바 인 액션](https://book.naver.com/bookdb/book_detail.nhn?bid=15261103)
 
 * [이펙티브 자바](https://book.naver.com/bookdb/book_detail.nhn?bid=14097515)
 
 * [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://book.naver.com/bookdb/book_detail.nhn?bid=15871738)
+
+* [도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문](https://book.naver.com/bookdb/book_detail.nhn?bid=14636944)
+
+* [젠킨스 마스터](https://book.naver.com/bookdb/book_detail.nhn?bid=13561615)
+
+* [젠킨스 2 시작하기](https://book.naver.com/bookdb/book_detail.nhn?bid=14636961)
+
+
 
 
 ## DevStory
@@ -169,3 +186,9 @@ author: goodGid
 * [String.class의 equals() 메소드 알아보기]({{site.url}}/Java-Object-String-Equlas/)
 
 * [HTTPS를 사용하면 클라이언트는 데이터를 암호화해서 전달할 필요가 있을까?]({{site.url}}/HTTPS-Used-In-Practice/)
+
+> 200427 ~ 200503
+
+* [무료로 도메인(Domain) 신청 & 사용하기]({{site.url}}/Free-Domain)
+
+* [Nginx 적용하기]({{site.url}}/Nginx)
