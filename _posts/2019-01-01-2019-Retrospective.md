@@ -266,7 +266,7 @@ author: goodGid
         - 2.1 UserDaoTest 다시보기
         - 2.2 UserDaoTest 개선
         - 2.3 개발자를 위한 테스팅 프레임워크 JUnit
-            - [JUnit의 예외(Exception) 테스트 작성하기]({{site.url}}/Spring-JUnit-Exception-Test/)
+            - [JUnit 예외(Exception) 테스트 작성하기]({{site.url}}/Spring-JUnit-Exception-Test/)
             - [JUnit의 동작 방식]({{site.url}}/How-JUnit-Works/)
 
 > 190722 ~ 190728
