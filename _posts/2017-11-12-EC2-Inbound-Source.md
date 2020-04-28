@@ -1,16 +1,15 @@
 ---
 layout: post
-title:  " EC2 Inbound Source "
+title:  " [AWS] EC2 Inbound Source "
 categories: AWS
 author: goodGid
 ---
 * content
 {:toc}
 
-
 ## Concept
 
-* Security에서 Rule을 변경하는데 의문점이 들었다.
+* Security에서 Rule을 변경하는데 긍금증이 생겼다.
 
 ![](/assets/img/aws/ec2_inbound_source_1.png)
 
@@ -22,14 +21,16 @@ author: goodGid
 무슨 뜻일까 ?
 ```
 
-## Solve
+## Solution
 
 * 간단히 말하면 IPv4와 IPv6를 위한 개념이다.
 
 ![](/assets/img/aws/ec2_inbound_source_2.png)
 
+*출처 : [AWS Docs : 라우팅 테이블](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)*
 
-[Comment 출처](http://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html)
+
+
 
 ---
 
