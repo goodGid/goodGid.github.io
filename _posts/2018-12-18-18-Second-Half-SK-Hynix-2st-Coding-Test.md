@@ -2,7 +2,6 @@
 layout: post
 title:  " 18 하반기 공채 SK 하이닉스(Hynix) 2차 SKCT 후기 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

@@ -321,5 +321,3 @@ author: goodGid
 * 편한 방법으로 [연락]({{stie.url}}/about/#contact)주시면 
 
 * 최대한 빠른 시간내에 답변을 드리겠습니다.
-
-* 오프라인 피드백 : [Taling]({{site.url}}/Taling)

@@ -2,7 +2,6 @@
 layout: post
 title:  " 18 하반기 공채 KT 1차 SW 면접 후기 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

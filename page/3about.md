@@ -29,6 +29,7 @@ type: page
 
 * GitHub : 
 <a href="https://github.com/{{site.github_username}}" title="GitHub">
+goodGid
 <i class="fa fa-github" aria-hidden="true"></i>
 </a>
 
@@ -54,11 +55,13 @@ type: page
 
 * Kakao :
 <a href="https://open.kakao.com/o/sD37fM3" title="Kako">
+Open Chat
 <i class="fa fa-commenting" aria-hidden="true"></i>
 </a>
 
 * Taling :
 <a href="{{site.url}}/Taling" title="Taling">
+Offline 연락
 <i class="fa fa-id-card-o" aria-hidden="true"></i>
 </a>
 

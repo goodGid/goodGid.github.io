@@ -2,7 +2,6 @@
 layout: post
 title:  " 18 하반기 공채 라인(Line) 2차(최종) 면접 후기 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content
@@ -20,7 +19,7 @@ author: goodGid
 
 ---
 
-## 후기
+## 면접 후기
 
 * 3:1 45분 면접
 
@@ -86,14 +85,14 @@ Q. 마지막 할 말
 
 ---
 
-## 결과
+## 면접 결과
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_2.png)
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_3.png)
 
 
-> 연수 일정
+### 연수 일정
 
 * 인사팀 너무나 귀엽다 ㅠㅠ
 
@@ -103,7 +102,7 @@ Q. 마지막 할 말
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_5.png)
 
-> 축하 선물
+### 축하 선물
 
 * 꽃 / 와인 / 편지 
 
@@ -125,6 +124,8 @@ Q. 마지막 할 말
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_10.png)
 
+---
+
 * 그리고 샐리 쿠션과 샐리 머그컵과 샐리 노트
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_11.png)
@@ -134,6 +135,14 @@ Q. 마지막 할 말
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_13.png)
 
 ![](/assets/img/posts/18_Second_Half_Line_2st_Interview_14.png)
+
+---
+
+* 수료증 !!! 
+
+![](/assets/img/posts/18_Second_Half_Line_2st_Interview_16.png)
+
+---
 
 * 마지막으로 CTO님께 질문하는 시간이 있었는데 
 
@@ -149,12 +158,6 @@ Q. 마지막 할 말
 
 * 끝으로 더 궁금한 내용이 있다면 
 
-* 편한 방법으로 연락주시면 
+* 편한 방법으로 [연락]({{stie.url}}/about/#contact)주시면 
 
 * 최대한 빠른 시간내에 답변을 드리겠습니다.
-
-* Email : gy8971@gmail.com
-
-* Kakao : https://open.kakao.com/o/sD37fM3
-
-* 오프라인 피드백 : [Taling]({{site.url}}/Taling)

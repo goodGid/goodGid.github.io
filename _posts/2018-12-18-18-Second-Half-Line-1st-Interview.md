@@ -2,7 +2,6 @@
 layout: post
 title:  " 18 하반기 공채 라인(Line) 1차 면접 후기 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content
@@ -108,12 +107,6 @@ Q. 마지막 말
 
 * 끝으로 더 궁금한 내용이 있다면 
 
-* 편한 방법으로 연락주시면 
+* 편한 방법으로 [연락]({{stie.url}}/about/#contact)주시면 
 
 * 최대한 빠른 시간내에 답변을 드리겠습니다.
-
-* Email : gy8971@gmail.com
-
-* Kakao : https://open.kakao.com/o/sD37fM3
-
-* 오프라인 피드백 : [Taling]({{site.url}}/Taling)
