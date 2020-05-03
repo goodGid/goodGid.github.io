@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Nginx 옵션 : server_tokens "
-categories: HTTP
+categories: Nginx
 author: goodGid
 ---
 * content
@@ -72,7 +72,7 @@ server {
 
 ### server_tokens on
 
-![](/assets/img/http/Nginx-Option-Server-Tokens_1.png)
+![](/assets/img/nginx/Nginx-Option-Server-Tokens_1.png)
 
 * Nginx Version이 노출된다.
 
@@ -80,7 +80,7 @@ server {
 
 ### server_tokens off
 
-![](/assets/img/http/Nginx-Option-Server-Tokens_2.png)
+![](/assets/img/nginx/Nginx-Option-Server-Tokens_2.png)
 
 * Nginx Version이 노출되지 않음을 확인할 수 있다.
 
