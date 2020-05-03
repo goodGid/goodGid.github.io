@@ -107,6 +107,8 @@ Offline 연락
 
 ### 2020
 
+* 　05. 03 Add [<i class="fa fa-search	" aria-hidden="true"></i> **Search**]({{site.url}}/search/) function // Commit : 5ae6919
+
 * 　04. 13 Apply [Tawk.to]({{site.url}}/Tawk-to/) Service
 
 * 　04. 01 ~ 04. 30	[LINE 작심삼십일 프로젝트 이끔이가 되다.]({{site.url}}/LINE-Blog-Leader/)
