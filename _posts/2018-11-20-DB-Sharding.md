@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " 데이터베이스 샤딩(Sharding) "
-categories: Database
-tags: Database
+categories: DB
 author: goodGid
 ---
 * content
@@ -64,7 +63,7 @@ author: goodGid
 
 * 10001 ~ 20000 번 고객의 정보는 *다른 샤드* 에 저장하기로 하였다. 
 
-![](/assets/img/database/db_sharding_1.png) 
+![](/assets/img/db/db_sharding_1.png) 
 
 * Ex 2)
 
@@ -103,7 +102,7 @@ author: goodGid
 
 * CustomerId를 참조하도록 하고 청구 주소 정보를 다른 테이블로 분리할 수 있다.
 
-![](/assets/img/database/db_sharding_2.png) 
+![](/assets/img/db/db_sharding_2.png) 
 
 * 요약하면 파티셔닝은 퍼포먼스, 가용성, 정비용이성등의 목적을 위해 
 

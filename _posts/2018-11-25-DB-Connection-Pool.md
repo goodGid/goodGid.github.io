@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " DB 커넥션 풀(Connection Pool) "
-categories: Database
-tags: Database
+categories: DB
 author: goodGid
 ---
 * content
@@ -55,7 +54,7 @@ author: goodGid
 
 * 미리 생성해두기 때문에 데이터베이스에 부하를 줄이고 유동적으로 연결을 관리 할 수 있다.
 
-![](/assets/img/database/db_connection_pool_1.png)
+![](/assets/img/db/db_connection_pool_1.png)
 
 
 * 이렇게 Pool 속에 미리 생성되어 있는 Connection을 가져다가 사용하고

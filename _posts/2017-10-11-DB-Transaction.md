@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Transaction"
-categories: Database
-tags: Database
+title:  " DB에서 Transaction이란? "
+categories: DB
 author: goodGid
 ---
 
 * content
 {:toc}
-
-
 
 ## Concept
 
@@ -21,12 +18,14 @@ author: goodGid
 
 * RollBack
 
-    트랜잭션 처리가 비정상으로 종료되어 데이터베이스의 일관성이 깨졌을 때 <br> 트랜잭션이 행한 모든 변경 작업을 취소하고 이전 상태로 되돌리는 연산
+    트랜잭션 처리가 비정상으로 종료되어 데이터베이스의 일관성이 깨졌을 때 
+    
+    트랜잭션이 행한 모든 변경 작업을 취소하고 이전 상태로 되돌리는 연산
 
 
 ---
 
-## 트랜잭션의 특성
+## Transaction Feature
 
 1. **원자성 (Atomicity)**
     

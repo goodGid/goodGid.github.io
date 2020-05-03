@@ -1,28 +1,26 @@
 ---
 layout: post
-title:  "Anomaly"
-categories: Database
-tags: Database
+title:  " DB에서 이상 현상(Anomaly) 개념 알아보기"
+categories: DB
 author: goodGid
 ---
-
 * content
 {:toc}
 
-
 ## Concept
 
-> Anomaly이란 테이블에서 일부 속성들의 종속으로 인해 데이터의 중복이 발생하고, <br> 이 중복으로 인해 테이블 조작 시 문제가 생기는 현상을 의미
+> Anomaly이란 테이블에서 일부 속성들의 종속으로 인해 데이터의 중복이 발생하고 <br> 이 중복으로 인해 테이블 조작 시 문제가 생기는 현상을 의미
 
 * 이상의 종류
+
     1. 삽입 이상 (Insertion Anomaly)
+
     2. 삭제 이상 (Deletion Anomaly)
+
     3. 갱신 이상 (Update Anomaly)
 
----
 
-
-![](/assets/img/database/anomaly_1.png)
+![](/assets/img/db/anomaly_1.png)
 
 ---
 

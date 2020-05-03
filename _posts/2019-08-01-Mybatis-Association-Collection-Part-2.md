@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " MyBatis의 Association과 Collection 알아보기 - Song "
-categories: DataBase
+categories: DB
 author: goodGid
 ---
 * content

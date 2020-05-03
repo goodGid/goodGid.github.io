@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Relation"
-categories: Database
+title:  " DB에서 Relation이란? "
+categories: DB
 author: goodGid
 ---
 
@@ -19,4 +19,4 @@ author: goodGid
 
 * 하나의 Attribute가 취할 수 있는 같은 타입의 원자 값들의 집합을 `도메인`이라 함
 
-![](/assets/img/database/relation_1.png)
+![](/assets/img/db/relation_1.png)

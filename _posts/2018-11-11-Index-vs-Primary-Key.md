@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " Index와 Primary Key의 차이점 "
-categories: Database
-tags: Database
+categories: DB
 author: goodGid
 ---
 * content

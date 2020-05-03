@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " Oracle FlashBack 이용한 데이터 복구 "
-categories: DataBase
-tags: DataBase
+categories: DB
 author: goodGid
 ---
 * content

@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  " 성능 향상을 위한 SQL 작성법 "
-categories: Database
-tags: Database
+categories: DB
 author: goodGid
 ---
 * content
@@ -48,7 +47,7 @@ author: goodGid
 
 * 다음 그림은 전형적인 B+-Tree 모습이다.
 
- ![](/assets/img/database/how_to_write_sql_to_improve_performance_1.png) 
+ ![](/assets/img/db/how_to_write_sql_to_improve_performance_1.png) 
 
 
 
@@ -87,7 +86,7 @@ author: goodGid
 
 * 상위 키까지 순차 검색이 끝나면 전체 범위 검색이 완료된다.
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_2.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_2.png)
 
 
 * 두 번째 단계에서 상위 키까지 찾아가는 과정은 레코드에서 키를 읽어와 상위 키와 비교하는 과정의 연속이다. 
@@ -131,7 +130,7 @@ INSERT INTO tbl VALUES
 (이하 생략)
 ```
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_3.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_3.png)
 
 
 ``` sql
@@ -166,7 +165,7 @@ ORDER BY b;
 
 * 다음 그림은 위의 SELECT 질의가 처리되는 과정이다.
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_4.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_4.png)
 
 
 ---
@@ -207,7 +206,7 @@ ORDER BY b;
 
 * 다음은 인덱스를 사용하지 못하는 쿼리와 튜닝 후 인덱스를 사용하도록 수정한 쿼리의 예이다.
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_5.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_5.png)
 
 
 * 작성한 SQL 질의가 DBMS에서 실행될 때 인덱스 스캔을 이용하는지 확인하려면 질의 실행 계획을 출력해 봐야 한다. 
@@ -221,7 +220,7 @@ ORDER BY b;
 * 예상되는 CPU 및 I/O 비용, 예상 결과 집합의 레코드 개수, 예상 페이지 접근 개수 등을 볼 수 있다.
 
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_6.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_6.png)
 
 
 ---
@@ -332,7 +331,7 @@ ORDER BY b;
 * 다음 그림과 같이 질의 실행 계획에 **covers라는 표시**가 있는지 보면 된다.
 
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_7.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_7.png)
 
 * 커버링 인덱스는 **데이터 페이지를 읽지 않는다는 점**
 
@@ -403,7 +402,7 @@ GROUP BY a;
 
 * 다음 그림과 같이 질의 실행 계획에 skip ORDER BY 또는 skip GROUP BY가 표시되는지 확인하면 된다.
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_8.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_8.png)
 
 
 * 앞에서 인덱스 스캔을 하려면 조건절에 인덱스의 첫 번째 컬럼이 명시돼야 한다고 설명했다. 
@@ -430,7 +429,7 @@ ORDER BY a;
 
 * 다음 그림처럼 Key Range가 자동으로 추가되어 ORDER BY 정렬 연산이 생략되는 것을 알 수 있다.
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_9.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_9.png)
 
 ---
 
@@ -510,7 +509,7 @@ LIMIT 3;
 * 최종 결과에 대한 별도의 정렬을 수행하지 않기 때문에 성능 향상에 많은 도움을 준다.
 
 
-![](/assets/img/database/how_to_write_sql_to_improve_performance_10.png)
+![](/assets/img/db/how_to_write_sql_to_improve_performance_10.png)
 
 ---
 

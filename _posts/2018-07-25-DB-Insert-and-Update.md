@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Insert + Update"
-categories: Database
-tags: Database
+categories: DB
 author: goodGid
 ---
 * content
