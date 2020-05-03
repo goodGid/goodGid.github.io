@@ -192,3 +192,7 @@ author: goodGid
 * [무료로 도메인(Domain) 신청 & 사용하기]({{site.url}}/Free-Domain)
 
 * [Nginx 적용하기]({{site.url}}/Nginx)
+
+* [[Linux] Alias에서 싱글 쿼터(') 사용하기]({{site.url}}/Using-A-Single-Quote-In-Alias/)
+
+* [Nginx 옵션 : server_tokens]({{site.url}}/Nginx-Option-Server-Tokens/)
