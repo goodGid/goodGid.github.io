@@ -196,3 +196,5 @@ author: goodGid
 * [[Linux] Alias에서 싱글 쿼터(') 사용하기]({{site.url}}/Using-A-Single-Quote-In-Alias/)
 
 * [Nginx 옵션 : server_tokens]({{site.url}}/Nginx-Option-Server-Tokens/)
+
+* [Github Actions를 사용하여 자신의 Daily Coding 시간 확인하기]({{site.url}}/Github-Actions-Daily-Coding-Time/)

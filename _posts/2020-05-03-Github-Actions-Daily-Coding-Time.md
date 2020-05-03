@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Github Actions를 사용하여 Daily Coding 시간 확인 "
+title:  " Github Actions를 사용하여 자신의 Daily Coding 시간 확인하기  "
 categories: Technology
 author: goodGid
 ---
@@ -70,7 +70,11 @@ author: goodGid
 
 > Step 3
 
-* Repository를 Fork 합니다.
+* 원하는 Repository를 Fork 합니다.
+
+  - [goodgid](https://github.com/goodGid/productive-box)
+
+  - [maxam2017](https://github.com/maxam2017/productive-box)
 
 * 그리고 Fork한 Repository에서 Actions 탭을 누른 후 활성화 시켜줍니다.
 
