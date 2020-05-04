@@ -1,13 +1,15 @@
 <div class="post-recent">
+    
     <div class="pre">
         {% if page.previous %}
         <p>Back : <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></p>
         {% endif %}
     </div>
-    <div class="nex">
 
+    <div class="nex">
         {% if page.next %}
         <p>Next : <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></p>
         {% endif %}
     </div>
+
 </div>
