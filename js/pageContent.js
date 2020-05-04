@@ -2,26 +2,30 @@
 
 /**
  * [fixSidebar description]
- * 滚轮滚到一定位置时，将 sidebar-wrap 添加 fixed 样式
- * 反之，取消样式
+ * 휠이 특정 위치로 구르면 사이드 바 랩에 고정 스타일을 추가하십시오.
+ * 그렇지 않으면 스타일을 취소하십시오.
  */
 (function() {
     if (window.innerWidth > 770) {
 
         var sidebarWrap = document.querySelector('.right>.wrap')
 
-        //fix 之后百分比宽度会失效，这里用js赋予宽度
+        //fix
         sidebarWrap.style.width = sidebarWrap.offsetWidth + "px"
         window.onscroll = function() {
 
-            // 页面顶部滚进去的距离
+            // 페이지 하단에서 롤인 거리
             var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+            // console.log('scrollTop : ', scrollTop)
 
-
-            // 页面底部滚进去的距离
+            // 페이지 하단에서 롤인 거리
             var htmlHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight)
-                // console.log(htmlHeight);
+            // console.log('htmlHeight : ', htmlHeight)
+
             var scrollBottom = htmlHeight - window.innerHeight - scrollTop
+            // window.innerHeight : 821
+            // console.log('scrollBottom : ', scrollBottom)
+
 
             if (scrollTop < 53) {
                 sidebarWrap.classList.remove('fixed')
@@ -29,18 +33,18 @@
             } else if (scrollBottom >= (190 - 38)) {
                 sidebarWrap.classList.remove('scroll-bottom')
                 sidebarWrap.classList.add('fixed')
-            } else if (isMaxHeight()) { //content 达到maxHeight
+            } else if (isMaxHeight()) { //content maxHeight에 도달
                 sidebarWrap.classList.remove('fixed')
                 sidebarWrap.classList.add('scroll-bottom')
             }
         }
-        setContentMaxHeightInPC() //设置目录最大高度(PC端)
+        setContentMaxHeightInPC() // 디렉토리의 최대 높이 설정 (PC 쪽)
     }
-    moveTOC() //将Content内容转移
+    moveTOC() // 컨텐츠 전송
 }());
 
 /**
- * 设置目录最大高度
+ * 디렉토리의 최대 높이 설정
  */
 function setContentMaxHeightInPC() {
     var windowHeight = window.innerHeight
@@ -50,7 +54,7 @@ function setContentMaxHeightInPC() {
 }
 
 /**
- * 达到最大高度
+ * 최대 높이 도달
  * @return {Boolean} [description]
  */
 function isMaxHeight() {
@@ -66,7 +70,8 @@ function isMaxHeight() {
 
 //-------------mobile--------------
 /**
- * 屏幕宽度小于770px时，点击锚点按钮，弹出目录框
+ * 화면 너비가 770px보다 작으면 
+ * 앵커 버튼을 클릭하여 디렉토리 상자를 팝업
  * @param  {[type]} function( [description]
  * @return {[type]}           [description]
  */
@@ -76,7 +81,7 @@ function isMaxHeight() {
         var rightDiv = document.querySelector('.right')
 
         /**
-         * 监听锚点按钮
+         * 앵커 버튼 듣기
          */
         anchorBtn.onclick = function(e) {
             e.stopPropagation()
@@ -84,19 +89,19 @@ function isMaxHeight() {
             anchorBtn.classList.add('anchor-hide')
         }
 
-        //监听body，点击body，隐藏Content
+        // 본문을 모니터링하고 본문을 클릭하고 내용을 숨기십시오.
         document.querySelector('body').addEventListener('click', function() {
             rightDiv.classList.remove('right-show')
             anchorBtn.classList.remove('anchor-hide')
         })
 
-        ancherPostion(anchorBtn, rightDiv) //目录锚的位置固定
-        setContentMaxHeight() //设置目录最大高度
+        ancherPostion(anchorBtn, rightDiv) // 디렉토리 앵커의 고정 위치
+        setContentMaxHeight() // 디렉토리의 최대 높이 설정
     }
 }());
 
 /**
- * 目录锚的位置固定
+ * 디렉토리 앵커의 고정 위치
  */
 function ancherPostion(anchorBtn, rightDiv) {
     window.addEventListener('scroll', function() {
@@ -115,7 +120,7 @@ function ancherPostion(anchorBtn, rightDiv) {
 }
 
 /**
- * 设置目录最大高度
+ * 디렉토리의 최대 높이 설정
  */
 function setContentMaxHeight() {
     var windowHeight = window.innerHeight
@@ -129,12 +134,12 @@ function moveTOC() {
     if (document.querySelector('#markdown-toc') !== null) {
         var TOCString = document.querySelector('#markdown-toc').innerHTML
         var contentUl = document.querySelector('#content-side')
-        contentUl.insertAdjacentHTML('afterbegin', TOCString) //插入字符串
+        contentUl.insertAdjacentHTML('afterbegin', TOCString) // 문자열 삽입
 
         // if (!isAndroidWechatBrowser()) {
 
-            //添加scroll样式，为了平滑滚动
-            //add class "scroll", for smooth scroll
+            // 부드러운 스크롤을 위해 스크롤 스타일 추가
+            // add class "scroll", for smooth scroll
             var aTags = document.querySelectorAll('#content-side a')
 
             //add class for everyone
@@ -156,7 +161,7 @@ function moveTOC() {
 }
 
 /**
- * 判断安卓版微信浏览器
+ * WeChat 브라우저의 Android 버전을 판단하십시오.
  * @return {Boolean} [description]
  */
 function isAndroidWechatBrowser() {
