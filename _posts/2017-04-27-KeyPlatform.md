@@ -2,7 +2,6 @@
 layout: post
 title:  " Key Platform "
 categories: Conference
-tags: 
 author: goodGid
 ---
 * content
