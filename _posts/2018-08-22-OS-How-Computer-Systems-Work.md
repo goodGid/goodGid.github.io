@@ -23,10 +23,10 @@ author: goodGid
 
 * 이 때 장치에서 로컬 버퍼로 읽어오는 일은 컨트롤러가 담당한다.
 
-{% capture images %}
-    /assets/img/os/how_computer_systems_work_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/os/how_computer_systems_work_1.png)
+
+
 
 
 * 데이터를 모두 가지고 왔는지 확인하는 작업은 메인 CPU가 일일이 체크하는 것이 아니라 <br> 장치에 있는 컨트롤러가 인터럽트를 발생시켜 CPU에게 보고한다.
@@ -209,10 +209,10 @@ A의 봉쇄 상태를 해제시킨다. 그러면 A는 다시 CPU를 기다리는
 
 # 8. 저장 장치의 계층 구조
 
-{% capture images %}
-    /assets/img/os/how_computer_systems_work_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/os/how_computer_systems_work_2.png)
+
+
 
 * 주 기억 장치 / 보조 기억 장치로 나눌 수 있다.
 
@@ -275,10 +275,10 @@ OS가 CPU를 점유해 자신의 코드를 수행하다 사용자 프로그램�
 
 * 즉 어떤 프로그램이 실제 메모리에 올라가 있는 부분의 **시작 주소**와 그 **프로그램의 길이**를 보관해 메모리 접근 연산이 있을 때마다 하드웨어적으로 현재 접근하려는 위치가 **합법적인 범위**인지를 체크한다.
 
-{% capture images %}
-    /assets/img/os/how_computer_systems_work_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/os/how_computer_systems_work_3.png)
+
+
 
 
 * 사용자 프로그램은 기준 레지스터 + 한계 레지스터 값 사이 주소 영역만 접근이 가능하며, 이 범위 안에 없으면 불법적인 메모리 접근이므로 **예외 상황**이라는 SW 인터럽트를 발생하게 된다. <br> 예외 상황은 OS에게 SW 인터럽트를 발생시켜 CPU의 제어권을 이양시키고 OS는 그 프로그램을 강제 종료시킨다.
@@ -289,10 +289,10 @@ OS가 CPU를 점유해 자신의 코드를 수행하다 사용자 프로그램�
 
 * 사용자 모드인 경우에는 기준 + 한계 레지스터를 사용해 메모리를 보호하고 <br> 커널 모드에서는 메모리에 무제한으로 접근이 가능하다.
 
-{% capture images %}
-    /assets/img/os/how_computer_systems_work_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/os/how_computer_systems_work_4.png)
+
+
 
 ---
 

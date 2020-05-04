@@ -20,8 +20,8 @@ author: goodGid
 
 ---
 
-{% capture images %}
-    /assets/img/network/ip_address_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/network/ip_address_1.png)
+
+
 

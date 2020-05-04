@@ -8,10 +8,10 @@ author: goodGid
 * content
 {:toc}
 
-{% capture images %}
-  /assets/img/block_chain/ethereum.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/ethereum.png)
+
+
 
 * 원문은 [Blog](http://www.chaintalk.io/archive/lecture/86)에서 확인하자 !
 
@@ -262,10 +262,10 @@ set의 (  ) 안에는 사용자로부터 입력받을 x 값이
 
 ```
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(3)_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(3)_1.png)
+
+
 
 
 앞에서 사용자가 입력한 값을 저장할 때 
@@ -463,10 +463,10 @@ https://ethereum.github.io/browser-solidity/
 이건 그냥 두고, 새로 탭을 하나 더 열어서 위의 코드를 넣어보세요.
 
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(3)_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(3)_2.png)
+
+
 
 
 
@@ -556,10 +556,10 @@ PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x43 DUP1 PUSH1 0x10 PUSH1 0x0 CODECOPY PUSH1
 
 
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(3)_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(3)_3.png)
+
+
 
 
 이렇게 컨트랙트를 블록체인으로 보내고 나면, 
@@ -589,10 +589,10 @@ SimpleStorage at 의 뒷 부분을 잘 살펴보시면 거기에 나와있는 �
 바로 자신의 컨트랙트 주소입니다.
 
  
-{% capture images %}
-  /assets/img/block_chain/blockchain(3)_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(3)_4.png)
+
+
 
 블록체인에서 블록들이 생성되려면 
 

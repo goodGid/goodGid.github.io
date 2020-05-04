@@ -63,8 +63,8 @@ DNS에 의해 해당 도메인명의 SMTP 서버의 IP주소를 알게되면
 ---
 
 SMTP
-{% capture images %}
-    /assets/img/server/role_of_smtp_server_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/role_of_smtp_server_1.png)
+
+
 

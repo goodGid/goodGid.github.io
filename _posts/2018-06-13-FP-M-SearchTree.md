@@ -21,10 +21,10 @@ author: goodGid
 
 # m-원 탐색 트리의 성질
 
-{% capture images %}
-    /assets/img/file_processing/m_search_tree_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/m_search_tree_1.png)
+
+
 
 
 <br>

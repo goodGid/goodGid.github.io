@@ -34,8 +34,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/types_of_cloud_services_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/types_of_cloud_services_1.png)
+
+
 

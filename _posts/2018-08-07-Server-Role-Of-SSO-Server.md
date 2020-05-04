@@ -36,8 +36,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/role_of_sso_server_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/role_of_sso_server_1.png)
+
+
 

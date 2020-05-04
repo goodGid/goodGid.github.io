@@ -39,8 +39,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/types_of_virture_sw_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/types_of_virture_sw_1.png)
+
+
 

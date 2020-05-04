@@ -12,10 +12,10 @@ author: goodGid
 
 
 
-{% capture images %}
-  /assets/img/block_chain/ethereum.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/ethereum.png)
+
+
 
 * 원문은 [Blog](http://www.chaintalk.io/archive/lecture/1)에서 확인하자 !
 
@@ -208,26 +208,26 @@ author: goodGid
 한 가지 기능만을 잘 수행하기 위해 만들어져 있습니다.
 <br>
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(1)_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(1)_1.png)
+
+
 
 조금 더 발전된 형태는 이 정도입니다.
 <br>
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(1)_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(1)_2.png)
+
+
 <br>
 
 이들 툴에 비교하자면 이더리움은 스마트 폰과 같습니다.
 
-{% capture images %}
-  /assets/img/block_chain/blockchain(1)_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/blockchain(1)_3.png)
+
+
 <br><br>
 
 

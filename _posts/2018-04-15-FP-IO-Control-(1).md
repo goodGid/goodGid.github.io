@@ -12,16 +12,16 @@ author: goodGid
 
 # 파일 입력 (Read)
 
-{% capture images %}
-    /assets/img/file_processing/fp_io_1_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_io_1_1.png)
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_io_1_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+
+
+![](/assets/img/file_processing/fp_io_1_2.png)
+
+
 
 
 ---
@@ -52,10 +52,10 @@ CPU와 보조기억장치의 성능과 활용을 최대화
 
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_io_1_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_io_1_3.png)
+
+
 
 
 최초 적합 : 앞에서부터 들어갈 수 있는 곳

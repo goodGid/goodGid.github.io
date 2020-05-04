@@ -2,7 +2,6 @@
 layout: post
 title:  " String을 Int로 변환하기 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content
@@ -24,11 +23,12 @@ author: goodGid
 
 Problem URL : **[네 수](https://www.acmicpc.net/problem/10824)**
 
-{% capture images %}
-    /assets/img/algorithm/10824_1.png
-    /assets/img/algorithm/10824_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
+
+![](/assets/img/algorithm/10824_1.png)
+    
+![](/assets/img/algorithm/10824_2.png)
+
+
 
 
 
@@ -90,10 +90,8 @@ Program ended with exit code: 0
 
 Problem URL : **[문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)**
 
-{% capture images %}
-    /assets/img/algorithm/type_conversion_1.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+![](/assets/img/algorithm/type_conversion_1.png)
+
 
 
 ## [2] Code (18. 07. 23)

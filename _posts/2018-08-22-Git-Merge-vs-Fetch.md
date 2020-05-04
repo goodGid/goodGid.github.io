@@ -31,10 +31,10 @@ pull 을 실행하면, 원격 저장소의 내용을 가져와 자동으로 병�
 
 fetch 를 수행하면 아래 그림과 같이 이력이 남겨진다.
 
-{% capture images %}
-    /assets/img/git/git_merge_vs_fetch_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/git/git_merge_vs_fetch_1.png)
+
+
 
 <br>
 
@@ -42,10 +42,10 @@ fetch 를 수행하면 아래 그림과 같이 이력이 남겨진다.
 
 'FETCH_HEAD' 브랜치를 merge 하거나 다시 pull을 실행하면 된다.
 
-{% capture images %}
-    /assets/img/git/git_merge_vs_fetch_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/git/git_merge_vs_fetch_2.png)
+
+
 
 
 이렇게 fetch 후 merge 를 수행하면, pull 명령을 실행했을 때와 같은 이력이 만들어진다.

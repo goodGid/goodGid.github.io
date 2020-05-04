@@ -53,8 +53,8 @@ DNS 서버의 IP 주소
 ---
 
 
-{% capture images %}
-    /assets/img/server/dhcp_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/dhcp_1.png)
+
+
 

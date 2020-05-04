@@ -50,8 +50,8 @@ SSL로 암호화할 때의 흐름
 
 ---
 
-{% capture images %}
-    /assets/img/server/technologies_that_upport_ssl_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/technologies_that_upport_ssl_1.png)
+
+
 

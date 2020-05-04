@@ -33,8 +33,8 @@ author: goodGid
 ---
 
 SMTP
-{% capture images %}
-    /assets/img/server/role_of_pop3_server_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/role_of_pop3_server_1.png)
+
+
 

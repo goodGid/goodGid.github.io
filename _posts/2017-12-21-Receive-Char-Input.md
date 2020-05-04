@@ -13,18 +13,10 @@ author: goodGid
 ## Problem
 Problem URL : **[트리 순회](https://www.acmicpc.net/problem/1991)**
 
-{% capture images %}
-    /assets/img/algorithm/1991_1.png
-    /assets/img/algorithm/1991_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
 
+![](/assets/img/algorithm/1991_1.png)
 
-
-
-
-
-
+![](/assets/img/algorithm/1991_2.png)
 
 ---
 

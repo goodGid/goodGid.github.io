@@ -13,10 +13,10 @@ author: goodGid
 
 Problem URL : **[문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12917)**
 
-{% capture images %}
-    /assets/img/algorithm/asc_desc_sort_1.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+
+![](/assets/img/algorithm/asc_desc_sort_1.png)
+
+
 
 ---
 

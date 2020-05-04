@@ -50,8 +50,8 @@ author: goodGid
 
 ---
 
-{% capture images %}
-    /assets/img/server/two_encryption_technologies_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/two_encryption_technologies_1.png)
+
+
 

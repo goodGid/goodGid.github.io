@@ -10,10 +10,10 @@ author: goodGid
 
 ##  SmartContract Flow
 
-{% capture images %}
-/assets/img/block_chain/bc_sc_flow_1_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %} 
+
+![](/assets/img/block_chain/bc_sc_flow_1_1.png)
+
+ 
 
 ### 1. SmartContract 개발 환경
 

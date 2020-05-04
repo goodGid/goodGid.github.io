@@ -47,8 +47,8 @@ author: goodGid
 
 
 
-{% capture images %}
-    /assets/img/server/os_reference_models_protocols_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/os_reference_models_protocols_1.png)
+
+
 

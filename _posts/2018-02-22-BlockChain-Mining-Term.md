@@ -175,10 +175,10 @@ Secure Hash Algorithm,
 ## 4. POW (Proof of Work)
 
 
-{% capture images %}
-  /assets/img/block_chain/mining_term_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/mining_term_1.png)
+
+
 
 
 POW는
@@ -204,10 +204,10 @@ POW는
 ## 5. POS (Proo of Stake)
 
 
-{% capture images %}
-  /assets/img/block_chain/mining_term_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/mining_term_1.png)
+
+
 
 
 
@@ -283,12 +283,12 @@ POW는
 
 영지식 증명을 설명하는 동굴 예제
 
-{% capture images %}
-  /assets/img/block_chain/mining_term_2.png
-  /assets/img/block_chain/mining_term_3.png
-  /assets/img/block_chain/mining_term_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+  /assets/img/block_chain/mining_term_2.png)
+  /assets/img/block_chain/mining_term_3.png)
+  /assets/img/block_chain/mining_term_4.png)
+
+
 
 
 을돌이를 동굴 입구에서 기다리게 하고 

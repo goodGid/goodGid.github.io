@@ -2,7 +2,6 @@
 layout: post
 title:  " ICT Volunteer "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content
@@ -10,19 +9,15 @@ author: goodGid
 
 ## [World Friends ICT Volunteer](https://kiv.nia.or.kr/front/main/main.do)
 
-{% capture images %}
-	/assets/img/posts/ict_volunteer_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/posts/ict_volunteer_1.png)
+
 
 ---
 
 ## Activity Introduction
 
-{% capture images %}
-	/assets/img/posts/ict_volunteer_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/posts/ict_volunteer_2.png)
 
 * 우리팀은 `IT Project`팀으로 Nepal의 High School의 Home Page를 만들어 주기로 하였다.
 
@@ -30,10 +25,7 @@ author: goodGid
 
 ## Host
 
-{% capture images %}
-	/assets/img/posts/ict_volunteer_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/posts/ict_volunteer_3.png)
 
 * 후원해주는 단체가 굉장히 빵빵하다. 
 

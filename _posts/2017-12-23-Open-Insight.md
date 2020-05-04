@@ -15,33 +15,33 @@ author: goodGid
 
 
 
-{% capture images %}
-	/assets/img/conference/open_insight_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/open_insight_1.png)
 
 
 
-{% capture images %}
-	/assets/img/conference/open_insight_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+
+
+![](/assets/img/conference/open_insight_2.png)
+
+
 
 ---
 
 ## Scene Photo
 
-{% capture images %}
-	/assets/img/conference/open_insight_3.png
-	/assets/img/conference/open_insight_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
 
-{% capture images %}
-	/assets/img/conference/open_insight_5.png
-	/assets/img/conference/open_insight_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+![](/assets/img/conference/open_insight_3.png)
+![](/assets/img/conference/open_insight_4.png)
+
+
+
+
+![](/assets/img/conference/open_insight_5.png)
+![](/assets/img/conference/open_insight_6.png)
+
+
 
 ---
 ## Developer in a Startup
@@ -62,10 +62,10 @@ author: goodGid
 
 ## Host
 
-{% capture images %}
-	/assets/img/conference/open_insight_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/open_insight_7.png)
+
+
 ---
 
 ## Review

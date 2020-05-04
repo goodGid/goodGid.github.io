@@ -13,10 +13,10 @@ author: goodGid
 
 Problem URL : **[문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)**
 
-{% capture images %}
-    /assets/img/algorithm/check_digit_format_int_1.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+
+![](/assets/img/algorithm/check_digit_format_int_1.png)
+
+
 
 ---
 
@@ -44,10 +44,10 @@ bool solution(string s) {
 
 Problem URL : **[문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)**
 
-{% capture images %}
-    /assets/img/algorithm/check_digit_format_int_1.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+
+![](/assets/img/algorithm/check_digit_format_int_1.png)
+
+
 
 ---
 

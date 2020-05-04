@@ -19,10 +19,10 @@ Mist로 접속을 할 때 Private로 접속이 안되어서 난감했다.
 
 <br>
 
-{% capture images %}
-/assets/img/block_chain/conn_mist_local_net_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %} 
+
+![](/assets/img/block_chain/conn_mist_local_net_1.png)
+
+ 
 
 
 ## Related Question

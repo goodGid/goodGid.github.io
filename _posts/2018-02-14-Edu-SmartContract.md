@@ -11,13 +11,13 @@ author: goodGid
 
 ## [1] Education Smart Contract
 
-{% capture images %}
-	/assets/img/conference/edu_smartcontract_1_1.png
-	/assets/img/conference/edu_smartcontract_1_2.png
-	/assets/img/conference/edu_smartcontract_1_3.png
-	/assets/img/conference/edu_smartcontract_1_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+
+![](/assets/img/conference/edu_smartcontract_1_1.png)
+![](/assets/img/conference/edu_smartcontract_1_2.png)
+![](/assets/img/conference/edu_smartcontract_1_3.png)
+![](/assets/img/conference/edu_smartcontract_1_4.png)
+
+
 
 
 * 블록 체인에 푹 빠져서 스터디를 진행하고 있는데 뭔가 허전한 느낌이 가득했다.
@@ -34,10 +34,10 @@ author: goodGid
 
 ## 지원 결과
 
-{% capture images %}
-	/assets/img/conference/edu_smartcontract_1_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/edu_smartcontract_1_6.png)
+
+
 
 * 총 250여명이 지원을 하였다 한다.
 
@@ -50,11 +50,11 @@ author: goodGid
 
 ## 교육 시설
 
-{% capture images %}
-	/assets/img/conference/edu_smartcontract_1_7.png
-	/assets/img/conference/edu_smartcontract_1_8.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/conference/edu_smartcontract_1_7.png)
+![](/assets/img/conference/edu_smartcontract_1_8.png)
+
+
 
 
 * 우리집에서 너무나 멀었던 경찰병원에 있는 KISA
@@ -79,7 +79,7 @@ author: goodGid
 
 ## Host
 
-{% capture images %}
-	/assets/img/conference/edu_smartcontract_1_5.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/edu_smartcontract_1_5.png)
+
+

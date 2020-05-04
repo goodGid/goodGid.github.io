@@ -21,10 +21,10 @@ author: goodGid
         - `런(run)` : `하나의 파일`을 `여러 서브파일`로 나누어 `내부 정렬 기법`을 사용하여 정렬시킨 파일
         - `런`을 `합병`하여 원하는 `하나의 정렬된 파일`을 만듬
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_1_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_1_1.png)
+
+
 
 ---
 
@@ -48,10 +48,10 @@ author: goodGid
 * 특징
     - 제일 `마지막 런`을 `제외`하고 모두 길이가 같다.
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_1_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_1_2.png)
+
+
 
 ---
 
@@ -59,10 +59,10 @@ author: goodGid
 
 * 런 생성 방법
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_1_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_1_3.png)
+
+
 
 * 특징
     - 내부 정렬과 달리 입력 파일의 일부 정렬된 레코드들의 순서를 이용 

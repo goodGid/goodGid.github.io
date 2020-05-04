@@ -13,11 +13,11 @@ author: goodGid
 Problem URL : **[가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904)**
 
 
-{% capture images %}
-    /assets/img/algorithm/manachers_1.png
-    /assets/img/algorithm/manachers_2.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=2 %}
+
+![](/assets/img/algorithm/manachers_1.png)
+![](/assets/img/algorithm/manachers_2.png)
+
+
 
 
 

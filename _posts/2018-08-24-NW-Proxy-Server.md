@@ -34,8 +34,8 @@ WWW로 특정 웹사이트를 열람하고 싶은 경우에는
 
 ---
 
-{% capture images %}
-    /assets/img/network/proxy_server_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/network/proxy_server_1.png)
+
+
 

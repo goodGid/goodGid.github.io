@@ -26,8 +26,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/on_premises&cloud_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/on_premises&cloud_1.png)
+
+
 

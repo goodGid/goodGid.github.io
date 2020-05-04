@@ -36,8 +36,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/tcp&udp_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/tcp&udp_1.png)
+
+
 

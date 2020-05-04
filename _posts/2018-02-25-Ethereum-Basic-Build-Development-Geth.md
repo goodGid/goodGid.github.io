@@ -232,9 +232,9 @@ accout list 옵션을 사용하면
 ```
 
 
-{% capture images %}
-/assets/img/ethereum/eth_basic_build_dev_get_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %} 
+
+![](/assets/img/ethereum/eth_basic_build_dev_get_1.png)
+
+ 
 
 

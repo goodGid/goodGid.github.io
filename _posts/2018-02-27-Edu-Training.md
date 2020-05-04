@@ -14,10 +14,10 @@ author: goodGid
 메타 마스크(공식 지갑) [설치 경로](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
 
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_1.png)
+
+
 
 
 P/W를 입력하고 나면 
@@ -28,27 +28,27 @@ P/W를 입력하고 나면
 
 이 블로그에서는 안보이게 수정한 사진을 업로드하였다.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_2.png)
+
+
 
 Test상이기 때문에 ether가 필요하다.
 
 [https://faucet.metamask.io](https://faucet.metamask.io)에서 필요한 만큼 이더를 받자.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_3.png)
+
+
 
 
 <center> <kbd>request 1 ether from faucet</kbd>버튼을 누르면 </center>
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_4.png)
+
+
 
 다음과 같은 Tx가 뜬다.
 
@@ -96,10 +96,10 @@ Remix사이트에가서 위 코드를 Copy & Paste를 한다.
 그리고 오른쪽 `Run`탭을 클릭 후 
 
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_5.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_5.png)
+
+
 
 Environment를 Injected Web3로 변경해준다.
 
@@ -108,10 +108,10 @@ Environment를 Injected Web3로 변경해준다.
 그리고 Create를 누르면 Token발급이 된다.
 
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_6.png)
+
+
 
 저 Tx(Transaction)의 Hash값을 복사한다.
 
@@ -121,10 +121,10 @@ Environment를 Injected Web3로 변경해준다.
 
 Token탭을 누른다.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_7.png)
+
+
 
 <br>
 
@@ -132,20 +132,20 @@ ADD TOKEN버튼을 누른 후
 
 Tx의 Hash값을 추가해준다.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_8.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_8.png)
+
+
 
 
 <br>
 
 다시 [https://ethereum.org/token](https://ethereum.org/token) 접속하여
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_9.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_9.png)
+
+
 
 밑에 있는 코드를 복사한다.
 
@@ -163,10 +163,10 @@ uint8 public decimals = 18;
 
 위에서 했던 스텝과 마찬가지로 
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_10.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_10.png)
+
+
 
 [ 100000,"tokenName_goodgid", "tokenSymbol_goodgid" ] 라는 값으로 셋팅을 해주고
 
@@ -176,10 +176,10 @@ Create를 해준다.
 
 <br>
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_11.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_11.png)
+
+
 
 ADD TOKEN을 해주게 되면 
 
@@ -195,11 +195,11 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 줄어든 것을 확인할 수 있다.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_12.png
-	/assets/img/block_chain/edu_training_13.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/block_chain/edu_training_12.png)
+![](/assets/img/block_chain/edu_training_13.png)
+
+
 
 
 ---
@@ -207,10 +207,10 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 [https://ethereum.org/crowdsale](https://ethereum.org/crowdsale)에 접속하자.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_14.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_14.png)
+
+
 
 코드를 복사하자.
 
@@ -220,10 +220,10 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 
 <br>
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_15.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_15.png)
+
+
 
 
 생성자에 값을 넣어보자.
@@ -250,11 +250,11 @@ Burn값에 삭제시킬 TOKEN의 갯수를 지정하고 클릭을 한 후
 지금부터는 다시 TokenERC20 파일로 돌아와서 진행한다.
 
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_16.png
-	/assets/img/block_chain/edu_training_17.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/block_chain/edu_training_16.png)
+![](/assets/img/block_chain/edu_training_17.png)
+
+
 
 [ "0x2e48deebedfdf5df84d9970d3f72d48f72929cb5",1 ]라는 값을 입력 후
 
@@ -270,10 +270,10 @@ transfer버튼을 누른다.
 
 전에는 없던 Misc라는 탭이 생기고 Token이 보이게 된다.
 
-{% capture images %}
-	/assets/img/block_chain/edu_training_18.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/block_chain/edu_training_18.png)
+
+
 
 ---
 

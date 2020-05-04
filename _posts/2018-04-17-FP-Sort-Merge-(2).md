@@ -35,19 +35,19 @@ author: goodGid
 
 # 6개의 런에 대한 2-원 합병
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_1.png)
+
+
 
 ---
 
 # 6개의 런에 대한 3-원 합병
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_2.png)
+
+
 
 ---
 
@@ -71,11 +71,11 @@ author: goodGid
 
 # 12개의 런에 대한 2-원 균형 합병
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_3.png
-    /assets/img/file_processing/sort_merge_2_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/file_processing/sort_merge_2_3.png)
+![](/assets/img/file_processing/sort_merge_2_4.png)
+
+
 
 ---
 
@@ -96,20 +96,20 @@ author: goodGid
 
 # 2-원 다단계 합병의 예
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_5.png
-    /assets/img/file_processing/sort_merge_2_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/file_processing/sort_merge_2_5.png)
+![](/assets/img/file_processing/sort_merge_2_6.png)
+
+
 
 ---
 
 # 5개 런의 2-원 다단계 합병에서 런 수의 변화
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_7.png)
+
+
 
 
 ---
@@ -145,10 +145,10 @@ author: goodGid
     - 루트 노드 : <br> 전체 토너먼트 승자, 트리에서 가장 작은 키 값 가진 원소
 
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_8.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_8.png)
+
+
 
 
 ---
@@ -160,19 +160,19 @@ author: goodGid
     - 다음 원소 <br> 즉 런 4의 키 값이 13인 원소가 승자트리 노드[11]로 들어감
     - 승자 트리를 다시 재구성 : <br> 노드 11에서부터 루트까지의 경로를 따라가면서 형제 노드 간 토너먼트 진행
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_9.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_9.png)
+
+
 
 ---
 
 # 선택 트리 (4)
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_10.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_10.png)
+
+
 
 
 ---
@@ -194,10 +194,10 @@ author: goodGid
         - 승자는 전체 토너먼트의 승자로서 `0번` 노드로 올라가 출력
 
 
-{% capture images %}
-    /assets/img/file_processing/sort_merge_2_11.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/sort_merge_2_11.png)
+
+
 
 
 ---

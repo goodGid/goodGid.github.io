@@ -43,8 +43,8 @@ author: goodGid
 
 <br>
 
-{% capture images %}
-    /assets/img/server/routing_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/routing_1.png)
+
+
 

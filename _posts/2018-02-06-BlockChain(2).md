@@ -9,10 +9,10 @@ author: goodGid
 {:toc}
 
 
-{% capture images %}
-  /assets/img/block_chain/ethereum.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/block_chain/ethereum.png)
+
+
 
 * 원문은 [Blog](http://www.chaintalk.io/archive/lecture/43)에서 확인하자 !
 

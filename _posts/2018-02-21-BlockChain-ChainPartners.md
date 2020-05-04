@@ -35,20 +35,20 @@ author: goodGid
 장소 : 위워크 을지로점
 
 
-{% capture images %}
-  /assets/img/conference/chain_partners_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/conference/chain_partners_1.png)
+
+
 
 ---
 
 ## Main Flatform
 
-{% capture images %}
-  /assets/img/conference/chain_partners_2.png
-  /assets/img/conference/chain_partners_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+  /assets/img/conference/chain_partners_2.png)
+  /assets/img/conference/chain_partners_3.png)
+
+
 
 * 주요 서비스가 `코인덕`이라는 이더리움이라는 가상화폐로 결제할 수 있는 서비스이다.
 
@@ -68,12 +68,12 @@ author: goodGid
 
 ## Conference Photo
 
-{% capture images %}
-  /assets/img/conference/chain_partners_5.png
-  /assets/img/conference/chain_partners_6.png
-  /assets/img/conference/chain_partners_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+  /assets/img/conference/chain_partners_5.png)
+  /assets/img/conference/chain_partners_6.png)
+  /assets/img/conference/chain_partners_7.png)
+
+
 
 
 
@@ -83,10 +83,10 @@ author: goodGid
 ## Host
 
 
-{% capture images %}
-  /assets/img/conference/chain_partners_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+  /assets/img/conference/chain_partners_4.png)
+
+
 
 
 ---

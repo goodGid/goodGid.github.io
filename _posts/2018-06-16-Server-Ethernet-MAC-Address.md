@@ -38,8 +38,8 @@ OUI를 통해 기기의 제조업체를 알 수 있다.
 
 <br>
 
-{% capture images %}
-    /assets/img/server/ethernet&mac_address_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/ethernet&mac_address_1.png)
+
+
 

@@ -50,12 +50,12 @@ author: goodGid
     - 판독 포인터를 스트림 파일의 다음 바이트 시작 위치로 변경
     - n번째 바이트 값을 판독하기 위해서는 <br> 반드시 (n-1)번째 바이트 값을 `판독`해야함
 
-{% capture images %}
-    /assets/img/file_processing/seq_file_1_1.png
-    /assets/img/file_processing/seq_file_1_2.png
-    /assets/img/file_processing/seq_file_1_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+![](/assets/img/file_processing/seq_file_1_1.png)
+![](/assets/img/file_processing/seq_file_1_2.png)
+![](/assets/img/file_processing/seq_file_1_3.png)
+
+
 
 
 
@@ -86,11 +86,11 @@ author: goodGid
 
 * "r"(판독) 모드로 개방한 스트림 파일
 
-{% capture images %}
-    /assets/img/file_processing/seq_file_1_4.png
-    /assets/img/file_processing/seq_file_1_5.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/file_processing/seq_file_1_4.png)
+![](/assets/img/file_processing/seq_file_1_5.png)
+
+
 
 ---
 
@@ -103,10 +103,10 @@ author: goodGid
 
 * 레코드<필드, 값> 쌍으로 구성
 
-{% capture images %}
-    /assets/img/file_processing/seq_file_1_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/seq_file_1_6.png)
+
+
 
 * 갱신 작업
     - 레코드 삽입 : 기존 `파일 끝`에 첨가

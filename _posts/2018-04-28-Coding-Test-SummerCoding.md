@@ -13,13 +13,13 @@ author: goodGid
 > [2018 SummerCoding - 여름방학 스타트업 인턴 프로그램](https://programmers.co.kr/competitions/59/2018-summercoding-%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8)
 
 
-{% capture images %}
-    /assets/img/coding_test/sc_1.png
-    /assets/img/coding_test/sc_2.png
-    /assets/img/coding_test/sc_3.png
-    /assets/img/coding_test/sc_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=4 %}
+
+![](/assets/img/coding_test/sc_1.png)
+![](/assets/img/coding_test/sc_2.png)
+![](/assets/img/coding_test/sc_3.png)
+![](/assets/img/coding_test/sc_4.png)
+
+
 
 ---
 
@@ -46,12 +46,12 @@ author: goodGid
 ## 1번
 
 
-{% capture images %}
-    /assets/img/coding_test/sc_1_1.png
-    /assets/img/coding_test/sc_1_2.png
-    /assets/img/coding_test/sc_1_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+![](/assets/img/coding_test/sc_1_1.png)
+![](/assets/img/coding_test/sc_1_2.png)
+![](/assets/img/coding_test/sc_1_3.png)
+
+
 
 
 ``` cpp
@@ -81,18 +81,18 @@ int solution(vector<int> d, int budget) {
 ## 2번
 
 
-{% capture images %}
-    /assets/img/coding_test/sc_2_1.png
-    /assets/img/coding_test/sc_2_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/coding_test/sc_2_1.png)
+![](/assets/img/coding_test/sc_2_2.png)
 
 
-{% capture images %}
-    /assets/img/coding_test/sc_2_3.png
-    /assets/img/coding_test/sc_2_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+
+
+![](/assets/img/coding_test/sc_2_3.png)
+![](/assets/img/coding_test/sc_2_4.png)
+
+
 
 
 ``` cpp
@@ -127,12 +127,12 @@ vector<int> solution(int n, vector<string> words) {
 ## 3번
 
 
-{% capture images %}
-    /assets/img/coding_test/sc_3_1.png
-    /assets/img/coding_test/sc_3_2.png
-    /assets/img/coding_test/sc_3_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+![](/assets/img/coding_test/sc_3_1.png)
+![](/assets/img/coding_test/sc_3_2.png)
+![](/assets/img/coding_test/sc_3_3.png)
+
+
 
 
 ``` cpp

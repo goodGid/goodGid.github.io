@@ -85,10 +85,10 @@ author: goodGid
 
 # 저장 장치의 계층 (4)
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_1_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_1_1.png)
+
+
 
 
 
@@ -96,10 +96,10 @@ author: goodGid
 
 # 자기 디스크
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_1_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_1_2.png)
+
+
 
 
 ---
@@ -116,16 +116,16 @@ author: goodGid
     - 블록은 하나 이상의 섹터에 저장
     - 한 원반에 있는 각 트랙은 직경이 다르지만 섹터 수는 같음 <br> ==> 트랙마다 기록 밀도가 다름
     
-{% capture images %}
-    /assets/img/file_processing/fp_sd_1_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_1_3.png)
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_1_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+
+
+![](/assets/img/file_processing/fp_sd_1_4.png)
+
+
 
 0번째 실린더
 
@@ -137,10 +137,10 @@ author: goodGid
 
 # 회전 지연 시간
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_1_5.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_1_5.png)
+
+
 
 
 

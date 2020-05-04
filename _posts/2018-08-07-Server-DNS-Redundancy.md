@@ -54,8 +54,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/server/dns_redundancy_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/dns_redundancy_1.png)
+
+
 

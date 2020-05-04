@@ -46,8 +46,8 @@ Class C --> 192.168.0.0 ~ 192.168.255.255
 
 <br>
 
-{% capture images %}
-    /assets/img/server/various_ip_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/server/various_ip_1.png)
+
+
 

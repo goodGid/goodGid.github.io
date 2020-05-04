@@ -52,10 +52,8 @@ author: goodGid
 ---
 
 
-{% capture images %}
-    /assets/img/posts/funcDepen_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/posts/funcDepen_3.png)
 
 
 

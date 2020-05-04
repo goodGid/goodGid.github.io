@@ -2,7 +2,6 @@
 layout: post
 title:  " Url and Querystring "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content
@@ -36,10 +35,9 @@ console.log(queryParsed);
 
 ## Output
 
-{% capture images %}
-    /assets/img/posts/url&querystring_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+![](/assets/img/posts/url&querystring_1.png)
+
+
 
 ## File
 

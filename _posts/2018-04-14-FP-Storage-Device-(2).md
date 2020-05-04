@@ -166,10 +166,10 @@ r = 1/2 * 16.67 = 8.33ms
 - 저장공간 낭비가 심함
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_1.png)
+
+
 
 
 ---
@@ -180,10 +180,10 @@ r = 1/2 * 16.67 = 8.33ms
 
 * 블록 헤더 : 블로킹된 레코드를 처리하기 위해서는 블록 내에서의 레코드 시작점과 끝점을 식별 해야한다.
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_2.png)
+
+
 
 
 
@@ -198,10 +198,10 @@ r = 1/2 * 16.67 = 8.33ms
     * 위치 테이블
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_3.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_3.png)
+
+
 
 
 ---
@@ -240,10 +240,10 @@ Q. 적재 밀도가 낮을 때(자유공간 많음) 장단점은 ?
 
 * 논리적으로 연관된 레코드들이 물리적으로 가까이 있다면 <br> 최소지연 시간으로 해당 레코드들 접근 가능
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_4.png)
+
+
 
 
 
@@ -252,10 +252,10 @@ Q. 적재 밀도가 낮을 때(자유공간 많음) 장단점은 ?
 ## IBG ( Inter Block Gap )
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_5.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_5.png)
+
+
 
 위 :  블록 = 레코드 1개
 
@@ -265,17 +265,16 @@ Q. 적재 밀도가 낮을 때(자유공간 많음) 장단점은 ?
 <br>
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_6.png)
+
+
 
 * 데이터의 값은 같다. 
 
 * 블로킹을 하지 않으면 `배(=Data)`보다 `배꼽(=IBG)`이 크다. 
 
 
-{% capture images %}
-    /assets/img/file_processing/fp_sd_2_7.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/file_processing/fp_sd_2_7.png)
+

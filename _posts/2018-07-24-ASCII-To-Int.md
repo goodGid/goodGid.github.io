@@ -20,10 +20,10 @@ Problem URL : **[시저 암호](https://programmers.co.kr/learn/courses/30/lesso
 
 
 
-{% capture images %}
-    /assets/img/algorithm/ascii_value_1.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Problem Explain" cols=1 %}
+
+![](/assets/img/algorithm/ascii_value_1.png)
+
+
 
 ---
 

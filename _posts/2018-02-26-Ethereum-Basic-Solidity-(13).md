@@ -19,8 +19,8 @@ dApp 프로젝트들은
 
 그리고 명령 프롬포트에서 Geth를 통해 EVM을 실행시킨다.
 
-{% capture images %}
-/assets/img/ethereum/eth_basic_solidity_13_1.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/ethereum/eth_basic_solidity_13_1.png)
+
+
 

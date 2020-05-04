@@ -11,28 +11,28 @@ author: goodGid
 
 ## Hackerton Mentoring
 
-{% capture images %}
-	/assets/img/conference/ghas_1.png
-	/assets/img/conference/ghas_2.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/conference/ghas_1.png)
+![](/assets/img/conference/ghas_2.png)
 
 
-{% capture images %}
-	/assets/img/conference/ghas_16.png
-	/assets/img/conference/ghas_17.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+
+
+![](/assets/img/conference/ghas_16.png)
+![](/assets/img/conference/ghas_17.png)
+
+
 
 
 
 * [경기 자동차 과학 고등학교](http://www.ghas.hs.kr/) 아이들 1박2일 해커톤 멘토링을 갔다 왔다.
 
-{% capture images %}
-	/assets/img/conference/ghas_3.png
-	/assets/img/conference/ghas_4.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/conference/ghas_3.png)
+![](/assets/img/conference/ghas_4.png)
+
+
 
 * 자기 소개 타임을 갖고 아이들은 간단한 게임을 통해 높은 점수를 획득한 팀부터 <br> 멘토를 Pick할 기회를 얻었다.
 
@@ -43,11 +43,11 @@ author: goodGid
 
 ## Idea Meeting
 
-{% capture images %}
-	/assets/img/conference/ghas_5.png
-	/assets/img/conference/ghas_6.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/conference/ghas_5.png)
+![](/assets/img/conference/ghas_6.png)
+
+
 
 * 1명의 멘토당 2개의 팀을 맡아서 아이디어 회의를 하였다.
 
@@ -57,12 +57,12 @@ author: goodGid
 
 ## Mentoring Time
 
-{% capture images %}
-	/assets/img/conference/ghas_7.png
-	/assets/img/conference/ghas_14.png
-	/assets/img/conference/ghas_15.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=3 %}
+
+![](/assets/img/conference/ghas_7.png)
+![](/assets/img/conference/ghas_14.png)
+![](/assets/img/conference/ghas_15.png)
+
+
 
 * Idea Meeting과 SotryBoard를 하루종일 하고 저녁에 진짜 멘토들한테 궁금한 사항에 대한 Q&A시간을 가졌다.
 
@@ -78,10 +78,10 @@ author: goodGid
 
 ## Awards
 
-{% capture images %}
-	/assets/img/conference/ghas_8.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/ghas_8.png)
+
+
 
 * 내가 맡은 2팀이 전부 상을 받진 못했지만 그래도 1팀은 받아서 뿌듯했다. 
 
@@ -91,18 +91,18 @@ author: goodGid
 
 ## 멘토의 한 마디
 
-{% capture images %}
-	/assets/img/conference/ghas_9.png
-	/assets/img/conference/ghas_10.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+![](/assets/img/conference/ghas_9.png)
+![](/assets/img/conference/ghas_10.png)
 
 
-{% capture images %}
-	/assets/img/conference/ghas_11.png
-	/assets/img/conference/ghas_12.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=2 %}
+
+
+
+![](/assets/img/conference/ghas_11.png)
+![](/assets/img/conference/ghas_12.png)
+
+
 
 * 진짜 너무나 뿌듯했다. 
 
@@ -118,10 +118,10 @@ author: goodGid
 
 ## Group Photo 
 
-{% capture images %}
-	/assets/img/conference/ghas_13.png
-{% endcapture %}
-{% include gallery images=images caption=" " cols=1 %}
+
+![](/assets/img/conference/ghas_13.png)
+
+
 
 * 마지막은 단체사진이지 
 
