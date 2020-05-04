@@ -9,9 +9,12 @@ layout: default
         <ul>
             {% for post in paginator.posts %}
               <li>
+
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
+
+                <!-- label -->
                 <div class="label">
                     <div class="label-card">
                         <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
@@ -27,14 +30,18 @@ layout: default
                     <div class="label-card">
                     {% include category.html %}
                     </div>
-
                 </div>
+
+                <!-- excerpt -->
                 <div class="excerpt">
                     {{post.excerpt}}
                 </div>
+
+                <!-- read-all -->
                 <div class="read-all">
                     <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
                 </div>
+
                 <hr>
               </li>
             {% endfor %}
@@ -154,3 +161,8 @@ layout: default
         </div>
     </div>
 </div>
+<!-- pageContent.js 활성화 시 Right Side가 고정된다.  -->
+<!-- 그런데 Home 화면에서는 고정이 되면 안된다. -->
+<!-- 그런데 다른 화면에서는 고정을 시키는게 좋다. -->
+<!-- ex) Category, About 등등 -->
+<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
