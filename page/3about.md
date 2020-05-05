@@ -248,7 +248,7 @@ Offline 연락
 
 
 
-## Prize
+## Awards
 
 * 　18. 12. 17 [SKT X 한국관광공사 앱 공모전 장려상 수상]({{site.url}}/2018-Korea-Tour-App-Competition/)
 
