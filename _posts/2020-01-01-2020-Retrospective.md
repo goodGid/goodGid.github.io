@@ -198,3 +198,11 @@ author: goodGid
 * [Nginx 옵션 : server_tokens]({{site.url}}/Nginx-Option-Server-Tokens/)
 
 * [Github Actions를 사용하여 자신의 Daily Coding 시간 확인하기]({{site.url}}/Github-Actions-Daily-Coding-Time/)
+
+> 200504 ~ 200510
+
+* [Spring Boot Local Time 설정 : UTC에서 변경이 되지 않는다.]({{site.url}}/Spring-Local-Time/)
+
+* [SSL(Secure Sockets Layer) 개념 및 동작 원리 알아보기]({{site.url}}/TLS-SSL/)
+
+* [SSL 적용하기]({{site.url}}/Apply-SSL/)
