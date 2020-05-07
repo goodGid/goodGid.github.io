@@ -324,8 +324,10 @@
         })
       }
     
-      function emptyResultsContainer(){
-        options.resultsContainer.innerHTML = ''
+      function emptyResultsContainer(key){
+        if( isWhitelistedKey(key) ){
+          options.resultsContainer.innerHTML = ''
+        }
       }
     
       function appendToResultsContainer(text){
@@ -334,9 +336,11 @@
     
       function registerInput(){
         options.searchInput.addEventListener('keyup', function(e){
-          emptyResultsContainer();
           var key = e.which
           var query = e.target.value
+          
+          emptyResultsContainer(key);
+          
           if( isWhitelistedKey(key) && isValidQuery(query) ) {
             render( repository.search(query) );
           }
