@@ -340,11 +340,18 @@
           var query = e.target.value
           
           emptyResultsContainer(key);
+          loseFocus(key)
           
           if( isWhitelistedKey(key) && isValidQuery(query) ) {
             render( repository.search(query) );
           }
         })
+      }
+
+      function loseFocus(key) {
+        if( [13].indexOf(key) === 0 ) { // 13 == Enter
+          document.getElementById("search-input").blur();
+        }
       }
     
       function render(results) {
@@ -361,7 +368,7 @@
       }
     
       function isWhitelistedKey(key) {
-        return [13,16,20,37,38,39,40,91].indexOf(key) === -1
+        return [16,20,37,38,39,40,91].indexOf(key) === -1
       }
     
       function throwError(message){ throw new Error('SimpleJekyllSearch --- '+ message) }
