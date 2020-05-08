@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Github Actions를 사용하여 자신의 Daily Coding 시간 확인하기  "
+title:  " Github Actions를 사용하여 자신의 Daily Coding 시간 확인하기 "
 categories: Technology
 author: goodGid
 ---
@@ -48,7 +48,7 @@ author: goodGid
 
 * Public으로 [Gist](https://gist.github.com/)를 생성합니다. 
 
-    - 생서시 입력한 제목과 내용은 어차피 Override 되기 때문에 편하게 Gist를 생성합니다.
+    - 생성시 입력한 제목과 내용은 어차피 Override 되기 때문에 편하게 Gist를 생성합니다.
 
     - 그리고 사진 속에 표시된 값을 GIST_ID로 사용해야 하기 때문에 기록해둡니다.
 
@@ -60,7 +60,7 @@ author: goodGid
 
 * [Personal access tokens](https://github.com/settings/tokens/new)에서 Token을 생성합니다.
 
-    - Select scopes은 자유롭게 선택하셔도 됩니다.
+    - Select scopes은 **repo**와 **gist**를 추가합니다.
 
     - 생성 후 Token Key 값을 GH_TOKEN 값으로 사용해야하기 때문에 기록해둡니다.
     
