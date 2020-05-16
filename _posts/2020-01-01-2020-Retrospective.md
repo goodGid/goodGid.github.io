@@ -206,3 +206,13 @@ author: goodGid
 * [SSL(Secure Sockets Layer) 개념 및 동작 원리 알아보기]({{site.url}}/TLS-SSL/)
 
 * [SSL 적용하기]({{site.url}}/Apply-SSL/)
+
+> 200511 ~ 200517
+
+* [Nginx 공식 문서(Docs) 읽어보기 : Regular Expressions]({{site.url}}/Nginx-Docs-Regular-Expressions/)
+
+* [Nginx 공식 문서(Docs) 읽어보기 : reload]({{site.url}}/Nginx-Docs-Reload/)
+
+* [Nginx 공식 문서(Docs) 읽어보기 : root]({{site.url}}/Nginx-Docs-Root/)
+
+* [Nginx 공식 문서(Docs) 읽어보기 : Wildcard names]({{site.url}}/Nginx-Docs-Wild-Card/)
