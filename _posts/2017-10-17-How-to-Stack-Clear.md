@@ -2,7 +2,6 @@
 layout: post
 title:  "Stack 초기화 하는 법"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content
@@ -14,18 +13,10 @@ author: goodGid
 * Stack Clear 하는 법
 
 
-
-
-
-
-
-
-
 ---
 
 ## Code
 ``` cpp
-
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -37,7 +28,6 @@ int main(){
     s.push(2);
     s.push(3);
     
-    
     /*
      Stack Clear !
      */
@@ -46,5 +36,4 @@ int main(){
     
     return 1;
 }
-
 ```

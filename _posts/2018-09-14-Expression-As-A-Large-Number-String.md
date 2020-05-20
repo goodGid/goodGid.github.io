@@ -22,13 +22,6 @@ author: goodGid
 
 Problem URL : **[하노이 탑](https://www.acmicpc.net/problem/1914)**
 
-![](/assets/img/algorithm/1914_1.png)
-
-![](/assets/img/algorithm/1914_2.png)
-
-
----
-
 ## Code
 
 ``` cpp
