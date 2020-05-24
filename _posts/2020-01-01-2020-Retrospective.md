@@ -216,3 +216,9 @@ author: goodGid
 * [Nginx 공식 문서(Docs) 읽어보기 : root]({{site.url}}/Nginx-Docs-Root/)
 
 * [Nginx 공식 문서(Docs) 읽어보기 : Wildcard names]({{site.url}}/Nginx-Docs-Wild-Card/)
+
+> 200518 ~ 200524
+
+* [MyBatis 공식 문서(Docs) 읽어보기 : properties]({{site.url}}/MyBatis-Docs-Properties/)
+
+* [Regex를 사용하여 Empty Line 지우기 : How to remove empty line]({{site.url}}/How-to-Remove-Empty-Line/)
