@@ -2,7 +2,6 @@
 layout: post
 title:  " Blocking/Non-Blocking & Sync/Async "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

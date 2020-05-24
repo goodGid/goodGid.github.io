@@ -2,7 +2,6 @@
 layout: post
 title:  " 쓰레드(Thread)란 무엇인가? "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

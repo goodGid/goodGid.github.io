@@ -2,7 +2,6 @@
 layout: post
 title:  "오름/내림 차순"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  "Upper_bound vs Lower_bound "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

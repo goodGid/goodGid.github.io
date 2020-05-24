@@ -2,7 +2,6 @@
 layout: post
 title:  " 정수 데이터 표현 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

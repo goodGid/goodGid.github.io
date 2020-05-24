@@ -2,7 +2,6 @@
 layout: post
 title:  " 인터페이스(Interface) 와 추상 클래스(Abstract class) "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

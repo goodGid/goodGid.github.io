@@ -2,7 +2,6 @@
 layout: post
 title:  " Delete Contract  "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " [서버 준비하기] 가상화 S/W 종류 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka의 특징 "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

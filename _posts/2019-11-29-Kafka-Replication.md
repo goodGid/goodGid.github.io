@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Replication(복제) "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

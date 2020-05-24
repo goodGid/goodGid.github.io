@@ -2,7 +2,6 @@
 layout: post
 title:  " 네트워크 주소의 대한 모든 것 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

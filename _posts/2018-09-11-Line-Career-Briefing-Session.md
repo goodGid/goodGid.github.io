@@ -2,7 +2,6 @@
 layout: post
 title:  " 라인 채용 설명회 "
 categories: Conference
-tags: 
 author: goodGid
 ---
 * content

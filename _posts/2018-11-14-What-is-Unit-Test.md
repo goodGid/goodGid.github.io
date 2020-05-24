@@ -2,7 +2,6 @@
 layout: post
 title:  " 유닛(Unit) 테스트란? "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

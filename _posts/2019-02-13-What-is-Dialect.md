@@ -2,7 +2,6 @@
 layout: post
 title:  " Dialect(방언)이란? "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

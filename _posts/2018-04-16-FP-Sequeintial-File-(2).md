@@ -2,7 +2,6 @@
 layout: post
 title:  " 순차 파일 [ Part 2 ] "
 categories: 파일처리
-tags: 파일처리
 author: goodGid
 ---
 * content

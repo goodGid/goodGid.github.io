@@ -2,7 +2,6 @@
 layout: post
 title:  " 동적 라이브러리와 정적 라이브러리 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

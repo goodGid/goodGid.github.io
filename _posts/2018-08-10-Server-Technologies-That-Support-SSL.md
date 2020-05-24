@@ -2,7 +2,6 @@
 layout: post
 title:  " [공개 서버의 기본] SSL을 지원하는 기술 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

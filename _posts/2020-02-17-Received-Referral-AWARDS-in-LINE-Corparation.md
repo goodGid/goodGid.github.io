@@ -2,7 +2,6 @@
 layout: post
 title:  " 2019 LINE 최다 추천왕(Referral AWARDS)을 수상하다 ! "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

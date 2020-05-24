@@ -2,7 +2,6 @@
 layout: post
 title:  " 정렬 알고리즘 (Sort Algorithm) "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

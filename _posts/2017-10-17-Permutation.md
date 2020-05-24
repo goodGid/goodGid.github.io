@@ -2,7 +2,6 @@
 layout: post
 title:  "순열 (Permutation)"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

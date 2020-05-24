@@ -2,7 +2,6 @@
 layout: post
 title:  " 소프트웨어(SW)의 특징 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

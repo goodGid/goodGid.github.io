@@ -2,7 +2,6 @@
 layout: post
 title:  " Node.js의 특징 및 장단점 "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

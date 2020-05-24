@@ -2,7 +2,6 @@
 layout: post
 title:  " Midas Online Coding Test "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 로드 밸런싱과 클러스터링 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

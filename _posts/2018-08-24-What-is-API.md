@@ -2,7 +2,6 @@
 layout: post
 title:  " API란? "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

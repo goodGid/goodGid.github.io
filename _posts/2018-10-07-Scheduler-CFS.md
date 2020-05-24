@@ -2,7 +2,6 @@
 layout: post
 title:  " CFS 스케줄러 "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

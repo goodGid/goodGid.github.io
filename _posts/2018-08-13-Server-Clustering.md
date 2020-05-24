@@ -2,7 +2,6 @@
 layout: post
 title:  " [서버를 장애로부터 보호하기] 클러스터링 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

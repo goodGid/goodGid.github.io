@@ -2,7 +2,6 @@
 layout: post
 title:  " 여행갈 때 참고할 Tip "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

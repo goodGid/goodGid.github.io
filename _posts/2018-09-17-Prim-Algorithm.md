@@ -2,7 +2,6 @@
 layout: post
 title:  " 프림(Prim) 알고리즘 "
 categories: Algorithm
-tags: Algorithm
 author: goodGid
 ---
 * content

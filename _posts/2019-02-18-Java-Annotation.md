@@ -2,7 +2,6 @@
 layout: post
 title:  " Java Annotation "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

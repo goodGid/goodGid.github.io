@@ -2,7 +2,6 @@
 layout: post
 title:  " [공개 서버의 기본] 웹 서버에서 하는 처리"
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

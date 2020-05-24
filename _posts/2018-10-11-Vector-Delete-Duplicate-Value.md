@@ -2,7 +2,6 @@
 layout: post
 title:  " Vector에서 중복 값 삭제하기 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

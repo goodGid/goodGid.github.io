@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring Controller에서 사용하는 Annotation 분석하기 : @RequestBody, @ResponseBody "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

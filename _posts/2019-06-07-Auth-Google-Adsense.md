@@ -2,7 +2,6 @@
 layout: post
 title:  " Google AdSense 인증 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

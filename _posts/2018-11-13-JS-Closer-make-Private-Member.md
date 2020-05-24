@@ -2,7 +2,6 @@
 layout: post
 title:  " 클로저(Closer)로 프라이빗(Private) 멤버 만들기 "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

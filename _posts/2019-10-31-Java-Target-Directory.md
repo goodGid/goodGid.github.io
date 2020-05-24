@@ -2,7 +2,6 @@
 layout: post
 title:  " Target 디렉토리(Directory)는 언제 생성될까? "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

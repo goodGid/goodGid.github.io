@@ -2,7 +2,6 @@
 layout: post
 title:  " 로그 선행 기록(Write-Ahead Logging, WAL) "
 categories: Technology
-tags: Technology
 author: goodGId
 ---
 * content

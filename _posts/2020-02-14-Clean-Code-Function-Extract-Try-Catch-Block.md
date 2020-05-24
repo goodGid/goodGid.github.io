@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 함수 (Function) : Try/Catch 블록 뽑아내기 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

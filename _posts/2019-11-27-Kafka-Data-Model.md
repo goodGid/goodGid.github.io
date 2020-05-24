@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka 데이터 모델 "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

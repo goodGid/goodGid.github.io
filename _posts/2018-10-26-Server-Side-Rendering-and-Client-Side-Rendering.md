@@ -2,7 +2,6 @@
 layout: post
 title:  " 서버 사이드 렌더링(SSR)과 클라이언트 사이드 렌더링(CSR) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

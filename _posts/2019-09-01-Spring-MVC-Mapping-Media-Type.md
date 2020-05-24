@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - 미디어 타입 매핑하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

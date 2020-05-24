@@ -2,7 +2,6 @@
 layout: post
 title:  " 'var' vs 'let' vs 'const' "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

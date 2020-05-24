@@ -2,7 +2,6 @@
 layout: post
 title:  " 신입개발자 및 프로그래머를 꿈꾸고 있는 친구들에게 꼭 해주고싶은 이야기 "
 categories: E.T.C
-tags: Youtube
 author: goodGid
 ---
 * content

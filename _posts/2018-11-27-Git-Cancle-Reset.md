@@ -2,7 +2,6 @@
 layout: post
 title:  " Git Reset 취소하기 "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content

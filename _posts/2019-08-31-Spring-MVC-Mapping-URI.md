@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - URI 패턴 맵핑하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

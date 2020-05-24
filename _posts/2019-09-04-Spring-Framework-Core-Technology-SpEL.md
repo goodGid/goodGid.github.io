@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring 프레임워크 핵심 기술 - SpEL (스프링 Expression Language) "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

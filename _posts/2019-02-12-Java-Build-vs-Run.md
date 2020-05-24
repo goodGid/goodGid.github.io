@@ -2,7 +2,6 @@
 layout: post
 title:  " Build와 Run의 차이 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

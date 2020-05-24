@@ -2,7 +2,6 @@
 layout: post
 title:  " YHBS Home Page "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

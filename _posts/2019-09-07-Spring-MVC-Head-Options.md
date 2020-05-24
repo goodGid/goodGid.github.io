@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - HEAD와 OPTIONS 메소드 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

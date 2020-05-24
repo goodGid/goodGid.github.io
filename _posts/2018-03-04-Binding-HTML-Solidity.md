@@ -2,7 +2,6 @@
 layout: post
 title:  " Binding-HTML-Solidity "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

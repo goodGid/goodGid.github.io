@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Message Send Method :: 1st "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Connecting Mist to a local test network "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

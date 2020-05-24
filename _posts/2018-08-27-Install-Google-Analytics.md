@@ -2,7 +2,6 @@
 layout: post
 title:  " Jekyll 블로그에 Google Analytics 사용하기 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

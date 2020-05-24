@@ -2,7 +2,6 @@
 layout: post
 title:  " 파일의 기본개념 - 파일의 종류  [ Part 2 ] "
 categories: 파일처리
-tags: 파일처리
 author: goodGid
 ---
 * content

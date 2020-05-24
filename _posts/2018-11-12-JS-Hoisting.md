@@ -2,7 +2,6 @@
 layout: post
 title:  " 호이스팅(Hoisting) "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " MVC / MVP / MVVM "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

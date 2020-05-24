@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - Handler Methods : Return Type Values "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

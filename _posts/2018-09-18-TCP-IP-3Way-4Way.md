@@ -2,7 +2,6 @@
 layout: post
 title:  " TCP 3-way Handshake, 4-way Handshake "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

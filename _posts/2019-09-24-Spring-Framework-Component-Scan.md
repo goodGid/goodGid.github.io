@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring 프레임워크 핵심 기술 - @Component와 Component Scan "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

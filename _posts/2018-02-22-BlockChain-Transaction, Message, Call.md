@@ -2,7 +2,6 @@
 layout: post
 title:  " Transaction, Message, Call "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

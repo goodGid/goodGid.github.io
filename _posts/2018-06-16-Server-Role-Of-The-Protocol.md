@@ -2,7 +2,6 @@
 layout: post
 title:  " [네트워크 기초 지식] 프로토콜의 역할 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

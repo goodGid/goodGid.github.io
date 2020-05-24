@@ -2,7 +2,6 @@
 layout: post
 title:  " 자리올림수 예측 가산기(Carry look Ahead Full Adder) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

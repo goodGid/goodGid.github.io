@@ -2,7 +2,6 @@
 layout: post
 title:  " String, StringBuffer, StringBuilder의 특징 및 비교 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

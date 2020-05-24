@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - HTTP Method 매핑하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

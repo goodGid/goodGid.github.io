@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring 프레임워크 핵심 기술 - Proxy 객체를 만드는 방법 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

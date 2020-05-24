@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - ResponseEntity "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

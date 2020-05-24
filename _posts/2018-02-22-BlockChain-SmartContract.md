@@ -2,7 +2,6 @@
 layout: post
 title:  " What is Smart Contract? "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

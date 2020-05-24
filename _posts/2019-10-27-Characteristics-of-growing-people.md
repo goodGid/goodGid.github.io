@@ -2,7 +2,6 @@
 layout: post
 title:  " 성장하는 사람들의 10가지 특징 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

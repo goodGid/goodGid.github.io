@@ -2,7 +2,6 @@
 layout: post
 title:  " 하나의 토픽에 다수의 컨슈머 그룹 (Multiple consumer groups in one topic) "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

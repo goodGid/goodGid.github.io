@@ -2,7 +2,6 @@
 layout: post
 title:  " 맵핑(Mapping) (중요)  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

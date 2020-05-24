@@ -2,7 +2,6 @@
 layout: post
 title:  " Ethereum Feature & Component "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

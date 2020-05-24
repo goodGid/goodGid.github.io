@@ -2,7 +2,6 @@
 layout: post
 title:  " 자료 구조(Data Structure) 구현 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

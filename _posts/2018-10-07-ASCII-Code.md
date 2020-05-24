@@ -2,7 +2,6 @@
 layout: post
 title:  " 아스키 코드(ASCII Code) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

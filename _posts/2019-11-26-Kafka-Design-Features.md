@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka 디자인 특징 "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

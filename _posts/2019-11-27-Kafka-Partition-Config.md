@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka 파티션 설정시 고려할 점 "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

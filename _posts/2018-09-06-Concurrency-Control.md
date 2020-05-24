@@ -2,7 +2,6 @@
 layout: post
 title:  " 병행 제어(Concurrency Control) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

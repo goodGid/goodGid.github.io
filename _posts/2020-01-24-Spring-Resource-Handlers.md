@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring의 Resource Handler 알아보기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

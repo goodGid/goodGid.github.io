@@ -2,7 +2,6 @@
 layout: post
 title:  " S/W관리병이란 ?"
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

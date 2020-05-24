@@ -2,7 +2,6 @@
 layout: post
 title:  " 템플릿 메소드(Template Method) 패턴이란? "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

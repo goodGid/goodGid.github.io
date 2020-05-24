@@ -2,7 +2,6 @@
 layout: post
 title:  " 프로토타입(Prototype) "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

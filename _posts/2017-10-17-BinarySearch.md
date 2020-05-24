@@ -2,7 +2,6 @@
 layout: post
 title:  "BinarySearch"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

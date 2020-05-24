@@ -2,7 +2,6 @@
 layout: post
 title:  " CPU와 쓰레드 "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

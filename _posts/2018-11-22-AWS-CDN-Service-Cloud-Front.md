@@ -2,7 +2,6 @@
 layout: post
 title:  " AWS의 CDN 서비스(Cloud Front) "
 categories: AWS
-tags: AWS
 author: goodGid
 ---
 * content

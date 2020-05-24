@@ -2,7 +2,6 @@
 layout: post
 title:  " Java Reference(Strong, Weak, Soft Reference) "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

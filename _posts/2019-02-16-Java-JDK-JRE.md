@@ -2,7 +2,6 @@
 layout: post
 title:  " JDK와 JRE의 차이점 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

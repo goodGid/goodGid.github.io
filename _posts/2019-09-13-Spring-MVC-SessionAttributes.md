@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - @SessionAttributes 애노테이션 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Git 저장소를 병합하는 방법(How to merge repositories in Git) "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content

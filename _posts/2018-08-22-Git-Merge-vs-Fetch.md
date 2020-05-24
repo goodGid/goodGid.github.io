@@ -2,7 +2,6 @@
 layout: post
 title:  " Merge 와 Fetch의 차이 "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content

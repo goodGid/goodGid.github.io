@@ -2,7 +2,6 @@
 layout: post
 title:  "소수 (PrimeNumber)"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

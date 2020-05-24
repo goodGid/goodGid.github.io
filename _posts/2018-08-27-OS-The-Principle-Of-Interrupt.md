@@ -2,7 +2,6 @@
 layout: post
 title:  " 인터럽트의 원리 "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Smart Contract 교육 (2) "
 categories: Conference
-tags: 
 author: goodGid
 ---
 * content

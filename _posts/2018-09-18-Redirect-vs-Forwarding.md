@@ -2,7 +2,6 @@
 layout: post
 title:  " 리다이렉트(Redirect) vs 포워딩(Forwarding) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

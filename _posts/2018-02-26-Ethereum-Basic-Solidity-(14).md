@@ -2,7 +2,6 @@
 layout: post
 title:  " 대비책 함수 (Fallback Function) & 오류 처리 (Error Handling) "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 2018 SummerCoding - 여름방학 스타트업 인턴 프로그램 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

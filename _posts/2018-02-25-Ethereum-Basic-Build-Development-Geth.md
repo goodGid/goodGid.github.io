@@ -2,7 +2,6 @@
 layout: post
 title:  " 사설 이더리움 네트워크(Geth) 구축하기 "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

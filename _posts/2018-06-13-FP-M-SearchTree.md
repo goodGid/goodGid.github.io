@@ -2,7 +2,6 @@
 layout: post
 title:  " m-원 탐색 트리 "
 categories: 파일처리
-tags: 파일처리
 author: goodGid
 ---
 * content

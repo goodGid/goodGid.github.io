@@ -2,7 +2,6 @@
 layout: post
 title:  " [네트워크 기초 지식] IP 와 IP 주소 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

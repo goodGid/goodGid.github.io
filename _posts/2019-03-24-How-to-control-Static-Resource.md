@@ -2,7 +2,6 @@
 layout: post
 title:  " Static Resource 경로 다루기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

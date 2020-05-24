@@ -2,7 +2,6 @@
 layout: post
 title:  " 2019 Dev History "
 categories: Retrospective
-tags: Retrospective
 author: goodGid
 ---
 * content

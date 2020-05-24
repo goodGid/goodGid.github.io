@@ -2,7 +2,6 @@
 layout: post
 title:  " 제주도 해커톤 "
 categories: Competition
-tags: Hackathon
 author: goodGid
 ---
 * content

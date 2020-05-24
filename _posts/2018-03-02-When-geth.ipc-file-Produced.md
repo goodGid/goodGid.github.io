@@ -2,7 +2,6 @@
 layout: post
 title:  " When is the geth.ipc file produced? "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 어느 아저씨의 소소한 이야기 : 사회 생활편 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

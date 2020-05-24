@@ -2,7 +2,6 @@
 layout: post
 title:  " URL을 이용한 데이터 전송 "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

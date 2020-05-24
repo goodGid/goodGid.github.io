@@ -2,7 +2,6 @@
 layout: post
 title:  " URL과 URI, URN "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

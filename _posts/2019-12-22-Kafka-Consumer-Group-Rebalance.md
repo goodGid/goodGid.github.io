@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Consumer Groups Rebalance "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

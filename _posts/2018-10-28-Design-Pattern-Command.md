@@ -2,7 +2,6 @@
 layout: post
 title:  " 디자인 패턴 : 커맨드 패턴 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

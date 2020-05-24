@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP 메소드 Get vs Post "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

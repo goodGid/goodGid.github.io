@@ -2,7 +2,6 @@
 layout: post
 title:  " [로컬 영역 네트워크편] Ethernet "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

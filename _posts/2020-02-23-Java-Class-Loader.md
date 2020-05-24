@@ -2,7 +2,6 @@
 layout: post
 title:  " 클래스 로더(Class Loader) "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

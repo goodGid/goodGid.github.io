@@ -2,7 +2,6 @@
 layout: post
 title:  " Mist "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

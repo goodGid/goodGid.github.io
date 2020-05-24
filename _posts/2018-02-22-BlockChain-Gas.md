@@ -2,7 +2,6 @@
 layout: post
 title:  " Gas "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

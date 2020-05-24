@@ -2,7 +2,6 @@
 layout: post
 title:  " [하드웨어편] 게이트웨이 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

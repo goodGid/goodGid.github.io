@@ -2,7 +2,6 @@
 layout: post
 title:  " 주키퍼(Zookeeper) "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

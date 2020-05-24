@@ -2,7 +2,6 @@
 layout: post
 title:  " Liquid 문법 개념과 사용법 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " [공개 서버의 기본] SSL 서버의 역할"
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

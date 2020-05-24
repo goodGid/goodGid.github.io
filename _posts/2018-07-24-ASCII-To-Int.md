@@ -2,7 +2,6 @@
 layout: post
 title:  "ASCII Value "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

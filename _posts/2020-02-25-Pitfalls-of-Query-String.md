@@ -2,7 +2,6 @@
 layout: post
 title:  " Query String의 함정 : List에 null이 담겨온다. "
 categories: TIL
-tags: TIL
 author: goodGid
 ---
 * content

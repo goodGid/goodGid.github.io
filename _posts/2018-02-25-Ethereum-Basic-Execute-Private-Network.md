@@ -2,7 +2,6 @@
 layout: post
 title:  " Execute Private Network "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

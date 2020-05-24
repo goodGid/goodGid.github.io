@@ -2,7 +2,6 @@
 layout: post
 title:  " 리플렉션(Reflection) : 클래스 정보 수정 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 의미 있는 이름 (Meaningful name) : 의미 있는 맥락을 추가하라 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

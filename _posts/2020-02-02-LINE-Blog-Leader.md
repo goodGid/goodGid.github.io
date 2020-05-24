@@ -2,7 +2,6 @@
 layout: post
 title:  " LINE 작심삼십일 프로젝트 이끔이가 되다. "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

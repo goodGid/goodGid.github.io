@@ -2,7 +2,6 @@
 layout: post
 title:  " 면접 준비를 위한 모든 것 - 퇴사한 이복 형제"
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

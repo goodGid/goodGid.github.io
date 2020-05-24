@@ -2,7 +2,6 @@
 layout: post
 title:  " 정렬/합병 [ Part 1 ] "
 categories: 파일처리
-tags: 파일처리
 author: goodGid
 ---
 * content

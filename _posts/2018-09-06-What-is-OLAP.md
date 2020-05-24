@@ -2,7 +2,6 @@
 layout: post
 title:  " OLAP란 무엇인가? "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

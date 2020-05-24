@@ -2,7 +2,6 @@
 layout: post
 title:  " Memchcahed 개념과 특징  "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

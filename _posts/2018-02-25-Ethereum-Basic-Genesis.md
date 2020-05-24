@@ -2,7 +2,6 @@
 layout: post
 title:  " Genesis "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

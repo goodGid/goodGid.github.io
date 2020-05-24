@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP 함수 - Post vs Put vs Patch "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 형식 맞추기(Format Match) "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

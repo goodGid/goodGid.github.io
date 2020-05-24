@@ -2,7 +2,6 @@
 layout: post
 title:  " What is Ethereum? "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

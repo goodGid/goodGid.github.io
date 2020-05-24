@@ -2,7 +2,6 @@
 layout: post
 title:  " 조합 (Combination) "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

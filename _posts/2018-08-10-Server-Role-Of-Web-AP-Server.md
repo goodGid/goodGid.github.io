@@ -2,7 +2,6 @@
 layout: post
 title:  " [공개 서버의 기본] 웹 애플리케이션 서버의 역할 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

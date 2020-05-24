@@ -2,7 +2,6 @@
 layout: post
 title:  " Join Private Network "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 메소드(Method) 상속 및 동작 원리  "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

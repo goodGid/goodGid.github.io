@@ -2,7 +2,6 @@
 layout: post
 title:  " 인덱스(Index) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 

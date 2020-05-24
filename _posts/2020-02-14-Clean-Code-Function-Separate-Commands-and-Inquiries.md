@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 함수 (Function) : 명령과 조회를 분리하라 ! "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

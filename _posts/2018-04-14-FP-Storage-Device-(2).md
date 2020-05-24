@@ -2,7 +2,6 @@
 layout: post
 title:  " 파일 저장 장치 [ Part 2 ] "
 categories: 파일처리
-tags: 파일처리
 author: goodGid
 ---
 * content

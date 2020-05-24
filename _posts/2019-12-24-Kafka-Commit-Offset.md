@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Commit & Offset "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

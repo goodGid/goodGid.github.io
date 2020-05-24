@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Commit Type : Auto Commit "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

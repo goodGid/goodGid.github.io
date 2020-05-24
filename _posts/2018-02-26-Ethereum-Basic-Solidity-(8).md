@@ -2,7 +2,6 @@
 layout: post
 title:  " 추상 컨트랙트 & 인터페이스 "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

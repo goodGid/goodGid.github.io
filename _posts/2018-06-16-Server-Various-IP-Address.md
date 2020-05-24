@@ -2,7 +2,6 @@
 layout: post
 title:  " [네트워크 기초 지식] 여러 가지 IP 주소 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

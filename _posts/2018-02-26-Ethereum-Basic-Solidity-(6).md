@@ -2,7 +2,6 @@
 layout: post
 title:  " 구조체  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

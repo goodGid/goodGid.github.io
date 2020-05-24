@@ -2,7 +2,6 @@
 layout: post
 title:  " Strict 모드 "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

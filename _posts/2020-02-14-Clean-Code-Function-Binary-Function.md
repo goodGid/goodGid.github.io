@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 함수 (Function) : 이항 함수 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

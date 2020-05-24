@@ -2,7 +2,6 @@
 layout: post
 title:  " 블록과 거래 속성들  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

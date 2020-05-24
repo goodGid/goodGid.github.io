@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP vs Socket "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

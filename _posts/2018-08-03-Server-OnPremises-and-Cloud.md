@@ -2,7 +2,6 @@
 layout: post
 title:  " [서버 준비하기] 온프레미스형과 클라우드형"
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

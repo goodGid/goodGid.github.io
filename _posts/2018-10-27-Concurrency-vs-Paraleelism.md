@@ -2,7 +2,6 @@
 layout: post
 title:  " 동시성(Concurrency)과 병렬성(Parallelism) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

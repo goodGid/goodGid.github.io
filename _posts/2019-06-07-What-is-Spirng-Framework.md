@@ -2,7 +2,6 @@
 layout: post
 title:  " 스프링 프레임워크(Spring FrameWork) 알아보기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

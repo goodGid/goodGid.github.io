@@ -2,7 +2,6 @@
 layout: post
 title:  " JavaScript의 데이터 타입 "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

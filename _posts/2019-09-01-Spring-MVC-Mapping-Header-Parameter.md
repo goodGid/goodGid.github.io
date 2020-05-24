@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - 헤더와 매개변수 매핑하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

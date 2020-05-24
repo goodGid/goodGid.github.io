@@ -2,7 +2,6 @@
 layout: post
 title:  " Git :: Reset과 Revert "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content

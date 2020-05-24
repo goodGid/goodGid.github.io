@@ -2,7 +2,6 @@
 layout: post
 title:  " [네트워크 기초 지식] 이더넷과 MAC 주소 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

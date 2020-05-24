@@ -2,7 +2,6 @@
 layout: post
 title:  " [사내 서버의 기본] SMTP 서버의 역할"
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

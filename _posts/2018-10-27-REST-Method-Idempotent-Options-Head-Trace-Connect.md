@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP Method :: Idempotent, Options, Head, Trace, Connect "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " next()와 nextLine() 비교 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Javascript Garbage Collection "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring 프레임워크 핵심 기술 - Bean 설정 방법 : XML 파일에 직접 Bean 등록 방식 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

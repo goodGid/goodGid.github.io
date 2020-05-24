@@ -2,7 +2,6 @@
 layout: post
 title:  " [서비스 프로토콜편] 프록시 서버 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

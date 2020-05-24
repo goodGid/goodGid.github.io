@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP Keep Alive 알아보기 "
 categories: HTTP
-tags: HTTP
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Daily DevBlog Weekly 1등 "
 categories: E.T.C
-tags: E.T.C
 author: goodGid
 ---
 * content

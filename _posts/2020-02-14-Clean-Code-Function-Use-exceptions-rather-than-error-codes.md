@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 함수 (Function) : 오류 코드보다 예외를 사용하라 ! "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

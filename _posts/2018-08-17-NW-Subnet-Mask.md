@@ -2,7 +2,6 @@
 layout: post
 title:  " [OSI 참조 모델과 TCP/IP 기초] 서브넷 마스크 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

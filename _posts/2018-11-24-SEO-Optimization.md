@@ -2,7 +2,6 @@
 layout: post
 title:  " SEO 최적화 하는 방법 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

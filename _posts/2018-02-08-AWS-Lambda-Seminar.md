@@ -2,7 +2,6 @@
 layout: post
 title:  " AWS Lambda Seminar "
 categories: Conference
-tags: 
 author: goodGid
 ---
 * content

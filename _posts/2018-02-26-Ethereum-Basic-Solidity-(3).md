@@ -2,7 +2,6 @@
 layout: post
 title:  " 형 변환(Type Conversion)  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

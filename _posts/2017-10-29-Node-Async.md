@@ -2,7 +2,6 @@
 layout: post
 title:  " Async "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

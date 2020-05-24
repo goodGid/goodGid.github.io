@@ -2,7 +2,6 @@
 layout: post
 title:  "두 점 사이 거리 구하기"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring Data JPA Query 사용 - 1편"
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

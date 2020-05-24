@@ -2,7 +2,6 @@
 layout: post
 title:  " 해커톤 멘토링 : 경기자동차과학고등학교 "
 categories: E.T.C
-tags: Mentoring
 author: goodGid
 ---
 * content

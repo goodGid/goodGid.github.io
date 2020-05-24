@@ -2,7 +2,6 @@
 layout: post
 title:  " CHAR와 VARCHAR 비교 및 특징"
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

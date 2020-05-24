@@ -2,7 +2,6 @@
 layout: post
 title:  " 함수 이해하기  "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

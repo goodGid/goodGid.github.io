@@ -2,7 +2,6 @@
 layout: post
 title:  " HTTP 상태(Status) 코드 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " If 2018 스타트업들의 거리 축제 "
 categories: E.T.C
-tags: 
 author: goodGid
 ---
 * content

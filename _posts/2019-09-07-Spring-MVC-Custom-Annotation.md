@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - 커스텀 애노테이션(Custom Annotation) "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 쿠키와 세션 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

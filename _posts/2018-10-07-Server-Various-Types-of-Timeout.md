@@ -2,7 +2,6 @@
 layout: post
 title:  " Connection Timeout / Socket Timeout / Read Timeout "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " Mining Term "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

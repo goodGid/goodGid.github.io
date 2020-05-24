@@ -2,7 +2,6 @@
 layout: post
 title:  " JavaScript의 특징 "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

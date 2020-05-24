@@ -2,7 +2,6 @@
 layout: post
 title:  " 크루스칼(Kruskal) 알고리즘 "
 categories: Algorithm
-tags: Algorithm
 author: goodGid
 ---
 * content

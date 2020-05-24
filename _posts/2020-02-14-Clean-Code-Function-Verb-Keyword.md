@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 함수 (Function) : 동사와 키워드 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

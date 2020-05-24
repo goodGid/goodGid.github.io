@@ -2,7 +2,6 @@
 layout: post
 title:  " 유니온 파인드(Union & Find) 알고리즘 "
 categories: Algorithm
-tags: Algorithm
 author: goodGid
 ---
 * content

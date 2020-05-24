@@ -2,7 +2,6 @@
 layout: post
 title:  " [네트워크 기초 지식] OSI 참조 모델과 프로토콜 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

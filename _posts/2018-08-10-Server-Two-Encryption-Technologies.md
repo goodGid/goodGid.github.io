@@ -2,7 +2,6 @@
 layout: post
 title:  " [공개 서버의 기본] 두 가지 암호화 기술 "
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

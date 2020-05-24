@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka 메시지 손실 (Under Certain Conditions) "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

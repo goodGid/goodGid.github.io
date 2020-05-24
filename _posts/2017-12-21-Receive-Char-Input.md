@@ -2,7 +2,6 @@
 layout: post
 title:  " Char 타입 입력 받기 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

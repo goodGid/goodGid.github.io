@@ -2,7 +2,6 @@
 layout: post
 title:  " 진법 변환하기 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

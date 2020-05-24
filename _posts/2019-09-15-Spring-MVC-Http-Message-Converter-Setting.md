@@ -2,7 +2,6 @@
 layout: post
 title:  " Spring MVC - HttpMessageConverter 설정하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

@@ -2,7 +2,6 @@
 layout: post
 title:  " 가비지 컬렉션(Garbage Collection) 1편"
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

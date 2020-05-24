@@ -2,7 +2,6 @@
 layout: post
 title:  " Stable Sort "
 categories: Algorithm
-tags: sort
 author: goodGid
 ---
 * content

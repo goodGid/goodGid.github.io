@@ -2,7 +2,6 @@
 layout: post
 title:  " Key Point 모음 "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

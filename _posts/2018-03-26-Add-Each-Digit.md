@@ -2,7 +2,6 @@
 layout: post
 title:  " 각 자릿수 더하기 (Add each digit) "
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

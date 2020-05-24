@@ -2,7 +2,6 @@
 layout: post
 title:  " Intellij로 스프링 부트 프로젝트 생성하기 "
 categories: Spring
-tags: Spring
 author: goodGid
 ---
 * content

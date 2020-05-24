@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 의미 있는 이름 (Meaningful name) : 클래스 이름 & 메소드 이름 & 생성자 중복 정의 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

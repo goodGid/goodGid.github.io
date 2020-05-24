@@ -2,7 +2,6 @@
 layout: post
 title:  " SmartContract Flow (1) "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

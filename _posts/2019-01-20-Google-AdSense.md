@@ -2,7 +2,6 @@
 layout: post
 title:  " Github Page(Jekyll)에 구글 애드센스(Google AdSense) 적용하기 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

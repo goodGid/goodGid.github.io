@@ -2,7 +2,6 @@
 layout: post
 title:  " 객제치향(OOP)란 무엇인가? "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

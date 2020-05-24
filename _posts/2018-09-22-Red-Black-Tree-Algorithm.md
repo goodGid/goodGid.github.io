@@ -2,7 +2,6 @@
 layout: post
 title:  " 레드 블랙(Red Black) 트리 "
 categories: Algorithm
-tags: Algorithm
 author: goodGid
 ---
 * content

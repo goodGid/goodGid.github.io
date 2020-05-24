@@ -2,7 +2,6 @@
 layout: post
 title:  " 컴퓨터 시스템의 동작 원리 "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

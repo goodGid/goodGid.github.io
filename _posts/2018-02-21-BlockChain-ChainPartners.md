@@ -2,7 +2,6 @@
 layout: post
 title:  " BlockChain ChainPartners "
 categories: Conference
-tags: 
 author: goodGid
 ---
 * content

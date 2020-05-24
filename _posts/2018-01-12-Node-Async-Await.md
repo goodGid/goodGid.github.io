@@ -2,7 +2,6 @@
 layout: post
 title:  "Async and Await "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

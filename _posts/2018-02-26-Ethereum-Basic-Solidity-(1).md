@@ -2,7 +2,6 @@
 layout: post
 title:  " 기본 자료형  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

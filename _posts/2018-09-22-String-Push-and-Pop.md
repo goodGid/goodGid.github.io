@@ -2,7 +2,6 @@
 layout: post
 title:  "String Push and Pop"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

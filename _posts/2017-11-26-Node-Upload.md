@@ -2,7 +2,6 @@
 layout: post
 title:  " Upload Image's "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

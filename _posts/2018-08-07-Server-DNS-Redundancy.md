@@ -2,7 +2,6 @@
 layout: post
 title:  " [사내 서버의 기본] DNS 서버의 이중화"
 categories: Server
-tags: Server
 author: goodGid
 ---
 * content

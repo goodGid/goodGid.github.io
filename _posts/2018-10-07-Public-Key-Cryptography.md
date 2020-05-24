@@ -2,7 +2,6 @@
 layout: post
 title:  " 공개 키 암호 방식(Public Key Crytography) "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

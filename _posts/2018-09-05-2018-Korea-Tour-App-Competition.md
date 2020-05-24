@@ -2,7 +2,6 @@
 layout: post
 title:  " 2018  SKT & 한국관광공사 앱 공모전 "
 categories: Competition
-tags: Competition
 author: goodGid
 ---
 * content

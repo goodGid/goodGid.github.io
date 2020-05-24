@@ -2,7 +2,6 @@
 layout: post
 title:  " 객체 직렬화(Serialization) "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

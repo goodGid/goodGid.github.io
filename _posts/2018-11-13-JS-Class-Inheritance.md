@@ -2,7 +2,6 @@
 layout: post
 title:  " 클래스(Class) 상속"
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

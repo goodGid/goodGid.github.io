@@ -2,7 +2,6 @@
 layout: post
 title:  " 동시 멀티스레딩(SMT, Simultaneous Multi-Threading) "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

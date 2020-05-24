@@ -2,7 +2,6 @@
 layout: post
 title:  " 터미널에서 브라우저 열기 명령 "
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

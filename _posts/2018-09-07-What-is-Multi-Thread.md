@@ -2,7 +2,6 @@
 layout: post
 title:  " 멀티 쓰레드(Multi Thread)란 무엇인가? "
 categories: OS
-tags: OS
 author: goodGid
 ---
 * content

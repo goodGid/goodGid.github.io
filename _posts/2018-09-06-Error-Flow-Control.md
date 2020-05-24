@@ -2,7 +2,6 @@
 layout: post
 title:  " 흐름 / 혼잡 / 오류 제어 기법 "
 categories: Network
-tags: Network
 author: goodGid
 ---
 * content

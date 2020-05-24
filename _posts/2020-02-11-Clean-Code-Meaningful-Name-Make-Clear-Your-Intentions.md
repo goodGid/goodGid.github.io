@@ -2,7 +2,6 @@
 layout: post
 title:  " [Clean Code] 의미 있는 이름 (Meaningful name) : 의도를 분명히 밝혀라 "
 categories: CleanCode
-tags: CleanCode
 author: goodGid
 ---
 * content

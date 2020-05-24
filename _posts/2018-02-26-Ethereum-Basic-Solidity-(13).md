@@ -2,7 +2,6 @@
 layout: post
 title:  " dApp과 EVM "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

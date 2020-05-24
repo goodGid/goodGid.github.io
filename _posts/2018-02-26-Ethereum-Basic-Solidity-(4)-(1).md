@@ -2,7 +2,6 @@
 layout: post
 title:  " 배열 - (1) (중요) "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

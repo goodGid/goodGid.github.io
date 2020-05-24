@@ -2,7 +2,6 @@
 layout: post
 title:  "String Check"
 categories: KeyPoint
-tags: KeyPoint
 author: goodGid
 ---
 * content

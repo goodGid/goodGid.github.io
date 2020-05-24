@@ -2,7 +2,6 @@
 layout: post
 title:  " 함수  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

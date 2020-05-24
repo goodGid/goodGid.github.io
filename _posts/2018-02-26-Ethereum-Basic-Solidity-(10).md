@@ -2,7 +2,6 @@
 layout: post
 title:  " 가시성  "
 categories: BlockChain
-tags: Ethereum
 author: goodGid
 ---
 * content

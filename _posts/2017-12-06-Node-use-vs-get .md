@@ -2,7 +2,6 @@
 layout: post
 title:  " app.use() vs app.get() "
 categories: Node.js
-tags: Node.js
 author: goodGid
 ---
 * content

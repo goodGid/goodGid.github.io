@@ -2,7 +2,6 @@
 layout: post
 title:  " 함수 선언(Declaration)과 함수 표현(Expression) "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

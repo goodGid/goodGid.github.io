@@ -2,7 +2,6 @@
 layout: post
 title:  " Intellij에서 Create From Archetype 뜻 "
 categories: Java
-tags: Java
 author: goodGid
 ---
 * content

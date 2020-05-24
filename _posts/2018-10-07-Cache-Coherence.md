@@ -2,7 +2,6 @@
 layout: post
 title:  " 캐시 일관성(Cache Coherence)"
 categories: Technology
-tags: Technology
 author: goodGid
 ---
 * content

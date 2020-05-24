@@ -2,7 +2,6 @@
 layout: post
 title:  " Git :: Merge와 Rebase "
 categories: Git
-tags: Git
 author: goodGid
 ---
 * content

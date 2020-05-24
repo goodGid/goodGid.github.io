@@ -2,7 +2,6 @@
 layout: post
 title:  " 함수 스코프(Function Scope)와 실행 컨텍스트(Excution Context)"
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

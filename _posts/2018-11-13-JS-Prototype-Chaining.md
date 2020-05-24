@@ -2,7 +2,6 @@
 layout: post
 title:  " 프로토타입(Prototype) 체이닝(Chaining) "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

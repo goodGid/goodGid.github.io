@@ -2,7 +2,6 @@
 layout: post
 title:  " 1급 객체(First Class Object)란? "
 categories: JavaScript
-tags: JavaScript
 author: goodGid
 ---
 * content

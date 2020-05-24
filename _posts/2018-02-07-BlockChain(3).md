@@ -2,7 +2,6 @@
 layout: post
 title:  " BlockChain (3) "
 categories: BlockChain
-tags: BlockChain
 author: goodGid
 ---
 * content

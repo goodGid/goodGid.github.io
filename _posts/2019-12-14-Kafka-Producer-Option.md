@@ -2,7 +2,6 @@
 layout: post
 title:  " Kafka Producer Option "
 categories: Kafka
-tags: Kafka
 author: goodGid
 ---
 * content

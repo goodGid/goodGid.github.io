@@ -2,7 +2,6 @@
 layout: post
 title:  " 선형(Linear) / 비선형(NonLinear) 자료구조"
 categories: DataStructure
-tags: DataStructure
 author: goodGid
 ---
 * content
