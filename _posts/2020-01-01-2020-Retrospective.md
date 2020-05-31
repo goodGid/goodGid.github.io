@@ -222,3 +222,11 @@ author: goodGid
 * [MyBatis 공식 문서(Docs) 읽어보기 : properties]({{site.url}}/MyBatis-Docs-Properties/)
 
 * [Regex를 사용하여 Empty Line 지우기 : How to remove empty line]({{site.url}}/How-to-Remove-Empty-Line/)
+
+> 200525 ~ 200531
+
+* [MyBatis 공식 문서(Docs) 읽어보기 : settings]({{site.url}}/MyBatis-Docs-Settings/)
+
+* [MyBatis 공식 문서(Docs) 읽어보기 : typeAliases]({{site.url}}/MyBatis-Docs-typeAliases/)
+
+* [MyBatis 공식 문서(Docs) 읽어보기 : typeHandlers]({{site.url}}/MyBatis-Docs-typeHandlers/)
