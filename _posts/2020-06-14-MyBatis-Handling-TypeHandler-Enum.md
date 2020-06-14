@@ -68,7 +68,7 @@ public enum Grade implements CodeEnum {
   
   즉 Mapper에서 typeHandler 값으로 선언한 handler가 
   
-  다루게 될 Class가 Grade라는걸 알려준다고 이해하면 된다.
+  다루게 될 Class가 Grade라는 걸 알려준다고 이해하면 된다.
 
 * [2] : CodeEnumTypeHandler 우리가 생성한 TypeHandler이다.
 
@@ -124,7 +124,7 @@ public class GradeDao {
 </configuration>
 ```
 
-* [1] : mybatis-config에서는 따로 설정을 잡아준게 없다.
+* [1] : mybatis-config에서는 따로 설정을 잡아준 게 없다.
 
 ---
 
@@ -133,9 +133,9 @@ public class GradeDao {
 
 * CodeEnumTypeHandler을 
 
-  **abstract** class 선언 유무에 따라 Mapper.xml에서 사용법이 달라진다.
+  **abstract** class 선언 여부에 따라 Mapper.xml에서 사용법이 달라진다.
 
-  우선은 CodeEnumTypeHandler에 대해 분석해보고 이해해보자.
+  우선은 CodeEnumTypeHandler 에 대해 분석해보고 이해해보자.
 
   그리고 사용법에 대해 알아보자.
 
@@ -235,9 +235,9 @@ public String getCode() {
 }
 ```
 
-* 그렇기 때문에 query에는 Enum Class를 넘겼지만
+* 그러므로 query에는 Enum Class를 넘겼지만
 
-  DB에는 Enum의 priority값이 들어가지게 된다.
+  DB에는 Enum의 priority 값이 들어가 지게 된다.
 
   
 
@@ -253,35 +253,35 @@ public String getCode() {
   
   method name(= getResult()) 보면 알 수 있듯이 어떠한 Result를 갖고 온다.
   
-  이 상황에서는 DB에서 data를 갖고온다고 이해할 수 있다.
+  이 상황에서는 DB에서 data를 가지고 온다고 이해할 수 있다.
   
   그리고 그 data를 우리가 사용하는 Enum Class로 알맞게 변경시켜 줄 method이다.
 
   왜냐하면 그러기 위해 CodeEnumTypeHandler를 만들었기 때문이다.
 
-* 그렇다면 여기서 [2] code는 왜 필요한걸까?
+* 그렇다면 여기서 [2] code는 왜 필요한 걸까?
 
-  우리는 **EnumOrdinalTypeHandler**를 사용하여 data를 insert했다.
+  우리는 **EnumOrdinalTypeHandler**를 사용하여 data를 insert 했다.
 
   EnumOrdinalTypeHandler를 사용하였기 때문에
 
-  DB에서 read한 **data 값의 의미**는
+  DB에서 read 한 **data 값의 의미**는
 
-  Enum Class에서 몇 번째에 위치하고 있는지를 뜻한다.
+  Enum Class에서 몇 번째에 있는지를 뜻한다.
 
 * 예를 들어 Grade Enum Class를 보면 다음과 같다.
   
-  *GOLD는 1번째에 위치 --> 0값이 DB에 insert*
+  *GOLD는 1번째에 위치 --> 0 값이 DB에 insert*
 
-  *SILVER는 2번째에 위치 --> 1값이 DB에 insert*
+  *SILVER는 2번째에 위치 --> 1 값이 DB에 insert*
 
-* 그렇기 때문에 DB에서 data를 read 할 경우 
+* 그러므로 DB에서 data를 read 할 경우 
 
-  해당 ordinal가 Enum Class에서 어떤 값과 mapping되어야 할지 
+  해당 ordinal가 Enum Class에서 어떤 값과 mapping 되어야 할지 
   
-  convert 작업이 필요하고 해당 코드 블럭이 그 역할을 해준다.
+  convert 작업이 필요하고 해당 코드 블록이 그 역할을 해준다.
 
-* 이런식으로 Enum Class를 사용하여 DB와의 통신을 하다면 
+* 이런 식으로 Enum Class를 사용하여 DB와의 통신을 한다면 
   
   DB의 data를 알맞은 Enum Class로 변경해줄 필요가 있다.
 
@@ -499,11 +499,11 @@ value  :     1     | GOLD  |    0    |    1
 
 ## Summary
 
-* 출력 결과값 :  **1 GOLD GOLD GOLD** 
+* 출력 결괏값 :  **1 GOLD GOLD GOLD** 
 
-  DB 저장값 : **1 GOLD 0 1**
+  DB 저장 값 : **1 GOLD 0 1**
 
-  위 2가지 값에 대해 정확히 이해를 했다면
+  위 2가지 값에 대해 정확히 이해했다면
 
   MyBatis에서 Custom TypeHandler를 사용하는 방법에 대해 정확히 이해했다고 보면 된다.
 
@@ -511,13 +511,13 @@ value  :     1     | GOLD  |    0    |    1
 
   반드시 글을 다시 읽어보고 이해하였으면 좋겠다.
 
-* 글을 쓰다보니 내용이 많아지고 
+* 글을 쓰다 보니 내용이 많아지고 
 
-  불필요한 내용을 정리하는 과정이 반복되다보니
+  불필요한 내용을 정리하는 과정이 반복되다 보니
   
   정말 오랜만에 글을 쓰기 위해 1주일 넘는 시간을 할애했다.
 
-  글이 길어지니 오히려 가독성과 이해하는데 있어 힘들지 않을까? 라는 아쉬움이 남지만
+  글이 길어지니 오히려 가독성과 이해하는 데 있어 힘들지 않을까? 라는 아쉬움이 남지만
 
   그래도 끝까지 읽고 조금이라도 도움이 되었으면 정말 좋겠다.
 
