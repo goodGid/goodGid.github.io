@@ -55,7 +55,7 @@ location ~ "^/web/settings/(.*)" {
 
 ---
 
-* Regex에 **{** or **}**가 포함되어 있다면 반드시 **"(quote)**로 감싸져야 한다.
+* Regex에 **{** 혹은 **}**가 포함되어 있다면 반드시 **"(quote)**로 감싸져야 한다.
 
 ```
 server_name  "~^(?<name>\w\d{1,3}+)\.example\.net$";
