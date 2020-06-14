@@ -32,15 +32,15 @@ Note EnumTypeHandler is special in the sense that unlike other handlers,
 it does not handle just one specific class, but any class that extends Enum
 ```
 
-* MyBatis를 사용할 때 
+* MyBatis 사용 시
 
   Enum Type에 매핑을 하려고 한다면
 
   **EnumTypeHandler** 혹은 **EnumOrdinalTypeHandler**을 사용해야 한다.
   
-* EnumTypeHandler 는 일반적인 handlers랑 다르다.
+* EnumTypeHandler는 일반적인 handlers와 다르게
   
-  EnumTypeHandler는 하나의 특별한 클래스만 다루는 게 아니라 
+  하나의 특별한 클래스만 다루는 게 아니라 
 
   Enum 클래스를 extend 하는 모든 클래스를 다룬다.
 
@@ -133,135 +133,11 @@ public class EnumOrdinalTypeHandler<E extends Enum<E>> extends BaseTypeHandler<E
 
 ### Example
 
-> Grade.class
+* typeHandler와 관련된 Example은 
 
-``` java
-public enum Grade {
-    GOLD("1"),
-    SILVER("2");
+  여기서 다루기에는 양이 많은 느낌이 있기 때문에
 
-    private String priority;
-
-    Grade(String priority) {
-        this.priority = priority;
-    }
-
-    public String getPriority() {
-        return priority;
-    }
-}
-```
-
----
-
-> GradeDao.class
-
-``` java
-@Getter
-@Setter
-@NoArgsConstructor
-public class GradeDao {
-
-    private Long grade_seq;
-
-    private Grade level;
-
-    private Grade grade;
-}
-```
-
----
-
-> GradeController
-
-``` java
-@RestController
-@RequestMapping("grade")
-@Slf4j
-public class GradeController {
-
-    @Autowired
-    private GradeMapper gradeMapper;
-
-    @GetMapping
-    public CommonResponse<?> getGrade() {
-
-        Grade gold = Grade.valueOf("GOLD");
-        Grade silver = Grade.valueOf("SILVER");
-
-        System.out.println(gold + " " + gold.getPriority()); // output : GOLD 1
-        System.out.println(silver + " " + silver.getPriority()); // output : SILVER 2
-
-        GradeDao gradeDao = new GradeDao();
-        Long seq = (long) (Math.random() * 100);
-
-        gradeDao.setGrade_seq(seq);
-        gradeDao.setLevel(gold);
-        gradeDao.setGrade(gold);
-
-        gradeMapper.insert(gradeDao);
-
-        return new CommonResponse<>(ReturnCode.SUCCESS);
-    }
-}
-```
-
----
-
-> GradeMapper.xml
-
-``` xml
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-
-<mapper namespace="goodgid.odot.repository.oltp.GradeMapper">
-
-	<select id="insert" parameterType="GradeDao">
-		insert into GRADE (grade_seq, level, priority)
-		values (#{grade_seq, jdbcType=DECIMAL},
-		#{level, jdbcType=VARCHAR, 
-                          typeHandler=org.apache.ibatis.type.EnumTypeHandler},
-		#{grade, jdbcType=VARCHAR, 
-                          typeHandler=org.apache.ibatis.type.EnumOrdinalTypeHandler})
-	</select>
-
-</mapper>
-```
-
-* Enum 타입 같은 경우 
-
-  MyBatis에게 특정 Handler 사용을 명시해줘야 한다.
-
-  level -> EnumTypeHandler
-
-  grade -> EnumOrdinalTypeHandler
-
-* 위 Example에서는 Custom Handler를 사용하지 않았다.
-
-  만약 Custom Hander를 사용하고 싶다면 
-
-  *typeHandler=xxx.yyy.zzz.customHandler* 처럼 사용하면 된다.
-
----
-
-
-> DB
-
-```
-column : grade_seq | level | priority
-value  :    79     | GOLD  |    0
-```
-
-* level column에는
-
-  Enum 클래스의 Name이 들어가고
-
-  priority column에는
-
-  Enum 클래스의 위치(ordinal)가 들어간다.
-
-
-
+  [Custom TypeHandler를 사용하여 Enum Type 다루기]({{site.url}}/MyBatis-Handling-TypeHandler-Enum/) 글을 참고하자.
 
 
 ---
@@ -284,5 +160,3 @@ value  :    79     | GOLD  |    0
 ## Reference
 
 * [MyBatis Docs : Configuration XML](https://mybatis.org/mybatis-3/configuration.html)
-
-* [[MyBatis] Enum 열거형 - TypeHandler를 통한 Enum Mapping 예제](http://blog.naver.com/PostView.nhn?blogId=kbh3983&logNo=220829521087)
