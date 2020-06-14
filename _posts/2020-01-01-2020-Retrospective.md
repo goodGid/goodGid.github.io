@@ -40,9 +40,11 @@ author: goodGid
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)
 
-> To Read
-
 * [객체지향의 사실과 오해](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968)
+
+* [학교에서 알려주지 않는 17가지 실무 개발 기술](https://book.naver.com/bookdb/book_detail.nhn?bid=16324028)
+
+> To Read
 
 * [오브젝트 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773)
 
@@ -230,3 +232,15 @@ author: goodGid
 * [MyBatis 공식 문서(Docs) 읽어보기 : typeAliases]({{site.url}}/MyBatis-Docs-typeAliases/)
 
 * [MyBatis 공식 문서(Docs) 읽어보기 : typeHandlers]({{site.url}}/MyBatis-Docs-typeHandlers/)
+
+> 200601 ~ 200607
+
+* [MyBatis 공식 문서(Docs) 읽어보기 : Handling Enums]({{site.url}}/MyBatis-Docs-Handling-Enums)
+
+> 200608 ~ 200614
+
+* [[MyBatis] Custom TypeHandler를 사용하여 Enum Type 다루기]({{site.url}}/MyBatis-Handling-TypeHandler-Enum)
+
+* [문자열 인코딩 : 아스키 코드(ASCII), EUC-KR, 유니코드(Unicode), UTF-8, UTF-16]({{site.url}}/String-Encoding)
+
+* [정규 표현식 : 특수 문자 다루기]({{site.url}}/Regular-Expression-Special-Statement/)
