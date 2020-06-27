@@ -248,3 +248,11 @@ author: goodGid
 > 200615 ~ 200621
 
 * [SpringBoot 프로젝트 배너(Banner) 바꾸기]({{site.url}}/Spring-Boot-Banner/)
+
+> 200622 ~ 200628
+
+* [[Effective Java] 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라]({{site.url}}/Effective-Java-Item-5/)
+
+* [[Effective Java] 6. 불필요한 객체 생성을 피하라]({{site.url}}/Effective-Java-Item-6/)
+
+* [SpringBoot 서버 랜덤으로 포트 설정하기 : ${random.int} vs 0]({{site.url}}/Spring-Set-Server-Port/)
