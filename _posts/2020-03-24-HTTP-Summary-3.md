@@ -30,7 +30,7 @@ author: goodGid
 
 * 그리고 구성의 마지막 요소인 CRLF는 **캐리지 리턴(CR)** + **개행 문자(LF)** 구조로 이루어져 있다.
 
-    * Carrage Return(CR) : 커서를 현재 행의 맨 좌측으로 이동한다.
+    * Carriage Return(CR) : 커서를 현재 행의 맨 좌측으로 이동한다.
 
     * Line Feed(LF) : 커서를 현재 행의 다음 행으로 이동한다.
 
