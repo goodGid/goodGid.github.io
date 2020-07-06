@@ -256,3 +256,9 @@ author: goodGid
 * [[Effective Java] 6. 불필요한 객체 생성을 피하라]({{site.url}}/Effective-Java-Item-6/)
 
 * [SpringBoot 서버 랜덤으로 포트 설정하기 : ${random.int} vs 0]({{site.url}}/Spring-Set-Server-Port/)
+
+> 200629 ~ 200705
+
+* [[3분컷] 정규 표현식(Regex) 사용 시 성능을 고려한 코딩]({{site.url}}/Regex-Performance-Caution/)
+
+* [SpringBoot 웹서버가 아닌 형태로 실행하는 방법]({{site.url}}/How-to-run-in-non-SpringBoot-web-server/)
