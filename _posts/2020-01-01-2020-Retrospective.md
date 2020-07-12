@@ -262,3 +262,10 @@ author: goodGid
 * [[3분컷] 정규 표현식(Regex) 사용 시 성능을 고려한 코딩]({{site.url}}/Regex-Performance-Caution/)
 
 * [SpringBoot 웹서버가 아닌 형태로 실행하는 방법]({{site.url}}/How-to-run-in-non-SpringBoot-web-server/)
+
+> 200706 ~ 200712
+
+* [SpringBoot 테스트 : @SpringBootTest - 통합 테스트하다.]({{site.url}}/Spring-Test-SpringBootTest-Annotation/)
+
+* [SpringBoot 테스트 : 슬라이스(Slice) 테스트 - Scpoe을 제한하다.]({{site.url}}/Spring-Test-Slice-Test/)
+
