@@ -17,6 +17,7 @@ author: goodGid
 
 
 
+
 ## Q & A
 
 ### Question
@@ -25,13 +26,7 @@ author: goodGid
 
   @EnableWebMvc 어노테이션을 많이 사용한다.
 
-  그 이유가 뭘까?
-
-* 단순히 사람들이 사용하니까
-
-  나도 써야지 자세가 아닌
-
-  왜 사용하는건지 제대로 알고 사용해보자.
+  왜 사용용하는는걸까까?
 
 
 ### @EnableWebMvc
@@ -115,15 +110,13 @@ protected final Object[] getInterceptors(
 
 ### Answer
 
-* Question에 대한 답을 생각해보자.
-
 * @EnableWebMvc 어노테이션을 사용하면
 
   Spring Framework에서 
 
   여러 Config 값을 알아서 세팅해준다.
 
-* 이런 편리함 때문에 @EnableWebMvc 어노테이션을 사용한다.
+  이런 편리함 때문에 @EnableWebMvc 어노테이션을 사용한다.
 
 ---
 
@@ -170,9 +163,7 @@ public class WebConfig {
 
   DispatcherServlet.class에서
 
-  doService()에
-
-  Break Point를 걸고 값을 체크해보자.
+  doService()에  Break Point를 걸고 값을 체크해보자.
 
   Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
@@ -192,9 +183,7 @@ public class WebConfig {
 
   DispatcherServlet.class에서
 
-  doService()에
-
-  Break Point를 걸고 값을 체크해보자.
+  doService()에  Break Point를 걸고 값을 체크해보자.
 
   Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
@@ -216,7 +205,7 @@ public class WebConfig {
 
 * 이 2개의 Interceptors는 어디서 왔을까?
 
-* 이 글을 꼼꼼히 봤다면
+* 위에서 말했듯이
 
   getInterceptors()함수에서
 
