@@ -28,13 +28,7 @@ author: goodGid
 
 * 많은 프로젝트에서 WebMvcConfigurer를 구현한다.
 
-* 왜 구현하는걸까?
-
-* 단순히 사람들이 사용하니까
-
-  나도 써야지 자세가 아닌
-  
-  왜 사용하는건지 제대로 알고 사용해보자.
+  왜 구현하는걸까?
 
 
 ### WebMvcConfigurer
@@ -115,8 +109,6 @@ public ViewResolver customViewResolver() {
 
 
 ### Answer
-
-* Question에 대한 답을 생각해보자.
 
 * WebMvcConfigurer를 구현하면
 
@@ -204,9 +196,7 @@ public class WebConfig {
 
 * DispatcherServlet.class에서
 
-  doService()에
-
-  Break Point를 걸고 값을 체크해보자.
+  doService()에  Break Point를 걸고 값을 체크해보자.
 
   Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
@@ -277,9 +267,7 @@ public ViewResolver mvcViewResolver() {
 
   DispatcherServlet.class에서
 
-  doService()에
-
-  Break Point를 걸고 값을 체크해보자.
+  doService()에  Break Point를 걸고 값을 체크해보자.
 
   Reference : org.springframework.web.servlet.DispatcherServlet#doService
 
