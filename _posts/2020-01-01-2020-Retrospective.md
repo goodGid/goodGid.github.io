@@ -269,3 +269,9 @@ author: goodGid
 
 * [SpringBoot 테스트 : 슬라이스(Slice) 테스트 - Scpoe을 제한하다.]({{site.url}}/Spring-Test-Slice-Test/)
 
+> 200713 ~ 200719
+
+* [SpringBoot 테스트 : OutputCaptureRule - 출력되는 Log까지 테스트가 가능하다.]({{site.url}}/Spring-Test-OutputCaptureRule/)
+
+* [SpringBoot 정적 리소스 자원 : 기본값 사용 및 Custom해서 사용하기]({{site.url}}/Spring-Boot-Static-Resources/)
+
