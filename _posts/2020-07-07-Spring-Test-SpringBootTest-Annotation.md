@@ -227,6 +227,12 @@ public class GoodGidControllerTest_WebTestClient {
   테스트 Scpoe을 제한하는 **[슬라이싱 테스트]({{site.url}}/Spring-Test-Slice-Test/)**를 통해
 
   @SpringBootTest보다 효율적으로 테스트를 진행하는게 좋다.
+
+* 추가적으로 RestTemplate과 WebClient로 동일한 요청을 하였을 경우
+
+  어떤 차이를 보이는지 알고 싶다면 [Spring Rest 클라이언트(Client) : RestTemplate과 WebClient]({{site.url}}/Spring-Rest-Client-RestTemplate-And-WebClient) 글을 참고하자.
+
+  
   
 ---
 
