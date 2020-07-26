@@ -275,3 +275,8 @@ author: goodGid
 
 * [SpringBoot 정적 리소스 자원 : 기본값 사용 및 Custom해서 사용하기]({{site.url}}/Spring-Boot-Static-Resources/)
 
+> 200720 ~ 200726
+
+* [Spring Rest 클라이언트(Client) : RestTemplate과 WebClient]({{site.urll}}/Spring-Rest-Client-RestTemplate-And-WebClient/)
+
+* [내가 작성한 글이 언제 Github Blog에 반영되는지 알 순 없을까?]({{site.url}}/Github-Blog-Status-Check/)
