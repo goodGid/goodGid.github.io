@@ -152,7 +152,7 @@ author: goodGid
 ---
 
 
-## 참고
+## Reference
 
 * [Liquid Introduction](http://shopify.github.io/liquid/basics/introduction/)
 

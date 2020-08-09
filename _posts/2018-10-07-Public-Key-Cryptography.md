@@ -57,7 +57,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [공개 키 암호 방식](https://ko.wikipedia.org/wiki/%EA%B3%B5%EA%B0%9C_%ED%82%A4_%EC%95%94%ED%98%B8_%EB%B0%A9%EC%8B%9D)
 

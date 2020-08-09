@@ -51,7 +51,7 @@ author: goodGid
 ---
 
 
-## 참고
+## Reference
 
 * [선형 / 비선형 자료구조](http://swalloow.tistory.com/21)
 

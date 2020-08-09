@@ -184,6 +184,6 @@ CPU 사용률이 100% 도달한다.
 
 ---
 
-## 참고
+## Reference
 
 * [카프카, 데이터 플랫폼의 최강자 실시간 비동기 스트리밍 솔루션 카프카의 기본부터 확장 응용까지](https://book.naver.com/bookdb/book_detail.nhn?bid=13540082)

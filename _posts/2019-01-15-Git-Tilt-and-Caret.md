@@ -56,6 +56,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Git ~ 및 ^ (상대적 커밋 이름)](http://donggov.tistory.com/43)

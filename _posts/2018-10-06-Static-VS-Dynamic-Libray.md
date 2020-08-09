@@ -159,7 +159,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [동적 라이브러리란?](http://cillic.tistory.com/5)
 

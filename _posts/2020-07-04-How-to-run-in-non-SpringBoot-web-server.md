@@ -42,11 +42,11 @@ public enum WebApplicationType {
 
 ---
 
-> Q. 스프링 부트 자체가 웹서버일까?
+> Q. Spring Boot 자체가 웹서버일까?
 
 * Nope !
 
-* 스프링 부트는 웹서버가 아니라 **툴**이다.
+* Spring Boot는 웹서버가 아니라 **툴**이다.
 
   - 내장 Servlet Container를 쉽게 사용할 수 있게 해주는 툴
   

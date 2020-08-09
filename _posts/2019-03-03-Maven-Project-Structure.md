@@ -99,7 +99,7 @@ If there are other contributing sources to the artifact build, they would be und
 
 ---
 
-## 참고
+## Reference
 
 * [Introduction to the Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 

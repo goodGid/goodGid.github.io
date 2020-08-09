@@ -207,7 +207,7 @@ Client > Server : TCP ACK
 
 ---
 
-## 참고
+## Reference
 
 * [TCP 3-way Handshake, 4-way Handshake](http://lelumiere.tistory.com/10?category=670812)
 

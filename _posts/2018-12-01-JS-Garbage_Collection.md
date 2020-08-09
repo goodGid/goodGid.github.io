@@ -245,6 +245,6 @@ delete family.mother.husband;
 
 ---
 
-## 참고
+## Reference
 
 * [Javascript – Garbage Collection](http://theeye.pe.kr/archives/2872)

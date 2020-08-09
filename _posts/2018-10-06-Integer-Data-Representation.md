@@ -85,6 +85,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [[algorithm] 어떤 정렬 알고리즘이 대부분 정렬 된 데이터에서 가장 잘 작동합니까?](https://code.i-harness.com/ko-kr/q/35b8c)

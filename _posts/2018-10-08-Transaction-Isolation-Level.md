@@ -246,7 +246,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [데이터베이스 Isolation Level](http://hundredin.net/2012/07/26/isolation-Level/)
 

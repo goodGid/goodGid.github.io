@@ -66,7 +66,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [[알고리즘] 2.1. 자료구조 : 스택(Stack) 이해하기](http://monsieursongsong.tistory.com/4)
 

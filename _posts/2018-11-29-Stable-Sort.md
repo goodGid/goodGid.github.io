@@ -93,6 +93,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [stable & unstable sort 에 대하여](http://blog.naver.com/zephyehu/150013176075)

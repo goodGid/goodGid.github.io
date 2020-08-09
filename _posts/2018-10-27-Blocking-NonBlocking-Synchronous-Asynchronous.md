@@ -135,6 +135,6 @@ while(!ft.isDone()) {
 
 ---
 
-## 참고
+## Reference
 
 * [Blocking-NonBlocking-Synchronous-Asynchronous](https://homoefficio.github.io/2017/02/19/Blocking-NonBlocking-Synchronous-Asynchronous/)

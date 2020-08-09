@@ -136,7 +136,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [서버 사이드 렌더링 그리고 클라이언트 사이드 렌더링](http://asfirstalways.tistory.com/244)
 

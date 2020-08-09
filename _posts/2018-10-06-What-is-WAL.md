@@ -55,6 +55,6 @@ author: goodGId
 
 ---
 
-## 참고
+## Reference
 
 * [로그 선행 기입](https://ko.wikipedia.org/wiki/%EB%A1%9C%EA%B7%B8_%EC%84%A0%ED%96%89_%EA%B8%B0%EC%9E%85)

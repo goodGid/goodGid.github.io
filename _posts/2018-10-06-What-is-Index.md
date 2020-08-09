@@ -273,7 +273,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [MySQL Index란?](http://InterconnectIon.tIstory.com/97)
 

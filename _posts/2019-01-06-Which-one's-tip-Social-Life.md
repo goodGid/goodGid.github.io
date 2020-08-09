@@ -154,6 +154,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [40대 아재가 쓴 20~30대 사회생활/연애생활 하면서 느낀 점](https://cafe.naver.com/dokchi/7450810)

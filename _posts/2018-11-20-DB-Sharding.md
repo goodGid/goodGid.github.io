@@ -226,7 +226,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [DB Sharding은 무엇이고, 적용 전략은? ( 적용시 고려사항 )](http://hanburn.tistory.com/106)
 

@@ -81,7 +81,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [태스크(task)관리-(4)](http://neohtux.tistory.com/7)
 

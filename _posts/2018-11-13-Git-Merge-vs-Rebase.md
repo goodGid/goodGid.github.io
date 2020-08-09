@@ -118,6 +118,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Git: Rebase는 언제 어떻게 해야 할까?](http://dogfeet.github.io/articles/2012/git-merge-rebase.html)

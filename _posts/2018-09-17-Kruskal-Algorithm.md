@@ -95,7 +95,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [최소 스패닝 트리 Prim(프림), Kruskal(크루스칼) 알고리즘 + Union-Find 자료구조](http://stack07142.tistory.com/54)
 

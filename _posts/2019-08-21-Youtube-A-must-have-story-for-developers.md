@@ -114,6 +114,6 @@ author: goodGid
 ---
 
 
-## 참고
+## Reference
 
 * [신입개발자 및 프로그래머를 꿈꾸고 있는 친구들에게 꼭 해주고싶은 이야기. ( 현업의상황 , 포기 , 끈기 , 언어 , 외국회사이직 ) 연봉일상고졸국비나이동기부여수입성공진로언어취직](https://www.youtube.com/watch?v=ZvHP4Q3LGFk&t=3s)

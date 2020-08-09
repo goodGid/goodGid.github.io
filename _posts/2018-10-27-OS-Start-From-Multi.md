@@ -103,6 +103,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [운영체제 #1_ 스레드와 프로세스, 멀티프로그래밍,멀티태스킹,멀티쓰레딩,멀티프로세싱](https://doorbw.tistory.com/26)

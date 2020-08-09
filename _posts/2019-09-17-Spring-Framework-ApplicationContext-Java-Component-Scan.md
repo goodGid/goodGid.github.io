@@ -13,11 +13,11 @@ author: goodGid
 
 * Application에 Baen 설정 파일을 어떻게 설정하는지 
 
-* 여러 가지 방법을 통해 알아보자.
+  여러 가지 방법을 통해 알아보자.
 
 * 글의 순서는 큰 상관은 없지만 
 
-* 가능하다면 순서로대 보는걸 추천한다.
+  가능하다면 순서로대 보는걸 추천한다.
 
 1. [XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)
 
@@ -35,11 +35,11 @@ author: goodGid
 
 * [앞선 글 : Java 설정 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-Java-Bean)에서 
 
-* [Java 설정 파일에 직접 Bean 등록 시 단점]({{site.url}}/Spring-Framework-ApplicationContext-Java-Bean/#java-설정-파일에-직접-bean-등록의-단점)에 대해 알아봤다.
+  [Java 설정 파일에 직접 Bean 등록 시 단점]({{site.url}}/Spring-Framework-ApplicationContext-Java-Bean/#java-설정-파일에-직접-bean-등록의-단점)에 대해 알아봤다.
 
-* 이젠 이 단점을 보완하기 위해 나온 방법인
+  이젠 이 단점을 보완하기 위해 나온 방법인
 
-* Java 설정 파일에 Component Scan 방법에 대해 알아보자.
+  Java 설정 파일에 Component Scan 방법에 대해 알아보자.
 
 
 
@@ -95,13 +95,13 @@ public class ApplicationConfig {
 
 * 가능하다면 Type Safe하게
 
-* *basePackages* 가 아니라
+  *basePackages* 가 아니라
 
-* **basePackageClasses**를 사용하자.
+  **basePackageClasses**를 사용하자.
 
-<br>
+---
 
-* 참고로 필자의 디렉토리 구조는 다음과 같다.
+* 필자의 디렉토리 구조는 다음과 같다.
 
 ![](/assets/img/spring/spring_framework_applicationcontext_java_component_scan_1.png)
 
@@ -116,7 +116,8 @@ public class Application {
     public static void main(String[] args) {
         // Java 파일로 ApplicationContext를 생성하기 때문에
         // AnnotationConfigApplicationContext 클래스를 사용한다.
-        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        ApplicationContext context = 
+        new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
         // ApplicationContext 안에 등록된 Bean들을 출력해본다.
         String[] beans = context.getBeanDefinitionNames();
@@ -141,11 +142,11 @@ true
 
 * Component Scan 방식으로 
 
-* Bean을 등록하였고
+  Bean을 등록하였고
 
-* Application을 실행시켰을 때
+  Application을 실행시켰을 때
 
-* 정상적으로 돌아가는 것을 확인할 수 있다.
+  정상적으로 돌아가는 것을 확인할 수 있다.
 
 ---
 
@@ -155,41 +156,37 @@ true
 
 * 아무래도 최근에 생성되는 
 
-* Spring 프로젝트는
+  Spring 프로젝트는
 
-* Java 설정 파일에 Component Scan 방식이 
+  Java 설정 파일에 Component Scan 방식이 
 
-* 가장 흔하게 사용되지 않을까 생각한다.
+  가장 흔하게 사용되지 않을까 생각한다.
 
 * 하지만 기존에 어떤 방법이 있었고
 
-* 어떤 히스토리가 있었는지 아는게 중요하다 생각이 들어
+  어떤 히스토리가 있었는지 아는게 중요하다 생각이 들어
 
-* 여러가지 방법으로 
+  여러가지 방법으로 Bean을 설정하는 글을 작성하였다.
 
-* Bean을 설정하는 글을 작성하였다.
-
-* 누군가에겐 도움이 되었으면 좋겠다 !
-
-<br>
+  누군가에겐 도움이 되었으면 좋겠다 !
 
 * 추가적으로 
 
-* 스프링 부트를 사용한다면
+  Spring Boot를 사용한다면
 
-* [@SpringBootApplication]({{site.url}}/Spring-Framework-ApplicationContext-SpringBootApplication-Annotation)라는 강력한 애노테이션이 있다.
+  [@SpringBootApplication]({{site.url}}/Spring-Framework-ApplicationContext-SpringBootApplication-Annotation)라는 강력한 애노테이션이 있다.
 
 * @SpringBootApplication는 자체적으로
 
-* Component Scan과 Config + @ 기능을 해준다.
+  Component Scan과 Config + @ 기능을 해준다.
 
-* 스프링 부트로 프로젝트를 진행한다면
+* Spring Boot로 프로젝트를 진행한다면
 
-* 보다 편리하게 설정을 할 수 있게 된다.
+  보다 편리하게 설정이 가능해진다.
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 프레임워크 핵심 기술](https://www.inflearn.com/course/spring-framework_core)
 

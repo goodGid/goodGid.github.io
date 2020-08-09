@@ -336,6 +336,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [네이버 메인 페이지의 트래픽 처리](https://d2.naver.com/helloworld/6070967)

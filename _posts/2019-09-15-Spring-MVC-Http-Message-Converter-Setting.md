@@ -13,19 +13,26 @@ author: goodGid
 
 * 스프링 MVC 설정(**WebMvcConfigurer**)에서 설정할 수 있다.
 
+
+
+---
+
 ### ConfigureMessageConverters
 
 * 기본 Message Converter를 대체한다.
 
-* 기본적인 Message Converter를 대체하기 때문에
+  기본적인 Message Converter를 대체하기 때문에
 
-* 사용하는데 주의가 필요하다.
+  사용하는데 주의가 필요하다.
+
+
+---
 
 ### ExtendMessageConverters
 
 * 기본 Message Converter에
 
-* 등록하고자 하는 Message Converter를 추가한다.
+  등록하고자 하는 Message Converter를 추가한다.
 
 
 ``` java
@@ -48,7 +55,7 @@ public class WebConfig implements WebMvcConfigurer {
 ---
 
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

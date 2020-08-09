@@ -193,7 +193,7 @@ url: "https://goodgid.github.io" # the base hostname & protocol for your site
 
 ---
 
-## 참고
+## Reference
 
 * [지킬 블로그 구글 검색 가능하게 하는 방법](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
 

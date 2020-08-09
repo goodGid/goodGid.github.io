@@ -161,7 +161,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [[운영체제 이론] 쓰레드(Thread)](http://arer.tistory.com/80)
 

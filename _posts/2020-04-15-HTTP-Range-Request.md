@@ -133,6 +133,6 @@ Content-Range: bytes=20224-      --> 20224 바이트 이후에 대해 응답한�
 
 ---
 
-## 참고
+## Reference
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)

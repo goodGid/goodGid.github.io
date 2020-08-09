@@ -115,7 +115,7 @@ public enum RetentionPolicy {
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

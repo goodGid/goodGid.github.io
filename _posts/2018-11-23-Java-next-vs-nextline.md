@@ -74,7 +74,7 @@ while (s.hasNext()) {
 
 ---
 
-## 참고
+## Reference
 
 * [JAVA String 입력 시 next()와 nextLine()의 차이](http://enter.tistory.com/105)
 

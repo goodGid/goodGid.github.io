@@ -239,7 +239,7 @@ public class ClassWeak {
 
 ---
 
-## 참고
+## Reference
 
 * [Strong, Soft, Weak and Phantom References (Java)](http://neverfear.org/blog/view/150/Strong_Soft_Weak_and_Phantom_References_Java)
 

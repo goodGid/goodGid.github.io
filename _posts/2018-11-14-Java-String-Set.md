@@ -125,6 +125,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [JAVA String, StringBuffer, StringBuilder 차이점](http://jeong-pro.tistory.com/85)

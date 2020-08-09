@@ -115,6 +115,6 @@ This method, originally assumed harmless, can be used to mount an attack known a
 
 ---
 
-## 참고
+## Reference
 
 * [REST API: PUT VS POST](https://1ambda.github.io/javascripts/rest-api-put-vs-post/)

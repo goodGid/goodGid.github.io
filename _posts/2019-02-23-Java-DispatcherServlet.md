@@ -47,6 +47,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC DispatcherServlet 1~3부](https://www.inflearn.com/course/%EC%9B%B9-mvc/)

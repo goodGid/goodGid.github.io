@@ -111,6 +111,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [모던 웹을 위한 Node.js 프로그래밍](https://book.naver.com/bookdb/book_detail.nhn?bid=7302500)

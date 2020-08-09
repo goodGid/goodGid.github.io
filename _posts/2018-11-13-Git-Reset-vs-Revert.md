@@ -163,6 +163,6 @@ git revert 2664ce8..15413dc
 
 ---
 
-## 참고
+## Reference
 
 * [[초보용] Git 되돌리기( Reset, Revert )](https://www.devpools.kr/2017/02/05/%EC%B4%88%EB%B3%B4%EC%9A%A9-git-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0-reset-revert/)

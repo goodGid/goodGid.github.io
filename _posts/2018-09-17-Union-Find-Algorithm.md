@@ -168,7 +168,7 @@ void Merge(int x, int y){
 
 ---
 
-## 참고
+## Reference
 
 * [[Algorithm] 유니온 파인드(Union Find)와 서로소 집합(Disjoint Set)](https://twpower.github.io/115-union-find-disjoint-set)
 

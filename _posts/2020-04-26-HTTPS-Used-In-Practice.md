@@ -135,6 +135,6 @@ ex) Client -> SSL 처리 모듈(ex g/w, loadbalacer 등등) -> WAS 구조
 
 ---
 
-## 참고
+## Reference
 
 * [HTTPS   Secure Hypertext Transfer Protocol   HTTP 보안계층 구현](http://www.ktword.co.kr/abbr_view.php?m_temp1=3132)

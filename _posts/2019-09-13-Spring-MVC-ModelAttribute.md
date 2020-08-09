@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - @ModelAttribute 애노테이션 "
+title:  " Spring MVC - @ModelAttribute 알아보기"
 categories: Spring
 author: goodGid
 ---
@@ -9,19 +9,28 @@ author: goodGid
 
 > 이 글의 코드 및 정보들은 강의를 들으며 정리한 내용을 토대로 작성하였습니다.
 
-## @ModelAttribute 개념
+## @ModelAttribute
 
-* 단일 데이터를 각각 받아와 
+* 단일 데이터를 
 
-* 객체를 생성하지 않고
+  각각 받아와 객체를 생성하지 않고
+
+``` java
+public class Event {
+    private String name;
+
+    @Max(10)
+    private Integer count;
+}
+```
 
 ``` java
 @GetMapping("/events")
 @ResponseBody
-public Event hello(@RequestParam String name, @RequestParam Integer limit){
+public Event hello(@RequestParam String name, @RequestParam Integer count){
     Event event = new Event();
     event.setName(name);
-    event.setLimit(limit);
+    event.setCount(count);
     return event;
 }
 ```
@@ -57,13 +66,9 @@ public Event hello(@ModelAttribute Event event)
 
 * Binding 과정에서 
 
-* 여러 이유로 
+  여러 이유로 Binding 실패가 일어날 수 있다.
 
-* Binding 실패가 일어날 수 있다.
-
-* 이럴 경우 **BindingResult**를 통해
-
-* Error를 확인할 수 있다.
+  이럴 경우 **BindingResult**를 통해 Error를 확인할 수 있다.
 
 > Controller
 
@@ -88,7 +93,7 @@ public Event hello(@ModelAttribute Event event, BindingResult bindingResult){
 public void helloTest() throws Exception {
     mockMvc.perform(get("/events")
                             .param("name", "goodGid")
-                            .param("limit", "test"))
+                            .param("count", "test"))
             .andDo(print())
             .andExpect(status().isOk());
 }
@@ -97,7 +102,7 @@ public void helloTest() throws Exception {
 > Result
 
 ``` java
-Field error in object 'event' on field 'limit': rejected value [test]; codes [typeMismatch.event.limit,typeMismatch.limit,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [event.limit,limit]; arguments []; default message [limit]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'limit'; nested exception is java.lang.NumberFormatException: For input string: "test"]
+Field error in object 'event' on field 'count': rejected value [test]; codes [typeMismatch.event.count,typeMismatch.count,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [event.count,count]; arguments []; default message [count]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'count'; nested exception is java.lang.NumberFormatException: For input string: "test"]
 
 ...
 
@@ -106,7 +111,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json;charset=UTF-8"]
      Content type = application/json;charset=UTF-8
-             Body = {"id":null,"name":"goodGid","limit":null}
+             Body = {"id":null,"name":"goodGid","count":null}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -114,38 +119,32 @@ MockHttpServletResponse:
 
 * TC 자체는 성공을 하지만
 
-* (= Status = 200 )
+  (= Status = 200 )
 
-* Body를 보면
+  Body를 보면 *name* 에는
 
-* *name* 에는
+  요청시 입력한 **goodGid**가 들어갔지만
 
-* 요청시 입력한 **goodGid**가 들어갔지만
+  *count* 에는 null이 담겨져 있음을 확인할 수 있다.
 
-* *limit* 에는 null이 담겨져 있음을 확인할 수 있다.
+  *count*의 type은 Integer이기 때문이다.
 
 
 ---
 
 
-## BindingResult 위치
+### BindingResult 위치
 
 * BindingResult은
 
-* Binding하고자 하는 
+  Binding하고자 하는 Argument의 바로 **오른쪽**에 위치해야 한다.
 
-* Argument의 
-
-* 바로 **오른쪽**에 위치해야 한다.
-
-* 아래와 같은 코드는 
-
-* 실패하게 된다.
+  아래와 같은 코드는 실패하게 된다.
 
 ``` java
 @GetMapping("/events")
 @ResponseBody
-public Event hello( @ModelAttribute Event event,
+public Event hello(@ModelAttribute Event event,
                     String test,
                     BindingResult bindingResult) { // 잘못된 위치
     if (bindingResult.hasErrors()) {
@@ -163,31 +162,29 @@ public Event hello( @ModelAttribute Event event,
 
 * 단순히 Binding의 성공 유무가 아닌
 
-* 특정 조건을 만족하는 값으로 
+  특정 조건을 만족하는 값으로 
 
-* Binding이 되었는지 확인하기 위해서
+  Binding이 되었는지 확인하기 위해서
 
-* **[@Valid]({{site.url}}/Spring-MVC-Valid-And-Validated/#valid)** or **[@Validated]({{site.url}}/Spring-MVC-Valid-And-Validated/#validated)** 애노테이션을 사용할 수 있다.
+  **[@Valid]({{site.url}}/Spring-MVC-Valid-And-Validated/#valid)** or **[@Validated]({{site.url}}/Spring-MVC-Valid-And-Validated/#validated)** 애노테이션을 사용할 수 있다.
 
 <br>
 
 * Binding 자체는 성공하였지만
 
-* **로직** 관점에서는 실패할 수 있다.
+  **로직** 관점에서는 실패할 수 있다.
 
 <br>
 
 * 예를 들어 
 
-* *limit* 의 값은 
+  *count* 의 값은 
 
-* MAX가 10인데
+  MAX가 10인데
 
-* 요청을 10보다 큰 값으로 하게 될 경우
+  요청을 10보다 큰 값으로 하게 될 경우
 
-* Binding은 성공하겠지만
-
-* Error 로그를 볼 수 있다.
+  Binding은 성공하겠지만 Error 로그가 노출된다.
 
 > Domain
 
@@ -199,17 +196,14 @@ public class Event {
     private String name;
 
     @Max(10)
-    private Integer limit;
-
-    ...
-    
+    private Integer count;
 }
 ```
 
 > TC Result
 
 ``` java
-Field error in object 'event' on field 'limit': rejected value [11]; codes [Max.event.limit,Max.limit,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [event.limit,limit]; arguments []; default message [limit],10]; default message [must be less than or equal to 10]
+Field error in object 'event' on field 'count': rejected value [11]; codes [Max.event.count,Max.count,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [event.count,count]; arguments []; default message [count],10]; default message [must be less than or equal to 10]
 
 ...
 
@@ -218,7 +212,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:"application/json;charset=UTF-8"]
      Content type = application/json;charset=UTF-8
-             Body = {"id":null,"name":"goodGid","limit":11}
+             Body = {"id":null,"name":"goodGid","count":11}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -230,26 +224,20 @@ MockHttpServletResponse:
 
 * Model Attribute 개념에 대해 학습하였다.
 
-* 굉장히 중요한 개념이기 때문에 
-
-* 다른 자료를 참고해서 
-
-* 추가 학습이 필요하다.
+  보다시피 굉장히 중요한 개념이다.
 
 <br>
 
-* 그리고 
+* 추가적으로 @ModelAttribute Annotation을 사용하는 예제를 보면서 
 
-* 실제로 @ModelAttribute Annotation을 사용하는
+  해당 개념에 대한 이해도를 높혀보도록 하자.
 
-* 예제를 통해 이해도를 높혀보도록 하자.
-
-* [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
+  [Spring Controller에서 사용하는 Annotation 분석하기 : @ModelAttribute]({{site.url}}/Spring-Controller-Annotation-Analytics-Model-Attribute/)
 
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

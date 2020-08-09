@@ -180,6 +180,6 @@ public class Song {
 
 ---
 
-## 참고
+## Reference
 
 * [MyBatis를 ORM 처럼 사용하기](https://lyb1495.tistory.com/110)

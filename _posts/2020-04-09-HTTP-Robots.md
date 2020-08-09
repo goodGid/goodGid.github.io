@@ -355,6 +355,6 @@ Disallow: /something/       // 특정 디렉토리 접근 차단
 
 ---
 
-## 참고
+## Reference
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)

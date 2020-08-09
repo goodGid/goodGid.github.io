@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - @ModelAttribute 애노테이션의 또 다른 사용법 "
+title:  " Spring MVC - @ModelAttribute의 또 다른 사용법 "
 categories: Spring
 author: goodGid
 ---
@@ -13,7 +13,7 @@ author: goodGid
 
 * @Controller를 사용한 클래스에서 
 
-* Model 정보를 초기화 할 때 사용한다.
+  Model 정보를 초기화 할 때 사용한다.
 
 ---
 
@@ -21,7 +21,7 @@ author: goodGid
 
 * 2가지 예시 상황을 통해 
 
-* ModelAttribute 속성에 대해 알아보자.
+  ModelAttribute 속성에 대해 알아보자.
 
 1. Key 세팅 순서에 따른 결과
 
@@ -77,8 +77,9 @@ public class SampleController {
 > Result 
 
 ``` java
-Call setCategories()
-Call setWriter
+Call setCategories() method
+Call setLanguage() method
+Call setWriter() method
 
 ...
 
@@ -95,9 +96,9 @@ Attribute = writer
 
 * setLanguage()함수는
 
-* 기존에 *Language* 라는 Key 값이 설정되어 있기 때문에
+  기존에 *Language* 라는 Key 값이 설정되어 있기 때문에
 
-* setLanguage()자체가 실행되지 않는다.
+  setLanguage()자체가 실행되지 않는다.
 
 ---
 
@@ -137,9 +138,9 @@ public class SampleController {
 > Result
 
 ``` java
-Call setLanguage()
-Call setCategories()
-Call setWriter
+Call setLanguage() method
+Call setCategories() method
+Call setWriter() method
 
 ...
 
@@ -155,21 +156,13 @@ Attribute = writer
 ```
 
 
-* setLanguage(), setCategories(), setWriter() 순서로
+* setLanguage(), setCategories(), setWriter() 순서로 method가 호출되었다.
 
-* 메소드가 실행된다.
+  그리고 **Language**라는 같은 Key에 대해 중복하여 세팅을 할 경우엔
 
-* 그리고 **Language**라는 
+  (= setLanguage() -> setCategories() 순서로 호출 )
 
-* 같은 Key에 대해 
-
-* 중복하여 세팅을 할 경우엔
-
-* (= setLanguage() -> setCategories() 순서로 호출 )
-
-* 나중에 세팅된 값으로 
-
-* 세팅이 되는 결과를 확인할 수 있다.
+  나중에 세팅된 값으로 세팅이 되는 결과를 확인할 수 있다.
 
 ``` java
 Attribute = Language
@@ -216,9 +209,9 @@ public class SampleController {
 > Result
 
 ``` java
-Call setCategories()
-Call setLanguage()
-Call setWriter
+Call setCategories() method
+Call setLanguage() method
+Call setWriter() method
 
 ...
 
@@ -235,19 +228,13 @@ Attribute = writer
     value = goodgid,gid,kiyong
 ```
 
-* setCategories(), setLanguage(), setWriter() 순서로
+* setCategories(), setLanguage(), setWriter() 순서로 method가 호출되었다.
 
-* Print가 된 것을 확인할 수 있다.
+  그리고 *Language* 와 *language* 
 
-* 또한 *Language* 와 *language* 
+  각각 Key 값으로 Value가 설정되어 있음을 확인할 수 있다.
 
-* 각각 Key 값으로 
-
-* Value가 설정되어 있음을 확인할 수 있다.
-
-* 즉 **대소문자**를 구분하여 
-
-* model에 값을 관리한다.
+* 즉 **대소문자**를 구분하여 model에 값을 관리한다.
 
 
 ---
@@ -278,53 +265,46 @@ public class SampleControllerTest {
 
 * model안에 
 
-* 특정 attribute 값이 존재하는지 확인하고 싶다면
+  특정 attribute 값이 존재하는지 확인하고 싶다면
 
-* **model().attributeExists(" 찾고자 하는 Key 값 ")** 메소드를 사용하면 된다.
+  **model().attributeExists(" 찾고자 하는 Key 값 ")** 메소드를 사용하면 된다.
 
 ---
 
 ## 주의 사항
 
-* 일반적으로
+* 일반적으로 핸들러 생성 시
 
-* 핸들러를 생성할 때
+  View를 렌더링 할 목적의 핸들러가 아니라면
 
-* View를 렌더링 할 목적의 핸들러가 아니라면
+  핸들러에 @ResponseBody를 사용하여
 
-* 핸들러에 @ResponseBody를 사용하여
+  Return Value가 View Name이 아니라
 
-* 핸들러의 Return Type이 String일 경우에
-
-* 그 Return Value가 View Name이 아니라
-
-* Response Body에 담겨질 값임을 명시해준다.
+  Response Body에 담겨질 값임을 명시해준다.
 
 <br>
 
 * 그렇기 때문에
 
-* 우리가 테스트하고자 상황
+  우리가 테스트하고자 상황
 
-* (= Model에 Attrubute가 제대로 담겨져 있는가)를 
+  (= Model에 Attrubute가 제대로 담겨져 있는가)를 
 
-* 갖추기 위해서는 
+  갖추기 위해서는 
 
-* 핸들러에 @ResponseBody 애노테이션을
-
-* 제거해줘야한다.
+  핸들러에 @ResponseBody 애노테이션을 제거해줘야한다.
 
 ``` java
 @ResponseBody 
 ```
 
-* 그렇지 않으면 TC 자체가 실패를 하게 된다.
-
+* 그렇지 않으면 TC 자체가 실패한다.
 
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

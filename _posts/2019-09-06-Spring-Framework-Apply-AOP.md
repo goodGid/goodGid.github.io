@@ -135,7 +135,7 @@ A라는 클래스에 foo()라는 메소드가 있다.
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 프레임워크 핵심 기술](https://www.inflearn.com/course/spring-framework_core)
 

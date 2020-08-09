@@ -366,7 +366,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [메모리의 구조](http://tcpschool.com/c/c_memory_structure)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring MVC - @SessionAttributes 애노테이션 "
+title:  " Spring MVC - @SessionAttributes Annotation "
 categories: Spring
 author: goodGid
 ---
@@ -13,31 +13,27 @@ author: goodGid
 
 * Model 정보를 
 
-* **Http Session**에 저장시켜주는 애노테이션이다.
+  **HttpSession**에 저장시켜주는 애노테이션이다.
 
 <br>
 
 * 예를 들어
 
-* 여러 화면에서
+  여러 화면에서
 
-* 배송 정보를 입력받아야 하는 화면이라면
+  배송 정보를 입력받아야 하는 화면이라면
 
-* Http Session에 
+  HttpSession에 
 
-* 각 화면마다 필요한 정보를 저장하고
+  각 화면마다 필요한 정보를 저장하고
 
-* 최종적으로 저장한 값들을 가져다 사용할 수 있다.
+  최종적으로 저장한 값들을 가져다 사용할 수 있다.
 
 <br>
 
-* Http Session에 값을 저장시키는 방법은
+* HttpSession에 값을 저장시키는 방법은
 
-* 아래 코드처럼
-
-* HttpSession을 가져와 직접 저장할 수 있지만 
-
-> Controller 
+  아래 코드처럼 HttpSession을 가져와 직접 저장할 수 있지만 
 
 ``` java
 @Controller
@@ -50,7 +46,7 @@ public class SampleController {
         Event event = new Event();
         event.setName("goodGid");
         model.addAttribute("event", event);
-        httpSession.setAttribute("event", event); // Http Session 직접 저장
+        httpSession.setAttribute("event", event); // HttpSession 직접 저장
         return "hello";
     }
 }
@@ -60,29 +56,23 @@ public class SampleController {
 
 * @SessionAttributes 애노테이션을 사용하면
 
-* 보다 편리하게 저장할 수 있다.
+  보다 편리하게 저장할 수 있다.
 
----
+* 만약 해당 클래스내에서 
 
-* @SessionAttributes 애노테이션을 사용하면
+  SessionAttributes 애노테이션에 정의되 Key와 
+  
+  동일한 Key로 Model에 값을 Set해주는 행위가 있을 시 **자동**으로 Session에도 저장시켜준다.
 
-* 해당 클래스내에서 
-
-* SessionAttributes 애노테이션에 정의되 Key와 동일한 Key로
-
-* Model에 저장하는 코드가 있을 시
-
-* 자동으로 Session에도 저장시켜준다.
-
----
+<br>
 
 * 예를 들어 다음 코드에서는 
 
-* SessionAttributes의 Key는 **event**이고
+  SessionAttributes의 Key는 **event**이고
 
-* model에 저장하는 Key 값도 **event**이기 때문에
+  model에 저장하는 Key 값도 **event**이기 때문에
 
-* 자동으로 Session에도 저장이된다.
+  자동으로 Session에도 저장이된다.
 
 > Controller
 
@@ -98,7 +88,7 @@ public class SampleController {
         Event event = new Event();
         event.setName("goodGid");
         model.addAttribute("event", event); // @SessionAttributes("event") 코드에 의해 
-                                            // 동시에 Http Session에도 저장된다.
+                                            // 동시에 HttpSession에도 저장된다.
         return "hello";
     }
 }
@@ -118,35 +108,31 @@ public void helloTest() throws Exception {
 
 * @SessionAttributes("event") 코드에 의해 
 
-* Model에 저장하는 동시에
+  Model에 저장하는 동시에
 
-* Http Session에도 저장이 되기 때문에
+  HttpSession에도 저장이 되기 때문에
 
-* Test Code는 성공한다.
+  Test Code는 성공한다.
 
 ---
 
 * 참고로 TC에서 사용한 
 
-* **request()** 메소드의 FQCN (Fully Qualified Class Name)는 다음과 같다.
+  **request()** 메소드의 FQCN (Fully Qualified Class Name)는 다음과 같다.
 
-* *org.springframework.test.web.servlet.result.MockMvcResultMatchers.request*
+  *org.springframework.test.web.servlet.result.MockMvcResultMatchers.request*
 
-
-
-
+---
 
 ## @SessionAttributes 한계
 
 * **@SessionAttributes**를 선언한 클래스 내에서만
 
-* 선언시 명시한 이름에 해당하는
+  선언시 명시한 이름에 해당하는
 
-* Model을 Session에 넣어줄 뿐
+  Model을 Session에 넣어줄 뿐
 
-* 여러 컨트롤러에 걸쳐서는 적용이 안된다.
-
----
+  여러 Controller에 걸쳐서는 적용이 안된다.
 
 * 예를 들면 
 
@@ -168,41 +154,36 @@ public class B_Controller {
 
 * A_Controller에서는 
 
-* *event* 라는 Key로
+  *event* 라는 Key와 Value가 
 
-* Model에 저장 시
+  Model과 HttpSession에 저장이 되지만
 
-* Http Session에도 저장이 되겠지만
+  B_Controller에서는 적용이 되지 않는다.
 
-* 그 기능이 B_Controller에서는 적용이 되지 않는다.
-
-* 뿐만 아니라 Interceptor 혹은 Filter에도 적용이 안된다.
+  뿐만 아니라 Interceptor 혹은 Filter에도 적용이 안된다.
 
 ---
 
 * 만약 Controller 밖(Interceptor 혹은 Filter 등)에서 
 
-* (= Http Session 전반에 걸쳐 )
+  (= HttpSession 전반에 걸쳐 )
 
-* 만들어 준 Session 데이터에 접근하고자 한다면
+  만들어 준 Session 데이터에 접근하고자 한다면
 
-* @SessionAttributes가 아닌
+  @SessionAttributes가 아닌
 
-* [@SessionAttribute]({{site.url}}/Spring-MVC-SessionAttribute)를 사용하면 된다.
+  [@SessionAttribute]({{site.url}}/Spring-MVC-SessionAttribute)를 사용하면 된다.
 
-* 끝에 **s**가 붙지 않는 애노테이션이다.
+  끝에 **s**가 붙지 않음을 주의하자.
 
 
 ---
 
 ## Session Clear
 
-* Http Session을 초기화 시키고 싶을 경우엔
+* HttpSession을 초기화 시키고 싶을 경우엔
 
-* **SessionStatus**를 사용해 
-
-* Session을 초기화 시킬 수 있다.
-
+  **SessionStatus**를 사용해 Session을 초기화 시킬 수 있다.
 
 > Controller 
 
@@ -243,12 +224,12 @@ Actual   :null
 
 * Session을 초기화 하였기 때문에
 
-* Test Code는 실패한다.
+  Test Code는 실패한다.
 
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

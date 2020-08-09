@@ -136,7 +136,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [캐시 일관성](https://www.ibm.com/support/knowledgecenter/ko/ssw_aix_71/com.ibm.aix.performance/cache_coherency.htm)
 

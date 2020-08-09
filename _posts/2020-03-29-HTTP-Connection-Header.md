@@ -103,6 +103,6 @@ Connection : meter, close, bill-my-credit-card
 
 ---
 
-## 참고
+## Reference
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)

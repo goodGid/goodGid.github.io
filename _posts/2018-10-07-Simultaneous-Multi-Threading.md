@@ -133,6 +133,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [SMT](https://namu.wiki/w/SMT)

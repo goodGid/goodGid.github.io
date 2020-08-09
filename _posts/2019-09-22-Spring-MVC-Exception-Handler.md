@@ -13,21 +13,13 @@ author: goodGid
 
 * 특정 Exception 발생 시
 
-* 해당 Exception를 
-
-* 컨트롤하여 요청에 대한 응답으로 
-
-* 내보내고 싶을 때 사용한다.
-
-
-
-
+  해당 Exception을 Custom하게 Control이 가능하다.
 
 
 
 ---
 
-## Example Code
+## Example
 
 ### Global 
 
@@ -46,9 +38,7 @@ public class EventController {
 
 * 모든 Exception에 대해
 
-* **공통적인 작업**을
-
-* 적용시킬 수 있다.
+  **공통적인 작업**을 적용할 수 있다.
 
 ---
 
@@ -66,18 +56,16 @@ public class EventController {
 }
 ```
 
-* 특정 Exception에 대해서
+* Exception마다 Custom 하게 Control하고
 
-* 다른 Exception과는 다른 작업을 하고 싶다면
+  @ExceptionHandler 애노테이션의 
 
-* @ExceptionHandler 애노테이션의 
-
-* value로 Exception을 지정해줄 수 있다.
+  value로 다루고 싶은 Exception을 명시해주면 된다.
 
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

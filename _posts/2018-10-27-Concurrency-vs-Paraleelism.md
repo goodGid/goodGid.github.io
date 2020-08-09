@@ -91,7 +91,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [동시성(Concurrency) vs 병렬성(Parallelism)](http://atin.tistory.com/567)
 

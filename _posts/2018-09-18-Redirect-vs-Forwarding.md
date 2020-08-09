@@ -55,7 +55,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [forward와 redirect의 차이](http://ysssb.tistory.com/entry/forward와-redirect의-차이)
 

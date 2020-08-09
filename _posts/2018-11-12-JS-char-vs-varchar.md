@@ -213,7 +213,7 @@ VARCHAR를 사용했을 경우에는 0.64 sec 가 걸렸다.
 
 ---
 
-## 참고
+## Reference
 
 * [CHAR대신 VARCHAR를 쓰는이유??](https://okky.kr/article/217655)
 

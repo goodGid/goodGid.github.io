@@ -93,6 +93,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [JAVA 인터페이스와 추상 클래스 공통점, 차이점 정리](http://jeong-pro.tistory.com/82?category=793347)

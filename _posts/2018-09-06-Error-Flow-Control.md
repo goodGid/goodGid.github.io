@@ -267,7 +267,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [슬라이딩 윈도우, GBn & SR ARQ – 흐름 / 오류 제어 기법](http://wildpup.cafe24.com/archives/469#comments)
 

@@ -66,6 +66,6 @@ DepartmentId INT, StartDate DATETIME, TermDate DATETIME, TermReason INT)
 
 ---
 
-## 참고
+## Reference
 
 * [Index와 Primary Key의 차이점](http://plaboratory.org/archives/809)

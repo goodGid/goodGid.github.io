@@ -13,11 +13,11 @@ author: goodGid
 
 * Application에 Baen 설정 파일을 어떻게 설정하는지 
 
-* 여러 가지 방법을 통해 알아보자.
+  여러 가지 방법을 통해 알아보자.
 
 * 글의 순서는 큰 상관은 없지만 
 
-* 가능하다면 순서로대 보는걸 추천한다.
+  가능하다면 순서로대 보는걸 추천한다.
 
 1. [XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)
 
@@ -72,7 +72,7 @@ public class BookService {
 
 * application.xml 파일은 
 
-* resources 폴더 아래에 위치한다.
+  resources 폴더 아래에 위치한다.
 
 > Before : application.xml
 
@@ -90,11 +90,9 @@ public class BookService {
 
 * 이렇게만 설정을 하면 
 
-* bookService에서 bookRepository를 주입받지 못한다
+  bookService에서 bookRepository를 주입받지 못한다
 
-* 그렇기 때문에 
-
-* xml을 수정해줘야한다.
+  그렇기 때문에 xml을 수정해줘야한다.
 
 > After : application.xml
 
@@ -115,11 +113,11 @@ public class BookService {
 
 * [1]처럼 **property** 키워드를 사용하여 
 
-* bookRepository를 주입시켜준다.
+  bookRepository를 주입시켜준다.
 
 * 위와 같은 방식이 가능한 이유는
 
-* bookRepository 주입을 setter 방식으로 받기 때문이다.
+  bookRepository 주입을 setter 방식으로 받기 때문이다.
 
 ``` java
 BookRepository bookRepository;
@@ -131,27 +129,21 @@ public void setBookRepository_XML(BookRepository bookRepository) {
 
 * 그리고 property의 name속성에 오는 값은
 
-* setter 함수의 **메서드 명**을 따른다.
+  setter 함수의 **메서드 명**을 따른다.
 
 * 일반적으로는 *setBookRepository* 로 사용하지만 
 
-* 이 예제에서는 일부러
+  이 예제에서는 일부러 메서드명을 *setBookRepository_XML* 로 사용하였다.
 
-* 메서드명을 *setBookRepository_XML* 로 사용하였다.
+---
 
-<br>
-
-* 그리고 property의 ref속성에 오는 값은
-
-* 주입시킬 Bean의 id 값이다.
+* 그리고 property의 ref속성에 오는 값은 주입시킬 Bean의 id 값이다.
 
 * 여기서는 bookRepository를 주입시켜야 하기 때문에
 
-* bookRepository를 Bean으로 등록한 코드에서
+  bookRepository를 Bean으로 등록한 코드에서
 
-* id값인 **bookRepository_ID**를 
-
-* ref(= 주소값)의 값으로 넣어준다.
+  id값인 **bookRepository_ID**를 ref(= 주소값)의 값으로 넣어준다.
 
 ``` xml
 <bean id="bookRepository_ID" class="goodgid.study.spring.BookRepository"/>
@@ -192,11 +184,11 @@ true
 
 * application.xml에 
 
-* 직접 등록한 Bean의 이름들과
+  직접 등록한 Bean의 이름들과
 
-* bookService의 bookRepository에 주입이 
+  bookService의 bookRepository에 주입이 
 
-* 정상적으로 되었음을 확인 할 수 있다.
+  정상적으로 되었음을 확인 할 수 있다.
 
 ---
 
@@ -204,18 +196,18 @@ true
 
 * 이 방법의 큰 단점은
 
-* 하나하나 Bean으로 등록을 해줘야한다.
+  하나하나 Bean으로 등록을 해줘야한다.
 
-* 그래서 나온 개념이 
+  그래서 나온 개념이 
 
-* **Component Scan** 방식이다.
+  **Component Scan** 방식이다.
 
-* [XML 파일에 Component Scan 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Component-Scan)글을 읽어보자.
+  [XML 파일에 Component Scan 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Component-Scan)글을 읽어보자.
 
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 프레임워크 핵심 기술](https://www.inflearn.com/course/spring-framework_core)
 

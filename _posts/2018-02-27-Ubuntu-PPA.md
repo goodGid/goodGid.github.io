@@ -114,7 +114,7 @@ sudo add-apt-repository --remove <PPA_info>
 
 
 
-## 참고
+## Reference
 
 * [Using PPA in Ubuntu Linux [Complete Guide]](https://itsfoss.com/ppa-guide/)
 

@@ -551,7 +551,7 @@ public class TransientTest implements Serializable {
 
 ---
 
-## 참고
+## Reference
 
 * [직렬화에 대한 개념 질문입니다](https://hashcode.co.kr/questions/3297/%EC%A7%81%EB%A0%AC%ED%99%94%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B0%9C%EB%85%90-%EC%A7%88%EB%AC%B8%EC%9E%85%EB%8B%88%EB%8B%A4)
 

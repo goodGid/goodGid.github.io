@@ -122,7 +122,7 @@ foo() // this is undefined
 
 ---
 
-## 참고
+## Reference
 
 * [자바스크립트의 this가 가리키는 것](https://rhostem.github.io/posts/2018-07-20-this-in-javascript/)
 

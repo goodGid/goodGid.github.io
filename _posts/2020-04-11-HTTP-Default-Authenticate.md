@@ -194,6 +194,6 @@ Authorization : Basic base-64로 인코딩한 사용자 이름과 비밀번호
 
 ---
 
-## 참고
+## Reference
 
 * [HTTP 완벽 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)

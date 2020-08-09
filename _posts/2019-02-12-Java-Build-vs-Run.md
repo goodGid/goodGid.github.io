@@ -45,7 +45,7 @@ Build usually includes one or more compile steps and once an application has bee
 
 ---
 
-## 참고
+## Reference
 
 * [What's the difference between build and run?](https://teamtreehouse.com/community/whats-the-difference-between-build-and-run)
 

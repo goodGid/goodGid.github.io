@@ -64,6 +64,6 @@ public class WebConfig implements WebMvcConfigurer {
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 부트 개념과 활용 : 스프링 웹 MVC 4부 정적 리소스 자원](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/)

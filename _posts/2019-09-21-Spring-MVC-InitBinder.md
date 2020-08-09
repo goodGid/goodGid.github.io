@@ -13,11 +13,11 @@ author: goodGid
 
 * 해당 Controller로 들어오는 요청에 대해
 
-* 추가적인 설정을 하고 싶을 때 사용할 수 있다.
+  추가적인 설정을 하고 싶을 때 사용할 수 있다.
 
-* 또한 모든 요청전에 
+* 또한 모든 요청 전에 
 
-* InitBinder를 선언한 메소드가 실행된다.
+  InitBinder를 선언한 메소드가 실행된다.
 
 * 코드를 통해 InitBinder의 사용법을 익혀보자.
 
@@ -26,33 +26,32 @@ author: goodGid
 
 ---
 
-## Example Code
+## Example
 
 ### InitBinding 기본 설정
 
 * 해당 Controller로 들어오는 요청들에 대해
 
-* Controller 레벨에서 
-
-* 다양한 설정이 가능하다.
+  Controller 레벨에서 다양한 설정이 가능하다.
 
 ``` java
 @InitBinder
 public void initBinder(WebDataBinder webDataBinder){
     /*
-    만약 들어오는 객체의 
-    프로퍼티로 id라는 필드가 있는 경우
-    id값이 설정되어 들어오는게 원치 않을 경우
+    객체의 프로퍼티 중 id라는 필드가 있는 경우
+    만약 id 값이 설정되어 들어오는 게 원치 않으면
     다음과 같이 설정을 해줄 수 있다.
+
     그러면 
-    클라이언트가 id값을 설정하여 요청을 해도
-    해당 코드에서 필터링이 되어진다.
+    클라이언트가 id 값을 설정하여 요청해도
+    해당 코드에서 필터링이 된다.
     */
     webDataBinder.setDisallowedFields("id");
 
     /*
-    setDisallowedFields()는 필터링을 하는 거라면
-    setAllowedFields()는 허용되는 필드를 명시해준다.
+    setDisallowedFields()는 필터링을 하는 기능을 한다면
+    setAllowedFields()는 허용할 필드명을 명시하고
+    그 값들만 허용해준다.
     */
     webDataBinder.setAllowedFields("id");
 
@@ -79,7 +78,7 @@ public void initBinder(WebDataBinder webDataBinder){
 public class EventValidator implements Validator {
     @Override
     public boolean supports(Class<?> clazz) {
-        // 어떤 도메인에 해당 validate를 지원할건지 명시해준다.
+        // 어떤 도메인에 해당 validate를 지원할 것인지 명시해준다.
         return Event.class.isAssignableFrom(clazz);
         or
         return Event.class.equals(clazz);
@@ -88,7 +87,7 @@ public class EventValidator implements Validator {
     @Override
     public void validate(Object o, Errors errors) {
         Event event = (Event) o;
-        if(event.getName() == "goodgid"){
+        if (event.getName() == "goodgid") {
             errors.rejectValue("name", event.getName() + " is wrongValue");
         }
     }
@@ -101,14 +100,11 @@ public class EventValidator implements Validator {
 
 * 해당 Controller에 들어오는 요청 중
 
-* 특정 객체에만
-
-* Binding 또는 Validate 등을 설정할 수 있다.
+  특정 객체에만 Binding 또는 Validate 등을 설정할 수 있다.
 
 > EventController
 
 ``` java
-
 @InitBinder("Event")
 public void initBinderForEvent(WebDataBinder webDataBinder) { // The return type must be void.
     webDataBinder.addValidators(new EventValidator());
@@ -117,9 +113,9 @@ public void initBinderForEvent(WebDataBinder webDataBinder) { // The return type
 
 * **@InitBinder("Event")** 
 
-* Evenet 객체에만 
+  Evenet 객체에만 
 
-* EventValidator()가 적용된다.
+  EventValidator( )가 적용된다.
 
 ---
 
@@ -127,9 +123,26 @@ public void initBinderForEvent(WebDataBinder webDataBinder) { // The return type
 
 * Bean을 사용하여 
 
-* Validate를 할 수 있다.
+  Validate를 할 수도 있다.
 
-* Controller와 Validator 코드를 수정하자.
+* Validator와 Controller 코드를 수정하자.
+
+> EventValidatorBean
+
+``` java
+/*
+implements Validator 코드를 삭제한다.
+그러므로 Validator의 메소드를 구현할 필요가 없어진다.
+*/
+@Component
+public class EventValidatorBean {
+    public void validate(Event event, Errors errors) {
+        if (event.getName() == "goodgid") {
+            errors.rejectValue("name", event.getName() + " is wrongValue");
+        }
+    }
+}
+```
 
 > EventController
 
@@ -158,38 +171,24 @@ public class EventController {
 }
 ```
 
-> EventValidatorBean
 
-``` java
-@Component
-/*
-implements Validator 코드를 삭제한다.
-그렇기 때문에
-Validator의 메소드를 구현할 필요가 없어진다.
-*/
-public class EventValidatorBean {
-    public void validate(Event event, Errors errors) {
-        if(event.getName() == "goodgid"){
-            errors.rejectValue("name", event.getName() + " is wrongValue");
-        }
-    }
-}
-```
 
 
 ---
 
 ## Summary
 
-* Controller 레벨에서 
+* InitBinder 개념을 활용하여
 
-* 들어오는 요청에 대해
+  Controller 레벨에서 
 
-* 추가적인 설정하는 법에 대해 알아봤다.
+  들어오는 요청에 대해 추가적인 설정하는 법에 대해 알아봤다.
+
+* 꼼꼼하게 읽어보고 이해해서 잘 활용하자.
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

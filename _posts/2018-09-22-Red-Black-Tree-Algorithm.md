@@ -203,7 +203,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Red Black Tree vs AVL Tree](https://www.geeksforgeeks.org/red-black-tree-vs-avl-tree/)
 

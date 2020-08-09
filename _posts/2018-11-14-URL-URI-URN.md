@@ -215,7 +215,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [URI vs URL vs URN :: 마이구미](http://mygumi.tistory.com/139)
 

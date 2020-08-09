@@ -132,6 +132,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Connection Pool이란?](http://brownbears.tistory.com/289)

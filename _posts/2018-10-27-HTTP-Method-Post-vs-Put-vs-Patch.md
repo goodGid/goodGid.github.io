@@ -112,7 +112,7 @@ PUT replaces the resource at the known url if it already exists, so sending the 
 
 ---
 
-## 참고
+## Reference
 
 * [PUT vs. POST in REST](https://stackoverflow.com/questions/630453/put-vs-post-in-rest)
 

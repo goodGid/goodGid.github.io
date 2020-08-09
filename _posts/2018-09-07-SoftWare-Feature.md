@@ -88,7 +88,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [소프트웨어 공학 ](http://blog.daum.net/techmail/2)
 

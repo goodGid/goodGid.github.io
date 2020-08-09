@@ -558,6 +558,6 @@ LIMIT 3;
 
 ---
 
-## 참고
+## Reference
 
 * [성능 향상을 위한 SQL 작성법](https://d2.naver.com/helloworld/1155)

@@ -219,7 +219,7 @@ model.save(this.주소) 이런식으로 처리를 시키면 된다.
 
 ---
 
-## 참고
+## Reference
 
 * [MVC, MVP, MVVM 비교](https://magi82.github.io/android-mvc-mvp-mvvm/)
 

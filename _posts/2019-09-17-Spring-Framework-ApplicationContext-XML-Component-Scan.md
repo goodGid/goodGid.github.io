@@ -13,11 +13,11 @@ author: goodGid
 
 * Application에 Baen 설정 파일을 어떻게 설정하는지 
 
-* 여러 가지 방법을 통해 알아보자.
+  여러 가지 방법을 통해 알아보자.
 
 * 글의 순서는 큰 상관은 없지만 
 
-* 가능하다면 순서로대 보는걸 추천한다.
+  가능하다면 순서로대 보는걸 추천한다.
 
 1. [XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)
 
@@ -37,19 +37,15 @@ author: goodGid
 
 * [이전 글 : XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)에서는 
 
-* 직접 Bean을 등록해줘야했다.
+  Bean 등록을 하나씩 직접해줬다.
 
-* 그렇기 때문에 
+* 그러므로 Bean을 등록하는 과정은 
 
-* Bean을 등록하는 과정은 
-
-* 굉장히 번거롭고 
-
-* 유지 보수 또한 힘들었다.
+  굉장히 번거롭고 유지 보수 또한 힘들었다.
 
 * 그래서 나온 방식이
 
-* **Component Scan** 방식이다.
+  **Component Scan** 방식이다.
 
 
 
@@ -81,13 +77,11 @@ author: goodGid
 ```
 * 위 코드를 해석하자면
 
-* 나는 **goodgid.study.spring** 이 패키지 부터
+  나는 **goodgid.study.spring** 이 패키지 부터
 
-* Scan을 해서 
+  Scan을 해서 Bean을 등록하겠다. 
 
-* Bean을 등록하겠다. 
-
-* 라고 해석할 수 있다.
+  라고 해석할 수 있다.
 
 ---
 
@@ -95,27 +89,21 @@ author: goodGid
 
 * Bean Sacn 시
 
-* 기본적으로 @Component 애노테이션을 사용하여 
+  기본적으로 @Component 애노테이션을 사용하여 Bean으로 등록한다.
 
-* Bean으로 등록한다.
+---
 
-<br>
+* 직접적인 @Component 명시가 아니더라도 괜찮다.
 
-* 즉 다른 애노테이션(=B)의 **[메타 애노테이션]({{site.url}}/Spring-MVC-Custom-Annotation/#메타meta-애노테이션)** 중
+  다만 @Component를 포함하는 Annotation이면 된다.
 
-* @Component이 존재한다면
+---
 
-* 다른 애노테이션(=B)을 사용한 클래스 혹은 객체도
+* 예를 들면
 
-* Bean으로 등록이 된다.
+  @Service라는 애노테이션이 있다.
 
-<br>
-
-* 예를 들어보자.
-
-* @Service라는 애노테이션이 있다.
-
-* @Service 애노테이션의 정의를 보면 다음과 같다.
+  @Service 애노테이션의 정의를 보면 다음과 같다.
 
 ``` java
 @Target({ElementType.TYPE})
@@ -132,25 +120,11 @@ public @interface Service {
 
 * **[메타 애노테이션]({{site.url}}/Spring-MVC-Custom-Annotation/#메타meta-애노테이션)**에
 
-* @Component를 사용하고 있다.
+  @Component를 사용하고 있다.
 
-* 그렇기 때문에
+  그러므로 Bean으로 등록이 된다.
 
-* @Service 애노테이션을 사용하면 
-
-* Bean으로 등록이 된다.
-
-<br>
-
-* 추가적으로 자주 사용되는
-
-* @Repository도 같은 원리로
-
-* @Repository 애노테이션을 사용하면
-
-* 해당 클래스 혹은 객체는 
-
-* Bean으로 등록이 된다.
+  같은 원리로 @Repository도 Bean으로 등록이 된다.
 
 ---
 
@@ -179,23 +153,17 @@ public class BookService {
 
 * Repository와 Service에
 
-* 각각 @Repository와 @Service 애노테이션을 사용하여
+  각각 @Repository와 @Service 애노테이션을 사용였기 때문에
 
-* Component Scan이 이뤄지면
-
-* Bean으로 등록된다.
-
-<br>
+  Component Scan이 이뤄지면 Bean으로 등록된다.
 
 * 하지만 BookService에서 사용하는 
 
-* bookRepository의 의존성 주입은 되지 않는다.
+  bookRepository의 의존성 주입은 되지 않는다.
 
-* 여기서 bookRepository의 의존성 주입을 시키기 위해선 
+  여기서 bookRepository의 의존성 주입을 시키기 위해선 
 
-* @Autowired 애노테이션을 사용한다.
-
-<br>
+  @Autowired 애노테이션을 사용한다.
 
 * BookService의 코드를 수정해보자.
 
@@ -217,9 +185,9 @@ public class BookService {
 
 ### Application의 Bean 설정
 
-* 실제로 Application을 실행시켜
+* 실제로 Application을 실행하여
 
-* Component Scan이 정상적으로 이뤄지는지 확인해보자.
+  Component Scan이 정상적으로 이뤄지는지 확인해보자.
 
 ``` java
 public class Application {
@@ -252,15 +220,15 @@ true
 
 * application.xml에서 
 
-* Component Scan 방식으로 
+  Component Scan 방식으로 
 
-* Bean 등록을 하도록 설정하였으며
+  Bean 등록을 하도록 설정하였으며
 
-* Component Scan이 끝난 후 
+  Component Scan이 끝난 후 
 
-* bookService의 bookRepository에 주입이 
+  bookService의 bookRepository에 주입이 
 
-* 정상적으로 되었음을 확인 할 수 있다.
+  정상적으로 되었음을 확인 할 수 있다.
 
 ---
 
@@ -268,23 +236,19 @@ true
 
 * Bean 설정 파일을
 
-* xml이 아니라
+  xml이 아니라 Java로 만들 수 없을까?
 
-* Java로 만들 수 없을까?
-
-* 해서 등장한게
-
-* Java 설정 파일 방법이다.
+  해서 등장한게 Java 설정 파일 방법이다.
 
 * Java 설정 파일과 관련해서 2가지 글을 참고하자.
 
-* [Java 설정 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-Java-Bean)
+1.  [Java 설정 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-Java-Bean)
 
-* [Java 설정 파일에 Component Scan 방식]({{site.url}}/Spring-Framework-ApplicationContext-Java-Component-Scan)
+2. [Java 설정 파일에 Component Scan 방식]({{site.url}}/Spring-Framework-ApplicationContext-Java-Component-Scan)
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 프레임워크 핵심 기술](https://www.inflearn.com/course/spring-framework_core)
 

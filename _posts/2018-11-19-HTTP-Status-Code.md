@@ -116,7 +116,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [REST](https://ko.wikipedia.org/wiki/REST)
 

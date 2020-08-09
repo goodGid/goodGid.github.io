@@ -209,7 +209,7 @@ A -> C -> B -> B -> D -> E -> E -> E 순으로 검사
 
 ---
 
-## 참고
+## Reference
 
 * [다익스트라(Dijkstra) 최단 거리 알고리즘](http://makefortune2.tistory.com/26)
 

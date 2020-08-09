@@ -124,7 +124,7 @@ Where TEST_COLUMN = 1
 
 ---
 
-## 참고
+## Reference
 
 * [Oracle FlashBack 이용한 데이터 복구](https://jp1020.tistory.com/entry/Oracle-FlashBack-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B5%EA%B5%AC)
 

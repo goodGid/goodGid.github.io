@@ -98,7 +98,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [포워드 프록시(forward proxy) 리버스 프록시(reverse proxy) 의 차이](https://www.lesstif.com/pages/viewpage.action?pageId=21430345)
 

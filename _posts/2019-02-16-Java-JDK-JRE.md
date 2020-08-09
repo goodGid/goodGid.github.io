@@ -85,7 +85,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [JVM, JRE, JDK의 차이](https://wikidocs.net/257)
 

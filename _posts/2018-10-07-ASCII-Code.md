@@ -97,7 +97,7 @@ Parity Bit를 붙여
 
 ---
 
-## 참고
+## Reference
 
 * [아스키 코드](https://namu.wiki/w/%EC%95%84%EC%8A%A4%ED%82%A4%20%EC%BD%94%EB%93%9C)
 

@@ -105,6 +105,6 @@ A B F a b
 
 ---
 
-## 참고
+## Reference
 
 * [[C++]벡터 중복제거(sort,unique,erase)](http://dpdpwl.tistory.com/39)

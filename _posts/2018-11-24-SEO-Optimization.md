@@ -395,7 +395,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [검색엔진최적화(SEO) 마케팅 총정리 가이드](https://www.twinword.co.kr/blog/search-engine-optimization-guide/)
 

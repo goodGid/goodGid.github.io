@@ -126,6 +126,6 @@ public @interface MyAnnotation {
 
 ---
 
-## 참고
+## Reference
 
 * [자바 어노테이션(Java Annotations)](https://jdm.kr/blog/216)

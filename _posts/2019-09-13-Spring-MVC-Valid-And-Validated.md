@@ -35,11 +35,11 @@ public @interface Valid {
 ```
 * Java가 제공해주는 
 
-* @Valid 애노테이션에는 
+  @Valid 애노테이션에는 
 
-* 특정 Validation 그룹으로 
+  특정 **Validation 그룹**으로 
 
-* 검증을 시킬 수 있는 기능이 없다.
+  검증을 시킬 수 있는 기능이 **없다**.
 
 
 
@@ -66,11 +66,9 @@ public @interface Validated {
 }
 ```
 
-* 특정 Validation 그룹으로
+* **특정 Validation 그룹**으로
 
-* 검증 할 수 있는
-
-* @Validated 애노테이션을 제공한다.
+  검증 할 수 있는 @Validated 애노테이션을 제공한다.
 
 
 ---
@@ -87,14 +85,11 @@ public class Event {
     
     private Integer id;
 
-    @NotBlank(groups = ValidateName.class)
+    @NotBlank(groups = ValidateName.class) // Validate`Name`
     private String name;
 
-    @Max(value = 10, groups = ValidateLimit.class)
+    @Max(value = 10, groups = ValidateLimit.class) // Validate`Limit`
     private Integer limit;
-    
-    ...
-
 }
 ```
 
@@ -123,11 +118,9 @@ public class SampleController {
 }
 ```
 
-* 특정 그룹으로 
+* 특정 그룹으로 validate를 실시한다.
 
-* (= **@Validated(Event.ValidateLimit.class)** )
-
-* Validate 하겠다를 명시했다.
+  (= **@Validated(Event.ValidateLimit.class)** )
 
 > TC
 
@@ -215,23 +208,25 @@ MockHttpServletResponse:
           Cookies = []
 ```
 
-* **Event.ValidateName.class** 그룹으로 
+* Event.Validate**Name**.class 그룹으로 
 
-* Validate를 하였기 때문에 
+  Validate를 하였기 때문에 Error Log가 출력되지 않는다.
 
-* **Event.ValidateLimit.class** 그룹으로
+  (= 정상 케이스다.)
 
-* Validate 하였을 때 
 
-* 출력되었던 다음과 같은 로그가 출력되지 않는다.
-
-``` java
-Field error in object 'event' on field 'limit': rejected value [11]; codes [Max.event.limit,Max.limit,Max.java.lang.Integer,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [event.limit,limit]; arguments []; default message [limit],10]; default message [must be less than or equal to 10]
-```
 
 ---
 
-## 참고
+## Summary
+
+* @Valid와 @Validated 애노테이션에 대해 알아봤다.
+
+  각 어노테이션의 특징 및 두 개의 **차이점**에 대해 이해하고 적재적소에 잘 활용하자.
+
+---
+
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

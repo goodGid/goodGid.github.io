@@ -146,7 +146,7 @@ public @interface Bean {
 
 ---
 
-## 참고
+## Reference
 
 * [@Bean vs @Component](https://jojoldu.tistory.com/27)
 

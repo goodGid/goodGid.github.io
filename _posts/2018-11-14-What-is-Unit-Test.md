@@ -55,6 +55,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Unit Test란 무엇인가?](http://dslab.konkuk.ac.kr/Class/2017/17SE/Team_Project_B/A3/201211178_%EB%AF%BC%EA%B2%BD%ED%9B%88.pdf)

@@ -13,11 +13,11 @@ author: goodGid
 
 * Application에 Baen 설정 파일을 어떻게 설정하는지 
 
-* 여러 가지 방법을 통해 알아보자.
+  여러 가지 방법을 통해 알아보자.
 
 * 글의 순서는 큰 상관은 없지만 
 
-* 가능하다면 순서로대 보는걸 추천한다.
+  가능하다면 순서로대 보는걸 추천한다.
 
 1. [XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)
 
@@ -33,13 +33,13 @@ author: goodGid
 
 ## 머릿말
 
-* 앞선 글들은
+* 앞선 글에서 다뤘던 설정 방법은
 
-* 프로그래머가 설정을 해줘야했다면
+  프로그래머가 설정을 해줘야했다면
 
-* @SpringBootApplication 애노테이션은 
+  @SpringBootApplication 애노테이션은 
 
-* 스프링 부트 자체적으로 기본적인 설정을 다 해주게 된다.
+  스프링 부트 자체적으로 기본적인 설정을 해주게 된다.
 
 
 
@@ -71,22 +71,19 @@ public class Application {
 
 * Component Scan을 하기 위해서
 
-* 기존엔
+  기존엔 Config 파일 혹은 xml 파일이 필요했다.
 
-* Config 파일 혹은 xml 파일이 필요했다.
+---
 
-<br>
+* 하지만 Spring Boot 환경에선
 
-* 하지만 스프링 부트를 환경에서
+  @SpringBootApplication 애노테이션을 사용하게 되면
 
-* @SpringBootApplication 애노테이션을 사용하게 되면
-
-* 그러한 파일들이 불필요해진다.
+  그러한 파일들이 불필요해진다.
 
 ``` java
 @SpringBootApplication
 public class Application {
-
     public static void main(String[] args) {
     }
 }
@@ -99,9 +96,9 @@ public class Application {
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@SpringBootConfiguration
+@SpringBootConfiguration // [1]
 @EnableAutoConfiguration
-@ComponentScan(
+@ComponentScan( // [2]
     excludeFilters = {@Filter(
     type = FilterType.CUSTOM,
     classes = {TypeExcludeFilter.class}
@@ -115,31 +112,9 @@ public @interface SpringBootApplication {
 }
 ```
 
-> ComponentScan
+---
 
-* **[메타 애노테이션]({{site.url}}/Spring-MVC-Custom-Annotation/#메타meta-애노테이션)**에서 
-
-* @ComponentScan를 볼 수 있다.
-
-* 즉 기존에 Component Scan을 위해 
-
-* Config 파일 혹은 XML 파일이 필요했지만
-
-* @SpringBootApplication 애노테이션에 이미 
-
-* 포함되어 있기 때문에 
-
-* Config 파일 혹은 XML 파일을 생성하지 않아도 된다.
-
-> Configuration 
-
-* @ComponentScan과 마찬가지로
-
-* **[메타 애노테이션]({{site.url}}/Spring-MVC-Custom-Annotation/#메타meta-애노테이션)**에서
-
-* @Configuration 애노테이션 선언이 되어있다.
-
-* @SpringBootConfiguration의 정의를 보면 다음과 같다.
+> [1] : @SpringBootConfiguration 
 
 ``` java
 @Target({ElementType.TYPE})
@@ -150,13 +125,27 @@ public @interface SpringBootConfiguration {
 }
 ```
 
-* 즉 @SpringBootConfiguration 애노테이션안에
+* @SpringBootConfiguration안에
 
-* @Configuration 애노테이션이 달려 있기 때문에
+  @Configuration 애노테이션이 달려 있기 때문에
 
-* ComponentScan과 마찬가지로
+  ComponentScan과 마찬가지로
 
-* Config 파일 혹은 XML 파일을 생성하지 않아도 된다.
+  Config 파일 혹은 XML 파일을 생성하지 않아도 된다.
+
+---
+
+> [2] : @ComponentScan
+
+* **[메타 애노테이션]({{site.url}}/Spring-MVC-Custom-Annotation/#메타meta-애노테이션)**에서 @ComponentScan를 볼 수 있다.
+
+* 즉 기존에 Component Scan을 위해 
+
+  Config 파일 혹은 XML 파일이 필요했지만
+
+  @SpringBootApplication 애노테이션에 이미 
+
+  포함되어 있기 때문에 Config 파일 혹은 XML 파일을 생성하지 않아도 된다.
 
 ---
 
@@ -190,9 +179,7 @@ public class BookService {
 
 ### Component Scan 설정 파일
 
-> ApplicationConfig.java
-
-* Java 설정 파일을 사용할 경우
+> Jva 설정 파일을 사용할 경우 : ApplicationConfig.java
 
 ``` java
 @Configuration // Bean 설정파일이다를 알려주기 위해서
@@ -202,9 +189,7 @@ public class ApplicationConfig {
 }
 ```
 
-> Application.xml
-
-* XML 설정 파일을 사용할 경우
+> XML 설정 파일을 사용할 경우 : Application.xml
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -216,30 +201,10 @@ public class ApplicationConfig {
 </beans>
 ```
 
-<br>
-
 * @SpringBootApplication 애노테이션 사용하게 되면
 
-* Component Scan을 위한 설정 파일들이 불필요해진다.
+  Component Scan을 위한 설정 파일들이 불필요해진다.
 
----
-
-### Application.java
-
-``` java
-@SpringBootApplication
-public class Application {
-
-    public static void main(String[] args) {
-    }
-}
-```
-
-* 위와 같은 환경에서 
-
-* Application을 실행시켜도
-
-* 정상적으로 동작하는것을 확인 할 수 있다.
 
 ---
 
@@ -247,17 +212,17 @@ public class Application {
 
 * Business Code와 
 
-* Application.java 파일만 있으면
+  Application.java 파일만 있으면
 
-* Application이 정상적으로 동작하는 것을 확인할 수 있다.
+  Application이 정상적으로 동작하는 것을 확인할 수 있다.
 
 * 즉 @SpringBootApplication 애노테이션을 사용하기 때문에
 
-* Config 파일 혹은 XML 파일들이 불필요해진다.
+  Config 파일 혹은 XML 파일들이 불필요해진다.
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 프레임워크 핵심 기술](https://www.inflearn.com/course/spring-framework_core)
 

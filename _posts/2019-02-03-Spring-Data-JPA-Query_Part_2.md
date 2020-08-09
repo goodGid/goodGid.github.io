@@ -151,6 +151,6 @@ public void testByPaging() {
 
 ---
 
-## 참고
+## Reference
 
 * [스타트 스프링 부트 초급 개발자들을 위한 가볍고 넓은 스프링 부트](https://book.naver.com/bookdb/book_detail.nhn?bid=12247655)

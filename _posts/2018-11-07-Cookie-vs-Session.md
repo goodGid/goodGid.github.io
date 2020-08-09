@@ -170,6 +170,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Web - 쿠키와 세션의 차이, 용도, 사용법(cookie,session)](http://jeong-pro.tistory.com/80)

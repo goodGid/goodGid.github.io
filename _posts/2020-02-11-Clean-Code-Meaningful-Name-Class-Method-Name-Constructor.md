@@ -84,6 +84,6 @@ Complex fulcrumPoint = new Complex(23.0);
 
 ---
 
-## 참고
+## Reference
 
 * [Clean Code 애자일 소프트웨어 장인 정신](https://book.naver.com/bookdb/book_detail.nhn?bid=7390287)

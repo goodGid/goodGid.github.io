@@ -58,6 +58,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [성장하는 사람들의 '10가지 특징'](https://jolggu.tistory.com/406?fbclid=IwAR3fNnWrSxmvlE90WAlm4nctP6l7BbQLVKR8biFlnWV4tbQqZ5wWje1iL7I)

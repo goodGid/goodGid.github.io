@@ -187,6 +187,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [Redis Master-slave, Cluster](https://ssup2.github.io/theory_analysis/Redis_Master_Slave_Cluster/)

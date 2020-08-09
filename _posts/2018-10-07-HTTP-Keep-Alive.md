@@ -444,7 +444,7 @@ Keep Alive Timeout을 설정한다.
 
 ---
 
-## 참고
+## Reference
 
 * [HTTP 1.1 Keep-Alive 기능에 대해](http://b.pungjoo.com/entry/HTTP-11-Keep-Alive-%EA%B8%B0%EB%8A%A5%EC%97%90-%EB%8C%80%ED%95%B4)
 

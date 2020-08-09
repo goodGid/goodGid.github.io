@@ -523,7 +523,7 @@ remote.onButtonPressed(2);
 
 ---
 
-## 참고
+## Reference
 
 * [디자인패턴 - 커맨드 패턴 (command pattern)](http://jusungpark.tistory.com/18)
 

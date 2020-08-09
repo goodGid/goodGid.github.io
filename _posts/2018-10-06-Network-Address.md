@@ -205,7 +205,7 @@ Hosts/Net: 4094                  (Private Internet)
 
 ---
 
-## 참고
+## Reference
 
 * [공인 IP와 사설 IP](http://egloos.zum.com/xxwony/v/73126)
 

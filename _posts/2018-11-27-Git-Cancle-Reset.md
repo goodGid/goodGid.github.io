@@ -40,6 +40,6 @@ git reset --hard HEAD@{2}
 
 ---
 
-## 참고
+## Reference
 
 * [[GIT] reset 한거 취소하는 방법](http://88240.tistory.com/284)

@@ -209,7 +209,7 @@ static final int UNTREEIFY_THRESHOLD = 6;
 
 ---
 
-## 참고
+## Reference
 
 * [Java HashMap은 어떻게 동작하는가?](https://d2.naver.com/helloworld/831311)
 

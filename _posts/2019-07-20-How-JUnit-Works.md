@@ -120,6 +120,6 @@ public class GoodgidTest {
 
 ---
 
-## 참고
+## Reference
 
 * 토비의 스프링 3.1 Vol.1 스프링의 이해와 원리

@@ -213,7 +213,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [코딩 면접 질문들 - 사용자가 웹브라우저를 통해 서버에 이미지를 요청해서 사용자에게 보여주기까지 과정](http://krksap.tistory.com/1148)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Intellij로 스프링 부트 프로젝트 생성하기 "
+title:  " Intellij로 Spring Boot 프로젝트 생성하기 "
 categories: Spring
 author: goodGid
 ---
@@ -40,7 +40,7 @@ author: goodGid
 
 * 프로젝트 생성은 여기서 끝이다. 
 
-* 이제 스프링 부트를 실행시키기 위한 세팅을 진행하자.
+* 이제 Spring Boot를 실행시키기 위한 세팅을 진행하자.
 
 ---
 
@@ -124,7 +124,7 @@ public static void main(String[] args) {
  
 > 4단계 
 
-* 스프링 부트 서버를 실행시켜보자 !!!
+* Spring Boot 서버를 실행시켜보자 !!!
 
 ![](/assets/img/java/springboot_initializr_7.png)
 
@@ -142,6 +142,6 @@ public static void main(String[] args) {
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 부트 개념과 활용 - 스프링 부트 소개](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/))

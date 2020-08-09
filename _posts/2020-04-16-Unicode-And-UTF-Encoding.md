@@ -186,7 +186,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [UTF-8, UTF-16 차이](http://pickykang.tistory.com/13)
 

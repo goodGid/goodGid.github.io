@@ -82,7 +82,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [OLAP(Online Analytical Processing) :: 인생극장](http://azurecourse.tistory.com/406)
 

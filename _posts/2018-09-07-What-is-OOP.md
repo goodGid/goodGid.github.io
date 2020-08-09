@@ -81,6 +81,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [객체 지향[oop] 특징 4가지](http://richong.tistory.com/122)

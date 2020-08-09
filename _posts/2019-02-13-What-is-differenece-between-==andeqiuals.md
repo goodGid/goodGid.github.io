@@ -89,7 +89,7 @@ The converse is not necessarily true.
 
 ---
 
-## 참고
+## Reference
 
 * [What is the difference between == and equals() in Java?](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java/7520464#7520464)
 

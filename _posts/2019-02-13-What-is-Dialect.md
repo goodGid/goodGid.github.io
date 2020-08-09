@@ -75,6 +75,6 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [[JPA - Hibernate] Dialect(방언)이란? 하이버네이트 Dialect 종류](https://dololak.tistory.com/465)

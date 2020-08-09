@@ -162,7 +162,7 @@ Specifically, if the server fails to send a byte <timeout> seconds after the las
 
 ---
 
-## 참고
+## Reference
 
 * [CONNECTION TIMEOUT과 READ TIMEOUT 차이 쉽게 정리](https://inyl.github.io/programming/2017/12/02/timeout.html)
 

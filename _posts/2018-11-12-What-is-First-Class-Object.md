@@ -116,7 +116,7 @@ console.log(foo.property2);
 
 ---
 
-## 참고
+## Reference
 
 * [1급 객체(First-class citizen) 란? with Kotlin](https://medium.com/@lazysoul/functional-programming-%EC%97%90%EC%84%9C-1%EA%B8%89-%EA%B0%9D%EC%B2%B4%EB%9E%80-ba1aeb048059)
 

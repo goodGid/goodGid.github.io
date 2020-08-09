@@ -198,6 +198,6 @@ Route53에 의해서 Client와 가장 가까운 위치에 있는 Cloud Front의 
 
 ---
 
-## 참고
+## Reference
 
 * [Amazon의 CDN 서비스 Cloud Front](http://bcho.tistory.com/796?category=431292)

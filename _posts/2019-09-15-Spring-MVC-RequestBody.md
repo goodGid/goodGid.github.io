@@ -13,22 +13,22 @@ author: goodGid
 
 * 요청 Body에 있는 값을
 
-* **HttpMessageConveter**를 이용하여
+  **HttpMessageConveter**를 이용하여
 
-* 특정 객체 타입으로 변환시킬 수 있다.
+  특정 객체 타입으로 변환시킬 수 있다.
 
-* 또한 @Valid 또는 @Validated를 사용해서 값을 검증 할 수 있다.
+  또한 [@Valid]({{site.url}}/Spring-MVC-Valid-And-Validated/#valid)와 [@Validated]({{site.url}}/Spring-MVC-Valid-And-Validated/#validated)를 사용하여 값을 검증할 수 있다.
 
 
 
 
 ---
 
-## How ?
+## How?
 
 * 어떻게 가능할까?
 
-* WebConfig 파일에서 
+  WebConfig 파일에서 
 
 > WebConfig
 
@@ -42,10 +42,6 @@ public class WebConfig implements WebMvcConfigurer {
 
 * @EnableWebMvc를 선언한다.
 
-* 그리고 
-
-* @EnableWebMvc를 보면
-
 > EnableWebMvc
 
 ``` java
@@ -57,11 +53,7 @@ public @interface EnableWebMvc {
 }
 ```
 
-* DelegatingWebMvcConfiguration를 
-
-* Import하는 것을 볼 수 있다.
-
-* 여기서 DelegatingWebMvcConfiguration의 내부는 다음과 같다.
+* 그러면 DelegatingWebMvcConfiguration를 Import 하는 것을 볼 수 있다.
 
 > DelegatingWebMvcConfiguration
 
@@ -76,37 +68,20 @@ public class DelegatingWebMvcConfiguration extends WebMvcConfigurationSupport {
 }
 ```
 
-* DelegatingWebMvcConfiguration는
+* 그리고 DelegatingWebMvcConfiguration는 
 
-* WebMvcConfigurationSupport를 **확장(= extends)**하는 것을 볼 수 있다.
+  다시 또 WebMvcConfigurationSupport를 **확장(= extends)**한다.
 
-* 여기서 WebMvcConfigurationSupport의 내부는 다음과 같다.
+* 그리고 WebMvcConfigurationSupport 내부에 있는
 
-> WebMvcConfigurationSupport
-
-``` java
-public class WebMvcConfigurationSupport implements ApplicationContextAware, ServletContextAware {
-    private static boolean romePresent = ClassUtils.isPresent("com.rometools.rome.feed.WireFeed", WebMvcConfigurationSupport.class.getClassLoader());
-
-    private static final boolean jaxb2Present = ClassUtils.isPresent("javax.xml.bind.Binder", WebMvcConfigurationSupport.class.getClassLoader());
-    
-    private static final boolean jackson2Present = ClassUtils.isPresent("com.fasterxml.jackson.databind.ObjectMapper", WebMvcConfigurationSupport.class.getClassLoader()) && ClassUtils.isPresent("com.fasterxml.jackson.core.JsonGenerator", WebMvcConfigurationSupport.class.getClassLoader());
-    
-    private static final boolean jackson2XmlPresent = ClassUtils.isPresent("com.fasterxml.jackson.dataformat.xml.XmlMapper", WebMvcConfigurationSupport.class.getClassLoader());
-    ...
-}
-```
-
-* 그리고 WebMvcConfigurationSupport 내부에는
-
-* 기본 Converter가 등록되는 메소드가 있다.
-
-* (= **addDefaultHttpMessageConverters** )
+  **addDefaultHttpMessageConverters** 메소드에서 messageConverter를 등록해주는 코드를 찾을 수 있다.
 
 > WebMvcConfigurationSupport.addDefaultHttpMessageConverters( )
 
 ``` java
-protected final void addDefaultHttpMessageConverters(List<HttpMessageConverter<?>> messageConverters) {
+public class WebMvcConfigurationSupport implements ApplicationContextAware, ServletContextAware {
+    
+    protected final void addDefaultHttpMessageConverters(List<HttpMessageConverter<?>> messageConverters) {
         StringHttpMessageConverter stringConverter = new StringHttpMessageConverter();
         stringConverter.setWriteAcceptCharset(false);
         messageConverters.add(new ByteArrayHttpMessageConverter());
@@ -133,81 +108,59 @@ protected final void addDefaultHttpMessageConverters(List<HttpMessageConverter<?
         } else if (gsonPresent) {
             messageConverters.add(new GsonHttpMessageConverter());
         }
-
     }
+}
 ```
-
-* 그리고 마침내 **addDefaultHttpMessageConverters** 메서드안에서
-
-* messageConverter를 등록한다.
 
 ---
 
-## Who use it ?
+## Who use it?
 
 * 그렇다면 이 messgaeConverts를 누가 사용할까?
 
-* Handler Mapping ? 
+  Handler Mapping ? 
 
-* Handler Adapter ?
+  Handler Adapter ?
 
-* View Resolver ? 
+  View Resolver ? 
 
-* 정답은 **Handler Adapter**가 사용한다.
+  정답은 **Handler Adapter**가 사용한다.
 
-* 등록되어 있는 메시지 Converter들을
+---
 
-* Handler Adapter가 사용해서
+* 등록된 메시지 Converter들을
 
-* Argument들을 Resolving할 때 사용한다.
+  Handler Adapter가 사용해서 Argument Resolving에 사용한다.
 
-<br>
+---
 
 * 즉 메소드 Argument를 Resolving 할 때
 
-* Handler Adapter에 등록되어 있는
+  Handler Adapter에 등록된 
+  
+  여러 HttpMessageConveter 중에
 
-* 여러 HttpMessageConveter 중에
+  이 요청에 들어있는 본문을 Converting 할 수 있는 Converter를 찾아서 Conversion을 한다.
 
-* 현재 이 요청에 들어있는 본문을 
-
-* Converting 할 수 있는
-
-* Converter를 선택을해서
-
-* Conversion을 한다
-
-<br>
+---
 
 * 예를 들어
 
-* Json으로 들어오면
+  Json 요청을 한다면 
 
-* 요청 헤더에
+  요청 헤더에 Content Type으로 Json임을 명시해줘야 한다.
 
-* 컨텐츠 타입을 알려줘야한다.
+* 그러면 그 Content Type을 보고 
 
-* 그런데 일반적으로
+  등록되어 있는 Converter들 중에서 
+  
+  Json Convert가 가능한 것을 찾아 
 
-* 내가 보내는 본문의 타입이 Json이다 처럼
-
-* 컨텐츠 타입을 알려준다.
-
-* 그러면 그 컨텐츠 타입을 보고
-
-* Json을 Converting을 할 수 있는
-
-* 등록되어 있는 Converter들 중에서 
-
-* Json을 처리할 수 있는 Converter를 찾아서
-
-* Json 문자열을 해당 도메인 객체로 변경해준다.
-
+  Json 문자열을 해당 도메인 객체로 변경해준다.
 
 ---
 
 ## Example Code
-
 
 > TC
 
@@ -254,35 +207,33 @@ MockHttpServletRequest:
 
 ---
 
-## @RequestBody 한계
+## 한계
 
-* **Header 정보**에는 접근을 할 수 없다.
+* @RequestBody Annotation은
 
-* 단순히 본문에 있는 **정보만** 접근이 가능하다.
+  **Header 정보**에는 접근을 할 수 없다.
 
-* 비슷한 기능을 하지만
+  단순히 Body에 있는 **정보만** 접근이 가능하다.
 
-* Header 정보까지 접근이 가능한
+* 그래서 그 대체재로 생각해 볼 수 있는 개념으로는 
 
-* [HttpEntity]({{site.url}}/Spring-MVC-HttpEntity)도 같이 알아보자.
+  Header와 Body까지 접근이 가능한 [HttpEntity]({{site.url}}/Spring-MVC-HttpEntity)가 있다.
 
 ---
 
-## 맺음말
+## Summary
 
 * 기본적으로 **HttpMessageConveter**에 
 
-* 특정 객체 타입으로 변환하는 Converter가 등록되어 있다.
+  특정 객체 타입으로 변환하는 Converter가 등록되어 있다.
 
 * 만약 **HttpMessageConveter**과 관련하여 
 
-* 설정하는 방법이 궁금하다면 
-
-* [HttpMessageConverter 설정하기]({{site.url}}/Spring-MVC-Http-Message-Converter-Setting)글을 참고하자.
+  설정하는 방법이 궁금하다면 [HttpMessageConverter 설정하기]({{site.url}}/Spring-MVC-Http-Message-Converter-Setting)글을 참고하자.
 
 ---
 
-## 참고
+## Reference
 
 * [스프링 웹 MVC](https://www.inflearn.com/course/%EC%9B%B9-mvc)
 

@@ -68,7 +68,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [정보처리기사 필기 1과목 데이터베이스 요점 정리](http://yoondoyeon.tistory.com/entry/1과목-데이터베이스-요점-정리)
 

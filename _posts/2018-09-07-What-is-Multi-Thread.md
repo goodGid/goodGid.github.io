@@ -95,7 +95,7 @@ author: goodGid
 
 ---
 
-## 참고
+## Reference
 
 * [멀티쓰레딩에 대해서](asfirstalways.tistory.com/340)
 
