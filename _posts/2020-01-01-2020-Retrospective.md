@@ -280,3 +280,9 @@ author: goodGid
 * [Spring Rest 클라이언트(Client) : RestTemplate과 WebClient]({{site.urll}}/Spring-Rest-Client-RestTemplate-And-WebClient/)
 
 * [내가 작성한 글이 언제 Github Blog에 반영되는지 알 순 없을까?]({{site.url}}/Github-Blog-Status-Check/)
+
+> 200803 ~ 200809
+
+* [모교 진로진학 가이드북에 글을 작성하다.]({{site.url}}/Writing-Post-To-My-University/)
+
+* [String을 임의의 Byte Length로 자르기 : 99% vs 100%]({{site.url}}/Part-To-Be-Careful-When-Cutting-String-to-Byte/)
