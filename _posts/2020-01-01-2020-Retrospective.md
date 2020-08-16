@@ -286,3 +286,8 @@ author: goodGid
 * [모교 진로진학 가이드북에 글을 작성하다.]({{site.url}}/Writing-Post-To-My-University/)
 
 * [String을 임의의 Byte Length로 자르기 : 99% vs 100%]({{site.url}}/Part-To-Be-Careful-When-Cutting-String-to-Byte/)
+
+> 200810 ~ 200816
+
+* [Spock Docs - Sequences of Values : method 호출 시 매번 다른 값으로 Mocking 하기]({{site.url}}/Spock-Docs-Sequences-of-Values)
+
