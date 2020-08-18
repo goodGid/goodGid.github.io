@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 어느 아저씨의 소소한 팁 : 연애편 "
+title:  " 어느 아저씨의 소소한 이야기 : 연애편 "
 categories: E.T.C
 author: goodGid
 ---
