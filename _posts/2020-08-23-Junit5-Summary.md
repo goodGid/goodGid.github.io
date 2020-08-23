@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Junit5 : 요약 "
+title:  " Junit5 : 요약(Summary) 모음집 "
 categories: Junit5
 author: goodGid
 ---

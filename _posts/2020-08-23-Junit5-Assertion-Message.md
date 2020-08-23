@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Junit5 - Assertion : 문자열 연산 비용을 고려하자 "
+title:  " Junit5 : Assertion - 문자열 연산 비용을 고려하자 "
 categories: Junit5
 author: goodGid
 ---

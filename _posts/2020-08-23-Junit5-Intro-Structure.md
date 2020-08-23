@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Junit5 - 소개 및 구조 "
+title:  " Junit5 : 소개 및 구조 "
 categories: Junit5
 author: goodGid
 ---

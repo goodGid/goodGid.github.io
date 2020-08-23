@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Junit5 - 기본 Annotation : Junit4에서 바뀐 Annotation "
+title:  " Junit5 : 기본 Annotation - Junit4에서 바뀐 Annotation "
 categories: Junit5
 author: goodGid
 ---

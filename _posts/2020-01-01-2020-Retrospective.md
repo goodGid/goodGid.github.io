@@ -291,3 +291,12 @@ author: goodGid
 
 * [Spock Docs - Sequences of Values : method 호출 시 매번 다른 값으로 Mocking 하기]({{site.url}}/Spock-Docs-Sequences-of-Values)
 
+> 200817 ~ 200823
+
+* [Junit5 : 기본 Annotation - Junit4에서 바뀐 Annotation]({{site.url}}/Junit5-Start/)
+
+* [Junit5 : 소개 및 구조]({{site.url}}/Junit5-Intro-Structure/)
+
+* [Junit5 : Assertion - 문자열 연산 비용을 고려하자]({{site.url}}/Junit5-Assertion-Message/)
+
+* [Junit5 : 요약(Summary) 모음집]({{site.url}}/Junit5-Summary/)
