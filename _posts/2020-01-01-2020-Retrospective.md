@@ -300,3 +300,7 @@ author: goodGid
 * [Junit5 : Assertion - 문자열 연산 비용을 고려하자]({{site.url}}/Junit5-Assertion-Message/)
 
 * [Junit5 : 요약(Summary) 모음집]({{site.url}}/Junit5-Summary/)
+
+> 200824 ~ 200830
+
+* [Optional 클래스 메소드 정리]({{site.url}}/Java-Optional-Class-Method/)
