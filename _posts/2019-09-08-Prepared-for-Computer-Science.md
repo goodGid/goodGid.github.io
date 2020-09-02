@@ -9,7 +9,7 @@ author: goodGid
 
 ## OS
 
-1. 운영 체제와 정보기술의 원리 <br> ( https://book.naver.com/bookdb/book_detail.nhn?bid=4392911 )
+1. 운영 체제와 정보기술의 원리 <br> (https://book.naver.com/bookdb/book_detail.nhn?bid=16345019)
 
 2. 블로그 ( https://goodgid.github.io/category/#OS )
 
