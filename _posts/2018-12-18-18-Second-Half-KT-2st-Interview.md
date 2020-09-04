@@ -65,7 +65,7 @@ author: goodGid
 
 * 최대한 빠른 시간내에 답변을 드리겠습니다.
 
-* Email : gy8971@gmail.com
+* Email : hello.goodgid@gmail.com
 
 * Kakao : https://open.kakao.com/o/sD37fM3
 

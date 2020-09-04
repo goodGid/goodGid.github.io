@@ -65,7 +65,7 @@ Offline 연락
 <i class="fa fa-id-card-o" aria-hidden="true"></i>
 </a>
 
-* <i class="fa fa-envelope-o" aria-hidden="true"></i>: gy8971@gmail.com
+* <i class="fa fa-envelope-o" aria-hidden="true"></i>: hello.goodgid@gmail.com
 
 
 --- 
