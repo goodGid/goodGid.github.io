@@ -304,3 +304,7 @@ author: goodGid
 > 200824 ~ 200830
 
 * [Optional 클래스 메소드 정리]({{site.url}}/Java-Optional-Class-Method/)
+
+> 200831 ~ 200906
+
+* [Java 8 디폴트 메서드(Default Method) : 다이아몬드 문제(=다중 상속) 해결하기]({{site.url}}/Java-8-Default-Method)
