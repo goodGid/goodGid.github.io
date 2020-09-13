@@ -308,3 +308,7 @@ author: goodGid
 > 200831 ~ 200906
 
 * [Java 8 디폴트 메서드(Default Method) : 다이아몬드 문제(=다중 상속) 해결하기]({{site.url}}/Java-8-Default-Method)
+
+> 200907 ~ 200913
+
+* [Intellij에서 DB 아이콘(Icon)을 해석해보자]({{site.url}}/Intellij-DB-Icon/)
