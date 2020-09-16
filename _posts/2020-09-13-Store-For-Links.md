@@ -46,3 +46,11 @@ author: goodGid
 
 ![](/assets/img/tech/Store-For-Links-Spring_Cache_1.png)
 
+---
+
+## Build Automation Tool
+
+### Gradle
+
+* [What's the difference between implementation and compile in Gradle?](https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle)
+
