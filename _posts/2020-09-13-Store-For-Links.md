@@ -40,11 +40,27 @@ author: goodGid
 
 ## Spring
 
-### Cache
+### Batch
+
+* [StepExecution](https://docs.spring.io/spring-batch/docs/current/reference/html/domain.html#stepexecution)
+
+* [Configuring and Running a Job](https://docs.spring.io/spring-batch/docs/current/reference/html/job.html#configureJob)
+
+* [Meta-Data Schema](https://docs.spring.io/spring-batch/docs/3.0.x/reference/html/metaDataSchema.html)
+
+
+---
+
+
+## Cache
+
+## Ehcache
 
 * [Using Ehcache 3 in Spring Boot](https://springframework.guru/using-ehcache-3-in-spring-boot/)
 
 ![](/assets/img/tech/Store-For-Links-Spring_Cache_1.png)
+
+* [EHCache를 이용한 캐시 구현](https://javacan.tistory.com/entry/133)
 
 ---
 
@@ -54,3 +70,30 @@ author: goodGid
 
 * [What's the difference between implementation and compile in Gradle?](https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle)
 
+---
+
+## Hibernate
+
+### First Level
+* [Hibernate First Level Cache example using Spring Boot](https://www.netsurfingzone.com/hibernate/hibernate-first-level-cache-example-using-spring-boot/#Basic_points_about_Hibernate_First_Level_Cache)
+
+
+### Second Level
+
+* [Hibernate Second-Level Cache](https://www.baeldung.com/hibernate-second-level-cache)
+
+* [How Hibernate Second Level Cache Works?](https://howtodoinjava.com/hibernate/how-hibernate-second-level-cache-works/)
+
+
+---
+
+## Jenkins
+
+* [How to Install Jenkins on CentOS 7](https://linuxize.com/post/how-to-install-jenkins-on-centos-7/)
+
+
+---
+
+## JDBC
+
+* [Introduction to JDBC](https://www.baeldung.com/java-jdbc)
