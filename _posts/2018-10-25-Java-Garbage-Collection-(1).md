@@ -15,13 +15,7 @@ author: goodGid
 
 
 
-
-
-
-
-
 ---
-
 
 ## GC 장단점
 

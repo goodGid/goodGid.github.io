@@ -12,11 +12,6 @@ author: goodGid
 
 
 
-
-
-
-
-
 ---
 
 
