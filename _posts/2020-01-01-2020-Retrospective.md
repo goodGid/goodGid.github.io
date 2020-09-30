@@ -312,3 +312,11 @@ author: goodGid
 > 200907 ~ 200913
 
 * [Intellij에서 DB 아이콘(Icon)을 해석해보자]({{site.url}}/Intellij-DB-Icon/)
+
+> 200914 ~ 200920
+
+* [Java 8 Stream을 Debug 해보자 : peek( )]({{site.url}}/Java-8-Stream-Debug-Peek)
+
+> 200928 ~ 201004
+
+* [iTerm2에 Natural Text Editing 설정하기 : Alt/Cmd + Left/Right 단축키를 사용해보자]({{site.url}}/iTerm2-Natural-Text-Editing/)
