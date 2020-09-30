@@ -320,3 +320,7 @@ author: goodGid
 > 200928 ~ 201004
 
 * [iTerm2에 Natural Text Editing 설정하기 : Alt/Cmd + Left/Right 단축키를 사용해보자]({{site.url}}/iTerm2-Natural-Text-Editing/)
+
+* [Java 8에서 JVM의 변화 : PermGen이 사라지고 Metaspace가 등장하다.]({{site.url}}/Java-8-JVM-Metaspace)
+
+* [Java 8의 Arrays.parallelSort( ) Method : MultiThread로 정렬을 하다.]({{site.url}}/Java-8-Arrays-ParallelSort/Java-8-Arrays-ParallelSort/)
