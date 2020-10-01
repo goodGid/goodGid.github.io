@@ -29,6 +29,60 @@ author: goodGid
 
 ### Generic
 
+> [JAVA/Generic](https://cla9.tistory.com/category/JAVA/Generic)
+
+* Summary
+
+```
+이거 무조건 읽어보자.
+진짜 글이 너무 좋다.
+총 7개 글이 있는데
+글마다 2번씩 읽었다.
+```
+
+
+* [Wildcard with extends(상위 경계)](https://cla9.tistory.com/46?category=814455)
+
+  = Upper bounded wildcard
+
+  = <? extends T>
+
+* [Wildcard with super(하위 경계)](https://cla9.tistory.com/48?category=814455) 
+
+  = Lower bounded wildcard
+
+  = <? super T>
+
+* Summary
+
+```
+다음과 같은 관계라고 가정을 해보자.
+[ Object ⊂ Number ⊂ Integer ]
+ 
+그리고 다음과 같은 속성을 갖고 있다고 가정을 해보자.
+Object has a
+Number has a,b
+
+그러면 다음처럼 생각할 수 있다.
+- Object에서 어떤 Write를 하더라도 Number는 Care가 가능하다.
+- 하지만 Object에서 Read는 Number의 b는 읽을 수 없기 때문에 다소 위험하다.
+```
+
+* 그러므로 다음처럼 정리할 수 있다.
+
+```
+if you want to `Write` operation
+--> Use <? super T>
+
+if you want to `Read` operation
+--> Use <? extends T>
+```
+
+* 이와 관련된 예제는 [Wildcard with super(하위 경계)](https://cla9.tistory.com/48?category=814455) 글에서 "Get and Put Principle" 부분을 참고하자.
+
+
+---
+
 > [자바 제네릭 이해하기 Part 1](https://yaboong.github.io/java/2019/01/19/java-generics-1/)
 
 * Summary
