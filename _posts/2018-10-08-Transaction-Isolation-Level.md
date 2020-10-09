@@ -107,7 +107,7 @@ author: goodGid
 
   다른 사용자는 그 영역에 해당되는 데이터에 대한 수정이 불가능하다. 
 
-* 가령 * Select col1 from A Where col1 between 1 and 10* 을 수행하였고
+* 가령 *Select col1 from A Where col1 between 1 and 10* 을 수행하였고
 
   이 범위에 해당하는 데이터가 2건이 있는 경우 (col1 = 1,5)
   
