@@ -324,3 +324,10 @@ author: goodGid
 * [Java 8에서 JVM의 변화 : PermGen이 사라지고 Metaspace가 등장하다.]({{site.url}}/Java-8-JVM-Metaspace)
 
 * [Java 8의 Arrays.parallelSort( ) Method : MultiThread로 정렬을 하다.]({{site.url}}/Java-8-Arrays-ParallelSort/Java-8-Arrays-ParallelSort/)
+
+* [Java Generics 기초 학습하기 : The Basics of Java Generics]({{site.url}}/The-Basics-of-Java-Generics/)
+
+* [Java Generics에서 <?> 와 <? extends Object> 차이에 대해 알아보자]({{site.url}}/Java-Generics-vs-Extends-Object/)
+
+> 201005 ~ 201011
+
