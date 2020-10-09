@@ -313,3 +313,28 @@ Java 7 => ForkJoinPool.
 (3) join the results.
 ```
 
+
+
+---
+
+
+## JPA
+
+> [An Overview of Identifiers in Hibernate/JPA](https://www.baeldung.com/hibernate-identifiers)
+
+* Keyword
+
+```
+- @GeneratedValue
+
+- AUTO, IDENTITY, SEQUENCE, TABLE
+
+- Custom Generator
+
+- Composite Identifiers
+    @EmbeddedId
+    @IdClass
+
+- Derived Identifiers
+    @MapsId
+```
