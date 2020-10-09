@@ -11,7 +11,11 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    <image><url>https://goodgid.github.io/assets/img/logo.png</url></image>
+    <image>
+      <url>https://goodgid.github.io/assets/img/logo.png</url>
+      <title>Gidhub</title>
+      <link>https://goodgid.github.io/</link>
+    </image>
     {% for post in site.posts limit:30 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
