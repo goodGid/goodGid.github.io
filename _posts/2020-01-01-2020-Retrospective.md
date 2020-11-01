@@ -84,13 +84,6 @@ author: goodGid
 
 * [Spring에서 Handler Interceptor 개념 및 구현해보기]({{site.url}}/Spring-HandlerInterceptor)
 
-```
-일이 너무 바빠서
-(= LINE Card Point Use 작업)
-따로 공부할 시간이 없었다.
-변명이 아니라 정말로 바빳다.
-```
-
 > 200120 ~ 200126
 
 * [Spring의 Resource Handler 알아보기]({{site.url}}/Spring-Resource-Handlers)
@@ -333,3 +326,8 @@ author: goodGid
 
 * [실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1/dashboard) 강의 [학습](https://github.com/goodGid/Lecture/tree/master/inflearn/%EC%8B%A4%EC%A0%84!%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EC%99%80%20JPA%20%ED%99%9C%EC%9A%A91%20-%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EA%B0%9C%EB%B0%9C)
 
+> 201025 ~ 201101
+
+* [SCP CLI 사용하기 : How to Use SCP Command Line Interface]({{site.url}}/How-to-use-SCP-command-line-interface)
+
+* [Spring ThreadPoolTaskExecutor에서 CorePoolSize과 MaxPoolSize 개념 알아보기]({{site.url}}/What-is-the-difference-between-Corepoolsize-and-Maxpoolsize-in-the-Spring-ThreadPoolTaskExecutor/)
