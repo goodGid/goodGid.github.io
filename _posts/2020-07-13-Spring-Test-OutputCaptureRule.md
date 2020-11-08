@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 테스트 : OutputCaptureRule - 출력되는 Log까지 테스트가 가능하다. "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " @EnableAutoConfiguration 어노테이션을 선언하면 내부적으로 어떤 일이 일어날까? "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

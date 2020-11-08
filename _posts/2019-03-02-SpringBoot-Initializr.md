@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Intellij로 Spring Boot 프로젝트 생성하기 "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

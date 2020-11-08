@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 테스트 : @SpringBootTest - 통합 테스트하다. "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

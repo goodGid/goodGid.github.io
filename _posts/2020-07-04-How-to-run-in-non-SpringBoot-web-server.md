@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 웹서버가 아닌 형태로 실행하는 방법 "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

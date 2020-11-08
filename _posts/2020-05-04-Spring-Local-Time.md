@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Spring Boot Local Time 설정 : UTC에서 변경이 되지 않는다. "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

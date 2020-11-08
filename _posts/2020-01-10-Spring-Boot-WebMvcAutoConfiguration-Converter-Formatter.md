@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Spring Boot에서 WebMvcAutoConfiguration 클래스가 하는 역할 :: Converter / Formatter "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

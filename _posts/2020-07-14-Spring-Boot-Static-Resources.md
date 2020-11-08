@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 정적 리소스 자원 : 기본값 사용 및 Custom해서 사용하기 "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

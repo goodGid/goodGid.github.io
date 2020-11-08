@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 서버 랜덤으로 포트 설정하기 : ${random.int} vs 0 "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

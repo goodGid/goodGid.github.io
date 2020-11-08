@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 프로젝트 배너(Banner) 바꾸기 "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content

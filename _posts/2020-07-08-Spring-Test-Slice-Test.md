@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " SpringBoot 테스트 : 슬라이스(Slice) 테스트 - Scpoe을 제한하다. "
-categories: Spring
+categories: SpringBoot
 author: goodGid
 ---
 * content
