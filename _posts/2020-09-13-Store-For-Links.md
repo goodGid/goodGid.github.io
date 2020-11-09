@@ -7,15 +7,8 @@ author: goodGid
 * content
 {:toc}
 
-## Prologue
-
-* 글로 정리하기엔 내용이 가볍지만
-
-  분명 나중에 다시 참고해야할 정보들을 기록하려고 한다.
 
 
-
----
 
 ## Test Code
 
@@ -247,6 +240,10 @@ assertEquals("java.lang.Integer", typeArguments[1].getTypeName());
 ## Jenkins
 
 * [How to Install Jenkins on CentOS 7](https://linuxize.com/post/how-to-install-jenkins-on-centos-7/)
+
+* [Install Jenkins In 5 Simple Steps | Jenkins Installation | Edureka](https://www.edureka.co/blog/install-jenkins/)
+
+  - wget http://updates.jenkins-ci.org/download/war/2.7.3/jenkins.war
 
 
 ---
