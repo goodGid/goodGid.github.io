@@ -342,7 +342,7 @@ author: goodGid
 
 > 201109 ~ 201115
 
-* [Google Adsense $100 달성하다.]({{site.url}}/Google-Adsense-Reach-100-Dollar/)
+* [Google Adsense : $100를 돌파하다.]({{site.url}}/Google-Adsense-Reach-100-Dollar/)
 
 * [Spring Boot SQL Option : 'show_sql' Option Deep 하게 알아보기]({{site.url}}/Spring-Boot-SQL-Option-Show-SQL/)
 
