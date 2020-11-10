@@ -99,9 +99,9 @@ author: goodGid
 
 > Q. 무조건 나쁜건가?
 
-* 상황에 따라 다른다.
+* 상황에 따라 다르다.
 
-= Depends on the situation
+  = Depends on the situation
 
 * 일부 메시지 손실을 감안하더라도
 
