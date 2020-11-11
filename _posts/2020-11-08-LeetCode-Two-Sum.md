@@ -7,7 +7,7 @@ author: goodGid
 * content
 {:toc}
 
-## [Two Sum (Easy)](https://leetcode.com/problems/two-sum/)
+## [(Easy) Two Sum](https://leetcode.com/problems/two-sum/)
 
 ### Problem
 

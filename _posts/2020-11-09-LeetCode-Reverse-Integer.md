@@ -7,7 +7,7 @@ author: goodGid
 * content
 {:toc}
 
-## [Reverse Integer (Easy)](https://leetcode.com/problems/reverse-integer/)
+## [(Easy) Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
 ### Problem
 
@@ -114,4 +114,4 @@ Integer.valueOf(0123)
 
 ## Reference
 
-* [Reverse Integer)](https://leetcode.com/problems/reverse-integer/)
+* [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
