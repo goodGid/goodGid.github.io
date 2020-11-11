@@ -9,7 +9,7 @@ author: goodGid
 
 ## Google Adsense
 
-* Google Adsense의 수익금을 드디어 $100을 돌파했다.
+* Google Adsense의 수익금 $100를 돌파했다.
 
 ---
 
