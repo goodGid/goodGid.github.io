@@ -288,8 +288,6 @@ author: goodGid
 
 * 후기 글을 작성하고 거의 1년이 지나가는 시점에도 꾸준히 연락이 오고있다.
 
-* 크게 2가지 종류의 질문이 있다.
-
 > Q. 삼성전자 무선사업부에서 어떤 개발을 하고 있는가?
 
 * 취업 당시 삼성전자와 [LINE]({{site.url}}/18-Second-Half-Line-2st-Interview/)에 합격을 하였고
@@ -336,3 +334,9 @@ author: goodGid
 * 편한 방법으로 [연락]({{stie.url}}/about/#contact)주시면 
 
 * 최대한 빠른 시간내에 답변을 드리겠습니다.
+
+* 그리고 무엇보다 email 주소가 변경되었습니다.
+
+  반드시 바뀐 email로 연락주셔야지 확인이 가능합니다 !
+
+  --> hello.goodgid@gmail.com
