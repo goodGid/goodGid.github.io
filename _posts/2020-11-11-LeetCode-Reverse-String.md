@@ -55,7 +55,7 @@ public void reverseString(char[] s) {
 
 ### Feed Back
 
-> Case 1.
+> Case 1
 
 ``` java
 public void reverseString(char[] s) {

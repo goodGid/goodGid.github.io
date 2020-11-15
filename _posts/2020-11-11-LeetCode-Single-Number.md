@@ -59,7 +59,7 @@ public int singleNumber(int[] nums) {
 
 ### Feed Back
 
-> Case 1.
+> Case 1
 
 ``` java
 public int singleNumber(int[] nums) {

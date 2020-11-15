@@ -71,7 +71,7 @@ public int reverse(int x) {
 
 ### Feed Back
 
-> Case 1.
+> Case 1
 
 ``` java
 class Solution {
@@ -95,7 +95,7 @@ class Solution {
 ---
 
 
-> Case 2.
+> Case 2
 
 ``` java
 Integer.valueOf(0123)

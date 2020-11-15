@@ -348,3 +348,18 @@ author: goodGid
 
 * [LeetCode : 7. Reverse Integer]({{site.url}}/LeetCode-Reverse-Integer/)
 
+* [LeetCode : 104. Maximum Depth of Binary Tree]({{site.url}}/LeetCode-Maximum-Depth-of-Binary-Tree/)
+
+* [LeetCode : 344. Reverse String]({{site.url}}/LeetCode-Reverse-String/)
+
+* [LeetCode : 136. Single Number]({{site.url}}/LeetCode-Single-Number/)
+
+* [LeetCode : 237. Delete Node in a Linked List]({{site.url}}/LeetCode-Delete-Node-in-a-Linked-List)
+
+* [LeetCode : 412. Fizz Buzz]({{site.url}}/LeetCode-Reverse-Fizz-Buzz)
+
+* [LeetCode : 206. Reverse Linked List]({{site.url}}/LeetCode-Reverse-Linked-List)
+
+* [LeetCode : 46. Permutations]({{site.url}}/LeetCode-Permutations)
+
+* [LeetCode : 169. Majority Element](https://leetcode.com/problems/majority-element/)
