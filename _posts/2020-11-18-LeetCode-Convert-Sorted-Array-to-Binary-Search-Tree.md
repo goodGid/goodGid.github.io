@@ -36,7 +36,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 
 ---
 
-### Code (20. 11. 15)
+### Code (20. 11. 18)
 
 ``` java
 public TreeNode sortedArrayToBST(int[] nums) {
