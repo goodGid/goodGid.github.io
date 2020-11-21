@@ -32,7 +32,6 @@ M             1000
 ```
 Input: s = "III"
 Output: 3
-
 ```
 
 
