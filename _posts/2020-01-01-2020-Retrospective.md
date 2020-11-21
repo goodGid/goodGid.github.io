@@ -376,6 +376,6 @@ author: goodGid
 
 * [LeetCode : 242. Valid Anagram]({{site.url}}/LeetCode-Valid-Anagram)
 
-* [LeetCode : 217. Contains Duplicate](({{site.url}}/LeetCode-Contains-Duplicate))
+* [LeetCode : 217. Contains Duplicate]({{site.url}}/LeetCode-Contains-Duplicate)
 
-* [LeetCode : 13. Roman to Integer](({{site.url}}/LeetCode-Roman-to-Integer))
+* [LeetCode : 13. Roman to Integer]({{site.url}}/LeetCode-Roman-to-Integer)
