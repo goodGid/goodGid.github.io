@@ -38,6 +38,8 @@ author: goodGid
 ![](/assets/img/posts/Google-Adsense-Reach-100-Dollar_6.png)
 
 
+
+
 ---
 
 ### 기간
@@ -58,6 +60,43 @@ author: goodGid
 ![](/assets/img/posts/Google-Adsense-Reach-100-Dollar_2.png)
 
 
+---
+
+### 입금  
+
+* 따로 특별한 설정을 하지 않으면
+
+  20~25일 사이에 적립된 금액이 
+
+  등록한 내 계좌로 송금된다.
+
+![](/assets/img/posts/Google-Adsense-Reach-100-Dollar_8.png)
+
+* 그리고 평일에 영업일 기준으로 
+
+  내가 등록했던 신한 은행에서 문자 + 카카오톡으로 연락이 왔다.
+
+
+<p>
+<img src="/assets/img/posts/Google-Adsense-Reach-100-Dollar_9.png" alt="" style="max-width: 40%;">
+<img src="/assets/img/posts/Google-Adsense-Reach-100-Dollar_10.png" alt="" style="max-width: 40%;">
+</p>
+
+
+* 송금을 받기 위해
+
+  신한은행 App에 들어갔다.
+
+<p>
+<img src="/assets/img/posts/Google-Adsense-Reach-100-Dollar_11.png" alt="" style="max-width: 40%;">
+<img src="/assets/img/posts/Google-Adsense-Reach-100-Dollar_12.png" alt="" style="max-width: 40%;">
+</p>
+
+* 그런데 수수료가 5,000원이나 된다.
+
+  좀 찾아보니 SC은행이 수수료가 적다고 하니 
+
+  다음에는 수수료 적은 곳으로 받아야겠다.
 
 ---
 
