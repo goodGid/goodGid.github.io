@@ -54,7 +54,7 @@ author: goodGid
     public List<Board> findByTitle(String title);
 ```
 
-* @Query의 내용물에서 **`%?1%`%**을 보면
+* @Query의 내용물에서 **`%?1%`**을 보면
 
 * '?'는 JDBC상에서 PreparedStatement에서 사용한 것과 동일하다 생각하면 된다.
 

@@ -44,7 +44,7 @@ public class OdotApplication {
 
 * 하지만 여전히 Spring 서버의 Time Zone은 UTC였다.
 
-* 그래서 다음으로 [Dpkg-reconfigure 방법](({{site.url}}/Ubuntu-Change-Local-Time/#2st-method))으로 Time Zone을 변경해주니 KST로 변경되었다.
+* 그래서 다음으로 [Dpkg-reconfigure 방법]({{site.url}}/Ubuntu-Change-Local-Time/#2st-method)으로 Time Zone을 변경해주니 KST로 변경되었다.
 
 ![](/assets/img/spring/Spring-Local-Time_1.png)
 

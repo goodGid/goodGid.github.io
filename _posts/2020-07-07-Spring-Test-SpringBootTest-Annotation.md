@@ -57,7 +57,7 @@ public class GoodGidService {
 }
 ```
 
-* 공통으로 사용 되는 Controller와 Service이다.
+* 공통으로 사용되는 Controller와 Service이다.
 
 
 ---
