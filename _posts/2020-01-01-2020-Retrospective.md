@@ -379,3 +379,9 @@ author: goodGid
 * [LeetCode : 217. Contains Duplicate]({{site.url}}/LeetCode-Contains-Duplicate)
 
 * [LeetCode : 13. Roman to Integer]({{site.url}}/LeetCode-Roman-to-Integer)
+
+> 201123 ~ 201130
+
+* [LeetCode : 191. Number of 1 Bits]({{site.url}}/LeetCode-Number-of-1-Bits)
+
+* [Java 진법 다루기 : 2진수, 8진수, 10진수, 16진수]({{site.url}}/Java-Handle-Base)
