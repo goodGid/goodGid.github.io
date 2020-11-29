@@ -385,3 +385,5 @@ author: goodGid
 * [LeetCode : 191. Number of 1 Bits]({{site.url}}/LeetCode-Number-of-1-Bits)
 
 * [Java 진법 다루기 : 2진수, 8진수, 10진수, 16진수]({{site.url}}/Java-Handle-Base)
+
+* [LeetCode : 121. Best Time to Buy and Sell Stock]({{site.url}}/LeetCode-Best-Time-to-Buy-and-Sell-Stock)
