@@ -16,10 +16,12 @@ author: goodGid
 * Controller에서 사용 시 ~s를 붙히고 <br> TC에서는 ~s를 붙히지 않는다.
 
 ```
+## Controller
 @GetMapping(value = "/hello", headers = HttpHeaders.FROM)
 or
 @GetMapping(value = "/hello", params = HttpHeaders.FROM)
 
+## Test Code
 .header(HttpHeaders.FROM, "localhost"))
 .param(HttpHeaders.FROM, "localhost"))
 ```
@@ -34,25 +36,24 @@ or
 > Controller
 
 ``` java
-    @GetMapping(value = "/hello", headers = HttpHeaders.FROM)
-    // @GetMapping(value = "/hello", params = HttpHeaders.FROM)
-    @ResponseBody
-    public String hello() {
-        return "hello";
-    }
+@GetMapping(value = "/hello", headers = HttpHeaders.FROM)
+@ResponseBody
+public String hello() {
+    return "hello";
+}
 ```
 
 > TC
 
 ``` java
-    @Test
-    public void helloTest() throws Exception {
-        mockMvc.perform(get("/hello")
-                                .header(HttpHeaders.FROM, "localhost")
-                                .param(HttpHeaders.FROM, "localhost"))
-               .andDo(print())
-               .andExpect(status().isOk());
-    }
+@Test
+public void helloTest() throws Exception {
+    mockMvc.perform(get("/hello")
+                            .header(HttpHeaders.FROM, "localhost")) // Case : Success
+                            .header(HttpHeaders.HOST, "localhost")) // Case : Fail
+            .andDo(print())
+            .andExpect(status().isOk());
+}
 ```
 
 > TC Result : Suceess
@@ -62,8 +63,8 @@ MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /hello
        Parameters = {}
-          Headers = [From:"123"]
-             Body = <no character encoding set>
+          Headers = [From:"localhost"]
+             Body = null
     Session Attrs = {}
 
 ...
@@ -100,18 +101,18 @@ MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /hello
        Parameters = {}
-          Headers = [From:"localhost"]
-             Body = <no character encoding set>
+          Headers = [Host:"localhost"]
+             Body = null
     Session Attrs = {}
 
 ...
 
 MockHttpServletResponse:
-           Status = 200
+           Status = 404
     Error message = null
-          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"5"]
-     Content type = text/plain;charset=UTF-8
-             Body = hello
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -126,23 +127,24 @@ MockHttpServletResponse:
 > Controller
 
 ``` java
-    @GetMapping(value = "/hello", headers = "!" + HttpHeaders.FROM)
-    @ResponseBody
-    public String hello() {
-        return "hello";
-    }
+@GetMapping(value = "/hello", headers = "!" + HttpHeaders.FROM)
+@ResponseBody
+public String hello() {
+    return "hello";
+}
 ```
 
 > TC
 
 ``` java
-    @Test
-    public void helloTest() throws Exception {
-        mockMvc.perform(get("/hello")
-                                .header(HttpHeaders.FROM, "localhost"))
-               .andDo(print())
-               .andExpect(status().isOk());
-    }
+@Test
+public void helloTest() throws Exception {
+    mockMvc.perform(get("/hello")
+                            .header(HttpHeaders.HOST, "localhost")) // Case : Success
+                            .header(HttpHeaders.FROM, "localhost")) // Case : Fail
+            .andDo(print())
+            .andExpect(status().isOk());
+}
 ```
 
 > TC Result : Success
@@ -152,8 +154,8 @@ MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /hello
        Parameters = {}
-          Headers = [Accept-Charset:"123"]
-             Body = <no character encoding set>
+          Headers = [Host:"localhost"]
+             Body = null
     Session Attrs = {}
 
 ...
@@ -177,7 +179,7 @@ MockHttpServletRequest:
       Request URI = /hello
        Parameters = {}
           Headers = [From:"localhost"]
-             Body = <no character encoding set>
+             Body = null
     Session Attrs = {}
 
 ...
@@ -185,7 +187,7 @@ MockHttpServletRequest:
 MockHttpServletResponse:
            Status = 404
     Error message = null
-          Headers = []
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
      Content type = null
              Body = 
     Forwarded URL = null
@@ -209,23 +211,24 @@ Actual   :404
 > Controller
 
 ``` java
-    @GetMapping(value = "/hello", headers = HttpHeaders.FROM + "=" + "123")
-    @ResponseBody
-    public String hello() {
-        return "hello";
-    }
+@GetMapping(value = "/hello", headers = HttpHeaders.FROM + "=" + "123")
+@ResponseBody
+public String hello() {
+    return "hello";
+}
 ```
 
 > TC
 
 ``` java
-    @Test
-    public void helloTest() throws Exception {
-        mockMvc.perform(get("/hello")
-                                .header(HttpHeaders.FROM, "1234"))
-               .andDo(print())
-               .andExpect(status().isOk());
-    }
+@Test
+public void helloTest() throws Exception {
+    mockMvc.perform(get("/hello")
+                            .header(HttpHeaders.FROM, "123"))   // Case : Success
+                            .header(HttpHeaders.FROM, "1234"))  // Case : Fail
+            .andDo(print())
+            .andExpect(status().isOk());
+}
 ```
 
 > TC Result : Success
@@ -236,7 +239,7 @@ MockHttpServletRequest:
       Request URI = /hello
        Parameters = {}
           Headers = [From:"123"]
-             Body = <no character encoding set>
+             Body = null
     Session Attrs = {}
 
 ...
@@ -261,7 +264,7 @@ MockHttpServletRequest:
       Request URI = /hello
        Parameters = {}
           Headers = [From:"1234"]
-             Body = <no character encoding set>
+             Body = null
     Session Attrs = {}
 
 ...
@@ -269,7 +272,7 @@ MockHttpServletRequest:
 MockHttpServletResponse:
            Status = 404
     Error message = null
-          Headers = []
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
      Content type = null
              Body = 
     Forwarded URL = null
