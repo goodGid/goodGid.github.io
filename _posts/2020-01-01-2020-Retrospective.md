@@ -380,10 +380,16 @@ author: goodGid
 
 * [LeetCode : 13. Roman to Integer]({{site.url}}/LeetCode-Roman-to-Integer)
 
-> 201123 ~ 201130
+> 201123 ~ 201129
 
 * [LeetCode : 191. Number of 1 Bits]({{site.url}}/LeetCode-Number-of-1-Bits)
 
 * [Java 진법 다루기 : 2진수, 8진수, 10진수, 16진수]({{site.url}}/Java-Handle-Base)
 
 * [LeetCode : 121. Best Time to Buy and Sell Stock]({{site.url}}/LeetCode-Best-Time-to-Buy-and-Sell-Stock)
+
+> 201130 ~ 201206
+
+* [jpaQueryFactory 사용 시 Test Code를 어떻게 작성할 수 있을까?]({{site.url}}/How-can-I-write-Test-Code-when-using-jpaQueryFactory)
+
+* [[MySQL] SQL로 Json 데이터 조작하기 : How to manipulate Json with SQL? ]({{site.url}}/MySQL-Handling-Json-Data-with-SQL)
