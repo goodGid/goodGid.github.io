@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " iTerm2에 Natural Text Editing 설정하기 : Alt/Cmd + Left/Right 단축키를 사용해보자 "
-categories: Techonology
+categories: Technology
 author: goodGid
 ---
 * content
