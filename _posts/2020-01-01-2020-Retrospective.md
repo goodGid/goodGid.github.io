@@ -236,7 +236,7 @@ author: goodGid
 
 * [문자열 인코딩 : 아스키 코드(ASCII), EUC-KR, 유니코드(Unicode), UTF-8, UTF-16]({{site.url}}/String-Encoding)
 
-* [정규 표현식(Regex) : 특수 문자 다루기]({{site.url}}/Regular-Expression-Special-Statement/)
+* [정규 표현식(Regex) : 특수 문자를 찾기 위해선 역슬래시[\\]를 사용해야한다.]({{site.url}}/Regular-Expression-Special-Statement/)
 
 > 200615 ~ 200621
 
@@ -252,7 +252,7 @@ author: goodGid
 
 > 200629 ~ 200705
 
-* [[3분컷] 정규 표현식(Regex) 사용 시 성능을 고려한 코딩]({{site.url}}/Regex-Performance-Caution/)
+* [정규 표현식(Regex) 사용 시 성능을 고려한 코딩을 해보자]({{site.url}}/Regex-Performance-Caution/)
 
 * [SpringBoot 웹서버가 아닌 형태로 실행하는 방법]({{site.url}}/How-to-run-in-non-SpringBoot-web-server/)
 
@@ -393,3 +393,21 @@ author: goodGid
 * [jpaQueryFactory 사용 시 Test Code를 어떻게 작성할 수 있을까?]({{site.url}}/How-can-I-write-Test-Code-when-using-jpaQueryFactory)
 
 * [[MySQL] SQL로 Json 데이터 조작하기 : How to manipulate Json with SQL? ]({{site.url}}/MySQL-Handling-Json-Data-with-SQL)
+
+> 201207 ~ 201213
+
+* [LeetCode : 66. Plus One]({{site.url}}/LeetCode-Plus-One)
+
+* [LeetCode : 38. Count and Say]({{site.url}}/LeetCode-Count-and-Say)
+
+* [LeetCode : 160. Intersection of Two Linked Lists]({{site.url}}/LeetCode-Intersection-of-Two-Linked-Lists)
+
+* [Terminal에서 Tab 기능이 동작하지 않는 이슈 : Tab Completion Not Working]({{site.url}}/Tab-Completion-Not-Working)
+
+* [LeetCode : 141. Linked List Cycle]({{site.url}}/LeetCode-Linked-List-Cycle)
+
+* [LeetCode : 190. Reverse Bits]({{site.url}}/LeetCode-Reverse-Bits)
+
+* [LeetCode : 88. Merge Sorted Array]({{site.url}}/LeetCode-Merge-Sorted-Array)
+
+* [LeetCode : 234. Palindrome Linked List]({{site.url}}/LeetCode-Palindrome-Linked-List)
