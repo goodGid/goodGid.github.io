@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  " [3분컷] 정규 표현식(Regex) 사용 시 성능을 고려한 코딩 "
-categories: Technology
+title:  " 정규 표현식(Regex) 사용 시 성능을 고려한 코딩을 해보자 "
+categories: Regex
 author: goodGid
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  " 정규 표현식(Regex) : 특수 문자 다루기 "
-categories: Technology
+title:  " 정규 표현식(Regex) : 특수 문자를 찾기 위해선 역슬래시[\\]를 사용해야한다. "
+categories: Regex
 author: goodGid
 ---
 * content

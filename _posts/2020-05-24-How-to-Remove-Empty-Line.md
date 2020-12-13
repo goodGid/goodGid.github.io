@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Regex를 사용하여 Empty Line 지우기 : How to remove empty line "
-categories: Technology
+categories: Regex
 author: goodGid
 ---
 * content
