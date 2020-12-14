@@ -80,8 +80,8 @@ public @interface Validated {
 ``` java
 public class Event {
 
-    interface ValidateLimit {};
     interface ValidateName {};
+    interface ValidateLimit {};
     
     private Integer id;
 

@@ -287,13 +287,11 @@ public class SampleControllerTest {
 
 * 그렇기 때문에
 
-  우리가 테스트하고자 상황
+  우리가 테스트하고자하는 상황
 
-  (= Model에 Attrubute가 제대로 담겨져 있는가)를 
+  (= Model에 Attrubute가 제대로 담겨져 있는가)을
 
-  갖추기 위해서는 
-
-  핸들러에 @ResponseBody 애노테이션을 제거해줘야한다.
+  갖추기 위해서는 핸들러에 @ResponseBody 애노테이션을 제거해줘야한다.
 
 ``` java
 @ResponseBody 
