@@ -107,11 +107,11 @@ Offline 연락
 
 ### 2020
 
+* 　12. 15 [LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
+
 * 　11. 10 [Google Adsense : $100를 돌파하다.]({{site.url}}/Google-Adsense-Reach-100-Dollar/)
 
 * 　08. 08 [모교 진로진학 가이드북에 글을 작성하다.]({{site.url}}/Writing-Post-To-My-University/)
-
-* 　08. 06 [LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
 
 * 　05. 03 Add [<i class="fa fa-search	" aria-hidden="true"></i> **Search**]({{site.url}}/search/) function // Commit : 5ae6919
 
