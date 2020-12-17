@@ -236,7 +236,7 @@ author: goodGid
 
 * [문자열 인코딩 : 아스키 코드(ASCII), EUC-KR, 유니코드(Unicode), UTF-8, UTF-16]({{site.url}}/String-Encoding)
 
-* [정규 표현식(Regex) : 특수 문자를 찾기 위해선 역슬래시[\\]를 사용해야한다.]({{site.url}}/Regular-Expression-Special-Statement/)
+* [정규 표현식(Regex) : 특수 문자를 찾기 위해선 역슬래시(＼)를 사용해야한다.]({{site.url}}/Regular-Expression-Special-Statement/)
 
 > 200615 ~ 200621
 
