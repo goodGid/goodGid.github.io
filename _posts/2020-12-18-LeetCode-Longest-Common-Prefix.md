@@ -31,7 +31,7 @@ Output: "fl"
 
 ---
 
-### [1] Code (20. 12. 17)
+### [1] Code (20. 12. 18)
 
 ``` java
 class Solution {
