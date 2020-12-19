@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  " LeetCode : 28. Implement strStr() "
+title:  " LeetCode : 28. Implement strStr( ) "
 categories: LeetCode
 author: goodGid
 ---
 * content
 {:toc}
 
-## [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+## [28. Implement strStr( )](https://leetcode.com/problems/implement-strstr/)
 
 ### Problem
 
@@ -120,7 +120,7 @@ class Solution {
 }
 ```
 
-* **.indexOf()** 메소드를 사용하면 해당 index를 바로 알 수 있다.
+* **.indexOf( )** 메소드를 사용하면 해당 index를 바로 알 수 있다.
 
 
 
@@ -129,4 +129,4 @@ class Solution {
 
 ## Reference
 
-* [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+* [28. Implement strStr( )](https://leetcode.com/problems/implement-strstr/)
