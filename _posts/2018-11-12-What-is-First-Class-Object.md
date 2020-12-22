@@ -23,6 +23,7 @@ author: goodGid
 
 
 
+
 ---
 
 ## 조건 예시
@@ -105,15 +106,6 @@ console.log(foo.property2);
 ```
 
 
-
-
-
-
-
-
-
-
-
 ---
 
 ## Reference
@@ -123,8 +115,3 @@ console.log(foo.property2);
 * [1급 객체 (first class object)](http://supercoding.tistory.com/19)
 
 * [일급 객체( First Class Object )](http://victorydntmd.tistory.com/46)
-
-* []()
-
-* []()
-
