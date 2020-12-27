@@ -44,6 +44,8 @@ author: goodGid
 
 * [학교에서 알려주지 않는 17가지 실무 개발 기술](https://book.naver.com/bookdb/book_detail.nhn?bid=16324028)
 
+* [자바 최적화 가장 빠른 성능을 구현하는 검증된 10가지 기법](http://www.yes24.com/Product/Goods/72161685)
+
 > To Read
 
 * [오브젝트 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773)
@@ -440,7 +442,11 @@ author: goodGid
 
 * [LeetCode : 21. Merge Two Sorted Lists]({{site.url}}/LeetCode-Merge-Two-Sorted-Lists)
 
+* [LeetCode : 198. House Robber]({{site.url}}/LeetCode-House-Robber)
 
+* [LeetCode : 22. Generate Parentheses]({{site.url}}/LeetCode-Generate-Parentheses)
 
+* [Java로 Palindrome을 구현해보자.]({{site.url}}/Java-Palindrome-Code)
 
+* [LeetCode : 78. Subsets]({{site.url}}/LeetCode-Subsets)
 
