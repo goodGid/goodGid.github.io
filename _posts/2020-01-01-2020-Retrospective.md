@@ -450,3 +450,4 @@ author: goodGid
 
 * [LeetCode : 78. Subsets]({{site.url}}/LeetCode-Subsets)
 
+* [2020 4Q Blog 기록하기]({{site.url}}/2020-4Q-Blog/)
