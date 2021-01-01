@@ -167,8 +167,9 @@ boolean instanceTest = anotherList instanceof List<? extends Object>;
 * Similarly, in the below snippet, line 1 compiles, but line 2 doesn't
 
 ``` java
-// Fail
+// Success
 List<?>[] arrayOfList = new List<?>[1];
+// Fail
 List<? extends Object>[] arrayOfAnotherList = new List<? extends Object>[1]
 ```
 
