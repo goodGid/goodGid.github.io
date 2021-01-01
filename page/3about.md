@@ -74,6 +74,8 @@ Offline 연락
 
 * [2020 1Q Blog 기록하기]({{site.url}}/2020-1Q-Blog/)
 
+* [2020 4Q Blog 기록하기]({{site.url}}/2020-4Q-Blog/)
+
 
 ---
 
