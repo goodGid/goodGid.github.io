@@ -68,6 +68,12 @@ Offline 연락
 * <i class="fa fa-envelope-o" aria-hidden="true"></i>: hello.goodgid@gmail.com
 
 
+---
+
+## Media
+
+* [LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
+
 --- 
 
 ## About Blog
