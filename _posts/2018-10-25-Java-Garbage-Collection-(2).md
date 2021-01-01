@@ -324,7 +324,7 @@ author: goodGid
 
 * 참조가 없는 객체들은 지우고 사용 중인 객체는 다른 Region으로 고스란히 복사한다.
 
-  포인터 추적 기법 중 [객체 이동 기법]({{site.url}}/Java-Garbage-Collection-(1)/#여러 가지-포인터-추적-기법)을 참고하자.
+  포인터 추적 기법 중 [객체 이동 기법]({{site.url}}/Java-Garbage-Collection-(1)/#여러가지-포인터-추적-기법)을 참고하자.
 
 * 다른 Region으로 복사하는 과정에서 
 
