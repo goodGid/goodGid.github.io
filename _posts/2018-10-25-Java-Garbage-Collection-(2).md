@@ -278,7 +278,7 @@ author: goodGid
 
 ---
 
-> G1(Garbage First) GC
+> G1(Garbage First) GC (-XX:+UseG1GC)
 
 * G1 GC를 이해하려면 지금까지의 Young 영역과 Old 영역에 대해서는 잊는 것이 좋다.
 
