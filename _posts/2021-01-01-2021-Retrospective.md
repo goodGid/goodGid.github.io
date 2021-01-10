@@ -54,3 +54,10 @@ author: goodGid
 
 > 210101 ~ 210110
 
+* [[LINE] Refresh 휴가를 받다 !]({{site.url}}/LINE-Refresh-Welfare/)
+
+* [Paging 쿼리(Query) 작성하기 with Oracle, MySQL]({{site.url}}/DB-Writing-Paging-Queries-with-Oracle-and-MySQL/)
+
+* [Java Deque 문법 알아보기]({{site.url}}/Java-Deque-Grammer/)
+
+* [LeetCode : 341. Flatten Nested List Iterator]({{site.url}}/LeetCode-Flatten-Nested-List-Iterator/)
