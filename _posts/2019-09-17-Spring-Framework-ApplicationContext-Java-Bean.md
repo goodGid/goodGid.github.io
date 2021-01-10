@@ -13,11 +13,11 @@ author: goodGid
 
 * Application에 Baen 설정 파일을 어떻게 설정하는지 
 
-* 여러 가지 방법을 통해 알아보자.
+  여러 가지 방법을 통해 알아보자.
 
 * 글의 순서는 큰 상관은 없지만 
 
-* 가능하다면 순서로대 보는걸 추천한다.
+  가능하다면 순서로대 보는걸 추천한다.
 
 1. [XML 파일에 직접 Bean 등록 방식]({{site.url}}/Spring-Framework-ApplicationContext-XML-Bean)
 

@@ -179,7 +179,7 @@ public class BookService {
 
 ### Component Scan 설정 파일
 
-> Jva 설정 파일을 사용할 경우 : ApplicationConfig.java
+> Java 설정 파일을 사용할 경우 : ApplicationConfig.java
 
 ``` java
 @Configuration // Bean 설정파일이다를 알려주기 위해서
