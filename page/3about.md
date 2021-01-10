@@ -95,7 +95,12 @@ Offline 연락
 
 ---
 
+## OpenSource Contributions
 
+- [WooVictory/Ready-For-Tech-Interview](https://github.com/WooVictory/Ready-For-Tech-Interview) - [Fix wrong link value #7](https://github.com/WooVictory/Ready-For-Tech-Interview/pull/7)
+
+
+---
 
 ## Dev Story
 
