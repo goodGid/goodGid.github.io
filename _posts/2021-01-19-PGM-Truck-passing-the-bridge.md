@@ -23,7 +23,7 @@ author: goodGid
 
 ### Example
 
-* [문제](https://programmers.co.kr/learn/courses/30/lessons/42583) 참고
+* [문제 참고](https://programmers.co.kr/learn/courses/30/lessons/42583)
 
 ---
 

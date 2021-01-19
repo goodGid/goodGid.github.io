@@ -72,4 +72,6 @@ author: goodGid
 
 > 210118 ~ 210124
 
-* [[Programmers] 다리를 지나는 트럭]({{site.url}}/Truck-passing-the-bridge)
+* [[Programmers] 다리를 지나는 트럭]({{site.url}}/PGM-Truck-passing-the-bridge)
+
+* [[Programmers] 기능개발]({{site.url}}/PGM-Function-Development)
