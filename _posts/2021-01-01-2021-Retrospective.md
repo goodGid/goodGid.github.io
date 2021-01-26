@@ -47,7 +47,9 @@ author: goodGid
 
 * [젠킨스 2 시작하기](https://book.naver.com/bookdb/book_detail.nhn?bid=14636961)
 
+* [System Design Interview - An insider's guide, Second Edition](https://book.naver.com/bookdb/book_detail.nhn?bid=16750882)
 
+* [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
 
 
 ## DevStory
