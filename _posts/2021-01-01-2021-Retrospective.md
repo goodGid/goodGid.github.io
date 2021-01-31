@@ -51,6 +51,8 @@ author: goodGid
 
 * [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
 
+* [자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법)](https://book.naver.com/bookdb/book_detail.nhn?bid=14796595)
+
 
 ## DevStory
 
@@ -79,3 +81,15 @@ author: goodGid
 * [[Programmers] 기능개발]({{site.url}}/PGM-Function-Development)
 
 * [[Programmers] 가장 큰 수]({{site.url}}/PGM-Largest-Number)
+
+> 210125 ~ 210131
+
+* [[Programmers] 최솟값 만들기]({{site.url}}/PGM_12941/)
+
+* [[Programmers] 올바른 괄호]({{site.url}}/PGM_12909/)
+
+* [[Programmers] 캐시]({{site.url}}/PGM-Cache)
+
+* [[Programmers] 소수 찾기]({{site.url}}/PGM-42839/)
+
+* [[BOJ] 10814. 나이순 정렬]({{site.url}}/BOJ-10814/)
