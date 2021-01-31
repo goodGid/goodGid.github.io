@@ -42,7 +42,7 @@ class Solution {
             if (headA == null) {
                 headA = bTempNode; // [1]
             } else {
-                headA = headB.next;
+                headA = headA.next;
             }
 
             if (headB == null) {
