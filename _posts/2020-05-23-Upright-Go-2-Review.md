@@ -23,7 +23,7 @@ author: goodGid
   그래서 도수 치료도 받아봤지만 사실 근본적인 원인을 해결해야 할 텐데 라는 생각이 들었다.
 
 
-
+---
 
 ## Upright Go 2 
 
@@ -39,6 +39,8 @@ author: goodGid
 
   그리고 추가적인 기능은 얼마나 올바른 자세를 유지했는지 기록해준다.
 
+---
+
 ### 구매
 
 * Upright Go 2는 해외 제품이다.
@@ -51,6 +53,7 @@ author: goodGid
 
   한국 돈으로 12만 원에 구매하였다.
 
+---
 
 ### 배송
 
@@ -62,6 +65,7 @@ author: goodGid
 
   그런데 다행스럽게도 구매 후 15일정도 후 제품을 받았다.
 
+---
 
 ### 사용 후기
 
@@ -125,6 +129,8 @@ author: goodGid
   <img src="/assets/img/posts/Upright-Go-2-Review_4.jpeg" alt="" style="max-width: 50%;">
 
 
+---
+
 
 ### 무게감
 
@@ -133,6 +139,31 @@ author: goodGid
   이질감도 없고 굉장히 좋다.
 
 
+---
+
+
+### 추가 구매
+
+* 200719
+
+  Adhensive를 추가 구매했다.
+
+* [Amazone - Upright Go 2 Adhensive](https://www.amazon.com/-/ko/gp/product/B07TYNL4TC/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+
+  Price : 9.95$
+
+  1팩당 10개가 들어있다.
+
+* [Amazone - Upright Go 2 Adhensive 대체용](https://www.amazon.com/-/ko/gp/product/B081B4DN1Z/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+
+  Price : 6.98$	
+
+  1팩당 25개가 들어있다.
+
+  정품은 아니고 대체용인데 약간의 끈적임이 피부에 남지만 사용할만하다!
+
+
+---
 
 ## Summary
 
