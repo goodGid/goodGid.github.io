@@ -158,6 +158,9 @@ author: goodGid
 
   처리율 / 지연 / 용량 / 사용률 / 효율 / 확장성 / 저하
 
+* 그리고 각 지표와 관련된 성능 테스트 패턴이 존재하는데
+
+  관련해서는 [[Java Optimizing] 4. 성능 테스트 패턴 및 안티패턴 : 성능 테스트 유형]({{site.url}}/Java-Optimizing-Performance-Test-Pattern-and-Anti-Pattern/) 글을 읽어보는 걸 추천한다.
 
 ---
 
