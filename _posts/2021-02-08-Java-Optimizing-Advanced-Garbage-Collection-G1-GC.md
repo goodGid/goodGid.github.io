@@ -161,13 +161,13 @@ Each RSet keeps track of outside references into its "owning" region
 
   Java9 이상부터는 default로 동작한다.
 
-> -XX:MaxGCPauseMillis=n
+> -XX:MaxGCPauseMillis={n}
 
 * default 중단 시간(=n)을 설정할 수 있다. (단위 : ms)
 
   n의 default 값은 200ms이다.
 
-> -XX:G1HeapRegionSize=n
+> -XX:G1HeapRegionSize={n}
 
 * n은 1~64까지 2의 제곱수 값이다. (단위 : mb)
 
