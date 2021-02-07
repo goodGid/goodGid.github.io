@@ -77,7 +77,7 @@ public int calculate(String s) {
 }
 ```
 
-* 구현하는 데 있어 몇 가지 포인트가 있었다.
+> Check Point
 
 1. 공백 처리
 
