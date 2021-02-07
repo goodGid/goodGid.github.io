@@ -93,3 +93,18 @@ author: goodGid
 * [[Programmers] 소수 찾기]({{site.url}}/PGM-42839/)
 
 * [[BOJ] 10814. 나이순 정렬]({{site.url}}/BOJ-10814/)
+
+> 210201 ~ 210107
+
+* [[Java Optimizing] 1. 성능과 최적화 : 성능 분류]({{site.url}}/Java-Optimizing-Performance-and-Optimization-Performance-Classification/)
+
+* [[Java Optimizing] 2. JVM 이야기 : Interpreting과 Class Loading]({{site.url}}/Java-Optimizing-JVM-Story-Interpreting-and-Classloading/)
+
+* [[Java Optimizing] 3. 하드웨어와 운영체제 : CPU 사용률 알아보기]({{site.url}}/Java-Optimizing-HW-and-OS-CPU-Utilization-Monitoring/)
+
+* [[Java Optimizing] 4. 성능 테스트 패턴 및 안티패턴 : 성능 테스트 유형]({{site.url}}/Java-Optimizing-Performance-Test-Pattern-and-Anti-Pattern/)
+
+* [LeetCode : 138. Copy List with Random Pointer]({{site.url}}/LeetCode-Copy-List-with-Random-Pointer/)
+
+* [LeetCode : 227. Basic Calculator II]({{site.url}}/LeetCode-Basic-Calculator-II)
+
