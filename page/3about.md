@@ -125,6 +125,8 @@ Offline 연락
 
 ### 2021
 
+* 　02. 08 [2020 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/2020-Received-Referral-AWARDS-in-LINE-Corparation/)
+
 * 　01. 02 [[LINE] Refresh 휴가를 받다 !]({{site.url}}/LINE-Refresh-Welfare/)
 
 ### 2020
@@ -145,7 +147,7 @@ Offline 연락
 
 * 　02. 13 Activate Disqus Reaction
 
-* 　02. 11 [2019 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/Received-Referral-AWARDS-in-LINE-Corparation/)
+* 　02. 11 [2019 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/2019-Received-Referral-AWARDS-in-LINE-Corparation/)
 
 * 　01. 21 Delete **Tags** // Commit : ae7249a
 
