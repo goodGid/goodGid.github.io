@@ -119,7 +119,7 @@ Offline 연락
 
 ### 2021
 
-* 　02. 13 방문자 수 카운팅 기능 추가 // Commit : c790a1a3
+* 　02. 13 방문자 수 카운팅 기능 추가 :: Add pageCounting.js file // Commit : fa726e0e
 
 * 　02. 08 [2020 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/2020-Received-Referral-AWARDS-in-LINE-Corparation/)
 
