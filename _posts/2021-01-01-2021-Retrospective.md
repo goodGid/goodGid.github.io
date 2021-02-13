@@ -108,3 +108,22 @@ author: goodGid
 
 * [LeetCode : 227. Basic Calculator II]({{site.url}}/LeetCode-Basic-Calculator-II)
 
+> 210208 ~ 210114
+
+* [[Java Optimizing] 7. 가비지 수집 고급 : G1 GC]({{site.url}}/Java-Optimizing-Advanced-Garbage-Collection-G1-GC/)
+
+* [LeetCode : 150. Evaluate Reverse Polish Notation]({{site.url}}/LeetCode-Evaluate-Reverse-Polish-Notation)
+
+* [LeetCode : 34. Find First and Last Position of Element in Sorted Array]({{site.url}}/LeetCode-Find-First-and-Last-Position-of-Element-in-Sorted-Array)
+
+* [LeetCode : 322. Coin Change]({{site.url}}/LeetCode-Coin-Change)
+
+* [LeetCode : 79. Word Search]({{site.url}}/LeetCode-Word-Search)
+
+* [LeetCode : 347. Top K Frequent Elements]({{site.url}}/LeetCode-Top-K-Frequent-Elements)
+
+* [LeetCode : 189. Rotate Array]({{site.url}}/LeetCode-Rotate-Array))
+
+* [LeetCode : 19. Remove Nth Node From End of List]({{site.url}}/LeetCode-Remove-Nth-Node-From-End-of-List.md)
+
+* [[Java] Linked List 순서를 반대로 바꾸기 : Reverse Linked List Node Order]({{site.url}}/Java-Reverse-Linked-Node-Order/)
