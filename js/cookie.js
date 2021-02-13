@@ -1,20 +1,14 @@
-
-
 function checkCookie() {
     var cookie_value = getCookie("userUniqueKey");
 
     if (cookie_value != "") {
-        // alert("Welcome again " + cookie_value);
+        alert("Welcome again " + cookie_value);
     } else { 
-        /*
-        var new_key = prompt("Please enter new Cookie Key:", "");
+        // var new_key = prompt("Please enter new Cookie Key:", "");
+        var new_key = "refreshCookie";
         if (new_key != "" && new_key != null) {
             setCookie("userUniqueKey", new_key);
         }
-        */
-        var new_key = "refreshCookie";
-        setCookie("userUniqueKey", new_key);
-        increaseAccessCount(document.URL)
     }
 }
 
@@ -61,26 +55,4 @@ function setCookie(cname, cvalue){
 
 function deleteCookie(cname){
     document.cookie = name + '=; expires=Thu, 01 Jan 1999 00:00:10 GMT;';
-}
-
-function increaseAccessCount(currentUrl){
-    var xhr = new XMLHttpRequest();
-
-    var data = {
-        accessUrl: currentUrl
-    };
-
-    xhr.onload = function() {
-    if (xhr.status === 200 || xhr.status === 201) {
-        console.log(xhr.responseText);
-    } else {
-        console.error(xhr.responseText);
-    }
-    };
-
-    // xhr.open("POST","http://localhost:8080/increase/view-count");
-    xhr.open("POST", "https://goodgid.ga/increase/view-count");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(data));
 }
