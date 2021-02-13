@@ -79,7 +79,7 @@ function increaseAccessCount(currentUrl){
     };
 
     // xhr.open("POST","http://localhost:8080/increase/view-count");
-    xhr.open("POST", "http://3.34.35.176:8081/increase/view-count");
+    xhr.open("POST", "https://goodgid.ga/increase/view-count");
     xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(data));
