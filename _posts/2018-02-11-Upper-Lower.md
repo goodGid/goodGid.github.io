@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Upper_bound vs Lower_bound "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

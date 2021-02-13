@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "String Input (2)"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

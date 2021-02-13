@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "오름/내림 차순"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

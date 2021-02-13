@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 7. 가비지 수집 고급 : G1 GC "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

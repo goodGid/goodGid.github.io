@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " String을 Int로 변환하기 "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

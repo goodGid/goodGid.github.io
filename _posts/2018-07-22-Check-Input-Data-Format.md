@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Check Input Data Format "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

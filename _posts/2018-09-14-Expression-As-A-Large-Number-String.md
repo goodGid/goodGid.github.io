@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 큰 숫자 문자열로 표현하기  "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

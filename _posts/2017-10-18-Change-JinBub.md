@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 진법 변환하기 "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

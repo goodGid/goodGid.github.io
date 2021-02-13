@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 4. 성능 테스트 패턴 및 안티패턴 : 성능 테스트 유형 "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

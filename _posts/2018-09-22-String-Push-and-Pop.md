@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "String Push and Pop"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

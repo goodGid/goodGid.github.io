@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 정렬 알고리즘 (Sort Algorithm) "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

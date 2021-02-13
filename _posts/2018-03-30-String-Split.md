@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 구분자로 String 구분하기"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

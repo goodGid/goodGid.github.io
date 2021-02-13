@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 자료 구조(Data Structure) 장점과 단점 "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

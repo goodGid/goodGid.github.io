@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 각 자릿수 더하기 (Add each digit) "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

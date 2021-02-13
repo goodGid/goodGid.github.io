@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 2. JVM 이야기 : Interpreting과 Class Loading "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

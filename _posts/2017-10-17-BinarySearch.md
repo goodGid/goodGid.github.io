@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BinarySearch"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stack 초기화 하는 법"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

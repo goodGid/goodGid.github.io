@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Key Point 모음 "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 3. 하드웨어와 운영체제 : CPU 사용률 알아보기 "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

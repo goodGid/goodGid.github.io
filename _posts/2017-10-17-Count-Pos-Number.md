@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "입력된 Input의 자릿 수 구하기"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

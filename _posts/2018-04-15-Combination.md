@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 조합 (Combination) "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

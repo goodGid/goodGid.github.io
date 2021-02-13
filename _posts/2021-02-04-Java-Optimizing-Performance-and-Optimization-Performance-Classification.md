@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 1. 성능과 최적화 : 성능 분류 "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

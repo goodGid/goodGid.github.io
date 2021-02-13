@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 특정 조건으로 정렬하기 "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

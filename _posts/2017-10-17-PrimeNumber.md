@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "소수 (PrimeNumber)"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

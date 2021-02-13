@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " 파라메트릭 서치 (Parametric Search) "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

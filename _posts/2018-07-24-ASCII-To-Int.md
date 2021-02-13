@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ASCII Value "
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

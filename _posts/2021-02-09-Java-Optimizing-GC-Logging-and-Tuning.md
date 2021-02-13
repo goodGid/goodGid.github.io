@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Java Optimizing] 8. GC 로깅, 모니터링, 튜닝, 툴 "
-categories: Java_Optimizing
+categories: JavaOptimizing
 author: goodGid
 ---
 * content

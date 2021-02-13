@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "String Check"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content

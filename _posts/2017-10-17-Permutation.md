@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "순열 (Permutation)"
-categories: KeyPoint
+categories: AlgorithmSkill
 author: goodGid
 ---
 * content
