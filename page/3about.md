@@ -113,17 +113,13 @@ Offline 연락
 
 * [2019 Dev History]({{site.url}}/2019-Retrospective)
 
-
-
 ---
-
-
-
-
 
 ## Time Line
 
 ### 2021
+
+* 　02. 13 방문자 수 카운팅 기능 추가 // Commit : c790a1a3
 
 * 　02. 08 [2020 LINE 최다 추천왕(Referral AWARDS)을 수상하다 !]({{site.url}}/2020-Received-Referral-AWARDS-in-LINE-Corparation/)
 
@@ -276,8 +272,6 @@ Offline 연락
 
 ---
 
-
-
 ## Awards
 
 * 　18. 12. 17 [SKT X 한국관광공사 앱 공모전 장려상 수상]({{site.url}}/2018-Korea-Tour-App-Competition/)
@@ -295,11 +289,7 @@ Offline 연락
 * 　16. 10. 01 ACM-ICPC 교내 우수상
 
 
-
 ---
-
-
-
 
 ## Certificate
 
@@ -319,13 +309,7 @@ Offline 연락
 
 1. 정보 처리 산업 기사 (15. 06. 05) - 15631000141Z
 
-
-
 ---
-
-
-
-
 
 ## Travel
 
@@ -358,11 +342,7 @@ Offline 연락
 * 　~ 2014 North of Korea
 
 
-
-
 ---
-
-
 
 ## E.T.C
 
@@ -372,13 +352,7 @@ Offline 연락
 
 * 동문회 홈페이지 관리
 
-
-
 ---
-
-
-
-
 
 ## Comments
 
