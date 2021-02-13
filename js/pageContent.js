@@ -26,6 +26,7 @@
             // window.innerHeight : 821
             // console.log('scrollBottom : ', scrollBottom)
 
+            customAlert(htmlHeight ,scrollTop)
 
             if (scrollTop < 53) {
                 sidebarWrap.classList.remove('fixed')
@@ -42,6 +43,16 @@
     }
     moveTOC() // 컨텐츠 전송
 }());
+
+function customAlert(htmlHeight, scrollTop){
+    if (htmlHeight - 1200 < scrollTop){
+        var alerted = sessionStorage.getItem('alerted') || '';
+        if (alerted != 'yes') {
+            alert("1회 노출");
+            sessionStorage.setItem('alerted','yes');
+        }
+    }
+}
 
 /**
  * 디렉토리의 최대 높이 설정
