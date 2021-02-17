@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Commit Type : Manual Commit "
+title:  " Kafka 커밋 타입 :: 수동 커밋(Manual Commit) "
 categories: Kafka
 author: goodGid
 ---

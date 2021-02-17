@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka 메시지 손실 (Under Certain Conditions) "
+title:  " Kafka 메시지 손실이 발생하는 상황 알아보기 "
 categories: Kafka
 author: goodGid
 ---

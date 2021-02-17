@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Consumer Option "
+title:  " Kafka 컨슈머 옵션 (Consumer Option) "
 categories: Kafka
 author: goodGid
 ---

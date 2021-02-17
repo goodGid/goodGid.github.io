@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Message Send Method :: 1st "
+title:  " Kafka 메세지 전송 방법 (Message Send Method) 1편 "
 categories: Kafka
 author: goodGid
 ---

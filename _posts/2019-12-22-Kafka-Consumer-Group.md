@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Consumer Groups "
+title:  " Kafka 컨슈머 그룹 (Consumer Groups) "
 categories: Kafka
 author: goodGid
 ---

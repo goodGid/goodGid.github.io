@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Producer Option "
+title:  " Kafka 프로듀서 옵션 (Producer Option) "
 categories: Kafka
 author: goodGid
 ---

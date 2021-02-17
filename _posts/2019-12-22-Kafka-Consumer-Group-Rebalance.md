@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Consumer Groups Rebalance "
+title:  " Kafka 컨슈머 그룹 리밸런스 (Consumer Groups Rebalance) "
 categories: Kafka
 author: goodGid
 ---

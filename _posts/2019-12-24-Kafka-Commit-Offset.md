@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Commit & Offset "
+title:  " Kafka 커밋과 오프셋 (Commit & Offset) "
 categories: Kafka
 author: goodGid
 ---

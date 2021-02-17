@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Replication(복제) "
+title:  " Kafka Replication (복제) "
 categories: Kafka
 author: goodGid
 ---

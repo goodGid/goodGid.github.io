@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Kafka Commit Type : Auto Commit "
+title:  " Kafka 커밋 타입 :: 자동 커밋(Auto Commit) "
 categories: Kafka
 author: goodGid
 ---
