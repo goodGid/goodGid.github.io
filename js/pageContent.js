@@ -28,8 +28,6 @@
             // window.innerHeight : 821
             // console.log('scrollBottom : ', scrollBottom)
 
-            customAlert(htmlHeight ,scrollTop)
-
             if (scrollTop < 53) {
                 sidebarWrap.classList.remove('fixed')
                 sidebarWrap.classList.remove('scroll-bottom')
