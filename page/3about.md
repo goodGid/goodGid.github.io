@@ -97,11 +97,11 @@ Offline 연락
 
 ## OpenSource Contributions
 
-* [WooVictory/Ready-For-Tech-Interview](https://github.com/WooVictory/Ready-For-Tech-Interview) - [Fix wrong link value #7](https://github.com/WooVictory/Ready-For-Tech-Interview/pull/7)
+* [[PR] WooVictory/Ready-For-Tech-Interview](https://github.com/WooVictory/Ready-For-Tech-Interview) - [Fix wrong link value #7](https://github.com/WooVictory/Ready-For-Tech-Interview/pull/7)
 
 * [[LeetCode] Q&A Answer : 105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34541/5ms-Java-Clean-Solution-with-Caching/819441)
 
-* [자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법) 오타 제보합니다.](https://www.hanbit.co.kr/media/community/brain_default_board_view.html?bd_id=algorithm&board_idx=19691&page=0)
+* [[오타 제보] 자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법) 오타 제보합니다.](https://www.hanbit.co.kr/media/community/brain_default_board_view.html?bd_id=algorithm&board_idx=19691&page=0)
 
 ---
 
