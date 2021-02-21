@@ -31,6 +31,12 @@ author: goodGid
 
 ## Book
 
+> Done
+
+* [자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법)](https://book.naver.com/bookdb/book_detail.nhn?bid=14796595)
+
+* [카프카, 데이터 플랫폼의 최강자](https://book.naver.com/bookdb/book_detail.nhn?bid=13540082)
+
 > To Read
 
 * [오브젝트 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773)
@@ -50,8 +56,6 @@ author: goodGid
 * [System Design Interview - An insider's guide, Second Edition](https://book.naver.com/bookdb/book_detail.nhn?bid=16750882)
 
 * [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
-
-* [자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법)](https://book.naver.com/bookdb/book_detail.nhn?bid=14796595)
 
 
 ## DevStory
@@ -108,7 +112,7 @@ author: goodGid
 
 * [LeetCode : 227. Basic Calculator II]({{site.url}}/LeetCode-Basic-Calculator-II)
 
-> 210208 ~ 210114
+> 210208 ~ 210214
 
 * [[Java Optimizing] 7. 가비지 수집 고급 : G1 GC]({{site.url}}/Java-Optimizing-Advanced-Garbage-Collection-G1-GC/)
 
@@ -127,3 +131,16 @@ author: goodGid
 * [LeetCode : 19. Remove Nth Node From End of List]({{site.url}}/LeetCode-Remove-Nth-Node-From-End-of-List.md)
 
 * [[Java] Linked List 순서를 반대로 바꾸기 : Reverse Linked List Node Order]({{site.url}}/Java-Reverse-Linked-Node-Order/)
+
+> 210215 ~ 210221
+
+* [Feign 클라이언트 분석 및 직접 사용해보기 with Code]({{site.url}}/Analyzing-the-Feign-Client-and-Use)
+
+* [54. Spiral Matrix]({{site.url}}/LeetCode-Spiral-Matrix)
+
+* [LeetCode : 2. Add Two Numbers]({{site.url}}/LeetCode-Add-Two-Numbers)
+
+* [LeetCode : 55. Jump Game]({{site.url}}/LeetCode-Jump-Game)
+
+* [LeetCode : 210. Course Schedule II]({{site.url}}/LeetCode-Course-Schedule-II)
+

@@ -190,7 +190,7 @@ using the fully qualified name of this class as the key.
 
 > We can use custom *.yml property
 
-* Custom 하게 생성한 yml 파일에 대해서는
+* Custom 하게 생성한 yml 파일을
 
   Spring이 사용하기 위해선 추가로 설정이 필요하다.
 
