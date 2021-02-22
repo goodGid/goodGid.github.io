@@ -140,22 +140,53 @@ author: goodGid
 
 ### Serializable
 
-* 말 그대로 **모든 동작**이 **직렬화**되어 작동한다. 
+* Index가 설정되어 있지 않다는 조건하에
 
-* **Repeatable Read**와 다르게 **Insert**를 하여도 작동하지 않게 된다.
+  **모든 동작**이 **직렬화**되어 동작한다. 
+
+* 그러므로 **Repeatable Read**와 다르게 
+
+  **Insert**를 하여도 작동하지 않게 된다.
 
 * Transaction이 완료될 때까지 
 
-  Select 문장이 사용하는 **모든 데이터**에 **Shared Lock**이 걸리므로   
+  Select 문장이 사용하는 **모든 데이터**에 **Shared Lock**이 걸리므로
   
-  다른 사용자는 그 영역에 해당되는 데이터에 대한 **수정 및 입력**이 불가능하다.
+  다른 사용자는 그 영역에 해당하는 데이터에 대한 **Update 및 Insert**가 불가능하다.
 
-* 예를 들어 **[Repeatable Read]({{site.url}}/Transaction-Isolation-Level/#repeatable-read)**의 경우 
+* 기본적으로는 위 개념처럼 동작하지만 
 
-  1에서 10 사이에 해당되는 데이터에 대한 Update이 가능하다. 
+  **Index가 설정**되어 있다면 조금 다르게 동작한다.
 
-* 하지만 이 Level에서는 **Update 작업**도 허용하지 않는다.
+> Index 설정 O
 
+* Table에 총 1~10 sequence가 있는 상황에서
+
+  만약 A Transaction이 
+
+  select * from table_name where 3 <= seq <= 5 를 조회하는 상황에서
+
+  B Transaction이 데이터를 insert를 하려고 하면
+
+  Index 값을 보고 Success / Fail을 하게 된다.
+
+```
+Insert seq = 1~2 ==> Success
+Insert seq = 3~5 ==> Fail
+Insert seq = 6~10 ==> Success
+```
+
+> Index 설정 X
+
+* Index가 설정되어 있지 않으면 기본적으로 모든 데이터에 대해 Lock 걸어버린다.
+
+  그래서 모든 Insert 요청이 실패한다.
+
+```
+Insert seq = 1~2 ==> Fail
+Insert seq = 3~5 ==> Fail
+Insert seq = 6~10 ==> Fail
+```
 
 ![](/assets/img/db/transaction_isolation_lvel_4.png)
 
@@ -251,3 +282,5 @@ author: goodGid
 * [데이터베이스 Isolation Level](http://hundredin.net/2012/07/26/isolation-Level/)
 
 * [Isolation Level 이해하기](https://medium.com/@wonderful.dev/isolation-Level-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-94e2c30cd8c9)
+
+* [SQL Server 트랜잭션 격리 수준](https://eastluck.tistory.com/1)
