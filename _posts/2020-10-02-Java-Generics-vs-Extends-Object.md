@@ -46,7 +46,7 @@ author: goodGid
 
 ``` java
 public static void printListObject(List<Object> list) {
-    for (Object element : list) 
+    for (Object element : list) {
         System.out.print(element + " ");
     }
 }
@@ -149,7 +149,7 @@ List<? extends Object>
 ``` java
 // Success
 List someList = new ArrayList<>();
-boolean instanceTest = someList instanceof List<?>
+boolean instanceTest = someList instanceof List<?>;
 ```
 
 * This code compiles and *instanceTest* is true.
