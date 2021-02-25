@@ -34,6 +34,12 @@ author: goodGid
   충청, 강원, 경상, 전라, 제주 등의 여러 지방에서 사용하는 방언이 있는 것이라 볼 수 있다.
 
 
+> ANSI란?
+
+* DBMS(Oracle, My-SQL, DB2 등등)들에서 각기 다른 SQL를 사용하므로 
+
+  미국 표준 협회(American National Standards Institute)에서 이를 표준화하여 표준 SQL문을 정립시켜 놓은 것이다.
+
 
 ---
 
@@ -92,3 +98,5 @@ author: goodGid
 ## Reference
 
 * [[JPA - Hibernate] Dialect(방언)이란? 하이버네이트 Dialect 종류](https://dololak.tistory.com/465)
+
+* [ANSI SQL이란?](https://velog.io/@gillog/ANSI-SQL%EC%9D%B4%EB%9E%80)

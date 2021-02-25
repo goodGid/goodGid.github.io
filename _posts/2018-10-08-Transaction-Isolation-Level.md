@@ -146,7 +146,7 @@ author: goodGid
 
 * 그러므로 **Repeatable Read**와 다르게 
 
-  **Insert**를 하여도 작동하지 않게 된다.
+  **Insert**를 하여도 동작하지 않게 된다.
 
 * Transaction이 완료될 때까지 
 
@@ -160,9 +160,9 @@ author: goodGid
 
 > Index 설정 O
 
-* Table에 총 1~10 sequence가 있는 상황에서
+* Table에 총 1~10 sequence가 있고
 
-  만약 A Transaction이 
+  A Transaction이 
 
   select * from table_name where 3 <= seq <= 5 를 조회하는 상황에서
 
@@ -178,7 +178,9 @@ Insert seq = 6~10 ==> Success
 
 > Index 설정 X
 
-* Index가 설정되어 있지 않으면 기본적으로 모든 데이터에 대해 Lock 걸어버린다.
+* Index가 설정되어 있지 않으면 
+
+  기본적으로 모든 데이터에 대해 Lock을 걸어버린다.
 
   그래서 모든 Insert 요청이 실패한다.
 
