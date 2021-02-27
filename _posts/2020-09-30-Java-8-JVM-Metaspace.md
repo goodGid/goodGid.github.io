@@ -17,6 +17,30 @@ author: goodGid
   
   Permanent Generation 메모리 영역이 없어지고 Metaspace 영역이 생겼다.
 
+> Java 7 HotSpot JVM
+
+```
+<----- Java Heap ----->             <--- Native Memory --->
++------+----+----+-----+-----------+--------+--------------+
+| Eden | S0 | S1 | Old | Permanent | C Heap | Thread Stack |
++------+----+----+-----+-----------+--------+--------------+
+                        <--------->
+                       Permanent Heap
+S0: Survivor 0
+S1: Survivor 1
+```
+
+<br>
+
+
+> Java 8 HotSpot JVM
+
+```
+<----- Java Heap -----> <--------- Native Memory --------->
++------+----+----+-----+-----------+--------+--------------+
+| Eden | S0 | S1 | Old | Metaspace | C Heap | Thread Stack |
++------+----+----+-----+-----------+--------+--------------+
+```
 
 
 ---
@@ -106,6 +130,35 @@ author: goodGid
 
 ---
 
+## Q&A
+
+> Q. 그렇다면 왜 Perm이 사라지고 Metaspace가 추가된 것일까?
+
+* Metaspace 영역은 
+
+  JVM에 의해 관리되는 Heap이 아닌 
+  
+  OS 레벨에서 관리되는 Native 메모리 영역이다.
+
+* 그러므로 Metaspace가 Native 메모리를 이용함으로서 
+
+  개발자는 영역 확보의 상한을 크게 의식할 필요가 없어지게 되었다.
+
+> Java 8 미만 환경에서 PermSize
+
+![](/assets/img/java/Java-8-JVM-Metaspace_3.png)
+
+> Java 8 이상 환경에서 Metaspace
+
+![](/assets/img/java/Java-8-JVM-Metaspace_4.png)
+
+* Metaspace가 PermGen보다 비교할 수 없을 만큼 큰 Size를 갖고 있다.
+
+
+
+---
+
+
 ## Summary
 
 * Metaspace는 Java 개발자에게 있어서 중요한 개념이라고 생각이 든다.
@@ -124,3 +177,5 @@ author: goodGid
 * [Java Memory Profiling에 대하여 – ① JVM 메모리 이해와 케이스 스터디](https://m.post.naver.com/viewer/postView.nhn?volumeNo=23726161&memberNo=36733075)
 
 * [Java Memory Profiling에 대하여 – ② 메모리 모니터링과 원인분석](https://m.post.naver.com/viewer/postView.nhn?volumeNo=24042502&memberNo=36733075)
+
+* [JDK 8에서 Perm 영역은 왜 삭제됐을까](https://johngrib.github.io/wiki/java8-why-permgen-removed/)
