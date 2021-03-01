@@ -43,7 +43,7 @@ public class WebConfig implements WebMvcConfigurer {
 
   Convert와 Formatter가 어떻게 등록하는지 알아보자.
 
-> WebMvcAutoConfigurationAdapter.class --> addFormatters()
+> WebMvcAutoConfigurationAdapter.class --> addFormatters( )
 
 ``` java
 public void addFormatters(FormatterRegistry registry) {
@@ -52,7 +52,7 @@ public void addFormatters(FormatterRegistry registry) {
 }
 ```
 
-> ApplicationConversionService.class --> addBeans()
+> ApplicationConversionService.class --> addBeans( )
 
 ``` java
 public static void addBeans(FormatterRegistry registry, ListableBeanFactory beanFactory) {
@@ -91,7 +91,7 @@ public static void addBeans(FormatterRegistry registry, ListableBeanFactory bean
 
 > Q. 그런데 Formatter는 어떻게 등록되는거지?
 
-* addBeans() 메소드안에서
+* addBeans( ) 메소드안에서
 
   볼 수 있는 4개의 타입에 Formatter는 보이지 않는다.
 
@@ -341,13 +341,13 @@ public static void addBeans(FormatterRegistry registry, ListableBeanFactory bean
 
 ![](/assets/img/spring/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter_2.png)
 
-* [158] : beans.addAll(beanFactory.getBeansOfType(**Converter.class**).values()) 코드를 지나면
+* [158] : beans.addAll(beanFactory.getBeansOfType(**Converter.class**).values( )) 코드를 지나면
 
   2개가 등록된다.
 
 ![](/assets/img/spring/Spring-Boot-WebMvcAutoConfiguration-Converter-Formatter_3.png)
 
-* [159] : beans.addAll(beanFactory.getBeansOfType(**Printer.class**).values()) 코드를 지나면
+* [159] : beans.addAll(beanFactory.getBeansOfType(**Printer.class**).values( )) 코드를 지나면
 
   1개가 등록된다.
 

@@ -141,7 +141,7 @@ public class GidhubApplication {
 }
 ```
 
-> SpringApplication.class -> SpringApplication()
+> SpringApplication.class -> SpringApplication( )
 
 ``` java
 public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySources) {
@@ -161,7 +161,7 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 ```
 
 
-> SpringApplication.class -> getSpringFactoriesInstances()
+> SpringApplication.class -> getSpringFactoriesInstances( )
 
 ``` java
 private <T> Collection<T> getSpringFactoriesInstances(
@@ -181,7 +181,7 @@ private <T> Collection<T> getSpringFactoriesInstances(
 
 
 
-> SpringFactoriesLoader.class -> loadFactoryNames()
+> SpringFactoriesLoader.class -> loadFactoryNames( )
 
 ``` java
 public static List<String> loadFactoryNames(
@@ -223,13 +223,9 @@ private static Map<String, List<String>> loadSpringFactories(@Nullable ClassLoad
 }
 ```
 
-* loadSpringFactories() 메소드에
+* loadSpringFactories( ) 메소드에
 
-  Break Point를 걸고
-
-  Debug를 하다보면
-
-  다음과 같은 화면을 볼 수 있다.
+  Break Point를 걸고 Debug를 하다보면 다음과 같은 화면을 볼 수 있다.
 
 ![](/assets/img/spring/Spring-Boot-EnableAutoConfiguration_4.png)
 

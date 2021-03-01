@@ -13,9 +13,9 @@ author: goodGid
 
 * WebMvcConfigurer을
 
-* 왜 구현하고
+  왜 구현하고
 
-* 구현하면 어떤 점이 좋아지는지에 대해 알아보자.
+  구현하면 어떤 점이 좋아지는지에 대해 알아보자.
 
 
 
@@ -53,7 +53,7 @@ author: goodGid
 
   거기에 원하는 추가적인 세팅을 해서
 
-  customViewResolver()과 같은
+  customViewResolver( )과 같은
 
   Bean을 직접 정의해야한다.
 
@@ -87,7 +87,7 @@ public ViewResolver customViewResolver() {
 
 * 최종적으로 코드를 보면
 
-  configureViewResolvers() 와 customViewResolver()는 **같은 역할**을 한다.
+  configureViewResolvers( ) 와 customViewResolver( )는 **같은 역할**을 한다.
 
 ``` java
 // configureViewResolvers() = @EnableWebMvc에 의한 세팅 값 + 사용자에 의한 추가 세팅
@@ -212,13 +212,11 @@ public class WebConfig {
 
 * 그런데 ViewResolverComposite는 어디서 등록되는 걸까?
 
-* 다음 순서로 코드를 살펴보면 
-
-  등록되는 위치를 알 수 있다.
+* 다음 순서로 코드를 살펴보면 답을 알 수 있다.
 
   @EnableWebMvc -> DelegatingWebMvcConfiguration -> WebMvcConfigurationSupport
 
-> WebMvcConfigurationSupport.class -> mvcViewResolver()
+> WebMvcConfigurationSupport.class -> mvcViewResolver( )
 
 ``` java
 @Bean
@@ -265,17 +263,15 @@ public ViewResolver mvcViewResolver() {
 
 * 위와 마찬가지로
 
-  DispatcherServlet.class에서
+  DispatcherServlet.class의 doService()에 Break Point를 걸어보자.
 
-  doService()에  Break Point를 걸고 값을 체크해보자.
-
-  Reference : org.springframework.web.servlet.DispatcherServlet#doService
+  // ref : org.springframework.web.servlet.DispatcherServlet#doService
 
 ![](/assets/img/spring/Spring-WebMvcConfigurer_2.png)
 
 * viewResolver에 1개만 등록되어 있다.
 
-* 우리가 정의했던 **InternalResourceViewResolver**는 사라졌다.
+* 우리가 임의로 생성한 **InternalResourceViewResolver** Bean이 불필요해졌다.
 
 <br>
 
@@ -316,9 +312,7 @@ public ViewResolver mvcViewResolver() {
 
 * 단지 필자의 프로젝트 구성에서
 
-  @EnableWebMvc와 WebMvcConfigurer을 같이 사용하여서
-
-  예시로 들었을 뿐이다.
+  @EnableWebMvc와 WebMvcConfigurer을 같이 사용하여 예시로 들었을 뿐이다.
 
 <br>
 
