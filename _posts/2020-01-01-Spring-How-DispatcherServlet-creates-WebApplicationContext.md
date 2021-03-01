@@ -53,7 +53,7 @@ author: goodGid
 
 * 프로젝트의 Directory는 다음과 같다.
 
-<center><img src="/assets/img/spring/Spring-DispactcherServlet_1.png" alt="" style="max-width: 50%;"></center>
+<center><img src="/assets/img/spring/Spring-How-DispatcherServlet-creates-WebApplicationContext_1.png" alt="" style="max-width: 50%;"></center>
 
 
 
@@ -227,7 +227,7 @@ public class WebConfig {
 
 * 동영상으로 학습을 원한다면 해당 영상을 다운받도록 하자.
 
-* [Java 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-DispatcherServlet_2.mov)
+* [Java 사용 동영상](https://github.com/goodGid/goodGid.github.io/blob/master/assets/img/spring/Spring-How-DispatcherServlet-creates-WebApplicationContext_2.mov)
 
 
 ---
@@ -264,11 +264,11 @@ app.addMapping("/");
 
   "app"이란 Key를 사용하면 안된다.
 
-![](/assets/img/spring/Spring-DispactcherServlet_2.png)
+![](/assets/img/spring/Spring-How-DispatcherServlet-creates-WebApplicationContext_2.png)
 
-![](/assets/img/spring/Spring-DispactcherServlet_3.png)
+![](/assets/img/spring/Spring-How-DispatcherServlet-creates-WebApplicationContext_3.png)
 
-![](/assets/img/spring/Spring-DispactcherServlet_4.png)
+![](/assets/img/spring/Spring-How-DispatcherServlet-creates-WebApplicationContext_4.png)
 
 
 
