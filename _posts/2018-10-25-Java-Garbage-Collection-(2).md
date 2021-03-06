@@ -300,6 +300,8 @@ author: goodGid
 
 * JDK 7에서 정식으로 G1 GC를 포함하여 제공한다.
 
+* 더 자세한 내용은 [[Java Optimizing] 7. 가비지 수집 고급 : G1 GC]({{site.url}}/Java-Optimizing-Advanced-Garbage-Collection-G1-GC/)글을 참고하자.
+
 +
 
 * 힙 영역이 매우 큰 머신(최소 4GB)에서 돌리기에 적합한 GC이다.
