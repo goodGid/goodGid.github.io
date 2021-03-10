@@ -43,10 +43,10 @@ class Solution {
 
         for (int i = 0; i < nums.length; i++) {
             value = Math.max(value - 1, nums[i]);
+            idx = i;
             if (value == 0) {
                 break;
             }
-            idx = i;
         }
         return idx == nums.length - 1;
     }
