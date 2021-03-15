@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Java 자료형 비교 : Doulbe vs Float (Difference between Double and Float) "
+title:  " Java 자료형 비교 : Double vs Float (Difference between Double and Float) "
 categories: Java
 author: goodGid
 ---
