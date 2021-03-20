@@ -371,6 +371,65 @@ public interface DefaultFeignClient {
 ```
 
 
+---
+
+### Feign Interceptor 
+
+> DemoFeignInterceptor.class
+
+``` java
+public final class DemoFeignInterceptor implements RequestInterceptor {
+
+   @Override
+    public void apply(RequestTemplate template) {
+        String oldMessage = StringUtils.toEncodedString(template.body(), UTF_8);
+        log.info("[DemoFeignInterceptor] Old Message. {}", oldMessage);
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        BaseRequestInfo oldInfo = null;
+        String newMessage = null;
+
+        try {
+            oldInfo = objectMapper.readValue(oldMessage, BaseRequestInfo.class);
+            BaseRequestInfo newInfo = BaseRequestInfo.builder()
+                                                     .name("[DemoFeignInterceptor] " + oldInfo.getName())
+                                                     .age(oldInfo.getAge())
+                                                     .requestDate(oldInfo.getRequestDate())
+                                                     .build();
+            newMessage = objectMapper.writeValueAsString(newInfo);
+        } catch (JsonProcessingException e) {
+            log.warn("Error occurred while parsing objectMapper. ", e);
+            newMessage = oldMessage;
+        }
+        System.out.println(oldMessage);
+        System.out.println(newMessage);
+        template.body(newMessage); // Change :: Old Body -> New Body
+    }
+}
+```
+
+* **RequestInterceptor**를 상속 후 **apply 메소드**를 Override 하여
+
+  요청을 보내기 전 데이터를 Interceptor 하여 데이터를 조작할 수 있다.
+
+  위 예에서는 간단하게 BaseRequestInfo 객체의 name 값을 변경하였다.
+
+> Output
+
+``` java
+// log.info
+2021-03-21 07:31:13.353  INFO 7974 --- [           main] d.b.g.f.i.DemoFeignInterceptor         : 
+[DemoFeignInterceptor] Old Message. {"name":"goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
+
+// System.out.println
+{"name":"goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
+{"name":"[DemoFeignInterceptor] goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
+```
+
+* 출력을 통해 정상적으로 값이 변경되는 것을 확인할 수 있다.
+
+
 
 ---
 
