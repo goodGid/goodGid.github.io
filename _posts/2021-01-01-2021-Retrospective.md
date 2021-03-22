@@ -16,12 +16,6 @@ author: goodGid
 * 어떤 공부를 했고 그로 인해 어떤 성장을 했는지 기록해두자.
 
 
-## TIL
-
-* [Today I Learned](https://gist.github.com/goodGid/c8fe26253453696dad7aa626b2ff64a8)
-
-
-
 ## Plan
 
 * [2021 Plan Note](https://gist.github.com/goodGid/d132e8de2b889ae8ed1b951209f4f337)
@@ -154,7 +148,7 @@ author: goodGid
 
 > 210301 ~ 210307
 
-* [Java 자료형 비교 : Doulbe vs Float (Difference between Double and Float)]({{site.url}}/Java-Double-vs-Float)
+* [Java 자료형 비교 : Double vs Float (Difference between Double and Float)]({{site.url}}/Java-Double-vs-Float)
 
 * [LeetCode : 384. Shuffle an Array]({{site.url}}/LeetCode-Shuffle-an-Array)
 
@@ -163,3 +157,9 @@ author: goodGid
 * [LeetCode : 146. LRU Cache]({{site.url}}/LeetCode-LRU-Cache)
 
 * [LeetCode : 230. Kth Smallest Element in a BST]({{site.url}}/LeetCode-Kth-Smallest-Element-in-a-BST)
+
+> 210314 ~ 210321
+
+* [LeetCode : 2. Add Two Numbers]({{site.url}}/LeetCode-Add-Two-Numbers)
+
+* [LeetCode : 3. Longest Substring Without Repeating Characters]({{site.url}}/LeetCode-Longest-Substring-Without-Repeating-Characters)
