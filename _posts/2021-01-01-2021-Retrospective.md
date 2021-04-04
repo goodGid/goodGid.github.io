@@ -163,3 +163,9 @@ author: goodGid
 * [LeetCode : 2. Add Two Numbers]({{site.url}}/LeetCode-Add-Two-Numbers)
 
 * [LeetCode : 3. Longest Substring Without Repeating Characters]({{site.url}}/LeetCode-Longest-Substring-Without-Repeating-Characters)
+
+> 210329 ~ 210404
+
+* [2021 1Q Blog 기록하기]({{site.url}}/2021-1Q-Blog)
+
+* [OSIV 패턴(Open Session in View Pattern) : Session의 Flush 개념에 대해 알아보자.]({{site.url}}/Spring-OSIV-Session-Flush-Concept)
