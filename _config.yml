@@ -9,7 +9,9 @@
 title: Gidhub
 brief-intro: BE Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://goodgid.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
+# url에 임의의 값을 넣으면
+# {{site.url}} 사용시 local 환경에서도 지정한 값을 사용한다.
     
 
 permalink: /:title/
@@ -41,8 +43,8 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# port
-# port: 1234
+# port (default = 4000)
+# port: 4000
 
 # url
 category_dir: category/
