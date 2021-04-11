@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [OS] Multi Processing, Multi Core, Multi Taking(= Multi Programming) 개념 학습하기 "
+title:  " [OS] Multi Processing, Multi Core, Multi Tasking, Multi Programming 개념 학습하기 "
 categories: OS
 author: goodGid
 ---
@@ -54,21 +54,32 @@ author: goodGid
 
 ---
 
-## Multi Taking = Multi Programming
+## Multi Tasking & Multi Programming
 
 ![](/assets/img/os/OS-Concepts-Starting-with-Multi_3.png)
 
 * 메모리에 여러 프로그램을 올려 사용하는 구조를 
 
-  Multi Taking = Multi Programming 이라 부른다.
+  Multi Tasking = Multi Programming 이라 부른다.
 
-* 메모리에 여러 개의 프로세스가 동시에 동작한다.
+* 메모리에 여러 개의 프로세스를 동시에 올리고
+
+  CPU는 **시분할**로 여러 프로세스를 실행시킨다.
+
+  (= **Concurrency**하게 실행시킨다.)
 
   그래서 CPU 사용 효율을 높일 수 있다.
 
-* 1개의 CPU를 갖고 작업을 **시분할**로 처리할 수 있다.
+* 정리하자면 다음과 같다.
 
-  이런 걸 **Concurrency** 하다고 표현한다.
+```
+하나의 메모리에 동시에 여러 개 프로세스를 올린다.
+(= Multi Programming)
+
+Multi Programming 된 메모리를 대상으로
+CPU가 시분할로 여러 프로세스를 빠르게 처리한다.
+(= Multi Tasking, Concurrency)
+```
 
 * ref : [21:13](https://www.inflearn.com/course/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B3%B5%EB%A3%A1%EC%B1%85-%EC%A0%84%EA%B3%B5%EA%B0%95%EC%9D%98/lecture/63028?tab=note&speed=1.75)
 
