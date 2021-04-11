@@ -169,3 +169,9 @@ author: goodGid
 * [2021 1Q Blog 기록하기]({{site.url}}/2021-1Q-Blog)
 
 * [OSIV 패턴(Open Session in View Pattern) : Session의 Flush 개념에 대해 알아보자.]({{site.url}}/Spring-OSIV-Session-Flush-Concept)
+
+> 210405 ~ 210411
+
+* [[OS] Multi Processing, Multi Core, Multi Taking(= Multi Programming) 개념 학습하기]({{site.url}}/OS-Concepts-Starting-with-Multi/)
+
+* [OSIV 패턴(Open Session in View Pattern) : 전통적인 OSIV 패턴]({{site.url}}/Spring-Traditional-OSIV-Pattern/)
