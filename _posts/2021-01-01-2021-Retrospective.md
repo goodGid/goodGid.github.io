@@ -175,3 +175,8 @@ author: goodGid
 * [[OS] Multi Processing, Multi Core, Multi Taking(= Multi Programming) 개념 학습하기]({{site.url}}/OS-Concepts-Starting-with-Multi/)
 
 * [OSIV 패턴(Open Session in View Pattern) : 전통적인 OSIV 패턴]({{site.url}}/Spring-Traditional-OSIV-Pattern/)
+
+> 210412 ~ 210418
+
+* [[OS] 부모/자식 프로세스 개념 및 사용법 알아보기 (feat. 다양한 예제)]({{site.url}}/OS-Parent-Child-Process-Concept-with-Example)
+
