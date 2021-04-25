@@ -180,3 +180,10 @@ author: goodGid
 
 * [[OS] 부모/자식 프로세스 개념 및 사용법 알아보기 (feat. 다양한 예제)]({{site.url}}/OS-Parent-Child-Process-Concept-with-Example)
 
+> 210419 ~ 210425
+
+* [OSIV 패턴(Open Session in View Pattern) : Spring의 OSIV(OpenSessionInViewFilter) 구현]({{site.url}}/Spring-OSIV-Pattern/)
+
+* [[OS] 얼마나 자주 컨텍스트 스위칭(Context Switching)이 발생할까?]({{site.url}}/OS-How-Often-Do-Context-Switches-Occur/)
+
+* [Spring Boot + QueryDSL + Gradle 6 + Multi Moudle 적용하기]({{site.url}}/Spring-Query-DSL-Multi-Module-Project/)
