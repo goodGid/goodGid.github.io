@@ -380,8 +380,13 @@ public interface DefaultFeignClient {
 ``` java
 public final class DemoFeignInterceptor implements RequestInterceptor {
 
-   @Override
+    @Override
     public void apply(RequestTemplate template) {
+
+        if (template.body() == null) {
+            return;
+        }
+
         String oldMessage = StringUtils.toEncodedString(template.body(), UTF_8);
         log.info("[DemoFeignInterceptor] Old Message. {}", oldMessage);
 
@@ -402,8 +407,7 @@ public final class DemoFeignInterceptor implements RequestInterceptor {
             log.warn("Error occurred while parsing objectMapper. ", e);
             newMessage = oldMessage;
         }
-        System.out.println(oldMessage);
-        System.out.println(newMessage);
+        log.info("[DemoFeignInterceptor] New Message. {}", newMessage);
         template.body(newMessage); // Change :: Old Body -> New Body
     }
 }
@@ -418,17 +422,127 @@ public final class DemoFeignInterceptor implements RequestInterceptor {
 > Output
 
 ``` java
-// log.info
-2021-03-21 07:31:13.353  INFO 7974 --- [           main] d.b.g.f.i.DemoFeignInterceptor         : 
-[DemoFeignInterceptor] Old Message. {"name":"goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
-
-// System.out.println
-{"name":"goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
-{"name":"[DemoFeignInterceptor] goodGid","age":1,"requestDate":"2021-03-21T07:31:11"}
+[DemoFeignInterceptor] Old Message. {"name":"goodGid","age":1,"requestDate":"2021-05-05T16:01:56"} 
+[DemoFeignInterceptor] New Message. {"name":"[DemoFeignInterceptor] goodGid","age":1,"requestDate":"2021-05-05T16:01:56"}
 ```
 
 * 출력을 통해 정상적으로 값이 변경되는 것을 확인할 수 있다.
 
+
+---
+
+### Feign CustomLogger
+
+> [FeignSlowApiThreshold.class](https://github.com/goodGid/Feign_Demo_Project/blob/main/src/main/java/dev/be/goodgid/feign/annotation/FeignSlowApiThreshold.java)
+
+``` java
+@Target({ ElementType.TYPE, ElementType.METHOD })
+@Retention(RetentionPolicy.RUNTIME)
+public @interface FeignSlowApiThreshold {
+    int value() default 5_000;
+}
+```
+
+> [FeignCustomLogger.class](https://github.com/goodGid/Feign_Demo_Project/blob/main/src/main/java/dev/be/goodgid/feign/logger/FeignCustomLogger.java)
+
+``` java
+public class FeignCustomLogger extends Logger {
+
+    private static final int DEFAULT_SLOW_API_TIME = 3_000;
+    private static final String SLOW_API_NOTICE = ", Slow API";
+    private static final Map<String, Integer> slowApiThresholdMap = new ConcurrentHashMap<>();
+
+    // [1]
+    @Override
+    protected void logRequest(String configKey, Logger.Level logLevel, Request request) {
+        // Do nothing when request
+        // request info was logged in `logAndRebufferResponse`
+    }
+
+    // [2]
+    @Override
+    protected Response logAndRebufferResponse(String configKey, Logger.Level logLevel,
+                                              Response response, long elapsedTime) throws IOException {
+        int slowApiThreshold = findThresholdByClientName(configKey); // [2-1]
+
+        if (response.body() != null) {
+            byte[] bodyData = Util.toByteArray(response.body().asInputStream());
+
+            List<Object> arguments = new LinkedList<>();
+            arguments.add(response.request().httpMethod());
+            arguments.add(response.request().headers());
+            arguments.add(response.request().url());
+            arguments.add(getRequestBodyString(response.request()));
+            arguments.add(getResponseBodyString(bodyData));
+            arguments.add(elapsedTime);
+            arguments.add(elapsedTime >= slowApiThreshold ? SLOW_API_NOTICE : StringUtils.EMPTY);
+
+            if (HttpStatus.OK.value() == response.status()) {
+                log(configKey, SUCCESS_LOG_MSG, arguments.toArray());
+            } else {
+                log(configKey, ERROR_LOG_MSG, arguments.toArray());
+            }
+
+            return response.toBuilder().body(bodyData).build();
+        }
+        return response;
+    }
+
+    // [2-1]
+    private int findThresholdByClientName(String configKey) {
+        // ex) configKey = "DemoFeignClient#testPostMethod(String,BaseRequestInfo)"
+        String clientName = configKey.split("#")[0]; // clientName = DemoFeignClient
+
+        if (!slowApiThresholdMap.containsKey(clientName)) {
+            int threshold = Arrays.stream(applicationContext.getBeanDefinitionNames())
+                                  .filter(s -> s.contains(clientName))
+                                  .map(s -> applicationContext.findAnnotationOnBean(s, FeignSlowApiThreshold.class))
+                                  .filter(s -> s != null)
+                                  .map(s -> s.value())
+                                  .findFirst().orElse(DEFAULT_SLOW_API_TIME);
+            slowApiThresholdMap.put(clientName, threshold);
+        }
+        return slowApiThresholdMap.getOrDefault(clientName, DEFAULT_SLOW_API_TIME);
+    }
+    ...
+}
+```
+
+* [1] : Request에 대한 정보를 *logRequest* 메소드에서 남기지 않고 *logAndRebufferResponse* 에서 남긴다.
+
+* [2] : 요청에 대한 응답을 log로 남긴다.
+
+  여기서 만약 요청 시간이 길다면 **Slow API**라는 텍스트를 명시적으로 기록한다.
+
+  그렇다면 *요청 시간이 길다* 의 기준은 어떻게 결정할까?
+
+* [2-1] : *요청 시간이 길다* 의 **기준**을 구하기 위해 사용하는 메소드이다.
+
+  API 요청 시 사용한 FeignClient에
+
+  @FeignSlowApiThreshold가 선언되어 있다면
+
+  그 값을 기준으로 Slow API 유무를 결정한다.
+
+* 만약 선언되어있지 않다면 
+
+  DEFAULT_SLOW_API_TIME를 기준으로 Slow API 유무를 결정한다.
+
+> Example
+
+``` java
+@FeignSlowApiThreshold
+@FeignClient(
+        name = "demo-name",
+        url = "${feign.api.demo.url}",
+        configuration = DemoFeignConfig.class)
+public interface DemoFeignClient { ... }
+
+if (elapsedTime >= 5_000)
+    Slow API 출력
+// Output
+d.b.g.feign.logger.FeignCustomLogger : ... [Elapsed : 7164ms, Slow API]
+```
 
 
 ---
