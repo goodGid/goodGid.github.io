@@ -97,11 +97,13 @@ Offline 연락
 
 ## OpenSource Contributions
 
-* [[PR] WooVictory/Ready-For-Tech-Interview](https://github.com/WooVictory/Ready-For-Tech-Interview) - [Fix wrong link value #7](https://github.com/WooVictory/Ready-For-Tech-Interview/pull/7)
+* [[210111] [PR] WooVictory/Ready-For-Tech-Interview - Fix wrong link value #7](https://github.com/WooVictory/Ready-For-Tech-Interview/pull/7)
 
-* [[LeetCode] Q&A Answer : 105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34541/5ms-Java-Clean-Solution-with-Caching/819441)
+* [[210115] [LeetCode] Q&A Answer : 105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34541/5ms-Java-Clean-Solution-with-Caching/819441)
 
-* [[오타 제보] 자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법) 오타 제보합니다.](https://www.hanbit.co.kr/media/community/brain_default_board_view.html?bd_id=algorithm&board_idx=19691&page=0)
+* [[210128] [오타 제보] 자바 최적화 (Optimizing Java,가장 빠른 성능을 구현하는 검증된 10가지 기법) 오타 제보합니다.](https://www.hanbit.co.kr/media/community/brain_default_board_view.html?bd_id=algorithm&board_idx=19691&page=0)
+
+* [[210509] [잘못된 강의 내용 제보] 알고리즘 복잡도 뽀개기: 2. 재귀 함수와 마스터 정리](https://www.youtube.com/watch?v=-bm0-k7UeV8&lc=UgwrTcnbIG0Tm9YuoX14AaABAg.9N6nCsB5wYS9N6o4rL8nuY)
 
 ---
 
