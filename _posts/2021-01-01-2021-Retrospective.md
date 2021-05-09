@@ -187,3 +187,11 @@ author: goodGid
 * [[OS] 얼마나 자주 컨텍스트 스위칭(Context Switching)이 발생할까?]({{site.url}}/OS-How-Often-Do-Context-Switches-Occur/)
 
 * [Spring Boot + QueryDSL + Gradle 6 + Multi Moudle 적용하기]({{site.url}}/Spring-Query-DSL-Multi-Module-Project/)
+
+> 210503 ~ 210509
+
+* [Feign 클라이언트 분석 및 직접 사용해보기 with Code]({{site.url}}/Analyzing-the-Feign-Client-and-Use)
+
+> 210510 ~ 210517
+
+* [Karate Framework을 사용해 시나리오 테스트(Scenario Test)를 작성해보자 !]({{site.url}}/Karate-Scenario-Test-Automation-Framework/)
