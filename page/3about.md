@@ -105,6 +105,8 @@ Offline 연락
 
 * [[210509] [잘못된 강의 내용 제보] 알고리즘 복잡도 뽀개기: 2. 재귀 함수와 마스터 정리](https://www.youtube.com/watch?v=-bm0-k7UeV8&lc=UgwrTcnbIG0Tm9YuoX14AaABAg.9N6nCsB5wYS9N6o4rL8nuY)
 
+* [[210510] [Issue] I want to help newbies who use the karate framework.](https://github.com/intuit/karate/issues/1591)
+
 ---
 
 ## Dev Story
