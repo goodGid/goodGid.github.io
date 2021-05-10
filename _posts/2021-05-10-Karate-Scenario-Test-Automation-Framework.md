@@ -213,7 +213,7 @@ else if ( 외부 feature에서 넘겨받을 parameter만 사용 )
 ./gradlew test --tests DemoRunner -Dkarate.options="--tags ~@CreateValue classpath:karate/demo/post.feature"
 ```
 
-* 만약 [DemoRunner.java](https://github.com/goodGid/Karate-Framework-Demo-Project/blob/main/src/test/java/karate/demo/DemoRunner.java)에 2개의 method를 정의했는데
+* [DemoRunner.java](https://github.com/goodGid/Karate-Framework-Demo-Project/blob/main/src/test/java/karate/demo/DemoRunner.java)에 2개의 method를 정의했는데
 
   단순히 2가지 방법이 있음을 알려주고 싶어서 작성한 거니
 
@@ -258,7 +258,7 @@ class DemoRunner {
 
 ---
 
-> KarateTests.java
+> [KarateTests.java](https://github.com/goodGid/Karate-Framework-Demo-Project/blob/main/src/test/java/karate/KarateTests.java)
 
 ``` java
 @Test
