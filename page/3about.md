@@ -48,21 +48,10 @@ goodGid
 <i class="fa fa-instagram" aria-hidden="true"></i>
 </a>
 
-* BOJ :
-<a href="https://www.acmicpc.net/user/sgy8971" title="BOJ">
-<i class="fa fa-code" aria-hidden="true"></i>
-</a>
-
 * Kakao :
 <a href="https://open.kakao.com/o/sD37fM3" title="Kako">
 Open Chat
 <i class="fa fa-commenting" aria-hidden="true"></i>
-</a>
-
-* Taling :
-<a href="{{site.url}}/Taling" title="Taling">
-Offline 연락
-<i class="fa fa-id-card-o" aria-hidden="true"></i>
 </a>
 
 * <i class="fa fa-envelope-o" aria-hidden="true"></i>: hello.goodgid@gmail.com
