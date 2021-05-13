@@ -195,3 +195,7 @@ author: goodGid
 > 210510 ~ 210517
 
 * [Karate Framework을 사용해 시나리오 테스트(Scenario Test)를 작성해보자 !]({{site.url}}/Karate-Scenario-Test-Automation-Framework/)
+
+* [Let's write a scenario test using the Karate Framework !]({{site.url}}/EN-Karate-Scenario-Test-Automation-Framework/)
+
+* [알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리(Master Theorem)]({{site.url}}/Algorithm-Time-Complexity-Analysis/)
