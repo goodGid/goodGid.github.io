@@ -120,7 +120,7 @@ public class DataSourceConfig {
 
 ``` java
 @Configuration
-@PropertySource("classpath:xxx/yyy/application.yml") // [1]
+@PropertySource("classpath:xxx/yyy/application-${spring.profiles.active}.yml") // [1]
 public class DataSourceConfig {
 
     @Bean
@@ -193,3 +193,5 @@ public class DataSourceConfig {
 ## Reference
 
 * [[스프링부트] 2.1.8 에러:Failed to determine a suitable driver class](https://m.blog.naver.com/neem693/221658224988)
+
+* [Spring Boot multi module, multi profile 환경에서 @PropertySouce 사용하기](https://luvstudy.tistory.com/60)
