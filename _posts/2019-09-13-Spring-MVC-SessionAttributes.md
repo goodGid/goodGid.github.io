@@ -17,15 +17,11 @@ author: goodGid
 
 <br>
 
-* 예를 들어
-
-  여러 화면에서
+* 예를 들어 여러 화면에서
 
   배송 정보를 입력받아야 하는 화면이라면
 
-  HttpSession에 
-
-  각 화면마다 필요한 정보를 저장하고
+  HttpSession에 각 화면마다 필요한 정보를 저장하고
 
   최종적으로 저장한 값들을 가져다 사용할 수 있다.
 
@@ -60,7 +56,7 @@ public class SampleController {
 
 * 만약 해당 클래스내에서 
 
-  SessionAttributes 애노테이션에 정의되 Key와 
+  SessionAttributes 애노테이션에 정의된 Key와 
   
   동일한 Key로 Model에 값을 Set해주는 행위가 있을 시 **자동**으로 Session에도 저장시켜준다.
 
@@ -118,7 +114,7 @@ public void helloTest() throws Exception {
 
 * 참고로 TC에서 사용한 
 
-  **request()** 메소드의 FQCN (Fully Qualified Class Name)는 다음과 같다.
+  **request( )** 메소드의 FQCN (Fully Qualified Class Name)는 다음과 같다.
 
   *org.springframework.test.web.servlet.result.MockMvcResultMatchers.request*
 
