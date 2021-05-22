@@ -192,10 +192,14 @@ author: goodGid
 
 * [Feign 클라이언트 분석 및 직접 사용해보기 with Code]({{site.url}}/Analyzing-the-Feign-Client-and-Use)
 
-> 210510 ~ 210517
+> 210510 ~ 210516
 
 * [Karate Framework을 사용해 시나리오 테스트(Scenario Test)를 작성해보자 !]({{site.url}}/Karate-Scenario-Test-Automation-Framework/)
 
 * [Let's write a scenario test using the Karate Framework !]({{site.url}}/EN-Karate-Scenario-Test-Automation-Framework/)
 
 * [알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리(Master Theorem)]({{site.url}}/Algorithm-Time-Complexity-Analysis/)
+
+> 210517 ~ 210523
+
+* [vim 모드에서 해당 파일의 모든 텍스트(Text)를 클립 보드(Clipboard)에 복사하기 !]({{site.url}}/Copy-All-The-Lines-to-Clipboard-in-vim/)
