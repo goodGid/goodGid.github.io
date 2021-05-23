@@ -48,8 +48,8 @@ Scroll wheel sends arrow keys when in alternate screen mode
 ### Intellij 설정 환경 
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-Intellij_1.png)
-
-* export하면 [setting.zip 파일]()이 생성된다. // 210523(Sun)
+Initialize-Macbook-Setting-Intellij_2
+* export하면 [setting.zip 파일](https://bit.ly/2T1s0sb)이 생성된다. // 210523(Sun)
 
 ### Alfred
 
