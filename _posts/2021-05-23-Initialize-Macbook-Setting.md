@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Macbook 사용 시 설정이 필요한 목록 기록해두기 "
+title:  " Macbook 사용 시 나에게 필요한 설정 목록들 기록해두기 "
 categories: E.T.C
 author: goodGid
 ---
@@ -106,7 +106,7 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
   - cd $HOME/Library/Application\ Support/Code/User
 
-  - ex) keybindings.json, settings.json, snippets/markdown.json
+  - ex) [keybindings.json](https://bit.ly/3udzl4M), [settings.json](https://bit.ly/3bN9H0i), [snippets/markdown.json](https://bit.ly/3fcpGra)
 
 
 ### Spotlight 해제
