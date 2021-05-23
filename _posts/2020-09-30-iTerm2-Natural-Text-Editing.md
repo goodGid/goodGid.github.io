@@ -32,7 +32,7 @@ author: goodGid
 
 * **Preference -> Profiles -> Keys -> Presets -> Natural Text Editing** 순서로 설정을 변경한다.
 
-![](/assets/img/tech/iTerm2-Natural-Text-Editing_2.jpg)
+![](/assets/img/tech/iTerm2-Natural-Text-Editing_2.png)
 
 
 ---
