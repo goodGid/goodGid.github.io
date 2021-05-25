@@ -104,16 +104,16 @@ Me :
 
 * 2020년 12월 15일 [LINE 채용 홈페이지](https://careers.linecorp.com/ko/people?ca=Engineering)에 2개 언어(KO/EN)로 나의 인터뷰가 업로드되었다.
 
-  [[KO] Meet the Global LINERS](https://careers.linecorp.com/ko/people/11)
+  ~~[[KO] Meet the Global LINERS](https://careers.linecorp.com/ko/people/11)~~
   
-  [[EN] Meet the Global LINERS](https://careers.linecorp.com/people/11)
+  ~~[[EN] Meet the Global LINERS](https://careers.linecorp.com/people/11)~~
 
-* 그리고 언제 사라질지 모르는 
+* 210604(Fri)를 마지막으로 LINE -> 카카오뱅크로 이직을 하게 되었다.
 
-  이 영광스러운 추억을 간직하고자 블로그에 박제해 놔야겠다.
+  그러면서 업로드되었던 나의 인터뷰가 채용 사이트에서 삭제됐다.
 
+* 그래도 이 영광스러운 추억을 간직하고자 블로그에 박제해 놓았으니 다행이다.
 
 ![](/assets/img/posts/2020-LINER-Interview_1.png)
-
 
 ![](/assets/img/posts/2020-LINER-Interview_2.png)
