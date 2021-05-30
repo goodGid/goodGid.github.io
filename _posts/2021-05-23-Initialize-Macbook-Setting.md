@@ -96,8 +96,6 @@ Scroll wheel sends arrow keys when in alternate screen mode
 ![](/assets/img/posts/Initialize-Macbook-Setting-Trackpad_2.png)
 
 
-
-
 ### VS Code 설정
 
 * VS Code 사용 시 Short Cut으로 설정했던 값들을 설정한다.
@@ -148,7 +146,7 @@ brew install tree
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-iShot_1.png)
 
-
+ 
 ### BetterTouchTool
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-BetterTouchTool_1.png)
