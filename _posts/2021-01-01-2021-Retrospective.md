@@ -203,3 +203,5 @@ author: goodGid
 > 210517 ~ 210523
 
 * [vim 모드에서 해당 파일의 모든 텍스트(Text)를 클립 보드(Clipboard)에 복사하기 !]({{site.url}}/Copy-All-The-Lines-to-Clipboard-in-vim/)
+
+* [Macbook 사용 시 나에게 필요한 설정 목록들 기록해두기]({{site.url}}/Initialize-Macbook-Setting/)
