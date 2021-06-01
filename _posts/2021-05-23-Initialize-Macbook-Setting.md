@@ -227,6 +227,14 @@ git clone git@github.com:goodgid-rich/goodGid-rich.github.io.git
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-Git_5.png)
 
+> Step 8
+
+* 다른 repo에 account가 정상적인지 체크한다.
+
+  위 설정 후 확인해보니 이상한 email로 설정되어있었다.
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_6.png)
+
 
 ### Dock 설정
 
