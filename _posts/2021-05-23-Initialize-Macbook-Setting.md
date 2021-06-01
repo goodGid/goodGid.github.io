@@ -125,6 +125,108 @@ git config --global user.name "goodGid"
 git config --global user.email "hello.goodgid@gmail.com"
 ```
 
+<br>
+
+#### 2개 이상 Github Account 사용 시
+
+* 2개 이상의 Account를 SourceTree로 사용하려면 추가로 설정이 필요하다.
+
+> Step 1
+
+* [openssh](https://command-not-found.com/ssh-keygen)를 설치한다.
+
+```
+brew install openssh 
+```
+
+---
+
+> Step 2
+
+* SSH key를 생성한다.
+
+```
+cd ~/.ssh
+ssh-keygen -t rsa -C {email}
+```
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_1.png)
+
+
+---
+
+> Step 3
+
+* 생성한 SSH key를 설정에 추가한다.
+
+```
+ssh-add ~/.ssh/{file name}
+```
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_2.png)
+
+---
+
+> Step 4
+
+* .ssh/config 파일을 수정한다.
+
+  없다면 생성한다.
+
+```
+// vim ~/.ssh/config 입력 후 아래 내용 추가
+# goodgid-rich account
+Host github.com
+ HostName github.com
+ User git
+ AddKeysToAgent yes
+ IgnoreUnknown UseKeychain
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa_rich
+```
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_3.png)
+
+---
+
+> Step 5
+
+* 생성된 public key를 github에 등록해준다.
+
+  이때 private key가 아니라 public key를 해줘야 한다.
+
+  ex) id_rsa_rich.pub
+
+```
+github -> settings -> SSH and GPG keys -> New SSH Key -> public key 입력
+```
+
+* 이때 pub key를 복사하기 위한 [단축키]({{site.url}}/Copy-All-The-Lines-to-Clipboard-in-vim/)는 다음과 같다.
+
+![](/assets/img/tech/Copy-All-The-Lines-to-Clipboard-in-vim_2.png)
+
+---
+
+> Step 6
+
+* **ssh** 모드로 clone을 한다.
+
+  만약 clone에 실패한다면 public key를 정상적으로 등록했는제 체크해보자 !
+
+```
+git clone git@github.com:goodgid-rich/goodGid-rich.github.io.git
+```
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_4.png)
+
+---
+
+> Step 7
+
+* clone 받은 repo를 SourceTree에 추가해준다.
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Git_5.png)
+
 
 ### Dock 설정
 
