@@ -315,6 +315,8 @@ brew install tree
 
 * [Bear](https://bear.app/) 설치
 
+![](/assets/img/posts/Initialize-Macbook-Setting-Bear_1.png)
+
 ### AppCleaner
 
 * [AppCleaner](https://freemacsoft.net/appcleaner/) 설치
