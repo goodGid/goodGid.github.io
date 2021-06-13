@@ -11,15 +11,19 @@ type: page
 
 ## Who am i
 
-* LINE Pay <i class="fa fa-credit-card"></i>에서 BackEnd 개발을 하고 있습니다.
+* <img src="/assets/img/logo/kakaobank-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> 카카오뱅크에서 BackEnd 개발을 하고 있습니다.
 
-  ( Jan 2019 ~ Present )
+  ( 2021.06.07 ~ )
 
-* <i class="fa fa-edit"></i>: 기록 하는 걸 좋아합니다.
+* <img src="/assets/img/logo/line-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> LINE Pay에서 BackEnd 개발을 했습니다.
 
-* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실형 개발자 입니다.
+  ( 2019.01.02 ~ 2021.06.04 )
 
-* <i class="fa fa-desktop"></i>: Blog에 보고 듣고 느끼고 배운걸 남기는 재미로 살아갑니다.
+* <i class="fa fa-edit"></i>: 기록하는 걸 좋아합니다.
+
+* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실형 개발자입니다.
+
+* <i class="fa fa-desktop"></i>: Blog에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
 
 
 
