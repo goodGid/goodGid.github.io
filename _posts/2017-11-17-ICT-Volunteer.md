@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " ICT Volunteer "
+title:  " World Friends ICT 봉사단 참석 후기 "
 categories: E.T.C
 author: goodGid
 ---
