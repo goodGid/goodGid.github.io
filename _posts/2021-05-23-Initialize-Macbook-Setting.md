@@ -98,13 +98,17 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
 ### VS Code 설정
 
-* VS Code 사용 시 Short Cut으로 설정했던 값들을 설정한다.
+* VS Code 사용 시 ShortCut으로 설정했던 값들을 설정한다.
 
 * 관련 내용은 해당 Path에 존재한다.
 
   - cd $HOME/Library/Application\ Support/Code/User
 
   - ex) [keybindings.json](https://bit.ly/3udzl4M), [settings.json](https://bit.ly/3bN9H0i), [snippets/markdown.json](https://bit.ly/3fcpGra)
+
+* Image 붙혀넣기 기능을 위한 플러그인을 설치한다.
+
+![](/assets/img/posts/Initialize-Macbook-Setting-VS-Code_1.png)
 
 
 ### Spotlight 해제
