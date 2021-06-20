@@ -31,35 +31,19 @@ type: page
 
 ## Contact
 
-* GitHub : 
-<a href="https://github.com/{{site.github_username}}" title="GitHub">
-goodGid
-<i class="fa fa-github" aria-hidden="true"></i>
-</a>
+* <i class="fa fa-github" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.github_username}}](https://github.com/{{site.github_username}})
 
-* Linkedin : 
-<a href="https://www.linkedin.com/in/{{site.linkedIn_username}}" title="LinkedIn">
-<i class="fa fa-linkedin" aria-hidden="true"></i>
-</a>
+* <i class="fa fa-linkedin" aria-hidden="true" style="font-size: x-large;"></i>: [Kiyong Shin](https://www.linkedin.com/in/{{site.linkedIn_username}})
 
-* Facebook : 
-<a href="https://www.facebook.com/{{site.facebook_username}}" title="Facebook">
-<i class="fa fa-facebook-official" aria-hidden="true" font-size="100px"></i>
-</a>
+* <i class="fa fa-facebook-official" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.facebook_username}}](https://www.facebook.com/{{site.facebook_username}})
 
-* Instagram :
-<a href="https://www.instagram.com/{{site.insta_username}}" title="Instagram">
-<i class="fa fa-instagram" aria-hidden="true"></i>
-</a>
+* <i class="fa fa-instagram" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.insta_username}}](https://www.instagram.com/{{site.insta_username}})
 
-* Kakao :
-<a href="https://open.kakao.com/o/sD37fM3" title="Kako">
-Open Chat
-<i class="fa fa-commenting" aria-hidden="true"></i>
-</a>
+* <i class="fa fa-commenting" aria-hidden="true" style="font-size: x-large;"></i>: [Kakao Open Chat](https://open.kakao.com/o/sD37fM3)
 
-* <i class="fa fa-envelope-o" aria-hidden="true"></i>: hello.goodgid@gmail.com
+* <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: x-large;"></i>: hello.goodgid@gmail.com
 
+* <img src="/assets/img/logo/itdaa-logo.png" style="max-width: 8%; vertical-align: text-bottom;"> : [멘토링(Mentoring) 클래스](https://www.itdaa.net/mentors/176384)
 
 ---
 
