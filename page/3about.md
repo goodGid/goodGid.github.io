@@ -11,11 +11,11 @@ type: page
 
 ## Who am i
 
-* <img src="/assets/img/logo/kakaobank-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> 카카오뱅크에서 BackEnd 개발을 하고 있습니다.
+* <img src="/assets/img/logo/kakaobank-logo.png" style="max-width: 5%; vertical-align: text-bottom;"> 카카오뱅크에서 BackEnd 개발을 하고 있습니다.
 
   ( 2021.06.07 ~ )
 
-* <img src="/assets/img/logo/line-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> LINE Pay에서 BackEnd 개발을 했습니다.
+* <img src="/assets/img/logo/line-logo.png" style="max-width: 5%; vertical-align: text-bottom;"> LINE Pay에서 BackEnd 개발을 했습니다.
 
   ( 2019.01.02 ~ 2021.06.04 )
 
