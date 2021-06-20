@@ -205,3 +205,9 @@ author: goodGid
 * [vim 모드에서 해당 파일의 모든 텍스트(Text)를 클립 보드(Clipboard)에 복사하기 !]({{site.url}}/Copy-All-The-Lines-to-Clipboard-in-vim/)
 
 * [Macbook 사용 시 나에게 필요한 설정 목록들 기록해두기]({{site.url}}/Initialize-Macbook-Setting/)
+
+> 210614 ~ 210620
+
+* [잇다(itdaa) 멘토링(Mentoring) 클래스를 개설하다.]({{site.url}}/ITDAA-Mentoring/)
+
+* [내가 생각하는 카카오뱅크(Kakaobank) 회사의 좋은 점과 아쉬운 점]({{site.url}}/Kakaobank-Company-The-Good-and-The-Bad-Points)
