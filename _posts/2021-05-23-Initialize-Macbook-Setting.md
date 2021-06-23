@@ -245,6 +245,11 @@ git clone git@github.com:goodgid-rich/goodGid-rich.github.io.git
 ![](/assets/img/posts/Initialize-Macbook-Setting-Dock_1.png)
 
 
+### 화면 줌 인/아웃 설정
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Screen_zoom_in_out_1.png)
+
+
 ### Homebrew
 
 * 참고 : [Homebrew의 Apple Silicon (M1) 정식 지원 시작, 설치 방법](https://awesometic.tistory.com/272)
