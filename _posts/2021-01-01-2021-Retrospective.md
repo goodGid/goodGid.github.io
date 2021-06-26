@@ -211,3 +211,7 @@ author: goodGid
 * [잇다(itdaa) 멘토링(Mentoring) 클래스를 개설하다.]({{site.url}}/ITDAA-Mentoring/)
 
 * [내가 생각하는 카카오뱅크(Kakaobank) 회사의 좋은 점과 아쉬운 점]({{site.url}}/Kakaobank-Company-The-Good-and-The-Bad-Points)
+
+> 210621 ~ 210627
+
+* [2021 카카오뱅크 경력 공채 : 백엔드(Backend) 개발자 이직 후기]({{site.url}}/Reviews-of-moving-the-company-to-Kakao-Bank/)
