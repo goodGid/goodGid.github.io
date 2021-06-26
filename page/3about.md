@@ -49,7 +49,7 @@ type: page
 
 ## Media
 
-* [LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
+* [2020 LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
 
 --- 
 
