@@ -58,7 +58,7 @@ author: goodGid
 
 * 혹시라도 면접과 관련해서 도움이 필요하다면
 
-  최대한 도움을 드릴 테니 편하게 [멘토링 클래스](https://www.itdaa.net/mentors/176384)을 신청해주세요 ! 
+  최대한 도움을 드릴 테니 편하게 [멘토링 클래스](https://www.itdaa.net/mentors/176384) 신청해주세요 ! 
 
 
 ---
