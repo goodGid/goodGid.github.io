@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다. "
+title:  " 2020 LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다. "
 categories: E.T.C
 author: goodGid
 ---
@@ -106,7 +106,7 @@ Me :
 
   ~~[[KO] Meet the Global LINERS](https://careers.linecorp.com/ko/people/11)~~
   
-  ~~[[EN] Meet the Global LINERS](https://careers.linecorp.com/people/11)~~
+  [[EN] Meet the Global LINERS](https://careers.linecorp.com/people/11)
 
 * 210604(Fri)를 마지막으로 LINE -> 카카오뱅크로 이직을 하게 되었다.
 
