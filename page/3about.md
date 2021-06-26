@@ -100,6 +100,8 @@ type: page
 
 ### 2021
 
+* 　06. 26 [2021 카카오뱅크 경력 공채 : 백엔드(Backend) 개발자 이직 후기]({{site.url}}/Reviews-of-moving-the-company-to-Kakao-Bank/)
+
 * 　06. 14 [잇다(itdaa) 멘토링(Mentoring) 클래스를 개설하다.]({{site.url}}/ITDAA-Mentoring/)
 
 * 　02. 13 방문자 수 카운팅 기능 추가 :: Add pageCounting.js file // Commit : fa726e0e
