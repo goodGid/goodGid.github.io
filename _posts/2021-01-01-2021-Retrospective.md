@@ -51,6 +51,8 @@ author: goodGid
 
 * [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
 
+* [Designing Data-Intensive Applications](https://book.naver.com/bookdb/book_detail.nhn?bid=15910735)
+
 
 ## DevStory
 
