@@ -352,6 +352,10 @@ Q. 자신이 그리는 미래의 개발자는 어떤가요? 등등
 
 ![](/assets/img/posts/Reviews-of-moving-the-company-to-Kakao-Bank_13.png)
 
+* 그리고 명패도 받았다.
+
+![](/assets/img/posts/Reviews-of-moving-the-company-to-Kakao-Bank_14.png)
+
 ---
 
 ## 이직 후기
