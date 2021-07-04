@@ -217,3 +217,7 @@ author: goodGid
 > 210621 ~ 210627
 
 * [2021 카카오뱅크 경력 공채 : 백엔드(Backend) 개발자 이직 후기]({{site.url}}/Reviews-of-moving-the-company-to-Kakao-Bank/)
+
+> 210628 ~ 210704
+
+* [2021 2Q Blog 기록하기]({{site.url}}/2021-2Q-Blog)
