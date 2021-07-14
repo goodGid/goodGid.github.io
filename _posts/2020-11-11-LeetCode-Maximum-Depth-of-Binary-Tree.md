@@ -53,6 +53,51 @@ public int find(int depth, TreeNode node) {
 
 ---
 
+### Code (21. 07. 14)
+
+``` java
+class Solution {
+
+    public int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return getMaxDepth(root, 1);
+    }
+
+    public int getMaxDepth(TreeNode node, int ans) {
+        if (node == null) {
+            return ans;
+        }
+
+        int leftMaxDepth = 0;
+        int rightMaxDepth = 0;
+
+        if (node.left != null) {
+            leftMaxDepth = getMaxDepth(node.left, ans + 1);
+            System.out.println("leftMaxDepth : " + leftMaxDepth);
+        }
+
+        if (node.right != null) {
+            rightMaxDepth = getMaxDepth(node.right, ans + 1);
+            System.out.println("rightMaxDepth : " + rightMaxDepth);
+        }
+
+        ans = Math.max(ans, Math.max(leftMaxDepth, rightMaxDepth));
+
+        return ans;
+    }
+}
+```
+
+* LeetCode 웹 IDE에서 바로 풀었다.
+
+  풀 수 있을까? 했는데 두드려보니 풀렸다.
+
+
+---
+
 ## Reference
 
 * [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
