@@ -11,7 +11,7 @@ author: goodGid
 
 * 아스키코드란
 
-  **ASCII(American Standard Code for Information Interchange )**의 줄임말이다.
+  **ASCII(American Standard Code for Information Interchange)**의 줄임말이다.
 
 * 이름에서부터 알 수 있듯이
 
