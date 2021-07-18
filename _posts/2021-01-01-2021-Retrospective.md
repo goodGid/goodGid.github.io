@@ -221,3 +221,18 @@ author: goodGid
 > 210628 ~ 210704
 
 * [2021 2Q Blog 기록하기]({{site.url}}/2021-2Q-Blog)
+
+> 210705 ~ 210711
+
+* [LeetCode : 763. Partition Labels]({{site.url}}/LeetCode-Partition-Labels/)
+
+> 210712 ~ 210718
+
+* [LeetCode : 104. Maximum Depth of Binary Tree]({{site.url}}/LeetCode-Maximum-Depth-of-Binary-Tree/)
+
+* [LeetCode : 338. Counting Bits]({{site.url}}/LeetCode-Counting-Bits)
+
+* [Github에서 PR 생성 시 Reviewer 자동으로 할당하기 (feat. CODEOWNERS)]({{site.url}}/Github-CODEOWNERS)
+
+> 210719 ~ 210725
+
