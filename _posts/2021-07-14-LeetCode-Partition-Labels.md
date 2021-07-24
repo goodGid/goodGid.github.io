@@ -9,7 +9,7 @@ author: goodGid
 
 ## [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
 
-## Problem
+### Problem
 
 * Need to Retry
 
@@ -25,7 +25,7 @@ Return a list of integers representing the size of these parts.
 
 ---
 
-## Example
+### Example
 
 ```
 Input: s = "ababcbacadefegdehijhklij"

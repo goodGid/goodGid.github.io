@@ -10,7 +10,7 @@ use_math: true
 
 ## [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 
-## Problem
+### Problem
 
 * Need to Retry
 
@@ -28,7 +28,7 @@ It is very easy to come up with a solution with a runtime of O(n log n). Can you
 
 ---
 
-## Example
+### Example
 
 ```
 Input: n = 5

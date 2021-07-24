@@ -3,6 +3,7 @@ layout: post
 title:  " LeetCode : 46. Permutations "
 categories: LeetCode
 author: goodGid
+use_math: true
 ---
 * content
 {:toc}
@@ -28,7 +29,7 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
 ---
 
-### Code (20. 11. 15)
+## [1] Code (20. 11. 15)
 
 ``` java
 class Solution {
@@ -44,9 +45,9 @@ class Solution {
 
     public void recursive(List<List<Integer>> ans,
                           int[] nums,
-                          List<Integer> list, int size) {
+                          List<Integer> list, 
+                          int size) {
         if (list.size() == nums.length) {
-            List<Integer> temp = new ArrayList<>();
             ans.add(new ArrayList<>(list)); // [2]
             return;
         }
@@ -137,6 +138,59 @@ class Solution {
 * 시간 복잡도는 O(n!)이다.
 
   = permutation()마다 n * n-1 * n-2 * .... * 1 이다.
+
+---
+
+## [2] Code (21. 07. 24)
+
+``` java
+ class Solution {
+
+    private int[] visit;
+
+    public List<List<Integer>> permute(int[] nums) {
+        visit = new int[nums.length];
+
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        solve(ans, nums, list);
+        return ans;
+    }
+
+    private void solve(List<List<Integer>> ans, int[] nums, List<Integer> list) {
+        if (list.size() == nums.length) {
+            ans.add(new ArrayList<>(list)); // [1]
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (visit[i] == 1) {
+                continue;
+            }
+
+            list.add(nums[i]);
+            visit[i] = 1;
+            solve(ans, nums, list);
+            list.remove(list.size() - 1);
+            visit[i] = 0;
+        }
+    }
+}
+```
+
+> Algorithm Description
+
+* 기본적인 재귀 함수 구현
+
+> Review
+
+* [1] : 이전에도 그랬지만 ans에 값을 넣는 코드가 for문 밖에 생각나지 않았다.
+
+  이런 스킬적인 부분은 반복 숙달할 필요가 있겠다.
+
+* $O(N!)$ 에 푸는 아이디어가 있는데 구체적으로 생각나지 않았다.
+
+  (다음엔 기억나길 ...)
 
 ---
 
