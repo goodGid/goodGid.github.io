@@ -236,3 +236,10 @@ author: goodGid
 
 > 210719 ~ 210725
 
+* [LeetCode : 46. Permutations]({{site.url}}/LeetCode-Permutations)
+
+* [LeetCode : 226. Invert Binary Tree]({{site.url}}/LeetCode-Invert-Binary-Tree/)
+
+> 210726 ~ 210801
+
+* [Java 초기화 블록(Initialization Block) 동작 순서 알아보기 (feat. Static, Instance)]({{site.url}}/Java-Initialization-Block-Static-and-Instance)
