@@ -104,9 +104,9 @@ Me :
 
 * 2020년 12월 15일 [LINE 채용 홈페이지](https://careers.linecorp.com/ko/people?ca=Engineering)에 2개 언어(KO/EN)로 나의 인터뷰가 업로드되었다.
 
-  ~~[[KO] Meet the Global LINERS](https://careers.linecorp.com/ko/people/11)~~
+  [[KO] Meet the Global LINERS](https://bit.ly/3BWZg5V)
   
-  [[EN] Meet the Global LINERS](https://careers.linecorp.com/people/11)
+  [[EN] Meet the Global LINERS](https://bit.ly/3j2HRQF)
 
 * 210604(Fri)를 마지막으로 LINE -> 카카오뱅크로 이직을 하게 되었다.
 
