@@ -92,6 +92,46 @@ class Solution {
 
 ---
 
+### [3] Code (21. 07. 31)
+
+``` java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {        
+        
+        List<Integer> ans = new ArrayList<>();
+        
+        if (root != null) {
+            inOrder(ans, root);
+        }
+        return ans;
+    }
+    
+    public void inOrder(List<Integer> ans, TreeNode node) {
+        if (node.left != null) {
+            inOrder(ans, node.left);
+        }
+        ans.add(node.val);
+        
+        if (node.right != null) {
+            inOrder(ans, node.right);
+        }
+    }
+}
+```
+
+* 다시 문제를 풀었는데 똑같이 Recursive 하게 풀었다.
+
+  아무래도 Recursive가 익숙하다 보니 자연스레 손이 가는 듯하다.
+
+* 그리고 Iterative하게 푸는 코드를 보는데
+
+  참 신선한 아이디어이구나를 또(?) 생각했다.
+
+  다음엔 이 아이디어가 먼저 떠오를 수 있길 !
+
+
+---
+
 ## Reference
 
 *  [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
