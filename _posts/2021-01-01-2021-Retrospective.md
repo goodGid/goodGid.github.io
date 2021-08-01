@@ -243,3 +243,7 @@ author: goodGid
 > 210726 ~ 210801
 
 * [Java 초기화 블록(Initialization Block) 동작 순서 알아보기 (feat. Static, Instance)]({{site.url}}/Java-Initialization-Block-Static-and-Instance)
+
+* [LeetCode : 94. Binary Tree Inorder Traversal]({{site.url}}/LeetCode-Binary-Tree-Inorder-Traversal/)
+
+* [LeetCode : 136. Single Number]({{site.url}}/LeetCode-Single-Number/)
