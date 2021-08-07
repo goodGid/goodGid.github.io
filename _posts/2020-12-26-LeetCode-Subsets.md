@@ -106,6 +106,51 @@ class Solution {
 
 ---
 
+### [3] Code (21. 08. 07)
+
+``` java
+class Solution {
+
+    List<List<Integer>> answer = new ArrayList<>();
+
+    public List<List<Integer>> subsets(int[] nums) {
+        List<Integer> ans = new ArrayList<>();
+        solve(nums, ans, 0);
+        return answer;
+    }
+
+    private void solve(int[] nums, List<Integer> ans, int idx) {
+
+        if (idx == nums.length) {
+            answer.add(new ArrayList<>(ans)); // [1]
+            return;
+        }
+
+        ans.add(nums[idx]);
+        solve(nums, ans, idx + 1);
+        ans.remove(ans.size() - 1);
+
+        solve(nums, ans, idx + 1);
+    }
+}
+```
+
+* [1] : 다음과 같이 값을 넣어주는 실수를 했다.
+
+  이렇게 되면 ans 값의 변화가 생기면 answer에 담긴 값도 변하게 된다.
+
+* 반복해서 실수하는 부분이다. 
+  
+  주의하도록하자
+
+``` java
+if (idx == nums.length) {
+    answer.add(ans); // [1]
+    return;
+}
+```
+---
+
 ## Reference
 
 * [78. Subsets](https://leetcode.com/problems/subsets/)
