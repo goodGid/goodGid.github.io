@@ -38,7 +38,7 @@ A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits 
 
 ---
 
-## [1] Code (21. 07. 10)
+### [1] Code (21. 07. 10)
 
 ``` java
 class Solution {

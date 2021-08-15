@@ -247,3 +247,15 @@ author: goodGid
 * [LeetCode : 94. Binary Tree Inorder Traversal]({{site.url}}/LeetCode-Binary-Tree-Inorder-Traversal/)
 
 * [LeetCode : 136. Single Number]({{site.url}}/LeetCode-Single-Number/)
+
+> 210802 ~ 210808
+
+* [LeetCode : 22. Generate Parentheses]({{site.url}}/LeetCode-Generate-Parentheses)
+
+* [LeetCode : 78. Subsets]({{site.url}}/LeetCode-Subsets)
+
+> 210809 ~ 210815
+
+* [LeetCode : 206. Reverse Linked List]({{site.url}}/LeetCode-Reverse-Linked-List)
+
+* [LeetCode : 739. Daily Temperatures]({{site.url}}/LeetCode-Daily-Temperatures/)

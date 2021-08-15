@@ -44,7 +44,7 @@ Explanation:
 
 ---
 
-## [1] Code (21. 07. 14)
+### [1] Code (21. 07. 14)
 
 ``` java
 class Solution {
