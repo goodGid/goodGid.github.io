@@ -100,6 +100,8 @@ public int kthSmallest(TreeNode root, int k) {
 
 > Review
 
+* 20분 소요
+
 * 재귀보다 iterative 풀이가 메모리를 더 적게 사용한다.
 
   다음에 풀 땐 iterative 하게 풀어보자.
