@@ -259,3 +259,9 @@ author: goodGid
 * [LeetCode : 206. Reverse Linked List]({{site.url}}/LeetCode-Reverse-Linked-List)
 
 * [LeetCode : 739. Daily Temperatures]({{site.url}}/LeetCode-Daily-Temperatures/)
+
+> 210816 ~ 210822
+
+* [LeetCode : 230. Kth Smallest Element in a BST]({{site.url}}/LeetCode-Kth-Smallest-Element-in-a-BST)
+
+* [LeetCode : 647. Palindromic Substrings]({{site.url}}/LeetCode-Palindromic-Substrings)
