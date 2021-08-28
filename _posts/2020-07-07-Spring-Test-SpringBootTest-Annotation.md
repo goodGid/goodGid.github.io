@@ -15,11 +15,11 @@ author: goodGid
 
 ## Index
 
-1. [@SpringBootTest + WebEnvironment.MOCK + MockMvc]({{site.url}}/Spring/#webenvironmentmock--mockmvc)
+1. [@SpringBootTest + WebEnvironment.MOCK + MockMvc]({{site.url}}/Spring-Test-SpringBootTest-Annotation/#webenvironmentmock--mockmvc)
 
-2. [@SpringBootTest + WebEnvironment.RANDOM_PORT + RestTemplate]({{site.url}}/Spring/#webenvironmentrandom_port--resttemplate)
+2. [@SpringBootTest + WebEnvironment.RANDOM_PORT + RestTemplate]({{site.url}}/Spring-Test-SpringBootTest-Annotation/#webenvironmentrandom_port--resttemplate)
 
-3. [@SpringBootTest + WebEnvironment.RANDOM_PORT + WebTestClient]({{site.url}}/Spring/#webenvironmentrandom_port--webtestclient)
+3. [@SpringBootTest + WebEnvironment.RANDOM_PORT + WebTestClient]({{site.url}}/Spring-Test-SpringBootTest-Annotation/#webenvironmentrandom_port--webtestclient)
 
 * 위 순서로 3가지 방법에 대해 알아본다.
 
@@ -83,7 +83,10 @@ public class GoodGidService {
 > GoodGidControllerTest
 
 ``` java
-@RunWith(SpringRunner.class)
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+
+@RunWith(SpringRunner.class) // Junit4 사용 시
+@ExtendWith(SpringExtension.class) // Junit5 사용 시
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK) // [1]
 @AutoConfigureMockMvc // [2]
 public class GoodGidControllerTest_Mock {
@@ -93,7 +96,7 @@ public class GoodGidControllerTest_Mock {
 
     @Test
     public void goodGid() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/")) // [4]
                .andExpect(status().isOk())
                .andExpect(content().string("Hello goodGid"));
     }
@@ -118,6 +121,8 @@ public @interface SpringBootTest {
 
 * [2] : @AutoConfigureMockMvc를 선언하면 MockMvc를 주입받을 수 있다.
 
+* [4] : org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get를 import 해준다.
+
 
     
 
@@ -129,7 +134,8 @@ public @interface SpringBootTest {
 > GoodGidControllerTest
 
 ``` java
-@RunWith(SpringRunner.class)
+@RunWith(SpringRunner.class) // Junit4 사용 시
+@ExtendWith(SpringExtension.class) // Junit5 사용 시
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT) // [1]
 public class GoodGidControllerTest_Random_Port {
 
@@ -172,7 +178,8 @@ public class GoodGidControllerTest_Random_Port {
 > GoodGidControllerTest
 
 ``` java
-@RunWith(SpringRunner.class)
+@RunWith(SpringRunner.class) // Junit4 사용 시
+@ExtendWith(SpringExtension.class) // Junit5 사용 시
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class GoodGidControllerTest_WebTestClient {
 
