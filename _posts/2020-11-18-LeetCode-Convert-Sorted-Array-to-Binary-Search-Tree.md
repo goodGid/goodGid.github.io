@@ -36,7 +36,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 
 ---
 
-### Code (20. 11. 18)
+### [1] Code (20. 11. 18)
 
 ``` java
 public TreeNode sortedArrayToBST(int[] nums) {
@@ -64,6 +64,36 @@ private TreeNode makeBST(int[] nums, int left, int right) {
   이러면 overflow가 발생할 수 있다.
 
   그러므로 left + (right - left) / 2 로 하는게 조금 더 안전하다.
+
+---
+
+### [2] Code (21. 08. 29)
+
+``` java
+class Solution {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return solve(nums, 0, nums.length - 1);
+    }
+
+    public TreeNode solve(int[] nums, int stIdx, int endIdx) {
+        int midIdx = (stIdx + endIdx) / 2;
+
+        TreeNode node = new TreeNode(nums[midIdx]);
+        if (stIdx <= midIdx - 1) {
+            node.left = solve(nums, stIdx, midIdx - 1);
+        }
+        if (midIdx + 1 <= endIdx) {
+            node.right = solve(nums, midIdx + 1, endIdx);
+        }
+
+        return node;
+    }
+}
+```
+
+* 이전과 같은 방식으로 접근했다.
+
+  다시 풀 필요는 없어 보인다.
 
 ---
 
