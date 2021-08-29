@@ -265,3 +265,9 @@ author: goodGid
 * [LeetCode : 230. Kth Smallest Element in a BST]({{site.url}}/LeetCode-Kth-Smallest-Element-in-a-BST)
 
 * [LeetCode : 647. Palindromic Substrings]({{site.url}}/LeetCode-Palindromic-Substrings)
+
+> 210823 ~ 210829
+
+* [LeetCode : 347. Top K Frequent Elements]({{site.url}}/LeetCode-Top-K-Frequent-Elements/#2-code-21-08-29)
+
+* [LeetCode : 108. Convert Sorted Array to Binary Search Tree]({{site.url}}/LeetCode-Convert-Sorted-Array-to-Binary-Search-Tree/#2-code-21-08-29)
