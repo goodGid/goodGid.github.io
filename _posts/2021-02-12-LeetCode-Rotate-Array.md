@@ -76,10 +76,10 @@ class Solution {
 ``` java
 class Solution {
   public void rotate(int[] nums, int k) {
-    k %= nums.length; // k = nums.length + @라고 하면 nums.length만큼 rotate 하는 건 의미가 없다.
+    k %= nums.length; // k = nums.length + @ 라고 하면 nums.length만큼 rotate 하는 건 의미가 없다.
     reverse(nums, 0, nums.length - 1); // 전체를 뒤집는다.
     reverse(nums, 0, k - 1);    // 0 ~ k-1 까지 뒤집는다.
-    reverse(nums, k, nums.length - 1); // k ~n 까지 뒤집는다.
+    reverse(nums, k, nums.length - 1); // k ~ n 까지 뒤집는다.
   }
   public void reverse(int[] nums, int start, int end) {
     while (start < end) {
