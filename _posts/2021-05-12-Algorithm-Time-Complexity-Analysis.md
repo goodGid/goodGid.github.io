@@ -105,11 +105,11 @@ use_math: true
 
 ![](/assets/img/algorithm/Algorithm-Time-Complexity-Analysis_6.png)
 
-i변수를 다루는 for loop는 n번 돈다.
+* i변수를 다루는 for loop는 n번 돈다.
 
-j변수를 다루는 for loop는 2배씩 증가하므로 $\log2 M$번 돈다.
+* j변수를 다루는 for loop는 2배씩 증가하므로 $\log_2 M$번 돈다.
 
-그러므로 시간 복잡도는 $O(n * \log2 M)$이다.
+* 그러므로 시간 복잡도는 $O(n * \log_2 M)$이다.
 
 
 
