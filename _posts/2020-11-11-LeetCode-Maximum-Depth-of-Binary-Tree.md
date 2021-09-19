@@ -7,7 +7,7 @@ author: goodGid
 * content
 {:toc}
 
-## [(Easy) Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+## [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 ### Problem
 
@@ -95,6 +95,30 @@ class Solution {
 
   풀 수 있을까? 했는데 두드려보니 풀렸다.
 
+---
+
+### Code (21. 09. 19)
+
+``` java
+class Solution {
+    public int maxDepth(TreeNode root) {
+        return go(root,0,0);
+    }
+    
+    private int go(TreeNode node, int depth, int ans) {
+        if (node == null) {
+            return depth;
+        }
+        
+        ans = Math.max(ans, go(node.left, depth+1, ans));
+        ans = Math.max(ans, go(node.right, depth+1, ans));
+        
+        return ans;
+    }
+}
+```
+
+* 다시 풀 필요 X
 
 ---
 
