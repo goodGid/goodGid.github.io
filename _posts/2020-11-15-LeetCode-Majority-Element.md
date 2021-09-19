@@ -30,7 +30,7 @@ Output: 3
 
 ---
 
-### Code (20. 11. 15)
+### [1] Code (20. 11. 15)
 
 ``` java
 public int majorityElement(int[] nums) {
@@ -56,11 +56,11 @@ public int majorityElement(int[] nums) {
 
 * 1차원 적으로 생각하면 풀 수 있는 풀이라고 생각이 든다.
 
-  하지만 여기서 더 중요한 건 Feed Back에서 다루는 Idea이다.
+* 여기서 더 중요한 포인트는 "Reference Code"에 아이디어이다.
 
 ---
 
-### Feed Back
+> Reference Code
 
 > Case 1
 
@@ -158,6 +158,40 @@ ex) 1 1 2 2 3 3 3 3 3
 --> n/2 = 4 
 --> arr[4] = 3
 ```
+
+### [2] Code (21. 09. 19)
+
+*Need to Retry*
+
+``` java
+public int majorityElement(int[] nums) {
+    int n = nums.length / 2;
+    int index = 0;
+    int count = 1;
+    for (int i = 0; i < nums.length; i++) {
+        if (nums[i] == nums[index]) {
+            count++;
+        } else {
+            count--;
+        }
+        if (count == 0) {
+            index = i;
+            count = 1;
+        }
+    }
+    return nums[index];
+}
+```
+
+> Check Point
+
+* Follow-up: Could you solve the problem in **linear time** and in **O(1)** space?
+
+---
+
+> Review
+
+* TreeMap으로 접근하려고 했는데 사용법을 모르겠어서 실패했다.
 
 ---
 
