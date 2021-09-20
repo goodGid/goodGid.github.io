@@ -156,6 +156,8 @@ Connection to pungjoo.com closed by foreign host.
 ### 장점 
 
 ![](/assets/img/http/HTTP-Keep-Alive_1.png)
+*출처 : HTTP 완벽가이드 - 4.5.2 HTTP/1.0+의 Keep-Alive 커넥션*
+
 
 * 위 이미지는 4개의 트랜잭션에 대해
 
@@ -220,6 +222,7 @@ Connection to pungjoo.com closed by foreign host.
 * 예를 통해 알아보자.
 
 ![](/assets/img/http/HTTP-Keep-Alive_2.png)
+*출처 : HTTP 완벽가이드 - 4.5.6 Keep-Alive와 멍청한(dumb) 프락시*
 
 
 
@@ -326,6 +329,7 @@ Connection to pungjoo.com closed by foreign host.
 * Proxy-Connection 헤더를 Connection 헤더로 변경하여 지속 커넥션을 유지할 수 있게 된다.
 
 ![](/assets/img/http/HTTP-Keep-Alive_3.png)
+*출처 : HTTP 완벽가이드 - 4.5.7 Proxy-Connection 살펴보기*
 
 
 
@@ -343,6 +347,7 @@ Connection to pungjoo.com closed by foreign host.
 * 똑똑한 프록시 옆에 존재한다면 똑같은 문제가 발생한다.
 
 ![](/assets/img/http/HTTP-Keep-Alive_4.png)
+*출처 : HTTP 완벽가이드 - 4.5.7 Proxy-Connection 살펴보기*
 
 
 
@@ -453,3 +458,5 @@ Keep Alive Timeout을 설정한다.
 * [Keep Alive 정리.](https://weicomes.tistory.com/1)
 
 * [[Web Server] 아파치 2.4와 Nginx 특징 및 비교](http://victorydntmd.tistory.com/231)
+
+* [HTTP 완벽가이드 - 4.5장 지속커넥션](https://book.naver.com/bookdb/book_detail.nhn?bid=8509980)
