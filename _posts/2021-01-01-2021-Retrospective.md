@@ -289,3 +289,13 @@ author: goodGid
 * [LeetCode : 763. Partition Labels]({{site.url}}/LeetCode-Partition-Labels/#2-code-21-09-11)
 
 * [LeetCode : 617. Merge Two Binary Trees]({{site.url}}/LeetCode-Merge-Two-Binary-Trees)
+
+> 210913 ~ 210919
+
+* [LeetCode : 338. Counting Bits]({{site.url}}/LeetCode-Counting-Bits/#2-code-21-09-19)
+
+* [LeetCode : 104. Maximum Depth of Binary Tree]({{site.url}}/LeetCode-Maximum-Depth-of-Binary-Tree/#code-21-09-19)
+
+* [LeetCode : 169. Majority Element]({{site.url}}/LeetCode-Majority-Element/#2-code-21-09-19)
+
+* [LeetCode : 215. Kth Largest Element in an Array]({{site.url}}/LeetCode-Kth-Largest-Element-in-an-Array/)
