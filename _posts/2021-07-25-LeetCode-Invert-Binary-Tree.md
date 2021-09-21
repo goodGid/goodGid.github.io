@@ -117,7 +117,7 @@ public TreeNode invertTree(TreeNode root) {
 
   대신 아이디어만 다를 뿐 동작 원리는 같다.
 
-* 시간/공간 복잡도는 두 개다 : $O(N)$이다.
+* 시간/공간 복잡도는 두 개다 모두다 $O(N)$이다.
 
 ```
 Since each node in the tree is visited / added to the queue only once
@@ -134,6 +134,32 @@ the queue will contain all nodes in one level of the binary tree.
 
   아이디어가 떠오르지 않았다. ㅠㅠ
 
+---
+
+### [2] Code (21. 09. 21)
+
+``` java
+public TreeNode invertTree(TreeNode root) {
+    if (root == null) {
+        return root;
+    }
+    root.left = invertTree(root.left);
+    root.right = invertTree(root.right);
+    
+    TreeNode newNode = new TreeNode(root.val);
+    newNode.left = root.right;
+    newNode.right = root.left;
+    return newNode;
+}
+```
+
+> Review
+
+* 어렵지 않게 풀었다.
+
+  다만 Iterative 하게 푸는 아이디어는 떠올리지 못했다.
+
+  다음엔 Iterative 하게 푸는 아이디어가 떠오르길 !
 
 
 ---
