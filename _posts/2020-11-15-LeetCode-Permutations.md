@@ -85,9 +85,9 @@ if (list.size() == nums.length) {
 -> ans.add(new ArrayList<>(list));
 ```
 
-* 위와 같은 방법은 시간 복잡도가 O(n^n)이다.
+* 위와 같은 방법은 시간 복잡도가 $O(N^N)$이다.
 
-  = recursive()마다 n번씩 총 n번 만큼 재귀를 돈다.
+  = recursive( )마다 n번씩 총 n번 만큼 재귀를 돈다.
 
 ---
 
@@ -137,7 +137,7 @@ class Solution {
 
 * 시간 복잡도는 O(n!)이다.
 
-  = permutation()마다 n * n-1 * n-2 * .... * 1 이다.
+  = permutation( )마다 n * n-1 * n-2 * .... * 1 이다.
 
 ---
 
@@ -191,6 +191,50 @@ class Solution {
 * $O(N!)$ 에 푸는 아이디어가 있는데 구체적으로 생각나지 않았다.
 
   (다음엔 기억나길 ...)
+
+---
+
+## [3] Code (21. 09. 21)
+
+``` java
+class Solution {
+ 
+    int[] visit;
+    
+    public List<List<Integer>> permute(int[] nums) {
+        visit = new int[nums.length];
+        
+        List<List<Integer>> ans = new ArrayList<>();
+            
+        go(nums, new ArrayList<>(), ans);
+        return ans;
+    }
+    
+    // ac = Answer Candidate 
+    private void go(int[] nums, List<Integer> ac, List<List<Integer>> ans) {
+        if (ac.size() == nums.length) {
+            ans.add(new ArrayList(ac));            
+            return;
+        }
+        
+        for (int i=0; i<nums.length; i++) {
+            if (visit[i] == 1) {
+                continue;
+            }
+            
+            visit[i] = 1;
+            ac.add(nums[i]);
+            go(nums,ac,ans);
+            ac.remove(ac.size()-1);
+            visit[i] = 0;
+        }
+    }
+}
+```
+
+> Review
+
+* $O(N!)$ 아이어가 떠오르지 않았다. ㅠㅠ
 
 ---
 
