@@ -28,7 +28,7 @@ Output: [1,3,12,0,0]
 
 ---
 
-### Code (20. 11. 18)
+### [1] Code (20. 11. 18)
 
 ``` java
 public void moveZeroes(int[] nums) {
@@ -58,9 +58,9 @@ public void moveZeroes(int[] nums) {
 
 ---
 
-### Feed Back
+> FeedBack
 
-> Case 1
+**Case 1**
 
 ``` java
 public void moveZeroes(int[] nums) {
@@ -88,7 +88,7 @@ public void moveZeroes(int[] nums) {
 
 ---
 
-> Case 2
+**Case 2**
 
 ``` java
 public void moveZeroes(int[] nums) {
@@ -116,6 +116,36 @@ public void swap(int[] nums, int i, int j) {
 
   [1] 조건이 없으면 0으로 출력이 되므로 주의하자.
 
+---
+
+
+### [2] Code (21. 09. 25)
+
+*Need to Retry --> 아이디어 체크*
+
+``` java
+public void moveZeroes(int[] nums) {    
+    int willBeInsertIdx = 0;
+    int zeroCnt = 0;
+    int size = nums.length;
+    
+    for (int i=0; i<size; i++) {
+        if (nums[i] != 0) {
+            nums[willBeInsertIdx++] = nums[i];
+        } else {
+            zeroCnt++;
+        }
+    }
+    
+    for (int i=0; i<zeroCnt; i++) {
+        nums[size-1-i] = 0;
+    }
+}
+```
+
+> Review
+
+* 다시 풀 필요는 없으나 아이디어만 가져가자.
 
 ---
 
