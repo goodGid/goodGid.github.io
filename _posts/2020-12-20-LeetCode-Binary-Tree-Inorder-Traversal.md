@@ -129,6 +129,37 @@ class Solution {
 
   다음엔 이 아이디어가 먼저 떠오를 수 있길 !
 
+---
+
+### [4] Code (21. 10. 02)
+
+**Need to Retry --> 다시 풀 필요 X, [2] 코드 참고*
+
+``` java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();       
+        go(ans, root);
+        return ans;
+    }
+    
+    public List<Integer> go(List<Integer> ans, TreeNode node) {
+        if (node == null) {
+            return null;
+        }
+        
+        go(ans, node.left);
+        ans.add(node.val);
+        go(ans, node.right);
+        
+        return ans;
+    }
+}
+```
+
+* 재귀 방식으로는 안 풀어봐도 될 거 같다.
+
+  대신 [2]번 처럼 Iterative 한 풀이를 익혀두자.
 
 ---
 
