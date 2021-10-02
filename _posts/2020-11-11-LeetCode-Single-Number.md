@@ -7,7 +7,7 @@ author: goodGid
 * content
 {:toc}
 
-## [(Easy) Single Number](https://leetcode.com/problems/single-number/)
+## [Single Number](https://leetcode.com/problems/single-number/)
 
 ### Problem
 
@@ -27,7 +27,7 @@ Output: 1
 
 ---
 
-### Code (20. 11. 11)
+### [1] Code (20. 11. 11)
 
 ``` java
 public int singleNumber(int[] nums) {
@@ -57,9 +57,9 @@ public int singleNumber(int[] nums) {
 
 ---
 
-### Feed Back
+> Feed Back
 
-> Case 1
+**Case 1**
 
 ``` java
 public int singleNumber(int[] nums) {
@@ -74,6 +74,22 @@ public int singleNumber(int[] nums) {
 * XOR은 같으면 0 
 
   다르면 1이다.
+
+---
+
+### [2] Code (21. 10. 02)
+
+``` java
+public int singleNumber(int[] nums) {
+    int ans = 0;
+    for (int i = 0; i < nums.length; i++) {
+        ans ^= nums[i];
+    }
+    return ans;
+}
+```
+
+* XOR 풀이 방법
 
 ---
 
