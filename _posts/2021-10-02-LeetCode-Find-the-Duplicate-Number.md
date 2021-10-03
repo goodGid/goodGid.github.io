@@ -120,7 +120,7 @@ public int findDuplicate(int[] nums) {
     }
 ```
 
-* *You must solve the problem without modifying the array nums* 조건을 위반한 풀이
+* *uses only constant extra space* 조건을 위반한 풀이
 
 * Set을 사용한 풀이 방법
 
