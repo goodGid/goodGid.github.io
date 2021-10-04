@@ -129,15 +129,16 @@ class Solution {
         ans.add(nums[idx]);
         solve(nums, ans, idx + 1);
         ans.remove(ans.size() - 1);
-
         solve(nums, ans, idx + 1);
     }
 }
 ```
 
-* [1] : 다음과 같이 값을 넣어주는 실수를 했다.
+* [1] : answer에 넣어줄 때 실수를 하였다.
 
-  이렇게 되면 ans 값의 변화가 생기면 answer에 담긴 값도 변하게 된다.
+  아래 코드처럼 넣게 되면 
+  
+  ans 값의 변화가 생기면 answer에 담긴 값도 변하게 된다.
 
 * 반복해서 실수하는 부분이다. 
   
@@ -149,6 +150,43 @@ if (idx == nums.length) {
     return;
 }
 ```
+
+---
+
+### [4] Code (21. 10. 04)
+
+``` java
+class Solution {
+    List<List<Integer>> answer = new ArrayList<>();
+    int size;
+
+    public List<List<Integer>> subsets(int[] nums) {
+        size = nums.length;
+        go(nums, new ArrayList<>(), 0);
+        return answer;
+    }
+
+    private void go(int[] nums, List<Integer> ans, int stIdx) {
+        if (stIdx == size) {
+            answer.add(new ArrayList(ans));
+            return;
+        }
+        ans.add(nums[stIdx]);
+        go(nums, ans, stIdx + 1);
+        ans.remove(ans.size() - 1);
+        go(nums, ans, stIdx + 1);
+    }
+}
+```
+
+> FeedBack
+
+* 18분 소요
+
+* [3]번째 풀이랑 같다.
+
+  하지만 비트마스킹을 생각하지 못했다. (아쉽다)
+
 ---
 
 ## Reference
