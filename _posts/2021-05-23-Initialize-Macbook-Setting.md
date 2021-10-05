@@ -266,9 +266,12 @@ brew install tree
 ![](/assets/img/posts/Initialize-Macbook-Setting-iShot_1.png)
 
 
-## QuickShade
+### QuickShade
 
 * [QuickShade](https://apps.apple.com/kr/app/quickshade/id931571202?mt=12) : 외장 모터 밝기 조절 가능
+
+![](/assets/img/posts/Initialize-Macbook-Setting-QuickShade_1.png)
+
 
 
 ### BetterTouchTool
