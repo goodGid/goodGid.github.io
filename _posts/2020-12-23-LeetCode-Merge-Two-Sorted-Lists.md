@@ -64,6 +64,54 @@ class Solution {
 
 ---
 
+### [2] Code (21. 10. 09)
+
+``` java
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    ListNode ans = new ListNode();
+    ListNode root = ans;
+
+    while (l1 != null && l2 != null) {
+        if (l1.val == l2.val) {
+            ans.next = new ListNode(l1.val);
+            ans = ans.next;
+            ans.next = new ListNode(l2.val);
+            ans = ans.next;
+            l1 = l1.next;
+            l2 = l2.next;
+        } else if (l1.val > l2.val) {
+            ans.next = new ListNode(l2.val);
+            ans = ans.next;
+            l2 = l2.next;
+        } else {
+            ans.next = new ListNode(l1.val);
+            ans = ans.next;
+            l1 = l1.next;
+        }
+    }
+
+    if (l1 == null) {
+        ans.next = l2;
+    }
+
+    if (l2 == null) {
+        ans.next = l1;
+    }
+
+    return root.next;
+}
+```
+
+> FeedBack
+
+* 생각의 흐름대로 풀었다.
+
+  알고리즘을 푸는 관점에서는 별로 좋지 않은 코드라고 생각이 든다.
+
+* 다음에 다시 풀 땐 [1] 풀이처럼 깔끔하게 풀어보도록 하자.
+
+---
+
 ## Reference
 
 * [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
