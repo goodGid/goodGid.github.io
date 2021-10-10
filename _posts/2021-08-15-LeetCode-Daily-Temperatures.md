@@ -82,6 +82,64 @@ i-1 / i-2 / i-3 등등 앞에 있는 값들과의 비교를 일괄적으로 해�
 
 ---
 
+### [2] Code (21. 10. 10)
+
+``` java
+class Solution {
+    public int[] dailyTemperatures(int[] t) {
+        int[] ans = new int[t.length];
+        Stack<Pair> s = new Stack<>();
+        
+        for (int i=0; i<t.length; i++) {
+            
+            while (!s.empty()) {
+                Pair topNode = s.peek();
+                
+                if (t[i] <= topNode.val) {
+                    break;
+                }
+                
+                if (t[i] > topNode.val) {
+                    s.pop();
+                    ans[topNode.idx] = i - topNode.idx;
+                }
+            }
+            s.push(new Pair(i, t[i]));
+        }
+        return ans;
+    }
+    
+    public class Pair {
+        int idx;
+        int val;
+        
+        public Pair(int idx, int val) {
+            this.idx = idx;
+            this.val = val;
+        }
+    }
+}
+```
+
+> Concern Point
+
+* Stack에서 Top에 있는 값 참조
+
+```
+stack.peek();
+```
+
+---
+
+> FeedBack
+
+* 이전에 풀었던 아이디어가 문제를 보자마자 떠올라서 쉽게 풀었다.
+
+  아무래도 처음에 아이디어를 접했을 때 너무 인상 깊어서 각인된 듯싶다.
+
+
+---
+
 ## Reference
 
 * [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
