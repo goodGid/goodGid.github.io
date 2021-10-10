@@ -49,17 +49,17 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("## Static 변수 접근 시 Static Initializer Block이 호출된다.");
         SubClass.b = "Class Value"; // static initializer block 호출
-        System.out.println("MyInitBlock.b를 'Class Value'로 변경 후 값 : " + SubClass.b);
+        System.out.println("SubClass.b를 'Class Value'로 변경 후 값 : " + SubClass.b);
         System.out.println();
 
         System.out.println("----- [Start] 1st Instance 생성 ----- ==> 호출 순서 :: Super -> Instance -> Sub");
         new SubClass();
-        System.out.println("----- [ End ] 1st Instance 생성 -----");
+        System.out.println("----- [End] 1st Instance 생성 -----");
         System.out.println();
 
         System.out.println("----- [Start] 2nd Instance 생성 ----- ==> 호출 순서 :: Super -> Instance -> Sub");
         new SubClass();
-        System.out.println("----- [ End ] 2nd Instance 생성 -----");
+        System.out.println("----- [End] 2nd Instance 생성 -----");
     }
 }
 
@@ -73,7 +73,7 @@ class SubClass extends SuperClass {
         a = "Instance Value";
         System.out.println("[Instance Field] a = " + a);
         System.out.println("[Class Field] b = " + b);
-        System.out.println("----- [ End ] Instance Initializer Block -----");
+        System.out.println("----- [End] Instance Initializer Block -----");
     }
 
     static {
@@ -99,25 +99,25 @@ class SuperClass {
 ``` java
 ## Static 변수 접근 시 Static Initializer Block이 호출된다.
 ----- [Call] Class Initialization Block -----
-MyInitBlock.b를 'Class Value'로 변경 후 값 : Class Value
+SubClass.b를 'Class Value'로 변경 후 값 : Class Value
 
 ----- [Start] 1st Instance 생성 ----- ==> 호출 순서 :: Super -> Instance -> Sub
 ----- [Call] Super Constructor -----
 ----- [Start] Instance Initializer Block -----
 [Instance Field] a = Instance Value
 [Class Field] b = Class Value
------ [ End ] Instance Initializer Block -----
+----- [End] Instance Initializer Block -----
 ----- [Call] Sub Constructor -----
------ [ End ] 1st Instance 생성 -----
+----- [End] 1st Instance 생성 -----
 
 ----- [Start] 2nd Instance 생성 ----- ==> 호출 순서 :: Super -> Instance -> Sub
 ----- [Call] Super Constructor -----
 ----- [Start] Instance Initializer Block -----
 [Instance Field] a = Instance Value
 [Class Field] b = Class Value
------ [ End ] Instance Initializer Block -----
+----- [End] Instance Initializer Block -----
 ----- [Call] Sub Constructor -----
------ [ End ] 2nd Instance 생성 -----
+----- [End] 2nd Instance 생성 -----
 ```
 
 * Static은 클래스 로딩 시 **1번만** 호출되는 것을 확인할 수 있다.
