@@ -106,6 +106,63 @@ public int kthSmallest(TreeNode root, int k) {
 
   다음에 풀 땐 iterative 하게 풀어보자.
 
+---
+
+### [2] Code (21. 10. 16)
+
+*Need to Retry -> 재귀말고 iterative하게 풀어보기*
+
+``` java
+public int kthSmallest(TreeNode root, int k) {
+    List<TreeNode> list = new ArrayList<>();
+    go(root, k, list);
+    return list.get(k-1).val;
+}
+
+private void go(TreeNode node, int k, List<TreeNode> list) {
+    if (node == null) {
+        return ;
+    }
+    go(node.left, k, list);
+    list.add(node);
+    go(node.right, k, list);
+}
+```
+
+---
+
+> Reference Code
+
+``` java
+public int kthSmallest(TreeNode root, int k) {
+    int count = 0;
+    Stack<TreeNode> s = new Stack();
+    while (!s.isEmpty() || root != null) {
+        if (root != null) {
+            s.push(root);
+            root = root.left;
+        } else {
+            TreeNode t = s.pop();
+            count++;
+            if (count == k) {return t.val;}
+            root = t.right;
+        }
+    }
+    return 0;
+}
+```
+
+---
+
+> Review
+
+* iterative 하게 풀어보려 했는데 풀지 못했다.
+
+  자료구조로 Stack까지는 생각했는데 그다음 로직에서 막혔다.
+
+  다음에 iterative 하게 풀어보자.
+
+* 그리고 [1]의 Reference Code랑 [2]의 Reference Code를 다시 보자.
 
 ---
 
