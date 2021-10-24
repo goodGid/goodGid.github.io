@@ -166,6 +166,55 @@ public int kthSmallest(TreeNode root, int k) {
 
 ---
 
+
+### [3] Code (21. 10. 24)
+
+*Need to Retry -> iterative하게 풀어보자.*
+
+``` java
+class Solution {
+    public int kthSmallest(TreeNode root, int k) {
+        int cnt = 0;
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode cur = root;
+        st.add(root);
+
+        while (true) {
+            while (cur.left != null) {
+                st.add(cur.left);
+                cur = cur.left;
+            }
+
+            while (!st.isEmpty()) {
+                cur = st.pop();
+
+                if (cnt + 1 == k) {
+                    return cur.val;
+                }
+                cnt++;
+
+                if (cur.right != null) {
+                    st.add(cur.right);
+                    cur = cur.right;
+                    break;
+                }
+            }
+        }
+    }
+}
+```
+
+> Review
+
+* 23분 소요 
+
+* [1]의 Reference Code랑 [2]의 Reference Code와는 비슷한 듯 살짝 다르다.
+
+  iterative하게 풀어서 맞았지만 다시 한 번 풀어도 좋은 문제라고 생각이 든다.
+
+
+---
+
 ## Reference
 
 * [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
