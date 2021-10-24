@@ -42,6 +42,8 @@ inorder = [9,3,15,20,7]
 
 ### [1] Code (21. 01. 15)
 
+*Need to Retry*
+
 ``` java
 class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
