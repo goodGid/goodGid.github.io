@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리(Master Theorem) "
+title:  " 알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리 (Master Theorem) "
 categories: Algorithm
 author: goodGid
 use_math: true

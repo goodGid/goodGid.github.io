@@ -210,7 +210,6 @@ class Solution {
             rval[i] = iterator.next().getKey();
         }
         return rval;
-
     }
 }
 ```
@@ -228,6 +227,86 @@ class Solution {
 * [[1] Code (21. 02. 12) 풀이]({{site.url}}/LeetCode-Top-K-Frequent-Elements/#1-code-21-02-12)와는 정말 다른 방향으로 풀었다.
 
 * 그리고 코딩하면서 문법 사용이 익숙지 않은 것들에 대해선 FeedBack에 정리를 놓았으니 다음에 참고하자.
+
+---
+
+### [3] Code (21. 10. 31)
+
+*Need to Retry -> 다양한 정답 코드아이디어와 Stream 문법들을 보면서 다시 풀어보자.*
+
+``` java
+n/a
+```
+
+> Reference Code
+
+``` java
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+
+        Map<Integer, Integer> freqMap = new HashMap<>();
+        for (int n : nums) {
+            freqMap.compute(n, (key, v) -> v == null ? 1 : v + 1);
+        }
+
+        List<List<Integer>> freqMapReverse = new ArrayList<>();
+        for (int i = 0; i <= nums.length; i++) {
+            freqMapReverse.add(new ArrayList<>()); // [1]
+        }
+
+        for (int n : freqMap.keySet()) { // [2]
+            int freq = freqMap.get(n);
+            freqMapReverse.get(freq).add(n);
+        }
+
+        int[] res = new int[k];
+        int j = 0;
+        for (int i = freqMapReverse.size() - 1; i >= 0; i--) { // [3]
+            List<Integer> elements = freqMapReverse.get(i);
+            if (elements.size() != 0) {
+                for (int e : elements) {
+                    res[j++] = e; // [4]
+                    if (j == k) {
+                        return res;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+}
+```
+
+* [1] : nums.length만큼 우선 List를 생성해둔다.
+
+* [2] : freqMapReverse에 값을 담는다.
+
+  만약 [1,1,1,2,2,2,3] 과 같이 동일한 수가 나오면
+
+  freqMapReverse[3]에 [1,2]가 저장되게 된다.
+
+* [3] : nums.length ~ 0 순서로 순회를 돈다.
+
+  nums.length부터 도는 이유는
+
+  nums에 중복된 값이 많을수록
+
+  freqMapReverse의 높은 Index에 존재하기 때문이다.
+
+* [4] : *You may return the answer in any order* 이므로
+
+  중복된 값이 같을 땐 순서 상관없이 처리해도 된다.
+
+---
+
+> FeedBack
+
+* 아이디어는 쉽게 떠올리나 구현하는 데 있어 어려움이 있었다.
+
+  특히 적절한 문법을 사용하는데 너무 어려웠고
+
+  이전에 문제 풀었을 때와 마찬가지로 비슷한 문법 사용법에 대해 아직 미숙함을 느낀다.
+
 
 ---
 
