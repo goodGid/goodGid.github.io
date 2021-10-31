@@ -97,6 +97,36 @@ class Solution {
 
 ---
 
+### [3] Code (21. 10. 31)
+
+``` java
+class Solution {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return go(nums,0,nums.length-1);
+    }
+    
+    private TreeNode go(int[] nums, int left, int right) {
+        int mid = (left+right) / 2;
+        
+        TreeNode node = new TreeNode(nums[mid]);
+        
+        if (left <= mid-1) {
+            node.left = go(nums, left, mid-1);
+        }
+        if (mid+1 <= right) {
+            node.right = go(nums, mid+1, right);
+        }
+        return node;
+    }
+}
+```
+
+> Review
+
+* 다시 풀 필요는 없어 보인다.
+
+---
+
 ## Reference
 
 * [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
