@@ -200,7 +200,7 @@ author: goodGid
 
 * [Let's write a scenario test using the Karate Framework !]({{site.url}}/EN-Karate-Scenario-Test-Automation-Framework/)
 
-* [알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리(Master Theorem)]({{site.url}}/Algorithm-Time-Complexity-Analysis/)
+* [알고리즘 시간 복잡도 마스터하기 feat. 마스터 정리 (Master Theorem)]({{site.url}}/Algorithm-Time-Complexity-Analysis/)
 
 > 210517 ~ 210523
 
@@ -351,3 +351,13 @@ author: goodGid
 * [LeetCode : 230. Kth Smallest Element in a BST]({{site.url}}/LeetCode-Kth-Smallest-Element-in-a-BST/#2-code-21-10-24)
 
 * [LeetCode : 647. Palindromic Substrings]({{site.url}}/LeetCode-Palindromic-Substrings/#2-code-21-10-24)
+
+> 211025 ~ 211031
+
+* [LeetCode : 347. Top K Frequent Elements]({{site.url}}/LeetCode-Top-K-Frequent-Elements/#3-code-21-10-31)
+
+* [LeetCode : 108. Convert Sorted Array to Binary Search Tree]({{site.url}}/LeetCode-Convert-Sorted-Array-to-Binary-Search-Tree/#3-code-21-10-31)
+
+* [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String/)
+
+* [LeetCode : 208. Implement Trie (Prefix Tree)]({{site.url}}/LeetCode-Implement-Trie-Prefix-Tree/)
