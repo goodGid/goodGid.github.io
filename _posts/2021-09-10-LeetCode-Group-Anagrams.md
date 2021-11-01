@@ -126,6 +126,140 @@ map.get(key).add(value);
 
 ---
 
+
+### [2] Code (21. 11. 01)
+
+*Need to Retry -> Java 기초 문법이 너무 부족하다.*
+
+``` java
+solution.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"})); // [1]
+
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> ans = new ArrayList<>();
+        HashMap<String, List<String>> map = new HashMap<>(); // [2]
+
+        for (String s : strs) {
+            char[] tempArray = s.toCharArray();
+            Arrays.sort(tempArray); // [3]
+            String key = String.valueOf(tempArray); // [4]
+            if (map.containsKey(key)) {
+                map.get(key).add(s);
+            } else {
+                map.put(key, new ArrayList<String>() { // [5]
+                    {
+                        add(s);
+                    }
+                });
+            }
+        }
+
+        for (Map.Entry<String, ArrayList<String>> item : map.entrySet()) { // [6]
+            ans.add(item.getValue());
+        }
+        return ans;
+    }
+}
+```
+
+> Concern Point
+
+**[1] : String[ ]을 초기화하면서 값 넣어주기**
+
+``` java
+new String[] {"eat","tea","tan","ate","nat","bat"}
+```
+
+* { } 안에 값을 넣어주면 된다.
+
+---
+
+**[2] : Map에서 Value에 List로 선언 시 주의할 점**
+
+``` java
+map.put(key, Arrays.asList());
+map.get(key).add("goodGid");
+// .add( )하는 시점에 Exception이 발생한다.
+// Exception in thread "main" java.lang.UnsupportedOperationException
+```
+
+* List에 add를 하려고 하면 UnsupportedOperationException이 발생한다.
+
+  그래서 위에서 원하는 로직을 실행시키려면 다음과 같이 수정해야 한다.
+
+``` java
+map.put(key, new ArrayList<>());
+map.get(key).add("goodGid");
+```
+
+* 즉 map의 value로 interface가 아닌 class 자료형을 사용해야 한다.
+
+---
+
+**[3] : 알파벳 순서로 정렬하기**
+
+```
+Arrays.sort(tempArray);
+```
+
+---
+
+**[4] : char[ ]을 String으로 변환하기**
+
+``` java
+char[] tempArray = s.toCharArray();
+1) String key = String.valueOf(tempArray);
+2) String key = new String(tempArray);
+```
+
+* 2가지 방법으로 char[ ]을 String 값으로 변환할 수 있다.
+
+*String 생성자 이용*
+
+``` java
+public String(char value[]) {
+    this.value = Arrays.copyOf(value, value.length);
+}
+```
+
+*String 메소드 이용*
+
+``` java
+public static String valueOf(char data[]) {
+    return new String(data);
+}
+```
+
+---
+
+**[5] : ArrayList를 선언과 동시에 값 할당하는 방법**
+
+``` java
+new ArrayList<String>() {
+    {
+        add(s);
+    }
+}
+```
+
+---
+
+**[6] : List의 addAll( ) 사용하기**
+
+``` java
+ans.addAll(map.values());
+```
+
+---
+
+> Review
+
+* Java 문법이 너무 약함을 많이 느꼈다.
+
+  머리로 떠오르는 아이디어를 직접 구현하려니 막히는 부분이 너무 많았다.
+
+---
+
 ## Reference
 
 * [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
