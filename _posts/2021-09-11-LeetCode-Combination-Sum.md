@@ -65,6 +65,50 @@ class Solution {
 
 * 평이한 재귀함수 문제
 
+---
+
+### [2] Code (21. 11. 02)
+
+``` java
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        List<List<Integer>> ans = new ArrayList<>();
+        go(candidates, target, ans, new ArrayList<>(), 0);
+        return ans;
+    }
+
+    private void go(int[] arr, int target, List<List<Integer>> ans, List<Integer> tempAns, int idx) {
+
+        // case 1
+        int sum = tempAns.stream().mapToInt(i -> i).sum();
+        
+        // case 2
+        int sum = 0;
+        for (int i : tempAns) {
+            sum += i;
+        }
+
+        if (sum == target) {
+            ans.add(new ArrayList<>(tempAns));
+        } else if (sum > target) {
+            return;
+        }
+
+        for (int i = idx; i < arr.length; i++) {
+            tempAns.add(arr[i]);
+            go(arr, target, ans, tempAns, i);
+            tempAns.remove(tempAns.size() - 1);
+        }
+    }
+}
+```
+
+> Review
+
+* 다시 풀 필요는 없어 보인다.
+
+
 
 ---
 
