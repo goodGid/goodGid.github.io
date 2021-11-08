@@ -100,6 +100,8 @@ type: page
 
 ### 2021
 
+* 　10. 29 [2021 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
+
 * 　06. 26 [2021 카카오뱅크 경력 공채 : 백엔드(Backend) 개발자 이직 후기]({{site.url}}/Reviews-of-moving-the-company-to-Kakao-Bank/)
 
 * 　06. 14 [잇다(itdaa) 멘토링(Mentoring) 클래스를 개설하다.]({{site.url}}/ITDAA-Mentoring/)
