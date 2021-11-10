@@ -113,6 +113,24 @@ class Solution {
 
   너무 오랜 시간을 사용했어서 일단은 기록해두고 다음에 다시 이해해보자.
 
+---
+
+### [2] Code (21. 11. 10) (x)
+
+``` java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[nums.length-k];
+    }
+}
+```
+
+> Review
+
+* 단순하게 정렬 후 index에 접근하여 값을 출력한다.
+
+
 
 ---
 
