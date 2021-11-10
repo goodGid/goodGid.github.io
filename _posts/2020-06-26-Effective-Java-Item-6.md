@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " [Effective Java] 6. 불필요한 객체 생성을 피하라 "
-categories: Effective Java
+categories: EffectiveJava
 author: goodGid
 ---
 * content
