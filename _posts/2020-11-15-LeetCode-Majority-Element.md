@@ -195,9 +195,23 @@ public int majorityElement(int[] nums) {
 
 ---
 
-## Summary
+### [3] Code (21. 11. 10) (x)
 
-* 다양한 풀이를 참고하였고 만족스러운 문제였다.
+
+``` java
+class Solution {
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        int mid = nums.length / 2;
+        return nums[mid];
+    }
+}
+```
+
+> Review
+
+* [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) 풀이로 풀었다.
+
 
 ---
 
