@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [Java] Algorithm 코드 모음집 "
+title:  " [Java] Algorithm Skill 정리하기 "
 categories: AlgorithmSkill
 author: goodGid
 ---
