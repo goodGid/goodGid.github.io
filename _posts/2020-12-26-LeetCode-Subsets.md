@@ -153,7 +153,7 @@ if (idx == nums.length) {
 
 ---
 
-### [4] Code (21. 10. 04)
+### [4] Code (21. 10. 04) (x)
 
 ``` java
 class Solution {

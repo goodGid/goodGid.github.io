@@ -30,7 +30,7 @@ Output: 28
 
 ---
 
-### [1] Code (21. 10. 10)
+### [1] Code (21. 10. 10) (x)
 
 ``` java
 public int uniquePaths(int m, int n) {

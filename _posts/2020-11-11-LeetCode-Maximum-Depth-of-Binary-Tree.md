@@ -97,7 +97,7 @@ class Solution {
 
 ---
 
-### Code (21. 09. 19)
+### Code (21. 09. 19) (x)
 
 ``` java
 class Solution {

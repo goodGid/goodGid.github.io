@@ -239,7 +239,7 @@ class Solution {
 
 ---
 
-### [4] Code (21. 10. 04)
+### [4] Code (21. 10. 04) (x)
 
 *Need to Retry --> 다시 풀 필요는 없고 StringBuilder에 deleteCharAt( ) 메소드만 참고하자.*
 

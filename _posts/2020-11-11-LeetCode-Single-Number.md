@@ -77,7 +77,7 @@ public int singleNumber(int[] nums) {
 
 ---
 
-### [2] Code (21. 10. 02)
+### [2] Code (21. 10. 02) (x)
 
 ``` java
 public int singleNumber(int[] nums) {

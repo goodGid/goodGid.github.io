@@ -67,7 +67,7 @@ class Solution {
 
 ---
 
-### [2] Code (21. 11. 02)
+### [2] Code (21. 11. 02) (x)
 
 ``` java
 class Solution {

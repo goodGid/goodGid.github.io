@@ -30,7 +30,7 @@ Explanation: Because the path 1 → 3 → 1 → 1 → 1 minimizes the sum.
 
 ---
 
-### [1] Code (21. 10. 09)
+### [1] Code (21. 10. 09) (x)
 
 ``` java
 class Solution {

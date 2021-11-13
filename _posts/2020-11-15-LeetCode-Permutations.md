@@ -194,7 +194,7 @@ class Solution {
 
 ---
 
-## [3] Code (21. 09. 21)
+## [3] Code (21. 09. 21) (x)
 
 ``` java
 class Solution {

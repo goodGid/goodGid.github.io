@@ -131,7 +131,7 @@ class Solution {
 
 ---
 
-### [4] Code (21. 10. 02)
+### [4] Code (21. 10. 02) (x)
 
 **Need to Retry --> 다시 풀 필요 X, [2] 코드 참고*
 

@@ -30,7 +30,7 @@ Output: [3,4,5,5,4,null,7]
 
 ---
 
-### [1] Code (21. 09. 12)
+### [1] Code (21. 09. 12) (x)
 
 ``` java
 class Solution {

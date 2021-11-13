@@ -270,7 +270,7 @@ author: goodGid
 
 * [LeetCode : 347. Top K Frequent Elements]({{site.url}}/LeetCode-Top-K-Frequent-Elements/#2-code-21-08-29)
 
-* [LeetCode : 108. Convert Sorted Array to Binary Search Tree]({{site.url}}/LeetCode-Convert-Sorted-Array-to-Binary-Search-Tree/#2-code-21-08-29)
+* [LeetCode : 108. Convert Sorted Array to Binary Search Tree]({{site.url}}/LeetCode-Convert-Sorted-Array-to-Binary-Search-Tree/#2-code-21-08-29-x)
 
 > 210830 ~ 210905
 
@@ -294,7 +294,7 @@ author: goodGid
 
 * [LeetCode : 338. Counting Bits]({{site.url}}/LeetCode-Counting-Bits/#2-code-21-09-19)
 
-* [LeetCode : 104. Maximum Depth of Binary Tree]({{site.url}}/LeetCode-Maximum-Depth-of-Binary-Tree/#code-21-09-19)
+* [LeetCode : 104. Maximum Depth of Binary Tree]({{site.url}}/LeetCode-Maximum-Depth-of-Binary-Tree/#code-21-09-19-x)
 
 * [LeetCode : 169. Majority Element]({{site.url}}/LeetCode-Majority-Element/#2-code-21-09-19)
 
@@ -302,9 +302,9 @@ author: goodGid
 
 > 210920 ~ 210926
 
-* [LeetCode : 46. Permutations]({{site.url}}/LeetCode-Permutations/#3-code-21-09-21)
+* [LeetCode : 46. Permutations]({{site.url}}/LeetCode-Permutations/#3-code-21-09-21-x)
 
-* [LeetCode : 226. Invert Binary Tree]({{site.url}}/LeetCode-Invert-Binary-Tree/#2-code-21-09-21)
+* [LeetCode : 226. Invert Binary Tree]({{site.url}}/LeetCode-Invert-Binary-Tree/#2-code-21-09-21-x)
 
 * [LeetCode : 283. Move Zeroes]({{site.url}}/LeetCode-Move-Zeroes/#2-code-21-09-25)
 
@@ -312,9 +312,9 @@ author: goodGid
 
 > 210927 ~ 211003
 
-* [LeetCode : 94. Binary Tree Inorder Traversal]({{site.url}}/LeetCode-Binary-Tree-Inorder-Traversal/#4-code-21-10-02)
+* [LeetCode : 94. Binary Tree Inorder Traversal]({{site.url}}/LeetCode-Binary-Tree-Inorder-Traversal/#4-code-21-10-02-x)
 
-* [LeetCode : 136. Single Number]({{site.url}}/LeetCode-Single-Number/#2-code-21-10-02)
+* [LeetCode : 136. Single Number]({{site.url}}/LeetCode-Single-Number/#2-code-21-10-02-x)
 
 * [LeetCode : 287. Find the Duplicate Number]({{site.url}}/LeetCode-Find-the-Duplicate-Number/)
 
@@ -322,19 +322,19 @@ author: goodGid
 
 > 211004 ~ 211010
 
-* [LeetCode : 22. Generate Parentheses]({{site.url}}/LeetCode-Generate-Parentheses/#4-code-21-10-04)
+* [LeetCode : 22. Generate Parentheses]({{site.url}}/LeetCode-Generate-Parentheses/#4-code-21-10-04-x)
 
-* [LeetCode : 78. Subsets]({{site.url}}/LeetCode-Subsets/#4-code-21-10-04)
+* [LeetCode : 78. Subsets]({{site.url}}/LeetCode-Subsets/#4-code-21-10-04-x)
 
 * [LeetCode : 21. Merge Two Sorted Lists]({{site.url}}/LeetCode-Merge-Two-Sorted-Lists/#2-code-21-10-09)
 
-* [LeetCode : 64. Minimum Path Sum]({{site.url}}/LeetCode-Minimum-Path-Sum)
+* [LeetCode : 64. Minimum Path Sum]({{site.url}}/LeetCode-Minimum-Path-Sum/#1-code-21-10-09-x)
 
 * [LeetCode : 206. Reverse Linked List]({{site.url}}/LeetCode-Reverse-Linked-List/#3-code-21-10-10)
 
-* [LeetCode : 739. Daily Temperatures]({{site.url}}/LeetCode-Daily-Temperatures/#2-code-21-10-10)
+* [LeetCode : 739. Daily Temperatures]({{site.url}}/LeetCode-Daily-Temperatures/#2-code-21-10-10-x)
 
-* [LeetCode : 62. Unique Paths]({{site.url}}/LeetCode-Unique-Paths/)
+* [LeetCode : 62. Unique Paths]({{site.url}}/LeetCode-Unique-Paths/#1-code-21-10-10-x)
 
 * [LeetCode : 96. Unique Binary Search Trees]({{site.url}}/LeetCode-Unique-Binary-Search-Trees)
 
@@ -366,8 +366,16 @@ author: goodGid
 
 * [LeetCode : 49. Group Anagrams]({{site.url}}/LeetCode-Group-Anagrams/#2-code-21-11-01v)
 
-* [LeetCode : 39. Combination Sum]({{site.url}}/LeetCode-Combination-Sum/#2-code-21-11-02)
+* [LeetCode : 39. Combination Sum]({{site.url}}/LeetCode-Combination-Sum/#2-code-21-11-02-x)
 
 * [LeetCode : 621. Task Scheduler]({{site.url}}/LeetCode-Task-Scheduler/)
 
 * [LeetCode : 42. Trapping Rain Water]({{site.url}}/LeetCode-Trapping-Rain-Water/)
+
+> 211108 ~ 211114
+
+* [2021 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
+
+* [LeetCode : 169. Majority Element]({{site.url}}/LeetCode-Majority-Element/#3-code-21-11-10-x)
+
+* [LeetCode : 215. Kth Largest Element in an Array]({{site.url}}/LeetCode-Kth-Largest-Element-in-an-Array/#2-code-21-11-10-x)
