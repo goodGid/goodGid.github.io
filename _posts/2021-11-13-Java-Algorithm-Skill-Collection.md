@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [Java] 알고리즘(Algorithm) 코드 정리해두기 "
+title:  " [Java] 알고리즘(Algorithm)을 위한 코드 정리해두기 "
 categories: AlgorithmSkill
 author: goodGid
 ---
@@ -14,10 +14,23 @@ author: goodGid
   이런 부분들을 정리해놓기 위한 포스팅이다.
 
 
+---
+
+## Idea
+
+### Sliding Window
+
+* [LeetCode : 121. Best Time to Buy and Sell Stock]({{site.url}}/LeetCode-Best-Time-to-Buy-and-Sell-Stock)
+
+
+
+---
+
+## Algorithm
 
 ### PriorityQueue
 
-* PriorityQueue 사용 방법
+* 내림차순 + PriorityQueue 사용 방법
 
 ``` java
 PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
