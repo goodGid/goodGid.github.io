@@ -24,7 +24,7 @@ author: goodGid
 ![](/assets/img/junit/Junit5-Intro-Structure_1.png)
 
 
-### JUnit Flatform
+### JUnit Platform
 
 * JUnit으로 만든 Test Code를 실행시키는 Launcher를 의미한다.
 
