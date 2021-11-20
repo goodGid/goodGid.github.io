@@ -149,6 +149,41 @@ public void moveZeroes(int[] nums) {
 
 ---
 
+### [3] Code (21. 11. 20) (x)
+
+``` java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        if (nums.length == 1) {
+            return;
+        }
+
+        int toBeInsertIdx = 0;
+        for (int i = 0; i < nums.length; i++) {
+            toBeInsertIdx = i;
+            if (nums[i] == 0) {
+                break;
+            }
+        }
+
+        for (int i = toBeInsertIdx + 1; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                continue;
+            }
+            nums[toBeInsertIdx++] = nums[i];
+            nums[i] = 0;
+        }
+    }
+}
+```
+
+> Review
+
+* 자잘한 실수들이 많았으나 아이디어만 보자.
+
+
+---
+
 ## Reference
 
 * [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
