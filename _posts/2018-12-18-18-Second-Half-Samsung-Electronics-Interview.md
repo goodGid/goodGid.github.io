@@ -152,6 +152,11 @@ author: goodGid
 
 ![](/assets/img/posts/18_Second_Half_Samsung_Electronics_Interview_1.png)
 
+* 참고 : 사진에 있는 이메일은 더는 사용하지 않습니다.
+
+  gy8971@gmail.com -> hello.goodgid@gmail.com 
+
+
 <br>
 
 > 신체검사 합격
