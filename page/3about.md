@@ -21,9 +21,9 @@ type: page
 
 * <i class="fa fa-edit"></i>: 기록하는 걸 좋아합니다.
 
-* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실형 개발자입니다.
+* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실한 개발자입니다.
 
-* <i class="fa fa-desktop"></i>: Blog에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
+* <i class="fa fa-desktop"></i>: 블로그에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
 
 
 
