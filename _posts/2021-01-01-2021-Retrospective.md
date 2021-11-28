@@ -397,3 +397,15 @@ author: goodGid
 * [LeetCode : 337. House Robber III]({{site.url}}/LeetCode-House-Robber-III/#1-code-21-11-21)
 
 * [LeetCode : 236. Lowest Common Ancestor of a Binary Tree]({{site.url}}/LeetCode-Lowest-Common-Ancestor-of-a-Binary-Tree/#1-code-21-11-21)
+
+> 211122 ~ 211128
+
+* [LeetCode : 287. Find the Duplicate Number]({{site.url}}/LeetCode-Find-the-Duplicate-Number/#2-code-21-11-26)
+
+* [LeetCode : 199. Binary Tree Right Side View]({{site.url}}/LeetCode-Binary-Tree-Right-Side-View/#2-code-21-11-28-x)
+
+* [LeetCode : 543. Diameter of Binary Tree]({{site.url}}/LeetCode-Diameter-of-Binary-Tree/#1-code-21-11-28)
+
+* [LeetCode : 75. Sort Colors]({{site.url}}/LeetCode-Sort-Colors/#1-code-21-11-28-x)
+
+* [LeetCode : 297. Serialize and Deserialize Binary Tree]({{site.url}}/LeetCode-Serialize-and-Deserialize-Binary-Tree/#1-code-21-11-28)
