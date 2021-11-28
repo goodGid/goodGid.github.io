@@ -43,6 +43,8 @@ n/a
 
 > Reference Code
 
+**Case 1**
+
 ``` java
 // Time : 6 ms 
 // Space : 43.2 MB
@@ -98,52 +100,32 @@ class Solution {
 
 ---
 
+**Case 2**
+
 ``` java
-// Time : 4 ms	
-// Space : 41.3 MB
+// Time : 5 ms
+// Space : 40.8 MB
 class Solution {
-
-    private TreeNode ans;
-
-    public Solution() {
-        // Variable to store LCA node.
-        this.ans = null;
-    }
-
-    private boolean recurseTree(TreeNode currentNode, TreeNode p, TreeNode q) {
-
-        // If reached the end of a branch, return false.
-        if (currentNode == null) {
-            return false;
-        }
-
-        // Left Recursion. If left recursion returns true, set left = 1 else 0
-        int left = this.recurseTree(currentNode.left, p, q) ? 1 : 0;
-
-        // Right Recursion
-        int right = this.recurseTree(currentNode.right, p, q) ? 1 : 0;
-
-        // If the current node is one of p or q
-        int mid = (currentNode == p || currentNode == q) ? 1 : 0;
-
-        // If any two of the flags left, right or mid become True
-        if (mid + left + right >= 2) {
-            this.ans = currentNode;
-        }
-
-        // Return true if any one of the three bool values is True.
-        return (mid + left + right > 0);
-    }
-
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        // Traverse the tree
-        this.recurseTree(root, p, q);
-        return this.ans;
+        if (root == null) {return null;}
+
+        if (root.equals(p) || root.equals(q)) {return root;}
+
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if (left != null && right != null) {return root;}
+
+        return (left != null) ? left : right;
     }
 }
 ```
 
-* LeetCode [Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/)에 있는 코드이다.
+* [Lowest Common Ancestor of a Binary Tree](https://www.youtube.com/watch?v=WRAJ8Q9bICM)
+
+  Youtube에 있는 해설 영상인데
+
+  설명이 매우 잘 되어있어서 보기만 해도 이해가 된다.
 
 ---
 
