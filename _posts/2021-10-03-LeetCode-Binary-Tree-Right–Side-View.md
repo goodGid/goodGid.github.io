@@ -77,6 +77,83 @@ public List<Integer> rightSideView(TreeNode root) {
 
 ---
 
+
+### [2] Code (21. 11. 28) (x)
+
+``` java
+class Solution {
+    public List<Integer> rightSideView(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+
+        List<Integer> ans = new ArrayList<>();
+        List<List<Integer>> treeLevelGroup = new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+
+        q.add(root);
+
+        while (!q.isEmpty()) {
+            int size = q.size();
+
+            List<Integer> list = new ArrayList<>();
+
+            for (int i = 0; i < size; i++) {
+                TreeNode node = q.poll();
+                list.add(node.val);
+                if (node.left != null) {q.add(node.left);}
+                if (node.right != null) {q.add(node.right);}
+            }
+            treeLevelGroup.add(list);
+        }
+
+        int depth = treeLevelGroup.size();
+        for (int i = 0; i < depth; i++) {
+            int size = treeLevelGroup.get(i).size();
+            ans.add(treeLevelGroup.get(i).get(size - 1));
+        }
+
+        return ans;
+    }
+}
+```
+
+---
+
+> Reference Code
+
+``` java
+while (!q.isEmpty()) {
+    int size = q.size();
+
+    for (int i = 0; i < size; i++) {
+        TreeNode node = q.poll();
+
+        if (i == size - 1) {
+            ans.add(node.val);
+        }
+        if (node.left != null) {
+            q.add(node.left);
+        }
+        if (node.right != null) {
+            q.add(node.right);
+        }
+    }
+}
+```
+
+* *treeLevelGroup* 변수 선언을 할 필요 없이
+
+  위처럼 좀 더 효율적으로 구현할 수 있다.
+
+---
+
+> Review
+
+* BFS 유형의 문제는 확실히 풀 수 있겠단 자신감이 생겼다.
+
+---
+
 ## Reference
 
 * [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
