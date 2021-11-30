@@ -146,6 +146,8 @@ type: page
 
 * 　11. 25 [Daily DevBlog Weekly 1등]({{site.url}}/Daily-Dev-Blog-Weekly/)
 
+* 　11. 05 [네이버 기사 "합격하자마자 천만원? 삼성 입사하면 이런 선물 받습니다" 출현](https://post.naver.com/viewer/postView.nhn?volumeNo=26793764)
+
 * 　10. 12 [Buy me Coffee](https://www.buymeacoffee.com/equEhZO) 추가
 
 * 　09. 24 [addThis](https://www.addthis.com/) 서비스 추가
