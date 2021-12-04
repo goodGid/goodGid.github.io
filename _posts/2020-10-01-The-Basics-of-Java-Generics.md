@@ -176,6 +176,11 @@ int first = ((Integer) list.get(0)).intValue();
   
   The idea is to implement generics specialization as described in [JEP 218](https://openjdk.java.net/jeps/218).
 
+---
+
+## Summary
+
+![](/assets/img/java/The-Basics-of-Java-Generics_2.png)
 
 ---
 
