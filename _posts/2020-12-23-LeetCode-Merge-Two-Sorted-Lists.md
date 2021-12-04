@@ -110,6 +110,40 @@ public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
 * 다음에 다시 풀 땐 [1] 풀이처럼 깔끔하게 풀어보도록 하자.
 
+
+---
+
+### [3] Code (21. 12. 04) (x)
+
+``` java
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
+        }
+        
+        if (list2 == null) {
+            return list1;
+        }
+        
+        if (list1.val < list2.val) {
+            list1.next = mergeTwoLists(list1.next, list2);
+            return list1;
+        }
+        
+        list2.next = mergeTwoLists(list1, list2.next);
+        return list2;
+    }
+}
+```
+
+---
+
+> Review
+
+* 어렴풋하게 아이디어가 생각나서 금방 풀었다.
+
+
 ---
 
 ## Reference
