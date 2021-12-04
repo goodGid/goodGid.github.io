@@ -51,3 +51,39 @@ public PriorityQueue(Comparator<? super E> comparator) {
 > Problem
 
 * [LeetCode : 215. Kth Largest Element in an Array]({{site.url}}/LeetCode-Kth-Largest-Element-in-an-Array/#2-code-21-11-10-x)
+
+
+---
+
+### String 문법
+
+* String에서 i번째 값 읽어오기
+
+``` java
+String s = "abc";
+System.out.println(s.charAt(0)); // a
+```
+
+---
+
+### List 사용
+
+* List 선언과 동시에 값 할당
+
+``` java
+// 1. JDK 5 이상에서 사용 가능
+List<String> list = Arrays.asList("Amsterdam", "Paris", "London");
+
+// 2.
+List<String> list = Arrays.asList(new String[] { "a", "b", "c" });
+
+// 3.
+List<String> list = new ArrayList<>() {{ ... }} // Compile Error 발생
+List<String> list = new ArrayList<String>() {
+    { 
+        add("A");
+        add("B");
+        add("C");
+    }
+};
+```
