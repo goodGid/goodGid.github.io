@@ -33,7 +33,7 @@ Explanation: 12 = 4 + 4 + 4.
 
 ### [1] Code (21. 12. 12)
 
-*Need to Retry*
+*Need to Retry -> DP로 풀어보자*
 
 ``` java
 // Runtime: 162 ms
