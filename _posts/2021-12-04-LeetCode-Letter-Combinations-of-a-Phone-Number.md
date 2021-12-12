@@ -91,7 +91,7 @@ List<String> list = Arrays.asList("Amsterdam", "Paris", "London");
 List<String> list = Arrays.asList(new String[] { "a", "b", "c" });
 
 // 3.
-List<String> list = new ArrayList<>() {{ ... }} // Compile Error 발생
+List<String> list = new ArrayList<>() {% raw  %}{{ ... }}{% endraw  %} // Compile Error 발생
 List<String> list = new ArrayList<String>() {
     { 
         add("A");
