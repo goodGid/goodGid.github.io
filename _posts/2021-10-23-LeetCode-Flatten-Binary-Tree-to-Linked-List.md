@@ -123,7 +123,40 @@ class Solution {
 
   그런데 떠올릴 수 있을지 모르겠다. @__@
 
+---
 
+### [2] Code (21. 12. 18) (x)
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 38.4 MB
+class Solution {
+    public void flatten(TreeNode root) {
+
+        while (root != null) {
+            TreeNode temp = root.right;
+
+            if (root.left != null) {
+                root.right = root.left;
+                TreeNode head = root.right;
+
+                while (head.right != null) {
+                    head = head.right;
+                }
+                head.right = temp;
+            }
+            root.left = null;
+            root = root.right;
+        }
+    }
+}
+```
+
+---
+
+> Review
+
+* 아이디어가 문득 떠올라서 손쉽게 풀었다.
 
 
 ---
