@@ -95,6 +95,57 @@ class Solution {
 
 * [3] : Merge Sort 처럼 반으로 쪼개는 조건이 어려웠다.
 
+---
+
+### [2] Code (21. 12. 19) (x)
+
+
+``` java
+// Runtime: 6 ms
+// Memory Usage: 41.5 MB
+class Solution {
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        return go(preorder, inorder,
+                  0, preorder.length - 1,
+                  0, inorder.length - 1);
+
+    }
+
+    private TreeNode go(int[] preorder, int[] inorder,
+                        int preLeftIdx, int preRightIdx,
+                        int inLeftIdx, int inRightIdx) {
+
+        if (preLeftIdx > preRightIdx) {
+            return null;
+        }
+
+        TreeNode node = new TreeNode(preorder[preLeftIdx]);
+
+        int range = 0;
+        for (int i = inLeftIdx; i <= inRightIdx; i++) {
+            if (inorder[i] == node.val) {
+                range = i - inLeftIdx;
+            }
+        }
+
+        node.left = go(preorder, inorder,
+                       preLeftIdx + 1, preLeftIdx + range,
+                       inLeftIdx, inLeftIdx + range - 1);
+        node.right = go(preorder, inorder,
+                        preLeftIdx + 1 + range, preRightIdx,
+                        inLeftIdx + 1 + range, inRightIdx);
+
+        return node;
+    }
+}
+```
+
+---
+
+> Review
+
+* 30분 정도 소요
+
 
 ---
 
