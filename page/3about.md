@@ -100,6 +100,8 @@ type: page
 
 ### 2021
 
+* 　12. 23 [[2021년] 2번째 구글 애드센스(Google Adsense) $100를 돌파하다.]({{site.url}}/2021-Google-Adsense-Reach-100-Dollar)
+
 * 　12. 01 ~ [코드리뷰 멘토링 활동](https://brownycodereview.notion.site/brownycodereview/0d7ab9fcde2c4312abded62c89bbdef3)
 
 * 　10. 29 [2021 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
