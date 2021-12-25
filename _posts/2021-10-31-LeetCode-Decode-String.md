@@ -44,7 +44,7 @@ n/a
 
 > Concern Point
 
-**해당 문자가 숫자 혹은 문자인지 체크하기**
+**1. 해당 문자가 숫자 혹은 문자인지 체크하기**
 
 ``` java
 package java.lang;
@@ -71,7 +71,7 @@ public static boolean isAlphabetic(int codePoint) {
 
 ---
 
-**String에서 범위로 잘라내기**
+**2. String에서 범위로 잘라내기**
 
 ``` java
 public String substring(int beginIndex, int endIndex) { ... }
@@ -83,7 +83,7 @@ public String substring(int beginIndex, int endIndex) { ... }
 
 ---
 
-**String -> Integer 값 변환**
+**3. String -> Integer 값 변환**
 
 ``` java
 // left는 '['인 Index
@@ -101,7 +101,7 @@ k = Integer.valueOf(s.charAt(left - 1)) - 48; // [2]
 
 ---
 
-**String에서 k값 파싱하기**
+**4. String에서 k값 파싱하기**
 
 ``` java
 left = s.lastIndexOf('[');
@@ -178,6 +178,119 @@ class Solution {
 * 풀다가 중간에 포기했다.
 
   아직 구현 능력이 많이 부족한 듯싶다 ㅠㅠ 
+
+---
+
+### [2] Code (21. 12. 25)
+
+*Need to Retry -> Concern Point들이 너무 많았다.*
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 37.1 MB
+class Solution {
+    private char OPEN = '[';
+    private char CLOSE = ']';
+
+    public String decodeString(String s) {
+        StringBuilder ans = new StringBuilder();
+
+        int head = 0;
+
+        while (s.length() > head) {
+            if (Character.isAlphabetic(s.charAt(head))) {
+                ans.append(s.charAt(head++));
+            } else if (Character.isDigit(s.charAt(head))) {
+                int digit = 0;
+                while (Character.isDigit(s.charAt(head))) {
+                    digit *= 10;
+                    digit += s.charAt(head) - 48;
+                    head++;
+                }
+
+                int startIdx = head + 1;
+                int endIdx = findCloseIndex(s);
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < digit; i++) {
+                    sb.append(s, startIdx, endIdx);
+                }
+                sb.append(s.substring(endIdx + 1));
+                s = sb.toString();
+                head = 0;
+            }
+        }
+
+        return ans.toString();
+    }
+
+    private int findCloseIndex(String s) {
+        int openCnt = 0;
+        char[] chars = s.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == OPEN) {
+                openCnt++;
+            } else if (chars[i] == CLOSE) {
+                openCnt--;
+                if (openCnt == 0) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
+
+---
+
+> Concern Point
+
+**1. 숫자를 나타내는 Character를 int 값으로 변환**
+
+``` java
+char c = '9';
+System.out.println(c - 48); // 9 출력
+```
+
+---
+
+**2. 주어진 Character가 알파벳인지 숫자인지 체크**
+
+``` java
+if (Character.isAlphabetic(s.charAt(head))) { ... }
+if (Character.isDigit(s.charAt(head))) { ... }
+```
+---
+
+**3. String에서 범위로 잘라내기**
+
+``` java
+public String substring(int beginIndex, int endIndex) { ... }
+```
+
+* beginIndex부터 포함
+
+  endIndex은 미포함
+
+---
+
+> Review
+
+* 40분 소요 + IDE 사용
+
+* *Concern Point*가 처음에 문제 풀었을 때랑
+
+  두번째 풀었을 때랑 100% 일치했다.
+
+  그래도 같은 고민을 두고 이전에는 못 풀었는데
+
+  이번에는 스스로 힘으로 풀었다.
+
+* 다음에는 *Concern Point* 없이 풀어보도록 하자 !
+
+
 
 ---
 
