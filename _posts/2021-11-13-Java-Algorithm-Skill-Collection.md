@@ -32,9 +32,10 @@ author: goodGid
 
 * 내림차순 + PriorityQueue 사용 방법
 
+  ex) [LeetCode : 215. Kth Largest Element in an Array]({{site.url}}/LeetCode-Kth-Largest-Element-in-an-Array/#2-code-21-11-10-x)
+
 ``` java
 PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
-
 
 // public class PriorityQueue<E> extends AbstractQueue<E> implements java.io.Serializable
 public PriorityQueue(Comparator<? super E> comparator) {
@@ -46,11 +47,6 @@ public PriorityQueue(Comparator<? super E> comparator) {
 
 * comparator 값으로 *Collections.reverseOrder( )*를 넘겨주면 내림차순 우선순위 큐 생성이 가능하다.
 
----
-
-> Problem
-
-* [LeetCode : 215. Kth Largest Element in an Array]({{site.url}}/LeetCode-Kth-Largest-Element-in-an-Array/#2-code-21-11-10-x)
 
 
 ---
@@ -63,6 +59,46 @@ public PriorityQueue(Comparator<? super E> comparator) {
 String s = "abc";
 System.out.println(s.charAt(0)); // a
 ```
+
+---
+
+* String에서 범위로 잘라내기
+
+  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+
+``` java
+public String substring(int beginIndex, int endIndex) { ... }
+```
+
+* beginIndex부터 포함
+
+  endIndex은 미포함
+
+---
+
+### Character 문법
+
+* 숫자를 나타내는 Character를 int 값으로 변환
+
+  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+
+``` java
+char c = '9';
+System.out.println(c - 48); // 9 출력
+```
+
+---
+
+* 주어진 Character가 알파벳인지 숫자인지 체크
+
+  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+
+``` java
+if (Character.isAlphabetic(s.charAt(head))) { ... }
+if (Character.isDigit(s.charAt(head))) { ... }
+```
+
+
 
 ---
 
