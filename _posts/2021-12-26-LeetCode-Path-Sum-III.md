@@ -33,7 +33,7 @@ Explanation: The paths that sum to 8 are shown.
 
 ### [1] Code (21. 12. 26)
 
-*Need to Retry -> 믄제 최적화 실패*
+*Need to Retry -> 문제 최적화 실패*
 
 ``` java
 // Runtime: 65 ms
