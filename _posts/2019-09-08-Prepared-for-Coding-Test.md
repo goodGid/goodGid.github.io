@@ -369,6 +369,8 @@ BOJ 그룹에 가입 신청을 해주시는 분들이 계시는데
 
 * 블로그 :  https://goodgid.github.io/tag/#BOJ
 
+* BOJ 사용시 유용한 크롬 익스텐션 추천 : [백준허브 사용 방법](https://velog.io/@flaxinger/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8C-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
+
 
 <br>
 
