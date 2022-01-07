@@ -110,6 +110,106 @@ val : A B A B A B
 
 ---
 
+### [2] Code (22. 01. 07)
+
+*Need to Retry -> 아이디어는 맞았으나 구현에서 실패*
+
+``` java
+// Wrong Code
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        int[] alpha = new int[26];
+        int size = tasks.length;
+
+        if (n == 0) {
+            return size;
+        }
+
+        int maxCnt = 0;
+        for (char c : tasks) {
+            alpha[c - 'A']++;
+            maxCnt = Math.max(maxCnt, alpha[c - 'A']);
+        }
+
+        int cnt = 0;
+        for (int i = 0; i < alpha.length; i++) {
+            if (maxCnt == alpha[i]) {
+                cnt++;
+            }
+        }
+
+        cnt += (maxCnt - 1) * (n + 1);
+
+        int subSize = size - maxCnt;
+
+        if ((maxCnt - 1) * (n + 1) < subSize) {
+            cnt += subSize - ((maxCnt - 1) * (n + 1));
+        }
+
+        return cnt;
+    }
+}
+```
+
+---
+
+> Reference Code
+
+``` java
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        int len = tasks.length;
+        int[] arr = new int[26];
+
+        for (int i = 0; i < len; i++) {
+            arr[tasks[i] - 'A']++;
+        }
+
+        int max = arr[0];
+        int count = 0;
+
+        for (int i = 0; i < 26; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (max == arr[i]) { // [1]
+                count++;
+            }
+        }
+        return Math.max(len, (max - 1) * (n + 1) + count); // [2]
+    }
+}
+```
+
+* [1] : ["A","A","B","B"] 와 같은 경우를 위해 필요한 코드이다.
+
+* [2] : len 값을 비교해주는 이유는 다음 예시를 보면 된다.
+
+``` java
+["A","A","A","B","B","B"]
+0
+
+return (max - 1) * (n + 1) + count);
+
+위 코드로 실행하면 "4"가 나온다.
+하지만 실제로는 "6"이 정답이다.
+
+idx : 1 2 3 4 5 6
+val : A B A B A B
+```
+
+---
+
+> Review
+
+* 다음엔 꼭 맞추자 !
+
+
+---
+
 ## Reference
 
 * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
