@@ -8,7 +8,7 @@ use_math: true
 * content
 {:toc}
 
-## [1466. Reorder Routes to Make All Paths Lead to the City Zero]({{site.url}}/https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+## * [1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
 
 ### Problem
 
@@ -78,7 +78,7 @@ class Solution {
                     if (visited[i]) {
                         continue;
                     }
-                    if (!lolmap.containsKey(i) || !lolmap.get(i).contains(node)) {
+                    if (!lolmap.containsKey(i) || !lolmap.get(i).contains(node)) { // [1]
                         count++;
                     }
                     if (!visited[i]) {
@@ -94,15 +94,42 @@ class Solution {
 
 ---
 
+> Algorithm Description
+
+* 모든 노드를 다 방문해야 한다.
+
+  그게 최소의 비용으로 0까지 갈 수 있다.
+
+  그러므로 모든 노드가 연결되어야 한다.
+
+* **map** 변수는 위상정렬을 구현하기 위한 변수이고
+
+  **lolmap** 변수는 단방향만 있는 노드를 체크하기 위한 변수다.
+
+* 그리고 단방향인지 체크는 [1]에서 한다.
+
+``` java
+!lolmap.containsKey(i)
+// i에서 나가는 path가 아예 없는 경우
+// 새로운 path 추가가 필요하다.
+
+!lolmap.get(i).contains(node)
+// i -> node로 가는 path가 있는지 체크해본다.
+// i는 map에서 꺼낸 값으로 양방향으로 path가 있다.
+// 그런데 lolmap에서 i를 key로 조회 시 값이 없다면
+// i -> node로 가는 path가 없음을 알 수 있다.
+```
+
+---
+
 > Review
 
-* 다음에 풀자.
+* 30분 정도 고민했으나 실패
 
-
-
+* 위상 정렬인데 조금 변형된 유형의 문제 같다.
 
 ---
 
 ## Reference
 
-* [1466. Reorder Routes to Make All Paths Lead to the City Zero]({{site.url}}/https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+* [1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
