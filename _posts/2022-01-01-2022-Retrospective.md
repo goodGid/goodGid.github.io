@@ -38,3 +38,8 @@ author: goodGid
 
 > 220103 ~ 220109
 
+* [LeetCode : 621. Task Scheduler]({{site.url}}/LeetCode-Task-Scheduler/#2-code-22-01-07)
+
+* [LeetCode : 1299. Replace Elements with Greatest Element on Right Side]({{site.url}}/LeetCode-Replace-Elements-with-Greatest-Element-on-Right-Side/#1-code-22-01-08-x)
+
+* [LeetCode : 1466. Reorder Routes to Make All Paths Lead to the City Zero]({{site.url}}/LeetCode-Reorder-Routes-to-Make-All-Paths-Lead-to-the-City-Zero/#1-code-22-01-09)
