@@ -111,6 +111,39 @@ n/a
 
   하나의 관점에 꽂히면 다른 관점이 쉽게 떠올려지지 않는다 ㅠㅠ 
 
+---
+
+### [3] Code (22. 01. 15)
+
+*Need to Retry -> 아이디어를 또 떠올리지 못했다.*
+
+``` java
+// Runtime: 3 ms
+// Memory Usage: 105.2 MB
+class Solution {
+    public int maxProfit(int[] p) {
+        int min = 10001;
+        int max = 0;
+
+        for (int i = 0; i < p.length; i++) {
+            min = Math.min(min, p[i]);
+            max = Math.max(max, p[i] - min);
+        }
+
+        return max;
+    }
+}
+```
+
+---
+
+> Review
+
+* 아이디어가 떠오르지 않아 이전 정답 코드를 참고했다.
+
+  참고 후 다시 풀었다.
+
+  다음엔 꼭 풀 수 있겠지 !!!
 
 
 ---
