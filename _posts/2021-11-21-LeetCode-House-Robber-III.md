@@ -185,8 +185,43 @@ class Solution {
 
   다음번엔 성공하자.
 
+---
 
+### [2] Code (22. 01. 20)
 
+*Need to Retry -> 아이디어를 떠올리지 못함*
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 41.6 MB
+class Solution {
+    public int rob(TreeNode root) {
+        int[] ans = helper(root);
+        return Math.max(ans[0], ans[1]);
+    }
+
+    private int[] helper(TreeNode node) {
+        if (node == null) {
+            return new int[] { 0, 0 };
+        }
+
+        int[] dp = new int[2];
+        int[] a = helper(node.left);
+        int[] b = helper(node.right);
+
+        dp[0] = node.val + a[1] + b[1];
+        dp[1] = Math.max(a[0], a[1]) + Math.max(b[0], b[1]);
+        return dp;
+    }
+}
+```
+---
+
+> Review
+
+* [Youtube 영상](https://www.youtube.com/watch?v=nHR8ytpzz7c)을 보고 아이디어를 이해했다.
+
+  다음엔 정말 풀 수 있을 거 같다.
 
 
 ---
