@@ -133,6 +133,44 @@ class Solution {
 
 * 구현 능력이 부족하였다.
 
+---
+
+### [2] Code (22. 01. 20)
+
+*Need to Retry -> 또 구현을 못했다.*
+
+``` java
+n/a
+```
+
+---
+
+> Reference Code
+
+``` java
+// Time : 5 ms
+// Space : 40.8 MB
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {return null;}
+
+        if (root.equals(p) || root.equals(q)) {return root;}
+
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if (left != null && right != null) {return root;}
+
+        return (left != null) ? left : right;
+    }
+}
+```
+
+> Review
+
+* 문제를 너무 어렵게 접근했다.
+
+  다음엔 꼭 풀 수 있길...
 
 
 
