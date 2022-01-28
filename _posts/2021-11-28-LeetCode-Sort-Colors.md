@@ -126,6 +126,100 @@ class Solution {
 
 ---
 
+
+### [2] Code (22. 01. 28)
+
+*Need to Retry -> 풀긴 풀었는데 오래 걸렸다. 다시 풀어보자.d*
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 42.6 MB
+// Ref : https://leetcode.com/submissions/detail/629406212/
+class Solution {
+    public void sortColors(int[] n) {
+
+        int l = 0;
+        int r = n.length - 1;
+        int cur = 0;
+
+        while (cur <= r) {
+            int value = n[cur];
+
+            if (value == 0) {
+                if (cur == l) {
+                    l++;
+                    cur++;
+                } else {
+                    n[cur] = n[l];
+                    n[l] = 0;
+                    l++;
+                }
+            } else if (value == 1) {
+                cur++;
+            } else {
+                if (cur == r) {
+                    r--;
+                    cur++;
+                } else {
+                    n[cur] = n[r];
+                    n[r] = 2;
+                    r--;
+                }
+            }
+        }
+    }
+}
+```
+
+* 위 코드로 맞췄으나 코드를 Refactoring 하였다.
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 40.7 MB
+// Ref : https://leetcode.com/submissions/detail/629407825/
+class Solution {
+    public void sortColors(int[] n) {
+
+        int l = 0;
+        int r = n.length - 1;
+        int cur = 0;
+
+        while (cur <= r) {
+            int value = n[cur];
+
+            if (value == 0) {
+                n[cur] = n[l];
+                n[l] = 0;
+                cur++;
+                l++;
+            } else if (value == 1) {
+                cur++;
+            } else {
+                n[cur] = n[r];
+                n[r] = 2;
+                r--;
+            }
+        }
+    }
+}
+```
+
+* value가 0일 경우엔 
+
+  cur과 l 변수의 값을 이동시키는데
+
+  value가 2일 경우엔
+
+  cur에 대해서는 이동시키지 않는다.
+
+---
+
+> Review
+
+* 포기하려 했지만 포기하지 않고 풀었다.
+
+---
+
 ## Reference
 
 * [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
