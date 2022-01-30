@@ -129,7 +129,7 @@ class Solution {
 
 ### [2] Code (22. 01. 28)
 
-*Need to Retry -> 풀긴 풀었는데 오래 걸렸다. 다시 풀어보자.d*
+*Need to Retry -> 풀긴 풀었는데 오래 걸렸다. 다시 풀어보자.*
 
 ``` java
 // Runtime: 0 ms
