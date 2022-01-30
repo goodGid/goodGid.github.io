@@ -71,8 +71,45 @@ class Solution {
 
 * 다음에 다시 풀어봐야겠다.
 
+---
 
+### [2] Code (22. 01. 30) (x)
 
+``` java
+// Runtime: 1 ms
+// Memory Usage: 42.2 MB
+// Ref : https://leetcode.com/submissions/detail/630100126/
+class Solution {
+    public int rob(int[] n) {
+        int size = n.length;
+
+        if (size == 0) {
+            return 0;
+        } else if (size == 1) {
+            return n[0];
+        } else if (size == 2) {
+            return Math.max(n[0], n[1]);
+        }
+
+        int[] dp = new int[size];
+        dp[0] = n[0];
+        dp[1] = Math.max(n[0], n[1]);
+
+        for (int i = 2; i < size; i++) {
+            dp[i] = Math.max(n[i] + dp[i - 2], dp[i - 1]);
+        }
+
+        return dp[size - 1];
+
+    }
+}
+```
+
+---
+
+> Review
+
+* 보자마자 어렵지 않게 풀었다.
 
 ---
 
