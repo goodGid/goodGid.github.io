@@ -128,7 +128,47 @@ public class Solution {
 
   문제 지문에 주어진 힌트를 잘 이해하고 활용해야 함을 느낀다.
 
+---
 
+### [2] Code (22. 01. 31) (x)
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 43.6 MB
+// Ref : https://leetcode.com/submissions/detail/631552260
+class Solution {
+    int ans = 0;
+
+    public int diameterOfBinaryTree(TreeNode root) {
+        dfs(root);
+        return ans;
+    }
+
+    private int[] dfs(TreeNode node) {
+        if (node == null) {
+            return new int[] { -1, -1 };
+        }
+
+        int[] left = dfs(node.left);
+        int[] right = dfs(node.right);
+
+        int maxLeft = Math.max(left[0], left[1]) + 1;
+        int maxRight = Math.max(right[0], right[1]) + 1;
+
+        ans = Math.max(ans, maxLeft + maxRight);
+
+        return new int[] { maxLeft, maxRight };
+    }
+}
+```
+
+---
+
+> Review
+
+* 30분 정도 소요 
+
+  아이디어 생각이 안 나서 포기하려다 한 번 더 곰곰이 생각했더니 아이디어가 떠올랐다.
 
 ---
 
