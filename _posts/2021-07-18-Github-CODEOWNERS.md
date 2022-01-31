@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Github에서 PR 생성 시 Reviewer 자동으로 할당하기 (feat. CODEOWNERS) "
-categories: Technology
+categories: Github
 author: goodGid
 ---
 * content
