@@ -112,7 +112,42 @@ class Solution {
 
 * 맞았는데 효율성 부분에서 너무 안좋다.
 
+---
 
+### [2] Code (22. 02. 11)
+
+*Need to Retry -> d아이디어가 떠오르지 않아서 정답을 보고 풀었다.d*
+
+``` java
+// Runtime: 36 ms
+// Memory Usage: 43.8 MB
+// Ref : https://leetcode.com/submissions/detail/638649417/
+class Solution {
+    public int numSquares(int n) {
+        int[] dp = new int[n + 1];
+
+        for (int i = 1; i <= n; i++) {
+            dp[i] = 10001;
+        }
+
+        for (int i = 1; i * i <= n; i++) {
+            dp[i * i] = 1;
+            for (int j = i * i + 1; j <= n; j++) {
+                dp[j] = Math.min(dp[j], dp[j - i * i] + 1);
+            }
+        }
+        return dp[n];
+    }
+}
+```
+
+---
+
+> Review
+
+ * 정답을 알고 보면 어렵지 않은데
+
+   아이디어 떠올리는 게 어렵네...
 
 ---
 
