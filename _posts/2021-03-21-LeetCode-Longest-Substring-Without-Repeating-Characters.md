@@ -9,7 +9,7 @@ author: goodGid
 
 ## [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-## Problem
+### Problem
 
 ```
 Given a string s, find the length of the longest substring without repeating characters.
@@ -21,7 +21,7 @@ Given a string s, find the length of the longest substring without repeating cha
 
 ---
 
-## Example
+### Example
 
 ```
 Input: s = "abcabcbb"
@@ -31,7 +31,7 @@ Explanation: The answer is "abc", with the length of 3.
 
 ---
 
-## [1] Code (21. 03. 21)
+### [1] Code (21. 03. 21)
 
 ``` java
 class Solution {
@@ -77,6 +77,45 @@ left를 오른쪽으로 이동시켰다.
 
 * 무난했던 문제
 
+---
+
+### [2] Code (22. 02. 11) (x)
+
+``` java
+// Runtime: 16 ms
+// Memory Usage: 44.6 MB
+// Ref : https://leetcode.com/submissions/detail/639287953/
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int l = 0;
+        int r = 0;
+        int ans = 0;
+        Map<Character, Integer> map = new HashMap<>();
+
+        while (r < s.length()) {
+
+          if (map.getOrDefault(s.charAt(r), 0) > 0) {
+                map.put(s.charAt(l), Math.max(0, map.getOrDefault(l, 0) - 1));
+                l++;
+            } else {
+                ans = Math.max(ans, (r - l + 1));
+                map.put(s.charAt(r), map.getOrDefault(s.charAt(r), 0) + 1);
+                r++;
+            }
+        }
+
+        return ans;
+    }
+}
+```
+
+---
+
+> Review
+
+* 2 포인터로 접근하여 풀었다.
+
+* 이런 유형의 문제는 항상 제출하기 전에 불안하다.
 
 
 ---
