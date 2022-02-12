@@ -12,7 +12,7 @@ use_math: true
 
 ![](/assets/img/algorithm/Algorithm-Time-Complexity-Analysis_1.png)
 
-* 마스터 정리는(Master Theorem)는 
+* 마스터 정리(Master Theorem)는 
 
   **재귀식**으로 표현된 알고리즘의 시간 복잡도를 간단하게 계산하는 방법이다.
 
@@ -194,11 +194,11 @@ use_math: true
 
   $T(n) = 3 * T(n-1)$
 
-  = 3 * 3 * T(n-2)$
+  = 3 * 3 * $T(n-2)$
 
-  = 3 * 3 * 3 * T(n-3)$
+  = 3 * 3 * 3 * $T(n-3)$
 
-  = 3 * 3 * ... 3 * T(0)$
+  = 3 * 3 * ... 3 * $T(0)$
 
   = $3^n * T(0)$
 
