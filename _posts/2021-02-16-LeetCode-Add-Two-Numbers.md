@@ -9,7 +9,7 @@ author: goodGid
 
 ## [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
-## Problem
+### Problem
 
 ```
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
@@ -22,7 +22,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 ---
 
-## Example
+### Example
 
 ```
 Input: l1 = [2,4,3], l2 = [5,6,4]
@@ -32,7 +32,7 @@ Explanation: 342 + 465 = 807.
 
 ---
 
-## [1] Code (21. 02. 16)
+### [1] Code (21. 02. 16)
 
 ``` java
 class Solution {
@@ -81,7 +81,7 @@ class Solution {
 
 ---
 
-## [2] Code (21. 03. 21)
+### [2] Code (21. 03. 21)
 
 ``` java
 class Solution {
@@ -190,6 +190,61 @@ class Solution {
 ```
 
 * l1 혹은 l2가 null이라면 그냥 0으로 값을 처리한다.
+
+---
+
+### [3] Code (22. 02. 14) (x)
+
+
+``` java
+// Runtime: 2 ms
+// Memory Usage: 47.3 MB
+// Ref : https://leetcode.com/submissions/detail/641226973/
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        return recur(l1, l2, 0);
+    }
+
+    private ListNode recur(ListNode l1, ListNode l2, int prevSum) {
+        if (l1 == null && l2 == null) {
+            if (prevSum != 0) {
+                return new ListNode(prevSum);
+            }
+            return null;
+        } else if (l1 == null) {
+            if (prevSum != 0) {
+                l1 = new ListNode(prevSum); // [1]
+                prevSum = 0;
+            } else {
+                return l2;
+            }
+        } else if (l2 == null) {
+            if (prevSum != 0) {
+                l2 = new ListNode(prevSum); // [2]
+                prevSum = 0;
+            } else {
+                return l1;
+            }
+        }
+
+        int sum = l1.val + l2.val + prevSum;
+        l1.val = sum % 10;
+        l1.next = recur(l1.next, l2.next, sum / 10);
+
+        return l1;
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+* [1], [2] : 한쪽만 남아있고 prevSum이 있다면 
+
+  남아있는 쪽에 새로운 Node를 prevSum으로 생성해준다.
+
+  그렇게 재귀 함수를 호출하면 원래 있던 값처럼 동작시킬 수 있다.
 
 
 ---
