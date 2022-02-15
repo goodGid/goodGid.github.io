@@ -31,7 +31,7 @@ Explanation: "aba" is also a valid answer.
 
 ### [1] Code (22. 02. 15)
 
-*Need to Retry -> 다른 아이디어가 좋았다.*
+*Need to Retry -> Palindromic 유형 문제 관련해서 Reference Code 아이디어를 기억해두자.*
 
 ``` java
 // Runtime: 450 ms
