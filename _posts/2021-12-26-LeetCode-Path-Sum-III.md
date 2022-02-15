@@ -78,6 +78,8 @@ class Solution {
 
 > Reference Code
 
+**Code 1**
+
 ``` java
 // Runtime: 2 ms
 // Memory Usage: 39 MB
@@ -109,6 +111,8 @@ class Solution {
 ```
 
 ---
+
+**Code 2**
 
 ``` java
 // Runtime: 2 ms
@@ -146,6 +150,8 @@ class Solution {
 ```
 
 ---
+
+**Code 3**
 
 ``` java
 // Runtime: 208 ms
@@ -189,6 +195,61 @@ fromNodePathSum(root, targetSum) + initiate(root.left, targetSum) + initiate(roo
 
   풀긴했으나 시간/공간 최적화가 되지 않았다.
 
+--- 
+
+### [2] Code (22. 02. 15)
+
+*Need to Retry -> 다시 풀어보도록 하자.*
+
+``` java
+// 
+// Ref : 
+class Solution {
+    public int pathSum(TreeNode root, int targetSum) {
+        return dfs(root, targetSum, 0);
+    }
+    
+    private int dfs(TreeNode node, int target, int sum) {
+        if (node == null) {
+            return 0;
+        }
+        
+        int cnt = 0;
+        if (sum + node.val == target) {
+            System.out.println(node.val + " " + sum);
+            cnt = 1;
+        }
+        
+        return cnt 
+            + dfs(node.left, target, sum + node.val) 
+            + dfs(node.right, target, sum + node.val)
+            + dfs(node.left, target, 0)
+            + dfs(node.right, target, 0);
+    }
+}
+```
+
+* root : [1,null,2,null,3,null,4,null,5]
+
+  targetSum : 3
+
+* 1 -> 2 그리고 여기서 4번째 재귀 함수로 3 호출 => 총 2개
+
+  1 선택 x -> 2선택 x -> 3 선택 o => 총 1 개
+
+  결과값이 3이 return 된다.
+
+---
+
+> Reference Code
+
+* *[1] Code (21. 12. 26) -> Reference Code 2* 참고
+
+---
+
+> Review
+
+* 누적합 개념으로 접근해야 했다.
 
 ---
 
