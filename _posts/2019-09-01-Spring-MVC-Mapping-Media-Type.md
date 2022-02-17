@@ -13,15 +13,15 @@ author: goodGid
 
 * 특정 타입의 데이터를 담고 있는 요청만 
 
-* 처리하는 핸들러 지정이 가능하다.
+  처리하는 핸들러 지정이 가능하다.
 
-* ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
+ ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_VALUE)
 
 <br>
     
 * Content-Type 헤더로 필터링을 한다. 
 
-* = 핸들러에 **consumes** 조건을 추가하여 요청을 필터링한다.
+  = 핸들러에 **consumes** 조건을 추가하여 요청을 필터링한다.
 
 <br>
 
@@ -29,7 +29,7 @@ author: goodGid
 
 * 핸들러에 **consumes**라는 키워드를 사용하여 
 
-* 어떤 미디어 타입을 허용할 것인지 핸들러에게 명시해준다.
+  어떤 미디어 타입을 허용할 것인지 핸들러에게 명시해준다.
 
 
 
@@ -39,7 +39,7 @@ author: goodGid
 public class SampleController {
     // String을 Return하는 것들은 끝에 VALUE가 붙는다.
     // 아래 사진 참고 
-    @GetMapping(value = "/hello", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(value = "/hello", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public String hello() {
         return "hello";
@@ -49,27 +49,25 @@ public class SampleController {
 
 ![](/assets/img/spring/spring_mvc_mapping_media_type_1.png)
 
-* 위 핸들러를 해석해면
+* 위 핸들러는 HTTP 헤더 중
 
-* HTTP 헤더 중 
+  Content-Type이라는 HTTP 헤더에 
 
-* Content-Type이라는 HTTP 헤더에 
+  **application/json"** 
 
-* **application/json;charset=UTF-8"** 
+  **(=MediaType.APPLICATION_JSON_VALUE)**라는 값이 있는 경우에만 처리를 한다. 
 
-* **(=MediaType.APPLICATION_JSON_UTF8_VALUE)**라는 값이 있는 경우에만 처리를 한다. 
-
-* 라고 위 핸들러를 해석할 수 있다.
+  라고 위 핸들러를 해석할 수 있다.
 
 <br>
 
 * 즉 HTTP 요청 시 
 
-* 그 HTTP 요청에 들어가는 본문의 타입을 
+  그 HTTP 요청에 들어가는 본문의 타입을 
 
-* 서버에 알려주는 기능을 한다.
+  서버에 알려주는 기능을 한다.
 
-* 그리고 서버는 조건에 맞는 요청만 처리를 한다.
+  그리고 서버는 조건에 맞는 요청만 처리를 한다.
 
 
 
@@ -96,9 +94,7 @@ public class SampleController {
 
 * 다음과 같은 결과를 볼 수 있다.
 
-* HTTP Status Code값으로는 
-
-* [415 : Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)를 받게 된다.
+* HTTP Status Code값으로는 [415 : Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)를 받게 된다.
 
 > The HTTP 415 Unsupported Media Type client error response code indicates that the server refuses to accept the request because the payload format is in an unsupported format.
 
@@ -117,7 +113,7 @@ MockHttpServletRequest:
 MockHttpServletResponse:
            Status = 415
     Error message = null
-          Headers = [Accept:"application/json;charset=UTF-8"]
+          Headers = [Accept:"application/json"]
      Content type = null
              Body = 
     Forwarded URL = null
@@ -137,7 +133,7 @@ Actual   :415
     @Test
     public void helloTest() throws Exception {
         mockMvc.perform(get("/hello")
-                        .contentType(MediaType.APPLICATION_JSON_UTF8))
+                        .contentType(MediaType.APPLICATION_JSON))
                .andDo(print())
                .andExpect(status().isOk());
     }
@@ -178,8 +174,8 @@ MockHttpServletResponse:
     @Test
     public void helloTest() throws Exception {
         mockMvc.perform(get("/hello")
-                        .contentType(MediaType.APPLICATION_JSON_UTF8)
-                        .accept(MediaType.APPLICATION_JSON_UTF8))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
                .andDo(print())
                .andExpect(status().isOk());
     }
@@ -190,14 +186,14 @@ MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /hello
        Parameters = {}
-          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json;charset=UTF-8"]
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
              Body = null
     Session Attrs = {}
 ```
 
 * Headers에 
 
-* **Accept:"application/json;charset=UTF-8"**가 추가되는 것을 볼 수 있다.
+  **Accept:"application/json"**가 추가되는 것을 볼 수 있다.
 
 ---
 
@@ -208,7 +204,7 @@ MockHttpServletRequest:
 
 ``` java
     @GetMapping(value = "/hello",
-            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.TEXT_PLAIN_VALUE
     )
     @ResponseBody
@@ -225,7 +221,7 @@ MockHttpServletRequest:
     @Test
     public void helloTest_Success() throws Exception {
         mockMvc.perform(get("/hello")
-                                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                                .contentType(MediaType.APPLICATION_JSON)
                                 .accept(MediaType.TEXT_PLAIN_VALUE))
                .andDo(print())
                .andExpect(status().isOk());
@@ -263,8 +259,8 @@ MockHttpServletResponse:
     @Test
     public void helloTest_Fail() throws Exception {
         mockMvc.perform(get("/hello")
-                        .contentType(MediaType.APPLICATION_JSON_UTF8)
-                        .accept(MediaType.APPLICATION_JSON_UTF8))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
                .andDo(print())
                .andExpect(status().isOk());
     }
@@ -275,7 +271,7 @@ MockHttpServletRequest:
       HTTP Method = GET
       Request URI = /hello
        Parameters = {}
-          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json;charset=UTF-8"]
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
              Body = null
     Session Attrs = {}
 
@@ -296,9 +292,7 @@ Expected :200
 Actual   :406
 ```
 
-* HTTP Status Code값으로는 
-
-* [406 : Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)를 받게 된다.
+* HTTP Status Code값으로는 [406 : Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)를 받게 된다.
 
 > The HyperText Transfer Protocol (HTTP) 406 Not Acceptable client error response code indicates that the server cannot produce a response matching the list of acceptable values defined in the request's proactive content negotiation headers, and that the server is unwilling to supply a default representation.
 
