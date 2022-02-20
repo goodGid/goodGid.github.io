@@ -90,6 +90,91 @@ class MedianFinder {
 
 ---
 
+### [2] Code (22. 02. 20)
+
+*Need to Retry -> 풀었는데 다시 풀어도 좋을 문제*
+
+``` java
+// Runtime: 208 ms
+// Memory Usage: 125 MB
+// Ref : https://leetcode.com/submissions/detail/645292174/
+class MedianFinder {
+    PriorityQueue<Integer> maxQ;
+    PriorityQueue<Integer> minQ;
+
+    public MedianFinder() {
+        maxQ = new PriorityQueue<>(Collections.reverseOrder());
+        minQ = new PriorityQueue<>();
+    }
+    
+    public void addNum(int num) {
+        if (maxQ.size() == minQ.size()) {
+            maxQ.add(num);
+        } else {
+            minQ.add(num);
+        }
+        
+        while (maxQ.size() > 0 && 
+               minQ.size() > 0 &&
+               maxQ.peek() > minQ.peek()) {
+            Integer maxValue = maxQ.poll();
+            Integer minValue = minQ.poll();
+            maxQ.add(minValue);
+            minQ.add(maxValue);
+        }
+    }
+    
+    public double findMedian() {
+        if (maxQ.size() == minQ.size()) {
+            return ((double) maxQ.peek() + minQ.peek()) / 2;
+        }
+        return (double) maxQ.peek();
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+**홀수일 경우**
+
+``` java
+o1 o2 o3 / o4 o5
+findMedian() -> return o3
+```
+
+* Left는 MaxQueue로 관리를 하고
+
+  Right는 MinQueue로 관리를 한다.
+
+* 그러면 홀수인 경우 findMedian 메소드 호출 시
+
+  MaxQueue의 root 값을 반환하면 된다.
+
+---
+
+**짝수일 경우**
+
+``` java
+o1 o2 / o3 o4
+findMedian() -> return (o2 + o3) / 2
+```
+
+* 짝수일 경우 findMedian 메소드 호출 시
+
+  MaxQueue의 root 값과 MinQueue의 root 값을 활용하여 값을 반환한다.
+
+---
+
+> Review
+
+* Hard 문제는 확실히 자료구조를 활용해야 한다.
+
+* 문제 자체가 설명이 비약해서 처음에 헤맸다.
+
+---
+
 ## Reference
 
 * [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
