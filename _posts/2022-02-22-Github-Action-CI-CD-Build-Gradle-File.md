@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Github Action으로 CI/CD 구축하기 - 7편 : build.gradle 분석 "
+title:  " Github Action으로 CI/CD 구축하기 - 6편 : build.gradle 분석 "
 categories: Github AWS
 author: goodGid
 ---
