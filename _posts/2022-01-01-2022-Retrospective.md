@@ -104,3 +104,16 @@ author: goodGid
 
 * [LeetCode : 295. Find Median from Data Stream]({{site.url}}/LeetCode-Find-Median-from-Data-Stream/#2-code-22-02-20)
 
+> 220221 ~ 220227
+
+* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yaml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
+
+* [Github Action으로 CI/CD 구축하기 - 6편 : build.gradle 분석]({{site.url}}/Github-Action-CI-CD-Build-Gradle-File/)
+
+* [Github Action을 사용하여 빌드시 동적으로 변숫값 주입하기 (feat. Dynamic Variable Substitution)]({{site.url}}/Github-Action-Dynamic-Variable-Substitution/)
+
+* [LeetCode : 53. Maximum Subarray]({{site.url}}/LeetCode-Maximum-Subarray/#1-code-22-02-21-x)
+
+* [LeetCode : 202. Happy Number]({{site.url}}/LeetCode-Happy-Number/#1-code-22-02-24-x)
+
+* [LeetCode : 23. Merge k Sorted Lists]({{site.url}}/LeetCode-Merge-k-Sorted-Lists/#1-code-22-02-27-x)
