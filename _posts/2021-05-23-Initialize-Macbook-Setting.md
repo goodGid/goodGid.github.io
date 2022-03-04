@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Macbook 사용 시 나에게 필요한 설정 목록들 기록해두기 "
+title:  " Macbook 사용 시 내가 사용하는 프로그램 및 환경 설정 기록해두기 "
 categories: E.T.C
 author: goodGid
 ---
