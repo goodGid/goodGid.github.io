@@ -422,7 +422,7 @@ author: goodGid
 
 * 예비군
 
-* [Git Flow 전략]({{site.url}}/Git-Flow)
+* [Git Flow 전략 쉽게 이해하기 (with Example)]({{site.url}}/Git-Flow)
 
 > 191118 ~ 191124
 

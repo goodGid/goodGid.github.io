@@ -11,7 +11,7 @@ author: goodGid
 
 * 나의 글이 **1등**했다.
 
-    - *[Git Flow 전략]({{site.url}}/Git-Flow)*
+    - *[Git Flow 전략 쉽게 이해하기 (with Example)]({{site.url}}/Git-Flow)*
 
 <br>
 

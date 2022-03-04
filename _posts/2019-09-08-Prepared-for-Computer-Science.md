@@ -96,7 +96,7 @@ author: goodGid
 
 ## Git
 
-* [Git Flow 전략](https://goodgid.github.io/Git-Flow/)
+* [Git Flow 전략 쉽게 이해하기 (with Example)](https://goodgid.github.io/Git-Flow/)
 
 ---
 
