@@ -146,9 +146,17 @@ author: goodGid
 
 * Repository -> Settings -> Secrets -> Actions에 값을 추가한다.
 
-  region에는 "ap-northeast-2"를 넣는다.
+```
+AWS_ACCESS_KEY_ID : {% raw %}{{AWS_ACCESS_KEY_ID}} {% endraw %}
+AWS_SECRET_ACCESS_KEY : {% raw %}{{AWS_ACCESS_KEY_ID}}{% endraw %}
+AWS_REGION : ap-northeast-2
+```
 
-  = ap-northeast-2 = Asia Pacific (Seoul)
+* AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY에는 Step 8에서 발급받은 값을 넣고
+
+  AWS_REGION에는 "ap-northeast-2"를 넣는다.
+  
+  (= ap-northeast-2 = Asia Pacific (Seoul) )
 
 
 ---
