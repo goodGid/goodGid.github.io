@@ -53,20 +53,85 @@ class Solution {
 
 ---
 
+> Review
+
+* 10분 소요
+
+---
+
+### [2] Code (22. 03. 06) (x)
+
+``` java
+// Runtime: 30 ms
+// Memory Usage: 55.1 MB
+// Ref : https://leetcode.com/submissions/detail/654117087
+class Solution {
+    public int[] replaceElements(int[] arr) {
+        if (arr.length == 1) {
+            return new int[]{-1};
+        }
+        int[] ans = new int[arr.length];
+
+        PriorityQueue<Node> queue = new PriorityQueue<>();
+
+        for (int i = 1; i < arr.length; i++) {
+            queue.add(new Node(i, arr[i]));
+        }
+
+        ans[0] = queue.peek().value;
+        ans[arr.length-1] = -1;
+        int ansIdx = 1;
+
+        while (!queue.isEmpty()) {
+            Node node = queue.peek();
+            if (ansIdx >= node.index) {
+                queue.poll();
+                continue;
+            }
+            ans[ansIdx] = queue.peek().value;
+            ansIdx++;
+        }
+
+        return ans;
+    }
+
+    public class Node implements Comparable<Node> {
+        private int index;
+        private int value;
+
+        public Node(int index, int value) {
+            this.index = index;
+            this.value = value;
+        }
+
+        @Override
+        public int compareTo(Node newNode) {
+            return newNode.value - value;
+        }
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+* i번째에 i+1 ~ n 사이 가장 큰 값을 우선순위 큐를 사용하여 구한다.
+
+---
+
 > Reference Code
 
 ``` java
 class Solution {
     public int[] replaceElements(int[] arr) {
         int max = -1;
-        int[] output = new int[arr.length];
-
         for (int i = arr.length - 1; i >= 0; i--) {
-            output[i] = max;
-            max = Math.max(max, arr[i]);
+            int temp = arr[i];
+            arr[i] = max;
+            max = Math.max(max, temp);
         }
-
-        return output;
+        return arr;
     }
 }
 ```
@@ -79,7 +144,9 @@ class Solution {
 
 > Review
 
-* 10분 소요
+* 우선순위 큐 사용 시 특정 키값으로 정렬하는 코드를 정리해놔야겠다.
+
+  매번 사용할 때마다 헷갈리네 ㅎㅎ
 
 
 ---
