@@ -50,7 +50,7 @@ author: goodGid
 
 ---
 
-### S3 생성
+### Bucket 생성
 
 > Step 1 
 
@@ -78,6 +78,8 @@ author: goodGid
   그런데 만약 본인의 서비스가 외부 이미지 참조가 있다면 
 
   상황에 맞게 Public Access를 허용시킨다.
+
+  설정 방법은 ["AWS S3 Bucket에 있는 파일에 대해 Public Access 하는 방법"]({{site.url}}/AWS-S3-File-Public-Access/)글 을 참고하자.
 
 * 추가로 필요한 설정이 있다면 마무리 후 버켓을 생성한다.
 
