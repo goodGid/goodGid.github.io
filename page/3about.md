@@ -106,6 +106,14 @@ type: page
 
 ## Time Line
 
+### 2022
+
+* 　03. 13 KakaoPay QR 코드 추가 // Commit : 386cd9a7
+
+* 　03. 13 [Buy me Coffee](https://www.buymeacoffee.com/equEhZO) 제거 // Commit : af16243d
+
+* 　03. 04 ~ 03. 06	[UNITHON 8TH - 유니톤 대회 참여](https://www.facebook.com/unithonWithU/)
+
 ### 2021
 
 * 　12. 23 [[2021년] 2번째 구글 애드센스(Google Adsense) $100를 돌파하다.]({{site.url}}/2021-Google-Adsense-Reach-100-Dollar)
