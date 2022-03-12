@@ -112,7 +112,7 @@ class Node implements Comparable<Node> {
 
 ### String 문법
 
-* String에서 i번째 값 읽어오기
+**String에서 i번째 값 읽어오기**
 
 ``` java
 String s = "abc";
@@ -121,7 +121,7 @@ System.out.println(s.charAt(0)); // a
 
 ---
 
-* String에서 범위로 잘라내기
+**String에서 범위로 잘라내기**
 
   ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
 
@@ -137,7 +137,7 @@ public String substring(int beginIndex, int endIndex) { ... }
 
 ### Character 문법
 
-* 숫자를 나타내는 Character를 int 값으로 변환
+**숫자를 나타내는 Character를 int 값으로 변환**
 
   ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
 
@@ -148,7 +148,7 @@ System.out.println(c - 48); // 9 출력
 
 ---
 
-* 주어진 Character가 알파벳인지 숫자인지 체크
+**주어진 Character가 알파벳인지 숫자인지 체크**
 
   ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
 
@@ -163,7 +163,7 @@ if (Character.isDigit(s.charAt(head))) { ... }
 
 ### List 사용
 
-* List 선언과 동시에 값 할당
+**List 선언과 동시에 값 할당**
 
 ``` java
 // 1. JDK 5 이상에서 사용 가능
@@ -182,3 +182,64 @@ List<String> list = new ArrayList<String>() {
     }
 };
 ```
+
+---
+
+### Map & Set 
+
+**Map 반복문**
+
+``` java
+Map<String, String> map = new HashMap<>();
+
+map.put("K3", "V3");
+map.put("K1", "V1");
+map.put("K2", "V2");
+
+// Case 1
+Iterator<String> keys = map.keySet().iterator();
+while (keys.hasNext()) {
+    String key = keys.next();
+    System.out.println(key + " " + map.get(key));
+}
+
+// Case 2
+for (Map.Entry<String, String> elem : map.entrySet()) {
+    System.out.println(elem.getKey() + " " + elem.getValue());
+}
+
+// Case 3
+for (String key : map.keySet()) {
+    System.out.println(key + " " + map.get(key));
+}
+
+// Output - 3가지 방법 다 동일
+K2 V2
+K1 V1
+K3 V3
+```
+
+* 출력 시 순서는 보장되지 않는다.
+
+
+---
+
+**Set 반복문**
+
+``` java
+int[] nums = { 12, 5, 28, 42, -1 };
+
+Set<Integer> set = new HashSet<>();
+
+for (int num : nums) {
+    set.add(num);
+}
+
+Iterator<Integer> it = set.iterator();
+while (it.hasNext()) {
+    Integer originValue = it.next();
+    System.out.print(originValue + " "); // -1 5 42 12 28 
+}
+```
+
+* 출력 시 순서는 보장되지 않는다.
