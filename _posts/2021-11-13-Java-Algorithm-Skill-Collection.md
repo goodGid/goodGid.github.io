@@ -185,7 +185,7 @@ List<String> list = new ArrayList<String>() {
 
 ---
 
-### Map & Set 
+### Map
 
 **Map 반복문**
 
@@ -221,8 +221,95 @@ K3 V3
 
 * 출력 시 순서는 보장되지 않는다.
 
+---
+
+**입력 순서가 보장되는 Map**
+
+``` java
+Map<String, String> map = new LinkedHashMap<>(3, 0.75f, true);
+
+map.put("K3", "V3");
+map.put("K1", "V1");
+map.put("K2", "V2");
+
+// Case 1
+// ConcurrentModificationException 발생  
+// 원인 : map.get( ) 코드 
+// map.get( )를 사용하지 않으면 Exception이 발생하지 않는다.
+Iterator<String> keys = map.keySet().iterator();
+while (keys.hasNext()) {
+    String key = keys.next();
+    System.out.println(key + " " + map.get(key));
+}
+
+// Case 2
+for (Map.Entry<String, String> elem : map.entrySet()) {
+    System.out.println(elem.getKey() + " " + elem.getValue());
+}
+
+// Case 3
+// ConcurrentModificationException 발생  
+// 원인 : map.get( ) 코드 
+// map.get( )를 사용하지 않으면 Exception이 발생하지 않는다.
+for (String key : map.keySet()) {
+    System.out.println(key + " " + map.get(key));
+}
+
+// Output
+K3 V3
+K1 V1
+K2 V2
+```
+
+* Case 1과 Case 3 방식으로 출력하면 "K3" 값은 출력되고 
+
+  그 다음에 ConcurrentModificationException이 발생한다.
+
+  명확한 이유를 분석하진 않았고 그냥 느낌만 파악하고 넘어갔다.
+
+``` java
+// java.util.LinkedHashMap#get
+public V get(Object key) {
+    Node<K,V> e;
+    if ((e = getNode(hash(key), key)) == null)
+        return null;
+    if (accessOrder)
+        afterNodeAccess(e); // <-- [Here] : map.get( ) 호출 시 afterNodeAccess( ) 호출
+    return e.value;
+}
+
+// java.util.LinkedHashMap#afterNodeAccess
+void afterNodeAccess(Node<K,V> e) { // move node to last
+    LinkedHashMap.Entry<K,V> last;
+    if (accessOrder && (last = tail) != e) {
+        ...
+        ++modCount; // <-- [Here] : modCount 값을 증가시킨다.
+    }
+}
+
+// java.util.LinkedHashMap.LinkedValueIterator#next
+final class LinkedKeyIterator extends LinkedHashIterator
+    implements Iterator<K> {
+    public final K next() { return nextNode().getKey(); }  // <-- [Here] : nextNode( ) 호출
+}
+
+// java.util.LinkedHashMap.LinkedHashIterator#nextNode
+final LinkedHashMap.Entry<K,V> nextNode() {
+    LinkedHashMap.Entry<K,V> e = next;
+    if (modCount != expectedModCount) // <-- [Here] : 증가된 modCount로 인해 Exception 발생
+        throw new ConcurrentModificationException();
+    if (e == null)
+        throw new NoSuchElementException();
+    current = e;
+    next = e.after;
+    return e;
+}
+```
+
 
 ---
+
+### Set
 
 **Set 반복문**
 
