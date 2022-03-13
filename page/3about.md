@@ -108,7 +108,7 @@ type: page
 
 ### 2022
 
-* 　03. 13 KakaoPay QR 코드 추가 // [Commit : 97518fa](https://github.com/goodGid/goodGid.github.io/pull/2)
+* 　03. 13 [KakaoPay QR 코드 추가]({{site.url}}/KakaoPay-QR-Code) // [Commit : 97518fa](https://github.com/goodGid/goodGid.github.io/pull/2)
 
 * 　03. 13 [Buy me Coffee](https://www.buymeacoffee.com/equEhZO) 제거 // Commit : af16243d
 
