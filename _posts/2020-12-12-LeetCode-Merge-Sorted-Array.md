@@ -115,6 +115,91 @@ class Solution {
 
 ---
 
+### [3] Code (22. 03. 13) (x)
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 43.4 MB
+// Ref : https://leetcode.com/submissions/detail/658848054
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+        int idx = m + n - 1;
+
+        while (true) {
+            if (m == 0 && n == 0) {
+                break;
+            } else if (m == 0) {
+                nums1[idx] = nums2[n - 1];
+                idx--;
+                n--;
+                continue;
+            } else if (n == 0) {
+                nums1[idx] = nums1[m - 1];
+                idx--;
+                m--;
+                continue;
+            }
+
+            if (nums1[m - 1] >= nums2[n - 1]) {
+                nums1[idx] = nums1[m - 1];
+                idx--;
+                m--;
+            } else {
+                nums1[idx] = nums2[n - 1];
+                idx--;
+                n--;
+            }
+        }
+    }
+}
+```
+
+* Reference Code를 보고 내 코드를 보면 한없이 작아지는 느낌... ㅠ_ㅠ
+
+---
+
+> Reference Code
+
+**Code 1**
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 39 MB
+// Ref : https://leetcode.com/submissions/detail/429851648
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+        int i = m - 1;
+        int j = n - 1;
+
+        for (int k = m + n - 1; k >= 0; k--) {
+            if (i < 0) {
+                nums1[k] = nums2[j--];
+            } else if (j < 0) {
+                nums1[k] = nums1[i--];
+            } else if (nums1[i] < nums2[j]) {
+                nums1[k] = nums2[j--];
+            } else {
+                nums1[k] = nums1[i--];
+            }
+        }
+    }
+}
+```
+
+* 내가 푼 코드에서 idx 변수 역할을 int k가 대신한다.
+
+  위 코드가 내 코드보다 깔끔하다.
+
+---
+
+> Review
+
+* 조금 더 깔끔한 코딩을 하고 싶다.
+
+---
+
 ## Reference
 
 * [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
