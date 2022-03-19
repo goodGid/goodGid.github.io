@@ -107,12 +107,55 @@ class Solution {
 
 ---
 
-
 > Review
 
 * 이 문제를 풀면서 현타가 왔다.
 
   과연 이걸 스스로 힘으로 풀 수 있었을까?... ㅠ ㅠ
+
+---
+
+### [2] Code (22. 03. 20)
+
+*Need to Retry -> 장고끝에 풀었지만 다시 풀어보자.*
+
+``` java
+// Runtime: 2 ms
+// Memory Usage: 45.1 MB
+// Ref : https://leetcode.com/submissions/detail/663091562
+class Solution {
+    public int maxProduct(int[] nums) {
+        int ans = -11;
+        int max = 1;
+        int min = 1;
+
+        for (int i : nums) {
+            int tempMax = max;
+            int tempMin = min;
+            max = Math.max(i, Math.max(tempMax * i, tempMin * i));
+            min = Math.min(i, Math.min(tempMax * i, tempMin * i));
+            ans = Math.max(ans, max);
+        }
+
+        return ans;
+    }
+}
+```
+
+* 총 30분 + @ 소요
+
+* [2,-5,-2,-4,3] 케이스에서 **또** 막혔다.
+
+  그리고 로직을 수정했다.
+
+  그리고 포기하려 했다가 다시 붙잡았는데 풀었다. !!!
+  
+---
+
+> Review
+
+* 포기하려 했지만 포기하지 않고 성공했더니 매우 뿌듯하다. 😀
+
 
 ---
 
