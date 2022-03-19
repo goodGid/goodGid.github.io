@@ -90,6 +90,59 @@ class Solution {
 
   그리고 아이디어를 떠올렸고 다행히 1번에 맞췄다.
 
+---
+
+### [2] Code (22. 03. 20)
+
+*Need to Retry -> 맞혔으나 다시 한 번 풀어보자.*
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 42 MB
+// Ref : https://leetcode.com/submissions/detail/663115137 
+class Solution {
+    public int search(int[] n, int target) {
+        int l = 0;
+        int r = n.length - 1;
+        int m;
+
+        while (l <= r) {
+            m = (l + r) / 2;
+
+            if (n[m] == target) {
+                return m;
+            }
+
+            if (n[l] <= n[m]) {
+                if (n[l] <= target && target <= n[m]) {
+                    r = m - 1;
+                } else {
+                    l = m + 1;
+                }
+            } else {
+                if (n[m] <= target && target <= n[r]) {
+                    l = m + 1;
+                } else {
+                    r = m - 1;
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
+
+---
+
+> Review
+
+* 25분 소요
+
+* 정답 코드 템플릿이 어렴풋이 떠올랐다.
+
+  그래도 디테일한 부분은 스스로 떠올렸다.
+
+  그리고 이런 문제에서 부등호 여부를 판단하는 건 언제나 어려운 거 같다.
 
 ---
 
