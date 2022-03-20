@@ -30,13 +30,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .modal-content {
   /* background-color: #fefefe; */
   margin: auto;
-  padding: 20px;
+  /* padding: 20px; */
   border: 1px solid #888;
-  width: 50%;
+  width: 15%;
+  height: 15%;
   text-align: center;
   color: aliceblue;
 }
 
 .kakaopay-qr-img {
-  width: 30%;
+  width: 100%;
 }
