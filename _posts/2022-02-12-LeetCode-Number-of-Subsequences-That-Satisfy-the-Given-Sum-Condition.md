@@ -125,6 +125,32 @@ class Solution {
 
 ---
 
+### [2] Code (22. 03. 26)
+
+*Need to Retry -> 못풀었다.*
+
+``` java
+// n/a
+```
+
+---
+
+> Wrong Reason
+
+* 2포인터 접근 + 어렴풋하게 2의 제곱 아이디어를 떠올렸는데 거기서 더 나아가지 못했다.
+
+  정답 코드를 보고 한 스텝만 더 나아갔으면 맞췄을 텐데라는 아쉬움이 남더라. ㅠ ㅠ
+
+---
+
+> Review
+
+* 흥미로운 문제였다.
+
+  다음엔 꼭 맞추자 !
+
+---
+
 ## Reference
 
 * [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
