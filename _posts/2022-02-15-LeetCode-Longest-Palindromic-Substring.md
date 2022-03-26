@@ -131,7 +131,112 @@ class Solution {
 * 나의 풀이보다 효율성이 좋다.
 
   위 코드에 대한 설명은 [블로그](https://haningya.tistory.com/111)를 참고하자.
-  
+
+---
+
+### [2] Code (22. 03. 26)
+
+*Need to Retry -> 도전했으나 실패...*
+
+``` java
+// Ref : https://leetcode.com/submissions/detail/667601387
+class Solution {
+    public String longestPalindrome(String s) {
+        int size = s.length();
+        int l = 0;
+        int r = 0;
+        int max = 0;
+        String ans = null;
+
+        Set<Character> set = new HashSet<>();
+
+        while (r < size) {
+            char head = s.charAt(r);
+            if (l == r) {
+                if (max < 1) {
+                    max = 1;
+                    ans = head + "";
+                }
+                set.add(head);
+                r++;
+                continue;
+            }
+
+            if (set.contains(head)) {
+                String subS = s.substring(l, r + 1);
+                if (isPal(subS)) {
+                    r++;
+                    if (max < subS.length()) {
+                        max = subS.length();
+                        ans = subS;
+                    }
+                } else {
+                    set.remove(s.charAt(l));
+                    l++;
+                }
+            } else {
+                set.add(head);
+                r++;
+            }
+        }
+
+        return ans;
+    }
+
+    private boolean isPal(String s) {
+        int size = s.length();
+
+        int l = 0;
+        int r = size - 1;
+
+        while (l <= r) {
+            char leftChar = s.charAt(l);
+            char rightChar = s.charAt(r);
+
+            if (leftChar == rightChar) {
+                l++;
+                r--;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+```
+- 좌/우 index가 같으면 우측++
+- 우측이 범위를 벗어나면 종료
+- 우측에 중복 값이 O -> 계산 -> 조건 충족 O -> 우측 ++
+- 우측에 중복 값이 O -> 계산 -> 조건 충족 X -> 좌측 ++
+- 우측에 중복 값이 X -> 우측 ++
+```
+
+* 중복 값 체크는 Set 자료구조를 사용
+
+---
+
+> Wrong Reason
+
+* "abcba" 케이스에 대해서 "bcb"만 출력을 하였다.
+
+---
+
+> Reference Code
+
+* [[1] Code -> Reference Code]({{site.url}}/LeetCode-Longest-Palindromic-Substring/#1-code-22-02-15)를 참고하자.
+
+---
+
+> Review
+
+* Palindromic 유형에 대한 솔루션 코드를 잘 숙지하자 !
+
 
 ---
 
