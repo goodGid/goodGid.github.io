@@ -137,6 +137,51 @@ class Solution {
 
 ---
 
+### [3] Code (22. 03. 26) (x)
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 42.8 MB
+// Ref : https://leetcode.com/submissions/detail/667638898
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode temp = new ListNode();
+        temp.next = head;
+
+        ListNode node1 = temp;
+        ListNode node2 = temp;
+
+        for (int i = 0; i < n; i++) {
+            node2 = node2.next;
+        }
+
+        while (node2.next != null) {
+            node1 = node1.next;
+            node2 = node2.next;
+        }
+
+        node1.next = node1.next.next;
+
+        return temp.next;
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+* 문제를 보자마자 아이디어가 떠올랐고 어렵지 않게 풀었다.
+
+---
+
+> Review
+
+* 10분 소요
+
+
+---
+
 ## Reference
 
 * [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
