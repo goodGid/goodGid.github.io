@@ -30,7 +30,7 @@ Output: 4
 
 ### [1] Code (22. 03. 27)
 
-*Need to Retry*
+*Need to Retry -> 효율적으로 다시 풀어보자.*
 
 ``` java
 // Runtime: 770 ms
