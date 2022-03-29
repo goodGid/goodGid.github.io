@@ -77,6 +77,75 @@ class Solution {
 
 ---
 
+### [2] Code (22. 03. 29) (x)
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 41.6 MB
+// Ref : https://leetcode.com/submissions/detail/669684158
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        if (target > nums[nums.length - 1]) {
+            return nums.length;
+        }
+        int pos = -1;
+
+        int l = 0;
+        int r = nums.length;
+        int m;
+
+        while (l <= r) {
+            m = (l + r) / 2;
+            if (nums[m] == target) {
+                pos = m;
+                break;
+            }
+
+            if (nums[m] > target) {
+                r = m - 1;
+            } else {
+                l = m + 1;
+            }
+        }
+
+        if (pos == -1) {
+            pos = l;
+        }
+
+        return pos;
+    }
+}
+```
+
+* Reference Code는 매우 깔끔한데
+
+  내가 짠 코드는 깔끔한 느낌이 안 든다. ㅠ ㅠ
+
+---
+
+> Reference Code
+
+``` java
+// Ref : https://leetcode.com/problems/search-insert-position/discuss/15080/My-8-line-Java-solution
+class Solution {
+    public int searchInsert(int[] A, int target) {
+        int low = 0, high = A.length-1;
+        while(low<=high){
+            int mid = (low+high)/2;
+            if(A[mid] == target) return mid;
+            else if(A[mid] > target) high = mid-1;
+            else low = mid+1;
+        }
+        return low;
+    }
+}
+```
+
+* 왜 low를 return 하는지 궁금하다면 [댓글](https://leetcode.com/problems/search-insert-position/discuss/15080/My-8-line-Java-solution/156972)을 읽어보자.
+
+
+---
+
 ## Reference
 
 * [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
