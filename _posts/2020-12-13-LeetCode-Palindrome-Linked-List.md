@@ -195,6 +195,62 @@ n/a
 
 ---
 
+
+### [4] Code (22. 04. 02) (x)
+
+``` java
+// Runtime: 26 ms
+// Memory Usage: 102.7 MB
+// Ref : https://leetcode.com/submissions/detail/672054968
+class Solution {
+
+    boolean ans = true;
+    ListNode head;
+
+    public boolean isPalindrome(ListNode head) {
+        this.head = head;
+        solve(head);
+        return ans;
+    }
+
+    private void solve(ListNode node) {
+        if (node == null) {
+            return;
+        }
+
+        solve(node.next);
+        int val = node.val;
+        check(val);
+    }
+
+    private void check(int val) {
+        if (head.val != val) {
+            ans = false;
+        } else {
+            head = head.next;
+        }
+    }
+}
+```
+
+---
+
+> Algorithm Description
+
+* 재귀 방식 풀이
+
+  solve( ) 메소드에서 각 순간을 스냅 샷으로 담아서 palindrome을 비교
+
+---
+
+> Review
+
+* 10분 소요
+
+  굉장히 재밌는 문제였는데 반복적으로 풀다 보니 풀이가 쉽게 떠올랐다.
+
+---
+
 ## Reference
 
 * [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
