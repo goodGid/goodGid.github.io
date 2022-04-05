@@ -55,6 +55,8 @@ type: page
 
 ## About Blog
 
+* [2022 1Q Blog 기록하기]({{site.url}}/2022-1Q-Blog)
+
 * [2021 3Q ~ 4Q Blog 기록하기]({{site.url}}/2021-3Q-4Q-Blog)
 
 * [2021 2Q Blog 기록하기]({{site.url}}/2021-2Q-Blog)
@@ -112,7 +114,7 @@ type: page
 
 * 　03. 13 [Buy me Coffee](https://www.buymeacoffee.com/equEhZO) 제거 // Commit : af16243d
 
-* 　03. 04 ~ 03. 06	[UNITHON 8TH - 유니톤 대회 참여](https://www.facebook.com/unithonWithU/)
+* 　03. 04 ~ 03. 06	[UNITHON 8TH - 유니톤 대회 참여]({{site.url}}/2022-8th-Unithon)
 
 ### 2021
 
