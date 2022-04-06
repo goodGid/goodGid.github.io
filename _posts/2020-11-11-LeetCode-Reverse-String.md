@@ -29,7 +29,7 @@ Output: ["o","l","l","e","h"]
 
 ---
 
-### Code (20. 11. 11)
+### Code (20. 11. 11) (x)
 
 ``` java
 public void reverseString(char[] s) {
