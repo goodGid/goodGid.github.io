@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " HTTP을 사용한 통신 과정 "
+title:  " HTTP를 사용한 통신 과정 "
 categories: Network
 author: goodGid
 ---
