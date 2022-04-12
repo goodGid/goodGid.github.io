@@ -1,0 +1,81 @@
+---
+layout: post
+title:  " LeetCode : 881. Boats to Save People "
+categories: LeetCode
+author: goodGid
+use_math: true
+---
+* content
+{:toc}
+
+## [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people)
+
+### Problem
+
+```
+You are given an array people where people[i] is the weight of the ith person, and an infinite number of boats where each boat can carry a maximum weight of limit. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit.
+```
+
+
+---
+
+### Example
+
+```
+Input: people = [1,2], limit = 3
+Output: 1
+```
+
+---
+
+### [1] Code (22. 04. 12)
+
+*Need to Retry -> 문제 조건을 놓쳤다.*
+
+```
+1. PriorityQueue 사용 : https://leetcode.com/submissions/detail/678599497
+2. 2 포인터 : https://leetcode.com/submissions/detail/678614112
+```
+
+---
+
+> Check Point
+
+* Each boat carries at most two people at the same time
+
+---
+
+> Reference Code
+
+``` java
+// Runtime: 20 ms
+// Memory Usage: 65.3 MB
+// Ref : https://leetcode.com/submissions/detail/678614899
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        Arrays.sort(people);
+        int i = 0, j = people.length - 1;
+        int ans = 0;
+
+        while (i <= j) {
+            ans++;
+            if (people[i] + people[j] <= limit) {i++;}
+            j--;
+        }
+
+        return ans;
+    }
+}
+```
+
+---
+
+> Review
+
+* 동시에 최대 2명까지만 이동할 수 있다는 조건을 간과했다.
+
+---
+
+## Reference
+
+* [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people)
