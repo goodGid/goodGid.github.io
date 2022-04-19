@@ -260,6 +260,75 @@ ans.addAll(map.values());
 
 ---
 
+
+### [3] Code (22. 04. 20)
+
+*Need to Retry -> Java 문법*
+
+``` java
+// Runtime: 9 ms
+// Memory Usage: 45.1 MB
+// Ref : https://leetcode.com/submissions/detail/683742636
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        /*
+        1 <= strs.length <= 10^4
+        0 <= strs[i].length <= 100
+        */
+
+        HashMap<String, List<String>> map = new HashMap<>();
+
+        for (String s : strs) {
+
+            char tempArray[] = s.toCharArray();
+            Arrays.sort(tempArray);
+            String key = new String(tempArray);
+
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
+            map.computeIfPresent(key, (k, v) -> {
+                v.add(s);
+                return v;
+            });
+        }
+
+        List<List<String>> ans = new ArrayList<>();
+
+        Iterator<String> iterator = map.keySet().iterator();
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            ans.add(map.get(key));
+        }
+        return ans;
+    }
+}
+```
+
+---
+
+> Concern Point
+
+* 위 문제에서 적었던 고민 포인트들과 동일하다.
+
+```
+1. map.computeIfPresent 사용법
+2. String을 알파벳 순서로 정렬하기
+3. map.value들을 list에 추가하기
+```
+
+---
+
+> Review
+
+* 15분 소요
+
+  아이디어를 떠올리는 데는 5분도 안 걸렸다.
+
+  그런데 Java 문법을 적절하게 사용하는 데 걸린 시간이 10분 이상 걸렸다.
+
+---
+
 ## Reference
 
 * [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
