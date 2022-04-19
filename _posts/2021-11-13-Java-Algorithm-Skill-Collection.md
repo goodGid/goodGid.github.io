@@ -30,7 +30,7 @@ author: goodGid
 
 ### PriorityQueue
 
-**내림차순 + PriorityQueue 사용 방법**
+#### 내림차순 + PriorityQueue 사용 방법
 
 ``` java
 PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
@@ -49,7 +49,7 @@ public PriorityQueue(Comparator<? super E> comparator) {
 
 ---
 
-**특정 키 값으로 정렬하기**
+#### 특정 키 값으로 정렬하기
 
 ``` java
 public class Main {
@@ -110,9 +110,9 @@ class Node implements Comparable<Node> {
 
 ---
 
-### String 문법
+### String
 
-**String에서 i번째 값 읽어오기**
+#### i번째 값 읽어오기
 
 ``` java
 String s = "abc";
@@ -121,9 +121,7 @@ System.out.println(s.charAt(0)); // a
 
 ---
 
-**String에서 범위로 잘라내기**
-
-  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+#### 범위로 잘라내기
 
 ``` java
 public String substring(int beginIndex, int endIndex) { ... }
@@ -133,37 +131,50 @@ public String substring(int beginIndex, int endIndex) { ... }
 
   endIndex은 미포함
 
+* ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+  
 ---
 
-### Character 문법
+#### 알파벳 순서로 정렬
 
-**숫자를 나타내는 Character를 int 값으로 변환**
+``` java
+char tempArray[] = s.toCharArray();
+Arrays.sort(tempArray);
+1) String key = String.valueOf(tempArray);
+2) String key = new String(tempArray);
+```
 
-  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+* ex) [LeetCode : 49. Group Anagrams]({{site.url}}/LeetCode-Group-Anagrams/#49-group-anagrams)
+
+---
+
+### Character
+
+#### 숫자를 나타내는 Character -> int 변환
 
 ``` java
 char c = '9';
 System.out.println(c - 48); // 9 출력
 ```
 
+* ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+
 ---
 
-**주어진 Character가 알파벳인지 숫자인지 체크**
-
-  ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
+#### 주어진 Character가 알파벳인지 숫자인지 체크
 
 ``` java
 if (Character.isAlphabetic(s.charAt(head))) { ... }
 if (Character.isDigit(s.charAt(head))) { ... }
 ```
 
-
+* ex) [LeetCode : 394. Decode String]({{site.url}}/LeetCode-Decode-String)
 
 ---
 
 ### List 사용
 
-**List 선언과 동시에 값 할당**
+#### List 선언과 동시에 값 할당
 
 ``` java
 // 1. JDK 5 이상에서 사용 가능
@@ -187,7 +198,7 @@ List<String> list = new ArrayList<String>() {
 
 ### Map
 
-**Map 반복문**
+#### Map 반복문
 
 ``` java
 Map<String, String> map = new HashMap<>();
@@ -223,7 +234,7 @@ K3 V3
 
 ---
 
-**입력 순서가 보장되는 Map**
+#### 입력 순서가 보장되는 Map
 
 ``` java
 Map<String, String> map = new LinkedHashMap<>(3, 0.75f, true);
@@ -306,12 +317,31 @@ final LinkedHashMap.Entry<K,V> nextNode() {
 }
 ```
 
+---
+
+#### Map에 있는 값들을 List에 담기
+
+``` java
+// AS-IS
+List<List<String>> answer = new ArrayList<>();
+for (Map.Entry<String, List<String>> item : map.entrySet()) {
+    answer.add(new ArrayList<>(item.getValue()));
+}
+return answer;
+
+// TO-BE
+1. return new ArrayList(map.values());
+2. return answer.addAll(map.values());
+```
+
+* ex) [LeetCode : 49. Group Anagrams]({{site.url}}/LeetCode-Group-Anagrams/#49-group-anagrams)
+
 
 ---
 
 ### Set
 
-**Set 반복문**
+#### Set 반복문
 
 ``` java
 int[] nums = { 12, 5, 28, 42, -1 };
