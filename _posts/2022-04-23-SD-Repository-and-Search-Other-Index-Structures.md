@@ -95,7 +95,7 @@ if ( 새로운 값 크기 < 이전 값 크기 ) {
 
 * 다중 컬럭 인덱스 중 가장 일반적인 유형은 **결합 인덱스(Concatenated Index)**이다.
 
-  Concatenated Index는 하나의 컬럼에 다른 컬럼을 추가하는 바익으로
+  Concatenated Index는 하나의 컬럼에 다른 컬럼을 추가하는 방식으로
 
   하나의 키에 여러 필드를 결합한다.
 

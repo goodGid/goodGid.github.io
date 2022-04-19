@@ -179,7 +179,7 @@ author: goodGid
 
 ---
 
-#### 레벨 컴팩션 (Leveld Compaction) 
+#### 레벨 컴팩션 (Level Compaction) 
 
 * 레벨 컴팩션은 키 범위를 더 작은 SS테이블로 나누고
 
