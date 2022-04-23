@@ -15,9 +15,9 @@ author: goodGid
 
 * 다만 몇 가지 조건을 충족시켜야 한다.
 
-  다양한 케이스를 직접 테스트하면서 정리해놓았으니 참고하고
+  시간이 없으신 분들은 **[Summary]({{site.url}}/Github-CODEOWNERS/#summary)**만 보고
 
-  반드시 **[Summary]({{site.url}}/Github-CODEOWNERS/#summary)**까지 보도록하자.
+  시간이 있다면 다양한 케이스를 직접 테스트하면서 정리해놓은 내용까지 함께 보는 걸 추천한다.
 
 
 
