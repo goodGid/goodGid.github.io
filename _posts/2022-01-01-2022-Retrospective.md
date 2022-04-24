@@ -183,3 +183,30 @@ author: goodGid
 > 220411 ~ 220417
 
 * [LeetCode : 881. Boats to Save People]({{site.url}}/LeetCode-Boats-to-Save-People/#1-code-22-04-12)
+
+* [LeetCode : 98. Validate Binary Search Tree]({{site.url}}/LeetCode-Validate-Binary-Search-Tree/#1-code-22-04-15)
+
+> 220418 ~ 220424
+
+* [LeetCode : 173. Binary Search Tree Iterator]({{site.url}}/LeetCode-Binary-Search-Tree-Iterator)
+
+* [LeetCode : 49. Group Anagrams]({{site.url}}/LeetCode-Group-Anagrams/#3-code-22-04-20)
+
+* [LeetCode : 704. Binary Search]({{site.url}}/LeetCode-Binary-Search/#1-code-22-04-20-x)
+
+* [LeetCode : 1029. Two City Scheduling]({{site.url}}/LeetCode-Two-City-Scheduling/#1-code-22-04-23)
+
+* [개발하면서 맞이했던 이슈(Issue)들 기록해두기]({{site.url}}/Record-the-issues-i-encountered-while-developing)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : DB를 강력하게 만드는 데이터 구조]({{site.url}}/SD-Repository-and-Search-Data-Structures-that-Make-the-DB-powerful)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : SS테이블과 LSM 트리]({{site.url}}/SD-Repository-and-Search-SS-table-and-LSM-tree)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : B 트리]({{site.url}}/SD-Repository-and-Search-B-Tree)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : B 트리와 LSM 트리 비교]({{site.url}}/SD-Repository-and-Search-Comparison-of-B-tree-and-LSM-tree)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : 기타 색인 구조]({{site.url}}/SD-Repository-and-Search-Other-Index-Structures)
+
+* [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : 컬럼 지향 저장소]({{site.url}}/SD-Repository-and-Search-Column-Oriented-Storage)
+
