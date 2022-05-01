@@ -210,3 +210,8 @@ author: goodGid
 
 * [[데이터 중심 애플리케이션 설계] 3장. 저장소와 검색 : 컬럼 지향 저장소]({{site.url}}/SD-Repository-and-Search-Column-Oriented-Storage)
 
+> 220425 ~ 220501
+
+* [LeetCode : 73. Set Matrix Zeroes]({{site.url}}/LeetCode-Set-Matrix-Zeroes/#1-code-22-04-30)
+
+* [LeetCode : 56. Merge Intervals]({{site.url}}/LeetCode-Merge-Intervals/#1-code-22-04-30)
