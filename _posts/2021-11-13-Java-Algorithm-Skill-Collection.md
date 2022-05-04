@@ -54,6 +54,7 @@ public PriorityQueue(Comparator<? super E> comparator) {
 ``` java
 public class Main {
     public static void main(String[] args) {
+        // 내림차순
         PriorityQueue<Node> pq1 = new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
         pq1.add(new Node(1, 1)); pq1.add(new Node(2, 3)); pq1.add(new Node(3, 2));
         while (!pq1.isEmpty()) {
@@ -98,7 +99,8 @@ class Node implements Comparable<Node> {
 
     @Override
     public int compareTo(Node newNode) {
-        return newNode.value - value;
+        return newNode.value - value; // 내림차순
+        return value - newNode.value; // 오름차순
     }
 }
 ```
