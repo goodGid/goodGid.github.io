@@ -15,6 +15,8 @@ author: goodGid
 
 2. [파티셔닝과 보조 인덱스]({{site.url}}/SD-Partitioning-and-Secondary-Indexes)
 
+3. [파티션 재균형화]({{site.url}}/SD-Partitioning-Rebalance)
+
 ---
 
 ## Goal

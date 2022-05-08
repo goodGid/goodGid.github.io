@@ -13,6 +13,10 @@ author: goodGid
 
 1. [키-값 데이터 파티셔닝]({{site.url}}/SD-Partitioning-Key-Value-Data)
 
+2. [파티셔닝과 보조 인덱스]({{site.url}}/SD-Partitioning-and-Secondary-Indexes)
+
+3. [파티션 재균형화]({{site.url}}/SD-Partitioning-Rebalance)
+
 ---
 
 ## Goal
