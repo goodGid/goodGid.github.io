@@ -106,7 +106,76 @@ class Solution {
 
   다음에 다시 풀어보도록 하자 !
 
+---
 
+
+
+### [2] Code (22. 05. 08)
+
+*Need to Retry -> 위상정렬로 풀었지만 다시 한 번 더 풀어보자.*
+
+``` java
+// Runtime: 7 ms
+// Memory Usage: 48.8 MB
+// Ref : https://leetcode.com/submissions/detail/695495001
+class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int size = prerequisites.length;
+        Queue<Integer> q = new LinkedList<>();
+        int[] arr = new int[numCourses];
+        List<List<Integer>> list = new ArrayList<>();
+
+        for (int i = 0; i < numCourses; i++) {
+            list.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < size; i++) {
+            arr[prerequisites[i][0]]++;
+            list.get(prerequisites[i][1]).add(prerequisites[i][0]);
+        }
+
+        for (int i = 0; i < numCourses; i++) {
+            if (arr[i] == 0) {
+                q.add(i);
+            }
+        }
+
+        int[] ans = new int[numCourses];
+        int idx = 0;
+        while (!q.isEmpty()) {
+            int top = q.poll();
+            ans[idx++] = top;
+
+            for (int i : list.get(top)) {
+                arr[i]--;
+                if (arr[i] == 0) {
+                    q.add(i);
+                }
+            }
+        }
+
+        if (idx != numCourses) {
+            return new int[] {};
+        }
+
+        return ans;
+    }
+}
+```
+
+---
+
+> Review
+
+* 15분 소요
+
+* 이전에 풀었던 기억이 나서 
+
+  핵심적인 로직들도 막힘없이 떠올랐고 어렵지 않게 풀었다.
+
+  그런데 자잘한 실수들이 있었다.
+
+  다음에는 비슷한 실수하지 않도록 풀어보자 !
 
 ---
 
