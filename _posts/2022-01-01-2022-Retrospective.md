@@ -215,3 +215,20 @@ author: goodGid
 * [LeetCode : 73. Set Matrix Zeroes]({{site.url}}/LeetCode-Set-Matrix-Zeroes/#1-code-22-04-30)
 
 * [LeetCode : 56. Merge Intervals]({{site.url}}/LeetCode-Merge-Intervals/#1-code-22-04-30)
+
+> 220502 ~ 220508
+
+* [LeetCode : 410. Split Array Largest Sum]({{site.url}}/LeetCode-Split-Array-Largest-Sum/#1-code-22-04-30)
+
+* [LeetCode : 680. Valid Palindrome II]({{site.url}}/LeetCode-Valid-Palindrome-II/#1-code-22-05-02)
+
+* [LeetCode : 496. Next Greater Element I]({{site.url}}/LeetCode-Next-Greater-Element-I/#1-code-22-05-04)
+
+* [LeetCode : 1094. Car Pooling]({{site.url}}/LeetCode-Car-Pooling/#1-code-22-05-04-x)
+
+* [LeetCode : 210. Course Schedule II]({{site.url}}/LeetCode-Course-Schedule-II/#2-code-22-05-08)
+
+* [[데이터 중심 애플리케이션 설계] 6장. 파티셔닝 : 1. 키-값 데이터 파티셔닝]({{site.url}}/SD-Partitioning-Key-Value-Data)
+
+* [[데이터 중심 애플리케이션 설계] 6장. 파티셔닝 : 2. 파티셔닝과 보조 인덱스]({{site.url}}/SD-Partitioning-and-Secondary-Indexes)
+
