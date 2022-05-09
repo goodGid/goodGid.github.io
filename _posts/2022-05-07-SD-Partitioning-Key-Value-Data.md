@@ -17,6 +17,8 @@ author: goodGid
 
 3. [파티션 재균형화]({{site.url}}/SD-Partitioning-Rebalance)
 
+4. [요청 라우팅]({{site.url}}/SD-Partitioning-Request-Routing)
+
 ---
 
 ## Goal
