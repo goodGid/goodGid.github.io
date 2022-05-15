@@ -232,3 +232,15 @@ author: goodGid
 
 * [[데이터 중심 애플리케이션 설계] 6장. 파티셔닝 : 2. 파티셔닝과 보조 인덱스]({{site.url}}/SD-Partitioning-and-Secondary-Indexes)
 
+> 220509 ~ 220515
+
+* [LeetCode : 4. Median of Two Sorted Arrays]({{site.url}}/LeetCode-Median-of-Two-Sorted-Arrays/#1-code-22-05-14)
+
+* [LeetCode : 802. Find Eventual Safe States]({{site.url}}/LeetCode-Find-Eventual-Safe-States/#1-code-22-05-15)
+
+* [[데이터 중심 애플리케이션 설계] 6장. 파티셔닝 : 3. 파티션 재균형화]({{site.url}}/SD-Partitioning-Rebalance)
+
+* [[데이터 중심 애플리케이션 설계] 6장. 파티셔닝 : 4. 요청 라우팅]({{site.url}}/SD-Partitioning-Request-Routing)
+
+* [이직에 관하여 - IT 서비스 회사로 이직을 희망하시는 분들에게]({{site.url}}/About-job-change-For-those-who-want-to-move-to-a-IT-company)
+
