@@ -150,6 +150,36 @@ Arrays.sort(tempArray);
 
 ---
 
+#### String -> Integer 파싱
+
+* 직접 파싱
+
+``` java
+int flag = 1;
+int val = 0;
+char[] chars = s.toCharArray();
+
+for (char c : chars) {
+    if (c == '-') {
+        flag = -1;
+        continue;
+    }
+    val *= 10;
+    val += c - '0';
+}
+val *= flag;
+```
+
+* 내장 메소드 사용
+
+``` java
+Integer.parseInt(s)
+```
+
+* ex) [LeetCode : 682. Baseball Game]({{site.url}}/LeetCode-Baseball-Game/#1-code-22-05-15-x)
+
+---
+
 ### Character
 
 #### 숫자를 나타내는 Character -> int 변환
