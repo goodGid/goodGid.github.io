@@ -48,9 +48,7 @@ boolean isNumberOrAlphabet(String s){
 
   정규표현식용 Pattern 인스턴스는 
   
-  1번 사용되고 버려져서 곧바로 GC의 대상이 되기 때문이다.
-
-* 즉 **비효율적**이다.
+  1번 사용되고 버려져서 곧바로 GC의 대상이 되므로 **비효율적**이다.
 
 ---
 
@@ -60,9 +58,13 @@ boolean isNumberOrAlphabet(String s){
 
 * 방법은 매우 단순하다.
 
-* 필요한 정규표현식을 표현하는 **불변 객체** Pattern 인스턴스를
+* 정규표현식을 표현하는 **불변 객체**인
 
-  클래스 초기화 과정에서 생성해두고 나중에 재활용하면 된다.
+  Pattern 인스턴스를 클래스 초기화 과정에서 생성해두고 나중에 재활용하면 된다.
+
+* 실제로 Oracle Docs를 보면 다음과 같은 문구가 있다.
+
+  [If a pattern is to be used multiple times, compiling it once and reusing it will be more efficient than invoking this method each time.](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html#matches(java.lang.String,%20java.lang.CharSequence))
 
 ---
 
@@ -84,11 +86,11 @@ public class regex {
 
 * 코딩하면서 정규표현식을 많이 사용하는데
 
-  앞으로는 성능을 고려한 코딩을 하도록 하자.
+  성능적으로 개선 포인트가 없는지 살펴보면서 코딩을 해보면 좋지 않을까 싶다.
 
-* 그리고 단순히 *기능이 동작하니까 됐다.* 는 자세가 아닌
+* 단순히 *기능이 동작하니까 됐다.* 는 자세보단
 
-  이런 디테일까지 고려하는 자세가 쌓이면 코딩을 하는 데 있어 큰 차이를 만든다고 생각한다.
+  디테일함까지 고려해보는 자세가 쌓이면 코딩을 하는 데 있어 큰 차이를 만든다고 생각한다.
 
 ---
 
