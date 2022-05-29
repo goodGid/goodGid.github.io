@@ -244,3 +244,22 @@ author: goodGid
 
 * [이직에 관하여 - IT 서비스 회사로 이직을 희망하시는 분들에게]({{site.url}}/About-job-change-For-those-who-want-to-move-to-a-IT-company)
 
+> 220516 ~ 220522
+
+* [LeetCode : 47. Permutations II]({{site.url}}/LeetCode-Permutations-II/#1-code-22-05-22)
+
+> 220523 ~ 220530
+
+* [LeetCode : 131. Palindrome Partitioning]({{site.url}}/LeetCode-Palindrome-Partitioning/#1-code-22-05-23)
+
+* [LeetCode : 116. Populating Next Right Pointers in Each Node]({{site.url}}/LeetCode-Populating-Next-Right-Pointers-in-Each-Node/#1-code-22-05-23)
+
+* [LeetCode : 1260. Shift 2D Grid]({{site.url}}/LeetCode-Shift-2D-Grid/#1-code-22-05-23)
+
+* [LeetCode : 538. Convert BST to Greater Tree]({{site.url}}/LeetCode-Convert-BST-to-Greater-Tree/#1-code-22-05-28-x)
+
+* [LeetCode : 86. Partition List]({{site.url}}/LeetCode-Partition-List/#1-code-22-05-29-x)
+
+* [LeetCode : 934. Shortest Bridge]({{site.url}}/LeetCode-Shortest-Bridge/#1-code-22-05-29)
+
+* [LeetCode : 148. Sort List]({{site.url}}/LeetCode-Sort-List/#1-code-22-05-29)
