@@ -263,3 +263,13 @@ author: goodGid
 * [LeetCode : 934. Shortest Bridge]({{site.url}}/LeetCode-Shortest-Bridge/#1-code-22-05-29)
 
 * [LeetCode : 148. Sort List]({{site.url}}/LeetCode-Sort-List/#1-code-22-05-29)
+
+> 220531 ~ 220605
+
+* [LeetCode : 1209. Remove All Adjacent Duplicates in String II]({{site.url}}/LeetCode-Remove-All-Adjacent-Duplicates-in-String-II/#1-code-22-06-01-x)
+
+* [LeetCode : 380. Insert Delete GetRandom O(1)]({{site.url}}/LeetCode-Insert-Delete-GetRandom-O(1)/#1-code-22-06-01)
+
+* [LeetCode : 1143. Longest Common Subsequence]({{site.url}}/LeetCode-Longest-Common-Subsequence/#1-code-22-06-05)
+
+* [LeetCode : 138. Copy List with Random Pointer]({{site.url}}/)
