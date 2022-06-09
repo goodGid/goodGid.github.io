@@ -212,6 +212,40 @@ class Solution {
 
   iterative하게 풀어서 맞았지만 다시 한 번 풀어도 좋은 문제라고 생각이 든다.
 
+---
+
+### [4] Code (22. 06. 09) (x)
+
+``` java
+// Runtime: 3 ms
+// Memory Usage: 46 MB
+// Ref : https://leetcode.com/submissions/detail/718127294
+class Solution {
+    public int kthSmallest(TreeNode root, int k) {
+        List<Integer> list = new ArrayList<>();
+        recur(root, list);
+        return list.get(k-1);
+    }
+    
+    private void recur(TreeNode node, List<Integer> list) {
+        if (node == null) {
+            return ;
+        }        
+        recur(node.left, list);
+        list.add(node.val);
+        recur(node.right, list);
+    }
+}
+```
+
+---
+
+> Review
+
+* 5분 소요
+
+* iterative하게 풀려고 했는데 재귀가 먼저 떠올랐다.
+
 
 ---
 
