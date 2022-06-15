@@ -114,6 +114,127 @@ class Solution {
 
   lo + (hi - lo) / 2로 mid 값을 찾았다.
 
+---
+
+### [2] Code (22. 06. 16) (x)
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 47.8 MB
+// Ref : https://leetcode.com/submissions/detail/723148342
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int length = nums.length;
+        int l = 0;
+        int r = length-1;
+        int m = -1;
+        boolean isFindVal = false;
+        
+        while (l <= r) {
+            m = (l+r) / 2;
+            if (nums[m] == target) {
+                isFindVal = true;
+                break;
+            }
+            
+            if (target < nums[m]) {
+                r = m - 1;
+            } else {
+                l = m + 1;
+            }
+        }
+        
+        if (isFindVal == false) {
+            return new int[] {-1, -1};
+        }
+        
+        for (int i=m; i>=0; i--) {
+            if (nums[i] == target) {
+                l = i;
+            }
+        }
+        
+        for (int i=m; i<length;i ++) {
+            if (nums[i] == target) {
+                r = i;
+            }
+        }
+        
+        
+        return new int[] {l,r};
+    }
+}
+```
+
+* 이진 탐색으로 target이 존재하는 Index를 찾는다.
+
+  그리고 그 값을 기준으로 좌/우로 First/Last Index를 찾는다.
+
+---
+
+> Reference Code
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 47.4 MB
+// Ref : https://leetcode.com/submissions/detail/723151043
+// ref : https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/14734/Easy-java-O(logn)-solution
+
+public class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int[] result = new int[2];
+        result[0] = findFirst(nums, target);
+        result[1] = findLast(nums, target);
+        return result;
+    }
+
+    private int findFirst(int[] nums, int target) {
+        int idx = -1;
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] >= target) { // [1]
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+            if (nums[mid] == target) {idx = mid;}
+        }
+        return idx;
+    }
+
+    private int findLast(int[] nums, int target) {
+        int idx = -1;
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] <= target) { // [1]
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+            if (nums[mid] == target) {idx = mid;}
+        }
+        return idx;
+    }
+}
+```
+
+* [1] : target 값과 같은 Index를 찾으면 중지하는 게 아니라
+
+  start 혹은 end 값을 수정하여 탐색을 지속하게 한다.
+
+---
+
+> Review
+
+* 10 ~ 15분 소요
+
+* 아이디어는 바로 떠올렸는데
+
+  이전에 풀었던 접근 방식이랑 같은 생각을 했다.
 
 
 ---
