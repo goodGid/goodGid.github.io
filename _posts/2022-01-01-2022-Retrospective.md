@@ -272,4 +272,13 @@ author: goodGid
 
 * [LeetCode : 1143. Longest Common Subsequence]({{site.url}}/LeetCode-Longest-Common-Subsequence/#1-code-22-06-05)
 
-* [LeetCode : 138. Copy List with Random Pointer]({{site.url}}/)
+* [LeetCode : 138. Copy List with Random Pointer]({{site.url}}/LeetCode-Copy-List-with-Random-Pointer/#1-code-22-06-05)
+
+> 220606 ~ 220612
+
+* [LeetCode : 895. Maximum Frequency Stack]({{site.url}}/LeetCode-Maximum-Frequency-Stack/#1-code-22-06-08-x)
+
+* [LeetCode : 230. Kth Smallest Element in a BST]({{site.url}}/LeetCode-Maximum-Frequency-Stack/#1-code-22-06-08-x)
+
+* [LeetCode : 735. Asteroid Collision]({{site.url}}/LeetCode-Asteroid-Collision/#1-code-22-06-10-x)
+
