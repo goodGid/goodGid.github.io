@@ -282,3 +282,13 @@ author: goodGid
 
 * [LeetCode : 735. Asteroid Collision]({{site.url}}/LeetCode-Asteroid-Collision/#1-code-22-06-10-x)
 
+> 220613 ~ 220619
+
+* [LeetCode : 456. 132 Pattern]({{site.url}}/LeetCode-132-Pattern/#1-code-22-06-15)
+
+* [LeetCode : 34. Find First and Last Position of Element in Sorted Array]({{site.url}}/LeetCode-Find-First-and-Last-Position-of-Element-in-Sorted-Array/#2-code-06-16-x)
+
+* [LeetCode : 187. Repeated DNA Sequences]({{site.url}}/LeetCode-Repeated-DNA-Sequences/#1-code-22-06-18)
+
+* [LeetCode : 133. Clone Graph]({{site.url}}/LeetCode-Clone-Graph/#1-code-22-06-19)
+
