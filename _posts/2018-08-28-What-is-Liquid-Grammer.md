@@ -73,7 +73,7 @@ author: goodGid
 
 ### Comment
 
-* 이 태그 안에 들어간 내용은 사이트에 출력되지 않는다.
+* *comment* 태그 안에 들어간 내용은 사이트에 출력되지 않는다.
 
 > Example
 
