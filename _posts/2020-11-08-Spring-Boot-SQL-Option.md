@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Spring Boot SQL Option 알아보기 "
+title:  " Spring Boot SQL Option 알아보기 :: show_sql, format_sql, use_sql_comments, org.hibernate.type.descriptor.sql "
 categories: SpringBoot
 author: goodGid
 ---
