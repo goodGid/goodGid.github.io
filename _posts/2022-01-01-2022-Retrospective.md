@@ -308,8 +308,12 @@ author: goodGid
 
 * [[데이터 중심 애플리케이션 설계] 11장. 스트림 처리 : 3. 스트림 처리 - 1편]({{site.url}}/SD-Stream-Processing-Stream-Processing-1)
 
-* [[데이터 중심 애플리케이션 설계] 11장. 스트림 처리 : 3. 스트림 처리 - 2편]({{site.url}}/SD-Stream-Processing-Stream-Processing-2)* [[데이터 중심 애플리케이션 설계] 11장. 스트림 처리 : 3. 스트림 처리 - 2편]({{site.url}}/SD-Stream-Processing-Stream-Processing-2)
+* [[데이터 중심 애플리케이션 설계] 11장. 스트림 처리 : 3. 스트림 처리 - 2편]({{site.url}}/SD-Stream-Processing-Stream-Processing-2)
 
 > 220627 ~ 220703
 
 * [LeetCode : 838. Push Dominoes]({{site.url}}/LeetCode-Push-Dominoes/#1-code-22-06-27)
+
+> 220704 ~ 220710
+
+* [2022 2Q Blog 기록하기]({{site.url}}/2022-2Q-Blog)
