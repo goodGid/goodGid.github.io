@@ -317,3 +317,7 @@ author: goodGid
 > 220704 ~ 220710
 
 * [2022 2Q Blog 기록하기]({{site.url}}/2022-2Q-Blog)
+
+> 220711 ~ 220717
+
+* [[Gradle] Stacktrace 옵션을 선언하면 뭐가 달라질까?]({{site.url}}/Gradle-Option-Stacktrace)
