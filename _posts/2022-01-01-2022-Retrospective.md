@@ -320,4 +320,4 @@ author: goodGid
 
 > 220711 ~ 220717
 
-* [[Gradle] Stacktrace 옵션을 선언하면 뭐가 달라질까?]({{site.url}}/Gradle-Option-Stacktrace)
+* [[Gradle] Gradle 빌드 시 Stacktrace 옵션을 선언하면 뭐가 달라질까?]({{site.url}}/Gradle-Option-Stacktrace)
