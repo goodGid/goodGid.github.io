@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [Gradle] Stacktrace 옵션을 선언하면 뭐가 달라질까? "
+title:  " [Gradle] Gradle 빌드 시 Stacktrace 옵션을 선언하면 뭐가 달라질까? "
 categories: Gradle
 author: goodGid
 ---
