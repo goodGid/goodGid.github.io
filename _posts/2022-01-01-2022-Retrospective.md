@@ -321,3 +321,7 @@ author: goodGid
 > 220711 ~ 220717
 
 * [[Gradle] Gradle 빌드 시 Stacktrace 옵션을 선언하면 뭐가 달라질까?]({{site.url}}/Gradle-Option-Stacktrace)
+
+> 220718 ~ 220724
+
+* [[Gradle] Gradle에 어떤 옵션이 있는지 보는 방법 (feat. -?, -h, --help)]({{site.url}}/Gradle-Option-Help)
