@@ -72,6 +72,11 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-Karabiner_3.png)
 
+> for Function Keys
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Karabiner_3.png)
+
+
 
 ### Logitech 마우스
 
