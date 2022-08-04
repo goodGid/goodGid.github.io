@@ -19,11 +19,14 @@ type: page
 
   ( 2019.01.02 ~ 2021.06.04 / [18년 하반기 신입 공채]({{site.url}}/18-Second-Half-Line-2st-Interview/) )
 
-* <i class="fa fa-edit"></i>: 기록하는 걸 좋아합니다.
+* <img src="/assets/img/logo/edit.png" style="max-width: 3%; vertical-align: text-bottom;"> : 기록하는 걸 좋아합니다.
 
-* <i class="fa fa-book"></i>: 꾸준히 공부하는 성실한 개발자입니다.
+* <img src="/assets/img/logo/book.png" style="max-width: 3%; vertical-align: text-bottom;"> : 꾸준히 공부하는 성실한 개발자입니다.
 
-* <i class="fa fa-desktop"></i>: 블로그에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
+* <img src="/assets/img/logo/desktop.png" style="max-width: 3%; vertical-align: text-bottom;"> : 블로그에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
+
+* <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : [멘토링(Mentoring) 클래스](https://www.itdaa.net/mentors/176384)
+
 
 
 
@@ -31,17 +34,17 @@ type: page
 
 ## Contact
 
-* <i class="fa fa-github" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.github_username}}](https://github.com/{{site.github_username}})
+* <img src="/assets/img/logo/github.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.github_username}}](https://github.com/{{site.github_username}})
 
-* <i class="fa fa-linkedin" aria-hidden="true" style="font-size: x-large;"></i>: [Kiyong Shin](https://www.linkedin.com/in/{{site.linkedIn_username}})
+* <img src="/assets/img/logo/linkedin.png" style="max-width: 3%; vertical-align: text-bottom;"> : [Kiyong Shin](https://www.linkedin.com/in/{{site.linkedIn_username}})
 
-* <i class="fa fa-facebook-official" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.facebook_username}}](https://www.facebook.com/{{site.facebook_username}})
+* <img src="/assets/img/logo/facebook.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.facebook_username}}](https://www.facebook.com/{{site.facebook_username}})
 
-* <i class="fa fa-instagram" aria-hidden="true" style="font-size: x-large;"></i>: [{{site.insta_username}}](https://www.instagram.com/{{site.insta_username}})
+* <img src="/assets/img/logo/instagram.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.insta_username}}](https://www.instagram.com/{{site.insta_username}})
 
-* <i class="fa fa-commenting" aria-hidden="true" style="font-size: x-large;"></i>: [Kakao Open Chat](https://open.kakao.com/o/sD37fM3)
+* <img src="/assets/img/logo/kakaotalk.png" style="max-width: 3%; vertical-align: text-bottom;"> : [Kakao Open Chat](https://open.kakao.com/o/sD37fM3)
 
-* <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: x-large;"></i>: hello.goodgid@gmail.com
+* <img src="/assets/img/logo/email.png" style="max-width: 3%; vertical-align: text-bottom;"> : hello.goodgid@gmail.com
 
 * <img src="/assets/img/logo/itdaa-logo.png" style="max-width: 8%; vertical-align: text-bottom;"> : [멘토링(Mentoring) 클래스](https://www.itdaa.net/mentors/176384)
 
