@@ -21,13 +21,12 @@ type: page
 
 * <img src="/assets/img/logo/edit.png" style="max-width: 3%; vertical-align: text-bottom;"> : 기록하는 걸 좋아합니다.
 
+* <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : 공유하고 알려주는 것을 좋아합니다.
+
 * <img src="/assets/img/logo/book.png" style="max-width: 3%; vertical-align: text-bottom;"> : 꾸준히 공부하는 성실한 개발자입니다.
 
 * <img src="/assets/img/logo/desktop.png" style="max-width: 3%; vertical-align: text-bottom;"> : 블로그에 보고 듣고 느끼고 배운 걸 남기는 재미로 살아갑니다.
-
-* <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : [멘토링(Mentoring) 클래스](https://www.itdaa.net/mentors/176384)
-
-
+ 
 
 
 ---
