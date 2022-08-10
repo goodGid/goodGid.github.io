@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 2021 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다. "
+title:  " [2021년] 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다. "
 categories: E.T.C
 author: goodGid
 ---
