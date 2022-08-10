@@ -51,9 +51,11 @@ type: page
 
 ## Media
 
-* [2021 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
+* [[2022년] 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다.]({{site.url}}/2022-Kakaobank-ESG-Book-Model/)
 
-* [2020 LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
+* [[2021년] 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
+
+* [[2020년] LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다.]({{site.url}}/2020-LINER-Interview)
 
 --- 
 
