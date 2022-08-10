@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 2020 LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다. "
+title:  " [2020년] LINE 신규 채용 홈페이지 LINER 인터뷰를 진행하다. "
 categories: E.T.C
 author: goodGid
 ---
