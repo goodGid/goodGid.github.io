@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다. "
+title:  " [2022년] 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다. "
 categories: E.T.C
 author: goodGid
 ---
