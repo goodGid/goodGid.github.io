@@ -42,7 +42,7 @@ n/a
 
   정답 코드를 보니 BST의 특징을 좀 더 고려하지 못했던 거 같다.
 
-![](/assets/img/leet_code/LeetCode-Unique-Binary-Search-Trees_1.png)
+![](/assets/img/leetcode/LeetCode-Unique-Binary-Search-Trees_1.png)
 
 * 출처 : [[Leetcode] 96. Unique Binary Search Trees](https://velog.io/@haebin/Leetcode-96.-Unique-Binary-Search-Trees)
 
