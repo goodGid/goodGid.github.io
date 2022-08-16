@@ -116,7 +116,7 @@ type: page
 
 ### 2022
 
-* 　08. 05 [카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다.]({{site.url}}/Kakaobank-ESG-Book-Model/)
+* 　08. 05 [[2022년] 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다.]({{site.url}}/2022-Kakaobank-ESG-Book-Model/)
 
 * 　03. 13 [KakaoPay QR 코드 추가]({{site.url}}/KakaoPay-QR-Code) // [Commit : 97518fa](https://github.com/goodGid/goodGid.github.io/pull/2)
 
