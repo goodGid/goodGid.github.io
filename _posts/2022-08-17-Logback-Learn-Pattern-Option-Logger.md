@@ -112,7 +112,7 @@ author: goodGid
 
   CONSOLE Appender는 INFO level 이상만 기록하므로 (= [1])
 
-  DemoController에서 TRACE와 DEBUG로 log를 기록하더라도 기록되지 않는다.
+  DemoController에서 TRACE와 DEBUG로 log를 기록하더라도 노출되지 않는다.
 
 
 
