@@ -21,7 +21,7 @@ author: goodGid
   특정 파일이나 디렉터리를 사용하는 모든 프로세스에게 SIGKILL 전송이 가능하다.
 
 ```
-$ sudo fuser -v -k /var/
+$ sudo fuser -k /var/
 ```
 
 ---
