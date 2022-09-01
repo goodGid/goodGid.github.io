@@ -51,6 +51,8 @@ type: page
 
 ## Media
 
+* [[2022년] 카카오뱅크 - 대용량 트래픽을 다루는 서버 개발자 이야기]({{site.url}}/2022-Kakaobank-A-story-about-a-server-developer-dealing-with-high-traffic/)
+
 * [[2022년] 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다.]({{site.url}}/2022-Kakaobank-ESG-Book-Model/)
 
 * [[2021년] 카카오뱅크 직원 신분으로 문화일보와 인터뷰를 하다.]({{site.url}}/2021-Kakaobank-Interview)
