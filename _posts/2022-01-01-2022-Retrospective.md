@@ -325,3 +325,23 @@ author: goodGid
 > 220718 ~ 220724
 
 * [[Gradle] Gradle에 어떤 옵션이 있는지 보는 방법 (feat. -?, -h, --help)]({{site.url}}/Gradle-Option-Help)
+
+> 220815 ~ 220821
+
+* [[Logback] MDC에 있는 값을 Logback에서 사용하는 방법 (feat. %X{KEY})]({{site.url}}/Logback-How-to-use-values-in-MDC)
+
+* [[Logback] Logback Pattern에서 사용하는 옵션 알아보기 :: %-{n}level]({{site.url}}/Logback-Learn-Pattern-Option-Log-Level)
+
+* [[Logback] Logback Pattern에서 사용하는 옵션 알아보기 :: %logger{n}]({{site.url}}/Logback-Learn-Pattern-Option-Logger)
+
+* [[Linux] 사용중인 포트(Port) 죽이는 명령어 (feat. fuser)]({{site.url}}/Command-to-kill-port-in-use)
+
+> 220822 ~ 220828
+
+* [2022 JUNCTION ASIA 해커톤 참여 후기]({{site.url}}/2022-Junction-Hackthon)
+
+* [Spring Boot @Async 동작 원리 : @Async를 선언했는데 왜 Async로 동작하지 않을까?]({{site.url}}/SpringBoot-Why-doesn't-it-work-with-Async)
+
+> 220829 ~ 220904
+
+* [[2022년] 카카오뱅크 - 대용량 트래픽을 다루는 서버 개발자 이야기]({{site.url}}/2022-Kakaobank-A-story-about-a-server-developer-dealing-with-high-traffic)
