@@ -99,3 +99,4 @@ First and Last : [Element 4, Element 2, Element 1, Element 3]
 ## Reference
 
 * [Deque interface in Java with Example](https://www.geeksforgeeks.org/deque-interface-java-example/)
+* [Deque In Java](https://www.scaler.com/topics/java/deque-in-java/)
