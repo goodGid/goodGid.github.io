@@ -9,7 +9,7 @@ author: goodGid
 
 ## SCP
 
-* SCP(secure copy) is a command-line utility 
+* SCP(Secure Copy) is a command-line utility 
 
   that allows you to securely copy files and directories between two locations.
 
