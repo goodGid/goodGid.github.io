@@ -17,7 +17,7 @@ author: goodGid
 
 * [Github Action으로 CI/CD 구축하기 - 4편 : deploy.yaml 분석]({{site.url}}/Github-Action-CI-CD-Workflows/)
 
-* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yaml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
+* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
 
 * [Github Action으로 CI/CD 구축하기 - 6편 : build.gradle 분석]({{site.url}}/Github-Action-CI-CD-Build-Gradle-File/)
 

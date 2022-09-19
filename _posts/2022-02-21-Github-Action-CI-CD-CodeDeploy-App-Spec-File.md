@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Github Action으로 CI/CD 구축하기 - 5편 : appspec.yaml 분석 "
+title:  " Github Action으로 CI/CD 구축하기 - 5편 : appspec.yml 분석 "
 categories: Github AWS
 author: goodGid
 ---
@@ -17,7 +17,7 @@ author: goodGid
 
 * [Github Action으로 CI/CD 구축하기 - 4편 : deploy.yaml 분석]({{site.url}}/Github-Action-CI-CD-Workflows/)
 
-* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yaml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
+* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
 
 * [Github Action으로 CI/CD 구축하기 - 6편 : build.gradle 분석]({{site.url}}/Github-Action-CI-CD-Build-Gradle-File/)
 
@@ -31,17 +31,22 @@ author: goodGid
 
 * 이번 글에서는 빌드된 결과물을 
 
-  인스턴스에 배포하기 위해 사용되는 스크립트(= appspec.yaml)를 분석해본다.
+  인스턴스에 배포하기 위해 사용되는 스크립트(= appspec.yml)를 분석해본다.
+
+* 주의할 점은 appspec.yaml로 하면 CodeDeploy Agent가 찾질 못한다.
+  
+  **반드시 확장자를 yml**으로 해야한다.
+
 
 ---
 
-## appspec.yaml
+## appspec.yml
 
 * [AppSpec File은 CodeDeploy에서 배포를 관리하는 데 사용하는 YAML 형식 또는 JSON 형식의 파일이다.](https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/reference-appspec-file.html)
 
 * [AppSpec 파일은 파일에 정의된 일련의 수명 주기 이벤트 후크로 각 배포를 관리하는 데 사용된다.](https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/application-specification-files.html)
 
-> [appspec.yaml](https://github.com/goodGid/Github-Action-Variable-Substitution/blob/main/appspec.yml)
+> [appspec.yml](https://github.com/goodGid/Github-Action-Variable-Substitution/blob/main/appspec.yml)
 
 ``` yaml
 version: 0.0
@@ -302,7 +307,7 @@ hooks:
 
 * S3에 저장된 빌드 결과물을
 
-  CodeDeploy가 인스턴스에 배포하기 위해 사용하는 스크립트(= appspec.yaml)를 분석해봤다.
+  CodeDeploy가 인스턴스에 배포하기 위해 사용하는 스크립트(= appspec.yml)를 분석해봤다.
 
 * 크게 3가지 섹션으로 나눠서 알아봤고
 
