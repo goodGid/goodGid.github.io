@@ -17,7 +17,7 @@ author: goodGid
 
 * [Github Action으로 CI/CD 구축하기 - 4편 : deploy.yaml 분석]({{site.url}}/Github-Action-CI-CD-Workflows/)
 
-* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yaml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
+* [Github Action으로 CI/CD 구축하기 - 5편 : appspec.yml 분석]({{site.url}}/Github-Action-CI-CD-CodeDeploy-App-Spec-File/)
 
 * [Github Action으로 CI/CD 구축하기 - 6편 : build.gradle 분석]({{site.url}}/Github-Action-CI-CD-Build-Gradle-File/)
 
@@ -47,31 +47,15 @@ author: goodGid
 
 ![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_2.png)
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_3.png)
-
 ---
 
 > Step 3
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_4.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_3.png)
 
 * Step 2에서 CodeDeploy를 선택했으므로 자동으로 "CodeDeployRole" 권한이 부여되어있다.
 
-  추가로 권한 부여를 할 필요가 없으니 다음으로 넘어간다.
-
----
-
-> Step 4
-
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_5.png)
-
-* tags는 skip 한다.
-
----
-
-> Step 5
-
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_6.png)
+  추가로 권한 부여를 할 필요가 없으니 넘어간다.
 
 * "Role name"에는 원하는 값을 입력한다.
 
@@ -81,17 +65,18 @@ author: goodGid
 
 ---
 
-> Step 6
+> Step 4
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_7.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_4.png)
 
 * "CodeDeploy -> Application -> Create application" 클릭을 한다.
 
 ---
 
-> Step 7
+> Step 5
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_8.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_5.png)
+
 
 * Application name에는 원하는 값을 입력한다.
 
@@ -99,27 +84,28 @@ author: goodGid
 
 ---
 
-> Step 8
+> Step 6
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_9.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_6.png)
+
 
 * CodeDeploy Application을 생성했다.
 
   이제는 이 Application안에 Deploy Group을 생성한다.
-
+  
 ---
 
-> Step 9
+> Step 7
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_10.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_7.png)
 
 * **Service role**에 방금 위에서 생성한 IAM을 넣어준다.
 
 ---
 
-> Step 10
+> Step 8
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_11.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_8.png)
 
 * Tag group에 보면 "CodeDeploy-Element" 값이 존재한다.
 
@@ -131,9 +117,9 @@ author: goodGid
 
 ---
 
-> Step 11
+> Step 9
 
-![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_12.png)
+![](/assets/img/github/Github-Action-CI-CD-AWS-CodeDeploy_9.png)
 
 * **Deployment settings** 값에 대해 궁금하다면
 
@@ -142,6 +128,14 @@ author: goodGid
 * 따로 LB 설정을 하지 않았다면 **Load balancer** 체크 박스는 해제해준다.
 
 * 이로써 CodeDeploy 설정이 완료되었다.
+
+* 추가로 모든 설정을 완료 후에도 정상적으로 동작하지 않는다면
+
+  codedeploy agent log를 보면 빠르게 문제를 해결 할 수 있다.
+
+```
+tail -F /var/log/aws/codedeploy-agent/codedeploy-agent.log
+```
 
 ---
 
