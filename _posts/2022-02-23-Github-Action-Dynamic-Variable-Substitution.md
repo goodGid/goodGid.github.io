@@ -47,7 +47,7 @@ author: goodGid
 
 * Github Action을 사용하기 위해선 
 
-  *.github/workflows* 경로에 [workflow](https://github.com/goodGid/Github-Action-Variable-Substitution/blob/main/.github/workflows/deploy.yaml#L26)를 정의해야 하고
+  *.github/workflows* 경로에 [workflow](https://github.com/goodGid/Github-Action-Variable-Substitution/blob/main/.github/workflows/deploy.yaml#L28)를 정의해야 하고
 
   위 사진은 workflow에서 동적으로 값을 주입해주는 코드 부분이다.
 
