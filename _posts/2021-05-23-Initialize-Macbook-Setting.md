@@ -357,6 +357,10 @@ brew install tree
 
   [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
+### Scroll Reverser
+
+* [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
+
 
 ### E.T.C
 
