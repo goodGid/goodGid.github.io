@@ -36,3 +36,7 @@ author: goodGid
 ## DevStory
 
 > 230101 ~ 230115
+
+* [LeetCode : 606. Construct String from Binary Tree]({{site.url}}/LeetCode-Construct-String-from-Binary-Tree/#1-code-23-01-12-x)
+
+* [LeetCode : 1383. Maximum Performance of a Team]({{site.url}}/LeetCode-Construct-String-from-Binary-Tree-copy/#1-code-23-01-15)
