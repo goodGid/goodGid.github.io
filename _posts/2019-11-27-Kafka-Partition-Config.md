@@ -32,7 +32,7 @@ author: goodGid
 
 ## 무한 파티션 증가
 
-* [이전 글]([카프카 데이터 모델]({{site.url}}/Kafka-Data-Model/#%ED%8C%8C%ED%8B%B0%EC%85%98%EC%9D%98-%EC%9D%B4%ED%95%B4))에서
+* [이전 글]({{site.url}}/Kafka-Data-Model/#%ED%8C%8C%ED%8B%B0%EC%85%98%EC%9D%98-%EC%9D%B4%ED%95%B4)에서
 
 * 토픽의 파티션 수가 증가함에 따라
 
