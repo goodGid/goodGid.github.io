@@ -39,4 +39,10 @@ author: goodGid
 
 * [LeetCode : 606. Construct String from Binary Tree]({{site.url}}/LeetCode-Construct-String-from-Binary-Tree/#1-code-23-01-12-x)
 
-* [LeetCode : 1383. Maximum Performance of a Team]({{site.url}}/LeetCode-Construct-String-from-Binary-Tree-copy/#1-code-23-01-15)
+* [LeetCode : 1383. Maximum Performance of a Team]({{site.url}}/LeetCode-Maximum-Performance-of-a-Team/#1-code-23-01-15)
+
+> 230116 ~ 230122
+
+* [LeetCode : 665. Non-decreasing Array]({{site.url}}/LeetCode-Non-decreasing-Array/#1-code-23-01-22)
+
+* [LeetCode : 1220. Count Vowels Permutation]({{site.url}}/LeetCode-Count-Vowels-Permutation/#1-code-23-01-22)
