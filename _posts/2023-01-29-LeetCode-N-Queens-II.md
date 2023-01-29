@@ -32,7 +32,7 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown.
 
 ### [1] Code (23. 01. 29)
 
-*Need to Retry*
+*Need to Retry -> 다른 정답 코드를 보고 분석할 시간이 부족해서 패스함 다음엔 꼭 하자*
 
 ``` java
 // Runtime: 2 ms
