@@ -180,6 +180,17 @@ Integer.parseInt(s)
 
 ---
 
+
+#### String[] 선언과 동시에 할당
+
+``` java
+String[] products = { "mobile", "mouse", "moneypot", "monitor", "mousepad" };
+```
+
+* ex) [LeetCode : 1268. Search Suggestions System]({{site.url}}/LeetCode-Search-Suggestions-System/#1-code-23-01-29)
+
+---
+
 ### Character
 
 #### 숫자를 나타내는 Character -> int 변환
