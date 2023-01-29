@@ -46,3 +46,9 @@ author: goodGid
 * [LeetCode : 665. Non-decreasing Array]({{site.url}}/LeetCode-Non-decreasing-Array/#1-code-23-01-22)
 
 * [LeetCode : 1220. Count Vowels Permutation]({{site.url}}/LeetCode-Count-Vowels-Permutation/#1-code-23-01-22)
+
+> 230123 ~ 230129
+
+* [LeetCode : 52. N-Queens II]({{site.url}}/LeetCode-N-Queens-II/#1-code-23-01-29)
+
+* [LeetCode : 1268. Search Suggestions System]({{site.url}}/LeetCode-Search-Suggestions-System/#1-code-23-01-29)
