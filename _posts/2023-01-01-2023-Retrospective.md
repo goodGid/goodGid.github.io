@@ -52,3 +52,10 @@ author: goodGid
 * [LeetCode : 52. N-Queens II]({{site.url}}/LeetCode-N-Queens-II/#1-code-23-01-29)
 
 * [LeetCode : 1268. Search Suggestions System]({{site.url}}/LeetCode-Search-Suggestions-System/#1-code-23-01-29)
+
+> 230130 ~ 230205
+
+* [LeetCode : 304. Range Sum Query 2D - Immutable]({{site.url}}/LeetCode-Range-Sum-Query-2D-Immutable/#1-code-23-02-05)
+
+* [LeetCode : 1461. Check If a String Contains All Binary Codes of Size K]({{site.url}}/LeetCode-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/#1-code-23-02-05)
+
