@@ -34,8 +34,6 @@ Output: "aa"
 
 ### [1] Code (22. 06. 01) (x)
 
-*Need to Retry*
-
 ``` java
 // Runtime: 60 ms
 // Memory Usage: 49.9 MB
