@@ -76,6 +76,54 @@ class Solution {
 
 ---
 
+### [2] Code (23. 02. 11)
+
+*Need to Retry -> 우선순위 큐를 생각했다면 틀릴 것이다.*
+
+``` java
+ex)
+[5,1,4,2]
+6
+```
+
+> Reference Code
+
+**Code 1**
+
+``` java
+// Runtime: 17 ms
+// Memory Usage: 50.5 MB
+// Ref : https://leetcode.com/submissions/detail/895443115
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        int boatCount = 0;
+        Arrays.sort(people);
+
+        int left = 0;
+        int right = people.length - 1;
+
+        while (left <= right) {
+            int sum = people[left] + people[right];
+            if (sum <= limit) {
+                boatCount++;
+                left++;
+                right--;
+            } else {
+                boatCount++;
+                right--;
+            }
+        }
+        return boatCount;
+    }
+}
+```
+
+* 조건을 꼼꼼히 보자.
+
+  **Each boat carries at most two people at the same time**
+
+---
+
 ## Reference
 
 * [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people)
