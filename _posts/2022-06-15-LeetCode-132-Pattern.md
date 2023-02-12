@@ -91,6 +91,22 @@ public boolean find132pattern_stack(int[] nums) {
 
 ---
 
+---
+
+### [2] Code (23. 02. 13)
+
+*Need to Retry -> 아이디어를 떠올리지 못했다.*
+
+``` java
+n/a
+```
+
+* [1] Code (22. 06. 15) 때처럼 아이디어를 떠올리지 못했다. ㅠㅠ
+
+* 아직도 알고리즘 사고능력이 많이 부족한 듯 싶다.
+
+---
+
 ## Reference
 
 * [456. 132 Pattern](https://leetcode.com/problems/132-pattern)
