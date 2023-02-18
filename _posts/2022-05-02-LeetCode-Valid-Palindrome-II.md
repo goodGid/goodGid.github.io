@@ -74,6 +74,85 @@ class Solution {
 
 ---
 
+### [2] Code (23. 02. 18) (x)
+
+``` java
+// Runtime: 8 ms
+// Memory Usage: 42.8 MB
+// Ref : https://leetcode.com/submissions/detail/900218354
+class Solution {
+    public boolean validPalindrome(String s) {
+        return valid(s.toCharArray(), 0, s.length()-1, true);
+    }
+    
+    private boolean valid(char[] s, int left, int right, boolean isSkipable) {
+        boolean ans = true;
+        while (left < right) {
+            if (s[left] == s[right]) {
+                left ++;
+                right --;
+            } else if (isSkipable == false) {
+                return false;
+            } else {
+                return valid(s,left+1,right,false) || valid(s,left,right-1,false);
+            }
+        }
+        return ans;
+    }
+}
+```
+
+* 이렇게 재귀를 돌려도 될까? 란 생각이 들었지만 일단 Try했다.
+
+* 풀고 다른 코드를 보면서 시간복잡도를 생각해보니 $O(N)$ 시간이엿다.
+
+---
+
+> Reference Code
+
+**Code 1**
+
+``` java
+// Runtime: 8 ms
+// Memory Usage: 42.7 MB
+// Ref : https://leetcode.com/submissions/detail/900219390
+class Solution {
+    public boolean validPalindrome(String s) {
+        int i = 0;
+        int j = s.length() - 1;
+        
+        while(i <= j){
+            if(s.charAt(i) == s.charAt(j)){
+                i++;
+                j--;
+            }
+            else return isPalindrome(s, i + 1, j) || isPalindrome(s, i, j - 1);
+        }
+        return true;
+    }
+    public boolean isPalindrome(String s, int i, int j){
+        while(i <= j){
+            if(s.charAt(i) == s.charAt(j)){
+                i++;
+                j--;
+            }
+            else return false;
+        }
+        return true;
+    }
+}
+```
+
+* validPalindrome( )에서 valid 체크를 하다 어긋나면
+
+  isPalindrome( )를 호출한다.
+
+* 굳이 재귀함수를 돌리지 않고
+
+  이미 1번 Skip 찬스를 사용했으므로 isPalindrome( )만으로도 정답을 알아낼 수 있다.
+
+---
+
 ## Reference
 
 * [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
