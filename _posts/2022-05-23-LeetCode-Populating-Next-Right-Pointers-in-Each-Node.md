@@ -142,6 +142,60 @@ class Solution {
 
 * 이런 유형의 문제를 해결하는 다양한 접근법을 배웠다.
 
+---
+
+### [2] Code (23. 02. 18) (x)
+
+*다시 풀 필요는 없으나 정답 아이디어만 훑어보자.*
+
+``` java
+// Runtime: 3 ms
+// Memory Usage: 42.2 MB
+// Ref : https://leetcode.com/submissions/detail/900201642
+class Solution {
+    public Node connect(Node root) {
+        if (root == null) {
+            return null;
+        }
+        
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        
+        while (!q.isEmpty()) {
+            int size = q.size();
+            
+            List<Node> list = new ArrayList<>();
+            
+            for (int i=0; i<size; i++) {
+                Node node = q.poll();
+                list.add(node);
+                
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                
+                if (node.right != null) {
+                    q.add(node.right);
+                }
+            }
+            
+            int listSize = list.size();
+            for (int i=0; i<listSize; i++) {
+                if (i == listSize - 1) {
+                    list.get(i).next = null;
+                } else {
+                    list.get(i).next = list.get(i+1);
+                }
+            }
+        }
+
+        return root;
+    }
+}
+```
+
+* [1](https://leetcode.com/submissions/detail/704860727/), [2](https://leetcode.com/submissions/detail/704856906/), [3](https://leetcode.com/submissions/detail/464176151/) 코드를 살펴보자.
+
 
 ---
 
