@@ -59,3 +59,14 @@ author: goodGid
 
 * [LeetCode : 1461. Check If a String Contains All Binary Codes of Size K]({{site.url}}/LeetCode-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K/#1-code-23-02-05)
 
+> 230206 ~ 230212
+
+* [LeetCode : 881. Boats to Save People]({{site.url}}/LeetCode-Boats-to-Save-People/#2-code-23-02-11)
+
+* [LeetCode : 456. 132 Pattern]({{site.url}}/LeetCode-132-Pattern/#2-code-23-02-13)
+
+> 230213 ~ 230220
+
+* [LeetCode : 116. Populating Next Right Pointers in Each Node]({{site.url}}/https://goodgid.github.io/LeetCode-Populating-Next-Right-Pointers-in-Each-Node/#2-code-23-02-18-x)
+
+* [LeetCode : 680. Valid Palindrome II]({{site.url}}/https://goodgid.github.io/LeetCode-Valid-Palindrome-II/#2-code-23-02-18-x)
