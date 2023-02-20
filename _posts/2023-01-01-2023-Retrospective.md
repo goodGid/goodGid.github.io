@@ -67,6 +67,6 @@ author: goodGid
 
 > 230213 ~ 230220
 
-* [LeetCode : 116. Populating Next Right Pointers in Each Node]({{site.url}}/https://goodgid.github.io/LeetCode-Populating-Next-Right-Pointers-in-Each-Node/#2-code-23-02-18-x)
+* [LeetCode : 116. Populating Next Right Pointers in Each Node]({{site.url}}/LeetCode-Populating-Next-Right-Pointers-in-Each-Node/#2-code-23-02-18-x)
 
-* [LeetCode : 680. Valid Palindrome II]({{site.url}}/https://goodgid.github.io/LeetCode-Valid-Palindrome-II/#2-code-23-02-18-x)
+* [LeetCode : 680. Valid Palindrome II]({{site.url}}/LeetCode-Valid-Palindrome-II/#2-code-23-02-18-x)
