@@ -215,6 +215,21 @@ if (Character.isDigit(s.charAt(head))) { ... }
 
 ---
 
+### Array 사용
+
+#### Array 선언과 동시에 값 할당
+
+``` java
+int[][] input = {
+        { 10, 20 },
+        { 30, 200 },
+        { 400, 50 },
+        { 30, 20 }
+};
+```
+
+---
+
 ### List 사용
 
 #### List 선언과 동시에 값 할당
@@ -403,3 +418,58 @@ while (it.hasNext()) {
 ```
 
 * 출력 시 순서는 보장되지 않는다.
+
+---
+
+### Class + Sorting
+
+#### Comparable 인터페이스 구현
+
+``` java
+public class Node implements Comparable<Node> {
+    int index;
+    int value;
+
+    public Node(int index, int value) {
+        this.index = index;
+        this.value = value;
+    }
+
+    @Override
+    public int compareTo(Node newNode) {
+        return newNode.value - value; // 내림차순
+        return value - newNode.value; // 오름차순
+    }
+}
+```
+
+> Example
+
+``` java
+public void demo() {
+    Node node1 = new Node(1, 10); 
+    Node node2 = new Node(2, 20); 
+    Node node3 = new Node(3, 30); 
+    Node node4 = new Node(4, 40);
+    List<Node> list = Arrays.asList(node1, node2, node3, node4);
+    Collections.sort(list);
+    for (Node i : list) {
+        System.out.println(i.index + " " + i.value);
+    }
+}
+
+/*
+## Output
+- Node에 구현되어 있는 compareTo( ) 
+@Override
+public int compareTo(Node newNode) {
+    return newNode.value - value; // 내림차순
+}
+*/
+4 40
+3 30
+2 20
+1 10
+```
+
+* ex) [LeetCode : 1029. Two City Scheduling]({{site.url}}/LeetCode-Two-City-Scheduling/#2-code-23-03-05)
