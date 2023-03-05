@@ -117,6 +117,22 @@ class Solution {
 
 ---
 
+### [2] Code (23. 03. 05)
+
+*Need to Retry -> 접근조차 정답을 봐도 이해가 안갔다.*
+
+``` java
+n/a
+```
+
+> Review
+
+* 사고력이 많이 부족한듯 ㅠㅠ
+
+  정답 코드를 봐도 이해가 안갔다.
+
+---
+
 ## Reference
 
 * [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum)
