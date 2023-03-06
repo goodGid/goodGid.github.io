@@ -65,8 +65,14 @@ author: goodGid
 
 * [LeetCode : 456. 132 Pattern]({{site.url}}/LeetCode-132-Pattern/#2-code-23-02-13)
 
-> 230213 ~ 230220
+> 230213 ~ 230219
 
 * [LeetCode : 116. Populating Next Right Pointers in Each Node]({{site.url}}/LeetCode-Populating-Next-Right-Pointers-in-Each-Node/#2-code-23-02-18-x)
 
 * [LeetCode : 680. Valid Palindrome II]({{site.url}}/LeetCode-Valid-Palindrome-II/#2-code-23-02-18-x)
+
+> 230227 ~ 230305
+
+* [LeetCode : 1029. Two City Scheduling]({{site.url}}/LeetCode-Two-City-Scheduling/#2-code-23-03-05)
+
+* [LeetCode : 410. Split Array Largest Sum]({{site.url}}/LeetCode-Split-Array-Largest-Sum/#2-code-23-03-05)
