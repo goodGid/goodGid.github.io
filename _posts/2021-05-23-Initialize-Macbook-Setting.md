@@ -51,6 +51,13 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
 * export하면 [setting.zip 파일](https://bit.ly/2T1s0sb)이 생성된다. // 210523(Sun)
 
+* Plugin 설치
+
+```
+- git tool box
+```
+
+
 ### Alfred
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-Alfred_1.png)
@@ -361,6 +368,12 @@ brew install tree
 
 * [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
 
+
+### Keyboard
+
+* Keyboard -> Input Sources -> Edit -> Spelling -> Set up -> 사진
+
+![](/assets/img/posts/Initialize-Macbook-Setting-Keyboard_1.png)
 
 ### E.T.C
 
