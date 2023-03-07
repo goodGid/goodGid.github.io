@@ -51,6 +51,8 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
 * export하면 [setting.zip 파일](https://bit.ly/2T1s0sb)이 생성된다. // 210523(Sun)
 
+  [settings.zip 파일](https://bit.ly/3STgqKw) // 230307(Tue)
+
 * Plugin 설치
 
 ```
