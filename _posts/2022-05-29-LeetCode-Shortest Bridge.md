@@ -130,7 +130,121 @@ class Solution {
 
 * 정답 코드를 보니 다른 섬을 찾는 아이디어가 어렵진 않네 ㅎㅎ
 
+---
 
+### [2] Code (23. 03. 11)
+
+*Need to Retry -> 시간 초과 발생 !!!*
+
+``` java
+// Ref : https://leetcode.com/submissions/detail/913044029 
+class Solution {
+    private int ans = 1000000;
+    private int size;
+    private int[] dx = { -1, 1, 0, 0 }; // 상 하 좌 우
+    private int[] dy = { 0, 0, -1, 1 };
+
+    public int shortestBridge(int[][] grid) {
+        size = grid.length;
+        visitFirstIsland(grid); // [1]
+        // pritn(grid);
+        findShortestBridge(grid); // [2]
+
+        return ans;
+    }
+
+    private void findShortestBridge(int[][] grid) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                int val = grid[i][j];
+                if (val == 1) {
+                    dfs(grid, i, j, -1);
+                }
+            }
+        }
+    }
+
+    private void dfs(int[][] grid, int x, int y, int cnt) {
+        if (grid[x][y] == 2 || ans <= cnt) {
+            ans = Math.min(ans, cnt);
+            return;
+        }
+
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            if (isRange(grid, nx, ny) && grid[nx][ny] != 1) {
+                dfs(grid, nx, ny, cnt + 1);
+            }
+        }
+    }
+
+    private void visitFirstIsland(int[][] grid) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                int val = grid[i][j];
+                if (val == 1) {
+                    changeColor(grid, i, j);
+                    return;
+                }
+            }
+        }
+    }
+
+    private void changeColor(int[][] grid, int x, int y) {
+
+        grid[x][y] = 2;
+
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            if (isRange(grid, nx, ny) && grid[nx][ny] == 1) {
+                changeColor(grid, nx, ny);
+            }
+        }
+
+    }
+
+    private boolean isRange(int[][] grid, int x, int y) {
+        if (x < 0 || x >= size) {
+            return false;
+        }
+
+        if (y < 0 || y >= size) {
+            return false;
+        }
+        return true;
+    }
+
+    private void pritn(int[][] grid) {
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print(grid[i][j] + " ");
+            }
+            System.out.println("");
+        }
+    }
+}
+```
+
+* [1] : visitFirstIsland에서 첫 번째 섬을 2로 바꿔준다.
+
+  그 이유는 두 번째 섬과의 구분을 하기 위해서이다.
+
+* [2] : 두 번째 섬에서 첫 번째 섬을 찾기 위한 코드
+
+  DFS로 접근했는데 정답 코드를 보니 BFS로 접근했어야 했다. ㅠㅠ
+
+---
+
+> Review
+
+* 아이디어 + 구현까지 30분 정도 소요
+
+* BFS + DFS의 조합을 요구하는 재미있는 문제였다.
 
 
 ---
