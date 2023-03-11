@@ -124,6 +124,60 @@ class Solution {
 
 ---
 
+### [3] Code (23. 03. 11)
+
+*Need to Retry -> PQ를 먼저 떠올린다면 발전이 없었다고 생각하자.*
+
+``` java
+// Runtime: 81 ms
+// Memory Usage: 50.7 MB
+// Ref : https://leetcode.com/submissions/detail/913064722
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        int ans = 0;
+        List<Integer> list = new ArrayList<>();
+
+        for (int item : people) {
+            list.add(item);
+        }
+        Collections.sort(list);
+
+        int i = 0, j = list.size() - 1;
+        while (i <= j) {
+            int maxVal = list.get(j);
+            int minVal = list.get(i);
+
+            if (maxVal + minVal <= limit) {
+                i++;
+            }
+            j--;
+            ans++;
+        }
+        return ans;
+    }
+}
+```
+
+* 생각해 보면 굳이 List 선언하지 않고 int 배열에 대해 정렬하는 게 효율적이다.
+
+  덕분에 Runtime이 오래 걸렸다.
+
+---
+
+> Review
+
+* PQ로 정렬 후 큰 값으로만 값을 채우려고 했는데
+
+  생각해 보니까 큰 값 + 작은 값으로 하는 게 더 합리적이다.
+
+
+* 그리고 [2 번째]({{site.url}}/LeetCode-Boats-to-Save-People/#2-code-23-02-11) 풀었던걸 보면
+
+  그때도 PQ로 접근해서 틀렸던 기억이 있는데 답습을 해버렸다. ㅠㅠ
+
+
+---
+
 ## Reference
 
 * [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people)
