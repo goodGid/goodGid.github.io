@@ -76,3 +76,17 @@ author: goodGid
 * [LeetCode : 1029. Two City Scheduling]({{site.url}}/LeetCode-Two-City-Scheduling/#2-code-23-03-05)
 
 * [LeetCode : 410. Split Array Largest Sum]({{site.url}}/LeetCode-Split-Array-Largest-Sum/#2-code-23-03-05)
+
+> 230306 ~ 230312
+
+* [[Kotlin] ImmutableList를 MutableList로 Type Casting을 한다면? (feat. Array.ArrayList vs Arrays.ArrayList)]({{site.url}}/Kotlin-Type-Casting-ImmutableList-to-MutableList)
+
+* [LeetCode : 934. Shortest Bridge]({{site.url}}/LeetCode-Shortest-Bridge/#2-code-23-03-11)
+
+* [LeetCode : 881. Boats to Save People]({{site.url}}/LeetCode-Boats-to-Save-People/#3-code-23-03-11)
+
+> 230313 ~ 230320
+
+* [LeetCode : 496. Next Greater Element I]({{site.url}}/LeetCode-Next-Greater-Element-I/#2-code-23-03-19)
+
+* [LeetCode : 895. Maximum Frequency Stack]({{site.url}}/https://goodgid.github.io/LeetCode-Maximum-Frequency-Stack/#2-code-23-03-19)
