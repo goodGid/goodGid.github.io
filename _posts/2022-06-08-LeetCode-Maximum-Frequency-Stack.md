@@ -87,6 +87,30 @@ class FreqStack {
 
 ---
 
+### [2] Code (23. 03. 19)
+
+*Need to Retry -> 실력이 퇴화했나보다 못풀었다.*
+
+``` java
+// Ref : https://leetcode.com/submissions/detail/918181349
+```
+
+* 시도헸으나 못 풀었다.
+
+---
+
+> Review
+
+* 이전에 풀었을 땐 아주 쉽게 풀었던 거 같은데
+
+  지금은 왜 어려울까... ㅠ
+
+  다시 복기를 해봐야겠다.
+
+
+
+---
+
 ## Reference
 
 * [895. Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)
