@@ -118,7 +118,7 @@ class Solution {
 
 * Stack을 사용한 깔끔한 풀이
 
-* 만약 위 코드가 이해 안 된다면 출처인 [Java easy solution || Brute and optimal || Stack || Diagrammatic explanation](https://bit.ly/3TsrAq3)글 을 읽어보고
+* 만약 위 코드가 이해 안 된다면 [코드를 발췌한 글](https://bit.ly/3TsrAq3)을 읽어보고
 
   그래도 이해가 안 된다면 
 
