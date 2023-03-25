@@ -89,4 +89,4 @@ author: goodGid
 
 * [LeetCode : 496. Next Greater Element I]({{site.url}}/LeetCode-Next-Greater-Element-I/#2-code-23-03-19)
 
-* [LeetCode : 895. Maximum Frequency Stack]({{site.url}}/https://goodgid.github.io/LeetCode-Maximum-Frequency-Stack/#2-code-23-03-19)
+* [LeetCode : 895. Maximum Frequency Stack]({{site.url}}/LeetCode-Maximum-Frequency-Stack/#2-code-23-03-19)
