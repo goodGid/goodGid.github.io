@@ -51,7 +51,6 @@ n/a
 // Runtime: 28 ms
 // Memory Usage: 65.2 MB
 // Ref : https://leetcode.com/submissions/detail/725159551
-
 class Solution {
     public List<String> findRepeatedDnaSequences(String s) {
         Set seen = new HashSet(), repeated = new HashSet();
@@ -142,6 +141,51 @@ class Solution {
 
   뭐가 적절하지?란 고민을 하였으나 떠오르지 않았다.
 
+---
+
+### [2] Code (23. 03. 26)
+
+*Need to Retry -> 재밌게 풀었다. 기분 좋게 다시 풀어보자.*
+
+``` java
+// Runtime: 18 ms
+// Memory Usage: 51.3 MB
+// Ref : https://leetcode.com/submissions/detail/922242735
+class Solution {
+    public List<String> findRepeatedDnaSequences(String s) {
+        HashSet<String> set = new HashSet<>();
+        List<String> list = new ArrayList<>();
+
+        int length = s.length();
+        if (length < 10) {
+            return list;
+        }
+
+        for (int i = 0, j = 10; j <= length; i++, j++) {
+            String substring = s.substring(i, j);
+            if (set.contains(substring)) {
+                list.add(substring);
+            } else {
+                set.add(substring);
+            }
+
+        }
+        return list.stream().distinct().collect(Collectors.toList()); // [1]
+    }
+}
+```
+
+* 10개 단위로 Substring 값을 구한 후 Hash를 이용한다.
+
+* [1] : List에 중복 제거를 위해 굳이 Stream을 사용하지 않고
+
+  "[Code (22. 06. 18) -> Reference Code 1]({{site.url}}/LeetCode-Repeated-DNA-Sequences/#1-code-22-06-18)"를 보면 간단하게 요구사항을 충족시킬 수 있다.
+
+  ``` java
+  Set repeated = new HashSet();
+  ...
+  return new ArrayList(repeated);
+  ```
 
 ---
 
