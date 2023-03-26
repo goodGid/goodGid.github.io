@@ -85,8 +85,14 @@ author: goodGid
 
 * [LeetCode : 881. Boats to Save People]({{site.url}}/LeetCode-Boats-to-Save-People/#3-code-23-03-11)
 
-> 230313 ~ 230320
+> 230313 ~ 230319
 
 * [LeetCode : 496. Next Greater Element I]({{site.url}}/LeetCode-Next-Greater-Element-I/#2-code-23-03-19)
 
 * [LeetCode : 895. Maximum Frequency Stack]({{site.url}}/LeetCode-Maximum-Frequency-Stack/#2-code-23-03-19)
+
+> 230321 ~ 230326
+
+* [LeetCode : 380. Insert Delete GetRandom O(1)]({{site.url}}/LeetCode-Insert-Delete-GetRandom-O(1)/#2-code-23-03-25)
+
+* [LeetCode : 187. Repeated DNA Sequences]({{site.url}}/LeetCode-Repeated-DNA-Sequences/#2-code-23-03-26)
