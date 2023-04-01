@@ -163,6 +163,48 @@ class Solution {
 
 ---
 
+### [5] Code (23. 04. 02)
+
+*Need to Retry -> 다시 풀어봐도 재밌을 듯 !*
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 40.8 MB
+// Ref : https://leetcode.com/submissions/detail/925985945
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        Stack<TreeNode> st = new Stack<>();
+
+        TreeNode node = new TreeNode();
+        node = root;
+        while (node != null) {
+            st.add(node);
+            node = node.left;
+        }
+
+        while (!st.isEmpty()) {
+            TreeNode top = st.pop();
+            list.add(top.val);
+
+            top = top.right;
+            while (top != null) {
+                st.add(top);
+                top = top.left;
+            }
+        }
+
+        return list;
+    }
+}
+```
+
+* 드디어 Iterative 하게 풀었다.
+
+  워낙 반복해서 많이 풀었던 문제라 Iterative 하게 풀어야지 생각부터 떠올랐다.
+
+---
+
 ## Reference
 
 *  [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
