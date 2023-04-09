@@ -96,3 +96,17 @@ author: goodGid
 * [LeetCode : 380. Insert Delete GetRandom O(1)]({{site.url}}/LeetCode-Insert-Delete-GetRandom-O(1)/#2-code-23-03-25)
 
 * [LeetCode : 187. Repeated DNA Sequences]({{site.url}}/LeetCode-Repeated-DNA-Sequences/#2-code-23-03-26)
+
+> 230327 ~ 230402
+  
+* [LeetCode : 838. Push Dominoes]({{site.url}}/LeetCode-Push-Dominoes/#2-code-23-04-01)
+
+* [LeetCode : 94. Binary Tree Inorder Traversal]({{site.url}}/LeetCode-Binary-Tree-Inorder-Traversal/#5-code-23-04-02)
+
+> 230403 ~ 230410
+
+* [[Kotlin] 메서드 인자로 n개의 람다(Lambda)를 받는 경우 :: 예제 코드를 보고 출력 값을 맞춰보자.]({{site.url}}/Kotlin-Lambda-Method-Caution-Point)
+
+* [LeetCode : 18. 4Sum]({{site.url}}/LeetCode-4Sum/#2-code-23-04-09)
+
+* [LeetCode : 441. Arranging Coins]({{site.url}}/LeetCode-Arranging-Coins/#1-code-23-04-09)
