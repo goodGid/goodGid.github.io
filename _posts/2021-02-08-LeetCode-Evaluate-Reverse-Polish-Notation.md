@@ -102,6 +102,59 @@ class Solution {
 
 ---
 
+### [2] Code (23. 04. 19)
+
+*Need to Retry*
+
+``` java
+// Runtime: 23 ms
+// Memory Usage: 44.8 MB
+// Ref : https://leetcode.com/submissions/detail/936229652
+class Solution {
+    public int evalRPN(String[] tokens) {
+
+        String regex = "\\d+";
+        Stack<String> st = new Stack<>();
+
+        for (String s : tokens) {
+            if (s.matches(regex)) {
+                st.add(s);
+            } else if (s.startsWith("-") && s.substring(1, s.length()).matches(regex)) {
+                st.add(s);
+            } else {
+                int val1 = Integer.parseInt(st.pop());
+                int val2 = Integer.parseInt(st.pop());
+                switch (s) {
+                    case "+":
+                        st.add(String.valueOf(val2 + val1));
+                        break;
+                    case "-":
+                        st.add(String.valueOf(val2 - val1));
+                        break;
+                    case "*":
+                        st.add(String.valueOf(val2 * val1));
+                        break;
+                    case "/":
+                        st.add(String.valueOf(val2 / val1));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        return Integer.parseInt(st.pop());
+    }
+}
+```
+
+---
+
+> Review
+
+* 처음 풀었을 때보다는 코드가 간결해졌다.
+
+---
+
 ## Reference
 
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
