@@ -9,7 +9,7 @@ author: goodGid
 
 ## Prologue
 
-* LINE Biz+에서 **카카오뱅크**로 경력 이직을 하였다.
+* [LINE Biz+]({{site.url}}/18-Second-Half-Line-2st-Interview)에서 **카카오뱅크**로 경력 이직을 하였다.
 
   이 글은 카카오뱅크에 지원하고자 하는 하는 분들에게 
   
