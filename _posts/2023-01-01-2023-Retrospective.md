@@ -113,7 +113,9 @@ author: goodGid
 
 > 230411 ~ 230416
 
-* [YAML 파일에서 '>'와 '|'의 차이를 아시나요?]({{site.url}}/YAML-About-Grammer)
+<ul>
+  <li><a href="/YAML-About-Grammer" target="_blank">YAML 파일에서 '>'와 '|'의 차이를 아시나요?</a></li>
+</ul>
 
 > 230417 ~ 230423
 
@@ -132,3 +134,11 @@ author: goodGid
 * [LeetCode : 402. Remove K Digits]({{site.url}}/LeetCode-Remove-K-Digits/#1-code-23-05-07)
 
 * [LeetCode : 622. Design Circular Queue]({{site.url}}/LeetCode-Design-Circular-Queue/#1-code-23-05-07)
+
+> 230508 ~ 230514
+
+* [LeetCode : Online Stock Span]({{site.url}}/LeetCode-Online-Stock-Span/#1-code-23-05-14)
+
+> 230515 ~ 230521
+
+* [LeetCode : 324. Wiggle Sort II]({{site.url}}/LeetCode-Wiggle-Sort-II/#1-code-23-05-21)
