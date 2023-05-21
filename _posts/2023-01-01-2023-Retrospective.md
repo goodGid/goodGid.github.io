@@ -142,3 +142,5 @@ author: goodGid
 > 230515 ~ 230521
 
 * [LeetCode : 324. Wiggle Sort II]({{site.url}}/LeetCode-Wiggle-Sort-II/#1-code-23-05-21)
+
+* [LeetCode : 290. Word Pattern]({{site.url}}/LeetCode-Word-Pattern/#1-code-23-05-21-x)
