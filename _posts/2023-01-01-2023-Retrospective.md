@@ -144,3 +144,9 @@ author: goodGid
 * [LeetCode : 324. Wiggle Sort II]({{site.url}}/LeetCode-Wiggle-Sort-II/#1-code-23-05-21)
 
 * [LeetCode : 290. Word Pattern]({{site.url}}/LeetCode-Word-Pattern/#1-code-23-05-21-x)
+
+> 230522 ~ 230528
+
+* [LeetCode : 374. Guess Number Higher or Lower]({{site.url}}/LeetCode-Guess-Number-Higher-or-Lower/#1-code-23-05-27-x)
+
+* [LeetCode : 367. Valid Perfect Square]({{site.url}}/LeetCode-Valid-Perfect-Square/#1-code-23-05-27)
