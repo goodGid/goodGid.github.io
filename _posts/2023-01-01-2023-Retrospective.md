@@ -150,3 +150,13 @@ author: goodGid
 * [LeetCode : 374. Guess Number Higher or Lower]({{site.url}}/LeetCode-Guess-Number-Higher-or-Lower/#1-code-23-05-27-x)
 
 * [LeetCode : 367. Valid Perfect Square]({{site.url}}/LeetCode-Valid-Perfect-Square/#1-code-23-05-27)
+
+> 230529 ~ 230604
+
+* [LeetCode : 658. Find K Closest Elements]({{site.url}}/LeetCode-Find-K-Closest-Elements/#1-code-23-06-04)
+
+> 230605 ~ 230611
+
+* [LeetCode : 1189. Maximum Number of Balloons]({{site.url}}/LeetCode-Maximum-Number-of-Balloons/#1-code-23-06-10-x)
+
+* [LeetCode : 209. Minimum Size Subarray Sum]({{site.url}}/LeetCode-Minimum-Size-Subarray-Sum/#1-code-23-06-10)
