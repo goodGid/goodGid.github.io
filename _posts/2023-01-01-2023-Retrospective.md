@@ -160,3 +160,11 @@ author: goodGid
 * [LeetCode : 1189. Maximum Number of Balloons]({{site.url}}/LeetCode-Maximum-Number-of-Balloons/#1-code-23-06-10-x)
 
 * [LeetCode : 209. Minimum Size Subarray Sum]({{site.url}}/LeetCode-Minimum-Size-Subarray-Sum/#1-code-23-06-10)
+
+> 230612 ~ 230618
+
+* [LeetCode : 448. Find All Numbers Disappeared in an Array]({{site.url}}/LeetCode-Find-All-Numbers-Disappeared-in-an-Array/#1-code-23-06-17)
+
+> 230619 ~ 230625
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 1강 : 확장 가능한 시스템 설계]({{site.url}}/SD-Scalable-System-Structure/#hdfs-hadoop-distributed-file-system-architecture)
