@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 3강 : 빅데이터를 활용한 작업 "
+title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 2강 : 빅데이터를 활용한 작업 "
 categories: SystemDesign
 author: goodGid
 ---

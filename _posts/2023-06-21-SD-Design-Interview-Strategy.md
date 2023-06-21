@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 4강 : 설계 인터뷰 전략 "
+title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 3강 : 설계 인터뷰 전략 "
 categories: SystemDesign
 author: goodGid
 ---

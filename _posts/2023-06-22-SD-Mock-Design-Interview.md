@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 5강 : 모의 설계 인터뷰 "
+title:  " [시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 4강 : 모의 설계 인터뷰 "
 categories: SystemDesign
 author: goodGid
 ---
