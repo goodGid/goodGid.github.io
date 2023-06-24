@@ -120,6 +120,8 @@ type: page
 
 ### 2023
 
+* 　06. 24 Deactivate Disqus Reaction // Commit : 15eda554
+
 ### 2022
 
 * 　08. 05 [[2022년] 카카오뱅크 ESG 지속가능경영보고서 책자에 들어갈 사진 촬영을 하다.]({{site.url}}/2022-Kakaobank-ESG-Book-Model/)
