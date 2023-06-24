@@ -27,7 +27,7 @@ description_footer: ""
 
 # comments
 # two ways to comment, only choose one, and use your own short name
-disqus_shortname: goodGid
+# disqus_shortname: goodGid
 
 # Statistic Analysis 
 google_analytics_id: UA-124748625-1 # google analytics id

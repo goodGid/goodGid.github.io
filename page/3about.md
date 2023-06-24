@@ -376,9 +376,3 @@ type: page
 * 커뮤니티 운영 장학금 기부
 
 * 동문회 홈페이지 관리
-
----
-
-## Comments
-
-{% include comments.html %}
