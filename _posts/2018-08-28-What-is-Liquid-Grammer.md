@@ -148,6 +148,20 @@ author: goodGid
 {{ "/my/fancy/url" | append: ".html" }}
 ```
 
+---
+
+### If 조건문
+
+```
+{% raw %}
+{% if (page.previous and page.previous.categories == page.categories) or (page.next and page.next.categories == page.categories) %}
+{% endraw %}
+```
+
+* if 문에 여러가지 조건을 조합해서 사용할 수 있다.
+
+  ex) [previousAndNext.html](https://github.com/goodGid/goodGid.github.io/blob/master/_includes/previousAndNext.html)
+
 
 ---
 
