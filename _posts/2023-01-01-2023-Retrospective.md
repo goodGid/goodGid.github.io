@@ -174,3 +174,13 @@ author: goodGid
 > 230619 ~ 230625
 
 * [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 1강 : 확장 가능한 시스템 설계]({{site.url}}/SD-Scalable-System-Structure/#hdfs-hadoop-distributed-file-system-architecture)
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 2강 : 빅데이터를 활용한 작업]({{site.url}}/SD-Working-with-Big-Data)
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 3강 : 설계 인터뷰 전략]({{site.url}}/SD-Design-Interview-Strategy)
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 4강 : 모의 설계 인터뷰]({{site.url}}/SD-Mock-Design-Interview)
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 5강 : 일반적인 기술 인터뷰 팁]({{site.url}}/SD-General-Technical-Interview-Tips)
+
+* [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 인터넷 강의 후기]({{site.url}}/SD-Lecture-Review-Pass-the-Interview-in-One-go)
