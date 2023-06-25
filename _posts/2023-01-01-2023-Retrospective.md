@@ -23,13 +23,19 @@ author: goodGid
 <script src="https://gist.github.com/goodGid/bad3c09d63d3268b722355a67ed9ce61.js"></script>
 
 
-## Book
-
-> To Read
+## Book & Lecture
 
 * [System Design Interview - An insider's guide, Second Edition](https://book.naver.com/bookdb/book_detail.nhn?bid=16750882)
 
 * [System Design Interview – An Insider's Guide: Volume 2](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119)
+
+* [이펙티브 코틀린](https://bit.ly/3F2kh2t)
+
+* [시스템 설계 (System Design) : 한번에 인터뷰 합격하기](https://www.udemy.com/course/best-system-design-interview)
+
+* [자바에서 코틀린으로](https://bit.ly/3nmCgL7)
+
+* [만들면서 배우는 클린 아키텍처](/https://shorturl.at/eoKN3)
 
 
 
