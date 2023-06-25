@@ -1,11 +1,17 @@
+
+
+{% if (page.previous and page.previous.categories == page.categories) or (page.next and page.next.categories == page.categories) %}
+<h2 id="recommend">Recommend</h2>
+
 <div class="post-recent">
     <ul>
-        {% if page.previous %}
-        <li>Back : <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></li>
+        {% if page.previous and page.previous.categories == page.categories %}
+        <li><a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></li>
         {% endif %}
         
-        {% if page.next %}
-        <li>Next : <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></li>
+        {% if page.next and page.next.categories == page.categories %}
+        <li><a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></li>
         {% endif %}
       </ul>
 </div>
+{% endif %}
