@@ -184,3 +184,17 @@ author: goodGid
 * [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 5강 : 일반적인 기술 인터뷰 팁]({{site.url}}/SD-General-Technical-Interview-Tips)
 
 * [[시스템 설계 (System Design) - 한번에 인터뷰 합격하기] 인터넷 강의 후기]({{site.url}}/SD-Lecture-Review-Pass-the-Interview-in-One-go)
+
+> 230626 ~ 230702
+
+* [LeetCode : 909. Snakes and Ladders]({{site.url}}/LeetCode-Snakes-and-Ladders)
+
+* [[만들면서 배우는 클린 아키텍처] 4장. 유스케이스 구현하기]({{site.url}}/CA-Implementing-the-Usecase)
+
+* [[만들면서 배우는 클린 아키텍처] 5장. 웹 어댑터 구현하기]({{site.url}}/CA-Implementing-a-Web-Adapter)
+
+* [[만들면서 배우는 클린 아키텍처] 6장. 영속성 어댑터 구현하기]({{site.url}}/CA-Implementing-a-Persistence-Adapter)
+
+* [[만들면서 배우는 클린 아키텍처] 7장. 아키텍처 요소 테스트하기]({{site.url}}/CA-Testing-Architectural-Elements)
+
+* [[만들면서 배우는 클린 아키텍처] 8장. 경계 간 매핑하기]({{site.url}}/CA-Mapping-between-Boundaries)
