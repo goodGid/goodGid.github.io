@@ -181,6 +181,35 @@ class Solution {
 
 * 자잘한 실수들이 많았으나 아이디어만 보자.
 
+---
+
+### [4] Code (23. 07. 05)
+
+``` java
+// Runtime: 1 ms
+// Memory Usage: 45.1 MB
+// Ref : https://leetcode.com/submissions/detail/986940658
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int idx = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                continue;
+            }
+            nums[idx++] = nums[i];
+        }
+
+        for (int i = idx; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+    }
+}
+```
+
+> Review
+
+* 아이디어가 바로 떠오르지 않아 고민을 좀 했다.
+
 
 ---
 
