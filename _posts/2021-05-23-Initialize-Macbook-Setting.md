@@ -100,7 +100,7 @@ Scroll wheel sends arrow keys when in alternate screen mode
 
 ### .zshrc 설정
 
-* [~/.zshrc](https://bit.ly/3bNy3r0) 내용을 Backup 해둔다. // 210523(Sun)
+* [~/.zshrc](https://bit.ly/3bNy3r0) 내용을 Backup 해둔다. // 230708 (Sat)
 
 
 ### Trackpad
