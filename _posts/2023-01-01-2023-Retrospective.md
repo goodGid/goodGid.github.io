@@ -198,3 +198,15 @@ author: goodGid
 * [[만들면서 배우는 클린 아키텍처] 7장. 아키텍처 요소 테스트하기]({{site.url}}/CA-Testing-Architectural-Elements)
 
 * [[만들면서 배우는 클린 아키텍처] 8장. 경계 간 매핑하기]({{site.url}}/CA-Mapping-between-Boundaries)
+
+* [[만들면서 배우는 클린 아키텍처] 책 후기]({{site.url}}/CA-Book-Review-Clean-Architecture-Learning-as-You-Build)
+
+> 230703 ~ 230709
+
+* [LeetCode : 283. Move Zeroes]({{site.url}}/LeetCode-Move-Zeroes/#4-code-23-07-05)
+
+* [LeetCode : 724. Find Pivot Index]({{site.url}}/LeetCode-Find-Pivot-Index/#1-code-23-07-08-x)
+
+* [[Effective Kotlin] 특정 함수(require, check, requireNotNull)를 사용해 스마트 캐스팅 기능 활용하기]({{site.url}}/Effective-Kotlin-Smart-Casting)
+
+* [[Effective Kotlin] 리시버! 리시버! 리시버! : 리시버(Receiver)를 명시적으로 참조하자]({{site.url}}/Effective-Kotlin-Lets-refer-to-the-Receiver-explicitly)
