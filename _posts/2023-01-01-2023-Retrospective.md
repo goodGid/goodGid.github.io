@@ -210,3 +210,9 @@ author: goodGid
 * [[Effective Kotlin] 특정 함수(require, check, requireNotNull)를 사용해 스마트 캐스팅 기능 활용하기]({{site.url}}/Effective-Kotlin-Smart-Casting)
 
 * [[Effective Kotlin] 리시버! 리시버! 리시버! : 리시버(Receiver)를 명시적으로 참조하자]({{site.url}}/Effective-Kotlin-Lets-refer-to-the-Receiver-explicitly)
+
+> 230710 ~ 230716
+
+* [[Effective Kotlin] 클래스 상속은 가능한데 메서드 재정의(Overriding)는 불가능하게 제한하는 방법 : open 키워드를 사용하자]({{site.url}}/Effective-Kotlin-Class-inheritance-is-possible-but-method-overriding-is-not-possible)
+
+* [[Effective Kotlin] componentN 함수는 위치를 기반으로 객체를 해제 시켜준다! (feat. 소괄호)]({{site.url}}/Effective-Kotlin-Precautions-for-using-the-componentN-function)
