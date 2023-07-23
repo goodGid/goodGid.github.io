@@ -216,3 +216,13 @@ author: goodGid
 * [[Effective Kotlin] 클래스 상속은 가능한데 메서드 재정의(Overriding)는 불가능하게 제한하는 방법 : open 키워드를 사용하자]({{site.url}}/Effective-Kotlin-Class-inheritance-is-possible-but-method-overriding-is-not-possible)
 
 * [[Effective Kotlin] componentN 함수는 위치를 기반으로 객체를 해제 시켜준다! (feat. 소괄호)]({{site.url}}/Effective-Kotlin-Precautions-for-using-the-componentN-function)
+
+> 230717 ~ 230723
+
+* [[Effective Kotlin] sealed 한정자는 when 사용 시 else가 필요 없다. (feat. Example Code)]({{site.url}}/Effective-Kotlin-Sealed-Class-Dont-Need-Else-Branch)
+
+* [Enum은 싱글톤이니 Redis Key로 사용해도 문제 없겠지?]({{site.url}}/TIL-Precautions-when-using-Enum-as-Redis-Key)
+
+* [LeetCode : 90. Subsets II]({{site.url}}/LeetCode-Subsets-II/#1-code-23-07-22)
+
+* [LeetCode : 740. Delete and Earn]({{site.url}}/LeetCode-Delete-and-Earn/#1-code-23-07-23)
