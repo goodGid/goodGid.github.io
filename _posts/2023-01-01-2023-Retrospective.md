@@ -232,3 +232,9 @@ author: goodGid
 * [LeetCode : 112. Path Sum]({{site.url}}/LeetCode-Path-Sum/#1-code-23-07-26)
 
 * [LeetCode : 332. Reconstruct Itinerary]({{site.url}}/LeetCode-Reconstruct-Itinerary/#1-code-23-07-30)
+
+> 230731 ~ 230806
+
+* [LeetCode : 994. Rotting Oranges]({{site.url}}/LeetCode-Rotting-Oranges/#1-code-23-08-06-x)
+
+* [LeetCode : 977. Squares of a Sorted Array]({{site.url}}/LeetCode-Squares-of-a-Sorted-Array/#1-code-23-08-06)
