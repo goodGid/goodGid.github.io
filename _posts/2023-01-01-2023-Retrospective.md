@@ -238,3 +238,9 @@ author: goodGid
 * [LeetCode : 994. Rotting Oranges]({{site.url}}/LeetCode-Rotting-Oranges/#1-code-23-08-06-x)
 
 * [LeetCode : 977. Squares of a Sorted Array]({{site.url}}/LeetCode-Squares-of-a-Sorted-Array/#1-code-23-08-06)
+
+> 230807 ~ 230813
+
+* [LeetCode : 1232. Check If It Is a Straight Line]({{site.url}}/LeetCode-Check-If-It-Is-a-Straight-Line/#1-code-23-08-10)
+
+* [LeetCode : 1318. Minimum Flips to Make a OR b Equal to c]({{site.url}}/LeetCode-Minimum-Flips-to-Make-a-OR-b-Equal-to-c/#1-code-23-08-13)
