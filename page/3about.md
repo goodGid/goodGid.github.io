@@ -120,6 +120,8 @@ type: page
 
 ### 2023
 
+* 　08. 15 [인프콘 2023 카뱅 부스 참여](https://shorturl.at/KLMVZ)
+
 * 　06. 24 Deactivate Disqus Reaction // Commit : 15eda554
 
 ### 2022
