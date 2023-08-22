@@ -120,7 +120,7 @@ type: page
 
 ### 2023
 
-* 　08. 15 [인프콘 2023 카뱅 부스 참여](https://shorturl.at/KLMVZ)
+* 　08. 15 [[INFCON 2023] 카카오뱅크 부스에서 기술 성장 상담을 지원하다.]({{site.url}}/Conference-INFCON-2023)
 
 * 　06. 24 Deactivate Disqus Reaction // Commit : 15eda554
 
