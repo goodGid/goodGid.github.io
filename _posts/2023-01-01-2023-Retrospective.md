@@ -244,3 +244,17 @@ author: goodGid
 * [LeetCode : 1232. Check If It Is a Straight Line]({{site.url}}/LeetCode-Check-If-It-Is-a-Straight-Line/#1-code-23-08-10)
 
 * [LeetCode : 1318. Minimum Flips to Make a OR b Equal to c]({{site.url}}/LeetCode-Minimum-Flips-to-Make-a-OR-b-Equal-to-c/#1-code-23-08-13)
+
+> 230814 ~ 230820
+
+* [LeetCode : 1502. Can Make Arithmetic Progression From Sequence]({{site.url}}/LeetCode-Can-Make-Arithmetic-Progression-From-Sequence/#1-code-23-08-20-x)
+
+* [LeetCode : 1161. Maximum Level Sum of a Binary Tree]({{site.url}}/LeetCode-Maximum-Level-Sum-of-a-Binary-Tree/#1-code-23-08-20-x)
+
+> 230821 ~ 230827
+
+* [[INFCON 2023] 카카오뱅크 부스에서 기술 성장 상담을 지원하다.]({{site.url}}/Conference-INFCON-2023)
+
+* [LeetCode : 1351. Count Negative Numbers in a Sorted Matrix]({{site.url}}/LeetCode-Count-Negative-Numbers-in-a-Sorted-Matrix/#1-code-23-08-27)
+
+* [LeetCode : 2090. K Radius Subarray Averages]({{site.url}}/LeetCode-K-Radius-Subarray-Averages/#1-code-23-08-27)
