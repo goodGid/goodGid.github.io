@@ -258,3 +258,9 @@ author: goodGid
 * [LeetCode : 1351. Count Negative Numbers in a Sorted Matrix]({{site.url}}/LeetCode-Count-Negative-Numbers-in-a-Sorted-Matrix/#1-code-23-08-27)
 
 * [LeetCode : 2090. K Radius Subarray Averages]({{site.url}}/LeetCode-K-Radius-Subarray-Averages/#1-code-23-08-27)
+
+> 230828 ~ 230904
+
+* [LeetCode : 228. Summary Ranges]({{site.url}}/LeetCode-Summary-Ranges/#1-code-23-08-31-x)
+
+* [LeetCode : 744. Find Smallest Letter Greater Than Target]({{site.url}}/LeetCode-Find-Smallest-Letter-Greater-Than-Target/#1-code-23-09-02-x)
