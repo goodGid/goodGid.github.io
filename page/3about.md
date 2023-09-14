@@ -342,6 +342,8 @@ type: page
 
 ## Travel
 
+* 　2023. 09. 04 ~ 09. 14	Bali (길리T, 우붓, 짱구, 꾸따)
+
 * 　2019. 10. 06 ~ 10. 09	Geoje Island, Tongyeong, Korea
 
 * 　2019. 08. 11 ~ 08. 17	Kota Kinabalu, Malaysia
