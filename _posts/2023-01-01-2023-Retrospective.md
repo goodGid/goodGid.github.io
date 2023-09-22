@@ -37,6 +37,10 @@ author: goodGid
 
 * [만들면서 배우는 클린 아키텍처](/https://shorturl.at/eoKN3)
 
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지!](https://shorturl.at/inJU9)
+
+* [좋은 코드, 나쁜 코드](https://shorturl.at/bovyC)
+
 
 
 ## DevStory
