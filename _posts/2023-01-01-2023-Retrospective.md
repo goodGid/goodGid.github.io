@@ -263,8 +263,29 @@ author: goodGid
 
 * [LeetCode : 2090. K Radius Subarray Averages]({{site.url}}/LeetCode-K-Radius-Subarray-Averages/#1-code-23-08-27)
 
-> 230828 ~ 230904
+> 230828 ~ 230903
+
 
 * [LeetCode : 228. Summary Ranges]({{site.url}}/LeetCode-Summary-Ranges/#1-code-23-08-31-x)
 
 * [LeetCode : 744. Find Smallest Letter Greater Than Target]({{site.url}}/LeetCode-Find-Smallest-Letter-Greater-Than-Target/#1-code-23-09-02-x)
+
+> 230918 ~ 230924
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 기본 개념 설명]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-basic-concepts-explained)
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 클러스터를 운영하는 여러가지 방법]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-Different-Ways-To-Run-A-Kafka-Cluster)
+
+> 230925 ~ 231001
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 아파치 카프카 CLI 활용]({{site.url}}/Kafka-Lecture-Inflearn-Using-Apache-Kafka-CLI)
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 프로듀서 애플리케이션 개발]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-Producer-Application-Development)
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 컨슈머 소개]({{site.url}}/Kafka-Lecture-Inflearn-Introduction-To-Kafka-Consumer)
+
+> 231002 ~ 231008
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 멱등성 프로듀서, 트랜잭션 프로듀서와 컨슈머]({{site.url}}/Kafka-Lecture-Inflearn-Idempotent-Producer-And-Transactional-Producer-And-Consumer)
+
+* [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 스트림즈]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-Streams)
