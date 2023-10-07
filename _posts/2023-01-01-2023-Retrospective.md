@@ -286,6 +286,10 @@ author: goodGid
 
 > 231002 ~ 231008
 
+* [LeetCode : 767. Reorganize String]({{site.url}}/LeetCode-Reorganize-String)
+
+* [LeetCode : 459. Repeated Substring Pattern]({{site.url}}/LeetCode-Repeated-Substring-Pattern/#1-code-23-10-08)
+
 * [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 멱등성 프로듀서, 트랜잭션 프로듀서와 컨슈머]({{site.url}}/Kafka-Lecture-Inflearn-Idempotent-Producer-And-Transactional-Producer-And-Consumer)
 
 * [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 스트림즈]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-Streams)
