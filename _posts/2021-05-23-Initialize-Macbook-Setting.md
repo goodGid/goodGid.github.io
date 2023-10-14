@@ -253,6 +253,12 @@ git clone git@github.com:goodgid-rich/goodGid-rich.github.io.git
 
 ![](/assets/img/posts/Initialize-Macbook-Setting-Git_6.png)
 
+> Step 9
+
+* 231015
+
+  만약 그래도 안된다면 [Handling Multiple Github Accounts on MacOS](https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9)글을 참고하자.
+
 
 ### Dock 설정
 
