@@ -259,6 +259,11 @@ git clone git@github.com:goodgid-rich/goodGid-rich.github.io.git
 
   만약 그래도 안된다면 [Handling Multiple Github Accounts on MacOS](https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9)글을 참고하자.
 
+> Step 10
+
+* 231029 : [n개 이상 Git계정 사용](https://gist.github.com/goodGid/9a6ebdae1acd890d6fe3d7f6263c86cb) 정리
+
+
 
 ### Dock 설정
 
