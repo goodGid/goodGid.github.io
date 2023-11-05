@@ -293,3 +293,9 @@ author: goodGid
 * [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 멱등성 프로듀서, 트랜잭션 프로듀서와 컨슈머]({{site.url}}/Kafka-Lecture-Inflearn-Idempotent-Producer-And-Transactional-Producer-And-Consumer)
 
 * [[아파치 카프카 애플리케이션 프로그래밍] 개념부터 컨슈머, 프로듀서, 커넥트, 스트림즈까지! 강의 정리 : 카프카 스트림즈]({{site.url}}/Kafka-Lecture-Inflearn-Kafka-Streams)
+
+> 231030 ~ 231105
+
+* [LeetCode : 343. Integer Break]({{site.url}}/LeetCode-Integer-Break/#1-code-23-10-30)
+
+* [LeetCode : 1512. Number of Good Pairs]({{site.url}}/LeetCode-Number-of-Good-Pairs/#1-code-23-11-05)
