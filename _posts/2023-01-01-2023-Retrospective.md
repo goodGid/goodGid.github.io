@@ -307,3 +307,7 @@ author: goodGid
 > 231120 ~ 231126
 
 * [LeetCode : 896. Monotonic Array]({{site.url}}/LeetCode-Monotonic-Array/#1-code-23-11-26)
+
+> 231127 ~ 231203
+
+* [LeetCode : 905. Sort Array By Parity]({{site.url}}/LeetCode-Sort-Array-By-Parity/#1-code-23-12-03)
