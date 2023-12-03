@@ -299,3 +299,11 @@ author: goodGid
 * [LeetCode : 343. Integer Break]({{site.url}}/LeetCode-Integer-Break/#1-code-23-10-30)
 
 * [LeetCode : 1512. Number of Good Pairs]({{site.url}}/LeetCode-Number-of-Good-Pairs/#1-code-23-11-05)
+
+> 231106 ~ 231112
+
+* [LeetCode : 1743. Restore the Array From Adjacent Pairs]({{site.url}}/LeetCode-Restore-The-Array-From-Adjacent-Pairs)
+
+> 231120 ~ 231126
+
+* [LeetCode : 896. Monotonic Array]({{site.url}}/LeetCode-Monotonic-Array/#1-code-23-11-26)
