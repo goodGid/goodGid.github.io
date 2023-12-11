@@ -311,3 +311,7 @@ author: goodGid
 > 231127 ~ 231203
 
 * [LeetCode : 905. Sort Array By Parity]({{site.url}}/LeetCode-Sort-Array-By-Parity/#1-code-23-12-03)
+
+> 231204 ~ 231210
+
+* [LeetCode : 1160. Find Words That Can Be Formed by Characters]({{site.url}}/LeetCode-Find-Words-That-Can-Be-Formed-By-Characters/#1-code-23-12-09)
