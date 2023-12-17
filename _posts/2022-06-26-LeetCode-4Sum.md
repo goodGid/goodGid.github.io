@@ -343,6 +343,157 @@ class Solution {
 
 ---
 
+### [3] Code (23. 12. 17)
+
+*Need to Retry -> 못풀었다.*
+
+``` java
+// 틀린 코드임 ㅠㅠ
+// Ref : https://leetcode.com/submissions/detail/1121399082
+class Solution {
+    private List<List<Integer>> ans = new ArrayList<>();
+    private Set<List<Integer>> set = new HashSet<>();
+
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        dfs(new ArrayList<>(), nums, target, 0, 0);
+
+        Iterator<List<Integer>> it = set.iterator();
+        while (it.hasNext()) {
+            ans.add(it.next());
+        }
+        return ans;
+    }
+
+    private void dfs(List<Integer> _ans, int[] nums, int target, int depth, int idx) {
+        if (depth == 4) {
+            int sum = 0;
+            for (int i : _ans) {
+                sum += i;
+            }
+            if (sum == target) {
+                set.add(new ArrayList<>(_ans));
+            }
+            return;
+        }
+
+        for (int i = idx; i < nums.length; i++) {
+            _ans.add(nums[i]);
+            dfs(_ans, nums, target, depth + 1, i + 1);
+            _ans.remove(_ans.size() - 1);
+        }
+    }
+}
+```
+
+* DFS로 접근해서 풀었다.
+
+  사실 풀면서 이거 시간 초과 뜨겠다 생각했는데
+
+  마땅한 아이디어가 떠오르지 않아서 일단 풀었다.
+
+* 시간 초과 뜬 Case를 정답 코드로 돌려보니 일단 정답은 맞았다. -ㅂ-
+
+* 위 문제를 벌써 3번째 푸는 것이고 
+
+  8개월 전에 풀었을 때도
+
+  아이디어가 떠오르지 않았고 못 풀었음에 스스로 실망감이 크다.
+
+* 이번에 다른 사람 코드를 보다 보니 
+
+  너무 깔끔하고 직관적이고 위 참조했던 코드들보다 훨씬 좋아서
+
+  좋은 경험이었다 스스로 위안을 삼도록 하자.
+
+
+---
+
+> Reference Code
+
+**Code 1**
+
+``` java
+// Runtime: 14 ms
+// Memory Usage: 44.4 MB
+// Ref : https://leetcode.com/submissions/detail/1121587605
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        List<List<Integer>> output = new ArrayList<>();
+        for (int i = 0; i < nums.length - 3; i++) {  // [1]
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            for (int j = i + 1; j < nums.length - 2; j++) { // [2]
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    continue;
+                }
+
+                long t = (long) target - nums[i] - nums[j]; // [3]
+
+                int k = j + 1;
+                int l = nums.length - 1; 
+
+                while (k < l) {
+                    if (nums[k] + nums[l] == t) {
+                        output.add(Arrays.asList(nums[i], nums[j], nums[k], nums[l]));
+                        while (k < l && nums[k] == nums[k + 1]) {k++;}
+                        while (k < l && nums[l] == nums[l - 1]) {l--;}
+                        k++;
+                        l--;
+                    } else if (nums[k] + nums[l] > t) {
+                        l--;
+                    } else {
+                        k++;
+                    }
+                }
+            }
+        }
+        return output;
+    }
+}
+```
+
+* 위 아이디어는 2개의 값(i,j)을 고정하고
+
+  나머지 2개 값을
+  
+  남은 범위에서 Left, Right 값을 지정하여
+  
+  2-Pointer로 접근해서 풀어나가는 문제다.
+
+* [1] : 2개의 값을 고정하는데 
+
+  그중 가장 작은 값(=i변수)을 고정한다.
+
+  그리고 [2]번 for문에서 나머지 3개를 찾으므로
+
+  [1]번 for문 에서는 length-3까지만 순회를 하면 된다.
+
+* [2] : i 값은 고정되었고 이제 j 값을 고정한다.
+
+  그리고 [2]번 for문 내부에서
+
+  k와 l 변수를 설정하여 
+
+  정답을 만족하는 2개의 값을 찾게 된다.
+
+  [1,2,3,...,4]가 있을 때
+
+  i=0, j=1, k=2, l=n-1 값으로 index를 설정하고
+
+  k 변수는 증가, l 변수는 감소시키면서
+
+  조건을 충족하는 답을 찾는다고 생각하면 된다.
+
+  그러니까 j변수는 length-2까지만 돌면 된다.
+
+* [3] : [22년 6월 26일]({{site.url}}/LeetCode-4Sum/#1-code-22-06-26)에 풀었던 코드에 *Check Point*를 참고하자.
+
+
+---
+
 ## Reference
 
 * [18. 4Sum](https://leetcode.com/problems/4sum)
