@@ -315,3 +315,11 @@ author: goodGid
 > 231204 ~ 231210
 
 * [LeetCode : 1160. Find Words That Can Be Formed by Characters]({{site.url}}/LeetCode-Find-Words-That-Can-Be-Formed-By-Characters/#1-code-23-12-09)
+
+> 231211 ~ 231218
+
+* [[1편] Kafka vs RabbitMQ 어떤 Message Queue를 선택해야할까? (How to Choose a Message Queue? Kafka vs. RabbitMQ)]({{site.url}}/Tech-How-To-Choose-A-Message-Queue-1)
+
+* [[2편] Kafka vs RabbitMQ 어떤 Message Queue를 선택해야할까? (How to Choose a Message Queue? Kafka vs. RabbitMQ)]({{site.url}}/Tech-How-To-Choose-A-Message-Queue-2)
+
+* [LeetCode : 18. 4Sum]({{site.url}}/LeetCode-4Sum/#3-code-23-12-17)
