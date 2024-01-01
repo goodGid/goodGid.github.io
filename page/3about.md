@@ -104,6 +104,8 @@ type: page
 
 ## Dev Story
 
+* [2024 Dev History]({{site.url}}/2024-Retrospective)
+
 * [2023 Dev History]({{site.url}}/2023-Retrospective)
 
 * [2022 Dev History]({{site.url}}/2022-Retrospective)
