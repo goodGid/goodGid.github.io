@@ -323,3 +323,9 @@ author: goodGid
 * [[2편] Kafka vs RabbitMQ 어떤 Message Queue를 선택해야할까? (How to Choose a Message Queue? Kafka vs. RabbitMQ)]({{site.url}}/Tech-How-To-Choose-A-Message-Queue-2)
 
 * [LeetCode : 18. 4Sum]({{site.url}}/LeetCode-4Sum/#3-code-23-12-17)
+
+> 231225 ~ 231231
+
+* [LeetCode : 1814. Count Nice Pairs in an Array]({{site.url}}/LeetCode-Count-Nice-Pairs-in-an-Array/#1-code-23-12-30)
+
+* [LeetCode : 1424. Diagonal Traverse II]({{site.url}}/LeetCode-Diagonal-Traverse-II/#1-code-23-12-31)
