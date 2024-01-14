@@ -31,3 +31,19 @@ author: goodGid
 ## DevStory
 
 > 230101 ~ 230107
+
+* [[1편] DB 인덱스 전략 톺아보기 (Database Indexing Strategies) :: Basics of Indexing]({{site.url}}/Tech-Database-Indexing-Strategies-1)
+
+* [[2편] DB 인덱스 전략 톺아보기 (Database Indexing Strategies) :: Understanding Index Types]({{site.url}}/Tech-Database-Indexing-Strategies-2)
+
+* [LeetCode : 542. 01 Matrix]({{site.url}}/LeetCode-01-Matrix/#1-code-24-01-07)
+
+* [LeetCode : 57. Insert Interval]({{site.url}}//#1-code-24-01-07)
+
+> 230108 ~ 230114
+
+* [[3편] DB 인덱스 전략 톺아보기 (Database Indexing Strategies) :: Specialized Indexes]({{site.url}}/Tech-Database-Indexing-Strategies-3)
+
+* [LeetCode : 3. Longest Substring Without Repeating Characters]({{site.url}}/LeetCode-Longest-Substring-Without-Repeating-Characters/#1-code-24-01-13-x)
+
+* [LeetCode : 973. K Closest Points to Origin]({{site.url}}/LeetCode-K-Closest-Points-to-Origin/#1-code-24-01-14)
