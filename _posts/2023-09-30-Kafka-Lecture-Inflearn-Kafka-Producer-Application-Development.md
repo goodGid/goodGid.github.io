@@ -113,7 +113,6 @@ author: goodGid
 
 
 ## ISR(In-Sync-Replicas)와 acks 옵션
-Isr_and_acks_option_1
 
 ### acks = 1
 
