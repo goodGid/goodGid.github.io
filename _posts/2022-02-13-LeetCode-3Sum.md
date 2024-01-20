@@ -98,6 +98,63 @@ class Solution {
 
 ---
 
+### [2] Code (24. 01. 20)
+
+*Retry -> 효율성을 챙기지 못했다.*
+
+``` java
+// Runtime: 1817 ms
+// Memory Usage: 54.1 MB
+// Ref : https://leetcode.com/submissions/detail/1151153151
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        Set<List<Integer>> set = new HashSet<>();
+        
+        Arrays.sort(nums);
+        for (int i : nums) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+        
+        int size = nums.length;
+        for (int i=0; i<size; i++) {
+            map.put(nums[i], map.get(nums[i])-1);
+            for (int j=i+1; j<size; j++) {
+                map.put(nums[j], map.get(nums[j])-1);
+                int target = -1 * (nums[i] + nums[j]);
+                if (map.containsKey(target) && map.get(target) > 0) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(nums[j]);
+                    list.add(target);
+                    Collections.sort(list);
+                    set.add(list);
+                }
+                map.put(nums[j], map.get(nums[j])+1);
+            }
+            map.put(nums[i], map.get(nums[i])+1);
+        }
+        
+        for (List<Integer> list : set) {
+            ans.add(list);
+        }
+        
+        return ans;
+    }
+}
+```
+
+* 위 아이디어는 단순 그 자체
+
+  처음에 2 포인터로 이진 탐색 생각했다가
+
+  급 방향을 틀었다.
+
+* 그러자 시간/공간 효율성이 최악 ㅠㅠ
+
+---
+
 > Review
 
 * 풀면서 몇 가지 놓친 부분들이 있어 틀렸지만 재미난 문제였다.
