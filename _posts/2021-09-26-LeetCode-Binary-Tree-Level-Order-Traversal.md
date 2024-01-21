@@ -184,6 +184,49 @@ class Solution {
 
 ---
 
+
+### [3] Code (24. 01. 21) (x)
+
+``` java
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if (root == null) {
+            return new LinkedList<>();
+        }
+        List<List<Integer>> ans = new LinkedList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        
+        while (!q.isEmpty()) {
+            int size = q.size();
+            
+            List<Integer> _ans = new ArrayList<>();
+            for (int i=0; i<size; i++) {
+                TreeNode node = q.poll();
+                _ans.add(node.val);
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                if (node.right != null) {
+                    q.add(node.right);
+                }
+            }
+            ans.add(_ans);
+        }
+        
+        return ans;
+    }
+}
+```
+
+> Review
+
+* 저번에도 그렇게 이번에도 문제를 보자마자 쓰윽 풀었다.
+
+  다시 풀어볼 필요는 없어 보인다.
+
+---
+
 ## Reference
 
 * [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
