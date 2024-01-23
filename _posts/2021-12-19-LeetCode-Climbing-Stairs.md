@@ -8,7 +8,7 @@ use_math: true
 * content
 {:toc}
 
-## [70. Climbing Stairs]({{site.url}}/https://leetcode.com/problems/climbing-stairs/)
+## [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
 
 ### Problem
 
@@ -63,4 +63,4 @@ class Solution {
 
 ## Reference
 
-* [70. Climbing Stairs]({{site.url}}/https://leetcode.com/problems/climbing-stairs/)
+* [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
