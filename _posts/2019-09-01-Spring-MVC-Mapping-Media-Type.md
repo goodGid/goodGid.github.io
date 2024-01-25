@@ -15,7 +15,7 @@ author: goodGid
 
   처리하는 핸들러 지정이 가능하다.
 
- ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_VALUE)
+  ex) @RequestMapping(consumes=MediaType.APPLICATION_JSON_VALUE)
 
 <br>
     
@@ -53,7 +53,7 @@ public class SampleController {
 
   Content-Type이라는 HTTP 헤더에 
 
-  **application/json"** 
+  **"application/json"** 
 
   **(=MediaType.APPLICATION_JSON_VALUE)**라는 값이 있는 경우에만 처리를 한다. 
 
