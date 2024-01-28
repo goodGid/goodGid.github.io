@@ -47,3 +47,9 @@ author: goodGid
 * [LeetCode : 3. Longest Substring Without Repeating Characters]({{site.url}}/LeetCode-Longest-Substring-Without-Repeating-Characters/#1-code-24-01-13-x)
 
 * [LeetCode : 973. K Closest Points to Origin]({{site.url}}/LeetCode-K-Closest-Points-to-Origin/#1-code-24-01-14)
+
+> 230122 ~ 230128
+
+* [Redis에서 POP 명령어 대신 BRPOP 명령어를 사용하는 이유는 뭘까?]({{site.url}}/Redis-Why-Use-BRPOP-Instead-of-POP)
+
+
