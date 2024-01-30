@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Redis Master/Slave와 Cluster "
-categories: Technology
+categories: Redis
 author: goodGid
 ---
 * content
