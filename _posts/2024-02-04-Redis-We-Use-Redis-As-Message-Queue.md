@@ -241,49 +241,6 @@ LRANGE scores 0 -1
 
 * [[Redis] List의 고급 커맨드들](https://planbs.tistory.com/entry/Redis-List%EC%9D%98-%EA%B3%A0%EA%B8%89-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%93%A4)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## [Stream](https://blog.bytebytego.com/i/137885990/use-streams)
@@ -296,13 +253,13 @@ LRANGE scores 0 -1
 
 ### 동작 방식
 
-<center><img src="/assets/img/redis/Redis-We-Use-Redis-As-Message-Queue-Stream_1.png" alt="" style="max-width: 80%;"></center>
+<center><img src="/assets/img/redis/Tech-Most-Impactful-Ways-Redis-Is-Used-In-Production-Systems-Message-Queue_2.png" alt="" style="max-width: 80%;"></center>
 
 * 프로듀서는 **\*** 매개변수와 함께 XADD를 사용하여 스트림에 새 메시지를 추가한다. 
 
-* \*는 Redis에게 각 메시지에 대한 고유 ID를 자동으로 생성하도록 지시한다. 
+* **\***는 Redis에게 각 메시지에 대한 고유 ID를 자동으로 생성하도록 지시한다. 
   
-  *가 제공되지 않으면 사용자는 중복을 피하기 위해 자신의 고유 ID를 지정해야 한다. 
+  **\***가 제공되지 않으면 사용자는 중복을 피하기 위해 자신의 고유 ID를 지정해야 한다. 
   
   이러한 ID를 사용하면 메시지 순서 추적, 중복 방지, 처리 후 전달 확인이 가능하다.
 
