@@ -52,4 +52,8 @@ author: goodGid
 
 * [Redis에서 POP 명령어 대신 BRPOP 명령어를 사용하는 이유는 뭘까?]({{site.url}}/Redis-Why-Use-BRPOP-Instead-of-POP)
 
+> 230129 ~ 230204
 
+* [Redis를 MessageQueue로 활용하는 방법]({{site.url}}/Redis-We-Use-Redis-As-Message-Queue)
+
+* [LeetCode : 2830. Maximize the Profit as the Salesman]({{site.url}}/LeetCode-Maximize-The-Profit-As-The-Salesman/#1-code-24-02-04)
