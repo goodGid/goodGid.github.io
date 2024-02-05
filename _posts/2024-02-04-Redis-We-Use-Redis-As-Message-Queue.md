@@ -271,7 +271,7 @@ LRANGE scores 0 -1
 
   여러 컨슈머가 병렬로 소비를 할 수 있다.
   
-* 예를 들어, "Consumer Group 1"에서
+* 예를 들어 "Consumer Group 1"에서
   
   "Consumer 1"과 "Consumer 2"는 동시에 메시지를 소비할 수 있다.
 
