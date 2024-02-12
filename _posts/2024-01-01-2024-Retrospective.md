@@ -30,7 +30,7 @@ author: goodGid
 
 ## DevStory
 
-> 230101 ~ 230107
+> 240101 ~ 240107
 
 * [[1편] DB 인덱스 전략 톺아보기 (Database Indexing Strategies) :: Basics of Indexing]({{site.url}}/Tech-Database-Indexing-Strategies-1)
 
@@ -40,7 +40,7 @@ author: goodGid
 
 * [LeetCode : 57. Insert Interval]({{site.url}}//#1-code-24-01-07)
 
-> 230108 ~ 230114
+> 240108 ~ 240114
 
 * [[3편] DB 인덱스 전략 톺아보기 (Database Indexing Strategies) :: Specialized Indexes]({{site.url}}/Tech-Database-Indexing-Strategies-3)
 
@@ -52,8 +52,16 @@ author: goodGid
 
 * [Redis에서 POP 명령어 대신 BRPOP 명령어를 사용하는 이유는 뭘까?]({{site.url}}/Redis-Why-Use-BRPOP-Instead-of-POP)
 
-> 230129 ~ 230204
+> 240129 ~ 240204
 
 * [Redis를 MessageQueue로 활용하는 방법]({{site.url}}/Redis-We-Use-Redis-As-Message-Queue)
 
 * [LeetCode : 2830. Maximize the Profit as the Salesman]({{site.url}}/LeetCode-Maximize-The-Profit-As-The-Salesman/#1-code-24-02-04)
+
+> 240205 ~ 240211
+
+* [Production 환경에서 Redis를 사용하는 가장 효과적인 6가지 방법 - Cache, Session Store]({{site.url}}/Redis-Most-Impactful-Ways-Redis-Is-Used-In-Production-Systems-1)
+
+* [Production 환경에서 Redis를 사용하는 가장 효과적인 6가지 방법 - Leaderboard, Message Queue]({{site.url}}/Redis-Most-Impactful-Ways-Redis-Is-Used-In-Production-Systems-2)
+
+* [LeetCode : 208. Implement Trie (Prefix Tree)]({{site.url}}/LeetCode-Implement-Trie-Prefix-Tree/#2-code-24-02-11)
