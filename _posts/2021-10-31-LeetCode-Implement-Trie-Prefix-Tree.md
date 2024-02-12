@@ -150,6 +150,109 @@ class Trie {
 
 ---
 
+### [2] Code (24. 02. 11)
+
+*Need to Retry -> 자료구조 사용하지말고 직접 구현해서 풀어보기*
+
+``` java
+// Runtime: 246 ms
+// Memory Usage: 66.3 MB
+// Ref : https://leetcode.com/submissions/detail/1171847730
+class Trie {
+    private Node root;
+
+    public Trie() {
+        root = new Node();
+    }
+
+    public void insert(String word) {
+        int size = word.length();
+        char[] cs = word.toCharArray();
+
+        Node node = root;
+        StringBuilder sb = new StringBuilder();
+        for (char c : cs) {
+            sb.append(String.valueOf(c));
+            String key = sb.toString();
+            if (node.subs.containsKey(key)) {
+                node = node.subs.get(key);
+            } else {
+                Node newNode = new Node();
+                node.subs.put(key, newNode);
+                node = newNode;
+            }
+        }
+        node.isEnd = true;
+    }
+
+    public boolean search(String word) {
+        int size = word.length();
+        char[] cs = word.toCharArray();
+
+        Node node = root;
+        StringBuilder sb = new StringBuilder();
+        for (char c : cs) {
+            sb.append(String.valueOf(c));
+            String key = sb.toString();
+            if (node.subs.containsKey(key)) {
+                node = node.subs.get(key);
+            } else {
+                return false;
+            }
+        }
+        return node.isEnd;
+    }
+
+    public boolean startsWith(String word) {
+        int size = word.length();
+        char[] cs = word.toCharArray();
+
+        Node node = root;
+        StringBuilder sb = new StringBuilder();
+        for (char c : cs) {
+            sb.append(String.valueOf(c));
+            String key = sb.toString();
+            if (node.subs.containsKey(key)) {
+                node = node.subs.get(key);
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private class Node {
+        Map<String, Node> subs;
+        boolean isEnd;
+
+        public Node() {
+            this.subs = new HashMap<>();
+            this.isEnd = false;
+        }
+    }
+}
+```
+
+* map 자료구조를 사용하지 않고
+
+  문제 조건에서 *word and prefix consist only of lowercase English letters.* 라고 되어있으므로
+
+  다음과 같이 배열을 선언해도 됐다.
+
+``` java
+if (node.children[c-'a'] == null){
+    node.children[c-'a'] = new TrieNode();
+}
+```
+
+---
+
+> Review
+
+* 풀 수 있을까? 라는 생각으로 접근했는데 풀었다. (뿌듯)
+
+---
+
 ## Reference
 
 * [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
