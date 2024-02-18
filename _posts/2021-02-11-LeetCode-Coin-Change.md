@@ -164,6 +164,44 @@ class Solution {
 
 ---
 
+### [3] Code (24. 02. 18) (x)
+
+``` java
+// Runtime: 10 ms
+// Memory Usage: 44 MB
+// Ref : https://leetcode.com/submissions/detail/1178358915
+class Solution {
+    public int coinChange(int[] coins, int amount) {
+        int[] dp = new int[amount+1];
+        Arrays.fill(dp, 10000+1);
+        dp[0] = 0;
+        
+        for (int coin : coins) {
+            for (int i=coin; i<=amount; i++) {
+                dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
+            }
+        }
+        
+        if (dp[amount] == 10000+1) {
+            return -1;
+        }
+        return dp[amount];
+    }
+}
+```
+
+---
+
+> Review
+
+* 10분 소요
+
+* 아이디어가 바로 떠올랐다. 
+
+  굳이 다시 풀 필요는 없어 보인다.
+
+---
+
 ## Reference
 
 * [322. Coin Change](https://leetcode.com/problems/coin-change/)
