@@ -117,6 +117,13 @@ for (int i = length - 2; i >= 0; i--) {
 }
 ```
 
+---
+
+### [2] Code (24. 02. 18)
+
+*Need to Retry*
+
+* **You must write an algorithm that runs in O(n) time and without using the division operation.**를 충족시키는 아이디어를 떠올리지 못했다. ㅠㅠ
 
 ---
 
