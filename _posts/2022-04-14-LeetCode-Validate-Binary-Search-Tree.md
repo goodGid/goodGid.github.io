@@ -123,6 +123,79 @@ class Solution {
 
 ---
 
+
+### [2] Code (24. 02. 25)
+
+*Need to Retry*
+
+``` java
+class Solution {
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        
+        if (root.left != null && root.val <= root.left.val) {
+            return false;
+        }
+        
+        if (root.right != null && root.val >= root.right.val) {
+            return false;
+        }
+        
+        
+        return isValidBST(root.left, null, root) && isValidBST(root.right, root, null);
+    }
+    
+    public boolean isValidBST(TreeNode root, TreeNode left, TreeNode right) {
+        if (root == null) {
+            return true;
+        }
+        
+        
+        if (root.left != null) {
+            if (root.val <= root.left.val) {
+                return false;
+            }
+            
+            if (left != null && left.val >= root.left.val) {
+                return false;
+            }
+            
+            if (right != null && right.val <= root.left.val) {
+                return false;
+            }
+        }
+        
+        if (root.right != null) {
+            if (root.val >= root.right.val) {
+                return false;
+            }
+            
+            if (left != null && root.right.val <= left.val) {
+                return false;
+            }
+            
+            if (right != null && root.right.val >= right.val) {
+                return false;
+            }
+        }
+        
+        return isValidBST(root.left, null, root) && isValidBST(root.right, root, null);
+    } 
+}
+```
+
+* 82 / 85 test cases passed.
+
+* 또 못 풀었네...
+
+  5번 제출을 했는데 결국 막혔다.
+
+* 제대로 복습하고 짚고 넘어가야겠다.
+
+---
+
 ## Reference
 
 * [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
