@@ -170,9 +170,9 @@ enum OsEnum {
 
 ``` java
 @Override
-  public int hashCode() {
-      return Objects.hash(userKey, osEnum);
-  }
+public int hashCode() {
+    return Objects.hash(userKey, osEnum);
+}
 ```
 
 * 위 코드에서 osEnum은 인스턴스 자체의 hashCode 값을 사용하여 Redis에 저장한다.
