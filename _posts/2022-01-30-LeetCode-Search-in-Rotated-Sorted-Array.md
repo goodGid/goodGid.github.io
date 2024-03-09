@@ -146,6 +146,80 @@ class Solution {
 
 ---
 
+### [3] Code (24. 03. 09)
+
+*Retry*
+
+``` java
+// Runtime: 0 ms
+// Memory Usage: 42.1 MB
+// Ref : https://leetcode.com/submissions/detail/1198110166
+class Solution {
+    public int search(int[] nums, int target) {
+        return search(nums, 0, nums.length-1, target);
+    }
+    
+    public int search(int[] nums, int l, int r, int target) {
+        int mid = 0;
+        
+        while (l <= r) {
+            mid = (l+r) / 2;
+            
+            if (nums[mid] == target) {
+                return mid;
+            }
+            
+            if (nums[l] <= nums[mid] && nums[mid] <= nums[r]) { // [1] : 정렬 되어있는 상태
+                if (nums[mid] == target) {
+                    return mid;
+                } else if (nums[mid] < target) {
+                    l = mid + 1;
+                } else {
+                    r = mid - 1;
+                }
+            } else { // [2] : 정렬 안되어있는 상태
+                int leftRangeAns = search(nums, l, mid-1, target);
+                if (leftRangeAns != -1) {
+                    return leftRangeAns;
+                }
+                
+                int rightRangeAns = search(nums, mid+1, r, target);
+                if (rightRangeAns != -1) {
+                    return rightRangeAns;
+                }
+                return -1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+* [1] : 정렬이 되어있다면 이분 탐색으로 진행
+
+* [2] : 정렬이 안되어있다면 이런 저런 고민을 하다가 
+
+  mid를 중심으로 좌우측으로 탐색을 돌리면 되지 않을까 생각이 들었다.
+
+  한가지 걸렸던 게 문제 시간 복잡도가 조건으로 제시되어있었으나
+
+  2 * $O(log_2 N)$는 어차피 $O(log_2 N)$ 이니까 괜찮겠다 생각했다.
+
+  You must write an algorithm with **$O(log_2 N)$** runtime complexity.
+
+---
+
+> Review
+
+* 1시간가량 걸렸다.
+
+  포기하지 않고 푼 나 자신에게 박수를 보내지만
+
+  코드 자체가 엄청 깔끔한 느낌은 아니라 찝찝함이 남아있다.
+
+
+---
+
 ## Reference
 
 * [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
