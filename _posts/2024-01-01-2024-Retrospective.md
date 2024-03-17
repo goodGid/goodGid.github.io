@@ -93,3 +93,7 @@ author: goodGid
 > 240304 ~ 240310
 
 * [LeetCode : 33. Search in Rotated Sorted Array]({{site.url}}/LeetCode-Search-in-Rotated-Sorted-Array/#3-code-24-03-09)
+
+> 240311 ~ 240317
+
+* [LeetCode : 297. Serialize and Deserialize Binary Tree]({{site.url}}/LeetCode-Serialize-and-Deserialize-Binary-Tree/#2-code-24-03-18)
