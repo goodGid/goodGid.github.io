@@ -292,9 +292,9 @@ class Codec {
 }
 ```
 
-* DELIMETER = "|"
+* DELIMETER = "\|"
 
-  deserialize 할 때 data 값 = "-1|1|..."
+  deserialize 할 때 data 값 = "-1\|1\|..."
 
   일 경우에 data.split(DELIMETER)를 하면 ["-", "1","1"] 이런 식으로 파싱이 되었다.
 
