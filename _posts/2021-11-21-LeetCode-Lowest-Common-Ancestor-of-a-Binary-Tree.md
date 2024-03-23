@@ -172,7 +172,100 @@ class Solution {
 
   다음엔 꼭 풀 수 있길...
 
+---
 
+### [3] Code (24. 03. 23)
+
+*Retry*
+
+``` java
+// Runtime: 7 ms
+// Memory Usage: 44.7 MB
+// Ref : https://leetcode.com/submissions/detail/1211621757
+class Solution {
+    private TreeNode ans = null;
+    // private int cnt = 0;
+    
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        List<TreeNode> list = new ArrayList<>();
+        go(root, p, q);
+        return ans;
+    }
+    
+    private int go(TreeNode node, TreeNode p, TreeNode q) {
+        int cnt = 0;
+        
+        if (node == null) {
+            return 0;
+        }
+        if (ans != null) {
+            return -1;
+        }
+        
+        if (node.val == p.val || node.val == q.val) {
+            cnt++;
+        }
+        
+        cnt += go(node.left, p, q);
+        cnt += go(node.right, p, q);
+        if (cnt == 2) { 
+            ans = node;
+            cnt = 0;
+        }
+        return cnt;
+    }
+}
+```
+
+* 1시간 정도 소요
+
+* 드디어 스스로 힘으로 풀었다.
+
+  로직을 3번 뒤엎으면서 풀었다.
+
+  2년 전에 풀었을 때는 아예 막막했던 기억이 있는데
+
+  이번에는 그래도 할 수 있겠는데?라는 자신감이 있어서 포기하지 않았다.
+
+* 문제를 풀어서 뿌듯하지만
+
+  코드가 깔끔하진 않아서 아쉬운 부분이 있다.
+
+---
+
+> Reference Code
+
+``` java
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) {
+            return root; //DNE / one of the subnodes, return it
+        }
+        //Find if p and q exist in subtrees
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        if (left == null) { //DNE in left
+            if (right == null) { //Also DNE in right, return null
+                return null;
+            } else { //Does exist in right, return right
+                return right;
+            }
+        } else { //Exists in left
+            if (right == null) { //DNE in right, return left
+                return left;
+            } else { //Also exist in right, return root
+                return root;
+            }
+        }
+    }
+}
+```
+
+---
+
+> Review
+
+* 2년동안 **성장**을 했다는 생각에 너무 뿌듯하다.
 
 ---
 
