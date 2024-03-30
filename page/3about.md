@@ -11,6 +11,10 @@ type: page
 
 ## Who am i
 
+* <img src="/assets/img/logo/swm-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> Software Maestro에서 멘토로 활동하고 있습니다.
+
+  ( 2024.04.01 ~ / [2024년 소프트웨어 마에스트로(Software Maestro) 멘토 지원 및 합격 후기]({{site.url}}/2024-Software-Maestro-Mentor-Apply-Reivew) )
+
 * <img src="/assets/img/logo/kakaobank-logo.png" style="max-width: 3%; vertical-align: text-bottom;"> 카카오뱅크에서 BackEnd 개발을 하고 있습니다.
 
   ( 2021.06.07 ~ / [21년 상반기 경력 공채]({{site.url}}/Reviews-of-moving-the-company-to-Kakao-Bank/) )
@@ -119,6 +123,10 @@ type: page
 ---
 
 ## Time Line
+
+### 2024
+
+* [2024년 소프트웨어 마에스트로(Software Maestro) 멘토 지원 및 합격 후기]({{site.url}}/2024-Software-Maestro-Mentor-Apply-Reivew)
 
 ### 2023
 
