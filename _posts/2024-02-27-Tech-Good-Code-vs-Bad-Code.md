@@ -99,8 +99,6 @@ String payerId = paymentInstruction.getPayerId();
 
 <center> <img src="/assets/img/tech/Tech-Good-Code-vs-Bad-Code-The-Perils-Of-Copying-Code_1.png" style="max-width: 80%;"> </center>
 
-![](/assets/img/tech/Tech-Good-Code-vs-Bad-Code-The-Perils-Of-Copying-Code_2.png)
-
 <center>This violates the key "Don't Repeat Yourself" (DRY) principle of software development</center>
 
 <br>
