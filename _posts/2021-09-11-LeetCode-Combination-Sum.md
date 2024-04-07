@@ -108,7 +108,118 @@ class Solution {
 
 * 다시 풀 필요는 없어 보인다.
 
+---
 
+### [3] Code (24. 04. 07)
+
+*Retry -> 아이디어 떠올리는데 은근 어려웠는데?*
+
+``` java
+// Runtime: 6 ms
+// Memory Usage: 44.8 MB
+// Ref : https://leetcode.com/submissions/detail/1225361404
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        Node[] nodes = new Node[41];
+        for (int i = 1; i <= target; i++) {
+            nodes[i] = new Node(i);
+        }
+
+        for (int candidate : candidates) {
+            for (int i = candidate; i <= target; i++) {
+                if (i == candidate) {
+                    Node node = nodes[candidate];
+                    node.add(Collections.singletonList(candidate));
+                    continue;
+                }
+                List<List<Integer>> subList = nodes[i - candidate].getList();
+                if (subList.isEmpty()) {
+                    continue;
+                }
+
+                for (List<Integer> sub : subList) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(candidate);
+                    for (int val : sub) {
+                        list.add(val);
+                    }
+                    nodes[i].add(list);
+                }
+            }
+        }
+        return nodes[target].getList();
+    }
+
+    class Node {
+        int val;
+        List<List<Integer>> list = new ArrayList<>();
+
+        public Node(int _val) {
+            this.val = _val;
+        }
+
+        public void add(List<Integer> subList) {
+            this.list.add(subList);
+        }
+
+        public List<List<Integer>> getList() {
+            return this.list;
+        }
+    }
+}
+```
+
+---
+
+> Reference Code
+
+**Code 1**
+
+``` java
+// Runtime: 4 ms
+// Memory Usage: 44.9 MB
+// Ref : https://leetcode.com/submissions/detail/1225370515
+public class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        // Node 클래스 삭제 및 기능 이동
+        List<List<Integer>>[] dp = new ArrayList[target + 1];
+        for (int i = 0; i <= target; i++) {
+            dp[i] = new ArrayList<>();
+        }
+
+        // 0을 만들기 위해서는 아무런 요소도 사용할 필요가 없음
+        dp[0].add(new ArrayList<>());
+
+        // 후보군마다 조합을 만듦
+        for (int candidate : candidates) {
+            for (int i = candidate; i <= target; i++) {
+                for (List<Integer> combination : dp[i - candidate]) {
+                    List<Integer> newCombination = new ArrayList<>(combination); // [1]
+                    newCombination.add(candidate);
+                    dp[i].add(newCombination);
+                }
+            }
+        }
+        return dp[target];
+    }
+}
+```
+
+* 위 정답 코드를 지피티한테 리팩토링 시킨 코드
+
+  훨씬 깔끔하다.
+
+* [1] : List Copy 뜨는 코드
+
+---
+
+> Review
+
+* 21년에는 재귀를 바로 떠올려서 풀었는데
+
+  이번에는 다른 방식을 접근을 했더니 어렵게 느껴졌다.
+
+  이전엔 쉬웠는데 이번엔 까다로워지는 마법
 
 ---
 
