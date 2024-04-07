@@ -254,6 +254,18 @@ List<String> list = new ArrayList<String>() {
 
 ---
 
+#### List 복사
+
+``` java
+ArrayList<Integer> list1 = new ArrayList<>();
+list1.add(1);
+ArrayList<Integer> list2 = new ArrayList<>(list1);
+list2.add(2);
+System.out.println(list2.size()); // 1,2 출력
+```
+
+---
+
 ### Map
 
 #### Map 반복문
