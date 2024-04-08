@@ -89,6 +89,52 @@ Expected:
 
 * 문제 아이디어가 떠오르지 않았다.
 
+---
+
+### [2] Code (24. 04. 08)
+
+``` java
+// Runtime: 11 ms
+// Memory Usage: 46.7 MB
+// Ref : https://leetcode.com/submissions/detail/1226711390
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0])); // [1]
+
+        Stack<int[]> st = new Stack<>();
+
+        for (int[] item : intervals) {
+            if (st.isEmpty()) {
+                st.add(item);
+            } else {
+                int[] pop = st.pop();
+                if (pop[1] >= item[0]) {
+                    st.add(new int[] { pop[0], Math.max(pop[1], item[1]) });
+                } else {
+                    st.add(pop);
+                    st.add(item);
+                }
+            }
+        }
+
+        int size = st.size();
+        int[][] ans = new int[size][2];
+
+        for (int i = size - 1; i >= 0; i--) {
+            int[] pop = st.pop();
+            ans[i][0] = pop[0];
+            ans[i][1] = pop[1];
+        }
+        return ans;
+    }
+}
+```
+
+* 10분 소요
+
+  보자마자 아이디어가 떠올랐고 무난하게 풀었다.
+
+* [1] : int[]에서 int[0] 번째 값으로 정렬하는 방법을 몰라서 찾아봤다.
 
 ---
 
