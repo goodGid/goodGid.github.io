@@ -103,3 +103,17 @@ author: goodGid
 * [LeetCode : 236. Lowest Common Ancestor of a Binary Tree]({{site.url}}/LeetCode-Lowest-Common-Ancestor-of-a-Binary-Tree/#3-code-24-03-23)
 
 * [LeetCode : 42. Trapping Rain Water]({{site.url}}/LeetCode-Trapping-Rain-Water/#2-code-24-03-24)
+
+> 240401 ~ 240408
+
+* [2024년 소프트웨어 마에스트로(Software Maestro) 멘토 지원 및 합격 후기]({{site.url}}/2024-Software-Maestro-Mentor-Apply-Pass-Reivew)
+
+> 240409 ~ 240407
+
+* [LeetCode : 39. Combination Sum]({{site.url}}/LeetCode-Combination-Sum/#3-code-24-04-07)
+
+* [LeetCode : 56. Merge Intervals]({{site.url}}/LeetCode-Merge-Intervals/#2-code-24-04-08)
+
+> 240422 ~ 240428
+
+* [LeetCode : 23. Merge k Sorted Lists]({{site.url}}/LeetCode-Merge-k-Sorted-Lists/#2-code-24-04-28)
