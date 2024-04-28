@@ -195,6 +195,68 @@ class Solution {
 
 ---
 
+### [2] Code (24. 04. 28)
+
+*Retry*
+
+``` java
+// Runtime: 5 ms
+// Memory Usage: 44.9 MB
+// Ref : https://leetcode.com/submissions/detail/1243701594
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<Node> pq = new PriorityQueue<>((n1, n2) -> { // [1]
+            return n1.val - n2.val;
+        });
+
+        for (ListNode node : lists) {
+            if (node == null) {
+                continue;
+            }
+            pq.add(new Node(node.val, node.next));
+        }
+
+        ListNode ans = new ListNode();
+        ListNode ptr = ans;
+        while (!pq.isEmpty()) {
+            Node node = pq.poll();
+            ptr.next = new ListNode(node.val);
+            ptr = ptr.next;
+
+            if (node.listNode == null) {
+                continue;
+            } else {
+                pq.add(new Node(node.listNode.val, node.listNode.next));
+            }
+        }
+
+        return ans.next;
+    }
+
+    class Node {
+        int val;
+        ListNode listNode;
+
+        public Node(int _val, ListNode _node) {
+            val = _val;
+            listNode = _node;
+        }
+
+        public int getVal() {
+            return val;
+        }
+    }
+}
+```
+
+* Hard 문제였는데 Medium처럼 풀렸다.
+
+* [1] : 기존 코드를 다음과 같이 선언해줄 수 있다.
+
+  PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparingInt(n -> n.val));
+
+---
+
 ## Reference
 
 * [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
