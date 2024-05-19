@@ -77,7 +77,7 @@ author: goodGid
   
   MQ를 다루는 전문적인 솔루션을 사용하는 게 좋다.
 
-* [다음 글에서는 MQ를 다루는 솔루션]({site.url}/Tech-How-To-Choose-A-Message-Queue-2)에 대해 알아보도록 하자.
+* [다음 글에서는 MQ를 다루는 솔루션]({{site.url}}/Tech-How-To-Choose-A-Message-Queue-2)에 대해 알아보도록 하자.
 
   ex) RabbitMQ, Kafka
 
