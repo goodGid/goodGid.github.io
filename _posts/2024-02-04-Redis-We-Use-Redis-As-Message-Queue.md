@@ -83,7 +83,7 @@ use_math: true
 3. No ordering guarantees - Messages may be received out of order.
 ```
 
-* Kafka와 같은 강력한 Brokered Messaging System에 비해 다음과 같은 제한 사항이 있다.
+* Kafka와 같은 강력한 Brokered Messaging System에 비해 위와 같은 제한 사항이 있다.
 
   그러므로 안정성 측면에서는 다소 불안한 면이 있다.
 
@@ -120,6 +120,14 @@ use_math: true
   그 그룹에 속해있는 컨슈머들을 제어하기 위해 컨슈머 그룹을 형성한다.
 
 * Redis List는 Pusb/Sub과 달리 Disk에 데이터를 저장한다.
+
+* Redis List는 저장된 데이터의 순서를 유지하고 
+
+  특정 위치에 있는 요소를 쉽게 접근하거나 변경 할 수 있는 자료 구조이며
+
+  주로 큐(queue) 또는 스택(stack)처럼 사용할 수 있다.
+
+  ex) 작업 대기열, 간단한 메시지 큐, 스택
 
 ---
 
@@ -294,6 +302,16 @@ LRANGE scores 0 -1
 > Redis Stream 관련 글 추천
 
 * [Redis Streams와 Apache Kafka: 두 데이터 스트리밍 시스템 비교](https://wiki.yowu.dev/ko/Knowledge-base/NoSQL/redis-streams-vs-apache-kafka-comparing-two-data-streaming-systems)
+
+---
+
+## 각 방식의 장단점 비교
+
+* 이 글에 비교글을 작성하려 했으나 
+
+  글이 길어져서 새로운 포스팅에 정리를 하였다.
+
+  [Redis를 MessageQueue로 활용하는 방법들의 장/단점 분석]({{site.url}}/Redis-Analysis-Of-The-Pros-And-Cons-Of-Using-Redis-As-A-MessageQueue)
 
 ---
 
