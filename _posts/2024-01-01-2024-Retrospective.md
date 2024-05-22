@@ -117,3 +117,7 @@ author: goodGid
 > 240422 ~ 240428
 
 * [LeetCode : 23. Merge k Sorted Lists]({{site.url}}/LeetCode-Merge-k-Sorted-Lists/#2-code-24-04-28)
+
+> 240520 ~ 240527
+
+* [Redis를 MessageQueue로 활용하는 방법들의 장/단점 분석]({{site.url}}/Redis-Analysis-Of-The-Pros-And-Cons-Of-Using-Redis-As-A-MessageQueue)
