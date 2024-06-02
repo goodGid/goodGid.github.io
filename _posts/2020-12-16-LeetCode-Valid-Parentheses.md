@@ -105,6 +105,39 @@ private static final Map<Character, Character> MAPS = new HashMap<Character, Cha
 
 ---
 
+### [2] Code (24. 06. 02)
+
+*Retry*
+
+``` java
+// Runtime: 2 ms
+// Memory Usage: 37 MB
+// Ref : https://leetcode.com/submissions/detail/431285981
+class Solution {
+    public boolean isValid(String s) {
+        Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[');
+        Stack<Character> stack = new Stack<>();
+
+        for (Character c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else if (stack.isEmpty() || stack.pop() != map.get(c)) {
+                return false;
+            }
+        }
+
+        return stack.isEmpty();
+    }
+}
+```
+
+> Review
+
+* 스무스하게 풀었다.
+
+
+---
+
 ## Reference
 
 * [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
