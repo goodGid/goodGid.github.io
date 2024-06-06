@@ -335,6 +335,16 @@ author: goodGid
 
 ---
 
+## 제1차 멘토 정례 간담회 안내
+
+<center><img src="/assets/img/posts/2024-Software-Maestro-Mentor-Apply-Reivew-Mentor-Regular-Meeting-Information_1.png" alt="" style="max-width: 100%;"></center>
+
+* 멘티분들 발대식 행사 후 멘토들과 정례 간담회를 진행한다.
+
+  어떤 분위기 일지 궁금하다.
+
+---
+
 ## Summary
 
 * 소프트웨어 마에스트로(Software Maestro) 멘토를 지원한다면 도움이 될 만한 정보에 대해 글을 작성해봤다.
