@@ -17,7 +17,7 @@ author: goodGid
 
 * 하지만 영속성 컨텍스트의 Flush 시점 역시 **커스터 마이징**이 가능하다.
 
-* 기본적으로 Hibernate는 다음과 같은 경우에 Session을 DB에 Flush 한다.
+* 기본적으로 Hibernate는 다음과 같은 경우에 Session의 변경사항을 DB에 Flush한다.
 
 
 1. session.flush( )를 명시적으로 호출하는 경우
