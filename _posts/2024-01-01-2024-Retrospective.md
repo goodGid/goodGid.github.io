@@ -123,3 +123,7 @@ author: goodGid
 * [Redis를 MessageQueue로 활용하는 방법들의 장/단점 분석]({{site.url}}/Redis-Analysis-Of-The-Pros-And-Cons-Of-Using-Redis-As-A-MessageQueue)
 
 * [54. Spiral Matrix]({{site.url}}/LeetCode-Spiral-Matrix/#3-code-24-05-26)
+
+> 240617 ~ 240623
+
+* [[데이터 중심 애플리케이션 설계] 5장. 복제 : 쓰기 후 읽기 일관성 (Read After Write]({{site.url}}/https://goodgid.github.io/SD-Replication-Read-After-Write)
