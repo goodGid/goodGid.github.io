@@ -18,13 +18,13 @@ author: goodGid
 
 ## Plan
 
-* [2024 Plan Note](https://gist.github.com/goodGid/a2e9ea6db590648292bf96bac553395d)
+* [2025 Plan Note](https://gist.github.com/goodGid/a2e9ea6db590648292bf96bac553395d)
 
-<script src="https://gist.github.com/goodGid/4af05baf38573fc1b605f40b55469a9d.js"></script>
+<script src="https://gist.github.com/goodGid/a2e9ea6db590648292bf96bac553395d.js"></script>
 
 ## Book & Lecture
 
-* [좋은 코드, 나쁜 코드](https://shorturl.at/bovyC)
+* [앤서블로 시작하는 인프라 자동화](https://search.shopping.naver.com/book/catalog/42799514639?cat_id=50010921&frm=PBOKPRO&query=%EC%95%A4%EC%84%9C%EB%B8%94%EB%A1%9C+%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94+%EC%9D%B8%ED%94%84%EB%9D%BC+%EC%9E%90%EB%8F%99%ED%99%94&NaPm=ct%3Dm8r37hr4%7Cci%3Debbdae97deab6df0c802e5ee64433d86189cf6b5%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3De4e3c18237e3fcd80a1f61c54eb5281a23dcbb3e)
 
 
 
