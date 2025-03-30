@@ -33,3 +33,5 @@ author: goodGid
 > 250324 ~ 250330
 
 * [LeetCode : 542. 01 Matrix]({{site.url}}/LeetCode-Replace-Elements-With-Greatest-Element-On-Right-Side)
+
+* [Redis 서버에 접속중인 Client 목록 확인 방법]({{site.url}}/Redis-How-to-know-Connected-Client)
