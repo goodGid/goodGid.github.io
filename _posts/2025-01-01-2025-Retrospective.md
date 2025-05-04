@@ -39,3 +39,11 @@ author: goodGid
 > 250331 ~ 250406
 
 * [LeetCode : 692. Top K Frequent Words]({{site.url}}/LeetCode-Top-K-Frequent-Words)
+
+> 250414 ~ 250420
+
+* [샤딩과 파티셔닝, 그 차이에 대하여]({{site.url}}/DB-Sharding-vs-Partitioning)
+
+> 250428 ~ 250504
+
+* [DIG(Domain Information Groper) 명령어를 아시나요?]({{site.url}}/Tech-Command-DIG)
