@@ -47,3 +47,7 @@ author: goodGid
 > 250428 ~ 250504
 
 * [DIG(Domain Information Groper) 명령어를 아시나요?]({{site.url}}/Tech-Command-DIG)
+
+> 250505 ~ 250511
+
+* [2PC(Two-Phase Commit)란 무엇일까?]({{site.url}}/Tech-2PC-Two-Phase-Commit)
