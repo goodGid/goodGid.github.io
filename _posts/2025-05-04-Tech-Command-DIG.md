@@ -8,8 +8,6 @@ use_math: true
 * content
 {:toc}
 
-
-
 ## dig(Domain Information Groper)
 
 * dig(Domain Information Groper)은 DNS(Domain Name System) 정보를 조회하는 데 사용되는 명령어이다. 
