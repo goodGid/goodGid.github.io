@@ -77,7 +77,6 @@ public List<Integer> rightSideView(TreeNode root) {
 
 ---
 
-
 ### [2] Code (21. 11. 28) (x)
 
 ``` java
@@ -151,6 +150,44 @@ while (!q.isEmpty()) {
 > Review
 
 * BFS 유형의 문제는 확실히 풀 수 있겠단 자신감이 생겼다.
+
+---
+
+### [3] Code (25. 06. 08) (x)
+
+``` java
+class Solution {
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        if (root == null) {
+            return ans;
+        }
+        q.add(root);
+
+        while (!q.isEmpty()) {
+            int size = q.size();
+            for (int i=0; i<size; i++) {
+                TreeNode node = q.poll();
+                if (i == size-1) {
+                    ans.add(node.val);
+                }
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                if (node.right != null) {
+                    q.add(node.right);
+                }
+            }
+        }
+        return ans;
+    }
+}
+```
+
+* 이전과 비슷하게 풀었다.
+
+  이런 유형에 대해선 아이디어도 바로 떠오르고 자신감 있게 접근했다.
 
 ---
 
