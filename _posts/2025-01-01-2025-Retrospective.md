@@ -51,3 +51,15 @@ author: goodGid
 > 250505 ~ 250511
 
 * [2PC(Two-Phase Commit)란 무엇일까?]({{site.url}}/Tech-2PC-Two-Phase-Commit)
+
+> 250512 ~ 250518
+
+* [DU(Disk Usage) 명령어를 아시나요?]({{site.url}}/Tech-Command-DU-Disk-Usage)
+
+> 250526 ~ 250601
+
+* [분산 시스템에서 순서 없는 이벤트를 다루는 전략]({{site.url}}//Tech-Eventual-Consistency-in-Distributed-System)
+
+> 250602 ~ 250608
+
+* [LeetCode : 199. Binary Tree Right Side View]({{site.url}}/LeetCode-Binary-Tree-Right-Side-View/#3-code-25-06-08-x)
