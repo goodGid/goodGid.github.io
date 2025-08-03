@@ -71,8 +71,39 @@ use_math: true
 
   이는 주로 이러한 작은 자동완성 요청 때문이다.
 
+---
+
+## 2 - AI Chat Assistant
+
+* Cursor는 코드 제안 외에도 IDE 내의 전용 채팅 패널을 통해
+
+  강력한 **AI 채팅 도우미(AI Chat Assistant)** 기능을 제공한다.
+
+* Cursor는 각 파일에 어떤 코드가 있고
+
+  클래스나 함수들이 어떤 관계를 맺고 있는지 미리 정리해 두기 위해
+
+  프로젝트에 있는 모든 코드 파일을 스캔하고 분석하여 인덱스(Index) 작업을 해둔다.
+
+* 그 결과 Cursor AI는 전체 프로젝트 구조와 내용을 파악하고 있으므로
+  
+  단순한 한 파일 수정이 아닌 여러 파일에 걸친 복잡한 작업도 수행할 수 있다.
 
 ---
+
+## 3 - Inline Edit Mode
+
+* 빠르고 집중적인 변경을 위해 Cursor는 인라인 편집 모드를 제공한다.
+
+* 개발자는 편집기에서 코드 블록을 선택하고 명령을 내리기만 하면 
+
+  Cursor AI가 선택한 영역에 요청된 변경 사항을 직접 적용한다.
+
+![](/assets/img/tech/How-Cursor-Serves-Billions-of-AI-Code-Completions-Every-Day_2.png)
+
+---
+
+
 
 ## Reference
 
