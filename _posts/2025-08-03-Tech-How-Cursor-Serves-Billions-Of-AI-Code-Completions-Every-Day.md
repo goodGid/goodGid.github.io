@@ -103,7 +103,68 @@ use_math: true
 
 ---
 
+## 4 - AI Code Review with Bugbot
 
+* Cursor 1.0은 GitHub 풀 리퀘스트(PR)를 위해 
+
+  특별히 설계된 AI 기반 코드 검토 도우미인 BugBot을 선보였다.
+
+  BugBot을 설정하려면 GitHub 앱 설치를 통해 Cursor를 GitHub 저장소에 연결해야 한다.
+
+* BugBot은 Cursor와 동일한 강력한 AI 모델을 사용하여 코드 변경 사항을 자동으로 분석한다.
+
+  PR을 검토하여 잠재적 버그, 오류 또는 스타일 문제를 파악하고 
+  
+  그런 다음 자세한 설명과 제안된 수정 사항을 PR에 직접 댓글로 남긴다.
+
+* BugBot은 자동 모드(모든 PR 업데이트 시 재실행)로 작동하거나
+
+  PR에 "bugbot run"이라는 댓글을 달아 수동으로 실행할 수도 있다.
+  
+  각 댓글에는 편리한 "Cursor에서 수정" 링크가 포함되어 있어 개발자는 관련 컨텍스트가 로드된 Cursor 편집기로 바로 이동하여 제안된 수정 사항을 즉시 적용하여 반복 루프를 단축할 수 있습니다.
+
+---
+
+## 5 - Background Agents
+
+* Background Agents는 
+
+  복잡하거나 시간이 오래 걸리는 코딩 작업을 
+
+  백그라운드에서 자동으로 처리해 주는 도우미 역할을 한다.
+
+* 로컬에서 코딩하고 있을 때
+  
+  백그라운드에서 동시에 다른 작업을 처리해 주는
+
+  AI 페어 프로그래머라고 생각하면 된다.
+
+* Background Agents는 광범위한 요구 사항과
+
+  로컬 컴퓨터에 부담을 줄 수 있는 무거운 작업을 처리하기 위해
+
+  일반적으로 Cursor의 고급 "Max" 모델을 활용한다.
+
+* Cursor의 클라우드 환경(AWS)에 설치된 Ubuntu VM에서 작업을 수행한다.
+
+* 우리의 컴퓨터가 아닌 완전히 격리된 안전한 공간에서 실행되므로
+  
+  실수로 뭔가 잘못되더라도 내 로컬 환경에는 영향을 주지 않는
+
+  일종의 **샌드박스(안전한 실험 공간)**에서 작업한다고 보면 된다.
+
+![](/assets/img/tech/How-Cursor-Serves-Billions-of-AI-Code-Completions-Every-Day_3.png)
+
+---
+
+## 6 - Persistent Project Knowledge: Rules and Memories
+
+
+
+
+![](/assets/img/tech/How-Cursor-Serves-Billions-of-AI-Code-Completions-Every-Day_4.png)
+
+---
 
 ## Reference
 
