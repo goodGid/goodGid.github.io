@@ -63,3 +63,7 @@ author: goodGid
 > 250602 ~ 250608
 
 * [LeetCode : 199. Binary Tree Right Side View]({{site.url}}/LeetCode-Binary-Tree-Right-Side-View/#3-code-25-06-08-x)
+
+> 250825 ~ 250831
+
+* [A 레코드와 CNAME 레코드는 뭐가 다른걸까?]({{site.url}}/Network-CNAME-and-A-Record)
