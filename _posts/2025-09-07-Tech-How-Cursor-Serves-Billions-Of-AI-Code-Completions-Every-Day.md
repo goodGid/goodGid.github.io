@@ -292,6 +292,111 @@ use_math: true
 
 ---
 
+## 7 - Codebase Indexing and Semantic Search
+
+* 대규모 프로젝트를 효과적으로 지원하기 위해 
+
+  Cursor는 백그라운드에서 코드베이스 인덱싱을 수행하여 
+  
+  AI가 전체 코드베이스를 이해하고 질문에 답할 수 있도록 한다.
+
+### Initial Indexing
+
+* 프로젝트를 열면 Cursor는 파일을 분석하여 더 작은 chunk(ex. function)로 분할한다.
+
+  이러한 chunk는 로컬에서 암호화되어 
+  
+  난독화된 파일 식별자(파일 이름도 일반 텍스트로 전송되지 않음)와 함께 Cursor 서버로 전송된다.
+  
+* 서버는 AI 모델(ex. OpenAI's embedding model)을 사용하여
+
+  각 chunk를 복호화하고 필요한 계산 후 데이터를 즉시 삭제한다. 
+
+  즉 서버에는 사람이 읽을 수 있는 코드가 영구적으로 저장되지 않는다.
+
+### Semantic Search
+
+* 개발자가 질문하면
+
+  Cursor는 쿼리를 벡터로 변환하고
+
+  저장된 임베딩에 대해 벡터 유사성 검색을 수행한다.
+  
+* 이 검색은 서버가 실제 코드를 먼저 확인하지 않고도 
+
+  정확한 키워드가 아닌 의미를 기반으로 관련 코드 섹션을 찾는다.
+
+
+### Fetching Relevant Code
+
+* 질문에 답변하기 위해 실제 코드 내용이 필요한 경우 
+
+  서버는 Cursor 클라이언트에 해당 chunk를 요청한다.
+  
+* 그런 다음 클라이언트는 암호화된 상태로 해당 소스 코드를 전송하고 
+
+  이러한 설계는 일반적으로 단방향이므로
+
+  원본 코드를 재구성할 수 없으므로 개인 정보 보호를 우선시하며
+
+  서버는 해당 코드를 복호화한 후 즉시 삭제한다.
+  
+* Cursor는 또한 .gitignore 및 전용 .cursorignore 파일을 준수하여 
+
+  민감한 파일의 인덱싱을 방지하고 
+  
+  chunk를 전송하기 전에 Heuristically 방식으로 비밀 정보를 검색한다.
+
+### Index Synchronization
+
+* 개발자가 코드 편집 시 인덱스를 최신 상태로 유지하기 위해 
+
+  Cursor는 Merkle Tree Synchronization Mechanism을 사용한다. 
+  
+* Merkle Tree는 해시 기반 데이터 구조로 
+
+  대규모 데이터 세트의 변경 사항을 효율적으로 감지할 수 있다. 
+  
+* 클라이언트는 프로젝트 파일의 Merkle Tree를 계산하고 
+
+  서버는 자체적으로 Merkle Tree를 관리한다. 
+  
+* Cursor는 몇 분마다 이러한 트리를 비교하여 
+
+  어떤 파일이 수정되었는지 정확히 파악하고 
+  
+  변경된 부분만 다시 인덱싱하여 대역폭과 지연 시간을 최소화한다.
+
+![](/assets/img/tech/How-Cursor-Serves-Billions-of-AI-Code-Completions-Every-Day_5.png)
+
+---
+
+## Summary
+
+* Visual Studio Code를 fork하여 
+
+  Cursor는 개발자에게 안정적이고 직관적인 인터페이스를 제공하는 동시에 
+  
+  심층적인 AI 통합에 신속하게 집중할 수 있도록 지원한다.
+
+* Cursor의 아키텍처는 속도나 개인정보 보호에 영향을 주지 않으면서 
+
+  지능형 지원을 제공하도록 설계되었다.
+  
+* 실시간 AI 코드 자동 완성과 같은 많은 기능은 
+
+  **클라우드 서버**에서 실행되는 자체 모델을 기반으로 하며 
+  
+  **암호화**된 코드 조각만 전송하여 낮은 지연 시간과 데이터 보안을 보장한다.
+
+* 매일 수십억 건의 AI 완료를 처리하는 이 정교한 클라우드 기반 시스템은 
+
+  모든 워크플로에 AI를 심층적으로 내장하고 
+  
+  개발자 생산성을 높이며 코드 작성 및 관리 방식을 혁신함으로써 새로운 코딩 경험을 제공한다.
+
+---
+
 ## Reference
 
 * [How Cursor Serves Billions of AI Code Completions Every Day](https://blog.bytebytego.com/p/how-cursor-serves-billions-of-ai)
