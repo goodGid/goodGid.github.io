@@ -67,3 +67,7 @@ author: goodGid
 > 250825 ~ 250831
 
 * [A 레코드와 CNAME 레코드는 뭐가 다른걸까?]({{site.url}}/Network-CNAME-and-A-Record)
+
+> 250901 ~ 250907
+
+* [Cursor가 매일 수십억 건의 AI 코드 완성을 처리하는 방식]({{site.url}}/Tech-How-Cursor-Serves-Billions-Of-AI-Code-Completions-Every-Day)
