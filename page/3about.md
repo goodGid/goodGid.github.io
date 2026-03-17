@@ -23,6 +23,11 @@ type: page
 
   ( 2019.01.02 ~ 2021.06.04 / [18년 하반기 신입 공채]({{site.url}}/18-Second-Half-Line-2st-Interview/) )
 
+* <img src="/assets/img/logo/samsung-logo.png" style="max-width: 7%; vertical-align: text-bottom;"> 삼성전자 무선사업부 신입 공채에 합격했습니다.
+
+  ( [18 하반기 공채 삼성전자 무선사업부 S직군 면접 후기
+]({{site.url}}/18-Second-Half-Samsung-Electronics-Interview/) )
+
 * <img src="/assets/img/logo/edit.png" style="max-width: 3%; vertical-align: text-bottom;"> : 기록하는 걸 좋아합니다.
 
 * <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : 공유하고 알려주는 것을 좋아합니다.
