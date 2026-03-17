@@ -1,0 +1,869 @@
+---
+layout: default
+title: History
+permalink: /history/
+icon: history
+type: page
+---
+
+<style>
+  .ht-page {
+    padding: 30px 0 80px;
+  }
+
+  .ht-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ht-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #223253;
+    margin-bottom: 8px;
+    border: none;
+  }
+
+  .ht-header .ht-desc {
+    color: #999;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .ht-body {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .ht-wrap {
+    flex: 1;
+    min-width: 0;
+    padding: 0 20px;
+  }
+
+  /* ── 연도 사이드 네비 ── */
+  .ht-year-nav {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 68px;
+    padding: 8px 4px;
+    background: #fff;
+    border: 1px solid #e0e7f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(77,109,173,0.08);
+    z-index: 100;
+  }
+
+  .ht-year-nav a {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #bbb;
+    padding: 7px 4px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+  }
+
+  .ht-year-nav a:hover {
+    color: #4d6dad;
+    background: rgba(77,109,173,0.08);
+  }
+
+  .ht-year-nav a.ht-nav-active {
+    color: #fff;
+    background: #4d6dad;
+    border-radius: 6px;
+  }
+
+  /* ── 타임라인 ── */
+  .ht-timeline {
+    position: relative;
+  }
+
+  .ht-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #e0e7f3, #4d6dad 8%, #4d6dad 92%, #e0e7f3);
+    transform: translateX(-50%);
+  }
+
+  .ht-year-divider {
+    position: relative;
+    text-align: center;
+    margin: 36px 0 20px;
+    z-index: 2;
+  }
+
+  .ht-year-divider:first-child { margin-top: 0; }
+
+  .ht-year-divider span {
+    display: inline-block;
+    background: #4d6dad;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ht-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .ht-row.ht-right { justify-content: flex-start; padding-left: calc(50% + 16px); }
+  .ht-row.ht-left  { justify-content: flex-end;   padding-right: calc(50% + 16px); }
+
+  .ht-row::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f8f8fd;
+    border: 2px solid #8fa8d0;
+    box-shadow: 0 0 0 2px #e0e7f3;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .ht-row:hover::before {
+    border-color: #4d6dad;
+    box-shadow: 0 0 0 3px rgba(77,109,173,0.2);
+  }
+
+  .ht-row.ht-highlight::before { background: #4d6dad; border-color: #4d6dad; }
+  .ht-row.ht-career::before    { background: #2ecc71; border-color: #2ecc71; }
+
+  .ht-card {
+    width: fit-content;
+    max-width: calc(50% - 32px);
+    background: #f8f8fd;
+    border: 1px solid #dde4f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    line-height: 1.6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+  }
+
+  .ht-row:hover .ht-card {
+    border-color: #b0bfdb;
+    box-shadow: 0 3px 10px rgba(77,109,173,0.12);
+  }
+
+  .ht-row.ht-right .ht-card::before {
+    content: ''; position: absolute;
+    left: -7px; top: 13px;
+    width: 0; height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 7px solid #dde4f0;
+  }
+  .ht-row.ht-right .ht-card::after {
+    content: ''; position: absolute;
+    left: -5px; top: 14px;
+    width: 0; height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid #f8f8fd;
+  }
+
+  .ht-row.ht-left .ht-card::before {
+    content: ''; position: absolute;
+    right: -7px; top: 13px;
+    width: 0; height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 7px solid #dde4f0;
+  }
+  .ht-row.ht-left .ht-card::after {
+    content: ''; position: absolute;
+    right: -5px; top: 14px;
+    width: 0; height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #f8f8fd;
+  }
+
+  .ht-card.ht-career-card { border-left: 3px solid #2ecc71; }
+
+  .ht-card-date {
+    font-size: 11px; color: #aaa;
+    font-weight: 600; margin-bottom: 4px;
+  }
+
+  .ht-card-text { color: #333; word-break: keep-all; }
+  .ht-card-text a { color: #4d6dad; text-decoration: none; }
+  .ht-card-text a:hover { color: #223253; text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .ht-year-nav { display: none; }
+    .ht-header h1 { font-size: 20px; }
+    .ht-timeline::before { left: 16px; }
+    .ht-row.ht-left, .ht-row.ht-right {
+      justify-content: flex-start;
+      padding-left: 36px;
+      padding-right: 0;
+    }
+    .ht-row::before { left: 16px; }
+    .ht-row.ht-left .ht-card,
+    .ht-row.ht-right .ht-card { width: fit-content; max-width: calc(100% - 46px); }
+    /* ht-left 카드 화살표를 왼쪽으로 방향 전환 */
+    .ht-row.ht-left .ht-card::before {
+      right: auto; left: -7px;
+      border-left: none;
+      border-right: 7px solid #dde4f0;
+    }
+    .ht-row.ht-left .ht-card::after {
+      right: auto; left: -5px;
+      border-left: none;
+      border-right: 6px solid #f8f8fd;
+    }
+  }
+</style>
+
+<div class="ht-page">
+
+  <div class="ht-header">
+    <h1>일대기</h1>
+    <p class="ht-desc">기록하는 걸 좋아하는 개발자 goodGid의 히스토리</p>
+  </div>
+
+  <div class="ht-body">
+  <div class="ht-wrap">
+
+    <div class="ht-timeline">
+
+      <!-- ── 2024 ── -->
+      <div id="y2024" class="ht-year-divider"><span>2024</span></div>
+
+      <div class="ht-row ht-right ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2024. 04</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2024-Software-Maestro-Mentor-Apply-Pass-Reivew">소프트웨어 마에스트로(SWM) 멘토 합격</a></div>
+        </div>
+      </div>
+
+      <!-- ── 2023 ── -->
+      <div id="y2023" class="ht-year-divider"><span>2023</span></div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2023. 08. 15</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Conference-INFCON-2023">INFCON 2023 — 카카오뱅크 부스 기술 성장 상담 지원</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2023. 06. 24</div>
+          <div class="ht-card-text">Disqus Reaction 비활성화</div>
+        </div>
+      </div>
+
+      <!-- ── 2022 ── -->
+      <div id="y2022" class="ht-year-divider"><span>2022</span></div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2022. 08. 05</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2022-Kakaobank-ESG-Book-Model/">카카오뱅크 ESG 지속가능경영보고서 사진 촬영</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2022. 03. 13</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/KakaoPay-QR-Code">블로그 KakaoPay QR 코드 추가</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2022. 03. 13</div>
+          <div class="ht-card-text">Buy me Coffee 제거</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2022. 03. 04 ~ 06</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2022-8th-Unithon">UNITHON 8TH 대회 참여</a></div>
+        </div>
+      </div>
+
+      <!-- ── 2021 ── -->
+      <div id="y2021" class="ht-year-divider"><span>2021</span></div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2021. 12. 23</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2021-Google-Adsense-Reach-100-Dollar">Google Adsense 2번째 $100 돌파</a></div>
+        </div>
+      </div>
+
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2021. 10. 29</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2021-Kakaobank-Interview">카카오뱅크 직원 신분으로 문화일보 인터뷰</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2021. 06. 26</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Reviews-of-moving-the-company-to-Kakao-Bank/">카카오뱅크 경력 공채 합격 → 이직</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2021. 06. 14</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/ITDAA-Mentoring/">잇다(itdaa) 멘토링 클래스 개설</a></div>
+        </div>
+      </div>
+
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2021. 02. 08</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2020-Received-Referral-AWARDS-in-LINE-Corparation/">2020 LINE 최다 추천왕(Referral AWARDS) 수상</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2021. 01. 02</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/LINE-Refresh-Welfare/">LINE Refresh 휴가</a></div>
+        </div>
+      </div>
+
+      <!-- ── 2020 ── -->
+      <div id="y2020" class="ht-year-divider"><span>2020</span></div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 12. 15</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2020-LINER-Interview">LINE 신규 채용 홈페이지 LINER 인터뷰</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 11. 10</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Google-Adsense-Reach-100-Dollar/">Google Adsense $100 돌파</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 08. 08</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Writing-Post-To-My-University/">모교 진로진학 가이드북에 글 작성</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 05. 03</div>
+          <div class="ht-card-text">블로그 Search 기능 추가</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 04. 13</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Tawk-to/">Tawk.to 서비스 적용</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 04. 01 ~ 04. 30</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/LINE-Blog-Leader/">LINE 작심삼십일 프로젝트 이끔이</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 03. 26</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Vibe-Event/">LINE &amp; Naver 이벤트 1등</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 02. 13</div>
+          <div class="ht-card-text">블로그 Disqus Reaction 활성화</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 02. 11</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2019-Received-Referral-AWARDS-in-LINE-Corparation/">2019 LINE 최다 추천왕(Referral AWARDS) 수상</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 01. 31 ~ 02. 29</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/LINE-Blog-Leader/">LINE 작심삼십일 프로젝트 이끔이</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2020. 01. 21</div>
+          <div class="ht-card-text">블로그 Tags 기능 삭제</div>
+        </div>
+      </div>
+
+
+
+      <!-- ── 2019 ── -->
+      <div id="y2019" class="ht-year-divider"><span>2019</span></div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 11. 30</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2019-Retrospective/">2019 Dev 네비게이션 추가</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 11. 25</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/Daily-Dev-Blog-Weekly/">Daily DevBlog Weekly 1등</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 11. 05</div>
+          <div class="ht-card-text"><a href="https://post.naver.com/viewer/postView.nhn?volumeNo=26793764">네이버 기사 출현 — "합격하자마자 천만원? 삼성 입사하면 이런 선물 받습니다"</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 10. 12</div>
+          <div class="ht-card-text">블로그 Buy me Coffee 추가</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 09. 24</div>
+          <div class="ht-card-text">addThis 서비스 추가</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 07. 11</div>
+          <div class="ht-card-text"><a href="https://www.instagram.com/p/BzxPv88Fq9W/">알고리즘 책 집필 문의</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2019. 06. 08</div>
+          <div class="ht-card-text">Google AdSense 인증</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2019. 01. 02</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/18-Second-Half-Line-2st-Interview/">LINE Biz+ Developer 입사</a></div>
+        </div>
+      </div>
+
+      <!-- ── 2018 ── -->
+      <div id="y2018" class="ht-year-divider"><span>2018</span></div>
+
+      <div class="ht-row ht-right ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2018. 12. 18</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/18-Second-Half-Line-2st-Interview/">LINE 18 하반기 공채 합격</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2018. 12. 18</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/18-Second-Half-Samsung-Electronics-Interview/">삼성전자 무선사업부 18 하반기 공채 합격</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 12. 17</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/2018-Korea-Tour-App-Competition">SKT X 한국관광공사 앱 공모전 장려상 수상</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 11. 24</div>
+          <div class="ht-card-text"><a href="{{ site.url }}/1Day-1Commit/">100일간의 1일 1커밋 시작</a></div>
+        </div>
+      </div>
+
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 08. 28</div>
+          <div class="ht-card-text">블로그 Google Analytics 적용</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 08. 25</div>
+          <div class="ht-card-text">블로그 SEO 적용</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 07. 20 ~ 21</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/2018_Amathon/">Amathon 참가</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 06. 30 ~ 07. 14</div>
+          <div class="ht-card-text">App Jam Server Develop 대상 수상 (Naver D2)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 06. 22 ~ 24</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/Jeju-Hackathon/">A MORE BEAUTY X 핵캠 참가</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 06. 01 ~</div>
+          <div class="ht-card-text">알고리즘 연구실</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 05. 12 ~ 13</div>
+          <div class="ht-card-text">한이음데이 참가</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 03. 01 ~ 06. 21</div>
+          <div class="ht-card-text">블록체인 프로젝트 진행</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 22 ~ 28</div>
+          <div class="ht-card-text">이더리움 기반 스마트 컨트랙트 개발 교육 (핀테크X블록체인)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 23</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/BlockChain-ChainPartners/">Block Chain Conference — Chain Partners</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 12 ~</div>
+          <div class="ht-card-text">Machine Learning 스터디</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 08</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/AWS-Lambda-Seminar/">AWS Lambda Seminar</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 05 ~</div>
+          <div class="ht-card-text">Block Chain 스터디</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 02. 01 ~</div>
+          <div class="ht-card-text">농구 소모임 '라온' 회장</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 01. 30 ~ 02. 19</div>
+          <div class="ht-card-text">Python3 스터디</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2018. 01. 17</div>
+          <div class="ht-card-text">SK T아카데미 Docker Seminar</div>
+        </div>
+      </div>
+
+
+      <!-- ── 2017 ── -->
+      <div id="y2017" class="ht-year-divider"><span>2017</span></div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 12. 23</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/Open-Insight/">Open Insight</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 12. 14 ~ 15</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/Mentoring-GHAS/">해커톤 멘토링</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 11. 21</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/Contributhon/">Contributhon 장려상</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 11. 19</div>
+          <div class="ht-card-text"><a href="https://devfest17-seoul.firebaseapp.com/">GDG DevFest 2017 Seoul</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 11. 17</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/RnD/">산업기술 R&amp;D</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 11. 11</div>
+          <div class="ht-card-text">Git Seminar 진행</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 11. 09</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/PlayNode/">Play Node</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 10. 26</div>
+          <div class="ht-card-text">devlab — Tizen을 활용하여 IoT 만들기</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 10. 25</div>
+          <div class="ht-card-text">devlab — source tree로 배우는 Git + Github</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 08. 01 ~ 30</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/ICT-Volunteer/">World Friends ICT 봉사단</a> — <a href="https://goodgid.github.io/YHBS-Homepage/">네팔 홈페이지 구축 (우수 프로젝트상)</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 07. 28 ~ 30</div>
+          <div class="ht-card-text">Unithon iOS 참가</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 06. 24 ~ 07. 08</div>
+          <div class="ht-card-text">App Jam iOS Develop 우수상 수상 (Naver D2)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 04. 27 ~ 28</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/KeyPlatForm/">Key PlatForm 참가</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 03. 01 ~ 06. 01</div>
+          <div class="ht-card-text">S.O.P.T 운영팀 / S.O.S 논리회로·자료구조 / Web Study (Angular 2 + Git + JS)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2017. 02. 04</div>
+          <div class="ht-card-text">연탄봉사 — 까리타스봉사단 연탄 2000장 운반</div>
+        </div>
+      </div>
+
+      <!-- ── 2016 ── -->
+      <div id="y2016" class="ht-year-divider"><span>2016</span></div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2016. 12. 01 ~ 2017. 06. 01</div>
+          <div class="ht-card-text">A.I Lab — C# WPF 개발</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left ht-highlight">
+        <div class="ht-card">
+          <div class="ht-card-date">2016. 12. 24 ~ 2017. 01. 07</div>
+          <div class="ht-card-text">App Jam iOS Develop 우수상 수상 (Naver D2)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2016. 12. 16 ~ 2017. 02. 28</div>
+          <div class="ht-card-text">Clinic Develop — Android + Web (jQuery + Node.js)</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2016. 10. 01</div>
+          <div class="ht-card-text">ACM-ICPC 교내 우수상</div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-right">
+        <div class="ht-card">
+          <div class="ht-card-date">2016. 09. 03 ~ 2018. 03. 01</div>
+          <div class="ht-card-text">도서관 자치 위원회 활동</div>
+        </div>
+      </div>
+
+      <!-- ── 2014 ── -->
+      <div id="y2014" class="ht-year-divider"><span>2014</span></div>
+
+      <div class="ht-row ht-right ht-career">
+        <div class="ht-card ht-career-card">
+          <div class="ht-card-date">2014. 07 ~ 2016. 04. 13</div>
+          <div class="ht-card-text"><a href="https://goodgid.github.io/SW-Management-Soldier/">S/W 관리병 — 국방부/합참 근무, Web Monitoring System 개발</a></div>
+        </div>
+      </div>
+
+      <div class="ht-row ht-left">
+        <div class="ht-card">
+          <div class="ht-card-date">2014</div>
+          <div class="ht-card-text">학술 연구 장학생</div>
+        </div>
+      </div>
+
+    </div><!-- ht-timeline -->
+
+    <div style="margin-top:30px;display:flex;gap:20px;font-size:12px;color:#888;flex-wrap:wrap;">
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#2ecc71;margin-right:5px;vertical-align:middle;"></span>커리어 / 이직</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#4d6dad;margin-right:5px;vertical-align:middle;"></span>주요 이벤트</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#f8f8fd;border:2px solid #8fa8d0;margin-right:5px;vertical-align:middle;"></span>일반 이벤트</span>
+    </div>
+
+  </div><!-- ht-wrap -->
+
+  <!-- ── 연도 네비 ── -->
+  <nav class="ht-year-nav" id="htYearNav">
+    <a href="#y2024" data-year="y2024">2024</a>
+    <a href="#y2023" data-year="y2023">2023</a>
+    <a href="#y2022" data-year="y2022">2022</a>
+    <a href="#y2021" data-year="y2021">2021</a>
+    <a href="#y2020" data-year="y2020">2020</a>
+    <a href="#y2019" data-year="y2019">2019</a>
+    <a href="#y2018" data-year="y2018">2018</a>
+    <a href="#y2017" data-year="y2017">2017</a>
+    <a href="#y2016" data-year="y2016">2016</a>
+    <a href="#y2014" data-year="y2014">2014</a>
+  </nav>
+
+  </div><!-- ht-body -->
+
+</div>
+
+<script>
+(function() {
+  var years = ['y2024','y2023','y2022','y2021','y2020','y2019','y2018','y2017','y2016','y2014'];
+  var links  = {};
+  years.forEach(function(id) {
+    links[id] = document.querySelector('[data-year="' + id + '"]');
+  });
+
+  function setActive(id) {
+    years.forEach(function(y) {
+      if (links[y]) links[y].classList.toggle('ht-nav-active', y === id);
+    });
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) setActive(entry.target.id);
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  years.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+
+  // 초기 active
+  setActive('y2024');
+})();
+</script>
